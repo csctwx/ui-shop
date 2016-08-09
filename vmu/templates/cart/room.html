@@ -1,0 +1,48 @@
+<li class="cart dropdown">
+	<a class="dropdown-toggle" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:CartIcon">
+		<span class="cart-icon"></span><span class="cart-nav">Cart</span>
+		<span class="quantity-nav">({{cartController.getTotalQuantity()}})</span>
+	</a>
+	<ul class="dropdown-menu subnav subnav-style">
+		<div class="cartItem">
+		<li>
+			<div class="cartHead">
+				<a class="link" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:Checkout">// View Cart Details</a>
+			</div>
+			<ul ng-show="cartController.data.items.length==0">
+				<li>
+					<div class="pull-left">
+						<a style="color:#FFF"><span class="phoneBrand">Your cart is empty.</span></a>
+					</div>
+				</li>
+			</ul>
+			<div class="productList">
+				<ul ng-repeat="item in cartController.data.items">
+					<li>
+						<div class="itemThumb">
+							<img class="phoneImg" ng-src="{{item.image}}">
+						</div>
+						<div class="itemInfo">
+							<h5>{{item.name}}</h5>
+							<div class="itemQty">Qty:<span>&nbsp;{{item.quantity}}</span></div>
+							<a class="itemAction" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:Checkout">// Edit or Remove</a>
+						</div>
+						<div class="itemPrices">
+							<span class="totalPrice">{{item.modelPrice|currency:""}}</span>
+						</div>
+					</li>
+				</ul>
+			</div>		
+			<div class="cartCta" ng-show="cartController.data.items.length!=0">
+				<ul>
+					<li class="list">Free Shipping</li>
+					<li class="list">Free Activation</li>
+				</ul>
+				<div>Total: <span id="minicart_price">{{cartController.getSubTotal()|currency}}</span>
+				</div>
+				<a ng-href="{{pathMap._checkout._hash}}|Nav:Cart:Checkout"><span>Checkout</span></a>
+			</div>
+		</li>
+		</div>
+	</ul>
+</li>

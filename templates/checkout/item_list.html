@@ -1,0 +1,56 @@
+<div style="min-height:80px">
+    <h2 ng-if="appName=='spp'" ng-show="checkoutController.data.equipments.length!=0">Your Cart<span><i
+            class="glyphicon glyphicon glyphicon-chevron-left"></i><a href="{{pathMap._phones._hash}}">Continue
+        Shopping</a></span></h2>
+    <!-- ng-click="appUtil.ui.previousPage()" -->
+    <h2 ng-if="appName=='bst' || appName=='vmu'" ng-show="checkoutController.data.equipments.length!=0 && (checkoutController.step==0 || checkoutController.step==1 || checkoutController.step==4)"
+        class="orange">Your Cart<span>
+        <a ng-if="appName=='bst' && (checkoutController.ibToken==='' || checkoutController.ibToken==null)" href="https://www.boostmobile.com/shop/phones/">Continue Shopping </a>
+        <a ng-if="appName=='bst' && (checkoutController.ibToken!=null)" ng-href="{{pathMap._phones._hash}}">Continue Shopping </a>
+        <a ng-if="appName!='bst'" ng-href="{{pathMap._phones._hash}}">Continue Shopping </a>
+        <i class="glyphicon glyphicon glyphicon-chevron-left"></i></span></h2>
+
+    <h2 ng-if="appName=='bst'" ng-show="checkoutController.data.equipments.length!=0 && checkoutController.step!=0 && checkoutController.step!=1 && checkoutController.step!=4"
+        class="orange">Review Order<span><a href="" ng-click="checkoutController.restartCheckout()">Edit
+        information </a><i class="glyphicon glyphicon glyphicon-chevron-left"></i></span></h2>
+
+    <!-- <h2 ng-if="appName=='vmu'" ng-show="checkoutController.data.equipments.length!=0 && checkoutController.step==1" class="cart-title-label">Your
+        Cart<span><a href="" ng-click="appUtil.ui.previousPage()" class="cart-continue-shop">//Continue Shopping </a></span></h2> -->
+
+    <form name="itemsForm">      
+        <div ng-if="appName=='spp' || checkoutController.step==0 || checkoutController.step==1 || checkoutController.step==4" class="cart-item alert alert-dismissible fade in"
+             role="alert" ng-repeat="item in checkoutController.data.equipments">
+            <div class="pull-left col-xs-5">
+                <button ng-if="checkoutController.step==0 || checkoutController.step==1 || checkoutController.step==4" type="button" class="close" data-dismiss="alert"
+                        aria-label="Close" ng-click="checkoutController.removeItem(item)"><span
+                        aria-hidden="true">×</span></button>
+                <a style="color:#000" ng-href='{{item.myUrl}}'>
+                    <img alt="{{item.name}} - {{appDisplayName}}" ng-src="{{item.image}}">
+                    <h4>{{item.name}} {{item.phoneCondition}} {{item.color}} {{item.memory}} {{item.checkoutText}}</h4>
+                </a>
+            </div>
+            <div class="quantity col-xs-3">          
+              <button class="number-control" ng-click="checkoutController.decrementQuantity(item)" ng-if="appName=='spp' || appName=='bst'">-</button>
+              <input type="{{checkoutController.step==2?'text':'number'}}" ng-readonly="checkoutController.step==2 || checkoutController.ibCart" class="form-control input-sm qauntity-input"
+                       ng-model="item.quantity" ng-change="checkoutController.save()" ng-value="1" required="required"
+                       min="0" step="1" />
+              <button class="number-control" ng-click="checkoutController.incrementQuantity(item)" ng-if="appName=='spp' || appName=='bst'" disabled="checkoutController.ibCart">+</button>            
+            </div>
+            <div class="ib-info col-xs-4" ng-if="checkoutController.ibCart">
+              <p><b>{{checkoutController.data.equipments[0].loanTerm}} Monthly Installments<br />Due today</b><br />
+              {{checkoutController.data.equipments[0].downPaymentAmount | currency}} plus tax on total cost of device<br />
+              <b>Monthly</b><br />{{checkoutController.data.equipments[0].ibEmi | currency}}</p>
+            </div>
+            <div ng-if="!checkoutController.ibCart">
+              <p class="col-xs-3 price pull-right">{{item.modelPrice|currency}}</p>
+            </div>            
+      <span class="appliedPromo">
+        <ul>
+          <li ng-show="item.discountTotal"><span>Discount applied:</span><p>-{{item.discountTotal|currency}}</p></li>
+        </ul>
+      </span>
+      <center><span class="errorMessage">{{item.errorMessage}}</span></center>
+    </div>
+  </form>
+</div>
+

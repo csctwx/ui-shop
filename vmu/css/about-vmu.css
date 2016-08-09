@@ -1,0 +1,516 @@
+/* New Styles for VMU About Section */
+/* Author: israel.lara@sprint.com */
+
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url(../fonts/vmu/ProximaNova-Regular.woff);
+} 
+
+body {
+	background: #FFF !important;
+	font-family: ProximaNovaRegular;
+}
+
+h1#about-h1{font-size:30px;padding-left: 0px !important; margin-left: 0px !important;}
+
+div.col-xs-3.col-md-2 ul.vmu-tabs-left>li>a,
+.go_to_more {
+    border-radius: 0;
+    display: block;
+    padding: 2px;
+    background: #FFF;
+    color: #727375;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+div.tabs-container{
+	padding-left:0;
+	padding-right:0;
+}
+
+.about-content{
+	padding-left: 15px !important;
+}
+
+div.col-xs-3.col-md-2 ul.vmu-tabs-left{
+	padding-left:0;
+}
+
+#sbnav li a {
+    height: 15px;
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+    margin-bottom: 5px;
+    background-position: left top;
+}
+
+h2#hdl_ctia,
+h2#hdl_thevirginmobilestory {
+    color: #D70020 !important;
+    font: italic 21px/32px 'ProximaNova-Regular' !important;
+    margin: 10px 0px !important;
+}
+
+h3#hdl_legal_info_privacypolicy,
+h3#hdl_legal_info_termsofwebuse,
+h3#hdl_legal_info_termsofservice,
+h3#hdl_legal_info_resources,
+h3#hdl_legal_info_copyrightinfo,
+h3#hdl_legal_info_acceptableuse,
+h3#hdl_legal_info_visitors,
+h3#hdl_legal_info_tos_contract
+{
+	color: #801a87 !important;
+	font: bold 13.5px 'ProximaNova-Regular' !important;
+	margin-bottom: 7px;
+	text-transform: none !important;
+}
+
+.hero {
+    background: url('../img/about/story.jpg') top left no-repeat;
+	height: 200px;
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+    background-size: cover;
+}
+.jobs {
+    background: url('../img/about/jobs.png') top left no-repeat;
+	height: 200px;
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+    background-size: cover;
+}
+.jobs2 {
+    background: url('../img/about/listing_hdr_bg.jpg') top left no-repeat;
+    height: 200px;
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+    background-size: cover;
+}
+
+.affiliate_img {
+    background: url('../img/about/affiliate.jpg') top left no-repeat;
+	height: 200px;
+    overflow: hidden;
+    text-indent: -999em;
+    display: block;
+    background-size: cover;
+}
+
+div.border-none{
+	border-top: none !important;
+	padding-top: 40px;
+}
+
+.left {
+    /*width: 72%;*/
+    width: 68%;
+    float: left;
+}
+
+.left-4-legal {
+    width: 90%;
+    float: left;
+}
+
+.clearfix.padbottom h5>a{
+	color: #727375;
+	font-weight: bold;
+}
+
+.left h3{
+	font: bold 13.5px 'ProximaNova-Regular' !important;
+	color: #801a87;
+	font-size: 14px;
+    text-transform: none;
+}
+
+.left h4{
+	font-family: 'verdana', Helvetica, Arial, sans-serif;
+	color: #727375;
+	font-size: 11px;
+	font-weight: bold;
+    text-transform: none;
+	margin-bottom: 5px !important;
+}
+
+div.left p {padding-bottom: 10px !important; color: #727375;}
+div.left.border-box p {font-size: 1em !important;}
+
+
+div.clearfix.padbottom20 h3{
+	font-size: 15px !important;
+    text-transform: none;
+    color: #727375;
+    font-family: ProximaNovaRegular, Arial, Verdana, Helvetica, sans-serif !important;
+}
+
+div#legal_content.legal_content p{
+	font-size: 0.97em;
+    line-height: 1.4em;
+    color: #727375;
+	margin-bottom: 10px;
+}
+
+div.clearfix.padbottom20 h4{
+    color: #727375;
+    font-size: 11px;
+    font-weight: bold;
+	text-transform: none !important;
+	font-family: 'ProximaNova-Bold-Normal', Helvetica, Arial, sans-serif !important;
+}
+
+div.clearfix.padbottom20 p a{
+    color: #727375;
+    font-size: 11px;
+	text-decoration: underline;
+}
+div#ctia p, th, td {
+	padding-bottom: 10px !important;
+    font-size: 12.5px;
+	color: #727375;
+}
+
+div#unlock p a,
+div#ctia p a{
+	color: #727375;
+	text-decoration: underline;
+	cursor: auto;
+	font-size: 12.5px;
+}
+
+ul.traditional li {
+    margin-left: 16px;
+}
+ul.traditional {
+    list-style: disc;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 26.5%;
+    float: right;
+}
+
+#whyvm {
+    padding-bottom: 0px;
+}
+
+#whyvm ul {padding: 10px 0px;}
+
+.with_headline {
+    padding-top: 55px !important;
+}
+.mod2 {
+    border: 1px solid #E5E5E5;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+	padding-top: 0;
+}
+
+#hdl_whyvm {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    top: 0px;
+    left: -1px;
+    border-bottom: 1px solid #e5e5e5;
+    background: url('../img/about/hdl_whyvm.png') no-repeat scroll 15px center;
+}
+
+#hdl_virginus {
+    background: rgba(0, 0, 0, 0) url('../img/about/hdl_virginus.png') no-repeat scroll left top;
+	margin-bottom: 14px;
+}
+
+.hdl {
+    overflow: hidden;
+
+}
+
+.list li {
+    list-style-type: disc;
+	margin-left: 16px;
+	padding: 2px;
+    padding-bottom: 0;
+}
+
+ul.list{line-height: 1.1;}
+
+.tos_block h4{margin-left: 0px !important; padding-left:0px !important;}
+
+ol, ul {
+	margin: 0px;
+    list-style: outside none none;
+	border: 0px none;
+	outline: 0px none;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	background: transparent none repeat scroll 0% 0%;
+	color: #727375;
+}
+
+ul.sub-legal{
+	padding: 10px 0px 10px 10px;
+}
+
+#whyvm li {
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.right h3#hdl_sociallinks {
+    color: #801a87;
+	font-family: 'verdana', Helvetica, Arial, sans-serif;
+    text-transform: none;
+
+}
+
+#hdl_sociallinks {
+    border-bottom: 1px solid #e5e5e5;
+	font-size: 12px;
+	font-weight: inherit;
+    font-style: inherit;
+    padding-bottom: 10px;
+}
+
+#social_links li#facebook a {
+    background: url('../img/about/icon_facebook.png') top left no-repeat;
+}
+#social_links li#vine a {
+    background: url('../img/about/icon_vine.png') top left no-repeat;
+}
+#social_links li#twitter a {
+    background: url('../img/about/icon_twitter.png') top left no-repeat;
+}
+#social_links li#youtube a {
+    background: url('../img/about/icon_youtube.png') top left no-repeat;
+}
+#social_links li#instagram a {
+    background: url('../img/about/icon_instagram.png') top left no-repeat;
+}
+#social_links li#flickr a {
+    background: url('../img/about/icon_flickr.png') top left no-repeat;
+}
+
+.careers-img{
+	background: url('../img/about/ad_search.png') top left no-repeat;
+	height: 120px;
+	width: 214px;
+	display: block;
+}
+
+#social_links li a {
+	white-space: nowrap;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 54px;
+    margin-bottom: 15px;
+    display: block;
+	text-decoration: underline;
+    cursor: auto;
+}
+
+li.active a,
+li.sub-active a{
+	color: #d70020 !important;
+	text-decoration: none !important;
+	cursor: auto;
+	font-weight: bold;
+
+}
+
+ul.vmu-tabs-left li a:hover,
+.go_to_more:hover{
+	text-decoration: none;
+	color: #d70020 !important;
+}
+
+a.go_to_more{
+	display: inline;
+	color:#737275;
+}
+
+ul.sub-legal li a:hover{
+	color: #d70020 !important;
+	text-decoration: underline;
+}
+
+ul.list li a,
+ul#social_links li a,
+div.left a{
+	color: #727375;
+	text-decoration: underline;
+	cursor: auto;
+	font-size: 11px;
+}
+
+ul.list > ul.list{
+	margin-left: 18px;
+	padding-bottom:10px;
+}
+
+ul.traditional li a{
+	color: #727375;
+	text-decoration: underline;
+	cursor: auto;
+}
+
+ul.sub-legal li a,
+ul.bulletListLegal li a{
+	color: #727375;
+	text-decoration: underline;
+	cursor: auto;
+	font-size: 11.2px !important;
+	padding: 0.6px !important;
+}
+
+ul.sub-legal ul li a{padding-left: 10px !important;}
+
+ul.sub-legal ul.ul-terms-conditions li a,
+ul.sub-legal ul.ul-terms-conditions li a:link,
+ul.sub-legal ul.ul-terms-conditions li a:visited{
+    color: #727375 !important;
+    font-size: 11px !important;
+    font-weight: normal;
+    padding: 0px !important;
+    cursor: pointer;
+    text-decoration: underline!important;
+}
+
+ul.sub-legal ul.ul-terms-conditions li a:hover{
+    color: #d70020 !important;
+}
+
+.about-affiliate .bb_joinnow {
+    width: 146px;
+    height: 24px !important;
+    background-image: url("../img/about/btn_joinnow.png");
+}
+.about-affiliate .btn {
+    display: block;
+    text-indent: -999em;
+    outline: medium none;
+    height: 29px;
+    background-position: left top;
+    float: left;
+    margin-right: 5px;
+}
+button.btn, a.btn {
+    padding: 0px;
+    margin: 0px;
+    border: 0px none;
+    outline: 0px none;
+    display: block;
+    overflow: hidden;
+    text-indent: -999em;
+}
+.about-affiliate .btn:hover {
+    background-position: left bottom !important;
+}
+
+.navbar-toggle {
+    margin: 3px 5px 3px 0px !important;
+    float: right !important;
+    position: relative !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #D70020;
+}
+
+.navbar-default .navbar-brand{
+	color: #D70020;
+	font-weight: bold;
+}
+.nav .dropdown.open {
+    background-color: #fff !important; 
+    color: #b1b1b1;
+}
+
+@media(max-width: 767px){
+	.left, #social_links{
+		padding: 20px;
+	}
+	#hdl_sociallinks, .right{
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+	#about-h1, .hdl{
+		text-align: center;
+	}
+  .left, .right{
+    width:100% !important;
+  }
+  .right{float: left;}
+ 
+ div.ex{width: 100% !important;}
+}
+
+ul.bulletList li,
+ul.bulletListLegal li{
+    list-style-type: disc !important;
+}
+ul.bulletList,
+ul.bulletListLegal {
+    padding-left: 25px;
+}
+p.small {
+    font-size: 1.1em;
+}
+
+
+ul.bulletList2 li{
+    list-style-type: disc !important;
+}
+ul.bulletList2 {
+    padding-left: 15px;
+}
+ul.bulletList3 {
+    padding-left: 35px;
+}
+
+ol.bulletList {
+    padding-left: 25px;
+}
+ol.bulletList li{
+    list-style-type: lower-alpha; !important;
+}
+
+ol.bulletList2 li{
+    list-style-type: decimal; !important;
+}
+
+/************************************/
+
+.bold_underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.bold_italic {
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul.list, ul.list_unstyled {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.italic {
+    font-style: italic;
+}
+

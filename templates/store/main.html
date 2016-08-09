@@ -1,0 +1,102 @@
+<section id="store">
+  <div id="locatorContainer">
+    <div class="gradient-grey-dk banner">
+      <div class="row">
+        <div class="col-md-6 col-sm-8" style="padding-left:20px;padding-top:10px;" ng-class="{'find-store-pad': appName=='vmu'}">
+          <div class="row">
+            <h3 class="title transparent" ng-if="appName=='bst'">Search for Boost Mobile Locations</h3>
+            <h1 class="title transparent" ng-if="appName=='vmu'">Find a Store</h1>
+          </div>
+          <div class="row">
+	          <div class="col-xs-12" ng-if="appName=='vmu'">
+	          	<h4 style="margin:0 0 10px 0;padding:0;">WANT TO FIND A STORE SELLING VIRGIN MOBILE GEAR?</h4>
+				ENTER ZIP CODE
+	          </div>
+          </div>
+          <div class="row">
+            <span class="col-xs-5"><input ng-model="storeController.params.zipcode" class="form-control" maxlength="5" placeholder="{{appName=='bst'?'ENTER ZIP CODE':''}}"  onkeydown="if (event.keyCode == 13) document.getElementById('btn-find').click();"/> </span>
+            <span class="col-xs-2" style="padding-top:3px;padding-left:0" id="findstore">
+              <button ng-click="storeController.buildMapUrl()" ng-disabled="!appUtil.data.validZip(storeController.params.zipcode)" id="btn-find" class="btn btn-primary">Find</button>
+            </span>
+          </div>
+          <div class="row col-xs-12">
+            <p class="" ng-if="appName=='bst'">Limit search to locations that offer:</p>
+            <h4 class="subheading" ng-if="appName=='vmu'">SEARCH FOR LOCATIONS THAT HAVE</h4>
+          </div>
+          <div class="row">
+            <ul id="storeOptions" class="col-xs-12" ng-if="appName=='bst'"> 
+              <li> 
+                <input ng-value="1" ng-model="storeController.params.phones" id="phoneSalesInd" type="checkbox" />
+                <label title="" for="phoneSalesInd"> <div class="icons icon-phone"></div> Phones</label> 
+              </li> 
+              <li>
+                <input ng-value="1" ng-model="storeController.params.reboost" id="reboostInd" type="checkbox"/>
+                <label title="" for="reboostInd"> <div title="Reboost" class="icons icon-reboost"></div> Re-Boost</label> 
+              </li> 
+              <li>
+                <input ng-value="1" ng-model="storeController.params.pref" id="prefInd" type="checkbox"/>
+                <label title="" for="prefInd"> <div title="Boost Stores Only" class="icons icon-boost"></div>Customer Support</label> 
+              </li> 
+            </ul>
+            <ul id="storeOptions" class="col-xs-12" ng-if="appName=='vmu'"> 
+              <li> 
+                <input ng-value="1" ng-model="storeController.params.phones" id="phones" type="checkbox" />
+                <label title="Phones" for="phones"> Phones</label> 
+              </li> 
+              <li>
+                <input ng-value="1" ng-model="storeController.params.topup" id="topup" type="checkbox"/>
+                <label title="Top-Up Cards " for="topup"> Top-Up Cards</label> 
+              </li> 
+              <li> 
+                <input ng-value="1" ng-model="storeController.params.b2g" id="b2g" type="checkbox"/>
+                <label title="Broadband2Go" for="b2g"> Broadband2Go</label> 
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-4 hidden-xs">
+          <a href="#!/shop/in-store-offers/" ng-if="appName=='bst'">
+            <img class="lg-pull-right banner-img" alt="Promotion" src="bst/img/store/instoreoffers_storeloc.jpg" class="lg-pull-right">
+          </a>
+          
+          <div ng-if="appName=='vmu'">
+          	<h4 style="font-size:18px;margin:15px 0;">Available at these and other retailers:</h4>
+         	<img class="banner-img" alt="Find Virgin Mobile phones at Best Buy, Target, Radioshack and Walmart" ng-src="{{appName}}/img/store/boost-mobile-retailers.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 hidden-xs" style="width:100%;height:400px;display:none;z-index:1" id="map" ng-if="appName=='bst'"></div>
+  </div>
+  <div id="locatorResults" class="row col-xs-12"  style="z-index:1" ng-if="storeController.curLocationInfo">
+    <div id="locatorTop">
+      <img class="legend hidden-xs" src="bst/img/store/legend.png" ng-if="appName=='bst'" />
+      <h1 class="font-boostneo-gradient" ng-if="appName=='bst'">Boost Mobile Locations in {{storeController.curLocationInfo}}</h1>
+      <h3 ng-if="appName=='vmu'">LOCATIONS CLOSE TO OR IN {{storeController.curLocationInfo}}</h3>
+      <store-featured ng-if="appName=='bst'"></store-featured>
+      <store-normal></store-normal>
+    </div>
+  </div>
+  <div id="adBox" class="hidden-xs" style="z-index:0" ng-if="appName=='bst'">
+    <div class="banner row"> 
+      <div class="col-md-7 text-center">
+        <div class="">
+          <h4>Find Boost Mobile phones at these national retailers:</h4> <br/>
+          <a><img class="banner-img" alt="Find Boost Mobile phones at Best Buy, Target, Radioshack and Walmart" src="bst/img/store/boost-mobile-retailers.png"/></a> 
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <div class="">
+          <h4>Re-Boost at these national retailers:</h4><br/>
+          <img class="banner-img" alt="Reboost at 7-Eleven, Walgreens and CVS" src="bst/img/store/reboost-retailers.png"/>
+        </div>
+      </div> 
+    </div> 
+    <div class="">
+      <a ng-href="{{pathMap._phones._hash}}@PreOwned/">
+        <img class="banner-img" src="bst/img/store/gen_cpo.jpg"/>
+      </a>
+    </div> 
+  </div>
+  <div style="background-color:#000;padding-bottom:30px" ng-if="appName=='bst'"><br/></div>
+</section>

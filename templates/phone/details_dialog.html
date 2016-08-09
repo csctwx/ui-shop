@@ -1,0 +1,24 @@
+<div id="carousel-phone-dialog" class="carousel slide" data-ride="carousel" style="height:100%">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" ng-repeat="img in phoneController.details.data.images" data-slide-to="{{$index}}" class="{{$index==0?'active':''}}"></li>
+    <li data-target="#carousel-example-generic" ng-if="phoneController.details.data.video" data-slide-to="{{phoneController.details.data.images.length+1}}" class=""></li>
+  </ol>
+  <div class="carousel-inner" role="listbox" style="height:100%">
+    <div ng-repeat="img in phoneController.details.data.images" class="item {{$index==0?'active':''}}" >
+      <img alt="{{phoneController.details.data.displayBrand}} {{phoneController.details.data.name}} - Sprint Prepaid" style="width: initial !important;height: 380px !important;" ng-src="{{(($index==0)&&phoneController.details.data.selectedVariant.heroImage.uRI)?phoneController.details.data.selectedVariant.heroImage.uRI:img}}">
+    </div>
+    <div ng-if="phoneController.details.data.video" class="item" style="height:100%;width:100%;padding:45px">
+      <iframe frameborder="0" src="" height="100%" width="100%"></iframe>
+      <img ng-src="{{phoneController.details.data.video}}" onerror="$(this).hide();$(this.parentNode).find('iframe')[0].src=this.src" />
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-phone-dialog" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-phone-dialog" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>					

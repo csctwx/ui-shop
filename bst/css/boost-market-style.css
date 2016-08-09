@@ -1,0 +1,710 @@
+@font-face{
+    font-family:BoostNeoBold;
+    src:url(../fonts/v2/BoostNeo-Bold.eot);
+    src:url(../fonts/v2/BoostNeo-Bold.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Bold.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Bold.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Bold.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Bold.svg#boost_neobold) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:BoostNeoBlack;
+    src:url(../fonts/v2/BoostNeo-Black.eot);
+    src:url(../fonts/v2/BoostNeo-Black.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Black.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Black.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Black.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Black.svg#boost_neoblack) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+
+@font-face{
+    font-family:BoostNeoBold;
+    src:url(../fonts/v2/BoostNeo-Bold.eot);
+    src:url(../fonts/v2/BoostNeo-Bold.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Bold.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Bold.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Bold.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Bold.svg#boost_neobold) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+
+
+@font-face{
+    font-family:BoostNeoRegular;
+    src:url(../fonts/v2/BoostNeo-Regular.eot);
+    src:url(../fonts/v2/BoostNeo-Regular.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Regular.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Regular.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Regular.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Regular.svg#boost_neoregular) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+
+/********** START OF STYLES OF BOOST MARKET *************/
+@media (max-width: 767px){
+	.table-padding{margin-left: 20px !important;}
+	.bmar-icon{display: none !important;}
+	#money h1,#money h2,#money h3, #money span{
+		padding-left: 10px !important;
+	}
+	/*.market .tabs #apps section div.apps {
+		background: url(../img/store/img-market-apps-mobile.jpg);
+		background-size: 100%;
+		height: 300px;
+	}*/
+    
+	
+	#money div:nth-of-type(2) {
+		background: none !important;
+		background-color: #ccc;
+		min-height: 615px;
+		height: auto !important;
+		padding: 0 !important;
+		background-position: -350px 0px !important;
+		background-size: 200% !important;
+	}
+
+	div#callwatch .callwatch-logo{
+		margin: 0 auto;
+	}
+	.market .tabs #apps section div {
+		margin-left: 0px !important;
+	}
+	div.apps .col-xs-4{
+		
+	}
+
+	div.apps .col-xs-4 a{
+		border-radius: 0px !important;
+		text-decoration: none !important;
+	}
+	
+	
+	#social td .box {
+		padding-left: 45px;
+		/*padding-right: 55px;*/
+		position: relative;
+		margin-bottom: 10px;
+	}
+	
+	
+    
+	div#social > section.first h1{
+		text-align: center;
+	}
+	
+	div#social > section.first h2{
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	.bmar-icon {
+		left: 10px !important;
+	}
+	
+	.market .tabs p.default{
+		padding: 0px 5px !important;
+	}
+	
+	.market-btn{
+		display:block;
+		padding: 10px 15px;
+		background-color: #000;
+		color: #fff !important;
+		font-weight: bold;
+		text-decoration: none !important;
+		margin-right: 10px;
+	}
+	
+	#insurance > section:first-of-type {
+		background: none !important; 
+		padding: 0px 10px !important; 
+		color: #000000; 
+		height: auto !important; 
+		
+	}
+	.btv-row {
+		padding: 5px !important;
+	}
+}
+.main.container .maintabs .tab-content #money [class*="col-"] {
+    padding: 0px !important;
+}
+.first_s{
+	background: url(../img/store/phone-insurance-bg.jpg) top right no-repeat !important;
+}
+h4>a{color: #F7901E !important;}
+@media (min-width: 992px){
+	#apps #apps-desktop div.col-sm-2{
+		padding: 0 !important;
+	}
+	.market .tabs #boosttv section {
+		min-height: 270px;
+		background: none !important;
+		border-bottom: 2px solid #e3e3e3;
+		padding: 0;
+	}
+	.market .tabs #boosttv section:nth-of-type(1) {
+		/*padding: 60px 60% 30px 30px;*/
+		/*background: url(../img/img-market-tv2.jpg) right bottom no-repeat;*/
+		background: url(../img/boosttv-bg.jpg) right top no-repeat !important;
+		min-height: 465px !important;
+		padding: 130px 30px 0 30px !important;
+	}
+	#boosttv > section > h3:first-of-type{
+		padding: 0px 250px 0 0px !important;
+		font-size: 21px;
+	}
+	#boosttv > section > h3:nth-of-type(2){
+		padding: 0px 50% 0 0px !important;
+		font-size: 21px;
+	}
+}
+
+@media (min-width: 768px){
+	
+	.market .tabs #apps div.apps div a {
+		height: auto !important;
+	}
+    
+    section.dealz-bottom {
+        padding: 50px 397px 30px 30px;
+        background: transparent url("../img/store/boost-dealz-logo.png") no-repeat scroll 525px 37px;
+    }
+    
+    #social section.first{
+        background: url(../img/store/airG_background.jpg) no-repeat; 
+        background-size: 100%;
+        background-position: center bottom;
+    }
+    
+    div#dealz > section.dealz-top{
+	    padding:50px 41%px 30px 30px;
+        background: url(../img/store/boost-deals-bg.png);
+        min-height: 488px;
+    }
+    
+    div#dealz > section.dealz-bottom ol {
+        color: #000000;
+        font: 400 13px/15px Arial;
+        padding: 0 30px;
+    }
+    
+	div#callwatch > section{
+		background: #fff url('../img/store/callwatch-bg.jpg') no-repeat right 100px;
+        /*background: #fff url('../img/store/callwatch-bg.jpg') no-repeat right 100px;*/
+	}
+	
+	div#social > section{
+		padding: 0px 60px 0px 60px;
+	}
+	
+	div#social > section.first > div{
+		/*margin-top: 5px;*/
+	}
+	
+	#social td .box {
+		padding-left: 45px;
+		padding-right: 20px;
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.btv-row {
+		padding: 30px !important;
+		padding-left: 60px !important;
+	}
+
+	
+}
+
+@media (max-width: 992px){
+	.market .tabs #apps div.apps div a {
+		display: block;
+		text-align: center;
+		color: #F99100;
+		text-decoration: underline;
+		padding: 10px !important;
+		height: auto !important;
+	}
+}
+@media (min-width: 992px){
+	.market .tabs #money div:nth-of-type(2) {
+		background: url(../img/img-market-money2.jpg) top right no-repeat;
+		background-color: #ccc;
+		min-height: 615px;
+		height: auto !important;
+		padding: 0 !important;
+	}
+}
+.btn-primary{background: #F7901E !important;border: none !important;}
+.boosttv-m .modal-dialog img{display: inline !important;}
+.boosttv-m .modal-dialog .modal-body{text-align: center !important;}
+
+.boosttv-m .modal-dialog{
+	margin-top: -20px;
+	width: 90% !important;
+}
+.boosttv-m .modal-content{
+    border: none !important;
+    background-color: transparent !important;
+	-webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.boosttv-m .modal-content .modal-header{
+	border: none !important;
+	width: 85%; 
+	margin: 0 auto;
+}
+.boosttv-m .modal-content .modal-header .close{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    float: right;
+    opacity: 1 !important; 
+    color: #fff;
+    /* text-shadow: 0 1px 0 #fff; */
+    filter: alpha(opacity=20);
+}
+
+.market .tabs #boosttv section {
+	border-bottom: 2px solid #e3e3e3;
+}
+
+.arrow {
+    background: url('../img/arrow2.png') no-repeat 0px 4px;
+    padding-left: 30px !important;
+    position: relative;
+    left: -30px;
+    opacity:1!important;
+    font-size: 21px!important;
+    height: 32px;
+}
+
+
+
+
+@media(max-width: 360px){
+	.arrow {
+		font-size: 17px!important;
+		height: auto !important;
+	}
+    
+    #social > section.first{
+        background: #000;
+    }
+}
+
+
+h3 > a{
+	font-size: 21 !important;
+}
+.orange {
+    color: #f7901e;
+}
+table .box.col-xs-12 h2{padding-left: 20px !important}
+.numberedlist {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.numberedlist li {
+    list-style-type: none;
+    padding-top: 3px;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    position: relative;
+}
+
+#bulletsTV li::before {
+    position: absolute !important; 
+    margin: -4px 0 0 -35px !important;
+    min-height: 30px !important;
+    background: url(../img/onetwosprite.png) no-repeat !important; 
+    width: 31px !important;
+    content: "";
+    vertical-align: middle;
+}
+#bulletsTV li.two::before {
+    background-position: 0 -32px !important;
+}
+
+.numberedlist li::before {
+    /*position: absolute !important; */
+    /*margin: -4px 0 0 -35px !important; */
+    min-height: 30px !important;
+    /*background: url(../img/onetwosprite.png) no-repeat !important; */
+    width: 31px !important;
+    content: "";
+    vertical-align: middle;
+}
+
+
+#insurance h1 {
+    color: #F99100 !important;
+    padding: 0 !important;
+	background-color: #fff !important;
+}
+
+div.market > section.tabs .maintabs #desktop-menu li[role=presentation]{
+	/*width: 14.285% !important;*/
+    width: 13.240% !important;
+    margin: 0 10px 0 0;
+    
+}
+
+div#callwatch > section {
+    padding: 10px 30px 30px;
+}
+
+div#dealz > section.dealz-top{
+	padding:10px 30px;
+}
+
+div#dealz > section.dealz-top div#dealz-content{
+    max-width:535px;
+}
+
+
+div#dealz > section.dealz-bottom{
+    padding: 10px 30px;;
+}
+
+div#dealz > section.dealz-bottom ol{
+    padding: 0 5px;
+}
+
+div#dealz > section.dealz-bottom p{
+    color: #000000;
+    font: 400 13px / 15px Arial;
+    padding: 0 0 0 40px!important;
+}
+
+div#callwatch h3 {
+    font-size: 18px;
+    font-weight: normal !important;
+    margin: 19px 0;
+    padding: 0;
+    color:#333;
+}
+
+div#dealz > section.dealz-bottom a{
+    text-decoration: underline!important;
+}
+
+div#dealz h3{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-size: 16px!important;
+    color: #000000;
+}
+
+div#dealz h1{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-size: 30px;
+    color: #e7781d;
+     font-weight: 400;
+    
+}
+
+div#dealz h4{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-size: 12px!important;
+}
+
+div#dealz h2{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-size: 20px;
+    color: #e7781d;
+}
+
+div#callwatch h2{
+	font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+    color: #f7901e;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    -webkit-font-smoothing: antialiased;
+}
+
+div#callwatch > section > h1.callwatch-logo{
+	background: url('../img/store/callwatch-logo.png') no-repeat 0 0;
+	text-indent: -999px;
+	margin-bottom: 20px;
+    width: 171px;
+    height: 38px;
+    display: block;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+div#callwatch h3{
+	font-size: 18px;
+	padding: 0;
+	font-weight: normal !important;
+	margin: 19px 0px;
+}
+
+div#callwatch h3 > span.market-bold{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+div#callwatch h3 > span.market-orange{
+	font-weight: bold;
+	font-size: 20px;
+	color: #f7901e;
+}
+
+div#callwatch ul.benefits{
+	list-style: square;
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+
+div#callwatch ul.benefits li p{
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.market-btn{
+	padding: 10px 15px;
+	background-color: #000;
+	color: #fff !important;
+	font-weight: bold;
+	text-decoration: none !important;
+	margin-right: 10px;
+}
+
+.market-btn.btn-orange{
+	background-color: #f7901e;
+}
+
+
+
+div#social > section.first{
+	min-height: 610px;
+}
+
+
+div#social > section.second{
+	height: 404px;
+}
+
+div#social > section:first-of-type h1{
+	color: #F99100;
+	font-size: 36px;
+	padding: 0px 0px 14px 0px;
+}
+
+div#social > section h1{
+	padding: 0;
+}
+
+div#social > section h2{
+	font-size: 22px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+    color: #f7901e;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bmar-icon {
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/store/iconsStore.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bm-icon-chat {
+    background-position: 0px -144px;
+}
+
+.second li {
+    padding-left: 35px;
+    padding-top: 9px;
+    margin-left: 0;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #000;
+    min-height: 30px;
+    background-image: url(../img/store/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 0 .5em 2em;
+    list-style: none;
+}
+
+.maintabs .menu-mobile a{
+	padding: 0px;
+}
+
+#collapseOne .panel-body{
+	padding: 0px;
+}
+
+#collapseOne .col-xs-6{
+	padding: 0 !important;
+}
+
+#collapseOne a{
+	display: block;
+	padding: 10px;
+	background-color: #000;
+	color: #f7901e;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #eee;
+}
+
+#apps-desktop{
+	background: url(../img/featured_apps_header2.jpg) bottom left no-repeat !important;
+}
+.apps a{
+	text-decoration: none !important;
+}
+/*.market .tabs #apps section div.appsMarket2 {
+    background: url(../img/featured_apps_header2.jpg) bottom left no-repeat;
+    padding: 0 0 30px;
+    background-size: cover;
+    min-height: 210px;
+}*/
+
+/*.market .tabs #apps section div.col-sm-2-market {border-bottom:none;}*/
+
+.learnmore2 {
+    width: 210px;
+    font-size: 16px;
+    color: #fff!important;
+    text-decoration: none;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    -webkit-border-radius: 0 2px 2px 0;
+    -webkit-box-shadow: rgba(0,0,0,0.5) 2px 2px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.5) 2px 2px 3px;
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 3px;
+    position: absolute;
+    background: #f7901e;
+    background: -webkit-gradient(linear,0 0,0 bottom,from(#f7901e),to(#d1581c));
+    background: -webkit-linear-gradient(#f7901e,#d1581c);
+    background: -moz-linear-gradient(#f7901e,#d1581c);
+    background: -ms-linear-gradient(#f7901e,#d1581c);
+    background: -o-linear-gradient(#f7901e,#d1581c);
+    background: linear-gradient(#f7901e,#d1581c);
+    -pie-background: linear-gradient(#f7901e,#d1581c);
+    behavior: url(/_themes/libs/PIE.htc);
+}
+
+.learnmore2:hover {
+    background: #6fdbdb;
+    background: -webkit-gradient(linear,0 0,0 bottom,from(#6fdbdb),to(#57b5b0));
+    background: -webkit-linear-gradient(#6fdbdb,#57b5b0);
+    background: -moz-linear-gradient(#6fdbdb,#57b5b0);
+    background: -ms-linear-gradient(#6fdbdb,#57b5b0);
+    background: -o-linear-gradient(#6fdbdb,#57b5b0);
+    background: linear-gradient(#6fdbdb,#57b5b0);
+    -pie-background: linear-gradient(#6fdbdb,#57b5b0);
+    behavior: url(/_themes/libs/PIE.htc);
+	text-decoration: none !important;
+}
+
+/********** END OF STYLES OF BOOST MARKET *************/
+
+div.maintabs ul#desktop-menu{
+    /*background:rgba(0, 0, 0, 0) url("../img/img-bg-market.jpg") no-repeat scroll right bottom / cover;
+    min-height:308px;*/
+}
+
+div.marketheader{
+    background:rgba(0, 0, 0, 0) url("../img/img-bg-market.jpg") no-repeat scroll right bottom / cover;
+     
+}
+
+div.marketheader div.title-marketheader{
+   padding:30px 50% 20px 20px !important;
+   height: 240px;
+}
+
+@media (max-width: 767px){
+	div.marketheader div.title-marketheader{
+	   padding:30px 15px 20px 15px !important;
+	   height: 240px;
+	}
+}
+
+@media (max-width: 991px){
+	.main.container .maintabs .tab-content [class*="col-"]{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+}
+
+.ent_learnmore2 {
+    position: absolute !important;
+    right: 20px !important;
+    top: 30px !important;
+    width: auto !important;
+    left: auto !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    line-height: 40px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+	background: linear-gradient(#626161, #262626) !important;
+	font-family: BoostNeoBlack,Arial,Helvetica,sans-serif !important;
+}
+
+div.marketheader div.title-marketheader h1{
+    font-family: "Boost_bold",Helvetica,Arial,sans-serif !important;
+    color:#f7901e;
+    font-size: 40px;
+}
+
+
+div.marketheader div.title-marketheader h3{
+    font-family: "Boost_bold",Helvetica,Arial,sans-serif !important;
+    color: #FFF;
+}
+
+
+
+div.maintabs ul#desktop-menu.nav.nav-tabs.hidden-xs.hidden-sm li.tabmarket a{
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+    font-size: 17px;
+}
+
+
+h2.gray-arrow{
+    background: url(../img/store/gray_arrow.png) left 7px no-repeat;
+    padding: 0 0 0 17px!important;
+}
+
+
+
+#social section.first{
+    /*background: url(../img/plans/family-plans-bg-grey.png) no-repeat;*/ 
+        background-size: 100%;
+        background-position: center bottom;
+    
+}
+

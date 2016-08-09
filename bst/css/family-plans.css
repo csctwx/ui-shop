@@ -1,0 +1,292 @@
+/*family plans*/
+
+div.tab-content div#family-plans.tab-pane section:first-of-type {    
+    background: url(../img/plans/family-plans-bg.png) top left no-repeat;
+    height: 274px;
+    padding: 128px 352px 0 41px;
+    background-size:cover;
+    float: none;
+}
+
+
+div#family-plans h1.banner-family-plans{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-size: 31px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+section.big-family-promo{
+	padding: 30px !important;
+}
+
+section.big-family-promo > div{
+    background: #eee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #eee); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #eee); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #eee); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #eee); /* Standard syntax (must be last) */
+	border: 2px #eee solid;
+	padding: 10px 20px 15px 20px;
+}
+
+section.big-family-promo > div > h2{
+	text-transform: uppercase;
+	font-family: BoostNeoBlack,Arial,Helvetica,sans-serif !important;
+	color: #f99100 !important;
+}
+
+section.big-family-promo > div > h3{
+	color: #000 !important;
+	font-size: 20px !important;
+}
+
+section.big-family-promo > div > h3 p{
+	color: #000 !important;
+	font-size: 18px !important;
+	margin-top: 20px !important;
+}
+
+section.big-family-promo > div > a{color: #f99100 !important;text-decoration: underline !important;}
+
+div#family-plans p.banner-family-plans{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    padding:10px 120px 0 0;
+    line-height: 20px;
+}
+
+section.family-plans-content span.orange{
+    color: #e7781d;
+}
+
+section.family-plans-content{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-size: 21px!important;
+    line-height: 26px!important;
+    font-weight: 700!important;
+    padding: 0 30px!important;
+}
+
+section.family-plans-content h5{
+    font-family: Arial,Helvetica,sans-serif!important;
+    color:#333!important;
+    line-height: 16px!important;
+    font-size: 11px!important;
+    font-weight: 400!important;
+    
+}
+
+section.family-plans-grey{
+    background: url(../img/plans/family-plans-bg-grey.png) left bottom no-repeat;
+}
+
+section.family-plans-content p.sec-paragraph{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+section.family-plans-content ul{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-weight: 700;
+    font-size: 16px;
+    list-style-image: url("../img/bg-shop-bullet.png");
+    padding: 20px 0px 12px 50px;
+}
+
+section.family-plans-content h2{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-weight: 700;
+    font-size: 23px;
+    
+}
+
+section.family-plans-content h2.family-plans-option{
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    font-size: 18px;
+    color: #ffffff!important;
+    padding: 12px!important;
+    background:#000;
+}
+
+section.family-plans-content h2.family-plans-option span{
+    color: #f7901e;
+}
+
+section.family-plans-content ol{
+    color: #000;
+    font: 400 13px/15px Arial;
+    padding: 0 0 0 30px;
+    line-height: 18px;
+}
+
+
+section.family-plans-content span.family-faq{
+    clear: both;
+    font: 400 14px / 16px Arial;
+}
+section.family-plans-content ol li {
+    padding: 10px 10px;
+    text-indent: -40px;
+    counter-increment: step-counter;
+    list-style: none;
+}
+
+section.family-plans-content ol li::before {
+    background-color: #f7901e;
+    border-radius: 50%;
+    clear: both;
+    color: #ffffff;
+    content: counter(step-counter, decimal);
+    font-weight: bold;
+    margin: 0 15px 0 0;
+    padding: 5px 9px;
+}
+
+span.option2{
+    font-size: 11px!important;
+    font-family: Arial!important;
+    color: #e7781d;
+    font-weight: 400!important;
+}
+
+
+/**************************************/
+/*************Family Promo*************/
+
+div.promo-features{
+	width: 100%;
+}
+div.promo-features div.left, div.promo-features div.right{
+	width: 50%; 
+	height: 550px;
+	position: relative;
+	padding: 0 30px;
+	float: left;
+	background: #eee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #eee); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #eee); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #eee); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #eee); /* Standard syntax (must be last) */
+	border-bottom: 2px solid #ddd;
+}
+
+div.promo-features div.left{border-right: 1px solid #ddd; text-align: center;}
+div.promo-features div img{
+	width: 100%;
+}
+div.promo-features div.right{border-left: 1px solid #ddd;}
+
+div.promo-features > div > h2{
+	font-size: 20px;
+    font-family: Boost_black !important;
+	text-align: center;
+	color: #f99100 !important;
+	padding-top: 20px;
+}
+
+div.promo-features a.compareBtn{
+    padding: 7px 0px;
+    color: #fff;
+	font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    background-color: #000;
+    width: 130px;
+    position: absolute;
+    left: -65px;
+    bottom: 50px;
+    margin-left: 50%;
+    text-align: center;
+    height: 40px;
+    font-size: 16px;
+}
+
+div.bottom-box a.storeBtn{
+	padding: 7px 0px;
+    color: #fff;
+	font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+    background-color: #000;
+    width: 130px;
+	text-align: center;
+    position: absolute;
+	right: 40px;
+	top: 35%;
+    height: 40px;
+    font-size: 16px;
+}
+
+div.bottom-box a.storeBtn:hover,div.promo-features a.compareBtn:hover{text-decoration: none;background-color: #111;}
+
+div.bottom-box{
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	padding: 30px 40px;
+}
+
+div.bottom-box h2{
+	color: #f99100 !important;
+    font-family: Boost_black !important;
+	margin-bottom: 0px !important;
+}
+
+div.bottom-box p{font-size: 17px;font-family: Boost_black;}
+div.bottom-box p a{
+	color:#f99100 !important;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+@media (max-width: 767px){
+	div.bottom-box {
+		text-align: center;
+		height: 250px;
+		padding: 30px 10px !important;
+		background: #eee; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(#fff, #eee); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#fff, #eee); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#fff, #eee); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#fff, #eee); /* Standard syntax (must be last) */
+		border-bottom: 2px solid #ddd;
+	}
+	div.bottom-box h2{font-size: 20px !important;}
+	div.bottom-box a.storeBtn{
+		padding: 7px 0px;
+		color: #fff;
+		font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+		background-color: #000;
+		width: 130px;
+		position: absolute;
+		left: -65px;
+		bottom: 50px;
+		top: auto;
+		margin-left: 50%;
+		text-align: center;
+		height: 40px;
+		font-size: 16px;
+	}
+
+	div.promo-features div.left, div.promo-features div.right{
+		width: 100%;
+		text-align: center;
+		padding: 0px;
+	}
+	img#two-lines{
+		max-width: 435px;
+	}
+	img#family-plan{
+		max-width: 420px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 438px){
+	img.d-banner{
+		display: none !important;
+	}
+	img.m-banner{
+		display: block !important;
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "fc3cfaa2-1f79-40a8-81ad-d981eaba9d83",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"deviceDetailsResponse": {
+				"deviceDetails": {
+					"deviceDetail": {
+            "name": {
+                "$": "Fuse Mobile Hotspot"
+            },
+            "externalUrl": {
+                "$": "netgear-fuse-mobile-hotspot"
+            },
+            "manufacturerName": {
+                "$": "NETGEAR"
+            },
+            "deviceType": {
+                "$": "mbb"
+            },
+            "sku": {
+                "$": "NTGR779ABB"
+            },
+            "price": {
+                "$": "49.99"
+            },
+            "inventory": {
+                "$": "in-stock"
+            },
+            "purchaseLimit": {
+                "$": "0"
+            },
+            "checkoutImage": {
+              "fileName": {
+                "$": "cart"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/c\/b\/cart.png?action=access&assetId=A-LjFleJYfxQ2"
+              }
+            }
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

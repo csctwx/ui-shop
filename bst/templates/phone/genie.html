@@ -1,0 +1,85 @@
+<section class="featuredPhones" ng-init="phoneController.genie.loadGenieList()">
+  <div class="col-sm-2 hidden-xs">
+    <div class="dropdown">
+      <select class="btn-default sortby" ng-model="phoneController.genie.filtered" ng-change="phoneController.genie.getFilterPages()" style="width: 180px">
+        <option value="featured" selected>Featured Phones</option>
+        <option value="newArrivals">New Arrivals ({{phoneController.genie.filterMap['newArrivals'].data.length}})</option>
+        <option value="topRate">Top Rated ({{phoneController.genie.filterMap['topRate'].data.length}})</option>
+        <option value="preowned">Certified Pre-owned ({{phoneController.genie.filterMap['preowned'].data.length}})</option>
+        <option value="bestSell">Best Sellers ({{phoneController.genie.filterMap['bestSell'].data.length}})</option>
+      </select>
+    </div>
+    <p><b>Phones from flip to 4G LTE</b></p><p>We have the phones to fit your needs and budget.</p>
+  </div>
+  <!--  ng-if="phoneController.genie.pages.length" -->
+  <div class="col-xs-12 col-sm-10 genie-inner">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div ng-repeat="page in phoneController.genie.pages" class="item {{$index==0?'active':''}}">
+          <div class="col-xs-4 phoneEntry" ng-repeat="item in page">
+            <a ng-click="phoneController.genie.setCurItem(item, $event)" ng-mouseleave="appUtil.ui.closePopTip('#curGenie', $event)" >
+              <div class="col-xs-6">
+                 <img class="img-responsive" alt="{{item.brand}} {{item.name}} - {{appDisplayName}}" ng-src="{{item.genieImage}}" ></img>
+              </div>             
+              <div class="col-xs-6 phoneEntryInfo">
+                <p class="phoneBrand">{{item.displayBrand}}{{"Boost"==item.displayBrand ? "®":""}}</p>
+                <p class="phoneName">{{item.name}}</p>
+                <p class="phoneRating"><span class="{{phoneController.getRateStarClass(item.rate)}}">&nbsp;</span></p>
+                <span class="price">
+                <p class="phonePromoDiscount" ng-if="item.selectedVariant.discount"><sup>$</sup>{{item.selectedVariant.discount|currency:""}}</p>
+                <p class="phoneFinalPrice">
+                  <span class="phonePriceOld" ng-show="item.selectedVariant.msrp && item.minMSRP == item.maxMSRP">{{item.selectedVariant.msrp|currency:""}}<br/></span>
+                  <span class="phonePriceOld" ng-show="item.minMSRP > -1 && item.minMSRP != item.maxMSRP">
+                    <sup>$</sup>{{item.minMSRP}}-<sup>$</sup>{{item.maxMSRP}}
+                  </span>
+                  <span ng-if="!item.selectedVariant.hiddenPrice">
+                    <span ng-if="item.selectedVariant.minPrice != item.selectedVariant.maxPrice">
+                      <sup>$</sup>{{item.selectedVariant.minPrice}}-<sup>$</sup>{{item.selectedVariant.maxPrice}}
+                    </span>
+                    <span ng-if="item.selectedVariant.minPrice == item.selectedVariant.maxPrice">
+                    <sup>$</sup>{{item.selectedVariant.price}}
+                    </span>                    
+                  </span>   
+                  <span ng-if="item.selectedVariant.hiddenPrice">See price in cart</span>     
+                </p>                
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a ng-if="phoneController.genie.pages.length>1" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a ng-if="phoneController.genie.pages.length>1" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="qtip-content" aria-atomic="true" style="position:absolute;display:none" id="curGenie" ng-mouseleave="phoneController.genie.closePopTip($event)">
+    <div class="genie3-modal" id="modal-LGLS665ABB" style="display: block; visibility: visible;"> 
+      <div class="genie3-modal-top">
+        <a ng-click="appUtil.ui.closePopTip('#curGenie', $event)"  class="qtip-close qtip-icon" title="Close tooltip" aria-label="Close tooltip" role="button"><span class="ui-icon ui-icon-close">×</span></a> 
+        <!-- <div class="genie3-modal-image"> <img ng-src="{{phoneController.genie.curItem.selectedVariant.gridImage}}" alt="{{item.brand}} {{item.name}} - {{appDisplayName}}"></div>  -->
+        <div class="genie3-modal-image"> <img ng-src="{{phoneController.genie.curItem.genieDetailImage}}" alt="{{item.brand}} {{item.name}} - {{appDisplayName}}"></div> 
+        <div class="genie3-modal-content"> 
+          <h2> <span class="bn-bk">{{phoneController.genie.curItem.displayBrand}}{{"Boost"==phoneController.genie.curItem.displayBrand ? "®":""}}</span>&nbsp; {{phoneController.genie.curItem.name}}</h2> 
+          <p class="genie3-modal-cpo">{{'preowned' == phoneController.genie.curItem.curFeatures.phoneCondition ? 'Certified Pre-owned' : ''}}</p>
+          <ul> 
+            <li ng-if="phoneController.genie.curItem.curFeatures.os" class=" genie3-modal-icon1 {{phoneController.genie.curItem.curFeatures.class}}" ng-bind-html="phoneController.genie.curItem.curFeatures.os | unsafe"></li> 
+            <li ng-if="phoneController.genie.curItem.curFeatures.display" class="genie3-modal-icon2" ng-bind-html="phoneController.genie.curItem.curFeatures.display | unsafe"></li> 
+            <li ng-if="phoneController.genie.curItem.curFeatures.camera" class="genie3-modal-icon3" ng-bind-html="phoneController.genie.curItem.curFeatures.camera | unsafe"></li> 
+            <li ng-if="phoneController.genie.curItem.curFeatures.g4" class="genie3-modal-icon4" ng-bind-html="phoneController.genie.curItem.curFeatures.g4 | unsafe"></li> 
+          </ul> 
+          <a class="learnmore bn-b" ng-href="{{pathMap._phoneDetails._hash}}{{phoneController.genie.curItem.id}}/features/" data-phone="{{phoneController.genie.curItem.id}}">Learn More</a> 
+        </div> 
+        <div style="clear:both;"></div> 
+      </div> 
+      <div class="genie3-modal-bottom" ng-if="phoneController.genie.curItem.genieBanner">
+        <a ng-href="{{pathMap._phoneDetails._hash}}{{phoneController.genie.curItem.id}}/features/" class="genie3-promo"><img ng-src="{{phoneController.genie.curItem.genieBanner}}"></img></a>
+      </div>
+      <div style="clear:both;"></div> 
+    </div>
+  </div>
+</section>

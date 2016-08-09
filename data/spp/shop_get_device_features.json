@@ -1,0 +1,89 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "a5a9ebf9-fad5-4f32-b855-f72c4e844d8d",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"deviceFeatureResponse": {
+				"deviceFeature": {
+					"generalFeatures": [{
+						"title": {
+							"$": " 4G LTE\/Enhanced LTE<sup>†<\/sup>"
+						},
+						"description": {
+							"$": " Enjoy super-fast mobile broadband service on Sprint's nationwide 4G LTE network and the all-new Enhanced LTE network, where available. <a href=\"#!\/coveragemap\/\">Check coverage<\/a>. "
+						},
+						"type": {
+							"$": "world"
+						}
+					},
+					{
+						"title": {
+							"$": " Connect up to 10 Wi-Fi Devices "
+						},
+						"description": {
+							"$": " Laptops, tablets, gaming consoles, cameras and more. Share Wi-Fi with up to 10 of your wireless devices at the same time. No need to play favorites. "
+						},
+						"type": {
+							"$": "hotspot"
+						}
+					},
+					{
+						"title": {
+							"$": " 1.77\" Color LCD Display "
+						},
+						"description": {
+							"$": " Always know what's up with your Wi-Fi. Check your usage and connection status with just a glance, whenever you want. "
+						},
+						"type": {
+							"$": "display"
+						}
+					},
+					{
+						"title": {
+							"$": " Secured with Password Protection "
+						},
+						"description": {
+							"$": " Keep would-be data-moochers at bay with password protection. Share data only with the people you want. "
+						},
+						"type": {
+							"$": "easy-parental-controls"
+						}
+					},
+					{
+						"title": {
+							"$": " 10 Hour Battery Life (2500 mAh) "
+						},
+						"description": {
+							"$": " Get up to 10 hours of data download time from this long-lasting lithium-ion battery.††  "
+						},
+						"type": {
+							"$": "battery"
+						}
+					}],
+					"technicalFeatures": {
+						"os": {
+							"$": "Linux variant"
+						},
+						"processor": {
+							"$": "1.2GHz Processor"
+						},
+						"memory": {
+							"$": "1GB RAM\/2GB ROM"
+						},
+						"group": [{
+							"@id": "dimensions",
+							"order": {
+								"$": "1"
+							},
+							"specs": {
+								"spec": [{
+									"@order": "1",
+									"@type": "height",
+									"$": "2.68\""},{"@order":"2","@type":"depth","$":"0.60\""
+								},
+								{
+									"@order": "3",
+									"@type": "width",
+									"$": "4.42\""},{"@order":"4","@type":"weight","$":"4.66oz"}]}},{"@id":"battery","order":{"$":"2"},"specs":{"spec":[{"@order":"1","@type":"battery_type","$":"2500mAHLithiumPolymerBattery"},{"@order":"2","@type":"talking_time","$":"10hours<sup>&dagger;&dagger;<\/sup>"},{"@order":"3","@type":"removable","$":"Yes"}]}}]},"specificationImage":{"fileName":{"$":"specifications"},"uRI":{"$":"http: \/\/media-vip: 8081\/repository\/store\/P-d0avx1PuX34\/c\/a\/b\/specifications.png?action=access&assetId=A-LjFleJYfxQ2"}}},"status":{"$":"0"},"description":{"$":"SUCCESS"}}}]}}

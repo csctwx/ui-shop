@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/primary-rest/shop_phone_get_genie?brandId=SPP"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "sprint/shop_phone_get_genie.json"
+    }
+}

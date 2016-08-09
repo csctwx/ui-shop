@@ -1,0 +1,85 @@
+<section>
+	<div class="container main orderstatus">
+		<section class="checkout">
+			<div class="col-xs-12 col-md-8" ng-show="!checkoutController.orderStatus.valid">
+				<h2 ng-if="appName!='vmu'" class="orange">Order Information</h2>
+        		<h1 ng-if="appName=='vmu'" class="orange">Order Information</h1>
+				<section>
+					<div class="col-xs-12">
+            <form name="orderStatusForm" class="form-group form-group-sm">
+
+						<h4>Want a status update on your order? Just enter your information below and we'll find it for you.</h4>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label required" for="email">Email Address</label>
+							<div class="col-xs-12 col-sm-6">
+
+                <input class="form-control" type="email" id="email" name="email" ng-model="checkoutController.orderStatus.email"
+                  ng-change="checkoutController.changeStatus.orderStatus.email.changed=true" 
+                  ng-focus="checkoutController.changeStatus.orderStatus.email.check=false" 
+                  ng-blur="checkoutController.changeStatus.orderStatus.email.check=true" 
+                  placeholder="johnsmith@gmail.com" required="required"/>
+                <div ng-show="checkoutController.changeStatus.orderStatus.email.check &&
+                              orderStatusForm.email.$error.required" class="errorMessage">* Email is required</div>
+                <div ng-show="checkoutController.changeStatus.orderStatus.email.check &&
+                              orderStatusForm.email.$error.email" class="errorMessage">* Email format is not invalid (ex. xxx@xxx)</div>
+
+							</div>
+							<label class="col-sm-2 control-label required" for="orderNumber">Order Number</label>
+							<div class="col-xs-12 col-sm-6">
+
+                <input class="form-control" type="text" id="orderNumber" name="orderNumber" ng-model="checkoutController.orderStatus.orderNumber"
+                  ng-change="checkoutController.changeStatus.orderStatus.orderNumber.changed=true" 
+                  ng-focus="checkoutController.changeStatus.orderStatus.orderNumber.check=false" 
+                  ng-blur="checkoutController.changeStatus.orderStatus.orderNumber.check=true" 
+                  placeholder="xx-xxx-xxxxxxxxx" required/>
+
+                <div ng-show="checkoutController.changeStatus.orderStatus.orderNumber.check &&
+                              orderStatusForm.orderNumber.$error.required" class="errorMessage">* Order number is required</div>
+
+							</div>
+						</div>
+						<a class="btn btn-primary" ng-disabled="orderStatusForm.$invalid" ng-click="checkoutController.getOrderStatus()">Submit</a>
+            </form>
+					</div>
+          <div class="alert" role="alert" ng-show="checkoutController.orderStatus.errorText!=null">
+            <h4>Opps.  The following errors have occurred:</h4>
+            <p class="errorText">{{checkoutController.orderStatus.errorText}}</p>
+          </div>
+				</section>
+			</div>
+			<div class="col-xs-12 col-md-8" ng-show="checkoutController.orderStatus.valid">
+				<h2 class="orange">Order Status</h2>
+				<section>
+					<div class="col-xs-12">
+            <table>
+              <tr><td>Order Date:</td><td>{{checkoutController.orderStatus.date}}</td></tr>
+              <tr><td>Order Number:</td><td>{{checkoutController.orderStatus.orderNumber}}</td></tr>
+              <tr><td>Order Total:</td><td>{{checkoutController.orderStatus.total | currency}}</td></tr>
+              <tr><td>Order Status:</td><td>{{checkoutController.orderStatus.status}}</td></tr>
+              <tr><td>Items Ordered:</td><td><span ng-repeat="item in checkoutController.orderStatus.itemsOrdered">{{item.itemDesc}} ({{item.quantity}})</span></td></tr>
+              <tr><td>Ship To:</td><td>{{checkoutController.orderStatus.address}}</td></tr>
+            </table>
+						<a class="btn btn-default pull-right" ng-click="checkoutController.clearOrderStatus()">Check Another Order</a>
+					</div>
+				</section>
+			</div>
+			<div class="col-md-4">
+				<section>
+					<h3>Did you order over the phone?</h3>
+					<a href="http://www.simplyorderstatus.com/">Check your order status here.</a>
+				</section>
+				<section>
+					<h3>Get familiar with your phone while you wait</h3>
+					<p ng-show="appName=='bst'">Check out these <a href="http://www.boostmobile.com/support/device-support/">helpful resources</a></p>
+					<p ng-show="appName=='vmu'">Check out these <a href="http://devicehelp.virginmobileusa.com/find_phone">helpful resources</a></p>
+				</section>
+				<section>
+					<h3>And remember...</h3>
+					<p ng-show="appName=='bst'">The first thing you need to do when your phone arrives is <a href="https://activate.boostmobile.com/activate/">activate it</a>.</p>
+					<p ng-show="appName=='vmu'">The first thing you need to do when your phone arrives is <a href="https://activate.virginmobileusa.com/activate/overview.jsp">activate it</a>.</p>
+					<p>Don't worry, It will only take a few minutes.</p>
+				</section>
+			</div>
+		</section>
+	</div>	
+</section>

@@ -1,0 +1,192 @@
+{
+  "responses": {
+    "response": [
+      {
+        "@uuid": "fc3cfaa2-1f79-40a8-81ad-d981eaba9d83",
+        "@class": "",
+        "@name": "Section 19029",
+        "@code": "0",
+        "deviceDetailsResponse": {
+          "deviceDetails": {
+            "deviceDetail": {
+              "isRedVentures": {
+                "$": "true"
+              },
+              "disclaimerFull": {
+                "$": "Promotional pricing available only for select phones directly from boostmobile.com. Limited time only, while supplies last. Android&trade; is a trademark of Google, Inc."
+              },
+              "ReviewStatistics": {
+                "TotalReviewCount": {
+                  "$": "32"
+                },
+                "AverageOverallRating": {
+                  "$": "4.75"
+                },
+                "OverallRatingRange": {
+                  "$": "5"
+                }
+              },
+              "sku": {
+                "$": "LGLS990ABB"
+              },
+              "meta": {},
+              "promotions": {
+                "promotion": {
+                  "message": {
+                    "title": {
+                      "$": "FREE SHIPPING.  All the time."
+                    },
+                    "body": {
+                      "$": "Get a $50 account credit when you switch to Boost Mobile."
+                    }
+                  },
+                  "isDefault": {
+                    "$": "false"
+                  },
+                  "webOnly": {
+                    "$": "false"
+                  },
+                  "legal": {
+                    "$": "<a href=\"#!/accountcredit/\">Learn more about the $50 credit</a>"
+                  },
+                  "checkoutText": {
+                    "$": "with FREE Case"
+                  },
+                  "dailyPlan": {
+                    "$": "dailyplan"
+                  },
+                  "monthlyPlan": {
+                    "$": "monthlyplan"
+                  }
+                }
+              },
+              "phoneCondition": {
+                "$": "new"
+              },
+              "name": {
+                "$": "LG G3"
+              },
+              "deviceType": {
+                "$": "phone"
+              },
+              "id": {
+                "$": "lg-g3"
+              },
+              "brand": {
+                "$": "LG"
+              },
+              "price": {
+                "$": "329.99"
+              },
+              "deviceViewImages": {
+                "deviceViewImage": [
+                  {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/i/b/A-_LHleJYfxQ2_phoneDetails_1_hero.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "left"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/f/j/A-_LHleJYfxQ2_phoneDetails_5_left.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "front"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/c/c/A-_LHleJYfxQ2_phoneDetails_3_front.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "right"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/f/f/A-_LHleJYfxQ2_phoneDetails_2_right.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "side"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/j/a/A-_LHleJYfxQ2_phoneDetails_6_side.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "back"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/b/j/i/A-_LHleJYfxQ2_phoneDetails_4_back.png?action=access&assetId=A-49u3PtXBVEY"
+
+                    }
+                  }
+                ]
+              },
+              "checkoutImage": {
+                "fileName": {
+                  "$": "shop"
+                },
+                "uRI": {
+                  "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/i/g/A-_LHleJYfxQ2_shopGrid_1_shop.png?action=access&assetId=A-49u3PtXBVEY"
+                }
+              },
+              "inventory": {
+                "$": "in-stock"
+              },
+              "ibEligibilityInd": {
+                "$": "true"
+              },
+              "ibEmi": {
+                "$": "19.17"
+              },
+              "loanTerm": {
+                "$": "12"
+              },
+              "loanAmount": {
+                "$": "229.0"
+              },
+              "downPaymentAmount": {
+                "$": "100.0"
+              },
+              "lastInstallmentAmount": {
+                "$": "5.00"
+              }               
+            }
+          },
+          "status": {
+            "$": "0"
+          },
+          "description": {
+            "$": "SUCCESS"
+          },
+          "userIbEligibilityInd": {
+            "$": "true"
+          },
+          "lastInstallmentDueDate": {
+            "$": "2017-04-04T00:00:00-05:00"
+          },
+          "mdn": {
+            "$": "2695998576"
+          },
+         "subscriberId": {
+            "$": "123456"
+          },
+          "ibTokenValid": {
+            "$": "true"
+
+          }
+
+        }
+      }
+    ]
+  }
+}

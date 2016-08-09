@@ -1,0 +1,157 @@
+{
+    "responses": {
+        "response": [
+            {
+                "@uuid": "dd7f1d5e-c081-43a9-8b0d-47c35b5a462b",
+                "@class": "header",
+                "@name": "section_top",
+                "@position": "layout_full",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-GFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "Shop Plans Page Top Banner"
+                        },
+                        "url": {
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/a/d/promo-full-03.gif?action=access&assetId=A-GFh6XVKM1TW"
+                        },
+                        "title": {
+                        },
+                        "description": {
+                        },
+                        "linkText": {
+                        },
+                        "alt": {
+                            "$": "Sprint Prepaid Rate Plans"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            },
+            {
+                "@uuid": "7da3c29e-c842-43f2-aecb-ef1b0e857012",
+                "@class": "banner_middle",
+                "@name": "section_middle",
+                "@position": "layout_left",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-EFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "NationWide LTE Banner"
+                        },
+                        "url": {
+                            "$": "javascript:$('#coverageMapLink').click()"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/h/c/signal.png?action=access&assetId=A-EFh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "Nationwide 4G LTE network"
+                        },
+                        "description": {
+                            "$": "High Definition Voice, fast data speeds and better coverage than ever before. All on the Nationwide Sprint® Network."
+                        },
+                        "linkText": {
+                            "$": "Check coverage"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            },
+            {
+                "@uuid": "1b92578d-353e-4883-9bed-40d86dcdbe48",
+                "@class": "banner_middle",
+                "@name": "section_middle",
+                "@position": "layout_right",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-HFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "International Rates Banner"
+                        },
+                        "url": {
+                            "$": "#!/plans/additionalservices/internationalrates"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/e/i/map-large.png?action=access&assetId=A-HFh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "International talk & text for less"
+                        },
+                        "description": {
+                            "$": "Our affordable international rates let you stay in touch with friends and family around the world. No calling cards required."
+                        },
+                        "linkText": {
+                            "$": "See rates"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            },
+            {
+                "@uuid": "ae1c4876-f85c-436c-9a3a-19c983aab748",
+                "@class": "multiple_banner",
+                "@name": "section_bottom",
+                "@position": "layout_bottom",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-IFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "Free Mobile Hotspot Banner"
+                        },
+                        "url": {
+                            "$": "#!/plans/additionalservices/mobilehotspot"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/e/b/img-hotspot.png?action=access&assetId=A-IFh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "Free mobile hotspot included"
+                        },
+                        "description": {
+                            "$": "Now available on select devices. Use your phone to stay connected on the go with a tablet, a laptop or any other Wi-Fi connected device."
+                        },
+                        "linkText": {
+                            "$": "Learn more"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            }
+        ]
+    }
+}

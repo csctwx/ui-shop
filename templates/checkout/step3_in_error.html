@@ -1,0 +1,32 @@
+<section class="checkout">
+  <div class="col-xs-12 col-md-8">
+    <div class="alert" role="alert">
+      <h2>{{checkoutController.data.errorText}}</h2>
+      <p ng-if="appName=='bst'">Boost Mobile reserves the right to cancel/extend offers without notice. Offers may not be available in all markets. Other conditions may apply. Read service agreement for details. Nationwide Boost Mobile Network reaches over 282 million people. The Boost Mobile 3G Network (including roaming) reaches over 278 million people. You may return your undamaged device within 7 days of activation to your original place of purchase (with your receipt) and request that we deactivate services.</p>
+      <p ng-if="appName=='spp'">Sprint reserves the right to cancel/extend offers without notice. Offers may not be available in all markets. Other conditions may apply. Read service agreement for details. Nationwide Sprint Network reaches over 282 million people. The Sprint 3G Network (including roaming) reaches over 278 million people. You may return your undamaged device within 7 days of activation to your original place of purchase (with your receipt) and request that we deactivate services.</p>
+      <p ng-if="appName=='vmu'">Virgin Mobile reserves the right to cancel/extend offers without notice. Offers may not be available in all markets. Other conditions may apply. Read service agreement for details. Nationwide Virgin Mobile Network reaches over 282 million people. The Virgin Mobile 3G Network (including roaming) reaches over 278 million people. You may return your undamaged device within 7 days of activation to your original place of purchase (with your receipt) and request that we deactivate services.</p>
+    </div>
+    <section class="billingInfo">
+      <div class="col-xs-12">
+        <a href="{{pathMap._checkout._hash}}" ng-click="checkoutController.restartCheckout()">Please revisit the previous Shipping and Billing pages.</a>
+      </div>
+    </section>
+  </div>
+  <div class="hidden-xs hidden-sm col-md-4">
+    <section class="entrust">
+      <h3>Secure Credit Card Payment</h3>
+      <div>
+        <img ng-src="{{appName}}/img/entrust.png">
+      </div>
+    </section>
+    <section>
+      <div class="orderbyphone">
+        <h3>Order by Phone</h3>
+        <p>Need help choosing a phone or a plan? Just give us a call.</p>
+        <h3 class="phonenumber" ng-if="appName=='bst'">1-877-602-4907</h3>
+        <h3 class="phonenumber" ng-if="appName=='spp'">1-866-866-7509</h3>
+        <h3 class="phonenumber" ng-if="appName=='vmu'">1-888-322-1122</h3>
+      </div>
+    </section>
+  </div>
+</section>

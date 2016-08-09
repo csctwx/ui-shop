@@ -1,0 +1,15 @@
+section.promo-bg {
+  background-image: url(img/phone-detail-background.png) !important;
+}
+
+section.promo-bg .btn-primary{
+  background-color:blue;
+}
+
+section.promo-bg .onSale:before {
+  background-image: url('img/tags-phone-pages-green.png');
+}
+
+div.promo-bg.onSale:before {
+  background-image: url('img/tags-phone-pages-green.png');
+}

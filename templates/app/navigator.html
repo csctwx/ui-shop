@@ -1,0 +1,41 @@
+<div ng-hide="appName=='bst' && app.isCurrentContext(pathMap._checkout._formatedHash)">
+<ol class="breadcrumb hidden-xs" ng-show="!app.isCurrentContext(pathMap._home._formatedHash) && !app.isCurrentContext(pathMap._bestbuy._formatedHash) && !pageController.pagePath">
+  <li ng-repeat="item in pathMap._getCurPath()" ng-if="$index!=pathMap._getCurPath().length-1 && item._title">
+    <a  ng-if="item._title!='Wi-Fi Hotspots' && item._title!='Broadband2Go Devices'" ng-href="{{item._hash == '#!/support/' || item._hash == '#!/support/faqs/' ? 'http://support.sprint.com/support?INTNAV=Nav:Support' : item._hash}}">{{item._title}}</a>
+    <a  ng-if="item._title=='Wi-Fi Hotspots' " ng-href="{{item._hash}}">{{item._title}}</a>
+    <a  ng-if="item._title=='Broadband2Go Devices' && appName=='vmu'">{{item._title}}</a>
+  </li>
+  <li class="active">{{pathMap._getCurPath()[pathMap._getCurPath().length-1]._title}}{{pathMap._getCurPath()[pathMap._getCurPath().length-1]._extendTitle}}</li>
+	<div class="topControls" ng-if="appName=='vmu'">
+		<a href="#" class="print">Print</a>
+	    <div class="addthis_toolbox addthis_default_style social">
+	        <a class="addthis_button_google"></a>
+	        <a class="addthis_button_facebook"></a>
+	        <a class="addthis_button_twitter"></a>
+	        <a class="addthis_button_pinterest_share"></a>
+	        <a class="addthis_button_email"></a>
+	        <a class="addthis_button_linkedin"></a>
+	        <a class="addthis_button_compact"></a>
+	        <a class="addthis_counter addthis_bubble_style"></a>
+		</div>
+		<script type="text/javascript">
+			//Print Links
+			jQuery('a.print').on('click', function(evt) 
+			{
+				evt.preventDefault();
+				window.print();
+			});
+		</script>
+	</div>  
+</ol>
+<ol class="breadcrumb hidden-xs" ng-if="pageController.pagePath" ng-bind-html="appUtil.ui.trustAsHtml(pageController.pagePath.innerHTML)"></ol>
+<ul id="social_strip" ng-if="appName=='bst' && !app.isCurrentContext(pathMap._home._formatedHash)"> 
+  <li id="label">Share</li> 
+  <li id="social_strip-fb"><a href="http://www.facebook.com/sharer.php?u=" onclick=   "javascript:window.open(this.href+encodeURIComponent(window.location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Facebook</a>
+  </li> 
+  <li id="social_strip-tw"><a href="https://twitter.com/share?url=" onclick="javascript:window.open(this.href+encodeURIComponent(window.location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Twitter</a></li>
+  <li id="social_strip-gp"><a href="https://plus.google.com/share?url=" onclick="javascript:window.open(this.href+encodeURIComponent(window.location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google+</a></li> 
+  <li id="social_strip-pt"><a href="http://pinterest.com/pin/create/button/?url=" onclick="javascript:window.open(this.href+encodeURIComponent(window.location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Pinterest</a></li> 
+</ul>
+
+</div>

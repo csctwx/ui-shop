@@ -1,0 +1,131 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "fc3cfaa2-1f79-40a8-81ad-d981eaba9d83",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"deviceDetailsResponse": {
+				"deviceDetails": {
+					"deviceDetail": {
+            "deviceType": {
+              "$": "phone"
+            },
+						"phoneName": {
+							"$": "Apple® iPhone® 6s"
+						},
+						"externalUrl": {
+							"$": "apple-iphone-6s"
+						},
+						"manufacturerName": {
+							"$": "Apple®"
+						},
+            "sku": {
+              "$": "IPH6SBT16GLD"
+            },
+            "memoryVariant": {
+              "$": "16GB"
+            },
+            "colorVariant": {
+              "$": "gold"
+            },
+            "price": {
+              "$": "19.00"
+            },
+            "inventory": {
+              "$": "in-stock"
+            },
+            "isDefault": {
+              "$": "false"
+            },
+            "shopGridPicture": {
+              "fileName": {
+                "$": "shop-rosegold"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/b\/f\/d\/shop-rosegold.png?action=access&assetId=A-KQFleJYfxQ2"
+              }
+            },
+            "purchaseLimit": {
+              "$": "2"
+            },
+						"promotions": {
+							"promotion": {
+								"message": {
+									"title": {
+										"$": "Switch and Save."
+									},
+									"body": {
+										"$": "Get a $50 account credit when you switch to Boost Mobile."
+									},
+									"toolTip": {
+										"$": "<a href=\"\/accountcredit\/\">Learn more about the $50 credit<\/a>"
+									},
+									"offer": {
+										"$": "$50 Account Credit"
+									}
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"webOnly": {
+									"$": "false"
+								},
+								"legal": {
+									"$": "Offer valid from 10\/20\/15 – 1\/3\/16 only <br> Limited to new monthly accounts switching from non-Sprint related carriers on boostmobile.com. Savings applied with new device purchase, while supplies last. Devices purchased from boostmobile.com must be activated by 1\/24\/2016 to receive account credit. Cannot be exchanged, redeemed for cash, merchandise or services. Excludes sales tax. Services subject to additional terms and other restrictions. See boostmobile.com\/accountcredit for details. ©2015 Boost Worldwide, Inc. All rights reserved."
+								},
+								"dailyPlan": {
+									"$": "dailyplan"
+								},
+								"monthlyPlan": {
+									"$": "monthlyplan"
+								},
+								"dealLabel": {
+									"$": "Switch and Save"
+								},
+                "checkoutText": {
+                  "$": "with free earbuds included"
+                },
+								"banners": {
+									"assetId": {
+										"$": "A-9-IleJYfxQ2"
+									},
+									"name": {
+										"$": "Promotion-Gift For Purchase"
+									},
+									"url": {
+										"$": "http:\/\/www.boostmobile.com\/accountcredit\/?icamp=INTC_giftWithPurchase_DealsPage_Banner"
+									},
+									"imageUrl": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/e\/h\/g\/switchsavepic.jpg?action=access&assetId=A-9-IleJYfxQ2"
+									},
+									"title": {
+										
+									},
+									"description": {
+										
+									},
+									"linkText": {
+										
+									},
+									"alt": {
+										
+									}
+								}
+							}
+						},
+						"phoneCondition": {
+							"$": "new"
+						}
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

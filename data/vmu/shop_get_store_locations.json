@@ -1,0 +1,2475 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "8a1d4317-d2c6-45cd-a4ef-28858e4134d7",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"storeLocatorSearchResult": {
+				"zipCode": {
+					"$": "49001"
+				},
+				"city": {
+					"$": "Kalamazoo"
+				},
+				"state": {
+					"$": "MI"
+				},
+				"featuredStores": {
+					"featuredStore": [{
+						"id": {
+							"$": "0018000000eYjtFAAS"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.277428"
+						},
+						"lng": {
+							"$": "-85.570201"
+						},
+						"addressLine": {
+							"$": "1408 Portage st."
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49001"
+						},
+						"phoneNumber": {
+							"$": "(269) 381-9610"
+						},
+						"distance": {
+							"$": "0.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000xpZFDAA2"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless - Riverview"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.297236"
+						},
+						"lng": {
+							"$": "-85.568481"
+						},
+						"addressLine": {
+							"$": "524 Riverview"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49048"
+						},
+						"phoneNumber": {
+							"$": "(269) 459-1651"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001IfbK4AAJ"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Wireless Experts Inc"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.29859"
+						},
+						"lng": {
+							"$": "-85.589674"
+						},
+						"addressLine": {
+							"$": "782 N Westnedge Ave"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49007"
+						},
+						"phoneNumber": {
+							"$": "(269) 220-5171"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000mKhQnAAK"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless - Westnedge"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.253395"
+						},
+						"lng": {
+							"$": "-85.58945"
+						},
+						"addressLine": {
+							"$": "3827 South Westnedge"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49008"
+						},
+						"phoneNumber": {
+							"$": "(269) 903-2522"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001IevPJAAZ"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.305713"
+						},
+						"lng": {
+							"$": "-85.648301"
+						},
+						"addressLine": {
+							"$": "1381 Drake Rd Ste F"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49006"
+						},
+						"phoneNumber": {
+							"$": "(269) 459-9885"
+						},
+						"distance": {
+							"$": "4.0"
+						}
+					}]
+				},
+				"stores": {
+					"store": [{
+						"id": {
+							"$": "0018000000eYjtFAAS"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.277428"
+						},
+						"lng": {
+							"$": "-85.570201"
+						},
+						"addressLine": {
+							"$": "1408 Portage st."
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49001"
+						},
+						"phoneNumber": {
+							"$": "(269) 381-9610"
+						},
+						"distance": {
+							"$": "0.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TbvFAAS"
+						},
+						"name": {
+							"$": "RadioShack"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.32261"
+						},
+						"lng": {
+							"$": "-85.523168"
+						},
+						"addressLine": {
+							"$": "5460 Gull Rd Suite E"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49048"
+						},
+						"phoneNumber": {
+							"$": "(269) 349-8213"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0013000000B6lsNAAR"
+						},
+						"name": {
+							"$": "Meijer"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.324979"
+						},
+						"lng": {
+							"$": "-85.518157"
+						},
+						"addressLine": {
+							"$": "5800 Gull Rd"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49048"
+						},
+						"phoneNumber": {
+							"$": "(269) 382-6250"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TagMAAS"
+						},
+						"name": {
+							"$": "Wal-Mart"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.329141"
+						},
+						"lng": {
+							"$": "-85.510432"
+						},
+						"addressLine": {
+							"$": "6065 Gull Rd"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49048"
+						},
+						"phoneNumber": {
+							"$": "(269) 373-1314"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001Jc6g8AAB"
+						},
+						"name": {
+							"$": "Sprint at RadioShack Store"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.32274"
+						},
+						"lng": {
+							"$": "-85.521906"
+						},
+						"addressLine": {
+							"$": "5460 GULL RD STE E"
+						},
+						"city": {
+							"$": "KALAMAZOO"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49048"
+						},
+						"phoneNumber": {
+							
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000xpZFDAA2"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless - Riverview"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.297236"
+						},
+						"lng": {
+							"$": "-85.568481"
+						},
+						"addressLine": {
+							"$": "524 Riverview"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49048"
+						},
+						"phoneNumber": {
+							"$": "(269) 459-1651"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001FQeQYAA1"
+						},
+						"name": {
+							"$": "Park Street Market"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.296205"
+						},
+						"lng": {
+							"$": "-85.587235"
+						},
+						"addressLine": {
+							"$": "512 N Park St"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49007"
+						},
+						"phoneNumber": {
+							"$": "(269) 343-8300"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001IfbK4AAJ"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Wireless Experts Inc"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.29859"
+						},
+						"lng": {
+							"$": "-85.589674"
+						},
+						"addressLine": {
+							"$": "782 N Westnedge Ave"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49007"
+						},
+						"phoneNumber": {
+							"$": "(269) 220-5171"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0013000000Abw6zAAB"
+						},
+						"name": {
+							"$": "Daysha's Super Store"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.297571"
+						},
+						"lng": {
+							"$": "-85.599652"
+						},
+						"addressLine": {
+							"$": "715 Douglas Ave"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49007"
+						},
+						"phoneNumber": {
+							"$": "(269) 382-6709"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000mKhQnAAK"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless - Westnedge"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.253395"
+						},
+						"lng": {
+							"$": "-85.58945"
+						},
+						"addressLine": {
+							"$": "3827 South Westnedge"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49008"
+						},
+						"phoneNumber": {
+							"$": "(269) 903-2522"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000b8rrkAAA"
+						},
+						"name": {
+							"$": "Wireless Revolution"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.271355"
+						},
+						"lng": {
+							"$": "-85.633058"
+						},
+						"addressLine": {
+							"$": "3501 Stadium Dr"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49008"
+						},
+						"phoneNumber": {
+							"$": "(269) 353-9800"
+						},
+						"distance": {
+							"$": "2.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000uyxJSAAY"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Buzz Wireless"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.294239"
+						},
+						"lng": {
+							"$": "-85.611372"
+						},
+						"addressLine": {
+							"$": "1823 W. Main St"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49006"
+						},
+						"phoneNumber": {
+							"$": "(269) 382-2141"
+						},
+						"distance": {
+							"$": "4.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001IevPJAAZ"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.305713"
+						},
+						"lng": {
+							"$": "-85.648301"
+						},
+						"addressLine": {
+							"$": "1381 Drake Rd Ste F"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49006"
+						},
+						"phoneNumber": {
+							"$": "(269) 459-9885"
+						},
+						"distance": {
+							"$": "4.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001HcZpMAAV"
+						},
+						"name": {
+							"$": "Smart Mobile LLC"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.19826"
+						},
+						"lng": {
+							"$": "-85.55875"
+						},
+						"addressLine": {
+							"$": "4315 S. Portage Rd"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49002"
+						},
+						"phoneNumber": {
+							"$": "(269) 388-4269"
+						},
+						"distance": {
+							"$": "4.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001IevOBAAZ"
+						},
+						"name": {
+							"$": "Boost Mobile Store by PHP Wireless"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.229954"
+						},
+						"lng": {
+							"$": "-85.589115"
+						},
+						"addressLine": {
+							"$": "120 E Milham"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49002"
+						},
+						"phoneNumber": {
+							"$": "(269) 459-9604"
+						},
+						"distance": {
+							"$": "4.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TafMAAS"
+						},
+						"name": {
+							"$": "Best Buy"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.217032"
+						},
+						"lng": {
+							"$": "-85.589586"
+						},
+						"addressLine": {
+							"$": "6900 S Westnedge Ave"
+						},
+						"city": {
+							"$": "Portage"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49002"
+						},
+						"phoneNumber": {
+							"$": "(269) 327-2008"
+						},
+						"distance": {
+							"$": "4.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TafUAAS"
+						},
+						"name": {
+							"$": "Target"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.217255"
+						},
+						"lng": {
+							"$": "-85.589219"
+						},
+						"addressLine": {
+							"$": "6839 S Westnedge Ave"
+						},
+						"city": {
+							"$": "Portage"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49002"
+						},
+						"phoneNumber": {
+							"$": "(269) 327-3180"
+						},
+						"distance": {
+							"$": "4.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0013000000B6lsOAAR"
+						},
+						"name": {
+							"$": "Meijer"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.242892"
+						},
+						"lng": {
+							"$": "-85.589319"
+						},
+						"addressLine": {
+							"$": "5121 S Westnedge Ave"
+						},
+						"city": {
+							"$": "Portage"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49002"
+						},
+						"phoneNumber": {
+							"$": "(269) 381-3465"
+						},
+						"distance": {
+							"$": "4.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TaHpAAK"
+						},
+						"name": {
+							"$": "Best Buy"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.220564"
+						},
+						"lng": {
+							"$": "-85.589634"
+						},
+						"addressLine": {
+							"$": "6650 S. WESTNEDGE AVENUE"
+						},
+						"city": {
+							"$": "Portage"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49024"
+						},
+						"phoneNumber": {
+							"$": "(269) 329-2747"
+						},
+						"distance": {
+							"$": "5.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001Jcb9FAAR"
+						},
+						"name": {
+							"$": "Boost Mobile Store by WGM LLC"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "0.0"
+						},
+						"lng": {
+							"$": "0.0"
+						},
+						"addressLine": {
+							"$": "6650 S Westnedge Ave."
+						},
+						"city": {
+							"$": "Portage"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49024"
+						},
+						"phoneNumber": {
+							"$": "(616) 466-6547"
+						},
+						"distance": {
+							"$": "5.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TagOAAS"
+						},
+						"name": {
+							"$": "Wal-Mart"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.195046"
+						},
+						"lng": {
+							"$": "-85.59652"
+						},
+						"addressLine": {
+							"$": "8350 SHAVER RD"
+						},
+						"city": {
+							"$": "Portage"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49024"
+						},
+						"phoneNumber": {
+							"$": "(269) 323-2460"
+						},
+						"distance": {
+							"$": "5.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0013000000B6lsjAAB"
+						},
+						"name": {
+							"$": "Meijer"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.187902"
+						},
+						"lng": {
+							"$": "-85.601968"
+						},
+						"addressLine": {
+							"$": "8850 Shaver Rd"
+						},
+						"city": {
+							"$": "Portage"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49024"
+						},
+						"phoneNumber": {
+							"$": "(269) 321-4300"
+						},
+						"distance": {
+							"$": "5.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0013000000B6lsXAAR"
+						},
+						"name": {
+							"$": "Meijer"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.295912"
+						},
+						"lng": {
+							"$": "-85.68096"
+						},
+						"addressLine": {
+							"$": "6660 W Main St"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49009"
+						},
+						"phoneNumber": {
+							"$": "(269) 372-9100"
+						},
+						"distance": {
+							"$": "7.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001Ig0jZAAR"
+						},
+						"name": {
+							"$": "Boost Mobile Store by PHP Wireless"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.259836"
+						},
+						"lng": {
+							"$": "-85.675894"
+						},
+						"addressLine": {
+							"$": "6423 Stadium Dr"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49009"
+						},
+						"phoneNumber": {
+							"$": "(269) 459-9779"
+						},
+						"distance": {
+							"$": "7.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TafVAAS"
+						},
+						"name": {
+							"$": "Target"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.296287"
+						},
+						"lng": {
+							"$": "-85.655333"
+						},
+						"addressLine": {
+							"$": "5350 W Main St"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49009"
+						},
+						"phoneNumber": {
+							"$": "(269) 349-6148"
+						},
+						"distance": {
+							"$": "7.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TagNAAS"
+						},
+						"name": {
+							"$": "Wal-Mart"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.291891"
+						},
+						"lng": {
+							"$": "-85.682438"
+						},
+						"addressLine": {
+							"$": "501 N 9Th St"
+						},
+						"city": {
+							"$": "Kalamazoo"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49009"
+						},
+						"phoneNumber": {
+							"$": "(269) 544-0718"
+						},
+						"distance": {
+							"$": "7.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TagJAAS"
+						},
+						"name": {
+							"$": "Wal-Mart"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.448512"
+						},
+						"lng": {
+							"$": "-85.668882"
+						},
+						"addressLine": {
+							"$": "412 OAKS XING"
+						},
+						"city": {
+							"$": "Plainwell"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49080"
+						},
+						"phoneNumber": {
+							"$": "(269) 685-6191"
+						},
+						"distance": {
+							"$": "14.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000wIsrGAAS"
+						},
+						"name": {
+							"$": "Pay & Go Wireless - Plainwell"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.450057"
+						},
+						"lng": {
+							"$": "-85.66247"
+						},
+						"addressLine": {
+							"$": "1211 Michigan 89"
+						},
+						"city": {
+							"$": "Plainwell"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49080"
+						},
+						"phoneNumber": {
+							"$": "(269) 685-8620"
+						},
+						"distance": {
+							"$": "14.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0013000000B6lsgAAB"
+						},
+						"name": {
+							"$": "Meijer"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.450067"
+						},
+						"lng": {
+							"$": "-85.66085"
+						},
+						"addressLine": {
+							"$": "1195 M-89"
+						},
+						"city": {
+							"$": "Plainwell"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49080"
+						},
+						"phoneNumber": {
+							"$": "(269) 685-3800"
+						},
+						"distance": {
+							"$": "14.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000OkH2dAAF"
+						},
+						"name": {
+							"$": "RadioShack"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.448512"
+						},
+						"lng": {
+							"$": "-85.668737"
+						},
+						"addressLine": {
+							"$": "406 Oaks Crossing"
+						},
+						"city": {
+							"$": "Plainwell"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49080"
+						},
+						"phoneNumber": {
+							"$": "(269) 685-8158"
+						},
+						"distance": {
+							"$": "14.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0013000000GcEUeAAN"
+						},
+						"name": {
+							"$": "Target"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.260905"
+						},
+						"lng": {
+							"$": "-85.184349"
+						},
+						"addressLine": {
+							"$": "5700 Beckley Rd"
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49015"
+						},
+						"phoneNumber": {
+							"$": "(269) 979-4940"
+						},
+						"distance": {
+							"$": "16.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000b8rrmAAA"
+						},
+						"name": {
+							"$": "Wireless Revolution"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.261177"
+						},
+						"lng": {
+							"$": "-85.193091"
+						},
+						"addressLine": {
+							"$": "5285 Beckley Rd Ste 7"
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49015"
+						},
+						"phoneNumber": {
+							"$": "(269) 979-9200"
+						},
+						"distance": {
+							"$": "16.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000eYr7dAAC"
+						},
+						"name": {
+							"$": "Kmart"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.315451"
+						},
+						"lng": {
+							"$": "-85.189749"
+						},
+						"addressLine": {
+							"$": "200 Capital Ave Sw"
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49015"
+						},
+						"phoneNumber": {
+							"$": "(269) 965-7701"
+						},
+						"distance": {
+							"$": "16.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000oipj5AAA"
+						},
+						"name": {
+							"$": "Wireless Revolution"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.298727"
+						},
+						"lng": {
+							"$": "-85.19689"
+						},
+						"addressLine": {
+							"$": "65 Columbia Ave E"
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49015"
+						},
+						"phoneNumber": {
+							"$": "(269) 965-5100"
+						},
+						"distance": {
+							"$": "16.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000mMchiAAC"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless - Columbia"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.297527"
+						},
+						"lng": {
+							"$": "-85.229836"
+						},
+						"addressLine": {
+							"$": "1950 W. Columbia Ave."
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49015"
+						},
+						"phoneNumber": {
+							"$": "(269) 719-2386"
+						},
+						"distance": {
+							"$": "16.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000wJf9tAAC"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Wireless - Battle Creek"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.303814"
+						},
+						"lng": {
+							"$": "-85.199331"
+						},
+						"addressLine": {
+							"$": "651 Capital Ave SW"
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49015"
+						},
+						"phoneNumber": {
+							"$": "(269) 282-0829"
+						},
+						"distance": {
+							"$": "16.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000011Nqw7AAC"
+						},
+						"name": {
+							"$": "Meijer"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.297216"
+						},
+						"lng": {
+							"$": "-85.238155"
+						},
+						"addressLine": {
+							"$": "2191 Columbia Avenue West"
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49015"
+						},
+						"phoneNumber": {
+							"$": "(269) 968-3371"
+						},
+						"distance": {
+							"$": "16.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001JeCBfAAN"
+						},
+						"name": {
+							"$": "Dollar General"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "0.0"
+						},
+						"lng": {
+							"$": "0.0"
+						},
+						"addressLine": {
+							"$": "924 EAST MICHIGAN AVENUE"
+						},
+						"city": {
+							"$": "PAW PAW"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49079"
+						},
+						"phoneNumber": {
+							"$": "(269) 668-1111"
+						},
+						"distance": {
+							"$": "17.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001Dd5WXAAZ"
+						},
+						"name": {
+							"$": "Wal-Mart"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.208216"
+						},
+						"lng": {
+							"$": "-85.890948"
+						},
+						"addressLine": {
+							"$": "1013 South Kalamazoo Street"
+						},
+						"city": {
+							"$": "Paw Paw"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49079"
+						},
+						"phoneNumber": {
+							"$": "(269) 415-6001"
+						},
+						"distance": {
+							"$": "17.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000wHJw6AAG"
+						},
+						"name": {
+							"$": "Pay & Go Wireless  Paw Paw"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.217157"
+						},
+						"lng": {
+							"$": "-85.89913"
+						},
+						"addressLine": {
+							"$": "219 W Michigan Avenue"
+						},
+						"city": {
+							"$": "Paw Paw"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49079"
+						},
+						"phoneNumber": {
+							"$": "(269) 655-0655"
+						},
+						"distance": {
+							"$": "17.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001B3GxEAAV"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Pay & Go Battle Creek 2"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.344992"
+						},
+						"lng": {
+							"$": "-85.232979"
+						},
+						"addressLine": {
+							"$": "1525 West Michigan 10a"
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49037"
+						},
+						"phoneNumber": {
+							"$": "(269) 282-1510"
+						},
+						"distance": {
+							"$": "18.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0013000000B6lsdAAB"
+						},
+						"name": {
+							"$": "Meijer"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "41.936813"
+						},
+						"lng": {
+							"$": "-85.651871"
+						},
+						"addressLine": {
+							"$": "800 S Us Highway 131"
+						},
+						"city": {
+							"$": "Three Rivers"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49093"
+						},
+						"phoneNumber": {
+							"$": "(269) 279-1200"
+						},
+						"distance": {
+							"$": "20.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000gb1dnAAA"
+						},
+						"name": {
+							"$": "Boost Mobile Store by Unlimited Air"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "41.935174"
+						},
+						"lng": {
+							"$": "-85.626865"
+						},
+						"addressLine": {
+							"$": "700 S Main Suite B"
+						},
+						"city": {
+							"$": "Three Rivers"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49093"
+						},
+						"phoneNumber": {
+							"$": "(269) 278-2678"
+						},
+						"distance": {
+							"$": "20.0"
+						}
+					},
+					{
+						"id": {
+							"$": "00180000018TbeMAAS"
+						},
+						"name": {
+							"$": "Wal-Mart"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "41.942888"
+						},
+						"lng": {
+							"$": "-85.654304"
+						},
+						"addressLine": {
+							"$": "101 S Tolbert Dr"
+						},
+						"city": {
+							"$": "Three Rivers"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49093"
+						},
+						"phoneNumber": {
+							"$": "(269) 273-7820"
+						},
+						"distance": {
+							"$": "20.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001B3tkOAAR"
+						},
+						"name": {
+							"$": "Pennfield Party Store"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.39708"
+						},
+						"lng": {
+							"$": "-85.213"
+						},
+						"addressLine": {
+							"$": "1541 Capital Ave N.E."
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49017"
+						},
+						"phoneNumber": {
+							"$": "(269) 962-1520"
+						},
+						"distance": {
+							"$": "20.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000000ojR1PAAU"
+						},
+						"name": {
+							"$": "Boost Mobile Store by PHP Wireless"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "true"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "42.329016"
+						},
+						"lng": {
+							"$": "-85.155365"
+						},
+						"addressLine": {
+							"$": "738 Capital Ave NE"
+						},
+						"city": {
+							"$": "Battle Creek"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49017"
+						},
+						"phoneNumber": {
+							"$": "(269) 282-1510"
+						},
+						"distance": {
+							"$": "20.0"
+						}
+					},
+					{
+						"id": {
+							"$": "0018000001JeCbyAAF"
+						},
+						"name": {
+							"$": "Dollar General"
+						},
+						"phoneSalesInd": {
+							"$": "true"
+						},
+						"reboostInd": {
+							"$": "true"
+						},
+						"mWalletInd": {
+							"$": "false"
+						},
+						"customerSupportInd": {
+							"$": "false"
+						},
+						"preferedInd": {
+							"$": "false"
+						},
+						"lat": {
+							"$": "0.0"
+						},
+						"lng": {
+							"$": "0.0"
+						},
+						"addressLine": {
+							"$": "133 S. CAPITAL AVE"
+						},
+						"city": {
+							"$": "Athens"
+						},
+						"state": {
+							"$": "MI"
+						},
+						"zipCode": {
+							"$": "49011"
+						},
+						"phoneNumber": {
+							"$": "(269) 729-9261"
+						},
+						"distance": {
+							"$": "20.0"
+						}
+					}]
+				},
+				"resultsFoundInd": {
+					"$": "true"
+				},
+				"resultsFoundNum": {
+					"$": "47"
+				}
+			}
+		}]
+	}
+}

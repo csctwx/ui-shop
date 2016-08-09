@@ -1,0 +1,971 @@
+body {
+    min-width: 0px !important;
+}
+a { outline: none; }
+a:focus { outline: none; }
+img { border: 0px; outline: none; }
+a img { border: 0px; outline: none; }
+p, h1, h2, h3, h4, h5 { margin: 0px; padding: 0px; }
+
+#mainContent { background-color: #fff; }
+div#banner-pane {
+    background: #fff url("../img/4g/4g_banner_pane_bg.png?062613") repeat-x;
+    position: relative; 
+	width: 100%; 
+	height: 424px;
+}
+div#banner-pane div#banner-gfx {
+    background-color: #270102;
+    position: absolute; 
+	left: 0px; 
+	width: 982px; 
+	height: 424px; 
+	z-index: 1;
+    display: none; 
+	overflow: hidden; 
+	text-align: left;
+}
+div#banner-pane div#banner-gfx img#banner { position: absolute; top: 0px; right: 0px; z-index: 2; }
+#banner-gfx div#header { position: absolute; width: 974px; height: 63px; right: 0px; top: 25px; z-index: 4; }
+#banner-gfx div#header h1 {
+	display: inline-block; 
+	height: 63px; 
+	overflow: hidden; 
+	float: left;
+	font: 36px/63px "ProximaNova-Regular-Italic"; 
+	text-transform: uppercase; 
+	color: #fff;
+	text-shadow: 0px 3px 3px #000;
+	filter: progid:DXImageTransform.Microsoft.Shadow(direction=180,strength=2,color=222222);	
+}
+#banner-gfx div#header img {
+	height: 63px; margin: 0px 0px 0px 0px;
+	width: 137px;
+}
+#banner-gfx div#copy {
+	position: absolute; 
+	width: 974px; 
+	right: 0px; 
+	top: 90px; 
+	z-index: 3;	
+}
+#banner-gfx div#copy p {
+	font: 16px/20px "ProximaNova-Regular-Italic"; 
+	color: #fff;
+	text-shadow: 0px 3px 3px #000; 
+	width: 490px;
+	filter: progid:DXImageTransform.Microsoft.Shadow(direction=180,strength=2,color=222222);	
+}
+#banner-gfx div#copy a {
+	text-decoration: none; 
+	color: #fff; 
+	text-transform: uppercase;
+}
+#banner-gfx div#copy a:hover { color: #d70020; }
+#banner-gfx div#copy h2 {
+	font: 24px/24px "ProximaNova-Regular-Italic"; 
+	color: #fff; 
+	margin: 10px 0px 0px 17px;
+	text-shadow: 0px 3px 3px #000; 
+	width: 440px; 
+	text-transform: uppercase;
+	filter: progid:DXImageTransform.Microsoft.Shadow(direction=180,strength=2,color=222222);	
+}
+div#section-lte-plans h2 {
+	font: 30px/30px "ProximaNova-Regular-Italic"; 
+	color: #fff; text-transform:uppercase;
+}
+div#section-lte-plans h4 {
+	font: 22px/22px "ProximaNova-Regular-Italic"; 
+	color: #fff; text-transform:uppercase;
+}
+#banner-gfx #speeds-legal {
+	position: absolute; 
+	right: 20px; 
+	top: 296px; 
+	width: 390px; 
+	height: 30px; 
+	z-index: 10;
+	font: 12px/14px "ProximaNova-Regular", Arial, Helvetica, sans-serif; 
+	color: #333; 
+	background-color: #fff;
+}
+div#content-pane {
+	position: relative; 
+	width: 966px; 
+	z-index: 10;
+	margin: -95px auto 0px auto;
+	background-color: #fff; 
+	border: 1px solid #ccc; 
+	box-shadow: 0px 0px 2px #888;
+}
+#content-pane .section a.txt-link { font: 18px/26px "ProximaNova-Regular-Italic"; color: #333; text-decoration: none; }
+#content-pane .section a.txt-link:hover { color: #000; }
+#content-pane .section a.butt-play { background: url("../img/4g/4g_butt_play.png") no-repeat left center; padding-left: 26px; }
+ul#tabmenu-pane {
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	z-index: 100; 
+	height: 53px; 
+	background: url("../img/4g/4g_tabmenu_bg.png") repeat-x;
+	width: 966px; 
+	margin: 0px; 
+	padding: 0px; 
+	list-style: none;
+	font: 16px/45px "ProximaNova-Regular-Italic"; 
+	text-align: center;
+}
+#tabmenu-pane li { display: inline-block; padding: 0px; margin: 0px; width: 24%; height: 100%; text-align: center; }
+#tabmenu-pane li a { 
+	display: inline-block; 
+	width: 100%; 
+	color: #666; 
+	text-decoration: none; 
+	background: url("../img/4g/4g_tabmenu_divider.png") no-repeat right center; 
+}
+
+a.gotoanswer:focus, 
+a.gotoanswer:active, 
+a.gotoanswer:visited,
+a.goto-top:focus, 
+a.goto-top:active, 
+a.goto-top:visited,
+a.faq-q:focus, 
+a.faq-q:active, 
+a.faq-q:visited,
+a.txt-link:focus, 
+a.txt-link:active, 
+a.txt-link:visited{
+	width:0px;height:0px;outline:0px;
+}
+
+#tabmenu-pane li a:hover { color: #000; }
+#tabmenu-pane li.active { background: url("../img/4g/4g_tabmenu_arrow.png") no-repeat scroll center bottom transparent; }
+#tabmenu-pane li.active a { color: #d70020 !important; }
+#tabmenu-pane li.last a { background: none repeat scroll 0 0 transparent !important; }
+#free-shipping { position: absolute; right: 20px; top: 45px; }
+div.section {
+	position: relative; 
+	width: 100%; 
+	margin: 0px auto; 
+	padding: 0px;
+	font: 16px/20px "ProximaNova-Regular-Italic";
+}
+div.section h1 { font: 30px/30px "ProximaNova-Regular-Italic"; color: #d70020; }
+div.section h2 { font: 30px/30px "ProximaNova-Regular-Italic"; color: #d70020; margin-bottom: 8px; }
+div.section h2.alone { display: inline-block; margin: 35px 0px 30px 30px; }
+div.section h3 { font: 30px/30px "ProximaNova-Regular-Italic"; color: #000; margin-bottom: 10px; text-transform: none !important;/*text-shadow: 0px 1px 0px #bbb;*/ }
+div.section h4 { font: 22px/24px "ProximaNova-Regular-Italic"; color: #000; }
+div.section p { font: 14px/18px "ProximaNova-Regular-Italic"; color: #222; padding-left: 0px !important; margin-left: 0px !important;}
+div.divider-h {
+    background: #fff url("../img/4g/4g_divider_h.png") no-repeat 50% 0%;
+    position: relative; 
+	width: 100%; 
+	height: 18px;
+}
+div.variant-selector { font: 12px/12px "ProximaNova-Regular-Italic"; margin-top: 20px; }
+div.variant-selector .color-selector {
+    background-color: #eee;
+    float: left;
+    height: 19px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+div.variant-selector .color-selector li { display: block; float: left; padding: 3px; }
+div.variant-selector .color-selector li.copy {
+    color: #7F7F7F;
+    font: 12px/12px "ProximaNova-Regular-Italic";
+    padding: 5px 5px 2px 8px;
+}
+div.variant-selector .color-selector li a { display: block; height: 12px; width: 12px; text-indent: -99999px; }
+div.variant-selector .color-selector li a.black { background: none repeat scroll 0 0 #2F2F2F; border: 1px solid #2F2F2F; }
+div.variant-selector .color-selector li a.white { background: none repeat scroll 0 0 #fff; border: 1px solid #fff; }
+div.variant-selector .color-selector li a.active { border: 1px solid #ff0000; }
+div.variant-selector .memory-selector {
+    float: left;
+    font: 12px/12px Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0px 20px;
+    vertical-align: top;
+}
+#section-lte-devices { margin-top: 45px; }
+#section-lte-devices .size { color: #858585; }
+#device-ip5 { position:relative; width: 100%; height: 300px; }
+#device-gfx-ip5 { 
+	position: absolute; 
+	top: 0px; 
+	left: 110px; 
+	width: 131px; 
+	height: 272px; 
+	background: #fff url("../img/4g/4g_device_ip5.jpg") no-repeat; 
+}
+#device-dat-ip5 { position: absolute; top: 20px; left: 310px; width: 520px; }
+#device-of3 { position: relative; width: 100%; height: 339px; }
+#device-gfx-of3 { 
+	position: absolute; 
+	top: 10px; 
+	right: 100px; 
+	width: 149px; 
+	height: 329px; 
+	background: #fff url("../img/4g/4g_device_of3.jpg") no-repeat; 
+}
+#device-dat-of3 { position: absolute; top: 50px; left: 150px; width: 520px; }
+#device-sale-tag-of3 {
+	position: absolute; 
+	right: -205px; 
+	top: -40px; 
+	width: 66px; 
+	height: 66px; 
+	z-index: 5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent; 
+}
+#device-volt { position: relative; width: 100%; height: 329px; }
+#device-gfx-volt { 
+	position: absolute; 
+	top: 0px; 
+	left: 670px; 
+	width: 149px; 
+	height: 329px; 
+	background: #fff url("../img/4g/4g_device_volt.png") no-repeat; 
+}
+#device-dat-volt { position: absolute; top: 55px; left: 110px; width: 520px; }
+#device-sale-tag-volt {
+	position: absolute; 
+	top: 0px; 
+	right: 125px; 
+	width: 66px; 
+	height: 66px; 
+	z-index:5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent; 
+}
+#device-gs3 { position: relative; width: 100%; height: 329px; }
+#device-gfx-gs3 { 
+	position: absolute; 
+	top: 0px; 
+	left: 110px; 
+	width: 149px; 
+	height: 329px; 
+	background: #fff url("../img/4g/4g_device_gs3.jpg") no-repeat; 
+}
+#device-dat-gs3 { position: absolute; top: 50px; left: 310px; width: 530px; }
+#device-sale-tag-gs3 {
+	position: absolute; 
+	top: 0px; 
+	right: 695px; 
+	width: 66px; 
+	height: 66px; 
+	z-index: 5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent; 
+}
+#device-gs5 { position: relative; width: 100%; height: 329px; }
+#device-gfx-gs5 { 
+	position: absolute; 
+	top: 0px; 
+	left: 110px; 
+	width: 149px; 
+	height: 329px; 
+	background: #fff url("../img/4g/4g_device_gs5.jpg") no-repeat; 
+}
+#device-dat-gs5 { position: absolute; top: 50px; left: 310px; width: 530px; }
+#device-sale-tag-gs5 {
+	position: absolute; 
+	top: 0px; 
+	right: 695px; 
+	width: 66px; 
+	height: 66px; 
+	z-index:5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent; 
+}
+#device-gvc { 
+	position: relative; 
+	width: 100%; 
+	height: 360px; 
+	margin-top: -20px; 
+	background: url("../img/4g/4g_divider_h.png") no-repeat 0px 8px; 
+	z-index: 20; 
+}
+#device-gfx-gvc { 
+	position: absolute; 
+	top: 0px; 
+	right: 100px; 
+	width: 154px; 
+	height: 338px; 
+	background: #fff url("../img/4g/4g_device_gvc.jpg") no-repeat; 
+}
+#device-dat-gvc { position: absolute; top: 75px; left: 150px; width: 520px; }
+#device-sale-tag-gvc {
+	position: absolute; 
+	top: 0px; 
+	right: 85px; 
+	width: 66px; 
+	height: 66px; 
+	z-index: 5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent; 
+}
+div.section .device-price-pane { position: relative; width: 381px; height: 34px; background-color: #f2f2f2; margin: 20px 0px 5px 0px; }
+div.section .device-price-pane a { 
+	display: inline-block; 
+	position: absolute; 
+	top: 0px; 
+	right: 0px; 
+	width: 177px; 
+	height: 34px; 
+	background: url("../img/4g/4g_butt_viewdetails.png") no-repeat transparent; 
+	text-indent: -999999px; 
+}
+div.section .device-price-pane a:hover { background-position: 0px -34px; }
+div.section .device-price-pane p { width: 202px; text-align: center; font: 22px/35px "ProximaNova-Regular-Italic"; color: #000; }
+div.section .device-price-pane p span.no-sale { font: 22px/35px "ProximaNova-Semibold-Italic"; color: #000; }
+div.section .device-price-pane p span.old { text-decoration: line-through; font-size: 18px; }
+div.section .device-price-pane p span.new { 
+	color: #d70020; 
+	margin-left: 10px; 
+	font: 22px/11px 'ProximaNova-Bold-Italic'; 
+	/*text-shadow: 0px 1px 2px #bbb;*/
+	/*text-shadow: 0px 1px 0px #ccc;*/
+}
+div.section p.device-sale-disclaimer-ip5 { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-of3 { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-gs3 { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-gs5 { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-volt { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-gvc { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-vibe { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-desire510 { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-tribute { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+div.section p.device-sale-disclaimer-lumia { font: 10px/10px "ProximaNova-Regular-Italic"; color: #444444; margin-top: 5px; }
+
+#device-butts { position: absolute; top: 300px; left: 30px; }
+#section-lte-devices .bmlpp { display: inline-block; cursor:pointer; }
+
+#section-lte-plans { height: 590px; background: url("../img/4g/4g_chart_background.jpg?020316") no-repeat 0 0; margin-top:-40px; }
+#section-lte-plans #plans-dat { position: absolute; top: 30px; left: 30px; }
+
+#section-lte-plans .tt-pane { position: absolute; left: 35px; top: 400px; }
+#section-lte-plans .tt-pane h3.tt-header
+{
+	font: 22px/22px 'ProximaNova-Regular', sans-serif; color: #fff;
+	text-transform: uppercase; margin: 0 0 5px 0;
+}
+#section-lte-plans .tt-pane p.tt-disclaimer
+{
+	font: 12px/14px 'ProximaNova-Regular-Italic', sans-serif; color: #fff;
+	text-transform: uppercase; margin: 0;
+}
+
+#section-lte-plans .data-pane { position: absolute; left: 30px; top: 363px; }
+#section-lte-plans .data-pane h4.data-header
+{
+	font: 14px/14px 'ProximaNova-Bold-Italic', sans-serif; color: #fff;
+	text-transform: uppercase; margin: 0;
+}
+#section-lte-plans .data-pane p.data-disclaimer
+{
+	font: 12px/12px 'ProximaNova-Regular', sans-serif; color: #fff;
+	margin: 8px 0 10px;
+}
+#section-lte-plans .data-pane span.data-offer
+{
+	font: 16px/16px 'ProximaNova-Semibold', sans-serif; color: #fff;
+	padding: 0 20px 0 22px;
+}
+
+#section-lte-plans .xtra-pane { position: absolute; left: 326px; top: 363px; width:250px;}
+#section-lte-plans .xtra-pane h4.xtra-header
+{
+	font: 14px/14px 'ProximaNova-Bold-Italic', sans-serif; color: #fff;
+	text-transform: uppercase; margin: 0 0 6px 0;
+
+}
+#section-lte-plans .xtra-pane a.xtra-link
+{
+	font: 12px/12px 'ProximaNova-Regular', sans-serif; color: #fff;
+	text-decoration: none; margin: 0 0 7px 20px; display: block;
+}
+#section-lte-plans .xtra-pane div.xtra-left
+{
+	position:absolute;
+}
+#section-lte-plans .xtra-pane div.xtra-right
+{
+	position:absolute; left:131px;
+}
+#section-lte-plans .xtra-pane div.xtra-additional
+{
+	position:absolute; top: 60px;
+}
+
+#section-lte-plans .xtra-pane a.xtra-services-link
+{
+	font: 14px/14px 'ProximaNova-Semibold', sans-serif; color: #fff;
+	text-decoration: none; text-transform: uppercase;
+}
+#section-lte-plans a.butt-more
+{
+	position: absolute; left: 670px; top: 255px; width: 140px;
+	background: url("../img/iphone/deals-bt-btn-bg.gif") repeat-x 0 0;
+	font: 13px/27px 'ProximaNova-Semibold', sans-serif; color: #fff;
+	text-align: center; text-decoration: none; text-transform: uppercase;
+}
+#section-lte-plans a.butt-more:hover { background-position: left bottom; }
+#section-lte-plans p.note 
+{	
+	font: italic 10px/11px Arial, Helvetica, sans-serif;
+	text-transform: none; color: #ddd;
+	position: absolute; left: 35px; top: 325px;
+}
+#section-lte-plans p.note a { color: #ddd; text-decoration: underline; }
+
+
+
+#section-lte-faqs { background-color: #f2f2f2; border-top: 1px solid #fff; }
+#section-lte-faqs .faq-list { list-style-type: none; margin: 0px; padding: 0; width: 440px; float: left; margin-left:30px; }
+#section-lte-faqs .faq-list li { 
+	background: url("../img/4g/4g_faq_arrow.png") no-repeat scroll 0px 5px transparent; 
+	margin: 0px; 
+	padding: 0px 0px 15px 13px; 
+}
+#section-lte-faqs .faq-list a.faq-q { font: 14px/16px "ProximaNova-Regular"; color: #666; text-decoration: none; }
+#section-lte-faqs .faq-list a.faq-q:hover { color: #000; }
+#section-lte-faqs .faq-list li.expanded a.faq-q { color: #000; }
+#section-lte-faqs .faq-list .faq-a { display: none; }
+#section-lte-faqs .faq-list .faq-a p { font: 14px/18px "ProximaNova-Regular"; color: #666; margin: 10px 0px;}
+#section-lte-faqs .faq-list .faq-a a { font: 14px/18px "ProximaNova-Regular"; color: #666; text-decoration: underline; }
+#faq-butts { clear: both; padding: 40px 0px 30px 30px; }
+
+/* HASSLE-FREE SWITCHING */
+#section-lte-switch  { height: 360px; margin-top:-40px; }
+#section-lte-switch #switch-dat { position: absolute; top: 35px; left: 30px; }
+#switch-icons {
+	position: absolute; 
+	top: 120px; 
+	left: 30px; 
+	height: 176px; 
+	width: 450px;
+	background: url("../img/4g/4g_divider_v.png") no-repeat right center;
+}
+#switch-info { position: absolute; top: 120px; left: 540px; height: 220px; width: 420px; }
+#switch-icons ul { margin: 48px 0; padding: 0; list-style: none; }
+#switch-icons li {
+	display: inline-block; 
+	width: 90px; 
+	height: 80px; 
+	overflow: hidden;
+	padding: 0px; 
+	margin: 0px 10px 0px 0px; 
+	cursor: pointer; 
+	text-indent: -999em;
+	background: url("../img/4g/4g_switch_icons.png") no-repeat;
+}
+#switch-icons li#shipping { background-position: 0px 0px; }
+#switch-icons li#network { background-position: -90px 0px; }
+#switch-icons li#return { background-position: -180px 0px; }
+#switch-icons li#keepit { background-position: -270px 0px; }
+#switch-icons li#shipping.isover { background-position: 0px -80px; }
+#switch-icons li#network.isover { background-position: -90px -80px; }
+#switch-icons li#return.isover { background-position: -180px -80px; }
+#switch-icons li#keepit.isover { background-position: -270px -80px; }
+#switch-info-shipping { 
+	display: inline-block; 
+	width: 400px; 
+	height: 205px; 
+	background: url("../img/4g/4g_shipping.png") no-repeat 100% 50%; 
+	text-align: left; 
+}
+#switch-info-shipping span { display:inline-block; width: 350px; }
+#switch-info-network { 
+	display: inline-block; 
+	position: relative; 
+	width: 400px; 
+	height: 205px; 
+	background: url("../img/4g/4g_usmap.png") no-repeat; 
+	text-align: left; 
+}
+#switch-info-network span { display: inline-block; margin: 40px 0px 0px 6px; width: 370px; }
+#switch-info-return { 
+	display: inline-block; 
+	width: 400px; 
+	height: 205px; 
+	background: url("../img/4g/4g_return.png") no-repeat 100% 30%; 
+	text-align: left; 
+}
+#switch-info-return span { display: inline-block; width: 275px; }
+#switch-info-keepit { 
+	display: inline-block; 
+	width: 400px; 
+	height: 205px; 
+	background: url("../img/4g/4g_keepit.png") no-repeat 0 20%; 
+	text-align: left; 
+}
+#switch-info-keepit span { display: inline-block; margin: 20px 0px 0px 70px; width: 330px; }
+#switch-butts { position: absolute; top: 300px; left: 30px; }
+#return-top { position: relative; width: 963px;  margin: 30px auto 0px auto; text-align: right; }
+#return-top img:hover { cursor: pointer; }
+.socialButts { position: absolute; top: 12px; right: 50px; width: 500px; text-align: right; z-index: 4; }
+.fb-like { display: inline-block; width: 100px !important; text-align: left; }
+.twitter-share-button { width: 100px !important; }
+a.butt-coverage {
+	display: block; 
+	text-indent: -999em; 
+	overflow: hidden; 
+	margin-top: 15px;
+	position: absolute; 
+	margin: 0px; 
+	width: 189px; 
+	height: 27px; 
+	top: 100px; 
+	left: 6px;
+	background: url("../img/4g/4g_butt_coverage.png") no-repeat transparent;
+}
+a.butt-coverage:hover { background-position: 0px -27px; }
+.tagSubDiv {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 66px;
+	width: 66px;
+	/*text-shadow: 0px 1px 2px #922;*/
+}
+div#device-dat-gs3 span.promoInfo,
+div#device-dat-gs5 span.promoInfo,
+div#device-dat-of3 span.promoInfo { font: bold italic 14px Arial, Helvetica, sans-serif; }
+
+/** vibe **/
+#device-vibe { position:relative; width: 100%; height: 329px; }
+#device-gfx-vibe { position: absolute; top: 0px; left: 110px; width: 149px; height: 329px; background: #ffffff url("../img/4g/4g_device_hydrovibe.jpg") no-repeat; }
+#device-dat-vibe { position: absolute; top:55px; left: 310px; width: 520px; }
+#device-sale-tag-vibe
+{
+	position: absolute; 
+	top: 0px; 
+	right: 695px; 
+	width: 66px; 
+	height: 66px; 
+	z-index:5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent;
+}
+
+
+
+#device-volt { position: relative; width: 100%; height: 329px; }
+#device-gfx-volt { 
+	position: absolute; 
+	top: 0px; 
+	left: 670px; 
+	width: 149px; 
+	height: 329px; 
+	background: #fff url("../img/4g/4g_device_volt.png") no-repeat; 
+}
+#device-dat-volt { position: absolute; top: 55px; left: 110px; width: 520px; }
+#device-sale-tag-volt {
+	position: absolute; 
+	top: 0px; 
+	right: 125px; 
+	width: 66px; 
+	height: 66px; 
+	z-index:5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent; 
+}
+
+
+/** htc desire 510 **/
+#device-desire510 { position:relative; width: 100%; height: 329px; }
+#device-gfx-desire510 { position: absolute; 
+	top: 0px; 
+	left: 670px; 
+	width: 149px; 
+	height: 329px; 
+	background: #ffffff url("../img/4g/4g_device_htc510.jpg") no-repeat; }
+#device-dat-desire510 { position: absolute; top: 55px; left: 110px; width: 520px;  }
+#device-sale-tag-desire510
+{
+	position: absolute; 
+	top: 0px; 
+	right: 125px; 
+	width: 66px; 
+	height: 66px; 
+	z-index:5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent;
+}
+/** lumia **/
+#device-lumia { position:relative; width: 100%; height: 329px; }
+#device-gfx-lumia { position: absolute; 
+	top: 0px; 
+	left: 670px; 
+	width: 149px; 
+	height: 329px; 
+	background: #ffffff url("../img/4g/4g_device_lumia635.jpg") no-repeat; }
+#device-dat-lumia { position: absolute; top: 55px; left: 110px; width: 520px;  }
+#device-sale-tag-lumia
+{
+	position: absolute; 
+	top: 0px; 
+	right: 125px; 
+	width: 66px; 
+	height: 66px; 
+	z-index:5;
+	text-align: center; 
+	font: 22px/19px "ProximaNova-SemiBold-Italic"; 
+	color: #fff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent;
+}
+
+/** lg tribute **/
+#device-tribute { position:relative; width: 100%; height: 329px; }
+#device-gfx-tribute { position: absolute; top: 0px; left: 110px; width: 149px; height: 329px; background: #ffffff url("../img/4g/4g_device_lgtribute.jpg") no-repeat; }
+#device-dat-tribute { position: absolute; top:55px; left: 310px; width: 520px; }
+#device-sale-tag-tribute
+{
+	position: absolute; top: 0px; right: 695px; width: 66px; height: 66px; z-index:5;
+	text-align: center; font: 22px/19px "ProximaNova-SemiBold-Italic"; color: #ffffff;
+	background: url("../img/4g/4g-sale-tag.png") no-repeat transparent; 
+}
+
+
+@media (max-width: 991px){
+	div#banner-pane{
+		height: auto !important;
+	}
+	#banner-gfx div#header {
+		position: relative;
+		height: 63px;
+		right: auto;
+		left: 0;
+		top: 0;
+		z-index: 4;
+	}
+	#banner-gfx div#copy {
+		position: relative;
+		right: auto;
+		top: 0;
+		z-index: 3;
+	}
+	#banner-gfx div#header img{display: none;}
+	#banner-gfx div#header h1 {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	#banner-gfx div#copy h2 {
+		text-align: center;
+		margin: 0;
+		width: 100%;
+	}
+	#banner-gfx div#copy p {
+		font: 16px/20px "ProximaNova-Regular-Italic";
+		color: #fff;
+		text-shadow: 0px 3px 3px #000;
+		width: 100%;
+		margin: 0;
+		padding: 15px 20px;
+	}
+	div#content-pane{margin: 0 auto;}
+
+	div#banner-pane div#banner-gfx {
+		position: relative;
+		top: 0;
+		left: 0px;
+		height: auto;
+		text-align: center;
+	}
+	img#banner-m{
+		width: 100%;
+		max-width: 569px;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+	
+	div#banner-pane div#banner-gfx,
+	#banner-gfx div#header,
+	#banner-gfx div#copy,
+	div#content-pane,
+	#return-top
+	{width: 100% !important;}
+	
+	#switch-info {
+		position: relative;
+		left: 0;
+		top: 0;
+		margin: 0 auto;
+		height: auto;
+	}
+	#switch-info > div{display: block !important;}
+
+	#device-gs5 {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+	#device-gfx-gs5 {
+		position: relative;
+		top: 0px;
+		left: 0;
+		width: 149px;
+		height: 320px;
+		margin: 0 auto;
+	}
+	#device-dat-gs5 {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	#device-lumia{height: auto;}
+	#device-dat-lumia {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	#device-gfx-lumia {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+	#device-tribute{height: auto;}
+	#device-gfx-tribute{
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+	#device-dat-tribute {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	#section-lte-plans{background: none;}
+	#section-lte-plans #plans-dat {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	div#section-lte-plans h2 {
+		font: 30px/30px "ProximaNova-Regular-Italic";
+		color: #d70020;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 10px;
+	}
+	div#section-lte-plans h4 {
+		font: 22px/22px "ProximaNova-Regular-Italic";
+		color: #000;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	#section-lte-plans .data-pane {
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+	#section-lte-plans .data-pane img{width: 100%;margin: 0 auto;max-width: 533px !important;}
+	#section-lte-plans .data-pane h4.data-header{color: #000;}
+	#section-lte-plans .data-pane p.data-disclaimer {
+		font: 14px/12px 'ProximaNova-Regular', sans-serif;
+		color: #000;
+		text-align: center;
+	}
+	#section-lte-plans p.note {
+		font: italic 12px/11px Arial, Helvetica, sans-serif;
+		text-transform: none;
+		color: #000;
+		position: relative;
+		left: 0;
+		top: 0;
+		text-align: center;
+	}
+	#section-lte-plans p.note a {
+		color: #000;
+		text-decoration: underline;
+	}
+	#section-lte-plans .xtra-pane {
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 250px;
+		margin: 0 auto;
+	}
+	#section-lte-plans .xtra-pane h4.xtra-header {
+		font: 14px/14px 'ProximaNova-Bold-Italic', sans-serif;
+		color: #d70020;
+		text-transform: uppercase;
+		margin: 0 0 6px 0;
+	}
+	#section-lte-plans .xtra-pane div.xtra-left,#section-lte-plans .xtra-pane div.xtra-right{position: relative;left: 0;}
+	#section-lte-plans .xtra-pane a.xtra-link {
+		font: 12px/12px 'ProximaNova-Regular', sans-serif;
+		color: #000;
+		text-decoration: none;
+		margin: 0 0 7px 20px;
+		display: block;
+		text-align: center;
+	}
+	#section-lte-plans .xtra-pane div.xtra-additional {
+		position: relative;
+		top: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#section-lte-plans .xtra-pane a.xtra-services-link{color: #000;}
+	#section-lte-plans a.butt-more {
+		position: relative;
+		left: -70px;
+		top: 0;
+		width: 140px;
+		background: url("../img/iphone/deals-bt-btn-bg.gif") repeat-x 0 0;
+		text-decoration: none;
+		padding: 7px 10px;
+		text-transform: uppercase;
+		margin-left: 50%;
+	}
+	#section-lte-plans > img{width: 100%; margin: 0 auto;max-width: 355px;}
+	#section-lte-plans {
+		height: auto;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	
+	#section-lte-switch{margin-top: 0px; height: auto;}
+	#section-lte-switch #switch-dat {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	div.section h2, div.section h4{text-align: center !important;}
+	#switch-icons {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: auto;
+		height: 176px;
+		width: 320px;
+	}
+	#switch-icons li {
+		width: 24%;
+		height: 80px;
+		padding: 0px;
+		margin: 0;
+		cursor: pointer;
+		text-indent: -999em;
+	}
+	#switch-butts {
+		position: relative;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+	div.section .device-price-pane {
+		position: relative;
+		text-align: center;
+		width: 176px;
+		height: auto;
+		background-color: #f2f2f2;
+		margin: 0 auto;
+	}
+	div.section .device-price-pane p {
+		width: auto;
+		text-align: center;
+	}
+	div.section .device-price-pane a {
+		position: relative;
+	}
+	div.section h3{text-align: center;}
+	div#section-lte-devices p{
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+		text-align: center;
+	}
+	#section-lte-devices .bmlpp{
+		width: 100%;
+		max-width: 373px !important;
+		margin: 0 auto !important;
+		text-align: center;
+		display: block;
+	}
+	div.section h2.alone {
+		display: block;
+		margin: 10px;
+		text-align: center !important;
+	}
+	#section-lte-faqs .faq-list {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0;
+		width: 100%;
+		float: none;
+		margin-left: 0;
+	}
+	#free-shipping img {
+		width: 201px;
+		display: block;
+		margin: 0 auto;
+		padding-top: 10px;
+	}
+	#free-shipping {
+		position: relative;
+		right: auto;
+		top: 0;
+		margin: 0 auto;
+		width: 319px;
+	}
+	#device-sale-tag-gs5 , #device-sale-tag-lumia, #device-sale-tag-tribute{
+		top: 0px;
+		right: auto;
+		left: -33px;
+		width: 66px;
+		margin-left: 40%;
+	}
+	ul#tabmenu-pane {
+		width: 100% !important;
+		top: 0px !important;
+		left: 0 !important;
+		margin-left: 0 !important;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 500px){
+	#switch-info, #switch-info > div{width: 100% !important;}
+	#switch-info-shipping{height: auto;}
+	#switch-info-shipping span {
+		display: inline-block;
+		width: 85%;
+		padding-left: 10px;
+	}
+	#switch-info-network{background-size: contain;}
+	#switch-info-network span{width: 100%;}
+	#switch-info-return {height: auto;}
+	#switch-info-return span{width: 65%;padding-left: 10px;}
+	#switch-info-keepit {width: 100%;}
+	#switch-info-keepit span{width: 250px;}
+}

@@ -1,0 +1,37 @@
+<li class="cart dropdown">
+  <a class="dropdown-toggle" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:CartIcon">
+	  <img src="spp/img/icons/cart-white.png"></img>
+	  <span>Cart</span>
+	  <span id="cart-count" ng-show="cartController.getTotalQuantity()>0">{{cartController.getTotalQuantity()}}</span>
+  </a>
+  <ul class="dropdown-menu subnav">
+    <li>
+      <ul ng-show="cartController.data.items.length==0">
+        <li>
+          <div class="pull-left">
+            <a style="color:#FFF"><span class="phoneBrand">Your cart is empty.</span></a>
+          </div>
+        </li>
+      </ul>
+      <ul ng-repeat="item in cartController.data.items">
+        <li>
+          <img class="phoneImg" ng-src="{{item.image}}" alt="{{item.brand}} {{item.name}} - Sprint Prepaid"></img>
+          <div class="pull-left">
+            <a ng-href="{{pathMap._phoneDetails._hash}}{{item.deviceId}}/features/" style="color:#FFF">
+              <span class="phoneName">{{item.name}}</span>
+              <span class="phoneColor">{{item.color}}</span>
+              <span class="phoneMemory">{{item.memory}}</span>
+            </a>
+          </div>
+          <div class="pull-right">
+            <span class="quantity">{{item.quantity}}</span>
+            <span class="totalPrice">{{item.modelPrice|currency:""}}</span>
+            <a class="removePhone" ng-click="cartController.removeItem(item)" href="" ><i class="glyphicon glyphicon-remove-circle"></i></a>
+          </div>
+        </li>
+      </ul>
+      <a class="cartAction" ng-click="cartController.clean()" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:EmptyCart" >Empty cart</a>
+      <a class="cartAction pull-right" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:Checkout">Checkout</a>
+    </li>
+  </ul>
+</li>

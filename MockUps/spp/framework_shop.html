@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Sprint Prepaid - Shop</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/app-framework.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<div class="container">
+			<div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+				<a href="framework_home.html">Home</a>
+			</div>
+			<div class="col-xs-9 col-md-10 pull-right">
+				<div class="navbar pull-left visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#" data-toggle="modal" data-target="#coverageMap">Coverage Map</a></li>
+						<li class="navbar-item"><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+					</ul>
+					<div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<h2>Coverage Map</h2>
+									<p>Text about coverage.</p>
+									<a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar pull-right visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill">Refill</a></li>
+						<li class="navbar-item"><a href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support">Support</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate">Activate</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct">My Account</a></li>
+						<li class="navbar-item"><a href="">Sign in</a></li>
+					</ul>
+				</div>
+				<div class="visible-sm visible-xs greeting">
+					<button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+						<i class="glyphicon glyphicon-remove"></i>
+					</button>
+					<p class="greeting-name"><span>Good morning, </span>UserName</p>
+					<p class="greeting-number">PhoneNumber</p>
+				</div>
+				<ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+					<li><a href="framework_shop.html">Shop</a></li>
+					<li><a href="framework_phones.html">All Phones</a></li>
+					<li><a href="">Android Phones</a></li>
+					<li><a href="framework_plans.html">Shop Plans</a></li>
+					<li><a href="framework_addservices.html">Additional Services</a></li>
+				</ul>
+				<ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_shop.html">Shop <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_phones.html">All Phones</a></li>
+							<li><a>Android Phones</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_plans.html">Plans <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_plans.html">Shop Plans</a></li>
+							<li><a href="framework_addservices.html">Additional Services</a></li>
+						</ul>
+					</li>
+					<li class="cart dropdown">
+						<a class="dropdown-toggle" href="framework_purchase-01.html"><img src="img/icons/cart-white.png"></img><span>Cart</span><span id="cart-count">1</span></a>
+						<ul class="dropdown-menu subnav">
+							<li>
+								<ul>
+									<li>
+										<img class="phoneImg" src="img/phone1-1.png"></img>
+										<div class="pull-left">
+											<span class="phoneBrand">Samsung</span>
+											<span class="phoneName">Galaxy S5</span>
+											<span class="phoneColor"></span>
+											<span class="phoneMemory"></span>
+										</div>
+										<div class="pull-right">
+											<span class="quantity">1</span>
+											<span class="totalPrice">199.99</span>
+											<a class="removePhone"><i class="glyphicon glyphicon-remove-circle"></i></a>
+										</div>
+									</li>
+								</ul>
+								<a class="cartAction">Empty cart</a>
+								<a class="cartAction pull-right" href="framework_purchase-01.html">Checkout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="#home" class="linkHome">Home</a>
+		<ul class="mobilelinks">
+			<li><a href="framework_purchase-01.html"><i class="glyphicon glyphicon-shopping-cart"><span id="cart-count">1</span></i></a></li>
+			<li><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+			<li><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct"><i class="glyphicon glyphicon-log-in"></i></a></li>
+		</ul>
+    </div>
+	<div class="container main">
+		<ol class="breadcrumb hidden-xs">
+			<li><a href="framework_home.html">Home</a></li>
+			<li class="active">Shop</li>
+		</ol>
+		<section class="promo-half">
+			<div class="col-xs-6">
+				<a class="promo04" href="framework_phones.html">
+					<h3 class="promoHeading">No Contract phones</h3>
+					<p class="promoText">Whether you're looking for an Android™ smartphone that runs the latest apps or an affordable feature phone, Sprint Prepaid has a device for you. All without annual contracts.</p>
+					<span class="promoLink">Shop phones</span>
+				</a>
+			</div>
+			<div class="col-xs-6">
+				<a class="promo05" href="framework_plans.html">
+					<h3 class="promoHeading">Plans as low as $35/month</h3>
+					<p class="promoText">Great value. Total flexibility. Get unlimited talk &amp; text with data options from just $35/month. Stay connected without breaking the bank.</p>
+					<span class="promoLink">Shop plans</span>
+				</a>
+			</div>
+		</section>
+		<section class="banner">
+			<a class="promo10" href="framework_addservices.html">
+				<h3 class="promoHeading">International talk &amp; text for less</h3>
+				<p class="promoText">Our affordable international rates let you stay in touch with friends and family around the world. No calling cards required.</p>
+				<span class="promoLink">See rates</span>
+			</a>
+		</section>
+		<section class="banner">
+			<a class="promo11" href="framework_addservices.html">
+				<h3 class="promoHeading">Free mobile hotspot included</h3>
+				<p class="promoText">Now available on select devices. Use your phone to stay connected on the go with a tablet, a laptop or any other Wi-Fi connected device.</p>
+				<span class="promoLink">See rates</span>
+			</a>
+		</section>
+	</div>	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12">
+				<p>&copy; 2015 Sprint. <span class="hidden-xs">All rights reserved.</span></p>
+				<ul class="footer-links">
+					<li><a href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+					<li><a href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/sprintprepaid-bootstrap.min.js"></script>
+    <script src="../js/lib/jasny-bootstrap.min.js"></script>
+	<script>
+		$(function(){
+		$(".dropdown").hover(
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>

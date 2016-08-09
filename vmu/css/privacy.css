@@ -1,0 +1,90 @@
+#mainContent p {
+    margin-bottom: 1em;
+}
+.main.container section p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #727375;
+}
+.main.container section h1{
+    color: #333;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+#hdl_legal_info{
+	color: #D70020 !important;
+	font: italic 21px/32px "ProximaNova-Regular" !important;
+}
+
+body {
+    /* font: 62.5% ProximaNovaRegular,Arial,Verdana,Helvetica,sans-serif; */
+    color: #636466;
+}
+
+.tab-content a{
+	color: #727375;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+ul.pp {
+    list-style: outside none disc;
+	font-size: 1.1em;
+}
+
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main p, .main li, .main dt, .main dd, .main label {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #727375;
+}
+
+div.border-none {
+    border-top: medium none !important;
+    padding-top: 0px;
+}
+
+li.current li a {
+    color: #727375 !important;
+    text-decoration: underline;
+}
+li.current li.current a, li.current a {
+    color: #d70020 !important;
+    text-decoration: underline;
+}
+table.ma th {
+    text-align: center;
+    vertical-align: middle;
+    color: #FFF;
+    background-color: #000;
+    font: bold 13px ProximaNova-SemiBold;
+    border: 1px solid #000;
+    width: 33%;
+    padding: 5px;
+}
+table.ma td {
+    border: 1px solid #000;
+    padding: 5px;
+    font: 12px ProximaNova-Regular;
+}
+table.ma td span.ma {
+    font: bold 14px ProximaNova-Regular;
+}
+h3.ma {
+    color: #801A87 !important;
+    font: bold 14px ProximaNova-SemiBold !important;
+    text-decoration: underline;
+}
+
+h4#vmu_mobile_advertising_choices{
+	text-decoration: underline;
+}
+
+ul.ma {
+    padding-left: 15px;
+    list-style: disc;
+}
+
+h4.h4-privacy-mobile-advertising{
+	text-decoration: underline;
+}

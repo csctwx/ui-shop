@@ -1,0 +1,345 @@
+/* New Styles for VMU About Section */
+/* Author: israel.lara@sprint.com */
+
+
+
+
+
+@media (min-width: 768px) {
+   .modal-dialog-lg {
+    width: 100%;
+    height: 500px;   
+  } 
+}
+@media (min-width: 992px) {
+  .modal-dialog-lg {
+    width: 900px;
+      height: 500px;
+  }
+}
+
+
+div.broadband-2-go ul{
+    list-style: none;
+    
+    list-style-position: outside;
+    padding: 1px!important;
+}
+
+div.broadband-2-go{
+    background: url(../img/mobile-broadband-plans/bt-plan-bucket-bg.gif) top left repeat-y;
+    min-height: 200px;
+    margin: 0 0 30px 0;
+    padding: 0 0 20px 20px;
+}
+
+div.broadband-2-go ul li{
+    color:#5B5B5B;
+    padding: 0px 12px 12px 18px!important;
+    background: url(../img/mobile-broadband-plans/bt-list-check-icon-plan-page.gif) left top no-repeat;
+    font-size: 14px;
+}
+
+div.cls{
+    clear: both;
+}
+
+
+div.broadband-2-go header h1{
+    font-family:"ProximaNova-Regular-Italic";
+    color: #D70020;
+    text-transform: uppercase;
+    margin: 0px!important;
+    padding: 35px 0px 18px 0!important;
+    font-size: 17px;
+}
+
+
+div#overview section div div.steps{
+    margin:20px 0;
+}
+
+
+iframe#frReviews{
+    width: 100%;
+    height:2500px;
+    border: none;
+    
+}
+
+
+
+div#faqs div.faq_bar_wrapper.full {
+    background: transparent url("../img/mobile-broadband-plans/bt-faq-bar-wide-bg.png") left top no-repeat scroll;
+    background-size: cover;
+    width: 100%;
+    margin: 0px;
+    height: 47px;
+    padding: 9px 17px;
+    font-size: 12px;
+}
+
+div#faqs div.faq_bar_wrapper div.page_range{
+    padding: 5px;
+    float:left;
+}
+
+div#faqs div.faq_bar_wrapper div#pageList{
+    padding: 5px;
+    float:right;
+}
+
+div#faqs div.faq_container ul.accordion li{
+    background: transparent url("../img/mobile-broadband-plans/list_arrow.png") no-repeat scroll 0px 10px;
+    padding: 0px 0px 4px 13px;
+    margin: 0px;
+    font: 15px/17px arial;
+    line-height: 18px;
+}
+
+div#faqs div.faq_container ul.accordion li h2{
+    /*font-size: 14px;*/
+    cursor: pointer;
+    padding: 0!important;
+    
+}
+
+div#faqs div.faq_container ul.accordion li h2 a{
+    padding: 0;
+    color: #727375;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+div#faqs div.faq_container ul.accordion li h2 a:hover{
+    color:#000;
+}
+
+div#overview div.aside{
+    text-align: left;
+    padding: 20px 0 0 10px;
+}
+
+div#overview div.aside h2{
+    font-family: "ProximaNova-Regular-Italic";
+    font-size: 17px;
+    font-weight: normal;
+    color: #000;
+    margin: 0px 0px 0px 13px;
+    padding: 0px 0px 10px;
+}
+
+
+div#overview div.aside div.phoneDisplay {
+    border-top: 1px solid #E6E6E6;
+    position: relative;
+    margin: 0px 0px 0px 13px;
+    padding: 5px 0px 10px;
+}
+
+div#overview div.aside div.phoneDisplay div.zoom{
+    width: 15px;
+    height: 15px;
+    float: right;
+}
+
+div#overview div.aside div.phoneDisplay div.zoom a{
+    height: 15px;
+    width: 15px;
+    background: transparent url("../img/mobile-broadband-plans/bt-icon-magnify-glass.gif") right top no-repeat scroll;
+    text-indent: -99999px;
+    display: block;
+    
+}
+
+div#overview div.aside div.phoneDisplay div.zoom a:link,
+div#overview div.aside div.phoneDisplay div.zoom a:visited{
+    background-position: 0px 0px;
+     
+}
+
+div#overview div.aside div.phoneDisplay div.zoom a:hover{
+    background-position: 0px -15px;
+}
+
+div.phoneDisplay h3 span.icon_4g {
+    width: 33px;
+    height: 30px;
+    background: transparent url("../img/mobile-broadband-plans/icon_4g.gif") no-repeat scroll 0% 0%;
+    display: inline-block;
+    color: transparent;
+    vertical-align: middle;
+    margin: -5px 0px -5px -5px;
+}
+
+
+
+div#overview div.aside div.phoneDisplay h3 {
+    font: 1.125em "ProximaNova-Bold-Italic";
+    color: #000;
+    margin: 0px;
+    padding: 27px 0px 6px 80px;
+}
+
+div#overview div.aside div.phoneDisplay div.rating {
+    line-height: 0.8em;
+    padding-left: 80px;
+}
+
+div#overview div.aside div.phoneDisplay div.actions {
+    padding-left: 80px;
+    margin-bottom: 16px;
+}
+
+div#overview div.aside div.phoneDisplay div.image {
+    float: left;
+    width: 86px;
+    margin-left: -8px;
+}
+
+
+div#overview div.aside div.phoneDisplay div.actions a.detailsBtn {
+    background: #3A3A3A url("../img/mobile-broadband-plans/bt-btn-phone-details-sm-bg.gif") repeat-x scroll 0% 0%;
+    font: 0.625em "ProximaNova-Semibold";
+    text-transform: uppercase;
+    color: #FFF;
+    border: 0px none;
+    outline: 0px none;
+    box-shadow: 1px 1px 2px #999;
+    margin: 0px 2px 0px 0px;
+    padding: 6px 6px 4px;
+}
+
+
+div#overview div.aside div.phoneDisplay div.actions a.cartBtn {
+    background: #AB1B1B url("../img/mobile-broadband-plans/bt-btn-phone-tocart-sm-bg.gif") repeat-x scroll 0% 0%;
+    font: 0.625em "ProximaNova-Semibold";
+    text-transform: uppercase;
+    color: #FFF;
+    border: 0px none;
+    outline: 0px none;
+    box-shadow: 1px 1px 2px #CDCDCD;
+    margin: 0px;
+    padding: 6px 6px 4px;
+}
+
+div#overview div.aside div.phoneDisplay div.actions a.outofstock{
+    background: transparent url("../img/mobile-broadband-plans/bt-atc-button-out-stock-bg.gif") repeat-x scroll 0px 0px!important;
+    cursor: default;
+}
+
+section header h1 {
+    font: 30px/26px "ProximaNova-Bold-Italic";
+    color: #000;
+    margin: 0px!important;
+    padding: 0 0 20px 10px!important;
+}
+
+h2.title{
+    font: 16px/24px "ProximaNova-Regular-Italic";
+    color: #3E3D3D;
+    margin: 0px;
+    padding:5px;
+}
+
+p.note {
+    font: italic 10px/13px Arial,Helvetica,sans-serif;
+    color: #777;
+    margin: 0px!important;
+    padding-top: 6px;
+    max-width: 580px;
+    padding: 0 0 0 5px!important;
+}
+
+
+p.note a {
+    color: #3E3D3D;
+    font-weight: bold;
+    text-decoration: none;
+    font: italic 10px/13px Arial,Helvetica,sans-serif!important;
+}
+
+p.note button {
+    color: #3E3D3D;
+    font-weight: bold;
+    text-decoration: none;
+    font: italic 10px/13px Arial,Helvetica,sans-serif!important;
+    padding: 0;
+    margin: 0;
+}
+
+p.note button:hover {
+    color: #3E3D3D;
+    text-decoration: none;
+}
+
+p.note button::before {
+    content: "// ";
+}
+
+div#faqs section{
+    padding:20px 0 0 0;
+}
+
+section.legal header{
+    font: bold 11px Arial,Helvetica;
+    color: #525252;
+    padding: 0 0 0 10px;
+}
+
+div.main.container{
+    background: url(../img/mobile-broadband-plans/bb2go-plan-bg.PNG);
+    background-repeat: no-repeat;
+    background-position: 50px 170px;
+    background-size: 100%;
+}
+
+div.covered{
+    color: #FFF;
+    padding: 250px 10px;
+}
+
+
+
+div.covCheckForm a.coverageBtn {
+    background:transparent linear-gradient(rgb(225, 225, 225), rgb(176, 176, 176)) repeat scroll 0 0;
+    border: 0px none;
+    outline: 0px none;
+    float: none;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 0px 5px;
+    font: 10px/9px "ProximaNova-Semibold";
+    color: #363636;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    box-shadow: 1px 1px 3px 0px #999!important;
+    text-transform: uppercase;
+}
+
+div.covCheckForm a.coverageBtn:hover{
+    background: transparent linear-gradient(#FFF, #E1E1E1) repeat scroll 0% 0%;
+    cursor: pointer;
+}
+
+
+div.covered div.powered_by p {
+    font: 0.75em "ProximaNova-Regular-Italic";
+    float: left;
+    padding: 10px 5px 0px 0px!important;
+    margin: 0px;
+}
+
+div.covered h2 {
+    font: 25px/1em "ProximaNova-Bold-Italic";
+    margin: 0px;
+    padding-bottom: 14px;
+}
+
+input#cczip{
+    color:#222;
+}

@@ -1,0 +1,761 @@
+/*app-framework-fixes*/
+.main.container section p, .main.container section h1, .main.container section h2, .main.container section h3, .main.container section h4 {
+    /*padding: 0;*/
+}
+
+a:link, a:visited {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+::selection {
+    background: #d7001f;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*scaffolding*/
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url(../fonts/vmu/ProximaNova-Regular.ttf);
+    src: url(../fonts/vmu/ProximaNova-Regular.woff);
+}
+
+@font-face {
+    font-family: ProximaNova-Regular-Italic;
+    src: url(../fonts/vmu/ProximaNova-Regular-Italic.ttf);
+    src: url(../fonts/vmu/ProximaNova-Regular-Italic.woff);
+}
+
+@font-face {
+    font-family: ProximaNova-Semibold;
+    src: url(../fonts/vmu/ProximaNova-Semibold.ttf);
+    src: url(../fonts/vmu/ProximaNova-Semibold.woff);
+}
+
+@font-face {
+    font-family: ProximaNova-Semibold-Italic;
+    src: url(../fonts/vmu/ProximaNova-Semibold-Italic.ttf);
+    src: url(../fonts/vmu/ProximaNova-Semibold-Italic.woff);
+}
+
+@font-face {
+    font-family: ProximaNova-Bold-Italic;
+    src: url(../fonts/vmu/ProximaNova-Bold-Italic.ttf);
+    src: url(../fonts/vmu/ProximaNova-Bold-Italic.woff);
+}
+
+@font-face {
+    font-family: Uni-Sans-Semibold;
+    src: url(../fonts/vmu/Uni-Sans-Semibold.ttf);
+    src: url(../fonts/vmu/Uni-Sans-Semibold.woff);
+}
+
+@font-face {
+    font-family: Uni-Sans-Semibold-Italic;
+    src: url(../fonts/vmu/Uni-Sans-Semibold-Italic.ttf);
+    src: url(../fonts/vmu/Uni-Sans-Semibold-Italic.woff);
+}
+
+
+
+body {
+    background: #FFF;
+    font-family: 'ProximaNovaRegular', Arial, Verdana, Helvetica, sans-serif;
+}
+
+#plans .tooltip-arrow {
+    display: none;
+}
+
+.main.container section [class*="col-"] p.subtitle {
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+#plans .traditional {
+    list-style: disc;
+    padding-left: 15px;
+}
+
+#plans p.subtitle + ul.traditional {
+   margin-top: 0;
+   padding-left: 15px;
+}
+
+#plans ul ul.traditional {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.main.container section#plans .hd1 {
+    font-weight: bold;
+    font-style: italic;
+    line-height: 32px;
+    font-size: 30px;
+    font-family: 'ProximaNova-Semibold';
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.main.container section#plans .hd2 {
+    color: #D70020;
+    font-size: 21px;
+    font-family: 'ProximaNova-Regular';
+    line-height: 32px;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+
+/*cell phone plans*/
+
+ol.breadcrumb {
+    background: transparent;
+}
+
+.main.container section#plans .hd1 {
+    font-size: 25px;
+    padding-left: 0;
+}
+#plans .btn {
+   text-transform: uppercase;
+   text-decoration: none;
+   font-family: Arial;
+}
+
+#plans .btn.btn-xs {
+   font-size: 10px;
+   padding: 3px 12px;
+}
+
+#plans .btn.btn-default {
+    background: linear-gradient(to bottom, rgba(105,105,105,1) 0%,rgba(77,77,77,1) 100%);
+    border-radius: 0;  
+    color: white !important; 
+}
+
+#plans .btn.btn-default:hover {
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 100%);
+    color: white !important;
+}
+
+#plans .btn.btn-default.white {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%);
+    color: #DB161D !important;
+}
+
+#plans .btn.btn-default.white:hover {
+    background: white;
+    color: black !important;
+}
+
+#plans .columns {
+    margin: 20px 0;
+}
+
+#plans .columns .col.left {
+    float: left;
+}
+
+#plans .columns .col.right {
+    float: right;
+}
+
+#plans .columns#splash {
+    margin-bottom: 20px;
+}
+
+#plans .columns#splash .left {
+    width: 600px;
+}
+
+#plans .columns#splash .right {
+    width: 332px;
+}
+
+#plans .plan_landing-all {
+    background: url('../img/cell-phone-plans/plans-bg-android.png') no-repeat scroll top left;
+    width: 100%;
+    min-height: 398px;
+    padding: 24px 24px;
+    box-sizing: border-box;
+    margin-top: -69px;
+}
+
+#plans .plan_landing-all .wrapper-int {
+    padding-top: 70px;
+}
+
+#plans .plan_landing-all h2 {
+    font-family: 'ProximaNova-Bold-Italic' !important;
+    font-size: 26px;
+    margin: 0 0 5px 0;
+    padding: 0 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#plans .plan_landing-all header {
+    margin-bottom: 40px;
+}
+
+#plans .plan_landing-all h3 {
+    font-family: 'ProximaNova-Regular-Italic' !important;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 !important;
+    color: #d70020;
+}
+
+#plans .plan_landing-all h4 {
+    font-family: 'ProximaNova-Semibold' !important;
+    font-size: 21px;
+    margin: 0;
+    padding: 0 !important;
+}
+
+#plans .plan_landing-all p:nth-of-type(2) {
+   text-transform: uppercase;
+   margin-top: 0 !important;
+   font-family: 'ProximaNova-Semibold-Italic';
+   font-size: 12px;
+}
+
+#plans .plan_landing-all h4 + p {
+    font-size: 20px;
+    text-transform: none;
+    margin-bottom: 0 !important;
+    font-family: 'ProximaNova-Semibold';
+}
+
+#plans .plan_landing-all .btn.btn-default {
+    padding: 4px 35px;
+}
+
+#plans .plan_landing-bb2g {
+    background: url('../img/cell-phone-plans/plans_bb2g_tile_bg.png') no-repeat scroll bottom right;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 24px 24px;
+    box-sizing: border-box; 
+ /**      background-size: contain; **/
+    border: 1px solid #F1F1F1;
+}
+
+#plans .plan_landing-bb2g h2 {
+    color: #eb7220;
+    font-family: 'ProximaNova-Bold-Italic' !important;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#plans .plan_landing-bb2g h3 {
+    /*color: #eb7220;*/
+    font-family: 'ProximaNova-Bold-Italic' !important;
+    font-size: 13px;
+    margin: 0;
+    padding: 0 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#plans .plan_landing-pl {
+    /*background: url('../img/cell-phone-plans/plans-bg-paylo-v2.png') no-repeat scroll top left;*/
+    background: url('../img/paylo/plans-bg-paylo-v2_OPEN.jpg') no-repeat scroll top left;
+    width: 100%;
+    height: 140px;
+    padding: 10px 24px 20px 24px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-color: #E81C23;
+	position: relative;
+}
+
+#plans .plan_landing-pl h2 {
+    font-family: 'Uni-Sans-Regular' !important;
+    color: #fff;
+    font-size: 16px;
+    text-transform: none;
+    margin: 5px 0px 8px;
+}
+
+#plans .plan_landing-pl p {
+    font-family: 'Uni-Sans-Semibold';
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: .1px;
+}
+
+#plans .plan_landing-datashare {
+    background: url('../img/cell-phone-plans/plans-bg-datashare.png') no-repeat scroll top left;
+    width: 100%;
+    height: 189px;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#plans .plan_landing-datashare .btn.btn-default {
+    background: linear-gradient(to bottom, rgba(105,105,105,1) 0%,rgba(77,77,77,1) 100%);
+    padding: 8px 40px;
+    margin-right: 10px;
+}
+
+#plans .plan_landing-datashare .btn.btn-default:hover {
+    background: linear-gradient(to bottom, rgba(80 ,80,80,1) 30%,rgba(0,0,0,1) 100%);
+}
+
+#plans .plan_landing-datashare .columns {
+   height: 100%;
+}
+
+
+#plans .plan_landing-datashare .columns .left {
+   width: 355px;
+   height: 100%;
+   position: relative;
+}
+
+#plans .plan_landing-datashare .columns .left small {
+   left: 30px;
+   bottom: 20px;
+   position: absolute;
+}
+
+#plans .plan_landing-datashare .columns .right {
+   width: 585px;
+   height: 100%;
+}
+
+#plans .plan_landing-datashare .columns .right > p {
+   margin: 100px 0 15px 0 !important;
+   font-size: 16px;
+}
+
+#plans .columns#details .left {
+    width: 700px;
+}
+
+#plans .columns#details .right {
+    width: 220px;
+}
+
+#plans #details .wide-box {
+    background-color: #F1F1F1;
+    box-sizing: border-box;
+    padding: 50px 200px 50px 50px;
+    font-size: 15px;
+    font-family: 'ProximaNova-Regular-Italic' !important;
+    margin: 0 0 30px 0;
+    position: relative;
+}
+
+#plans #details .wide-box header {
+    margin-bottom: 20px;
+}
+
+#plans #details .wide-box header > * {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'ProximaNova-Regular-Italic' !important;
+    text-transform: uppercase;
+    color: #d70020;
+}
+
+#plans #details .wide-box .btn.btn-default {
+    background: none;
+    font-family: 'ProximaNova-Regular-Italic' !important;
+    color: #505050 !important;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 0;
+    margin: 10px 0;
+    display: block;
+    text-align: left;
+}
+
+#plans #details .wide-box .btn.btn-default::before { 
+    content: "// ";
+}
+
+#plans #details .wide-box small {
+   font-size: 10px;
+   line-height: 1.2;
+   display: block;
+}
+
+#plans #details #plan_landing-how_this_works {
+    background: #F1F1F1 url('../img/cell-phone-plans/plans-bg-how_it_works.png') no-repeat scroll top left;
+    padding-right: 50px;
+    min-height: 220px;
+}
+
+#plans #plan_landing-how_this_works ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#plans #plan_landing-how_this_works ul li {
+    position: absolute;
+    top: 18px;
+}
+
+#plans #plan_landing-how_this_works li.how_this_works-1 {
+   left: 120px;
+   width: 102px;
+}
+
+#plans #plan_landing-how_this_works li.how_this_works-2 {
+   left: 440px;
+   width: 178px;
+}
+
+#plans #details #intl_rates {
+    padding-bottom: 30px;
+}
+
+#plans #intl_rates .globe {
+    position: absolute;
+    right: 0;
+    top: -15px;
+}
+
+#plans #buyback_program .buyback_phone_img {
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+#plans .plan_landing-comes_with {
+    background-color: white;
+    border: 1px solid #F1F1F1;
+    padding: 15px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+#plans .main.container .plan_landing-comes_with h3 {
+   margin: 0 0 20px 0;
+   padding: 0 0 0 10px;
+   font-size: 1.2em;
+   font-family: 'ProximaNova-Bold-Italic' !important;
+}
+
+#plans .plan_landing-comes_with ul {
+   padding-left: 10px;
+}
+
+#plans .plan_landing-comes_with ul li {
+    font-family: 'ProximaNova-Regular-Italic';
+    font-size: 12px;
+    padding: 2px 0 18px 25px;
+    color: #414141;
+    background: url("../img/cell-phone-plans/pl-aside-green-check.png") 0 0 no-repeat;
+}
+
+#plans #details .plan_landing-comes_with .btn.btn-default {
+    background: none;
+    font-family: 'ProximaNova-Semibold' !important;
+    color: #505050 !important;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px 0;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#plans #details .plan_landing-comes_with .btn.btn-default:hover {
+   color: black !important;
+}
+
+#plans #details .plan_landing-comes_with .btn.btn-default::before { 
+    content: "// ";
+}
+
+/* =============================================================================
+   Color Box
+   ========================================================================== */
+#colorbox, #cboxOverlay, #cboxWrapper { position:absolute; top:0; left:0; z-index:9999; overflow:hidden; }
+#cboxOverlay { position:fixed; width:100%; height:100%; }
+#cboxMiddleLeft, #cboxBottomLeft { clear:left; }
+#cboxContent { position:relative; }
+#cboxLoadedContent { overflow:auto; }
+#cboxTitle { margin:0; }
+#cboxLoadingOverlay, #cboxLoadingGraphic { position:absolute; top:0; left:0; width:100%; height:100%; }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor:pointer; }
+.cboxPhoto { float:left; margin:auto; border:0; display:block; }
+.cboxIframe { width:100%; height:100%; display:block; border:0; }
+
+/* Color Box User Styles */
+#cboxOverlay { background-color: #ddd; }
+#colorbox { }
+#cboxContent {
+    margin: 30px;
+    overflow: visible;
+}
+#page_ratings_landing #cboxContent { margin: 0 !important; }
+.cboxIframe { background:#fff; }
+#cboxError { padding:50px; border:1px solid #ccc; }
+#cboxLoadedContent {
+    background: #FFF; 
+    padding: 0;
+    border: 0;
+    -moz-box-shadow: 0 0 10px 0 #666;
+    -webkit-box-shadow: 0 0 10px 0 #666;
+    box-shadow: 0 0 10px 0 #666;
+    -ms-filter: "filter:progid:DXImageTransform.Microsoft.Glow(Strength=3, Color='#999999')";
+    filter: progid:DXImageTransform.Microsoft.Glow(Strength=3, Color='#999999');
+    zoom: 1; 
+    position: relative;
+}
+#cboxLoadingGraphic { background: url('../img/phone-manuals-guides/loading.gif') no-repeat center center; }
+#cboxLoadingOverlay { background: #fff; }
+#cboxTitle { position:absolute; top:-22px; left:0; color:#000; }
+#cboxCurrent { position:absolute; top:-22px; right:205px; text-indent:-9999px; }
+#cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose { text-indent:-9999px; width:22px; height:22px; position:absolute; top:10px; }
+#cboxPrevious { background-position:0px 0px; right:44px; }
+#cboxPrevious:hover { background-position:0px -25px; }
+#cboxNext { background-position:-25px 0px; right:22px; }
+#cboxNext:hover { background-position:-25px -25px; }
+#cboxClose { background: url('../img/phone-manuals-guides/colorbox_closebtn.gif') no-repeat -22px 0;; right:10px; }
+.planCompare #cboxClose { background: url('../img/phone-manuals-guides/overlay-compare-btn_close.png') no-repeat 0 0; right:10px; }
+#cboxClose:hover { background-position: 0 0; }
+.cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious { right:66px; }
+.cboxSlideshow_on #cboxSlideshow { background-position:-75px -25px; right:44px; }
+.cboxSlideshow_on #cboxSlideshow:hover { background-position:-100px -25px; }
+.cboxSlideshow_off #cboxSlideshow { background-position:-100px 0px; right:44px; }
+.cboxSlideshow_off #cboxSlideshow:hover { background-position:-75px -25px; }
+
+/* Close Btn For Dark Backgrounds */
+div#colorbox.darkContent #cboxClose{ background: url('../img/phone-manuals-guides/colorbox_closebtn_dark.png') no-repeat -22px 0; right:10px; }
+div#colorbox.darkContent #cboxClose:hover{ background-position: 0 0; }
+
+#colorbox, #cboxWrapper {
+    outline: none;
+}
+
+#cboxClose {
+    border: none;
+}
+
+
+#plans .PopOver {
+    box-sizing: border-box;
+    padding: 25px 35px;
+}
+
+#plans .PopOver h1 {
+    font-size: 40px;
+    font-family: 'ProximaNova-Bold-Italic' !important;
+    color: #000; 
+    margin: 10px 0 40px 0;
+    padding: 0;
+    text-transform: uppercase; 
+}
+
+#plans .PopOver ul {
+    display: inline-block;
+    width: 49%;
+    padding: 0px 20px;
+    vertical-align: top;
+}
+
+
+#plans .PopOver li h2 {
+    font-family: 'ProximaNova-Bold-Italic' !important;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+    color: #000;
+    padding-left: 25px;
+    background: url('../img/cell-phone-plans/list-check-icon.jpg') no-repeat 0 12px;
+    background-position: left center;
+}
+
+
+/*Media query*/
+@media (max-width: 991px) {
+    #plans .columns#splash .left {
+        width: 100%;
+        float: none;
+    }
+    #plans .plan_landing-all {
+        margin: 0 auto;
+    }
+    #plans .columns#splash .right {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #plans .plan_landing-bb2g {
+        background-color: white;
+        background-size: 352px 157px;
+        background-position: top right;
+    }
+    #plans .plan_landing-pl {
+        background-color: #E61C23;
+        background-size: 352px 157px;
+        background-position: top right;
+    }
+    #plans .plan_landing-pl h2 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    #plans .plan_landing-pl h2 span.invisible {
+       visibility: visible;
+    }
+    #plans .plan_landing-datashare .columns .right {
+        width: 50%;
+    }
+    #plans .plan_landing-datashare .columns .right > p {
+        margin: 100px 0 10px 0 !important;
+        font-size: 14px;
+    }
+    #plans .columns#details .left {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px;
+    }
+    #plans .columns#details .right {
+        width: 100%;
+    }
+
+    #plans .PopOver ul {
+        width: 100%;
+    }
+    #plans .PopOver h1 {
+       font-size: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    #plans .plan_landing-datashare .columns .left {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+    #plans #details .wide-box {
+        padding: 20px;
+    }
+    #plans #details #plan_landing-how_this_works {
+        background: #F1F1F1 url('../img/cell-phone-plans/plans-bg-how_it_works.png') no-repeat scroll top left;
+        padding-right: 20px;
+    }
+    #plans #details #plan_landing-how_this_works ul {
+        margin-top: 150px;
+    }
+    #plans #plan_landing-how_this_works ul li {
+        position: relative;
+        top: inherit;
+        left: inherit;
+    }
+    #plans #plan_landing-how_this_works li.how_this_works-1 {
+        top: inherit;
+        left: inherit;
+        width: 45%;
+        float: left;
+    }
+    #plans #plan_landing-how_this_works li.how_this_works-2 {
+        top: inherit;
+        left: inherit;
+        width: 45%;
+        float: right;
+    }
+    #plans #intl_rates .info {
+       max-width: 320px;
+    }
+    #plans #intl_rates .globe {
+        position: absolute;
+        right: 0;
+        top: -9px;
+    }
+    #plans #intl_rates .globe img {
+       width: 150px;
+    }
+    #plans #buyback_program .info  {
+        max-width: 320px;
+    }
+    #plans #buyback_program .buyback_phone_img img {
+        width: 135px;
+    }
+    #plans br {
+        display: none;
+    }
+    #plans img[alt="Only at Walmart"]{
+        width: 30%;
+    }
+
+    #plans .PopOver ul {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 526px) {
+    #plans#details #plan_landing-how_this_works {
+        background: #F1F1F1 url('../img/cell-phone-plans/plans-bg-how_it_works.png') no-repeat scroll top left;
+        background-size: contain;
+        background-position: 30px 20px;
+    }
+    #plans #details #plan_landing-how_this_works ul {
+        margin-top: 100px;
+    }
+    #plans #buyback_program .buyback_phone_img {
+        position: relative;
+        top: 0;
+        margin-top:20px;
+    }
+    #plans #intl_rates .globe {
+        position: relative;
+        top: 0;
+        margin-top:20px;
+    }
+    #plans .plan_landing-bb2g {
+        background-color: white;
+        background-size: contain;
+        background-position: top right;
+    }
+    #plans .plan_landing-pl {
+        background-color: #E61C23;
+        background-size: contain;
+        background-position: top right;
+    }
+}
+
+@media (max-width: 414px) {
+    #plans .columns .col.left {
+        float: none;
+    }
+    #plans .columns .col.right {
+     float: none;
+    } 
+    #plans .plan_landing-datashare {
+        height: 300px;
+        background: #E11C3F url('../img/cell-phone-plans/plans-bg-datashare.png') no-repeat scroll top left;
+    }
+    #plans .plan_landing-datashare .columns .right > p {
+     margin: 0px 0 10px 0 !important;
+    font-size: 14px;
+    }
+}

@@ -1,0 +1,82 @@
+.main.container#payloNewPage{
+	background: url(../img/paylo/top-banner.png) top left no-repeat;
+}
+
+div#NewPaylo{
+	min-height: 565px;
+}
+
+div#NewPaylo > div.banner-list{
+	padding: 170px 50% 0 40px;
+}
+
+div#NewPaylo > div.banner-list b{
+	text-decoration: underline;
+}
+
+div#NewPaylo > div.banner-list b a{
+	color: #fff;
+	font-size: 16px;
+}
+
+div#NewPaylo > div.banner-list > ul > li{
+	color:#fff;
+	font-family: Uni-Sans-Regular-Italic;
+	font-size: 19px;
+	padding: 0 0 20px 20px;
+	background: url('../img/paylo/dot.png') no-repeat left top;
+}
+
+#payloData{
+	position: relative;
+	height: 448px;
+	width: 100%;
+	background: url(../img/paylo/paylo-data.png) top left no-repeat;
+}
+
+#payloData a.mBtn{
+	background-color: #888;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-image:url('../img/paylo/btn-bg.png');
+	color: #fff;
+	padding: 4px 25px;
+	display: block;
+    width: 146px;
+    margin: 0 auto;
+    position: absolute;
+    left: -73px;
+    margin-left: 50%;
+    bottom: 35px;
+}
+
+#payloData a.mBtn:hover{
+	text-decoration: none;
+}
+
+#payloLegal p{
+	color: #777;
+	line-height: 1;
+	font-size: 11px;
+}
+
+#payloLegal p a{
+	color: #777;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 11px !important;
+}
+
+@media (max-width: 991px){
+	.main.container{
+		background: url(../img/paylo/top-banner-m.png) top left no-repeat;
+	}
+	div#NewPaylo > div.banner-list{
+		padding: 170px 10px 0;
+	}
+	#payloData{
+		background-size: 100%;
+		background: none !important;
+		height: auto !important;
+	}
+}

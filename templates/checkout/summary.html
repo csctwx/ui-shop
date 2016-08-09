@@ -1,0 +1,55 @@
+<section class="summary">
+    <div class="col-xs-12 col-sm-8 finalamount pull-right">
+        <ul>
+            <li>
+                <span>Shipping {{checkoutController.data.orderCode.promoCode ? " discount applied":""}}</span>
+
+                <p>{{checkoutController.data.summary.shipping()|currency:""}}</p>
+            </li>
+            <li>
+                <span>Subtotal</span>
+
+                <p>{{checkoutController.data.summary.subtotal()|currency:""}}</p></li>
+            <li>
+                <span ng-show="checkoutController.data.promoCode.status==0">Discount</span>
+
+                <p ng-show="checkoutController.data.promoCode.status==0">
+                    -{{checkoutController.data.promoCode.totalDiscount|currency:""}}
+                </p>
+            </li>
+            <li>
+                <span>Current Total Due (before tax)</span>
+
+                <p>{{checkoutController.data.summary.total()|currency:""}}</p>
+            </li>
+            <a class="btn btn-primary pull-right" href=""
+               ng-click="checkoutController.doReviewOrder()"
+               ng-show="checkoutController.step==1"
+               ng-disabled="!checkoutController.checkShippingInfo(checkoutController.data.shippingInfo.address1,1)
+                          || !checkoutController.checkShippingInfo(checkoutController.data.shippingInfo.address2,2)
+                          || checkoutController.data.equipments.length==0
+                          || checkoutController.data.equipmentError
+                          || itemsForm.$invalid || billingForm.$invalid
+                          || shippingForm.$invalid
+                          || !checkoutController.data.agree
+                          || checkoutController.isBlackZipcode(checkoutController.data.billingInfo.zipCode)
+                          || (paymentForm.$invalid && checkoutController.data.paymentInfo.paymentCardType!='PAYPAL') 
+                          || (checkoutController.data.billingInfo.email != checkoutController.data.billingInfo.validateEmail)">
+                {{checkoutController.data.paymentInfo.paymentCardType=='PAYPAL' && !checkoutController.ibCart? 'Pay With Paypal' : ''}}
+                {{checkoutController.data.paymentInfo.paymentCardType!='PAYPAL' && !checkoutController.ibCart? 'Review Order' : ''}}
+                {{checkoutController.ibCart? 'Contract Details':''}}
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ng-hide="appName=='vmu'"></span>
+            </a>
+        </ul>
+    </div>
+    <section>
+        <div class="alert alert-danger pull-right" role="alert" ng-show="checkoutController.data.error">
+            <i class="glyphicon glyphicon-exclamation-sign"></i>
+            <span class="pull-right">{{checkoutController.data.errorText}}
+                <button type="button" class="close pull-right" aria-label="Close" href=""
+                        ng-click="checkoutController.clearError();"><i class="glyphicon glyphicon-remove-circle"></i>
+                </button>
+            </span>
+        </div>
+    </section>
+</section>

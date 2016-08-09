@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/primary-rest/global_settings?brandId=SPP"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "sprint/global_settings.json"
+    }
+}

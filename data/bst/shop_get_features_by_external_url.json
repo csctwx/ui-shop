@@ -1,0 +1,336 @@
+{
+  "responses": {
+    "response": [
+      {
+        "@uuid": "123845b8-b51b-4343-be90-3200d774cf58",
+        "@class": "",
+        "@name": "Section 19029",
+        "@code": "0",
+        "getFeaturesResponse": {
+          "phoneFeatures": {
+            "generalFeatures": [
+              {
+                "title": {
+                  "$": "\t\t\tAndroid™ 5.0 (Lollipop) \t\t"
+                },
+                "description": {
+                  "$": "\t\t\tFast, customizable, smooth. Enjoy the speed and simplicity of the powerful Android operating system. \t\t"
+                },
+                "type": {
+                  "$": "os-gs3"
+                }
+              },
+              {
+                "title": {
+                  "$": "\t\t\t5.5\" Quad HD IPS Display\t\t"
+                },
+                "description": {
+                  "$": "\t\t\tEverything's better on the big screen - and this beautiful Quad HD screen delivers. Experience the Web, apps and pictures like never before on a screen that supports four times the resolution of HD and an astonishing 538 pixels per inch.\t\t"
+                },
+                "type": {
+                  "$": "boostmax-touchscreen"
+                }
+              },
+              {
+                "title": {
+                  "$": "\t\t\t13MP Rear-Facing Camera with 2MP Front-Facing Camera\t\t"
+                },
+                "description": {
+                  "$": "\t\t\tCapture crystal-clear photos and videos with the 13MP rear-facing camera, which features laser auto focus and OIS+ for incredibly quick focusing between shots. The 2MP front-facing camera is perfect for selfies.\t\t"
+                },
+                "type": {
+                  "$": "camera"
+                }
+              },
+              {
+                "title": {
+                  "$": "\t\t\t3G/4G LTE/Enhanced LTE<sup>†</sup>\t\t"
+                },
+                "description": {
+                  "$": "\t\t\tSwitch seamlessly between Sprint's nationwide 3G and 4G LTE networks and the all-new Enhanced LTE network, where available. <a href=\"#!/coveragemap/\" style=\"color:#E7781D\">Check coverage</a>.\t\t"
+                },
+                "type": {
+                  "$": "world"
+                }
+              },
+              {
+                "title": {
+                  "$": "\t\t\t32GB ROM/3GB RAM Memory<sup>††</sup>\t\t"
+                },
+                "description": {
+                  "$": "\t\t\tLots of onboard memory means you can load all those essential apps.\t\t"
+                },
+                "type": {
+                  "$": "s5-s-health"
+                }
+              },
+              {
+                "title": {
+                  "$": "\t\t\t3000 mAh Polymer Battery<sup>†††</sup>    <sup>†</sup>\t\t"
+                },
+                "description": {
+                  "$": "\t\t\tGet up to 24 hours of talk time from this long-lasting lithium polymer battery.\t\t"
+                },
+                "type": {
+                  "$": "battery"
+                }
+              },
+              {
+                "title": {
+                  "$": "\t\t\t2.5GHz Quad-Core Processor\t\t"
+                },
+                "description": {
+                  "$": "\t\t\tThe fast Qualcomm® Snapdragon™ 801 quad-core processor allows for jaw-dropping graphics and lightning-quick switching between apps.\t\t"
+                },
+                "type": {
+                  "$": "processor"
+                }
+              },
+              {
+                "title": {
+                  "$": "\t\t\tKnock Code™ Security Enabled\t\t"
+                },
+                "description": {
+                  "$": "\t\t\tLG's solution to mobile security, \"Knock Code\" wakes up and unlocks your phone in one step using a tapping pattern from the dormant screen.\t\t"
+                },
+                "type": {
+                  "$": "security"
+                }
+              },
+              {
+                "title": {
+                  "$": "\t\t\tMobile Hotspot Capable\t\t"
+                },
+                "description": {
+                  "$": "\t\t\tMake sure you’re never stuck without an internet connection again. Turn your phone into a Wi-Fi® hotspot. <a href=\"#!/support/faq/plans-services/mobile-hotspot-add-on/\">Learn more.</a>\t\t"
+                },
+                "type": {
+                  "$": "mobile-hotspot-capable"
+                }
+              }
+            ],
+            "technicalFeatures": {
+              "os": {
+                "$": "Android™ 5.0<br/><a href=\"/shop/phones/android-phones/\">See more about Android™-powered phones</a>"
+              },
+              "processor": {
+                "$": "2.5GHz Qualcomm® Snapdragon™ 801 Quad-Core Processor"
+              },
+              "memory": {
+                "$": "3GB RAM / 32GB ROM"
+              },
+              "group": [
+                {
+                  "@id": "dimensions",
+                  "order": {
+                    "$": "1"
+                  },
+                  "specs": {
+                    "spec": [
+                      {
+                        "@order": "1",
+                        "@type": "height",
+                        "$": "5.76\""
+                      },
+                      {
+                        "@order": "2",
+                        "@type": "depth",
+                        "$": "0.35\""
+                      },
+                      {
+                        "@order": "3",
+                        "@type": "width",
+                        "$": "2.94\""
+                      },
+                      {
+                        "@order": "4",
+                        "@type": "weight",
+                        "$": "5.28 oz"
+                      },
+                      {
+                        "@order": "5",
+                        "@type": "screen_size",
+                        "$": "5.5\" Quad HD Display (2560x1440)"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "@id": "battery",
+                  "order": {
+                    "$": "2"
+                  },
+                  "specs": {
+                    "spec": [
+                      {
+                        "@order": "1",
+                        "@type": "talking_time",
+                        "$": "Up to 24 hours"
+                      },
+                      {
+                        "@order": "2",
+                        "@type": "battery_type",
+                        "$": "3,000 mAH"
+                      },
+                      {
+                        "@order": "3",
+                        "@type": "removable",
+                        "$": "Yes"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "@id": "whats_included",
+                  "order": {
+                    "$": "3"
+                  },
+                  "specs": {
+                    "spec": [
+                      {
+                        "@order": "1",
+                        "@type": "regular",
+                        "$": "LG G3™ Handset"
+                      },
+                      {
+                        "@order": "2",
+                        "@type": "regular",
+                        "$": "3,000 mAH Battery"
+                      },
+                      {
+                        "@order": "3",
+                        "@type": "regular",
+                        "$": "Charger Head"
+                      },
+                      {
+                        "@order": "5",
+                        "@type": "regular",
+                        "$": "USB Cable"
+                      },
+                      {
+                        "@order": "5",
+                        "@type": "regular",
+                        "$": "Printed Materials"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "specialFeatures": [
+              {
+                "title": {
+                  "$": "3-way calling"
+                }
+              },
+              {
+                "title": {
+                  "$": "3.5mm headset jack"
+                }
+              },
+              {
+                "title": {
+                  "$": "Access to Boost Zone"
+                }
+              },
+              {
+                "title": {
+                  "$": "Calendar"
+                }
+              },
+              {
+                "title": {
+                  "$": "Call waiting"
+                }
+              },
+              {
+                "title": {
+                  "$": "Caller ID"
+                }
+              },
+              {
+                "title": {
+                  "$": "FM Radio (Next Radio)"
+                }
+              },
+              {
+                "title": {
+                  "$": "LG Quick Memo"
+                }
+              },
+              {
+                "title": {
+                  "$": "Multi language settings"
+                }
+              },
+              {
+                "title": {
+                  "$": "Music player"
+                }
+              },
+              {
+                "title": {
+                  "$": "Nationwide Sprint® 3G Network and Nationwide Sprint® 4G LTE Network"
+                }
+              },
+              {
+                "title": {
+                  "$": "Picture and video sharing"
+                }
+              },
+              {
+                "title": {
+                  "$": "Portrait to Landscape auto-rotate"
+                }
+              },
+              {
+                "title": {
+                  "$": "Speakerphone"
+                }
+              },
+              {
+                "title": {
+                  "$": "Stereo Bluetooth®"
+                }
+              },
+              {
+                "title": {
+                  "$": "TTY mode"
+                }
+              },
+              {
+                "title": {
+                  "$": "Vibrate mode"
+                }
+              },
+              {
+                "title": {
+                  "$": "Voicemail"
+                }
+              },
+              {
+                "title": {
+                  "$": "Wi-Fi® enabled"
+                }
+              }
+            ],
+            "specificationImage": {
+              "fileName": {
+                "$": "specifications"
+              },
+              "uRI": {
+                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/j/c/A-_LHleJYfxQ2_featureImages_1_specifications.png?action=access&assetId=A-49u3PtXBVEY"
+              }
+            }
+          },
+          "status": {
+            "$": "0"
+          },
+          "description": {
+            "$": "SUCCESS"
+          }
+        }
+      }
+    ]
+  }
+}

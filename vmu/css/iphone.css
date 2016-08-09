@@ -1,0 +1,418 @@
+div.modal#plansModal div.item h2 {
+    font: 1.238em/2.9em 'ProximaNova-Bold-Italic';
+    margin: 0;
+	text-transform: none !important;
+    color: #000;
+    padding-left: 25px;
+    background: url('../img/iphone/list-check-icon.jpg') no-repeat 0 12px;
+}
+
+div.modal#plansModal div.item p {
+    font: 1.113em/1.231em 'ProximaNova-Regular-Italic';
+    margin: 0;
+    color: #282828;
+}
+
+#iphoneNav .current {
+    background: url(../img/carrot-down.png) bottom center no-repeat;
+}
+#iphoneNav .current a{
+    color: #D70020 !important;
+}
+
+div#iphoneNav ul li a{font:italic 18px/10px 'ProximaNova-Regular',arial,helvetica,sans-serif !important;}
+
+#plan {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 7px;
+	width: 100%;
+}
+#plan #plantop {
+	margin-bottom: 10px;
+}
+#autopay_banner {
+	margin-bottom: 7px;
+}
+#plan_overview #plan-grid {
+	position: relative;
+}
+#plan_overview #plan-grid h2.unlimited {
+	position: absolute;
+	left: 12px;
+	top: 10px;
+	font: 22px/24px 'ProximaNova-Regular-Italic', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0 0 5px 0;
+}
+#plan_overview a.butt-more {
+	position: absolute;
+	left: 670px;
+	top: 220px;
+	width: 140px;
+	background: url("../img/iphone/deals-bt-btn-bg.gif") repeat-x 0 0;
+	font: 13px/27px 'ProximaNova-Semibold', sans-serif;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#plan_overview #plan-grid .data-pane {
+	position: absolute;
+	left: 23px;
+	top: 315px;
+}
+#plan_overview #plan-grid .data-pane h4.data-header {
+	font: 14px/14px 'ProximaNova-Bold-Italic', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+}
+#plan_overview #plan-grid .data-pane p.data-disclaimer {
+	font: 12px/12px 'ProximaNova-Regular', sans-serif;
+	color: #fff;
+	margin: 8px 0 10px;
+}
+#plan_overview #plan-grid .data-pane span.data-offer {
+	font: 16px/16px 'ProximaNova-Semibold', sans-serif;
+	color: #fff;
+	padding: 0 20px 0 22px;
+}
+#plan_overview #plan-grid .xtra-pane {
+	position: absolute;
+	left: 320px;
+	top: 315px;
+	width: 250px;
+}
+#plan_overview #plan-grid .xtra-pane h4.xtra-header {
+	font: 14px/14px 'ProximaNova-Bold-Italic', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0 0 6px 0;
+}
+#plan_overview .xtra-pane div.xtra-left {
+	position: absolute;
+}
+#plan_overview .xtra-pane a.xtra-link {
+	font: 12px/12px 'ProximaNova-Regular', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 0 7px 20px;
+	display: block;
+}
+#plan_overview .xtra-pane div.xtra-right {
+	position: absolute;
+	left: 131px;
+}
+#plan_overview .xtra-pane div.xtra-additional {
+	position: absolute;
+	top: 60px;
+}
+#plan_overview #plan-grid .xtra-pane a.xtra-services-link {
+	font: 14px/14px 'ProximaNova-Semibold', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#plan p.note {
+	font: italic 10px/11px Arial, Helvetica, sans-serif;
+	color: #777777;
+	margin: 0px;
+	padding: 4px 0px 0px 0px;
+	width: 100%;
+	letter-spacing: .1px;
+}
+div#tabContent_plans div#plan div.left {
+	float: left;
+}
+div#tabContent_plans div#aside {
+	float: right;
+	width: 231px;
+	cursor: pointer;
+	border: medium none;
+	background-color: #ffffff;
+}
+div#tabContent_plans div#plan .section {
+	background-color: #f2f2f2;
+	margin-bottom: 18px;
+	position: relative;
+	width: 710px;
+}
+div#tabContent_plans #coverage.section div.map {
+	float: left;
+	padding: 40px 10px 5px 12px;
+}
+div#tabContent_plans div#plan .section h1, #intl_rates h1 {
+	color: #D70020 !important;
+	font: italic 1.65em 'ProximaNova-Regular' !important;
+	margin: 0 !important;
+	padding: 26px 0 18px 44px !important;
+	text-transform: uppercase !important;
+}
+div#tabContent_plans #coverage.section h1 {
+	padding: 40px 0 12px !important;
+}
+div#tabContent_plans #coverage.section p {
+	color: #414141;
+	font: italic 1.175em/1.571em 'ProximaNova-Regular';
+	margin: 0;
+	padding: 0 60px 20px 0;
+}
+div#tabContent_plans #coverage.section a.coverageBtn {
+	background: url("../img/iphone/deals-bt-btn-bg.gif") repeat-x scroll 0 0 transparent;
+	border: 0 none;
+	box-shadow: 1px 1px 1px #999999 !important;
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	font: 0.95em/0.9em 'ProximaNova-Semibold';
+	height: 25px;
+	margin: 0 2px 0 0;
+	outline: 0 none;
+	padding: 7px 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 0 10px #333333;
+	text-transform: uppercase;
+	width: 187px;
+}
+div#tabContent_plans #coverage.section div.sprint {
+	bottom: 20px;
+	left: 300px;
+	position: relative;
+}
+a#legalDetails{text-decoration: underline; font-size: 10px !important;}
+div#tabContent_plans #how_this_works.section div.howthisworks_horz ol li {
+	display: block;
+	float: left;
+}
+div#tabContent_plans #how_this_works.section div.howthisworks_horz ol li img {
+	float: left;
+	height: 103px;
+	width: 170px;
+}
+div#tabContent_plans #how_this_works.section div.howthisworks_horz ol li.step1 p {
+	margin-right: 25px;
+	padding-top: 26px;
+	font-size: 1.3em !important;
+}
+div#tabContent_plans #how_this_works.section div.howthisworks_horz ol li p {
+	color: #505050;
+	float: left;
+	font: italic 0.938em/1.533em 'ProximaNova-Regular';
+	margin-left: -20px;
+}
+div#tabContent_plans #how_this_works.section div.howthisworks_horz.pad-left {
+	padding-left: 40px;
+}
+div#tabContent_plans #how_this_works.section div.howthisworks_horz {
+	background: url("../img/iphone/bt-how-works-arrow-horz.png") no-repeat scroll 120px 5px 
+}
+div#tabContent_plans #how_this_works.section div.howthisworks_horz ol {
+	height: 150px;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+div#tabContent_plans #how_this_works.section div.howthisworks_horz ol li.step2 p {
+	padding-top: 26px;
+	font-size: 1.3em !important;
+}
+#plan a.intl-block section#intl_rates {
+	height: 234px;
+}
+div#tabContent_plans div#plan section {
+	background-color: #f2f2f2;
+	margin-bottom: 18px;
+	position: relative;
+	width: 710px;
+}
+#plan a.intl-block section#intl_rates {
+	height: 234px;
+}
+#plan section#intl_rates div.globe {
+	position: absolute;
+	right: 1px;
+	top: -10px;
+}
+#plan #intl_rates p {
+	color: #505050 !important;
+	font: 0.9em/1.533em "ProximaNova-Regular-Italic" !important;
+	margin: 0 !important;
+	padding: 0 250px 20px 40px !important;
+}
+#plan a.intl-block section#intl_rates p.detailLink {
+	background: url("../img/iphone/deals-bt-btn-bg.gif") repeat-x scroll 0 0 transparent;
+	border: 0px none;
+	box-shadow: 1px 1px 1px #999999 !important;
+	color: #fff !important;
+	display: block;
+	float: left;
+	font: 0.8em/0.9em 'ProximaNova-Semibold' !important;
+	height: 25px;
+	margin: 2px 0px 41px 40px !important;
+	outline: 0px none;
+	padding: 7px 0 !important;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px 0px 10px #333;
+	text-transform: uppercase;
+	width: 187px;
+}
+section#intl_rates div.bot{height: auto !important; background: none !important;}
+div#plan  div#aboxComesWith{background: none !important;}
+
+	
+@media (min-width: 768px) and (max-width: 991px){
+	#plan_overview img{width: 100%;}
+	#plan_overview a.butt-more {
+		right: 70px;
+		left: auto;
+		top: 160px;
+	}
+	#plan_overview #plan-grid .data-pane {
+		position: absolute;
+		left: 10px;
+		top: 229px;
+	}
+	#plan_overview #plan-grid .xtra-pane {
+		position: absolute;
+		left: 320px;
+		top: 229px;
+		width: 250px;
+	}
+	#plan p.note{width: 100%;}
+	div#tabContent_plans div#plan div.left{width: 100%;}
+	div#tabContent_plans div#aside{width: 100%; float: left;}
+	div#tabContent_plans #coverage.section div.sprint{width: 100px;}
+	div.aside_box{width: 100%;}
+	div.aside_box ul.checkedList li {
+		padding: 2px 8px 2px 18px;
+		display: inline;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+	div#tabContent_plans div#plan div.left, div#tabContent_plans div#plan .section{width: 100%;}
+	div#tabContent_plans #coverage.section div.map {
+		float: none;
+		padding: 10px 0px;
+		width: 100%;
+		text-align: center;
+	}
+	div#tabContent_plans #coverage.section div.map img{width: 100%; max-width: 350px;}
+	div#tabContent_plans div#plan .section h1, #intl_rates h1 {
+		color: #D70020 !important;
+		font: italic 1.65em 'ProximaNova-Regular' !important;
+		margin: 0 !important;
+		padding: 0px !important;
+		text-transform: uppercase !important;
+		text-align: center;
+	}
+	div#tabContent_plans div#plan section{width: 100%;}
+	div#tabContent_plans #coverage.section div.sprint {
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		position: relative;
+	}
+	div#tabContent_plans #coverage.section p {
+		padding: 10px 0px;
+		text-align: center;
+	}
+	div#tabContent_plans #coverage.section a.coverageBtn {
+		float: none;
+		margin: 0 auto;
+		padding: 7px 0;
+		text-align: center;
+	}
+	div#tabContent_plans div#plan .section h1, #intl_rates h1{
+		padding: 20px 0px !important;
+		text-align: center;
+	}
+	div#tabContent_plans #how_this_works.section div.howthisworks_horz.pad-left {
+		padding-left: 0px;
+	}
+	div#tabContent_plans #how_this_works.section div.howthisworks_horz ol{height: auto;}
+	div#tabContent_plans #how_this_works.section div.howthisworks_horz ol li.step2 p{padding-top: 15px !important;padding-right: 8px !important;}
+	div#tabContent_plans #how_this_works.section div.howthisworks_horz{background: none;}
+	#plan a.intl-block section#intl_rates{height: auto !important;}
+	#plan section#intl_rates div.globe{display: none;}
+	#plan a.intl-block section#intl_rates{
+		background-image: url('../img/iphone/bt-int-rates-plan-tab.png');
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		min-height: 298px;
+	}
+	#plan #intl_rates p {
+		font: 1.0em/1.533em "ProximaNova-Regular-Italic" !important;
+		padding: 0 60% 20px 40px !important;
+	}
+	div#tabContent_plans div#aside {
+		float: left;
+		width: 100%;
+		cursor: pointer;
+		border: medium none;
+		background-color: #ffffff;
+	}
+	div#plan div#aboxComesWith{margin: 0 auto !important; width: 300px !important;}
+	#aside div.aside_box ul.checkedList li{font-size: 1.5em !important;}
+	div.aside_box h3 {
+		font: italic 20px 'ProximaNova-Semibold'!important;
+		padding: 10px 0 16px 0px!important;
+		text-align: center;
+	}
+	img.mobilePlans{width: 100%; border-radius: 10px;}
+	#plan_overview #plan-grid h2.unlimited {
+		position: relative;
+		left: auto;
+		top: auto;
+		color: #D70020 !important;
+		margin: 10px 0;
+		text-align: center;
+	}
+	#plan_overview #plan-grid .data-pane, #plan_overview #plan-grid .xtra-pane {
+		position: relative;
+		left: auto;
+		top: auto;
+		width: 100%;
+		text-align: center;
+	}
+	#plan_overview #plan-grid .data-pane h4.data-header, 
+	#plan_overview #plan-grid .data-pane p.data-disclaimer, 
+	#plan_overview #plan-grid .data-pane span.data-offer,
+	#plan_overview #plan-grid .xtra-pane h4.xtra-header,
+	#plan_overview .xtra-pane a.xtra-link{color: #000 !important;text-align: center;}
+	#plan_overview #plan-grid .xtra-pane h4.xtra-header,
+	#plan_overview #plan-grid .data-pane h4.data-header{padding-top: 15px;color: #D70020 !important;}
+	#plan_overview .xtra-pane a.xtra-link{text-decoration: underline; padding: 10px 0px 5px 0px; font-size: 14px !important;}
+	#plan_overview .xtra-pane div.xtra-left,#plan_overview .xtra-pane div.xtra-right{position: relative; left: auto; width: 50% !important; float: left;}
+	#plan_overview a.butt-more#learnMoreMobile{
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		padding: 7px 10px;
+		width: 101px;
+		margin: 10px auto;
+		display: block;
+		border-radius: 5px;
+	}
+	img.promoBannerM{
+		width: 100%;
+		max-width: 476px !important;
+		margin: 0 auto;
+	}
+	img#m1{max-width: 600px;margin: 0 auto !important;}
+	img#m2{max-width: 400px;margin: 0 auto !important;}
+	#plan p.note{text-center: !important;}
+}
+
+@media (min-width: 320px) and (max-width: 767px){#plansModal .modal-body{height: auto !important;}
+@media (min-width: 320px) and (max-width: 351px){
+	div#tabContent_plans #how_this_works.section div.howthisworks_horz ol li img {
+		height: 85px !important;
+		width: 130px !important;
+	}
+	div#tabContent_plans div#plan .section#how_this_works h1 {padding: 20px 0px 0px 0px !important;}
+}

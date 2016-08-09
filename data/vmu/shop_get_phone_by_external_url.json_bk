@@ -1,0 +1,651 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "d51026f8-fe19-41d1-9726-2d35d7bf4665",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"getPhoneDetailsResponse": {
+				"phoneDetails": {
+					"phoneDetail": [{
+						"phoneName": {
+							"$": "iPhone® 5c"
+						},
+						"manufacturerName": {
+							"$": "Apple®"
+						},
+						"extendedDescription": {
+							"$": "Why it rocks: The Galaxy S5 packs the features listed above into a powerhouse device that is accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it. Why it rocks: The Galaxy S5 packs the features listed above into a powerhouse device that is accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it. It’s your world, the Galaxy S5 just helps you rule it. Why it rocks: The Galaxy S5 packs the features listed above into a powerhouse device that is accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it. Accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it. Accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it."
+						},
+						"associatedAccessoryId": {
+							"$": "CFA4994Q,CFA6849Q,CZA4311Q,ZCA6091Q,MCA9051V,PVA5000V,PSU9980V,PRA0444V"
+						},
+						"isRedVentures": {
+							"$": "true"
+						},
+						"disclaimerMini": {
+							"$": "Limit 2 phones per customer."
+						},
+						"disclaimerFull": {
+							"$": "TM and &reg; 2014 Apple Inc. All rights reserved.<br>Promotional pricing available only for select phones directly from boostmobile.com. Limited time only, while supplies last."
+						},
+						"phoneViewImages": {
+							"phoneViewImage": [{
+								"fileName": {
+									"$": "hero-white"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/h\/h\/hero-white.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "all"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/h\/f\/all.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "back"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/j\/f\/e\/back.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "three-quarter-skew-right"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/f\/j\/three-quarter-skew-right.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "allcolors"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/j\/c\/b\/allcolors.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "three-quarter-skew-left"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/b\/c\/three-quarter-skew-left.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "side"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/d\/a\/side.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "single"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/f\/b\/single.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "front"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/b\/f\/front.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "all_th"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/h\/c\/all_th.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "back_th"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/c\/e\/back_th.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "three-quarter-skew-right_th"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/g\/d\/three-quarter-skew-right_th.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "allcolors_th"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/e\/e\/i\/allcolors_th.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "three-quarter-skew-left_th"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/g\/c\/three-quarter-skew-left_th.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "side_th"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/j\/f\/side_th.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "single_th"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/a\/f\/single_th.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "front_th"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/i\/a\/b\/front_th.png?action=access&assetId=A-Ztf6XVKM1TW"
+								}
+							}]
+						},
+						"phoneVariants": {
+							"phoneVariant": [{
+								"sku": {
+									"$": "885909741670"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "16GB"
+								},
+								"colorVariant": {
+									"$": "white"
+								},
+								"gradientColor": {
+									"$": "#e1e1e2"
+								},
+								"price": {
+									"$": "199"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "true"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-white"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/h\/e\/d\/shop-white.png?action=access&assetId=A-Ztf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-white"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/h\/h\/hero-white.png?action=access&assetId=A-Ztf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909741694"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "16GB"
+								},
+								"colorVariant": {
+									"$": "blue"
+								},
+								"gradientColor": {
+									"$": "#40b0ea"
+								},
+								"price": {
+									"$": "199"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-blue"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/h\/j\/g\/shop-blue.png?action=access&assetId=A-Xtf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-blue"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/g\/g\/hero-blue.png?action=access&assetId=A-Xtf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909741700"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "16GB"
+								},
+								"colorVariant": {
+									"$": "green"
+								},
+								"gradientColor": {
+									"$": "#7fcb4d"
+								},
+								"price": {
+									"$": "199"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-green"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/j\/a\/shop-green.png?action=access&assetId=A-juf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-green"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/i\/d\/hero-green.png?action=access&assetId=A-juf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909741717"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "16GB"
+								},
+								"colorVariant": {
+									"$": "pink"
+								},
+								"gradientColor": {
+									"$": "#e7686b"
+								},
+								"price": {
+									"$": "199"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-pink"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/h\/a\/g\/shop-pink.png?action=access&assetId=A-nuf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-pink"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/i\/a\/f\/hero-pink.png?action=access&assetId=A-nuf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909822133"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "32GB"
+								},
+								"colorVariant": {
+									"$": "green"
+								},
+								"gradientColor": {
+									"$": "#7fcb4d"
+								},
+								"price": {
+									"$": "299"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-green"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/f\/e\/shop-green.png?action=access&assetId=A-cuf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-green"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/h\/c\/e\/hero-green.png?action=access&assetId=A-cuf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909822102"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "32GB"
+								},
+								"colorVariant": {
+									"$": "white"
+								},
+								"gradientColor": {
+									"$": "#e1e1e2"
+								},
+								"price": {
+									"$": "299"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-white"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/j\/j\/d\/shop-white.png?action=access&assetId=A-5uf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-white"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/e\/f\/f\/hero-white.png?action=access&assetId=A-5uf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909822119"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "32GB"
+								},
+								"colorVariant": {
+									"$": "yellow"
+								},
+								"gradientColor": {
+									"$": "#f3e25d"
+								},
+								"price": {
+									"$": "299"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-yellow"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/b\/c\/c\/shop-yellow.png?action=access&assetId=A-0uf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-yellow"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/a\/e\/hero-yellow.png?action=access&assetId=A-0uf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909741687"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "16GB"
+								},
+								"colorVariant": {
+									"$": "yellow"
+								},
+								"gradientColor": {
+									"$": "#f3e25d"
+								},
+								"price": {
+									"$": "199"
+								},
+								"inventory": {
+									"$": "out-of-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-yellow"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/c\/a\/shop-yellow.png?action=access&assetId=A-auf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-yellow"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/j\/h\/i\/hero-yellow.png?action=access&assetId=A-auf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909741670"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "16GB"
+								},
+								"colorVariant": {
+									"$": "white"
+								},
+								"gradientColor": {
+									"$": "#e1e1e2"
+								},
+								"price": {
+									"$": "199"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-white"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/h\/e\/d\/shop-white.png?action=access&assetId=A-Ztf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-white"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/h\/h\/hero-white.png?action=access&assetId=A-Ztf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909822126"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "32GB"
+								},
+								"colorVariant": {
+									"$": "blue"
+								},
+								"gradientColor": {
+									"$": "#40b0ea"
+								},
+								"price": {
+									"$": "299"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-blue"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/c\/i\/shop-blue.png?action=access&assetId=A-Ytf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-blue"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/i\/d\/b\/hero-blue.png?action=access&assetId=A-Ytf6XVKM1TW"
+									}
+								}
+							},
+							{
+								"sku": {
+									"$": "885909822140"
+								},
+								"externalUrl": {
+									"$": "apple-iphone5c"
+								},
+								"memoryVariant": {
+									"$": "32GB"
+								},
+								"colorVariant": {
+									"$": "pink"
+								},
+								"gradientColor": {
+									"$": "#e7686b"
+								},
+								"msrp": {
+									"$": "299"
+								},
+								"discount": {
+									"$": "140.0"
+								},
+								"price": {
+									"$": "159.0"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "false"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "shop-pink"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/i\/c\/h\/shop-pink.png?action=access&assetId=A-6uf6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero-pink"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/e\/c\/h\/hero-pink.png?action=access&assetId=A-6uf6XVKM1TW"
+									}
+								}
+							}]
+						}
+					}]
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

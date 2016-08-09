@@ -1,0 +1,144 @@
+
+<section class="billing_form">
+  <div class="col-xs-12">
+    <span class="requiredInfo pull-right">*Required Information</span>
+    <h4 class="mainColor">Billing Information</h4>
+    <small>
+      <strong>Enter your name as it appears on your card.</strong> We will only ship to your billing address. We cannot ship to a PO Box address.
+    </small>
+    <form name="billingForm" class="form-group form-group-sm">
+      <label class="col-sm-2 control-label required hidden-xs" for="firstName">First Name</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="firstName" id="firstName" maxlength="25" ng-model="checkoutController.data.billingInfo.firstName" 
+          ng-change="checkoutController.changeStatus.billingInfo.firstName.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.firstName.check=false"
+          ng-blur="checkoutController.changeStatus.billingInfo.firstName.check=true"
+          placeholder="First Name" ng-pattern="/^[0-9a-zA-Z ]+$/" required/>
+          <div ng-show="checkoutController.changeStatus.billingInfo.firstName.changed && 
+                        checkoutController.changeStatus.billingInfo.firstName.check &&
+                        billingForm.firstName.$error.required" class="errorMessage">* First Name is required</div>
+          <div ng-show="checkoutController.changeStatus.billingInfo.firstName.changed && 
+                        checkoutController.changeStatus.billingInfo.firstName.check &&
+                        billingForm.firstName.$error.pattern" class="errorMessage">* Only letters and numbers are acceptable</div>
+      </div>
+      <label class="col-sm-2 control-label required hidden-xs" for="lastName">Last Name</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="lastName" id="lastName" maxlength="25" ng-model="checkoutController.data.billingInfo.lastName" 
+          ng-change="checkoutController.changeStatus.billingInfo.lastName.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.lastName.check=false"
+          ng-blur="checkoutController.changeStatus.billingInfo.lastName.check=true"
+          placeholder="Last Name" ng-pattern="/^[0-9a-zA-Z ]+$/" required/>
+        <div ng-show="checkoutController.changeStatus.billingInfo.lastName.changed &&
+                      checkoutController.changeStatus.billingInfo.lastName.check &&
+                      billingForm.lastName.$error.required" class="errorMessage">* Last Name is required</div>
+        <div ng-show="checkoutController.changeStatus.billingInfo.lastName.changed &&
+                      checkoutController.changeStatus.billingInfo.lastName.check &&
+                      billingForm.lastName.$error.pattern" class="errorMessage">* Only letters and numbers are acceptable</div>
+      </div>
+      <label class="col-sm-2 control-label required hidden-xs" for="address1">Address 1</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="address1" id="address1" maxlength="50" ng-model="checkoutController.data.billingInfo.address1" 
+          ng-change="checkoutController.changeStatus.billingInfo.address1.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.address1.check=false"
+          ng-blur="checkoutController.changeStatus.billingInfo.address1.check=true"
+          placeholder="{{checkoutController.data.shippingInfo!=checkoutController.data.billingInfo?'Address':'No PO Boxes or Military Addresses for Shipping Address'}}" required/>
+        <div ng-show="checkoutController.changeStatus.billingInfo.address1.changed &&
+                      checkoutController.changeStatus.billingInfo.address1.check &&
+                      billingForm.address1.$error.required" class="errorMessage">* Address1 is required</div>
+        <div ng-show="checkoutController.data.shippingInfo==checkoutController.data.billingInfo && !checkoutController.checkShippingInfo(checkoutController.data.shippingInfo.address1,1)" class="errorMessage">* Sorry, no PO Boxes or Military Addresses for Shipping Address</div>
+      </div>
+      <label class="col-sm-2 control-label hidden-xs" for="address2">Address 2</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="address2" id="address2" maxlength="50" ng-model="checkoutController.data.billingInfo.address2" placeholder="Apt., Suite, Building (optional)">
+        <div ng-show="checkoutController.data.shippingInfo==checkoutController.data.billingInfo && !checkoutController.checkShippingInfo(checkoutController.data.shippingInfo.address2,2)" class="errorMessage">* Sorry, no PO Boxes or Military Addresses for Shipping Address</div>
+      </div>
+      <label class="col-sm-2 control-label required hidden-xs" for="city">City</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="city" maxlength="25" id="city" ng-model="checkoutController.data.billingInfo.city"
+          ng-change="checkoutController.changeStatus.billingInfo.city.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.city.check=false" 
+          ng-blur="checkoutController.changeStatus.billingInfo.city.check=true" 
+          placeholder="City" ng-pattern="/^[0-9a-zA-Z ]+$/" required/>
+        <div ng-show="checkoutController.changeStatus.billingInfo.city.changed &&
+                      checkoutController.changeStatus.billingInfo.city.check &&
+                      billingForm.city.$error.pattern" class="errorMessage">* Only letters and numbers are acceptable</div>
+        <div ng-show="checkoutController.changeStatus.billingInfo.city.changed &&
+                      checkoutController.changeStatus.billingInfo.city.check &&
+                      billingForm.city.$error.required" class="errorMessage">* City is required</div>
+      </div>
+      <label class="col-sm-2 control-label required hidden-xs" for="zipCode">Zip Code</label>
+      <div class="col-sm-3">
+        <input class="form-control" type="text" id="zipCode" name="zipCode" ng-model="checkoutController.data.billingInfo.zipCode" 
+          ng-change="checkoutController.changeStatus.billingInfo.zipCode.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.zipCode.check=false" 
+          ng-blur="checkoutController.changeStatus.billingInfo.zipCode.check=true" 
+          placeholder="Zip Code" ng-pattern="/^[0-9]{5}$/" ng-maxlength="5" maxlength="5" required/>
+        <div ng-show="checkoutController.changeStatus.billingInfo.zipCode.changed &&
+                      checkoutController.changeStatus.billingInfo.zipCode.check &&
+                      billingForm.zipCode.$error.pattern" class="errorMessage">* Not a valid Zip Code</div>
+        <div ng-show="checkoutController.changeStatus.billingInfo.zipCode.changed &&
+                      checkoutController.changeStatus.billingInfo.zipCode.check &&
+                      billingForm.zipCode.$error.required" class="errorMessage">* Zip Code is required</div>
+                      {{checkoutController.checkBlackZipcode(checkoutController.data.billingInfo.zipCode)}}
+      </div>
+      <label class="col-sm-2 control-label required hidden-xs" for="state">State</label>
+      <div class="col-sm-3">
+        <select class="form-control" name="state" ng-model="checkoutController.data.billingInfo.state" 
+          ng-change="checkoutController.changeStatus.billingInfo.state.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.state.check=false" 
+          ng-blur="checkoutController.changeStatus.billingInfo.state.check=true" 
+          ng-options="state.value as state.label for state in commonData.stateOptions" required></select>
+        <div ng-show="checkoutController.changeStatus.billingInfo.state.changed &&
+                      checkoutController.changeStatus.billingInfo.state.check &&
+                      billingForm.state.$error.required" class="errorMessage">* State is required</div>
+      </div>
+      <label class="col-sm-2 control-label required hidden-xs" for="phoneNumber">Phone Number</label>
+      <div class="col-sm-3">
+        <input class="form-control" type="text" id="phoneNumber" name="phoneNumber" ng-model="checkoutController.data.billingInfo.phoneNumber" 
+          ng-change="checkoutController.changeStatus.billingInfo.phoneNumber.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.phoneNumber.check=false" 
+          ng-blur="checkoutController.changeStatus.billingInfo.phoneNumber.check=true" 
+          placeholder="Phone" required="required" 
+          ng-pattern="/^(1[ -]?)?(\([2-9]\d{2}\)|[2-9]\d{2})[ -]?[2-9]\d{2}[ -]?\d{4}$/" maxlength="12"/>
+        <div ng-show="checkoutController.changeStatus.billingInfo.phoneNumber.changed &&
+                      checkoutController.changeStatus.billingInfo.phoneNumber.check &&
+                      billingForm.phoneNumber.$error.pattern" class="errorMessage" class="errorMessage">* Not a phone number</div>
+        <div ng-show="checkoutController.changeStatus.billingInfo.phoneNumber.changed &&
+                      checkoutController.changeStatus.billingInfo.phoneNumber.check &&
+                      billingForm.phoneNumber.$error.required" class="errorMessage" class="errorMessage">* Phone Number is required</div>
+      </div>
+      <label class="col-sm-2 control-label required hidden-xs" for="email">Email</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="email" id="email" name="email" maxlength="75" ng-model="checkoutController.data.billingInfo.email" 
+          ng-change="checkoutController.changeStatus.billingInfo.email.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.email.check=false" 
+          ng-blur="checkoutController.changeStatus.billingInfo.email.check=true" 
+          placeholder="Email" required="required"/>
+        <div ng-show="checkoutController.changeStatus.billingInfo.email.changed &&
+                      checkoutController.changeStatus.billingInfo.email.check &&
+                      billingForm.email.$error.required" class="errorMessage">* Email is required</div>
+        <div ng-show="checkoutController.changeStatus.billingInfo.email.changed &&
+                      checkoutController.changeStatus.billingInfo.email.check &&
+                      billingForm.email.$error.email" class="errorMessage">* Email format is not invalid (ex. xxx@xxx)</div>
+      </div>
+      <label class="col-sm-2 control-label required hidden-xs" for="validateEmail">Validate Email</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="email" id="validateEmail" name="validateEmail" maxlength="75" ng-model="checkoutController.data.billingInfo.validateEmail" 
+          ng-change="checkoutController.changeStatus.billingInfo.validateEmail.changed=true" 
+          ng-focus="checkoutController.changeStatus.billingInfo.validateEmail.check=false" 
+          ng-blur="checkoutController.changeStatus.billingInfo.validateEmail.check=true" 
+          placeholder="Validate Email" required="required"/>
+        <div ng-show="checkoutController.changeStatus.billingInfo.validateEmail.changed &&
+                      checkoutController.changeStatus.billingInfo.validateEmail.check &&
+                      billingForm.validateEmail.$error.required" class="errorMessage">* Validate Email is required</div>
+        <div ng-show="checkoutController.changeStatus.billingInfo.validateEmail.changed &&
+                      checkoutController.changeStatus.billingInfo.validateEmail.check &&
+                      billingForm.validateEmail.$error.email" class="errorMessage">* Email format is not invalid (ex. xxx@xxx)</div>
+        <div ng-show="checkoutController.changeStatus.billingInfo.validateEmail.changed &&
+                      checkoutController.changeStatus.billingInfo.validateEmail.check &&
+                      checkoutController.data.billingInfo.validateEmail && 
+                      checkoutController.data.billingInfo.validateEmail!=checkoutController.data.billingInfo.email" class="errorMessage">* Emails do not match</div>
+      </div>
+    </form>
+  </div>
+</section>

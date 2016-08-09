@@ -1,0 +1,46 @@
+{
+  "responses": {
+    "response": [
+      {
+        "@uuid": "84da8d13-5c40-4e7d-82f6-ba4bfe0db600",
+        "@class": "",
+        "@name": "Section 19029",
+        "@code": "0",
+        "overlayBannerResponse": {
+          "overlayBanner": {
+            "name": {
+              "$": "vmu > phone grid > live without border"
+            },
+            "brandId": {
+              "$": "VMU"
+            },
+            "overlayBannerId": {
+              "$": "vmu-live-without-borders-banner"
+            },
+            "description": {
+              "$": "VMU Live without Borders Banner"
+            },
+            "htmlBlock": {
+              "$": "<span class=\"banner-live-without-borders\"><a href=\"#!/cell-phone-plans/international-offers/\"><img src=\"/repository/store/P-d0avx1PuX34/d/d/i/banner-live-without-borders.png?action=access&assetId=A-aROleJYfxQ2\" class=\"banner-mar-top\"></a></span>"
+            },
+            "image1": {
+              "fileName": {
+                "$": "banner-live-without-borders"
+              },
+              "uRI": {
+                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/d/i/banner-live-without-borders.png?action=access&assetId=A-aROleJYfxQ2"
+              }
+            }
+          },
+          "status": {
+            "$": "0"
+          },
+          "description": {
+            "$": "SUCCESS"
+          }
+        }
+      }
+    ]
+  }
+}
+

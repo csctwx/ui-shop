@@ -1,0 +1,12 @@
+<div class="modal fade" id="alertMsg">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width:400px">
+      <div class="modal-body">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>{{app.alertMsg.title}}</h3>
+        <p>{{app.alertMsg.description}}</p>
+        <p style="text-align:center"><a style="padding:20px" ng-repeat="link in app.alertMsg.links" onclick="$('#alertMsg').find('.close').click()" ng-href="{{link.url}}">{{link.title}}</a></p>
+      </div>
+    </div>
+  </div>
+</div>

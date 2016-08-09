@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Sprint Prepaid - Phone Details</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/app-framework.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<div class="container">
+			<div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+				<a href="framework_home.html">Home</a>
+			</div>
+			<div class="col-xs-9 col-md-10 pull-right">
+				<div class="navbar pull-left visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#" data-toggle="modal" data-target="#coverageMap">Coverage Map</a></li>
+						<li class="navbar-item"><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+					</ul>
+					<div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<h2>Coverage Map</h2>
+									<p>Text about coverage.</p>
+									<a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar pull-right visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill">Refill</a></li>
+						<li class="navbar-item"><a href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support">Support</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate">Activate</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct">My Account</a></li>
+						<li class="navbar-item"><a href="">Sign in</a></li>
+					</ul>
+				</div>
+				<div class="visible-sm visible-xs greeting">
+					<button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+						<i class="glyphicon glyphicon-remove"></i>
+					</button>
+					<p class="greeting-name"><span>Good morning, </span>UserName</p>
+					<p class="greeting-number">PhoneNumber</p>
+				</div>
+				<ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+					<li><a href="framework_shop.html">Shop</a></li>
+					<li><a href="framework_phones.html">All Phones</a></li>
+					<li><a href="">Android Phones</a></li>
+					<li><a href="framework_plans.html">Shop Plans</a></li>
+					<li><a href="framework_addservices.html">Additional Services</a></li>
+				</ul>
+				<ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_shop.html">Shop <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_phones.html">All Phones</a></li>
+							<li><a>Android Phones</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_plans.html">Plans <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_plans.html">Shop Plans</a></li>
+							<li><a href="framework_addservices.html">Additional Services</a></li>
+						</ul>
+					</li>
+					<li class="cart dropdown">
+						<a class="dropdown-toggle" href="framework_purchase-01.html"><img src="img/icons/cart-white.png"></img><span>Cart</span><span id="cart-count">1</span></a>
+						<ul class="dropdown-menu subnav">
+							<li>
+								<ul>
+									<li>
+										<img class="phoneImg" src="img/phone1-1.png"></img>
+										<div class="pull-left">
+											<span class="phoneBrand">Samsung</span>
+											<span class="phoneName">Galaxy S5</span>
+											<span class="phoneColor"></span>
+											<span class="phoneMemory"></span>
+										</div>
+										<div class="pull-right">
+											<span class="quantity">1</span>
+											<span class="totalPrice">199.99</span>
+											<a class="removePhone"><i class="glyphicon glyphicon-remove-circle"></i></a>
+										</div>
+									</li>
+								</ul>
+								<a class="cartAction">Empty cart</a>
+								<a class="cartAction pull-right" href="framework_purchase-01.html">Checkout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="#home" class="linkHome">Home</a>
+		<ul class="mobilelinks">
+			<li><a href="framework_purchase-01.html"><i class="glyphicon glyphicon-shopping-cart"><span id="cart-count">1</span></i></a></li>
+			<li><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+			<li><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct"><i class="glyphicon glyphicon-log-in"></i></a></li>
+		</ul>
+    </div>
+	<div class="container main">
+		<ol class="breadcrumb hidden-xs">
+			<li><a href="framework_home.html">Home</a></li>
+			<li><a href="framework_shop.html">Shop</a></li>
+			<li><a href="framework_phones.html">Phones</a></li>
+			<li class="active">phoneBrand phoneName</li>
+		</ol>
+		<section class="phoneDetailsTop">
+			<span class="return visible-xs"><i class="glyphicon glyphicon glyphicon-chevron-left"></i><a href="framework_phones.html">Return to shop phones</a></span>
+			<div class="col-sm-6 images">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/phone1-1.png">
+						</div>
+						<div class="item">
+							<img src="img/phone1-2.png">
+						</div>
+						<div class="item">
+							<img src="img/phone1-3.png">
+						</div>
+						<div class="item">
+							<img src="img/phone1-4.png">
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 details onSale onPromo onPromo-01">
+				<div class="col-xs-12">
+					<h2 class="title"><span class="phoneBrand">Samsung</span><span class="phoneName">Galaxy S5</span></h2>
+					<p class="rating">
+						<span>&#9733; &#9733; &#9733;</span>
+						<a class="reviews">25</a>
+						<a>Write a review</a>
+					</p>
+					<p class="longDescription">Why it rocks: The Galaxy S5 packs the features listed above into a powerhouse device that is accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it. Why it rocks: The Galaxy S5 packs the features listed above into a powerhouse device that is accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it. It’s your world, the Galaxy S5 just helps you rule it. Why it rocks: The Galaxy S5 packs the features listed above into a powerhouse device that is accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it. Accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it. Accessible as it is capable. It’s your world, the Galaxy S5 just helps you rule it.</p>
+					<div class="col-xs-12 col-sm-10 prices">
+						<p class="shippingNotice"><b>FREE Shipping.</b> All the time. Ship to anywhere in the United States for free.</p>
+						<p class="phoneRetailPrice">
+							<span class="pull-left">Retail Price</span>79.99</p>
+						<p class="phonePromoDiscount"><span class="pull-left">Promotional discount</span>20.00</p>
+						<div class="colorOptions">
+							<input type="radio" name="variantColor" value="blue" id="color1" checked><label for="color1">Blue</label></input>
+							<input type="radio" name="variantColor" value="black" id="color2"><label for="color2">Black</label></input>
+							<input type="radio" name="variantColor" value="green" id="color3"><label for="color3">Green</label></input>
+						</div>
+						<div class="memOptions">
+							<input type="radio" name="variantMem" value="16" id="mem1" checked><label for="mem1">16GB</label></input>
+							<input type="radio" name="variantMem" value="32" id="mem2"><label for="mem2">32GB</label></input>
+							<input type="radio" name="variantMem" value="64" id="mem3"><label for="mem3">64GB</label></input>
+						</div>
+					</div>
+					<div class="col-xs-12 phoneBottom">
+						<div class="pull-left">
+							<h3 class="callNow">1-855-348-7299</h3>
+						</div>
+						<div class="pull-right">
+							<h2 class="phoneFinalPrice">59.99</h2>
+							<a class="btn btn-primary" href="framework_purchase-01.html">Add to cart</a>
+						</div>
+					</div>
+					<p class="smallPrint">Promotional pricing available only for select phones directly from sprint.com. Limited time only while supplies last. Android is a trademark of Google, Inc.</p>
+				</div>
+			</div>
+		</section>
+		<section class="tabs">
+			<div role="tabpanel" class="maintabs">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#features" aria-controls="features" role="tab" data-toggle="tab">Features &amp; Specs</a></li>
+					<li role="presentation"><a href="#plans" aria-controls="plans" role="tab" data-toggle="tab">Plans</a></li>
+					<li role="presentation"><!--<a aria-controls="reviews" role="tab" data-toggle="tab"></a>--></li>
+				</ul>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="features">
+						<div class="col-md-8">
+							<section>
+								<h3>Galaxy S5 <span>Features</span></h3>
+								<ul class="features features-half">
+									<li>
+										<img src="img/icons/android.png"></img>
+										<div>
+											<p>Android 4.4.2 (KitKat)</p>
+											<span>Experience the most-loved features of Android - sleek simplicity and speed.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/camera.png"></img>
+										<div>
+											<p>16 Megapixel Camera</p>
+											<span>Capture high-resolution pictures with the rear-facing camera and take all the selfies you want, plus video chat to your heart's content with the 2 megapixel front-facing camera.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/processor.png"></img>
+										<div>
+											<p>2.5 GHz Quad-Core Processor</p>
+											<span>Do more of the things you love. The Qualcomm Snapdragon processor gives you breathtaking speed, jaw-dropping graphics and long battery life.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/liquid.png"></img>
+										<div>
+											<p>IP67 Water and Dust Resistant</p>
+											<span>Don't sweat the small stuff. With an IP67 certification, the Galaxy S5 is resistant to sweat, rain, liquids, sand and dust.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/dualdisplay.png"></img>
+										<div>
+											<p>2.5 GHz Quad-Core Processor</p>
+											<span>Do more of the things you love. The Qualcomm Snapdragon processor gives you breathtaking speed, jaw-dropping graphics and long battery life.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/wifi.png"></img>
+										<div>
+											<p>IP67 Water and Dust Resistant</p>
+											<span>Don't sweat the small stuff. With an IP67 certification, the Galaxy S5 is resistant to sweat, rain, liquids, sand and dust.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/ule.png"></img>
+										<div>
+											<p>Environmental Certification</p>
+											<span>Certified by the independent UL Environment, this phone contains environmentally-preferable materials with a minimal environmental impact. <a href="ulcertified" data-toggle="modal" data-target="#ulcertified-modal">More info</a>.</span>
+										</div>
+									</li>
+								</ul>
+								<div class="modal fade" href="" id="ulcertified-modal" tabindex="-1" role="dialog" aria-labelledby="ulcertified" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<strong class="pull-left">ULE Environment Score <span class="leaf-50"></span></strong>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											</div>
+											<div class="modal-body">
+												<span class="fullscore leaf-45"></span>
+												<p>Sprint Prepaid devices are assessed and rated on their sustainability by UL Environment. The score is based on UL 110 - the sustainability standard for mobile phones. We are the only wireless carrier to take all its devices through the independent UL Environment certification process. To be certified, phones must meet a set of prerequisites and then earn points based on additional sustainability criteria. The table below reflects the additional criteria scoring above the prerequisites.</p>
+												<p><a href="http://www.sprint.com/responsibility/ouroperations/ule.html">More info about ULE certification</a>.</p>
+												<ul>
+													<li><p>Materials</p><span class="leaf-10"></span></li>
+													<li><p>Energy &amp; Performance</p><span class="leaf-15"></span></li>
+													<li><p>Health &amp; Environment</p><span class="leaf-20"></span></li>
+													<li><p>End-of-Life Management/Life Extension</p><span class="leaf-25"></span></li>
+													<li><p>Packaging</p><span class="leaf-30"></span></li>
+													<li><p>Manufacturing &amp; Operations</p><span class="leaf-35"></span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a class="fullfeatures" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">View Full Feature List <b class="caret"></b></a>
+								<div class="collapse" id="collapseExample">
+									<div class="well">
+										<ul class="details half">
+											<li>Voicemail</li>
+											<li>Wi-Fi enabled</li>
+											<li>3-way calling</li>
+											<li>3.5mm headset jack</li>
+											<li>Virtual QWERTY keyboard</li>
+											<li>Audio Recorder</li>
+										</ul>
+									</div>
+								</div>								
+							</section>
+							<section class="specs">
+								<div class="hidden-sm hidden-md hidden-lg">
+									<h3>Galaxy S5 <span>Specs</span></h3>
+									<table class="table table-condensed table-striped">
+										<tbody>
+											<tr>
+												<th scope="row">Size</th>
+												<td>Height 5.59", Width 2.85", Depth .31"</td>
+											</tr>
+											<tr>
+												<th scope="row">Weight</th>
+												<td>5.11 oz</td>
+											</tr>
+											<tr>
+												<th scope="row">Screen Size</th>
+												<td>5.1" HD Super AMOLED™ (1080 x 1920)</td>
+											</tr>
+											<tr>
+												<th scope="row">Memory</th>
+												<td>2GB RAM / 16GB ROM</td>
+											</tr>
+											<tr>
+												<th scope="row">Battery</th>
+												<td>Talking Time 21 hrs</td>
+											</tr>
+											<tr>
+												<th scope="row">Battery Type</th>
+												<td>2800 mAh Li-Ion Battery</td>
+											</tr>
+											<tr>
+												<th scope="row">Removable</th>
+												<td>Yes</td>
+											</tr>
+											<tr>
+												<th scope="row">Processor</th>
+												<td>2.5 GHz Quad Core Processor</td>
+											</tr>
+											<tr>
+												<th scope="row">OS</th>
+												<td>Android 4.4 (KitKat)</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="hidden-xs">
+									<h3>Galaxy S5 <span>Specs</span></h3>
+									<div class="pull-left lists">
+										<ul>
+											<p><span>Size &amp; Weight</span></p>
+											<li><span>Height</span>5.59"</li>
+											<li><span>Width</span>2.85"</li>
+											<li><span>Weight</span>5.11 oz</li>
+											<li><span>Depth</span>.31"</li>
+											<li><span>Screen Size</span>5.1" HD Super AMOLED™ (1080 x 1920)</li>
+											<p><span>Memory</span>2GB RAM / 16GB ROM</p>
+											<p><span>Operating System</span>Android 4.4 (KitKat)</p>
+										</ul>
+										<ul>
+											<p><span>Battery</span></p>
+											<li><span>Talk Time</span>21 hrs</li>
+											<li><span>Battery Type</span>2800 mAh Li-Ion Battery</li>
+											<li><span>Removable</span>Yes</li>
+											<p><span>Processor</span>2.5 GHz Quad Core Processor</p>
+										</ul>
+									</div>
+									<img src="img/img-specs.png"></img>
+								</div>
+							</section>
+							<section class="inthebox">
+								<h3>What's in the Box</h3>
+								<ul class="details half">
+									<li>Phone</li>
+									<li>Micro-USB Charger</li>
+									<li>Battery</li>
+								</ul>
+								 <img onload="$(this).show()" alt="" ng-src="{{phoneController.details.data.features.inTheBoxImage}}" onerror="this.style.display='none'"></img>
+							</section>
+							<section>
+								<h3>User Guides &amp; Support</h3>
+								<p>Want to know everything there is to know about this phone? Learn everything, from setting up your email to managing all of your games and applications.</p>
+								<a class="btn btn-lg btn-primary">Device Support</a>
+							</section>
+						</div>
+						<div class="col-md-4">
+							<section>
+								<div class="orderbyphone">
+									<h3>Order by phone</h3>
+									<p>Need help choosing a phone or a plan? Just give us a call.</p>
+									<h3 class="phonenumber">1-866-866-7509</h3>
+								</div>
+							</section>
+							<section>
+								<h3>How it works</h3>
+								<ul class="features howitworks">
+									<li>
+										<img src="img/icons/smartphone.png"></img>
+										<div>
+											<p>Order by phone, online or in a store.</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/activate.png"></img>
+										<div>
+											<p>When you get your phone, activate a no-contract plan online.</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/keepyournumber.png"></img>
+										<div>
+											<p>Keep your number or choose a new one. Enjoy!</p>
+										</div>
+									</li>
+								</ul>
+							</section>
+							<section>
+								<h3>Great value. Total flexibility.</h3>
+								<p>Finally, something different from your wireless relationship.</p>
+								<ul class="features">
+									<li>
+										<img src="img/icons/sprintspark.png"></img>
+										<div>
+											<p>Freedom from annual contracts</p>
+											<span>Enjoy more flexibility.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/4g.png"></img>
+										<div>
+											<p>Nationwide 4G LTE network</p>
+											<span>Better call quality with high definition voice, faster speeds, and better coverage than before.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/sprintzone.png"></img>
+										<div>
+											<p>Affordable monthly plans</p>
+											<span>Stay connected without breaking the bank.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/wifi.png"></img>
+										<div>
+											<p>Mobile Hotspot included</p>
+											<span>Now available on select devices. Connect Wi-Fi enabled tablets, laptops, and more.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/activate.png"></img>
+										<div>
+											<p>No credit checks</p>
+											<span>Get service quickly.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/general.png"></img>
+										<div>
+											<p>No surprises or late fees</p>
+											<span>Prepay for your service each month, so you're in control.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/dualdisplay.png"></img>
+										<div>
+											<p>Switching is easy</p>
+											<span>Keep your current phone number or get a new one&mdash;it's up to you.</span>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/smartphone.png"></img>
+										<div>
+											<p>Cutting-edge phones</p>
+											<span>Get the latest hardware and software technology.</span>
+										</div>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="plans">
+						<div class="col-md-8">
+							<section class="tab-plans">
+								<h3>Galaxy S5 <span>Plans</span></h3>
+								<img src="img/img-rateGrid.gif"></img>
+								<p>All pricing per month on the Nationwide Sprintｮ Network. Unlimited domestic voice services while on-network (non-roaming) only. Plans include 50 voice roaming minutes/month. Monthly on-network data access ends after plan's applicable allowance reached.Data pack add-on provides additional high-speed data for device and/or hotspot (select devices only) usage; expires 30 days from purchase date or when data depleted, whichever occurs ｭfirst. Price, plans &amp; offers subject to change and vary by market/retailer.</p>
+							</section>
+							<section class="tab-addservices">
+								<div>
+									<h3>Additional Plan Services</h3>
+									<p>Customize your plan with these add-on services. Available services may vary by phone type.</p>
+									<div>
+										<h4>International Rates</h4>
+										<p>Connect to friends and family around the world with our low international rates.</p>
+										<a href="framework_addservices.html" class="btn btn-primary">Learn More</a>
+									</div>
+									<div>
+										<h4>Phone Insurance</h4>
+										<p>It's peace of mind for your Sprint Prepaid phone. For just $7/month.</p>
+										<a href="framework_addservices.html"  class="btn btn-primary">Learn More</a>
+									</div>
+									<div>
+										<h4>Mobile Hotspot</h4>
+										<p>Turn your phone into a mobile Wi-Fi hotspot. Now available on select Sprint Prepaid devices.</p>
+										<a href="framework_addservices.html"  class="btn btn-primary">Learn More</a>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="col-md-4">
+							<section class="coverage askedquestions">
+								<a href=""><img src="img/img-bannerCoverage.gif"></img></a>
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												What is Sprint Prepaid? How does it work?
+												</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+											With Sprint Prepaid there are no annual contracts, no credit checks, surprises or late fees. There are also no compromises with unlimited talk and text plans with varied data options and some of the latest technology including 4G LTE and Sprint Spark capable devices. You simply 1) choose a compatible Sprint Prepaid phone, 2) select a plan based on your phone and how much data you want to use per month and 3) activate and prepay each month for your service.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTwo">
+											<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											Can I keep my existing phone number when I switch to Sprint Prepaid?
+											</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="panel-body">
+											In most instances, yes. However, porting your wireless number from certain carriers may not be available or limited, depending on your carrier. Call Customer Care at 1-866-866-7509 for more info.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingThree">
+											<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											If I already have a Sprint device, can I use it with a Sprint Prepaid plan?
+											</a>
+											</h4>
+										</div>
+										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+											<div class="panel-body">
+											Sprint Prepaid devices are specially designed to work with Sprint Prepaid plans. Sprint Prepaid plans are limited only to approved Sprint Prepaid devices.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingFour">
+											<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											Can I combine my Sprint Prepaid account or payment with another Sprint account?
+											</a>
+											</h4>
+										</div>
+										<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+											<div class="panel-body">
+											At this time, there is only one person or subscriber allowed with each Sprint Prepaid account. While we try to make it simple to manage your Sprint Prepaid account at any time through sprint.com/prepaidmysprint, Sprint Prepaid accounts cannot be combined with Sprint postpaid accounts.
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<!--
+					<div role="tabpanel" class="tab-pane" id="reviews">
+						<div class="col-md-8">
+							<section>
+								<h3>Galaxy S5 <span>Reviews</span></h3>
+								<p>Reviews API to go here.</p>
+							</section>
+						</div>
+						<div class="col-md-4">
+							<section>
+								<div class="orderbyphone">
+									<h3>Order by phone</h3>
+									<p>Need help choosing a phone or a plan? Just give us a call.</p>
+									<h3 class="phonenumber">1-866-866-7509</h3>
+								</div>
+							</section>
+							<section>
+								<h3>How it works</h3>
+								<ul class="features howitworks">
+									<li>
+										<img src="img/icons/smartphone.png"></img>
+										<div>
+											<p>Order by phone, online or in a store.</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/activate.png"></img>
+										<div>
+											<p>When you get your phone, activate a no-contract plan online.</p>
+										</div>
+									</li>
+									<li>
+										<img src="img/icons/keepyournumber.png"></img>
+										<div>
+											<p>Keep your number or choose a new one. Enjoy!</p>
+										</div>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+		</section>
+		<section class="legal">
+			<p>After applicable data allotment reached, data speeds (including video) reduced to 2G speeds for remainder of plan cycle. International services extra. Double the data compared to Sprint's former plans. Prices &amp; offers subject to change without notice &amp; may not be available in all markets/retail locations or for all devices. State &amp; local sales taxes/fees may apply when adding funds to accounts. Coverage not available everywhere. Sprint 4G LTE network reaches over 260 million people. Sprint reserves the right to modify, extend or cancel offer at any time. Offer, network use rules &amp; other restrictions apply.</p>
+		</section>
+	</div>	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12">
+				<p>&copy; 2015 Sprint. <span class="hidden-xs">All rights reserved.</span></p>
+				<ul class="footer-links">
+					<li><a href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+					<li><a href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/sprintprepaid-bootstrap.min.js"></script>
+    <script src="../js/lib/jasny-bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+		$('.carousel').carousel({
+			pause: true,
+			interval: false
+		})
+		$('#ulcertified').on('shown.bs.modal', function () {
+			$('#ulcertified-modal').focus()
+		})
+		$(function(){
+		$(".dropdown").hover(
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>

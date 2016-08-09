@@ -1,0 +1,41 @@
+{
+  "responses": {
+    "response": [
+      {
+        "@uuid": "5915ae11-67eb-4138-9d67-dcb1cb0c4352",
+        "@class": "",
+        "@name": "section_banner",
+        "@position": "layout_full",
+        "@code": "0",
+        "getBannerResponse": {
+          "banner": {
+            "assetId": {
+              "$": "A-FFh6XVKM1TW"
+            },
+            "name": {
+              "$": "Grid Top Banner"
+            },
+            "url": {
+              "$": "#!/plans/"
+            },
+            "imageUrl": {
+              "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/j/a/j/banner-03.jpg?action=access&assetId=A-FFh6XVKM1TW"
+            },
+            "title": {},
+            "description": {},
+            "linkText": {},
+            "alt": {
+              "$": "Sprint Prepaid Plans"
+            }
+          },
+          "status": {
+            "$": "0"
+          },
+          "description": {
+            "$": "SUCCESS"
+          }
+        }
+      }
+    ]
+  }
+}

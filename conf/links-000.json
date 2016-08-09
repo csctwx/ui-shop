@@ -1,0 +1,347 @@
+var linkMap={
+  setting:{
+    bst:{
+      shop:{
+        host:"http://boostmobile.com:8080/sprintsc-repo/ui-shop/"
+      },
+      myAccount:{
+        host:"//myaccount.prepaid.sprint.com/"
+      }
+    },
+    spp:{
+      shop:{
+        host:"http://localhost:8080/sprintsc-repo/ui-shop/"
+      }
+    },
+    maps:{
+      shop:{
+        home:"#!/|Nav:Logo",
+        coveragemap:"#!/coveragemap/",
+        store:"#!/store/",
+        shop:"#!/shop/|Nav:Shop",
+        phones:"#!/shop/phones/|Nav:Shop:AllPhones",
+        hotspots:"#!/shop/hotspots/netgear-fuse-mobile-hotspot/features/",
+        deals:"#!/shop/deals/",
+        inStoreOffers:"#!/shop/in-store-offers/",
+        accessories:"#!/shop/accessories/",
+        market:"#!/framework_boost_market#apps/",
+        orderStatus:"#!/shop/orderStatus/",
+        plans:"#!/plans/",
+        monthlyPlans:"http://www.boostmobile.com/shop/plans/monthly-phone-plans",
+        dailyPlans:"framework_plans.html",
+        hotspotPlans:"#!/mobile-hotspot/",
+        internationalCalling:"#!/international-services",
+        whyChoose:"#!/whychoose#value/",
+        whyChoosePrepaid:"#!/whychoose#prepaid/",
+        supportMilitaryFamilies:"#!/whychoose#military/",
+        checkout:"#!/shop/checkout",
+        phoneInsurance:"#!/phone-insurance",
+        refProgram:"#!/whychoose#referral",
+        contactUs:"#!/framework_contact_us",
+        returnPolicy:"#!/framework_return_policy",
+        careers:"#!/framework_careers",
+        dealerOpportunities:"#!/framework_dealer_oportunities",
+        affiliateProgram:"#!/framework_affiliate_program"
+      },
+      myAccount:{
+        login:"mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct",
+        activate:"mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate"
+      },
+      other:{
+        reboost:"https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill",
+        support:"http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support"
+      }
+    }
+  },
+  data:{
+    bst:{
+      "#mini-header":{
+        ".mobilenav":{
+          items:[
+            {
+              label:"Shop",
+              refHref:"shop.shop"
+            },
+            {
+              label:"Plans",
+              refHref:"shop.plans"
+            },
+            {
+              label:"Why Choose Boost",
+              refHref:"shop.whyChoose"
+            }
+          ]
+        }
+      },
+      header:{
+        ".top-left-menu":{
+          "class":"navbar-item",
+          items:[
+            {
+              label: "Español"
+            },
+            {
+              id: "coverageMapLink",
+              label:"Coverage Map",
+              refHref: "shop.coveragemap"
+            },
+            {
+              label:"Find a Store",
+              refHref: "shop.store"
+            }
+          ]
+        },
+        ".top-right-menu":{
+          "class":"navbar-item",
+          items:[
+            {
+              label: "Reboost",
+              refHref: "other.reboost"
+            },
+            {
+              label:"Support",
+              refHref:"other.support"
+            },
+            {
+              label:"Activate",
+              refHref:"myAccount.activate"
+            },
+            {
+              label:"My Account",
+              refHref:"myAccount.login"
+            }
+          ]
+        },
+        ".mini-menu":{
+          items:[
+            {
+              label:"My Account",
+              refHref:"myAccount.login",
+            },
+            {
+              label: "Reboost",
+              refHref: "other.reboost"
+            },
+            {
+              label: "Phones",
+              refHref: "shop.phones"
+            },
+            {
+              label: "Wi-Fi Hotspots",
+              refHref:"shop.hotspots"
+            },
+            {
+              label: "Plans",
+              refHref:"shop.plans"
+            },
+            {
+              label: "Online Deals",
+              refHref:"shop.deals"
+            },
+            {
+              label: "Boost Markets",
+              refHref:"shop.market"
+            },
+            {
+              label: "Order Status",
+              refHref:"shop.orderStatus"
+            },
+            {
+              label: "Support",
+              refHref:"other.support"
+            },
+            {
+              label: "Activate",
+              refHref:"myAccount.activate"
+            },
+            {
+              label: "EspaÃ±ol"
+            },
+          ]
+        },
+        "#shop-drop-down-menu":{
+          items:[
+            {
+              label:"Phones",
+              refHref:"shop.phones"
+            },
+            {
+              label:"Wi-Fi Hotspots",
+              refHref:"shop.hotspots"
+            },
+            {
+              label:"Online Deals",
+              refHref:"shop.deals"
+            },
+            {
+              label:"In Store Offers",
+              refHref:"shop.inStoreOffers"
+            },
+            {
+              label:"Accessories",
+              refHref:"shop.accessories"
+            },
+            {
+              label:"Boost Market",
+              refHref:"shop.market"
+            },
+            {
+              label:"Order Status",
+              refHref:"shop.orderStatus"
+            }
+          ]
+        },
+        "#plans-drop-down-menu":{
+          items:[
+            {
+              label:"Monthly Plans",
+              refHref:"shop.monthlyPlans"
+            },
+            {
+              label:"Daily Plans",
+              refHref:"shop.dailyPlans"
+            },
+            {
+              label:"Mobile Hotspot",
+              refHref:"shop.hotspotPlans"
+            },
+            {
+              label:"International Calling",
+              refHref:"shop.internationalCalling"
+            }
+          ]
+        },
+        "#why-drop-down-menu":{
+          items:[
+            {
+              label:"Value Without Compromise",
+              refHref:"shop.whyChoose"
+            },
+            {
+              label:"Why Choose Prepaid",
+              refHref:"shop.whyChoosePrepaid"
+            },
+            {
+              label:"Support Military Families",
+              refHref:"shop.supportMilitaryFamilies"
+            }
+          ]
+        }
+      },
+      footer:{
+        "#footer-shop":{
+          items:[
+            {
+              label:"Phones",
+              refHref:"shop.phones"
+            },
+            {
+              label:"Plans",
+              refHref:"shop.plans"
+            },
+            {
+              label:"Online Deals",
+              refHref:"shop.deals"
+            },
+            {
+              label:"Accessories",
+              refHref:"shop.accessories"
+            },
+            {
+              label:"Track Order",
+              refHref:"shop.orderStatus"
+            },
+            {
+              label:"Find a Store",
+              refHref:"shop.store"
+            }
+          ]
+        },
+        "#footer-services":{
+          items:[
+            {
+              label:"International Rates",
+              refHref:"shop.internationalCalling"
+            },
+            {
+              label:"Phone Insurance",
+              refHref:"shop.phoneInsurance"
+            },
+            {
+              label:"Referral Program",
+              refHref:"shop.refProgram"
+            },
+            {
+              label:"Buyback Program",
+              href:"https://buyback.boostmobile.com/bst/"
+            }
+          ]
+        },
+        "#footer-support":{
+          items:[
+            {
+              label:"Device Support",
+              href:"http://devicehelp.boostmobile.com/"
+            },
+            {
+              label:"FAQs",
+              href:"http://www.boostmobile.com/support/faq/"
+            },
+            {
+              label:"Return Policy",
+              refHref:"shop.returnPolicy"
+            },
+            {
+              label:"Coverage Map",
+              refHref:"shop.coveragemap"
+            },
+            {
+              label:"Contact Us",
+              refHref:"shop.contactUs"
+            }
+          ]
+        },
+        "#footer-manage-pay":{
+          items:[
+            {
+              label:"My Account",
+              refHref:"myAccount.login"
+            },
+            {
+              label:"Activate",
+              refHref:"myAccount.activate"
+            },
+            {
+              label:"Re-Boost/Add Money",
+              href:"http://www.boostmobile.com/reboost/"
+            }
+          ]
+        },
+        "#footer-about":{
+          items:[
+            {
+              label:"Newsroom",
+              href:"http://newsroom.boostmobile.com/"
+            },
+            {
+              label:"Careers",
+              refHref:"shop.careers"
+            },
+            {
+              label:"Dealer Opportunities",
+              refHref:"shop.dealerOpportunities"
+            },
+            {
+              label:"Affiliate Program",
+              refHref:"shop.affiliateProgram"
+            },
+            {
+              label:"Sitemap",
+              href:"http://www.boostmobile.com/sitemap/"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

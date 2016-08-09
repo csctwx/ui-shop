@@ -1,0 +1,242 @@
+@font-face{
+    font-family:BoostNeoRegular;
+    src:url(../fonts/v2/BoostNeo-Regular.eot);
+    src:url(../fonts/v2/BoostNeo-Regular.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Regular.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Regular.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Regular.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Regular.svg#boost_neoregular) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+
+@font-face{
+    font-family:BoostNeoBold;
+    src:url(../fonts/v2/BoostNeo-Bold.eot);
+    src:url(../fonts/v2/BoostNeo-Bold.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Bold.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Bold.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Bold.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Bold.svg#boost_neobold) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:BoostNeoBlack;
+    src:url(../fonts/v2/BoostNeo-Black.eot);
+    src:url(../fonts/v2/BoostNeo-Black.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Black.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Black.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Black.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Black.svg#boost_neoblack) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+
+
+/********** scaffolding *************/
+
+html #iPhone-5s-credit { font-size: 62.5%; } 
+body #iPhone-5s-credit  { font-size: 14px; font-size: 1.4rem; } /* =14px */
+#iPhone-5s-credit h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+#iPhone-5s-credit .wrapper {
+    padding: 40px 35px;
+}
+
+
+#iPhone-5s-credit .btn.btn-default {
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 100%);
+    font-size: 1.8rem;
+    padding: 7px 15px;
+    border-radius: 0;
+}
+
+#iPhone-5s-credit .btn.btn-default:hover {
+    background: #67CFCD;
+}
+
+/********** START OF STYLES OF iphone 5s credit *************/
+
+body #iPhone-5s-credit {
+    counter-reset: item;
+}
+
+#iPhone-5s-credit ol.fancy-dots {
+   list-style: none;
+   padding-left: 0;
+}
+
+#iPhone-5s-credit ol.fancy-dots li {
+   counter-increment: item;
+   margin-bottom: 10px;
+}
+
+#iPhone-5s-credit ol.fancy-dots li:before {
+   margin-right: 12px;
+   content: counter(item);
+   background: #f7901e;
+   border-radius: 100%;
+   color: white;
+   width: 1.4em;
+   text-align: center;
+   display: inline-block;
+}
+
+#iPhone-5s-credit {
+    font-family: 'BoostNeoBold', Helvetica, Arial, sans-serif;
+}
+
+#iPhone-5s-credit .mainContent h3:first-child {
+   margin-top: 0;
+}
+
+#iPhone-5s-credit .mainContent h3:nth-of-type(2) {
+   margin-top: 50px;
+}
+
+#iPhone-5s-credit header {
+    background-color: black;
+    padding-top: 1px;
+}
+
+#iPhone-5s-credit header .hero {
+    width: 100%;
+    min-height: 438px;
+    background-image: url('../img/iphone-5s-credit/hero_full.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-color: #E5E6E8;
+}
+
+#iPhone-5s-credit .hero {
+    width: 100%;
+}
+
+#iPhone-5s-credit .hero .info {
+    width: 50%;
+    /*height: 100%;*/
+    float: right;
+    text-align: center;
+    position: relative;
+    padding-top: 130px;
+}
+
+#iPhone-5s-credit .hero h3 {
+    font-family: 'BoostNeoBlack', Helvetica, Arial, sans-serif !important;
+    font-size: 4.0rem;
+}
+
+#iPhone-5s-credit .hero h3 sup {
+    font-size: 2.3rem;
+}
+
+#iPhone-5s-credit .hero h4 {
+    font-family: 'BoostNeoBlack', Helvetica, Arial, sans-serif !important;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+#iPhone-5s-credit .hero h4 + p {
+     font-family: 'BoostNeoBlack';
+    font-size: 1.1rem;
+}
+
+#iPhone-5s-credit .hero small {
+    font-size: 0.8rem;
+    bottom: 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+#iPhone-5s-credit footer {
+    background-color: black;
+    color: #919191;
+    padding: 30px 0;
+}
+
+#iPhone-5s-credit footer small {
+    font-size: 1.4rem;
+}
+
+
+#iPhone-5s-credit h1, #iPhone-5s-credit h2, #iPhone-5s-credit h3 {
+    font-family: 'BoostNeoBlack', Helvetica, Arial, sans-serif !important;
+    color: #f7901e;
+}
+
+#iPhone-5s-credit h1 {
+    font-size: 3.0rem;  
+}
+
+#iPhone-5s-credit h3 {
+    font-family: 'BoostNeoBold', Helvetica, Arial, sans-serif !important;
+    font-size: 2.2rem;
+}
+
+#iPhone-5s-credit small {
+    display: block;
+}
+
+
+/********** media queries *************/
+@media (max-width: 991px){
+    #iPhone-5s-credit footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px){
+    #iPhone-5s-credit header .hero {
+        height: auto;
+        min-height: 460px;
+        background-image: url('../img/iphone-5s-credit/hero_mobile.jpg');
+        background-position: bottom center;
+    }
+
+    #iPhone-5s-credit .hero .info {
+        width: 100%;
+        padding-top: 20px;
+        float: none;
+    }
+
+    #iPhone-5s-credit .hero .info small {
+       position: relative;
+       bottom: inherit;
+       width: auto;
+       margin-top: 20px;
+    }
+}
+@media (min-width: 992px){
+	
+}
+
+@media (min-width: 768px){
+	
+}
+
+@media (max-width: 992px){
+    #iPhone-5s-credit .wrapper {
+        padding: 20px;
+    }
+	footer {
+        padding: 30px 20px;
+    }
+}
+@media (min-width: 992px){
+	
+}
+
+@media(max-width: 413px){
+    #iPhone-5s-credit .mainContent h3:nth-of-type(2) {
+        margin-top: 20px;
+    }
+    #iPhone-5s-credit .hero h3 {
+        font-size: 3.0rem;
+    }
+    #iPhone-5s-credit .hero h4 {
+        font-size: 2.0rem;
+    }
+}
+

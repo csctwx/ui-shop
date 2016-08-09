@@ -1,0 +1,10 @@
+<div class="panel-body filter compare">
+  <ul>
+    <li ng-repeat="idx in [0,1,2,3]">
+      <a href="{{pathMap._phoneDetails._hash}}{{phoneController.compareItems.getValueById(idx,'id')}}/features/" ng-if="phoneController.compareItems.getValueById(idx,'id')">
+        <img alt="{{phoneController.compareItems.getValueById(idx,'brand')}} {{phoneController.compareItems.getValueById(idx,'name')}} - Sprint Prepaid" ng-src="{{phoneController.compareItems.getValueById(idx,'compare_thumb_img')}}">
+      <a class="removeComparePhone" href="" ng-click="phoneController.compareItems.removeItem(idx)" ng-if="phoneController.compareItems.getValueById(idx,'id')"><i class="glyphicon glyphicon-remove-circle"></i></a></a>
+    </li>
+  </ul>
+  <a id="compareBtn" class="btn btn-primary {{appName=='vmu'?'shop-btn shop-btn-gray':''}} ng-disabled="phoneController.compareItems.data.items.length==0" ng-href="{{pathMap._phoneCompare._hash}}">Compare</a>
+</div>

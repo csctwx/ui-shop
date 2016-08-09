@@ -1,0 +1,180 @@
+/* The below options are CSS classes added to #genie-options 
+            show-carousel           Determines whether the carousel is initialized
+            show-phones-X           limit the phones in the display window to only show X number of phones, IE: show-phones-1, show-phones-2, show-phones-3, etc
+            
+            show-all                show all phones
+            show-brand-XXXX         show only this brand of phones, IE: show-brand-apple, show-brand-samsung
+            show-type-XXXX          show only phones of this type, IE: show-type-android, show-type-iphone, show-type-feature, show-type-blackberry
+            show-condition-XXXX     show only phones by condition, IE: show-condition-new, show-condition-cpo
+             
+            hide-brand-XXXX         hide only this brand of phones, IE: hide-brand-apple, hide-brand-samsung
+            hide-type-XXXX          hide only phones of this type, IE: hide-type-android, hide-type-iphone, hide-type-feature, hide-type-blackberry
+            hide-condition-XXXX     hide only phones by condition, IE: hide-condition-new, hide-condition-cpo
+*/
+
+
+
+/**************** Phone Genie 2.0  ****************/
+        #module-phone_slider{z-index:1000;padding:0 0 40px;}
+        #phone_slider-view_all{height:39px;padding-top:20px;position:relative;z-index:100}
+            #phone_slider-view_all h2{margin:0;padding:0;font-size:20px;padding-left: 10px;}
+            #phone_slider-view_all #phone_slider-dangly_android{background:url('bst/img/android_slider_overhang.png') no-repeat scroll top left;width:66px;height:58px;position:absolute;left:598px;top:12px;z-index:10}
+            #phone_slider-view_all a{color:#F7901E;float:right;padding-right:10px;}
+            #phone_slider-view_all a:hover{color:#01b4b6}
+            #module-phone_slider .jcarousel-container{height:212px;text-align:center;z-index:10;position: static!important;}
+            
+                #phone_slider_box{background:url('bst/img/bg-phone_slider_card.png') repeat-x scroll top left;overflow: hidden;} 
+                    .show-carousel #phone_slider_box{margin-left:40px;margin-right:39px;}
+                    #phone_slider_box_left{background-image: url('bst/img/bg-phone_slider-shadow-left.png');background-position: top left;background-repeat: no-repeat;}
+                    #phone_slider_box_right{background-image: url('bst/img/bg-phone_slider-shadow-right.png');background-position: top right;background-repeat: no-repeat;border-right: 1px solid #E3E3E3;}
+            #phone_slider_container{height:210px;display:block;position:relative;}
+            
+            #module-phone_slider #phone_slider{height:210px;text-align:left;margin:0px;padding:0;z-index:100;overflow: hidden;width:2000px;border-top:1px solid #E3E3E3;border-bottom:1px solid #E3E3E3;}
+            html.lt-ie8 #module-phone_slider #phone_slider,html.lt-ie8 #module-phone_slider .jcarousel-clip{margin:0}
+            #module-phone_slider .jcarousel-clip{overflow: hidden;}
+
+        #module-phone_slider .jcarousel-prev,#module-phone_slider .jcarousel-next{height:21px;width:21px;position:absolute;top:90px;background-position:left top;background-repeat:no-repeat}
+
+        #module-phone_slider .jcarousel-prev:hover,#module-phone_slider .jcarousel-next:hover{background-position:left bottom}
+        #module-phone_slider .jcarousel-prev{left:10px;background-image:url('bst/img/bg-phone_slider-left.png');z-index:101}
+        #module-phone_slider .jcarousel-next{right:10px;background-image:url('bst/img/bg-phone_slider-right.png');z-index:101}
+            #phone_slider li{float: left;display:none;width: 169px;height:210px;border-left:1px solid #E3E3E3;border-bottom:1px solid #E3E3E3;margin:0;padding:0;z-index:9;}
+                #module-phone_slider #phone_slider li:first-child{border-left:none}
+                #module-phone_slider #phone_slider li a,#module-phone_shop #shop_phone a{display:block;height:auto;padding-top:130px;width:auto;position:relative;background-position:center 13px;background-repeat:no-repeat;text-decoration: none;}
+                .phone_slider_image{position:absolute;top:10px;margin-left:auto;margin-right:auto;text-align:center;display:block;width:100%;}
+                    #module-phone_slider #SCP6780CBC .phone_slider_image img{display:none!important;}
+                #SCP6780CBC .phone_slider_image{background-image:url("bst/img/kyocera-innuendo-blue-angle.png");background-repeat: no-repeat;background-position: top center;height: 110px;}
+
+        .phone_slider-name, span.phone_slider-price, .phone_slider-lm, .phone_slider-name, .phone_slider-price, .phone_slider-lm, .phone_slider-price{display:block;width:auto;left:0;text-align:center;font-family:BoostNeoBold}
+        #module-phone_slider #phone_slider li a span.phone_slider-name,#module-phone_shop #shop_phone a span.phone_slider-name{color:#000;font-size:14px;bottom:45px}
+        #module-phone_slider #phone_slider li a span.phone_slider-name span.phone_brand,#module-phone_shop #shop_phone a span.phone_slider-name span.phone_brand{display:block}
+        #module-phone_slider #phone_slider li a span.phone_slider-name span.super{font-size:7px;line-height:10px;display:inline-block;vertical-align:top}
+        #module-phone_slider #phone_slider li a .phone_slider-price,#module-phone_shop #shop_phone a .phone_slider-price{color:#F7901E;font-size:12px;margin-top:8px;}
+            .phone_slider_formerprice{color:#898989;margin-right:10px;text-decoration: line-through;display:none;}
+            .promo .phone_slider_formerprice{display:inline;}
+            .phone_slider_currentprice{font-weight:bold;}
+            #widget-pricing .phone_slider-price{visibility:hidden;}
+        #module-phone_slider #phone_slider li a span.phone_slider-lm,#module-phone_shop #shop_phone a span.phone_slider-lm{color:#F7901E;font:bold 11px arial;text-decoration:underline;margin-top:3px;}
+        #module-phone_slider #phone_slider li a:hover span.phone_slider-lm,#module-phone_shop #shop_phone a:hover span.phone_slider-lm{color:#01b4b6}
+
+        #module-phone_slider .new{position: absolute;top: 80px;left: 20px;z-index: 10;width: 66px;height: 33px;background: url('bst/img/sprite_shop_icons.png') -80px -70px no-repeat;text-indent:-9999px;overflow:hidden;}
+        #module-phone_slider .phone_promo{position:absolute;right:0px;top:0px;z-index: 10;width:55px;line-height:80px;text-align:center;color:#fff;background-image: url('bst/img/tags-phone-genie.png');text-indent:-9999px;overflow:hidden;}
+        #module-phone_slider .promo_webonly{background-position: left -2112px!important;}
+        #phone_slider .promo_5dol_off { background-position: left -88px!important; }
+        #phone_slider .promo_10dol_off { background-position: left -176px!important; }
+        #phone_slider .promo_15dol_off { background-position: left -264px!important; }
+        #phone_slider .promo_20dol_off { background-position: left -352px!important; }
+        #phone_slider .promo_25dol_off { background-position: left -440px!important; }
+        #phone_slider .promo_30dol_off { background-position: left -528px!important; }
+        #phone_slider .promo_35dol_off { background-position: left -616px!important; }
+        #phone_slider .promo_40dol_off { background-position: left -704px!important; }
+        #phone_slider .promo_45dol_off { background-position: left -792px!important; }
+        #phone_slider .promo_50dol_off { background-position: left -880px!important; }
+        #phone_slider .promo_55dol_off { background-position: left -968px!important; }
+        #phone_slider .promo_60dol_off { background-position: left -1056px!important; }
+        #phone_slider .promo_65dol_off { background-position: left -1144px!important; }
+        #phone_slider .promo_70dol_off { background-position: left -1232px!important; }
+        #phone_slider .promo_75dol_off { background-position: left -1320px!important; }
+        #phone_slider .promo_80dol_off { background-position: left -1408px!important; }
+        #phone_slider .promo_85dol_off { background-position: left -1496px!important; }
+        #phone_slider .promo_90dol_off { background-position: left -1584px!important; }
+        #phone_slider .promo_95dol_off { background-position: left -1672px!important; }
+        #phone_slider .promo_100dol_off { background-position: left -1760px!important; }
+        
+        #phone_slider .promo_125dol_off { background-position: left -1848px!important; }
+        #phone_slider .promo_150dol_off { background-position: left -1936px!important; }
+        #phone_slider .promo_200dol_off { background-position: left -2024px!important; }
+
+            .lt-ie8 #module-phone_slider .promo-bug{display:none;}
+        /* Homepage Phone Genie Styling */
+        #phone-genie2-homepage .phone_slider-name{color:#fff!important;}
+
+        #phone-genie2-homepage #module-phone_slider #phone_slider li {width:175px;border-left: 1px solid #363636;}
+        #phone-genie2-homepage #phone_slider_box{background-image: url('bst/img/bg-phone_slider_card-black.png');}
+        #phone-genie2-homepage #module-phone_slider #phone_slider{border-top: 1px solid #363636;border-bottom: 1px solid #363636;}
+        #phone-genie2-homepage #module-phone_slider #phone_slider_box_right{border-right: 1px solid #363636;}
+        
+        /* Plans Page Display */
+        .page-50 #phone_slider .type-feature,
+        .page-55 #phone_slider .type-android,
+        .page-55 #phone_slider .type-iphone,
+        .page-60 #phone_slider .type-blackberry,
+        .page-45 #phone_slider .type-blackberry,
+        .page-2 #phone_slider .type-feature,
+        /*.page-2 #phone_slider .type-windows,*/
+        .page-3 #phone_slider .type-iphone,
+        .page-3 #phone_slider .type-windows,
+        .page-3 #phone_slider .type-android,
+        .page-3 #phone_slider .type-blackberry{display:block!important;}
+        
+        /* SHOW Options */
+        .show, .promo_onsale, .promo_webonly{display:block!important;}
+        
+        .show-all #phone_slider li{display:block!important;}
+        
+        .show-brand-apple #phone_slider .brand-apple,
+        .show-brand-blackberry #phone_slider .brand-blackberry,
+        .show-brand-lg #phone_slider .brand-lg,
+        .show-brand-htc #phone_slider .brand-htc,
+        .show-brand-kyocera #phone_slider .brand-kyocera,
+        .show-brand-motorola #phone_slider .brand-motorola,
+        .show-brand-samsung #phone_slider .brand-samsung,
+        .show-brand-sanyo #phone_slider .brand-sanyo,
+        .show-brand-zte #phone_slider .brand-zte{display:block!important;} 
+        
+        .show-type-android #phone_slider .type-android,
+        .show-type-iphone #phone_slider .type-iphone,
+        .show-type-feature #phone_slider .type-feature,
+        .show-type-blackberry #phone_slider .type-blackberry{display:block!important;}
+        
+        .show-condition-new #phone_slider .condition-new,
+        .show-condition-cpo #phone_slider .condition-cpo{display:block!important;}
+        
+        .show-speed-3g #phone_slider .speed-3g,
+        .show-speed-4glte #phone_slider .speed-4glte{display:block!important;}
+        
+        /* HIDE Options */
+        .hide-brand-apple #phone_slider .brand-apple,
+        .hide-brand-blackberry #phone_slider .brand-blackberry,
+        .hide-brand-lg #phone_slider .brand-lg,
+        .hide-brand-htc #phone_slider .brand-htc,
+        .hide-brand-kyocera #phone_slider .brand-kyocera,
+        .hide-brand-motorola #phone_slider .brand-motorola,
+        .hide-brand-samsung #phone_slider .brand-samsung,
+        .hide-brand-sanyo #phone_slider .brand-sanyo,
+        .hide-brand-zte #phone_slider .brand-zte{display:none!important;}
+        
+        .hide-type-android #phone_slider .type-android,
+        .hide-type-iphone #phone_slider .type-iphone,
+        .hide-type-feature #phone_slider .type-feature,
+        .hide-type-blackberry #phone_slider .type-blackberry{display:none!important;}
+        
+        .hide-condition-new #phone_slider .condition-new,
+        .hide-condition-cpo #phone_slider .condition-cpo{display:none!important;}
+        
+        .hide-speed-3g #phone_slider .speed-3g,
+        .hide-speed-4glte #phone_slider .speed-4glte{display:none!important;}
+        
+        /* Sizing Options */
+        .show-phones-1 #module-phone_slider{width:170px;}
+        .show-phones-2 #module-phone_slider{width:340px;}
+        .show-phones-3 #module-phone_slider{width:510px;}
+        .show-phones-4 #module-phone_slider{width:680px;}
+        .show-phones-5 #module-phone_slider{width:850px;}
+        .show-phones-6 #module-phone_slider{width:1020px;}
+        .show-phones-7 #module-phone_slider{width:1190px;}
+        .show-phones-8 #module-phone_slider{width:1360px;}
+        
+        .show-carousel.show-phones-1 #module-phone_slider{width:250px;}
+        .show-carousel.show-phones-2 #module-phone_slider{width:420px;}
+        .show-carousel.show-phones-3 #module-phone_slider{width:590px;}
+        .show-carousel.show-phones-4 #module-phone_slider{width:760px;}
+        .show-carousel.show-phones-5 #module-phone_slider{width:930px;}
+        .show-carousel.show-phones-6 #module-phone_slider{width:1100px;}
+        .show-carousel.show-phones-7 #module-phone_slider{width:1270px;}
+        .show-carousel.show-phones-8 #module-phone_slider{width:1440px;}
+        
+        /* Widget only code */
+        #widget-pricing .phone_promo, .phone_promo{display:none;}
+        #widget-pricing .phone_slider-lm{visibility:hidden;}
+        

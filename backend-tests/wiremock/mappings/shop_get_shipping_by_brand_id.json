@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/primary-rest/shop_get_shipping_by_brand_id?brandId=SPP"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "sprint/shop_get_shipping_by_brand_id.json"
+    }
+}

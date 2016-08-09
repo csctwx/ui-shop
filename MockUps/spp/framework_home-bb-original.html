@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Sprint Prepaid - Home</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/sprintprepaid-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/app-framework.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<div class="container">
+			<div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+			</div>
+			<div class="col-xs-9 col-md-10 pull-right">
+				<div class="navbar pull-left visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#" data-toggle="modal" data-target="#coverageMap">Coverage Map</a></li>
+						<li class="navbar-item"><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+					</ul>
+				</div>
+				<div class="navbar pull-right visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill">Refill</a></li>
+						<li class="navbar-item"><a href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support">Support</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate">Activate</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct">My Account</a></li>
+						<li class="navbar-item"><a href="">Sign in</a></li>
+					</ul>
+				</div>
+				<div class="visible-sm visible-xs greeting">
+					<button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+						<i class="glyphicon glyphicon-remove"></i>
+					</button>
+					<p class="greeting-name"><span>Good morning, </span>UserName</p>
+					<p class="greeting-number">PhoneNumber</p>
+				</div>
+				<ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+					<li><a href="framework_shop.html">Shop</a></li>
+					<li><a href="framework_phones.html">All Phones</a></li>
+					<li><a href="">Android Phones</a></li>
+					<li><a href="framework_plans.html">Shop Plans</a></li>
+					<li><a href="framework_addservices.html">Additional Services</a></li>
+				</ul>
+				<ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_shop.html">Shop <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_phones.html">All Phones</a></li>
+							<li><a>Android Phones</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_plans.html">Plans <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_plans.html">Shop Plans</a></li>
+							<li><a href="framework_addservices.html">Additional Services</a></li>
+						</ul>
+					</li>
+					<li class="cart dropdown">
+						<a class="dropdown-toggle" href="framework_purchase-01.html"><img src="img/icons/cart-white.png"></img><span>Cart</span><span id="cart-count">1</span></a>
+						<ul class="dropdown-menu subnav">
+							<li>
+								<ul>
+									<li>
+										<img class="phoneImg" src="img/phone1-1.png"></img>
+										<div class="pull-left">
+											<span class="phoneBrand">Samsung</span>
+											<span class="phoneName">Galaxy S5</span>
+											<span class="phoneColor"></span>
+											<span class="phoneMemory"></span>
+										</div>
+										<div class="pull-right">
+											<span class="quantity">1</span>
+											<span class="totalPrice">199.99</span>
+											<a class="removePhone"><i class="glyphicon glyphicon-remove-circle"></i></a>
+										</div>
+									</li>
+								</ul>
+								<a class="cartAction">Empty cart</a>
+								<a class="cartAction pull-right" href="framework_purchase-01.html">Checkout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<ul class="mobilelinks">
+			<li><a href="framework_purchase-01.html"><i class="glyphicon glyphicon-shopping-cart"><span id="cart-count">1</span></i></a></li>
+			<li><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+			<li><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct"><i class="glyphicon glyphicon-log-in"></i></a></li>
+		</ul>
+    </div>
+	<div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<strong class="pull-left">Coverage Map</strong>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<iframe src="http://coverage.sprint.com/mycoverage.jsp?id=SPREPAID" scrolling="no" width="100%" height="467" frameborder="0"></iframe>
+					<p>Sprint Prepaid offers dependable, nationwide coverage for voice and data. To view the coverage in your area, select the combination of voice and data cover you want to see, then enter an address or just your zip code in the fields to the right.</p>
+					<p><strong>Green regions denote voice coverage. Orange, blue and purple regions denote data coverage.</strong></p>
+					<p>View <a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a> on a full page and visit the <a class="more" href="http://www.sprint.com/prepaid">Shop</a> for Sprint Prepaid phone options.</p>
+					<p class="legal">Nationwide Sprint Network. This tool provides high-level estimates of our wireless coverage. Coverage is not available everywhere and varies based on a number of factors. Our coverage maps provide high level estimates of our coverage areas when using your device outdoors under optimal conditions. Coverage isn't available everywhere. Estimating wireless coverage and signal strength is not an exact science. There are gaps in coverage within our estimated coverage areas that, along with other factors both within and beyond our control (network problems, software, signal strength, your wireless device, structures, buildings, weather, geography, topography, etc.), will result in dropped and blocked connections, slower data speeds, or otherwise impact the quality of services. Services that rely on location information, such as E911 depend on your device's ability to acquire satellite signals (typically not available indoors) and network coverage. E911 services also depend local emergency service provider systems/support. Estimated future coverage subject to change.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container main bb">
+		<section class="promo-full">
+			<div class="col-xs-12">
+				<a class="promo12" href="http://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&nrp=15&cp=1&sp=-bestsellingsort%20skuidsaas&seeAll=&_dyncharset=UTF-8&ks=960&sc=Global&list=y&usc=All%20Categories&type=page&iht=n&browsedCategory=pcmcat158500050014&st=categoryid%24pcmcat158500050014&qp=brand_facet%3DCarrier~Sprint%20Prepaid">
+					<h1 class="promoHeading">Two amazing offers.</h1>
+					<h2>Only from Sprint Prepaid. Only at Best Buy.</h2>
+					<p class="promoText">Right now, get even more value from your Sprint Prepaid phone when you buy it at <span>BestBuy.com</span> or your local Best Buy store. That’s because Sprint Prepaid and Best Buy have teamed up to bring you two exclusive offers: monthly rolling data and fast-track phone upgrades.</p>
+					<p class="promoText"><strong>Shop for Sprint Prepaid phones at BestBuy.com</strong></p>
+					<span class="promoHeading">Shop Now</span>
+				</a>
+			</div>
+		</section>
+		<section class="promo-half">
+			<div class="col-xs-6">
+				<a class="promo13">
+					<h3 class="promoHeading">Monthly Rolling Data</h3>
+					<p class="promoText">Keep your unused data. Monthly Rolling Data is now included on all unlimited talk &amp; text plans starting at <strong>$35 per month</strong> <small>while on the Sprint Network</small>.</p>
+					<p class="promoText"><strong>$35 <span>|</span> 1GB</strong> of Rolling Data	<strong>$45 <span>|</span> 3GB</strong> of Rolling Data	<strong>$55 <span>|</span> 6GB</strong> of Rolling Data</p>
+					<p>All pricing per month.</p>
+					<p class="promoText"><strong>No annual contracts. Nationwide Sprint® Network.</strong></p>
+				</a>
+			</div>
+			<div class="col-xs-6">
+				<a class="promo14">
+					<h3 class="promoHeading">Fast Track to the Hottest Phone Upgrades</h3>
+					<p class="promoText">Bring your Sprint Prepaid phone &amp; upgrade to a new smartphone lease after 9 on-time payments. <strong>Zero Down. No Credit Check</strong>.</p>
+					<h4>Prepaid to postpaid in two easy steps</h4>
+					<p>Get eligible for the device and plan you want – regardless of credit.</p>
+					<p><b>Step 1:</b> Choose a Sprint Prepaid phone &amp; plan</p>
+					<p><b>Step 2:</b> Make 9 consecutive, on-time payments</p>
+					<p>Then, simply turn in your Sprint Prepaid device at your local Best Buy and choose from the latest lineup of Sprint Postpaid devices.</p>
+					<p>Sprint Lease&#8480; gives you the option to pay for your new device with low monthly payments.</p>
+				</a>
+			</div>
+		</section>
+		<section class="promo-full bottom">
+			<div class="col-xs-12">
+				<a class="promo15" href="http://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&nrp=15&cp=1&sp=-bestsellingsort%20skuidsaas&seeAll=&_dyncharset=UTF-8&ks=960&sc=Global&list=y&usc=All%20Categories&type=page&iht=n&browsedCategory=pcmcat158500050014&st=categoryid%24pcmcat158500050014&qp=brand_facet%3DCarrier~Sprint%20Prepaid">
+					<h1 class="promoHeading">Why choose Sprint Prepaid?</h1>
+					<h3>Unlimited talk &amp; text with data options starting at $35 per month</h3>
+					<p class="promoText">No annual contracts. Latest technology smartphones. Great value. Total flexibility. All on the Nationwide Sprint® Network. A premium wireless experience without the premium barriers. Finally, something different from your wireless relationship.</p>
+					<span class="promoHeading">Shop for Sprint Prepaid phones at BestBuy.com</span>
+				</a>
+			</div>
+		</section>
+		<section class="legal">
+			<p><strong>**Monthly lease payments exclude taxes (varies by area). Monthly charges exclude taxes &amp; Sprint Surcharges [incl. USF charge of up to 17.4% (varies quarterly), up to $2.50 Admin. &amp; 40¢ Reg. /line/mo.) &amp; fees by area (approx. 5–20%)]. Surcharges are not taxes. See sprint.com/taxes and fees.</strong></p>
+			<p>Limited time only. Best Buy Exclusive. Rolling Data: Unused monthly prepaid data may roll over to the next month up to a maximum of 30GB per account. Add’l Data Pack, if purchased, will be depleted first &amp; will not roll over. Rolling data does not expire. Account must be current &amp; payments on time or data will not roll over. Prepaid data will not transfer to postpaid account. Phone Upgrade: Req. 9 consecutive on-time monthly plan payments, qualifying device, lease agreement only &amp; postpaid service plan. Only one line per postpaid account is eligible for the program. Account balance may not exceed $150/line at any time or the account and all services will be suspended completely until account balance is paid in full. Not combinable with other offers that req. credit approval and may not be combinable with other offers. Spending limit accounts may be subject to a fee of $7.99/mo. per account. The fee will be waived for accounts enrolled in recurring AutoPay and electronic billing (eBill). Sprint Prepaid: No annual contracts; service subject to certain terms. Unlimited domestic services are while on-network only. Price, plans &amp; offers subject to change &amp; may vary by retailer/market. Lease: No equipment security deposit. Customer responsible for insurance &amp; repairs. Early termination of lease/service: Remaining lease payments will be due immediately, and requires device return or payment of purchase option device price in lease. Sprint Prepaid Device Turn-In: Phone must be deactivated &amp; all personal data deleted. Phone will not be returned. No cash back. Not eligible for Sprint Buyback Program. Other Terms: Offers and coverage not available everywhere or for all phones/networks. Taxes and fees may apply when adding funds to accounts. Additional terms &amp; restrictions apply. See sprint.com/prepaid or in-store materials for complete details. Nationwide Sprint Network reaches over 282 million people. See store or sprint.com/prepaid for complete details. © 2015 Sprint. All rights reserved.</p>
+		</section>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="col-xs-12">
+				<p>&copy; 2015 Sprint. <span class="hidden-xs">All rights reserved.</span></p>
+				<ul class="footer-links">
+					<li><a href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+					<li><a href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sprintprepaid-bootstrap.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+	<script>
+		$('#coverageMap').on('shown.bs.modal', function () {
+			$('#coverageModal').focus()
+		})
+		$(function(){
+		$(".dropdown").hover(
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>

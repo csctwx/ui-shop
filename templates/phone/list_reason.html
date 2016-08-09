@@ -1,0 +1,32 @@
+<div class="list-reason">
+    <section ng-if="appName!='vmu'" class="loveSprint hidden-xs hidden-sm">
+      <ul>
+        <li>Keep your phone number</li>
+        <li>FREE shipping</li>
+        <li>7-day guarantee</li>
+        <li>No contract plans</li>
+      </ul>
+    </section>
+
+    <section ng-if="appName=='vmu'" class="loveSprint hidden-xs hidden-sm">
+        <div class="row">
+            <h3>All Phones Come With</h3>
+            <!-- Trigger Modal -->
+            <a href="#" class="reasonsLink" data-toggle="modal" data-target="#myModal">// See Details</a>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <ul>
+                    <li><span>Free</span> Standard Shipping</li>
+                    <li>7-Day Guarantee</li>
+                    <li>Keep Your Phone Number</li>
+                    <li>No contract plans</li>
+                    <li><span>Free</span> Activation</li>
+                    <li>Lost Phone Replacement</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <phone-see-detail-modal ng-if="appName=='vmu'"></phone-see-detail-modal>
+</div>

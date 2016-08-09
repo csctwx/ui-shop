@@ -1,0 +1,47 @@
+{
+  "additionalServices":[
+    {
+      "key":"callwatch",
+      "title":"Call Watch",
+      "image":"spp/img/icon_callwatch.png",
+      "color":"#FCDF00",
+      "description":"Know who's calling you.  CallWatch is real-time defense against unwanted calls."
+    },
+    {
+      "key":"datapacks",
+      "title":"DATA PACKS",
+      "image":"spp/img/icon_datapack.png",
+      "color":"#8B8B8B",
+      "description":"Add more high-speed data whenever you need it."
+    },
+    {
+      "key":"premiumcallerid",
+      "title":"Premium Caller Id",
+      "image":"spp/img/icon_caller_id.png",
+      "color":"#0FC7D1",
+      "description":"See who's calling even if they're not in your contact list."
+    },
+    {
+      "key":"internationrates",
+      "title":"International Rates",
+      "image":"spp/img/addserv01.png",
+      "color":"#F45B15",
+      "description":"Connect to friends and family around the world with our low international rates."
+    },
+    {
+      "key":"mobilehospot",
+      "title":"Mobile Hotspot",
+      "image":"spp/img/addserv02.png",
+      "color":"#ADD910",
+      "description":"Turn your phone into a mobile Wi-Fi hotspot.  Now available on select Sprint Prepaid devices."
+    },
+    {
+      "key":"phoneinsurance",
+      "title":"Phone Insurance",
+      "image":"spp/img/addserv03.png",
+      "color":"#FFDC01",
+      "description":"Get worry-free protection for your phone plus the Gadget Guardian app."
+    }
+  ],
+  "legal":"<p>Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Price and offers subject to change. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply and be subject to the rates noted above. All features not available on all phones. Plans are for domestic use only within the U.S. unless stated otherwise noted and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply.</p><p>Available countries and/or calling rates are subject to change without notice. Please visit this page regularly for changes including, but not limited to, included countries, rates and fees. Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Price and offers subject to change. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply and be subject to the rates noted above. All features not available on all phones. Plans are for domestic use only within the U.S. unless stated otherwise noted and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply.</p>"
+}

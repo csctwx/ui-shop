@@ -1,0 +1,137 @@
+#additionalServices a:hover{
+  text-decoration: none;
+}
+#additionalServices .header{
+  background-color:#FAFAFA;
+  height:50px;
+}
+#additionalServices .title_panel{
+  margin-top:15px;
+  color:#000;
+}
+#additionalServices .tile{
+  border:1px solid #C8C8C8;
+  float:left;
+  padding:2em;
+  color:#454545;
+}
+#additionalServices .panel_tile{
+  border:1px solid #C8C8C8;
+  float:left;
+}
+#additionalServices .small_tile{
+  border:1px solid #C8C8C8;
+  float:left;
+  padding-top:2em;
+  color:#454545;
+}
+@media (min-width:768px) {
+  #additionalServices .tile{
+    text-align:center;
+    width:32.3333%;
+    margin:0.5%;
+    height:260px;
+  }
+  #additionalServices .panel_tile{
+    width:78%;
+    margin:0.5%;
+    border:1px solid #C8C8C8;
+    min-height:260px;
+  }
+  #additionalServices .small_tile{
+    text-align:center;
+    margin:0.5%;
+    width:9.5%;
+    min-height:260px;
+    border:1px solid #C8C8C8;
+  }
+  
+  .tile>.icon{
+    padding-top:20px;
+  }
+  .tile>.icon .tile>.content .tile>.link{
+    width:100%;
+  }
+  .internationalrates>.small_tile>img{
+    width:60%;
+  }
+  .show_panel>.tile{
+    display:none !important;
+  }
+  .show_panel>.small_tile{
+    display:none !important;
+  }
+  .show_small>.tile{
+    display:none !important;
+  }
+  .show_small>.panel_tile{
+    display:none !important;
+  }
+  .show_tile>.panel_tile{
+    display:none !important;
+  }
+  .show_tile>.small_tile{
+    display:none !important;
+  }
+  
+  .tail_in_2>.tile{
+    width:49% !important;
+  }
+  .tail_in_2.show_panel>.panel_tile{
+    width:88.5% !important;
+  }
+  .tail_in_1>.tile{
+    width:99% !important;
+  }
+  .tail_in_1.show_panel>.panel_tile{
+    width:99% !important;
+  }
+}
+@media (max-width:767px){
+  #additionalServices{
+    margin:10px;
+    margin-left:20px;
+  }
+  #additionalServices .tile{
+    margin-bottom:10px;
+    display:block;
+    width:100%;
+    min-height:150px;
+  }
+  #additionalServices .panel_tile{
+    margin-bottom:10px;
+    display:block;
+  }
+  #additionalServices .small_tile{
+    display:none;
+  }
+  .tile>.icon{
+    width:20%;
+    float:left;
+    vertical-align:middle;
+    position:relative;
+    top:30px;
+  }
+  .tile>.content{
+    width:70%;
+    float:left;
+    vertical-align:middle;
+  } 
+  .tile>.link{
+    width:10%;
+    float:right;
+    vertical-align:middle;
+  }
+  .tile>.link>span{
+    top:45px;
+  }
+  .show_panel>.tile{
+    display:none !important;
+  }
+  .show_small>.panel_tile{
+    display:none !important;
+  }
+  .show_tile>.panel_tile{
+    display:none !important;
+  }
+}

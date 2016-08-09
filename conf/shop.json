@@ -1,0 +1,47 @@
+{
+  dev:true,
+  redVenturesRedirect:false,
+  channelVM:{
+   connect:true,
+   version:7
+  },
+  "bst": {
+    "analysisJs": "//assets.adobedtm.com/058f84f4e7e71054c64df8cf68552abe037a02d8/satelliteLib-eafbae910bf43e0229733e2a0197a9dcf1ccffaa-staging.js",
+    "errorStep1": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-877-602-4907 to order by phone.",
+    "errorStep2": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-877-602-4907 to order by phone.",
+    "errorStep3": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-877-602-4907 to order by phone."
+  },
+  "spp": {
+    "analysisJs": "//assets.adobedtm.com/058f84f4e7e71054c64df8cf68552abe037a02d8/satelliteLib-a8951c456dcd860977c5a9adb212e1927e13a0a5-staging.js",
+    "errorStep1": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-866-866-7509 to order by phone.",
+    "errorStep2": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-866-866-7509 to order by phone.",
+    "errorStep3": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-866-866-7509 to order by phone."
+  },
+  "vmu":{
+    "analysisJs":"//assets.adobedtm.com/058f84f4e7e71054c64df8cf68552abe037a02d8/satelliteLib-2f0879a1aebbece7df3c624e066af3c55c3f3d5c-staging.js",
+    "errorStep1": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-888-322-1122 to order by phone.",
+    "errorStep2": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-888-322-1122 to order by phone.",
+    "errorStep3": "We're sorry, there was a problem processing your order.  Please try placing your order again. Or, call 1-888-322-1122 to order by phone."
+  },
+  appMap:{
+    "localhost:8080":{
+      "rootHash":"#!/shop/phones/",
+      "name":"bst",
+      "noindex":"true"
+    },
+    "localhost:8080":{
+      "rootHash":"#!/shop/phones/",
+      "name":"spp",
+      "noindex":"true"
+    },
+    "127.0.0.1:8080":{
+      "rootHash":"#!/",
+      "name":"bst"
+    },
+    "vmu-local-app:8080":{
+      "rootHash":"#!/shop/phones/",
+      "name":"vmu",
+      "noindex":"true"
+    }
+  }
+}

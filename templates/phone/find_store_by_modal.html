@@ -1,0 +1,63 @@
+<div id="findinstoremodal">
+  <div class="gradient-white" id="fismtop">
+    <img src="/shop/phones/_images/phones/htc-desire-510/shop.png" alt="HTC Desire 510 Cell Phone"/>
+    <h2> <span class="bn-b" itemprop="name">HTC Desire 510<br> </span><span class="bn-b"></span> </h2>
+    <p>Ultra features, ultra value. The phone you desire and your friends will envy. Equipped with the latest Android™ 4.4 (KitKat) OS, a 4.7-inch touchscreen display, and quad-core processor, the HTC Desire 510 streams video and music beautifully.</p>
+    <div style="clear:both;"></div>
+  </div>
+  <div id="fismbottom" ng-if="{{getStoreByPhoneType().length}}">
+    <h2 class="fismbottom-h2">Here's a list of Preferred Boost Mobile Retailers near you. Please call ahead to check availability.</h2>
+    <div id="fismcontent">
+       <div id="locatorNormal">
+          <div class="showing-results">Results 1-10 of 8 results</div>
+          <table class="results">
+             <tbody>
+                <tr ng-repeat="item in getStoreByPhoneType()" itemtype="http://schema.org/LocalBusiness" itemscope="itemscope" id="popup" class="preferred">
+                   <td class="cell">
+                      <div>
+                         <h2 style="float:left;">{{item.name}}</h2>
+                         <div class="icons-callout">
+                            <div ng-if="item.phone" class="icons icon-phone tooltip">We have the phones to fit your needs and budget. Pick from top-of-the-line smartphones, and to super-affordable feature phones.</div>
+                            <div ng-if="item.reboost" title="Reboost" class="icons icon-reboost tooltip">Add money to your account. Pay with cash, credit card or debit card in person at any of these Re-Boost® locations.</div>
+                            <div ng-if="item.wallet" title="" class="icons icon-wallet tooltip">Load cash to your Mobile Wallet™ account - the convenient and simple way to make payments and manage your cash without carrying anything more than your phone or a prepaid card. A $3 service fee applies.</div>
+                            <div ng-if="item.boost" title="Boost Stores Only" class="icons icon-boost tooltip">Get help with your account. Add services including Phone Insurance, International Calling, or Mobile Hotspot. </div>
+                         </div>
+                         <div style="clear:both;"></div>
+                      </div>
+                      <p itemtype="http://schema.org/PostalAddress" itemscope="itemscope" itemprop="address">
+                        <span itemprop="streetAddress">{{ite.address}}</span> 
+                        <br> 
+                        <span itemprop="addressLocality">{{item.city}}</span> 
+                        <span itemprop="addressRegion">{{item.state}}</span>, 
+                        <span itemprop="postalCode">{{item.zipcode}}</span> 
+                      </p>
+                   </td>
+                   <td itemprop="telephone" class="centerTextvert">({{item.phoneNumber}}</td>
+                   <td class="centerTextvert2">Distance: <b>{{item.distance}}</b></td>
+                   <td class="centerText">
+                      <div class="icons icon-pin"></div>
+                      <a itemprop="map" class="map" target="_blank" ng-href="http://maps.google.com/maps?q={{ite.address}} {{item.city}} {{item.state}}, {{item.zipcode}}" title="Maps &amp; directions to Boost Mobile Store by FSS INC"> Maps &amp; Directions </a>
+                   </td>
+                </tr>
+             </tbody>
+          </table>
+       </div>
+    </div>
+    <div id="fismpagination"></div>
+  </div>
+  <div ng-if="{{getStoreByPhoneType().length==0}}">
+    <h2 class="fismbottom-h2">Unfortunately, there are no Preferred Boost Mobile Retailers in your area.</h2>
+    <hr>
+    <div class="fisColumn">
+       <h3>Search all Boost Mobile retail locations</h3>
+       <p>Make sure to call ahead to verify availability.</p>
+       <a href="http://www.boostmobile.com/stores/?zipcode=02451" class="add_to_cart rounded-3 gradient-orange-hover inline bn-bk" id="fisLocator">Store Locator</a> 
+    </div>
+    <div class="fisColumn">
+       <h3>Complete your purchase online</h3>
+       <p>Get free shipping on all orders</p>
+       <a class="add_to_cart rounded-3 gradient-orange-hover inline bn-bk" href="https://checkout.boostmobile.com/bpdirect/boost/AddItemDirect.do?action=view&amp;qty=1&amp;sku=HTC0PCV1ABB" data-sku="HTC0PCV1ABB" data-original-price="99.99" data-sale-price="99.99" data-map="48">Add to cart</a> 
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+</div>

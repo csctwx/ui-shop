@@ -1,0 +1,30 @@
+{
+	"responses": {
+		"response": [{
+      "_comment":" --- This will send a success notification for the Samsun Galaxy Core Prime with model ID SPHG360ASB --- ",
+			"@uuid": "58c1d129-67fc-4649-9059-50e789d6744d",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"equipmentAvailabilityResponse": {
+        "equipmentAvailability":{
+          "availableForSaleIndicator":{
+            "$":"true"
+          },
+          "preOrderIndicator":{
+            "$":"false"
+          }
+        },
+        "status":{
+          "$":"0"
+        },
+        "description":{
+          "$":"is available for sale"
+        },
+        "modelId":{
+          "$":"LGLS990ABB"
+        }
+      }
+    }]
+  }
+}

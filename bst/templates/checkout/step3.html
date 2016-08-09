@@ -1,0 +1,68 @@
+<section class="checkout">
+  <iframe height="1" width="1" frameborder="0" scrolling="no" ng-src="{{checkoutController.emjcdString}}" name="cj_conversion" ></iframe>
+  <div class="col-xs-12 col-md-8">
+    <div>
+      <h3 class="mainColor" style="display:inline-block">Congrats and welcome to Boost Mobile!</h3>
+      <a class="pull-right print" href="javascript:window.print()">
+      <span class="glyphicon glyphicon-print"></span> Print Receipt</a>
+    </div>
+    <p>When your phone arrives simply follow the enclosed instructions to activate your service.</p>
+    <h3><span class="mainColor">Order Confirmation Number: </span> {{checkoutController.finalData.confirmationNumber}}</h3>
+    <section class="finalInfo">
+      <h2 class="orange">Review Order</h2>
+      <div ng-repeat="item in checkoutController.finalData.equipments">
+        <div class="finalItem pull-left col-xs-6">
+          <b>{{item.quantity}} x </b><span class="mainColor">{{item.name}} {{item.phoneCondition}} {{item.color}} {{item.memory}}</span> (${{item.modelPrice|currency:""}})
+          <b><span class="pull-right">${{item.quantity*item.modelPrice|currency:""}}</span></b>
+        </div>
+      </div>
+      <div n-show="!checkoutController.ibCart">
+        <div class="col-xs-12 col-sm-8 finalamount pull-right">
+          <ul>
+            <li><span>Subtotal</span><p>{{checkoutController.finalData.subtotal | currency:""}}</p></li>
+            <li><span>Shipping</span><p>{{checkoutController.finalData.shipping | currency:""}}</p></li>
+            <li><span ng-show="checkoutController.data.promoCode.status==0">Discount</span><p ng-show="checkoutController.data.promoCode.status==0">-{{checkoutController.data.promoCode.totalDiscount|currency:""}}</p></li>
+            <li><span>Tax</span><p>{{checkoutController.finalData.tax | currency:""}}</p></li>
+            <li><span>Total</span><p>{{checkoutController.finalData.total | currency:""}}</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="finalInfo">
+      <h2 class="orange">Review Shipping & Billing Information</h2>
+      <div>
+        <span class="mainColor">Shipping via:</span> {{checkoutController.finalData.shippingOption.label}}
+        <ul>
+          <li>{{checkoutController.finalData.shippingInfo.firstName}} {{checkoutController.finalData.shippingInfo.lastName}}
+          <li>{{checkoutController.finalData.shippingInfo.address1}}</li>
+          <li ng-if="checkoutController.finalData.shippingInfo.address2">{{checkoutController.finalData.shippingInfo.address2}}</li>
+          <li>{{checkoutController.finalData.shippingInfo.city}}, {{checkoutController.finalData.shippingInfo.state}} {{checkoutController.finalData.shippingInfo.zipCode}}</li>
+          <li>{{checkoutController.finalData.shippingInfo.phoneNumber}}</li>
+          <li>{{checkoutController.finalData.shippingInfo.email}}</li>
+          <li><span class="mainColor">Card type:</span> {{checkoutController.finalData.paymentInfo.paymentCardType}}</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="hidden-xs hidden-sm col-md-4">
+    <section class="entrust">
+      <h3>Secure Credit Card Payment</h3>
+      <div>
+        <img ng-src="{{appName}}/img/entrust.png"></img>
+      </div>
+    </section>
+    <section>
+      <h3>Phone Insurance</h3>
+      <p>Can't live without your Sprint Mobile phone? Get phone insurance and you'll never have to.</p>
+      <div class="col-xs-12">
+        <a class="btn btn-default btn-block" target="_blank" href="http://www.boostmobile.com/about/legal/privacy-policy">Privacy Policy</a>
+        <a class="btn btn-default btn-block" target="_blank" href="http://www.boostmobile.com/about/legal/return-policy">Return Policy</a>
+      </div>
+    </section>
+    <section>
+      <h3>Check order status</h3>
+      <p>Want an update on your order?</p>
+      <p>Check our <a href="{{pathMap._orderStatus._hash}}">Order Status</a> page.</p>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<div class="col-md-4 cart-side">
+  <h4 ng-show="checkoutController.step==1">How it Works</h4>
+  <ul ng-show="checkoutController.step==1" class="howitworks">
+    <li>Order by phone, online, or at a store</li>
+    <li>When you get it in hand, activate your plan</li>
+    <li>Keep your number and enjoy your new phone</li>
+    <script language="javascript" src="https://seal.entrust.net/seal.js?domain=mbb.virginmobileusa.com&img=16"></script>
+    <a href="http://www.entrust.net">SSL</a>
+    <script language="javascript" type="text/javascript">goEntrust();</script>
+  </ul>
+  <h4 ng-show="checkoutController.step==1">New Customers</h4>
+  
+  <h4 ng-show="checkoutController.step!=1">Secure Credit Card Payment</h4>
+  <img ng-show="checkoutController.step!=1" ng-src="{{appName}}/img/entrust.png"></img>
+  
+  <p ng-show="checkoutController.step!=3">Have questions? Finish your order now on the phone. Call now.<span>{{appName=='bst'?'1-877-602-4907':'1-866-866-7509'}}</span></p>
+  <h4>Phone Insurance</h4>
+  <p>Can't live without your Sprint Mobile phone? Get phone insurance and you'll never have to.</p>
+  <ul class="policies" ng-if="appName=='spp'">
+    <li><a class="btn btn-default btn-sm btn-block" href="http://www.sprint.com/legal/privacy.html?INTNAV=ATG:FT:Privacy">Privacy Policy</a></li>
+    <li><a class="btn btn-default btn-sm btn-block" href="http://www.sprint.com/landings/returns/?question_box=return%20policy&id16=return%20policy">Return Policy</a></li>
+  </ul>
+  <ul class="policies" ng-if="appName=='bst'">
+    <li><a class="btn btn-default btn-sm btn-block" href="#!/about/legal/privacy-policy/">Privacy Policy</a></li>
+    <li><a class="btn btn-default btn-sm btn-block" href="#!/about/legal/return-policy/">Return Policy</a></li>
+  </ul>
+  <ul class="policies" ng-if="appName=='vmu'">
+    <li><a class="btn btn-default btn-sm btn-block" href="#!/privacy/">Privacy Policy</a></li>
+    <li><a class="btn btn-default btn-sm btn-block"  href="#!/7-day-guarantee/">Return Policy</a></li>
+  </ul>
+</div>

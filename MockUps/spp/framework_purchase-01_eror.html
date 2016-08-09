@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Sprint Prepaid - Shipping/Billing</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/app-framework.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<div class="container">
+			<div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+				<a href="framework_home.html">Home</a>
+			</div>
+			<div class="col-xs-9 col-md-10 pull-right">
+				<div class="navbar pull-left visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#" data-toggle="modal" data-target="#coverageMap">Coverage Map</a></li>
+						<li class="navbar-item"><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+					</ul>
+					<div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<h2>Coverage Map</h2>
+									<p>Text about coverage.</p>
+									<a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar pull-right visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill">Refill</a></li>
+						<li class="navbar-item"><a href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support">Support</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate">Activate</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct">My Account</a></li>
+						<li class="navbar-item"><a href="">Sign in</a></li>
+					</ul>
+				</div>
+				<div class="visible-sm visible-xs greeting">
+					<button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+						<i class="glyphicon glyphicon-remove"></i>
+					</button>
+					<p class="greeting-name"><span>Good morning, </span>UserName</p>
+					<p class="greeting-number">PhoneNumber</p>
+				</div>
+				<ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+					<li><a href="framework_shop.html">Shop</a></li>
+					<li><a href="framework_phones.html">All Phones</a></li>
+					<li><a href="">Android Phones</a></li>
+					<li><a href="framework_plans.html">Shop Plans</a></li>
+					<li><a href="framework_addservices.html">Additional Services</a></li>
+				</ul>
+				<ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_shop.html">Shop <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_phones.html">All Phones</a></li>
+							<li><a>Android Phones</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_plans.html">Plans <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_plans.html">Shop Plans</a></li>
+							<li><a href="framework_addservices.html">Additional Services</a></li>
+						</ul>
+					</li>
+					<li class="cart dropdown">
+						<a class="dropdown-toggle" href="framework_purchase-01.html"><img src="img/icons/cart-white.png"></img><span>Cart</span><span id="cart-count">1</span></a>
+						<ul class="dropdown-menu subnav">
+							<li>
+								<ul>
+									<li>
+										<img class="phoneImg" src="img/phone1-1.png"></img>
+										<div class="pull-left">
+											<span class="phoneBrand">Samsung</span>
+											<span class="phoneName">Galaxy S5</span>
+											<span class="phoneColor"></span>
+											<span class="phoneMemory"></span>
+										</div>
+										<div class="pull-right">
+											<span class="quantity">1</span>
+											<span class="totalPrice">199.99</span>
+											<a class="removePhone"><i class="glyphicon glyphicon-remove-circle"></i></a>
+										</div>
+									</li>
+								</ul>
+								<a class="cartAction">Empty cart</a>
+								<a class="cartAction pull-right" href="framework_purchase-01.html">Checkout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="#home" class="linkHome">Home</a>
+		<ul class="mobilelinks">
+			<li><a href="framework_purchase-01.html"><i class="glyphicon glyphicon-shopping-cart"><span id="cart-count">1</span></i></a></li>
+			<li><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+			<li><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct"><i class="glyphicon glyphicon-log-in"></i></a></li>
+		</ul>
+    </div>
+	<div class="container main">
+		<ol class="breadcrumb hidden-xs">
+			<li><a href="framework_home.html">Home</a></li>
+			<li><a href="framework_shop.html">Shop</a></li>
+			<li><a href="framework_phones.html">Phones</a></li>
+			<li><a href="framework_phonedetails.html">phoneBrand phoneName</a></li>
+			<li class="active">Your Cart</li>
+		</ol>
+		<section class="progressArrows">
+			<ul>
+				<li><a class="current"><i class="glyphicon glyphicon-ok-sign"></i>Shipping/Billing</a></li>
+				<li><a><i class="glyphicon glyphicon-info-sign"></i>Review &amp; Purchase</a></li>
+				<li><a><i class="glyphicon glyphicon-info-sign"></i>Confirmation</a></li>
+			</ul>
+		</section>
+		<section class="checkout">
+			<div class="col-xs-12 col-md-8">
+				<h2>Your Cart</h2>
+				<div class="cart-item alert alert-dismissible fade in" role="alert">
+					<div class="pull-left col-xs-6">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<img src="img/phone1-2.png"></img>
+						<h4>Samsung Galaxy S5</h4>
+					</div>
+					<div class="quantity">
+						<select class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<p class="price pull-right">$12.99</p>
+				</div>
+				<section>
+					<div class="col-xs-6">
+						<ul class="details">
+							<li>FREE Ground Shipping</li>
+							<li>Keep your current phone number</li>
+							<li>7 Day Money Back Guarantee</li>
+						</ul>
+					</div>
+					<div class="col-xs-6">
+						<p>Got a promo code?</p>
+						<div class="form-group">
+							<input type="text" class="form-control input-sm" id="promoCode" placeholder="Enter code">
+							<a class="btn btn-primary btn-sm" href="">Apply Code</a>
+							<span class="ng-binding errorMessage">The promo code you entered is invalid. Please try again.</span>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="col-xs-12">
+						<h3>Billing Information</h3>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label required" for="input1">First Name</label>
+							<div class="col-xs-12 col-sm-6">
+								<input class="form-control" type="text" id="input1" placeholder="First Name">
+                <div class="errorMessage">
+                  <div >* Security Code is required</div>
+                </div>
+							</div>
+							<label class="col-sm-2 control-label required" for="input2">Last Name</label>
+							<div class="col-xs-12 col-sm-6">
+								<input class="form-control" type="text" id="input2" placeholder="Last Name">
+							</div>
+							<label class="col-sm-2 control-label required" for="input3">Address 1</label>
+							<div class="col-xs-12 col-sm-8">
+								<input class="form-control" type="text" id="input3" placeholder="Address">
+							</div>
+							<label class="col-sm-2 control-label" for="input4">Address 2</label>
+							<div class="col-xs-12 col-sm-8">
+								<input class="form-control" type="text" id="input4" placeholder="Apt., Suite, Building (optional)">
+							</div>
+							<label class="col-sm-2 control-label required" for="input5">City</label>
+							<div class="col-xs-12 col-sm-6">
+								<input class="form-control" type="text" id="input5" placeholder="City">
+							</div>
+							<label class="col-sm-2 control-label required" for="input6">Zip Code</label>
+							<div class="col-sm-3">
+								<input class="form-control" type="text" id="input6" placeholder="Zip Code">
+							</div>
+							<label class="col-xs-12 col-sm-2 control-label required" for="input7">State</label>
+							<div class="col-sm-3">
+								<select class="form-control" id="sel1">
+									<option>Alabama</option>
+									<option>Alaska</option>
+									<option>Arkansas</option>
+									<option>Arizona</option>
+									<option>California</option>
+									<option>...</option>
+								</select>
+							</div>
+							<label class="col-xs-12 col-sm-2 control-label required" for="input8">Phone Number</label>
+							<div class="col-sm-3">
+								<input class="form-control" type="text" id="input8" placeholder="Phone">
+							</div>
+							<label class="col-xs-12 col-sm-2 control-label required" for="input9">Email</label>
+							<div class="col-sm-6">
+								<input class="form-control" type="text" id="input9" placeholder="Email">
+							</div>
+							<label class="col-sm-2 control-label required" for="input10">Validate Email</label>
+							<div class="col-xs-12 col-sm-6">
+								<input class="form-control" type="text" id="input10" placeholder="Validate Email">
+							</div>
+							<small>SHIPPING: Orders placed after 5PM local destination time will not be processed and shipped until the following business day (Mon-Fri excluding Holidays).</small>
+							<label class="copyBillingInfo">
+								<input type="checkbox" value="">Ship to Billing Address</input>
+							</label>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="col-xs-12">
+						<h3>Shipping Information</h3>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label required" for="input1">First Name</label>
+							<div class="col-xs-12 col-sm-6">
+								<input class="form-control" type="text" id="input1" placeholder="First Name">
+							</div>
+							<label class="col-sm-2 control-label required" for="input2">Last Name</label>
+							<div class="col-xs-12 col-sm-6">
+								<input class="form-control" type="text" id="input2" placeholder="Last Name">
+							</div>
+							<label class="col-sm-2 control-label required" for="input3">Address 1</label>
+							<div class="col-xs-12 col-sm-8">
+								<input class="form-control" type="text" id="input3" placeholder="Address">
+							</div>
+							<label class="col-sm-2 control-label" for="input4">Address 2</label>
+							<div class="col-xs-12 col-sm-8">
+								<input class="form-control" type="text" id="input4" placeholder="Apt., Suite, Building (optional)">
+							</div>
+							<label class="col-sm-2 control-label required" for="input5">City</label>
+							<div class="col-xs-12 col-sm-6">
+								<input class="form-control" type="text" id="input5" placeholder="City">
+							</div>
+							<label class="col-sm-2 control-label required" for="input6">Zip Code</label>
+							<div class="col-sm-3">
+								<input class="form-control" type="text" id="input6" placeholder="Zip Code">
+							</div>
+							<label class="col-xs-12 col-sm-2 control-label required" for="input7">State</label>
+							<div class="col-sm-3">
+								<select class="form-control" id="sel1">
+									<option>Alabama</option>
+									<option>Alaska</option>
+									<option>Arkansas</option>
+									<option>Arizona</option>
+									<option>California</option>
+									<option>...</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="col-xs-12 cc">
+						<h3>Payment Information</h3>
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2 control-label" for="input1">Card Type</label>
+							<div class="col-xs-12 col-sm-10 credit">
+								<label class="radio-inline cc1">
+									<input type="radio" name="inlineRadioOptions" id="cc1" value="option1"/>
+								</label>
+								<label class="radio-inline cc2">
+									<input type="radio" name="inlineRadioOptions" id="cc2" value="option2"/>
+								</label>
+								<label class="radio-inline cc3">
+									<input type="radio" name="inlineRadioOptions" id="cc3" value="option3"/>
+								</label>
+								<label class="radio-inline cc4">
+									<input type="radio" name="inlineRadioOptions" id="cc4" value="option4"/>
+								</label>
+							</div>
+							<label class="col-sm-2 control-label required" for="input1">Card Number</label>
+							<div class="col-sm-4">
+								<input class="form-control" type="text" id="input1" placeholder="Card Number">
+							</div>
+							<label class="col-sm-2 control-label required" for="input1">Expiration</label>
+							<div class="col-sm-2 exp">
+								<select class="form-control required" id="sel1">
+									<option>January</option>
+									<option>February</option>
+									<option>March</option>
+									<option>April</option>
+									<option>May</option>
+									<option>June</option>
+									<option>July</option>
+									<option>August</option>
+									<option>September</option>
+									<option>October</option>
+									<option>November</option>
+									<option>December</option>
+								</select>
+							</div>
+							<div class="col-sm-2 exp year">
+								<select class="form-control required" id="sel1">
+									<option>2015</option>
+									<option>2016</option>
+									<option>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+									<option>2020</option>
+								</select>
+							</div>
+							<label class="col-sm-2 control-label required" for="input1">Security Code</label>
+							<div class="col-sm-2 exp">
+								<input class="form-control" type="text" id="input1" placeholder="Security Code">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="col-xs-12 tcs">
+						<h3>Terms &amp; Conditions</h3>
+						<a href="">Read Terms &amp; Conditions</a>
+						<label>
+							<input type="checkbox" value="">I've read and agree to the terms and conditions of my order. THIS AGREEMENT CONTAINS A BINDING ARBITRATION PROVISION WHICH MAY BE ENFORCED BY THE PARTIES. By checking I've read and agree to the terms and conditions of my order, you (i) represent that all information you have provided to Sprint is correct; and (ii) agree that you have read and agreed to all terms of this Agreement, including the terms of your service plan and the Ts&amp;Cs.</input>
+						</label>
+					</div>
+				</section>
+				<section>
+					<div class="col-xs-12 col-sm-8 finalamount pull-right">
+						<ul>
+							<li><span>Free Ground Shipping</span><p>0.00</p></li>
+							<li><span>Subtotal</span><p>199.99</p></li>
+							<li><span>Current Total Due (before tax)</span><p>199.99</p></li>
+							<a class="btn btn-primary pull-right" href="framework_purchase-02.html">Review Order <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="hidden-xs hidden-sm col-md-4">
+				<section class="entrust">
+					<h3>Secure Credit Card Payment</h3>
+					<div>
+						<img src="img/entrust.png"></img>
+					</div>
+				</section>
+				<section>
+					<div class="orderbyphone">
+						<h3>Order by Phone</h3>
+						<p>Need help choosing a phone or a plan? Just give us a call.</p>
+						<h3 class="phonenumber">1-866-866-7509</h3>
+					</div>
+				</section>
+				<section>
+					<h3>How it Works</h3>
+					<ul class="features howitworks">
+						<li>
+							<img src="img/icons/smartphone.png"></img>
+							<div>
+								<p>Order by phone, online, or in a store.</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/icons/activate.png"></img>
+							<div>
+								<p>When you get your phone, activate a no-contract plan online.</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/icons/keepyournumber.png"></img>
+							<div>
+								<p>Keep your number or choose a new one. Enjoy!</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Phone Insurance</h3>
+					<p>Can't live without your Sprint Mobile phone? Get phone insurance and you'll never have to.</p>
+					<div class="col-xs-12">
+						<a class="btn btn-default btn-block" href="http://www.sprint.com/legal/privacy.html?INTNAV=ATG:FT:Privacy">Privacy Policy</a>
+						<a class="btn btn-default btn-block" href="http://www.sprint.com/landings/returns/?question_box=return%20policy&id16=return%20policy">Return Policy</a>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="legal">
+			<p>After applicable data allotment reached, data speeds (including video) reduced to 2G speeds for remainder of plan cycle. International services extra. Double the data compared to Sprint's former plans. Prices &amp; offers subject to change without notice &amp; may not be available in all markets/retail locations or for all devices. State &amp; local sales taxes/fees may apply when adding funds to accounts. Coverage not available everywhere. Sprint 4G LTE network reaches over 260 million people. Sprint reserves the right to modify, extend or cancel offer at any time. Offer, network use rules &amp; other restrictions apply.</p>
+		</section>
+	</div>	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12">
+				<p>&copy; 2015 Sprint. <span class="hidden-xs">All rights reserved.</span></p>
+				<ul class="footer-links">
+					<li><a href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+					<li><a href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/sprintprepaid-bootstrap.min.js"></script>
+    <script src="../js/lib/jasny-bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+		$(function(){
+		$(".dropdown").hover(
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>

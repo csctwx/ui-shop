@@ -1,0 +1,3055 @@
+/*@import url("holiday.css");*/
+/***************** BEYOND TALK BRANDING STYLES *******************
+	These are the default styles for all Beyond Talk branded pages.
+	These pages should all have body tags classed with "branding_bt"
+*/
+
+
+.free-ship-btn {
+	background:url("../../img/2012/details_freeshipping.png") no-repeat scroll 0 0 transparent; 
+	height: 22px; 
+	width: 183px;
+	display:block;
+}
+.free-ship-btn:hover {
+	background-position: 0 -23px;
+	cursor:pointer;
+}
+.check-covg-btn {
+	background:url("../../img/2012/details_checkcoverage.png") no-repeat scroll 0 0 transparent; 
+	height: 22px; 
+	width: 137px;
+	display:block;
+}
+.check-covg-btn:hover {
+	background-position: 0 -23px;
+}
+.bt_splash .shippingPromo {
+	background: #ede9dc;
+	color: #d50020;
+	font: normal 12px 'ProximaNova-Semibold';
+	text-align: center;
+	text-transform: uppercase;
+	padding: 7px 0;
+	width: 380px;
+	clear: left;
+}
+
+/* Generic Splash Elements */
+section.bt_splash div.contentWrap {
+	width: 963px;
+	height: 470px;
+	margin: 0px auto;
+	position: relative;
+	z-index: 3;
+}
+
+/* Generic Splash Elements - Breadcrumbs */
+section.bt_splash div.contentWrap div.breadcrumbs {
+	position: absolute;
+	top: 20px; left: 0;
+	font: normal 0.750em 'ProximaNova-Regular';
+	color: #555555;
+	z-index: 3;
+}
+section.bt_splash div.contentWrap div.breadcrumbs a {
+	color: #555555;
+}
+section.bt_splash div.contentWrap div.breadcrumbs a:hover {
+	color: #000000;
+}
+section.bt_splash div.contentWrap div.breadcrumbs span {
+	color: #d70020 !important;
+	font-family: 'ProximaNova-Light';
+	font-weight: bold;
+}
+
+
+/* Generic Splash Elements - Top Right Controls */
+section.bt_splash div.contentWrap div.topControls {
+	position: absolute;
+	top: 17px;
+	right: 0;
+	width: 360px;
+	font: normal 0.688em  'ProximaNova-Semibold';
+	z-index: 3;
+	text-align: right;
+}
+section.bt_splash div.contentWrap div.topControls div.actions {
+	float: left; width: 165px;
+}
+section.bt_splash div.contentWrap div.topControls a.print {
+	background: url('../../img/2012/bt-splash-details-print-icon.gif') top left no-repeat;
+	padding: 3px 0 3px 21px;
+	margin-right: 20px;
+	color: #909090;
+}
+section.bt_splash div.contentWrap div.topControls a.chat {
+	background: url('../../img/2012/bt-splash-details-chat-icon.gif') top left no-repeat;
+	padding: 3px 0 3px 29px;
+	margin-right: 20px;
+	color: #909090;
+}
+section.bt_splash div.contentWrap div.topControls a:hover {
+	color: #000;
+}
+section.bt_splash div.contentWrap div.topControls div.social {
+	width: 180px;
+	margin-top: -3px;
+	float: right;
+}
+section.bt_splash div.contentWrap div.topControls div.social a {
+	color: #909090 !important;
+	text-decoration: none !important;
+}
+section.bt_splash div.contentWrap div.topControls div.social a:hover {
+	color: #000 !important;
+}
+
+/* Phone Splash */
+section#phoneDetailsSplash {
+	width: 100%; 
+	height: 470px;
+	background: url('../../img/2014/vm-unlimited-overview-bg.gif') center bottom repeat-x;
+	position: relative;
+}
+ section#phoneDetailsSplash div.backgroundFeature {
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	background-color: #000000;
+	text-align: right;
+	height: 470px;
+	width: 435px;
+	overflow: hidden;
+}
+ section#phoneDetailsSplash div.backgroundFeature img {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+ section#phoneDetailsSplash div.backgroundFeature p {
+	position: absolute;
+	top: 435px;
+	right: 130px;
+	color: #fff;
+	font: 0.750em 'ProximaNova-Bold-Italic';
+	z-index: 2;
+}
+
+/* Phone Splash - Phone display and thumbs */
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay {
+	position: absolute; 
+	top: 35px; 
+	left: 204px;
+	height: 330px; 
+	width: 330px;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.thumbs {
+	position: absolute;
+	width: 52px;
+	top: 40px; left: 4px;
+	z-index: 6;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.thumbs div.thmBtn {
+	margin-bottom: 5px;
+	width: 52px;
+	height: 52px;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.thumbs div.thmBtn a {
+	border: 0;
+	outline: 0;
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	font: normal 0.750em/1em 'ProximaNova-Semibold';
+	text-transform: uppercase;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.thumbs div.thmBtn a small {
+	font-size: 0.750em;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.thumbs div.thmBtn a div {
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	background-position: 0 -52px;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.thumbs div.thmBtn a div.thmb {
+	z-index: 1;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.thumbs div.thmBtn a div.hover {
+	width: 47px;
+	height: 37px;
+	display: none;
+	z-index: 2;
+	background: url('../../img/2012/device-splash-thumb-over.png') no-repeat;
+	padding: 15px 0 0 5px;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.thumbs div.thmBtn a:hover div.hover {
+	display: block;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.phone_large {
+	position: absolute;
+	top: 0; left: 0;
+	display: none;
+	padding-left: 25px;
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.phone_large.active { display: block; }
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.discount {
+	position: absolute; 
+	/*top: 14px; */
+	left: 230px;
+	height: 85px; 
+	width: 85px;
+	/*height: 65px; 
+	width: 70px;
+	padding: 20px 0 0 15px;*/
+	background: url('../../img/2012/sales-tag-bg.png') no-repeat;
+	color: #fff;
+	font: 1.711em/0.9em 'ProximaNova-Bold-Italic';
+}
+section#phoneDetailsSplash div.contentWrap div.phoneDisplay div.discount div {
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+	height: 85px; 
+	width: 85px;
+	/*text-shadow: 0px 1px 2px #922;*/
+}
+
+/* Phone Splash - Phone Detils and Overview */
+#plan-detail-cpo div.hover {
+    position:absolute;
+    top:35px;
+    left:155px;
+	color:#858585;
+}
+#plan-detail-cpo div.hover span.red {
+    color:#d70020;
+	font-weight:bold;
+}
+#plan-detail-cpo div.hover span.bold {
+    color:#000000;
+	font-weight:bold;
+}
+#plan-detail-cpo div.tooltip {
+	background: url('../../img/2012/tooltip-bg.png') no-repeat;
+	color: #858585;
+	height:225px;
+	width:444px;
+	left:-280px;
+	top:20px;
+	opacity:0;
+	padding:15px;
+	position:absolute;
+	transition:all 0.5s ease 0s;
+	visibility:hidden;
+	-webkit-transition: all 0.5s;
+	-moz-transition:  all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition:  all 0.5s;
+	transition:  all 0.5s;
+}
+#plan-detail-cpo div.hover:hover .tooltip {
+    opacity:1;
+    visibility:visible;
+}
+section#phoneDetailsSplash div.contentWrap div.details {
+	position: absolute;
+	/*top: 80px;*/ /*commented out for victory mothers day sale */
+	top: 60px;
+	left: 530px;
+	width: 430px;
+}
+section#phoneDetailsSplash div.contentWrap  div.detailsDisplay { display: none; }
+section#phoneDetailsSplash div.contentWrap  div.detailsDisplay.active { display: block; }
+section#phoneDetailsSplash div.contentWrap div.details header h1 {
+	font: 2.02em 'ProximaNova-Bold-Italic';
+	text-transform: uppercase;
+	color: #000;
+	margin: 0px;
+	/*text-shadow: 0px 1px 1px #aaa;*/
+}
+body.branding_bt.branding_iPhone section#phoneDetailsSplash div.contentWrap div.details header h1 {
+	text-transform: none !important;
+}
+section#phoneDetailsSplash div.contentWrap div.details header h1 span {
+	color: #858585;
+}
+section#phoneDetailsSplash div.contentWrap div.details h1 sup {
+	font-size: 0.512em;
+	top: -0.7em;
+}
+section#phoneDetailsSplash div.contentWrap div.details p.overview {
+	font: 0.875em/1.429em 'ProximaNova-Regular-Italic';
+	color: #3e3d3d;
+	/*width: 395px;*/
+	/*width: 410px;*/
+	width: 450px;
+}
+body.branding_bt.branding_iPhone section#phoneDetailsSplash div.contentWrap div.details p.overview {
+	width: 440px !important;
+}
+section#phoneDetailsSplash div.contentWrap div.details div.rule {
+	height: 1px; width: 380px;
+	border-bottom: 1px solid #dedede;
+}
+section#phoneDetailsSplash div.contentWrap div.details div.rule.priceSpacer {
+	margin-bottom: 25px;
+}
+
+
+/* VM Unlimited Plans Details page overide 
+section#planDetailsSplash.bt_splash div.contentWrap { height: 612px; }
+section#planDetailsSplash.bt_splash div.contentWrap div.breadcrumbs { color: #fff; }
+section#planDetailsSplash.bt_splash div.contentWrap div.breadcrumbs a { color: #fff; }
+*/
+section#planDetailsSplash.bt_splash div.contentWrap { height: 612px; }
+//section#planDetailsSplash.bt_splash div.contentWrap div.breadcrumbs { color: #fff; }
+//section#planDetailsSplash.bt_splash div.contentWrap div.breadcrumbs a { color: #fff; }
+
+
+/* Phone Splash - Phone Detils and Overview - Color Selector */
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 20px 0;
+	height: 19px;
+	background-color: #eeeeee;
+	float: left;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav li {
+	display: block;
+	float: left;
+	padding: 3px;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav li.copy {
+	color: #7f7f7f;
+	font: 0.750em 'ProximaNova-Bold-Italic';
+	padding: 5px 5px 2px 8px;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav li a {
+	display: block;
+	text-indent: -99999px;
+	width: 12px; height: 12px;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav li a.active {
+	border: 1px solid #fff;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav li a:hover {
+	border: 1px solid #575757;
+}
+
+/* for iphone 5 */
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav2 {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 20px 0;
+	height: 19px;
+	background-color: #eeeeee;
+	float: left;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav2 li {
+	display: block;
+	float: left;
+	padding: 3px;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav2 li.copy {
+	color: #7f7f7f;
+	font: 0.750em 'ProximaNova-Bold-Italic';
+	padding: 5px 5px 2px 8px;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav2 li a {
+	display: block;
+	text-indent: -99999px;
+	width: 12px; height: 12px;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav2 li a.active {
+	border: 1px solid #ffffff;
+}
+section#phoneDetailsSplash div.contentWrap div.details ul.color_nav2 li a:hover {
+	border: 1px solid #575757;
+}
+ul.color_nav2 li a.gray {
+	/*background: #7f8384;
+	border: 1px solid #7f8384;*/
+	background: #79787d;
+	border: 1px solid #79787d;
+}
+ul.color_nav2 li a.gold {
+	background: #dbcfbf;
+	border: 1px solid #dbcfbf;
+}
+ul.color_nav2 li a.rosegold {
+	background: #d2aca6;
+	border: 1px solid #d2aca6;
+}
+ul.color_nav2 li a.silver {
+	/*background: #dddfde;
+	border: 1px solid #dddfde;*/
+	
+	background: #b5b5b5;
+	border: 1px solid #b5b5b5;
+}
+ul.color_nav2 li a.pink {
+	background: #ff7987;
+	border: 1px solid #ff7987;
+}
+ul.color_nav2 li a.yellow {
+	background: #fff085;
+	border: 1px solid #fff085;
+}
+ul.color_nav2 li a.green {
+	background: #9dc96f;
+	border: 1px solid #9dc96f;
+}
+ul.color_nav2 li a.blue {
+	background: #50c4fa;
+	border: 1px solid #50c4fa;
+}
+ul.color_nav2 li a.black {
+	background: #2f2f2f;
+	border: 1px solid #2f2f2f;
+}
+ul.color_nav2 li a.white {
+	background: #ffffff;
+	border: 1px solid #ffffff;
+}
+ul.color_nav2 li a.red {
+	background: #ff0000;
+	border: 1px solid #ff0000;
+}
+select#phone-memory-selector
+{
+    float: left;
+    font: 12px/12px Arial,Helvetica;
+    margin: 0 0 0 20px;
+    vertical-align: top;
+}
+
+/* Define Colors */
+a { outline:none; }
+a:focus { outline:none; }
+ul.color_nav li a.silver {
+	background: #bcbdc0;
+	border: 1px solid #bcbdc0;
+}
+ul.color_nav li a.black {
+	background: #2f2f2f;
+	border: 1px solid #2f2f2f;
+}
+ul.color_nav li a.white {
+	background: #ffffff;
+	border: 1px solid #ffffff;
+}
+ul.color_nav li a.titanium {
+	background: #545454;
+	border: 1px solid #545454;
+}
+ul.color_nav li a.red {
+	background: #ff0000;
+	border: 1px solid #ff0000;
+}
+
+/* Phone Splash - Phone Detils and Overview - Price Display & Add to Cart Button */
+section#phoneDetailsSplash div.contentWrap div.details p.discount {
+	color: #d70020;
+	font: 0.750em 'ProximaNova-Semibold';
+	margin: 0 0 8px;
+}
+section#phoneDetailsSplash div.contentWrap div.details p.msg {
+	color: #d70020;
+	font: 0.750em 'ProximaNova-Semibold';
+	margin: 0 0 8px;
+}
+section#phoneDetailsSplash div.contentWrap div.details div.current_price {
+	background: #f2f2f2;
+	color: #000;
+	font: 1.125em 'ProximaNova-Bold-Italic';
+	float: left;
+	/*height: 18px;*/
+	height: 27px;
+	/*width: 168px;*/
+	width: 205px;
+	text-align: center;
+	/*padding: 7px 18px;*/
+	margin: auto auto;
+	padding: 5px 0px 0px 0px;
+	/*box-shadow: inset 0px 0px 10px -1px #000;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;*/
+}
+section#phoneDetailsSplash div.contentWrap div.details div.salepricing div.current_price { /*text-align: left;*/ text-align: center; }
+section#phoneDetailsSplash div.contentWrap div.details div.current_price span.originalPrice {
+	color: #5d5d5d;
+	font-size: 0.722em;
+	text-decoration: line-through;
+	/*padding-right: 14px;*/
+	margin: auto 0px auto 0px;
+}
+section#phoneDetailsSplash div.contentWrap div.details div.current_price span.salePrice {
+	color: #d70020;
+	/*text-shadow: 0px 1px 0px #ccc;*/
+	margin-left: 14px;
+}
+section#phoneDetailsSplash div.contentWrap div.details div.webexclusive span.salePrice { 
+	/*font-size: 12px !important;*/
+	font-size: 16px !important;
+	white-space: nowrap;
+	/*text-shadow: 0px 1px 0px #ccc;*/
+	margin-left: 8px;
+}
+section#phoneDetailsSplash div.contentWrap div.details div.webexclusive span.salePrice span.iPhoneVerbiage {
+	color: #000000;
+	/*font-size: 13px !important;*/
+	text-shadow: none;
+	font: italic bold 12px Arial;	
+}
+section#phoneDetailsSplash div.contentWrap div.details button.button_add_to_cart {
+	border: 0px;
+	outline: 0px;
+	background: #ab1b1b url('../../img/2012/bt-atc-button-bg.gif') repeat-x;
+	color: #fff; 
+	letter-spacing: 1px;
+	font: normal 0.938em/1em 'ProximaNova-Semibold';
+	text-transform: uppercase;
+	height: 32px; width: 175px;
+	text-align: center;
+	margin: 0 12px 0 0;
+	padding: 0;
+	-moz-box-shadow:    1px 1px 2px 0 #555;
+	-webkit-box-shadow: 1px 1px 2px 0 #555;
+	box-shadow:         1px 1px 2px 0 #555;
+	text-shadow: 0 0 10px #333333;
+	/*-ms-filter: "filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='#666666')";
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='#666666');*/
+	/*border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;*/
+}
+section#phoneDetailsSplash div.contentWrap div.details a.button_radioshack {
+    background: url("../../img/2012/bt-atc-button-bg.gif") repeat-x scroll 0 0 #AB1B1B;
+    border: 0 none;
+    box-shadow: 1px 1px 3px 0 #333333;
+    color: #FFFFFF;
+    display: block;
+    font: 0.938em/32px 'ProximaNova-Semibold';
+    height: 32px;
+    letter-spacing: 1px;
+    margin: 0 12px 0 0;
+    outline: 0 none;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0 0 10px #333333;
+    text-transform: uppercase;
+	text-decoration: none;
+    width: 415px;
+}
+html.lt-ie8 section#phoneDetailsSplash div.contentWrap div.details a.button_radioshack { width: 363px; }
+section#phoneDetailsSplash div.contentWrap div.details button.button_preorder {
+	border: 0px;
+	outline: 0px;
+	background: #ab1b1b url('../../img/2012/bt-atc-button-bg.gif') repeat-x;
+	color: #fff; 
+	letter-spacing: 1px;
+	font: normal 0.938em/1em 'ProximaNova-Semibold';
+	text-transform: uppercase;
+	height: 32px; width: 175px;
+	text-align: center;
+	margin: 0 12px 0 0;
+	padding: 0;
+	-moz-box-shadow:    1px 1px 3px 0 #333333;
+	-webkit-box-shadow: 1px 1px 3px 0 #333333;
+	box-shadow:         1px 1px 3px 0 #333333;
+	text-shadow: 0 0 10px #333333;
+	-ms-filter: "filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='#666666')";
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='#666666');
+}
+section#phoneDetailsSplash div.contentWrap div.details button.button_add_to_cart:hover,
+section#phoneDetailsSplash div.contentWrap div.details button.button_preorder:hover {
+	background-position: 0 -32px;
+}
+section#phoneDetailsSplash div.contentWrap div.details div.button_preorder_disabled {
+	border: 0px;
+	outline: 0px;
+	background: url('../../img/2012/bt-atc-button-out-stock-bg.gif') repeat-x;
+	color: #fff; 
+	letter-spacing: 1px;
+	font: normal 0.938em/1em 'ProximaNova-Semibold';
+	text-transform: uppercase;
+	height: 23px;
+	width: 199px;
+	text-align: center;
+	margin: 0 12px 0 0;
+	padding: 9px 0 0;
+	float: left;
+}
+section#phoneDetailsSplash div.contentWrap div.details div.button_outofstock {
+	border: 0px;
+	outline: 0px;
+	background: url('../../img/2012/bt-atc-button-out-stock-bg.gif') repeat-x;
+	color: #fff; 
+	letter-spacing: 1px;
+	font: normal 0.938em/1em 'ProximaNova-Semibold';
+	text-transform: uppercase;
+	height: 23px;
+	width: 175px;
+	text-align: center;
+	margin: 0 12px 0 0;
+	padding: 9px 0 0;
+	float: left;
+}
+section#phoneDetailsSplash div.contentWrap div.details p.limitNote {
+	margin: 4px 0 -10px 90px;
+	font: 0.6em 'ProximaNova-Bold-Italic';
+	color: #666565;
+	/*text-transform: uppercase;*/
+	text-transform: none;
+	float: left;
+}
+
+/* Phone Splash - Phone Detils and Overview - In Stores Hover and Coverage Check Links */
+section#phoneDetailsSplash div.contentWrap div.details p.subPriceLinks a {
+	font: 0.750em 'ProximaNova-Bold-Italic';
+	color: #666565;
+	text-transform: uppercase;
+}
+section#phoneDetailsSplash div.contentWrap div.details p.subPriceLinks a:hover {
+	color: #000;
+}
+section#phoneDetailsSplash div.contentWrap div.details p.subPriceLinks a#inStores {
+	margin-right: 15px;
+}
+div#retailersThumbs {
+	display: none;
+}
+#tooltip {
+	border: 0;
+	background: none;
+}
+#tooltip.inStoresToolCont {
+	background: url('../../img/2012/instores-tooltip-bg.png') no-repeat;
+	width: 215px;
+	height: 60px;
+	padding: 0;
+}
+#tooltip.inStoresToolCont img {
+	margin: 16px 0 0 8px;
+}
+
+/* Plan Splash */
+section#planDetailsSplash
+{
+	width: 100%; height: 570px; position: relative;
+	background: #000 url("../../img/2015/vm-plans/plans-bg.jpg") no-repeat 50% 0;
+}
+section#planDetailsSplash header {
+	position: absolute;
+	top: 65px;
+	left: 0px;
+	margin-left: 5px;
+}
+section#planDetailsSplash header h1 {
+	font: 1.875em/1.067em 'ProximaNova-Bold-Italic';
+	color: #fff; text-transform: uppercase;
+	margin: -11px 0px 4px 0px;
+}
+section#planDetailsSplash header h1 span {
+	color: #d70020;
+}
+section#planDetailsSplash header h2 {
+	font: 22px/24px 'ProximaNova-Regular-Italic';
+	color: #fff;
+	margin: 0px; 
+	padding: 0px;
+	text-transform: uppercase;
+	position: absolute;
+	top:80px;
+}
+section#planDetailsSplash header h2 a {
+	font-family: 'ProximaNova-Regular-Italic';
+	/*color: #3e3d3d;*/
+	color: #666;
+	padding-left: 20px;
+}
+section#planDetailsSplash header h2 a:hover {
+	color: #000;
+}
+
+
+
+/** 8/28/2015 plan chart **/
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack
+{
+	position: absolute; 
+	top: 340px !important;
+	left:-125px;
+	width: 100%; 
+	text-align: center;
+	font: normal 26px/22px 'ProximaNova-Bold-Italic'; color: #fff;
+	text-transform:none;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack2
+{
+	position: absolute; 
+	top: 373px !important;
+	left:-125px;
+	width: 100%; 
+	text-align: center;
+	font: normal 15px 'ProximaNova-Regular-Italic'; color: #fff;
+	text-transform:uppercase;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack3
+{
+	position: absolute; 
+	top: 393px !important;
+	left:-125px;
+	width: 100%; 
+	text-align: center;
+	font: normal 11px 'ProximaNova-Regular'; color: #fff;
+	text-transform:none;
+}
+div#phoneDetailsTabbed div#tabbedContent p.note {
+	position: absolute;
+	top: 473px !important;
+	left:40px;
+	width:100%;
+	text-align:left;
+	font: italic 9px/14px Arial, Helvetica, sans-serif;
+	color: #fff;
+	letter-spacing: .1px;
+}
+
+
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack-right { 
+	position: absolute;
+	top: 123px !important;
+	left:470px;
+	text-align:left;
+	font: 14px 'ProximaNova-Semibold-Italic';
+	color: #fff;
+	width:220px;
+	text-transform:uppercase;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack-right span.add-data { 
+	font: 12px 'ProximaNova-Regular';
+	text-transform:none;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack-1gb { 
+	position: absolute;
+	top: 163px !important;
+	left:495px;
+	text-align:left;
+	font: 16px 'ProximaNova-Bold';
+	color: #fff;
+	width:200px;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack-2gb { 
+	position: absolute;
+	top: 163px !important;
+	left:605px;
+	text-align:left;
+	font: 16px 'ProximaNova-Bold';
+	color: #fff;
+	width:100px;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack-extra { 
+	position: absolute;
+	top: 213px !important;
+	left:470px;
+	text-align:left;
+	font: 14px 'ProximaNova-Semibold-Italic';
+	color: #fff;
+	width:240px;
+	text-transform:uppercase;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack-extra span.extra-link { 
+	font: 12px/19px 'ProximaNova-Regular';
+	text-transform:none;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack-extra span.extra-link  a{ 
+	color:#fff;
+}
+div#phoneDetailsTabbed div#tabbedContent p.plan-data-pack-extra-services { 
+	position: absolute;
+	top: 298px !important;
+	left:470px;
+	text-align:left;
+	font: 14px 'ProximaNova-Regular';
+	color: #fff;
+	width:220px;
+	text-transform:uppercase;
+}
+/** end 2015 plan chart **/
+
+
+
+
+section#planDetailsSplash div.planChart {
+	position: absolute;
+	top: 170px; left: 5px; width: 100%;
+}
+section#planDetailsSplash div.planChart p.plan-p {
+	position: absolute;
+	top: 241px;
+	font: normal 15px 'ProximaNova-Regular-Italic';
+	color: #fff;
+	margin: 0px 0px 0px 130px;
+	letter-spacing: -.1px;
+}
+section#planDetailsSplash div.planChart span.vm-plan-bottom-banner-bold {
+	font-family: 'ProximaNova-Bold-Italic';
+}
+section#planDetailsSplash div.planChart p.plan-p a {
+	color: #fff;
+	padding: 0px;
+	text-decoration: underline;
+}
+
+#plan-details h3
+{
+	font: 22px/22px "ProximaNova-Regular"; color: #fff;
+	margin: 0; padding: 15px 0 0;
+	text-transform: uppercase;
+}
+#plan-details p
+{
+	font: 12px/14px "ProximaNova-Regular-Italic"; color: #fff;
+	text-transform: uppercase; margin: 0; padding: 5px 0 10px;
+}
+
+#plan-details a.butt-more {
+    background: url("../../img/2012/deals-bt-btn-bg.gif") repeat-x 0 0;
+    font: 13px/28px "ProximaNova-Semibold"; color: #fff;
+    position: absolute; left: 690px; top: 180px; width: 145px;
+    text-align: center; text-decoration: none; text-transform: uppercase;
+}
+#plan-details a.butt-more:hover { background-position: left bottom; }
+
+#plan-extras
+{
+	position: absolute; color: #fff; width:100%;
+}
+#plan-extras .divider {
+	float:left;
+	height: 106px; 
+	width:2%;
+	background: url("../../img/2015/vm-plans/extras-div.png") no-repeat 0 0;
+}
+#plan-extras .extras-details-mid
+{
+	float:left;
+	width:28%;
+	margin: 10px 0 12px; padding: 0 0 12px;
+}
+#plan-extras .extras-details-mid div.extras-details-mid-links
+{
+	width:245px;position:absolute;top:10px;
+}
+#plan-extras .extras-details-mid div.extras-details-mid-additional
+{
+	float:left;position:absolute;top:70px;
+}
+
+#plan-extras .extras-details-right
+{
+	float:left;
+	width:28%;
+	margin: 10px 0 12px; padding: 0 0 12px;
+}
+#plan-extras .extras-details
+{
+	width:28%; float:left;
+	margin: 10px 0 12px; padding: 0 0 12px;
+}
+#plan-extras h3 { margin: 0; text-transform: uppercase; font: 14px/16px "ProximaNova-Bold-Italic", sans-serif; }
+#plan-extras p { margin: 2px 0 10px 0; font: 12px/12px "ProximaNova-Regular", sans-serif; }
+#plan-extras .extras-details a.data-pack
+{
+	font: 16px/16px "ProximaNova-Semibold", sans-serif; color: #fff; text-decoration: none;
+	background: url("../../img/2015/vm-plans/data-pack-add-music.png") no-repeat 0 50%; padding: 0 10px 0 20px;
+}
+#plan-extras .extras-details-mid a.xtra
+{
+	background: url("../../img/2015/vm-plans/bolt-music.png") no-repeat 10px 50%;
+	color: #fff; font: 12px/13px "ProximaNova-Regular", sans-serif;
+	padding: 0 0 0 20px; text-decoration: none;
+}
+
+#plan-extras .extras-details-mid a.additional
+{
+	font: 14px/14px "ProximaNova-Semibold", sans-serif; color: #fff; text-decoration: none; text-transform: uppercase;
+}
+
+
+section#planDetailsSplash p.note {
+	font: italic 10px/11px Arial,Helvetica,sans-serif; color: #ddd; padding: 15px 0 0 0; text-transform: none;
+}
+section#planDetailsSplash p.note a { color: #ddd; text-decoration: underline; font-size: 10px;}
+
+/* Plan Splash - Background (bolt) feature w/ Coverage Check */
+section#planDetailsSplash div.backgroundFeature {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	display: block;
+	background-color: #d70020;
+	text-align: left;
+	height: 470px;
+	width: 455px;
+	overflow: hidden;
+}
+section#planDetailsSplash div.contentWrap div.compareUs {
+	position: absolute;
+	top: 422px;
+	left: 9px;
+}
+section#planDetailsSplash div.contentWrap div.compareUs h1 {
+	font: 22px/24px 'ProximaNova-Bold-Italic';
+	color: #000;
+	margin: 0px;
+}
+section#planDetailsSplash div.contentWrap div.compareUs img {
+	float: left;
+	vertical-align: inherit;
+	margin: 5px 27px 0px 7px;
+}
+section#planDetailsSplash div.contentWrap div.compareUs p {
+	font: 18px/20px 'ProximaNova-Regular-Italic';
+	color: #000;
+	margin: 6px 0px 8px 0px;;
+	clear: none;
+}
+section#planDetailsSplash div.contentWrap div.compareUs a {
+    background: url("../../img/2012/deals-bt-btn-bg.gif") repeat-x scroll 0 0 transparent;
+    border: 0px none;
+    box-shadow: 1px 1px 1px #999999;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font: 10px/12px 'ProximaNova-Semibold';
+    height: 16px;
+    margin: 0px;
+    outline: 0 none;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #333333;
+    text-transform: uppercase;
+    width: 130px;
+}
+section#planDetailsSplash div.contentWrap div.compareUs a:hover {
+	background-position: 0 -22px;
+}
+section#planDetailsSplash div.contentWrap div.covCheck {
+	position: absolute;
+	top: 422px;
+	left: 492px;
+    background: url("../../img/2014/vm-unlimited-network.png") no-repeat transparent;
+	background-position: right 4px;
+	width: 462px;
+	height: 108px;
+}
+section#planDetailsSplash div.contentWrap div.covCheck h1 {
+	font: 22px/24px 'ProximaNova-Bold-Italic';
+	color: #000;
+	margin: 0px;
+}
+section#planDetailsSplash div.contentWrap div.covCheck p.powered-before {
+	font: 12px/14px 'ProximaNova-Bold-Italic';
+	color: #000;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 6px 0px 2px;
+	float: left;
+}
+section#planDetailsSplash div.contentWrap div.covCheck img {
+	clear: none;
+	float: left;
+	margin: 2px 0px 0px 0px;
+}
+section#planDetailsSplash div.contentWrap div.covCheck p.powered-after {
+	font: 12px/14px 'ProximaNova-Bold-Italic';
+	color: #000;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 0px 0px 6px;
+	float: left;
+}
+section#planDetailsSplash .planChart .covCheckForm {
+	margin: 5px 0 0 0;
+}
+section#planDetailsSplash .planChart input#cczip {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+    font: 10px/20px Arial, Helvetica, sans-serif !important;
+    height: 21px !important;
+	width: 70px !important;
+    padding: 0px 0px 0px 2px !important;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+section#planDetailsSplash .planChart a.coverageBtn {
+    background: url("../../img/2012/deals-bt-btn-bg.gif") repeat-x scroll 0 0 transparent;
+    border: 0px none;
+    color: #fff;
+    font: 10px/12px 'ProximaNova-Semibold';
+    outline: 0px none;
+    padding: 6px 0px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #333;
+    text-transform: uppercase;
+    width: 130px;
+	display: inline-block;
+}
+section#planDetailsSplash .planChart a.coverageBtn:hover {
+	background-position: 0 -22px;
+}
+section#planDetailsSplash div.contentWrap div.covCheck img.covMap {
+}
+/*section#planDetailsSplash div.covCheck h3 {
+	font: 1.563em/1em 'ProximaNova-Bold-Italic';
+	margin: 0;
+	padding-bottom: 14px;
+}
+section#planDetailsSplash div.covCheck h4 {
+	font: 17px/19px 'ProximaNova-Bold-Italic';
+	margin: 0;
+	padding-bottom: 5px;
+}*/
+section#planDetailsSplash div.covCheck a.compareUsVsThemBtn,
+section#planDetailsSplash div.covCheck a.comparePlansBtn {
+	background: url("../../img/2012/compare-plans-button.png") repeat-x scroll 0 0 transparent;
+    border: 0 none;
+    color: #363636;
+    display: block;
+    float: left;
+    font: 10px 'ProximaNova-Semibold';
+    height: 16px;
+    margin: 0 2px 0 0;
+    outline: 0 none;
+    padding: 5px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 128px;
+}
+section#planDetailsSplash div.covCheck a.comparePlansBtn:hover { background-position: left bottom; } 
+/*section#planDetailsSplash div.covCheck a.coverageBtn {
+	background: url("../../img/2012/bb2g-coverage-button.png") repeat-x scroll 0 0 transparent;
+    border: 0 none;
+    color: #363636;
+    display: block;
+    float: left;
+    font: 0.75em/0.9em 'ProximaNova-Semibold';
+    height: 19px;
+    margin: 0 2px 0 0;
+    outline: 0 none;
+    padding: 10px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 173px;
+}
+section#planDetailsSplash div.covCheck a.coverageBtn:hover { background-position: left bottom; } */
+/*input#cczip
+{
+    background-color: #FFFFFF !important;
+    border: 1px solid #CCCCCC !important;
+    color: #000000 !important;
+    font: 11px/22px arial,helvetica,sans-serif !important;
+    height: 22px !important;
+    padding: 0px 5px !important;
+	display: inline-block;
+	vertical-align: middle;
+}*/
+
+/* Overide for above "coverageBtn" with new input field layout. leave above for IE8 */
+section#planDetailsSplash div.covCheck a.coverageBtn
+{
+	border: 0 none; 
+	outline: 0 none; 
+	float: none; 
+	width: auto; 
+	height: auto;
+	display: inline-block; 
+	padding: 3px 8px; 
+	margin: 0 5px;
+	font: 10px/9px "ProximaNova-Semibold"; 
+	color: #363636;
+	text-align: center; 
+	text-decoration: none; 
+	vertical-align: middle;
+	box-shadow: 1px 1px 3px 0 #999999; 
+	text-transform: uppercase;
+	background-color: #b0b0b0; 
+	background: linear-gradient(#e1e1e1, #b0b0b0) repeat;
+}
+section#planDetailsSplash div.covCheck a.coverageBtn:hover
+{
+	background-color: #e1e1e1;
+	background: linear-gradient(#ffffff, #e1e1e1) repeat;
+}
+/* END */
+
+ section#planDetailsSplash div.covCheck div.powered_by {
+	padding-top: 10px;
+}
+ section#planDetailsSplash div.covCheck div.powered_by p {
+	font: 0.750em 'ProximaNova-Regular-Italic';
+	float: left; 
+	padding: 10px 5px 0 0;
+	margin: 0;
+}
+
+/* Tabbed Content - iPhone Partner Feature Display */
+div.iPhoneFeatureWidget {
+	width:940px;
+	padding: 6px 0 8px 10px;
+}
+div.iPhone5FeatureWidget {
+	width:716px;
+	padding: 0;
+}
+div.iPhone5sFeatureWidget {
+	width:966px;
+	padding: 0;
+}
+div.iPhone5cFeatureWidget {
+	width:966px;
+	padding: 0;
+}
+/* 174 x 34 */
+div.iPhone6sFeatureWidget a.vmu_butt
+{
+	display: inline-block; padding: 8px 25px;
+	font: bold 14px/14px arial,helvetica,sans-serif; color: #ffffff;
+	text-align: center; text-decoration: none;
+	box-shadow: 1px 1px 3px 0 #333333; text-shadow: 1px 1px 3px #333333;
+	background-color: #4a4a4a; background: linear-gradient(#595959, #3a3a3a) repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595959', endColorstr='#3a3a3a');
+}
+div.iPhone6sFeatureWidget a.vmu_butt:hover
+{
+	background-color: #000000;
+	background: linear-gradient(#3a3a3a, #000000) repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a3a3a', endColorstr='#000000');
+}
+div.iPhone5sFeatureWidget a.vmu_butt
+{
+	display: inline-block; padding: 8px 25px;
+	font: bold 14px/14px arial,helvetica,sans-serif; color: #ffffff;
+	text-align: center; text-decoration: none;
+	box-shadow: 1px 1px 3px 0 #333333; text-shadow: 1px 1px 3px #333333;
+	background-color: #4a4a4a; background: linear-gradient(#595959, #3a3a3a) repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595959', endColorstr='#3a3a3a');
+}
+div.iPhone5sFeatureWidget a.vmu_butt:hover
+{
+	background-color: #000000;
+	background: linear-gradient(#3a3a3a, #000000) repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a3a3a', endColorstr='#000000');
+}
+div.iPhone5cFeatureWidget a.vmu_butt
+{
+	display: inline-block; padding: 8px 25px;
+	font: bold 14px/14px arial,helvetica,sans-serif; color: #ffffff;
+	text-align: center; text-decoration: none;
+	box-shadow: 1px 1px 3px 0 #333333; text-shadow: 1px 1px 3px #333333;
+	background-color: #4a4a4a; background: linear-gradient(#595959, #3a3a3a) repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595959', endColorstr='#3a3a3a');
+}
+div.iPhone5cFeatureWidget a.vmu_butt:hover
+{
+	background-color: #000000;
+	background: linear-gradient(#3a3a3a, #000000) repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a3a3a', endColorstr='#000000');
+}
+/*div.iPhone5sFeatureWidget a.learnmoreBtn, a.buynowBtn, a.compareBtn {
+	background: url("../../img/2012/bt-btn-phone-details-sm-bg.gif") repeat-x scroll 0 0 transparent;
+    box-shadow: 1px 1px 2px #999999;
+	border: 0 none;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font: 0.75em/0.9em 'ProximaNova-Semibold';
+    height: 19px;
+    margin: 0 2px 0 0;
+    outline: 0 none;
+    padding: 10px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 110px;
+}
+div.iPhone5cFeatureWidget a.learnmoreBtn, a.buynowBtn, a.compareBtn {
+	background: url("../../img/2012/bt-btn-phone-details-sm-bg.gif") repeat-x scroll 0 0 transparent;
+    box-shadow: 1px 1px 2px #999999;
+	border: 0 none;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font: 0.75em/0.9em 'ProximaNova-Semibold';
+    height: 19px;
+    margin: 0 2px 0 0;
+    outline: 0 none;
+    padding: 10px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 110px;
+}*/
+
+/* Tabbed Content -  Tab Bar */
+div.tabbedContentWrapper div#tabBar {
+	width: 100%;
+	/*height: 57px;*/
+	background: url('../../img/2012/bt-tabs-bg.gif') top center repeat-x;
+	text-align: center;
+	clear: both;
+}
+div.tabbedContentWrapper div#tabBar ul {
+	margin: 0px auto; padding: 0px;
+	list-style-type: none;
+	display: block; 
+	height: 57px;
+	overflow: hidden;
+}
+div#phoneDetailsTabbed div#tabBar ul {
+	/*width: 963px !important;*/
+	width: 780px !important;
+}
+div#planDetailsTabbed div#tabBar ul {
+	/*width: 971px !important;*/
+	width:650px !important;
+}
+div.tabbedContentWrapper div#tabBar li {
+	display: block;
+	float: left;
+	height: 57px;
+}
+div.tabbedContentWrapper div#tabBar li a {
+	font: 1.063em 'ProximaNova-Regular-Italic';
+	color: #666666;
+	text-decoration: none;
+	display: block;
+	padding: 19px 0 12px;
+	text-align: center;
+	background: url('../../img/2012/bt-tabs-div.png') top right no-repeat;
+	text-transform: uppercase;
+	border: 0;
+	outline: 0;
+}
+div.tabbedContentWrapper div#tabBar li a:hover {
+	color: #000;
+}
+
+/* Explicit sizes are required to fit tabs to container width  */
+div#phoneDetailsTabbed div#tabBar li a#featuresTab { width: 192px; text-align: left; }
+div#phoneDetailsTabbed div#tabBar li a#planTab { width: 111px; }
+div#phoneDetailsTabbed div#tabBar li a#askTab { width: 188px; }
+div#phoneDetailsTabbed div#tabBar li a#reviewsTab { width: 140px; }
+div#phoneDetailsTabbed div#tabBar li a#accessoriesTab { width: 180px; }
+div#phoneDetailsTabbed div#tabBar li a#faqsTab { width: 150px; text-align: right; }
+div#planDetailsTabbed div#tabBar li a#overviewTab { width: 198px; text-align: left; }
+div#planDetailsTabbed div#tabBar li a#faqsTab { width: 257px; }
+div#planDetailsTabbed div#tabBar li a#askTab { width: 332px; }
+div#planDetailsTabbed div#tabBar li a#reviewsTab { width: 184px; text-align: right; }
+
+/* Tabbed Content - Tabs - Generic */
+div.tabbedContentWrapper div#tabBar li.active {
+	background: url('../../img/2012/bt-tabs-arrow.gif') bottom center no-repeat;
+}
+div.tabbedContentWrapper div#tabBar li.active a {
+	color: #d70020 !important;
+}
+div.tabbedContentWrapper div#tabBar li.last a {
+	background: none !important;
+}
+div#planDetailsTabbed div#tabBar li.first.active {
+	background-position: 35px bottom !important;
+}
+div#planDetailsTabbed div#tabBar li.second.active {
+	background-position: 118px bottom !important;
+}
+div#planDetailsTabbed div#tabBar li.last.active {
+	background-position: 140px bottom !important;
+}
+div#phoneDetailsTabbed div#tabBar li.first.active {
+	background-position: 68px bottom !important;
+}
+div#phoneDetailsTabbed div#tabBar li.last.active {
+	background-position: 80px bottom !important;
+}
+
+/* Tabbed Content - Content Buckets */
+div.tabbedContentWrapper div#tabbedContent {
+	width: 963px;
+	margin: 0px auto;
+	text-align: left;
+	padding-top: 32px;
+}
+div.tabbedContentWrapper div#tabbedContent div.contentBucket {
+	display: none;
+}
+div.tabbedContentWrapper div#tabbedContent div.contentBucket.active {
+	display: block;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes [Phone Details Page] */
+div#phoneDetailsTabbed div#tabbedContent div#features div.left,
+div#phoneDetailsTabbed div#tabbedContent div#plan div.left {
+	float:left;
+}
+div#phoneDetailsTabbed div#tabbedContent div#features section,
+div#phoneDetailsTabbed div#tabbedContent div#plan section {
+	width:717px;
+	margin-bottom:18px;
+	position:relative;
+	background:url('../../img/2012/bt-bucket-content-box-bg-tiled.gif') repeat-y;
+}
+div#phoneDetailsTabbed div#tabbedContent div#features section div.top,
+div#phoneDetailsTabbed div#tabbedContent div#plan section div.top {
+	width:717px;
+	height:3px;
+	background:url('../../img/2012/bt-bucket-content-box-bg-top.gif') no-repeat;
+}
+div#phoneDetailsTabbed div#tabbedContent div#features section div.bot,
+div#phoneDetailsTabbed div#tabbedContent div#plan section div.bot {
+	width:717px;
+	height:3px;
+	background:url('../../img/2012/bt-bucket-content-box-bg-bot.gif') no-repeat;
+}
+div#phoneDetailsTabbed div#tabbedContent div#features section h1 {
+	font: 1.563em 'ProximaNova-Regular-Italic';
+	color:#d70020;
+	margin:0;
+	/*padding:26px 0 18px 44px;*/
+	padding:26px 0 18px 14px;
+}
+div#phoneDetailsTabbed div#tabbedContent div#plan section h1 {
+	font: 1.25em 'ProximaNova-Regular-Italic';
+	color:#d70020;
+	margin:0;
+	padding:26px 0 18px 44px;
+}
+div.tabbedContentWrapper div#tabbedContent div p.pageMsg {
+	font: normal 1.313em/1.190em 'ProximaNova-LightIt';
+	color: #6a6a6a;
+}
+div#phoneDetailsTabbed div#tabbedContent section.hasNote {
+	margin-bottom:3px !important;
+}
+div#phoneDetailsTabbed div#tabbedContent p.sectionNote {
+	/*font: .625em/1.3em 'ProximaNova-Regular-Italic';*/
+	font: italic 10px/11px Arial, Helvetica, sans-serif;
+	margin: 0px 0px 14px 1px;	
+	color: #3e3d3d;
+	padding-left: 3px;
+	width: 710px;
+	letter-spacing: -.1px;
+}
+div#phoneDetailsTabbed div#tabbedContent p.sectionNote a {
+	color:#3e3d3d;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes [Plan Details Page] */	
+div#planDetailsTabbed div#tabbedContent div div.left {
+	float:left;
+	width: 68%;
+}
+div#planDetailsTabbed div#tabbedContent div section {
+	width:650px;
+	margin-bottom:18px;
+	position:relative;
+	background:url('../../img/data-messaging-plans/bt-plan-bucket-bg.gif') repeat-y;
+}
+div#planDetailsTabbed div#tabbedContent div section div.top {
+	width:650px;
+	height:4px;
+	background:url('../../img/2012/bt-plan-bucket-top.gif') no-repeat;
+}
+div#planDetailsTabbed div#tabbedContent div section div.bot {
+	width:650px;
+	height:4px;
+	background:url('../../img/2012/bt-plan-bucket-bot.gif') no-repeat;
+}
+div#planDetailsTabbed div#tabbedContent div section h1 {
+	font: 1.25em 'ProximaNova-Regular-Italic';
+	color:#d70020;
+	text-transform:uppercase;
+	margin:0;
+	padding:35px 0 18px 45px;
+}
+div#planDetailsTabbed div#tabbedContent div a {
+	text-decoration: none;
+	text-transform: none;
+	font-size: 14px !important;
+	font: normal 0.850em/1.833em arial;
+	
+	/*
+	font: normal 0.625em 'ProximaNova-Semibold';
+    text-transform: uppercase;
+	*/
+}
+
+div#planDetailsTabbed div#tabbedContent div a.detailsBtn,
+div#planDetailsTabbed div#tabbedContent div a.cartBtn
+{
+	text-decoration: none;
+	font: normal 0.625em 'ProximaNova-Semibold' !important;
+    text-transform: uppercase !important;
+	font-size: 10px !important;
+}
+
+div#planDetailsTabbed div#tabbedContent a.intl-block section#intl_rates {
+	height: 234px;
+}
+div#planDetailsTabbed div#tabbedContent a.intl-block section#intl_rates p.detailLink  {
+	background: url("../../img/data-messaging-plans/deals-bt-btn-bg.gif") repeat-x scroll 0 0 transparent;
+	border: 0px none;
+	box-shadow: 1px 1px 1px #999999;
+	color: #fff !important;
+	display: block;
+	float: left;
+	font: 0.8em/0.9em 'ProximaNova-Semibold' !important;
+	height: 25px;
+	margin: 2px 0px 41px 40px !important;
+	outline: 0px none;
+	padding: 7px 0 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px 0px 10px #333;
+	text-transform: uppercase;
+	width: 187px;
+}
+div#planDetailsTabbed div#tabbedContent a.intl-block:hover section#intl_rates p.detailLink  {
+	background-position: 0 -22px;
+}
+div#planDetailsTabbed div#tabbedContent a.intl-block section#intl_rates div.bot {
+	margin-top: 85px;
+}
+
+/* Tabbed Content - Content Buckets - Adside Boxes */
+div#phoneDetailsTabbed div#tabbedContent aside {
+	display: block;
+	float:right;
+	width: 231px;
+}
+div#planDetailsTabbed div#tabbedContent aside {
+	display: block;
+	float:right;
+	width: 32%;
+}
+
+/* Tabbed Content - Content Buckets - Phone Details - Adside Boxes */
+div#phoneDetailsTabbed div#tabbedContent div#features aside div.aside_box,
+div#phoneDetailsTabbed div#tabbedContent div#plan aside div.aside_box {
+	width:231px;
+	margin-bottom:16px;
+	position:relative;
+	background:url('../../img/2012/bt-bucket-aside-box-bg-tiled.gif') repeat-y;
+}
+div#phoneDetailsTabbed div#tabbedContent div#features aside div.aside_box div.top,
+div#phoneDetailsTabbed div#tabbedContent div#plan aside div.aside_box div.top {
+	width:231px;
+	height:6px;
+	background:url('../../img/2012/bt-bucket-aside-box-bg-top.gif') no-repeat;
+}
+div#phoneDetailsTabbed div#tabbedContent div#features aside div.aside_box div.bot,
+div#phoneDetailsTabbed div#tabbedContent div#plan aside div.aside_box div.bot {
+	width:231px;
+	height:6px;
+	background:url('../../img/2012/bt-bucket-aside-box-bg-bot.gif') no-repeat;
+}
+div#phoneDetailsTabbed div#tabbedContent div#features aside div.aside_box h3,
+div#phoneDetailsTabbed div#tabbedContent div#plan aside div.aside_box h3 {
+	font: .938em 'ProximaNova-Bold-Italic';
+	color:#000;
+	margin:0;
+	padding: 10px 0 16px 20px;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - Top Features */
+section#top_features div.bot {
+	margin-top:20px;
+}
+section#top_features div.featuresWrap {
+	padding:25px 0 0 10px;
+}
+body.branding_bt.branding_iPhone section#top_features div.featuresWrap {
+	padding:15px 0 0 10px;
+}
+section#top_features div.feature {
+	width:254px;
+	height:110px;
+	float:left;
+	font: .813em/1.231em 'ProximaNova-Regular-Italic';
+	/*font: .85em/1.231em 'ProximaNova-Regular-Italic';*/
+	/*font: italic .813em/1.231em Arial, Helvetica, sans-serif;*/
+	letter-spacing: -.2px;
+	color: #282828;
+	margin: 0 0 18px 28px;
+	padding: 0 0 0 66px;
+}
+body.branding_bt.branding_iPhone section#top_features div.feature {
+	width:320px !important;
+	height: auto !important;
+	padding: 0px !important;
+}
+
+section#top_features div.feature h2 {
+	font: 1.2em 'ProximaNova-Bold-Italic';
+	margin:0;
+	letter-spacing: -.3px;
+}
+section#top_features div.featuresExpand {
+	padding: 20px 0 10px 40px;
+}
+section#top_features div.featuresExpand a {
+	color:#5d5d5d;
+	text-decoration:none;
+	font:normal .813em/1.231em 'ProximaNova-Semibold';
+	outline:0;
+	border:0;
+}
+section#top_features div.moreFeaturesWrap {
+	display:none;
+}
+body.branding_bt.branding_iPhone section#top_features div.moreFeaturesWrap {
+	display:block !important;
+}
+section#top_features div.moreFeaturesWrap ul.left {
+	float:left;
+	width:320px;
+	margin-left:26px;
+	padding-left:22px;
+}
+section#top_features div.moreFeaturesWrap ul.right {
+	float:right;
+	width:320px;
+	padding-left:22px;
+}
+body.branding_bt.branding_iPhone section#top_features div.moreFeaturesWrap ul.left {
+	width:315px;
+	padding-left:27px;
+}
+section#top_features div.moreFeaturesWrap ul li {
+	color:#282828;
+	/*font:normal .813em/1.846em 'ProximaNova-Regular';*/
+	font: normal .78em/1.846em Arial, Helvetica, sans-serif;
+}
+section#top_features div.featuresExpand a:hover {
+	color:#000;
+}
+section#top_features div.featuresWrap div.feature p {
+	margin:10px 0 0;
+}
+section#top_features div.feature {
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - Top Features UL Environment Scores Modal*/
+section#top_features div.feature a
+{
+	color: #5D5D5D;
+	font: 1em/2em 'ProximaNova-Semibold';
+	outline: 0 none;
+	text-decoration: none;
+}
+section#top_features div.feature a:hover { color: #000000; }
+#ul-env-score-pane { position:relative; padding:40px 40px; font: 14px/18px "ProximaNova-Regular-Italic"; color:#000000; }
+#ul-env-score-pane h2 { font: 28px/28px "ProximaNova-Bold-Italic"; text-transform:uppercase; padding:0; margin:0; }
+#ul-env-score-pane .avg-score-title { font: 18px/18px "ProximaNova-Bold-Italic"; }
+#ul-env-score-pane #avg-score { width:256px; height:42px; overflow:hidden; text-indent:-99999px; background:url("../../img/2012/ul-env-icons.png") no-repeat 0 0; }
+#ul-env-score-pane #avg-score.avg-score-0-5 { background-position:0px -42px; }
+#ul-env-score-pane #avg-score.avg-score-1 { background-position:0px -84px; }
+#ul-env-score-pane #avg-score.avg-score-1-5 { background-position:0px -126px; }
+#ul-env-score-pane #avg-score.avg-score-2 { background-position:0px -168px; }
+#ul-env-score-pane #avg-score.avg-score-2-5 { background-position:0px -210px; }
+#ul-env-score-pane #avg-score.avg-score-3 { background-position:0px -252px; }
+#ul-env-score-pane #avg-score.avg-score-3-5 { background-position:0px -294px; }
+#ul-env-score-pane #avg-score.avg-score-4 { background-position:0px -336px; }
+#ul-env-score-pane #avg-score.avg-score-4-5 { background-position:0px -378px; }
+#ul-env-score-pane #avg-score.avg-score-5 { background-position:0px -420px; }
+#ul-env-score-pane ul { list-style: none; padding:0; margin:30px 0 0 0; font: 14px/14px "ProximaNova-Bold-Italic"; }
+#ul-env-score-pane li { height:32px; line-height:32px; padding:0; margin:12px 0px; background:url("../../img/2012/ul-env-icons.png") no-repeat 300px -500px; }
+#ul-env-score-pane li.item-score-0-5 { background-position:300px -532px; }
+#ul-env-score-pane li.item-score-1 { background-position:300px -564px; }
+#ul-env-score-pane li.item-score-1-5 { background-position:300px -596px; }
+#ul-env-score-pane li.item-score-2 { background-position:300px -628px; }
+#ul-env-score-pane li.item-score-2-5 { background-position:300px -660px; }
+#ul-env-score-pane li.item-score-3 { background-position:300px -692px; }
+#ul-env-score-pane li.item-score-3-5 { background-position:300px -724px; }
+#ul-env-score-pane li.item-score-4 { background-position:300px -756px; }
+#ul-env-score-pane li.item-score-4-5 { background-position:300px -788px; }
+#ul-env-score-pane li.item-score-5 { background-position:300px -820px; }
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - Specifications */
+div#tabbedContent section#specifications div.specWrap {
+	padding:14px 45px 40px 38px;
+}
+div#tabbedContent section#specifications div.specWrap div.specImage {
+	width:240px;
+	height:280px;
+	float:left;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail {
+	width:375px;
+	float:right;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail div.leftCol {
+	width:170px;
+	float:left;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail div.leftCol div.leftCol {
+	width:85px;
+	float:left;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail div.leftCol div.rightCol {
+	width:85px;
+	float:right;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail div.rightCol {
+	width:170px;
+	float:right;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail h3 {
+	font: .938em 'ProximaNova-Bold-Italic';
+	color:#000;
+	margin:16px 0 5px;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail p {
+	font: .688em/1.727em 'ProximaNova-Semibold-Italic';
+	color: #050505;
+	padding-bottom: 12px;
+	margin: 0;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail p strong {
+	font-family:'ProximaNova-Regular-Italic';
+	font-style: normal;
+	font-weight: normal;
+	color: #414141;
+	font-size: 12px;
+}
+div#tabbedContent section#specifications div.specWrap div.specDetail div.leftCol div.leftCol p,
+div#tabbedContent section#specifications div.specWrap div.specDetail div.leftCol div.rightCol p {
+	padding-bottom:0;
+}
+#tooltip.learnMoreTip {
+	width: 220px;
+	opacity: 1;
+}
+#tooltip.learnMoreTip div.bubble {
+	background: #fff;
+	color: #6b6b6b;
+	font: normal 11px/14px Arial, Helvetica, sans-serif;
+	padding: 13px;
+	-moz-box-shadow:1px 1px 2px #999;
+	-webkit-box-shadow:1px 1px 2px #999;
+	box-shadow:1px 1px 2px #999;
+}
+#tooltip.learnMoreTip div.arrow {
+	width: 220px;
+	height: 12px;
+	background: url('../../img/2012/tooltip-os-arrow.png') top center no-repeat;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - What's In The Box */
+div#tabbedContent section#in_the_box div.contentsWrap {
+	padding: 10px 18px 12px 18px;
+}
+body.branding_bt.branding_iPhone div#tabbedContent section#in_the_box div.contentsWrap {
+	padding: 10px 18px 22px 38px;
+}
+div#tabbedContent section#in_the_box div.contentsWrap div.contentsImage {
+	width: 240px;
+	float: left;
+}
+div#tabbedContent section#in_the_box div.contentsWrap ul.contentsList {
+	width: 440px;
+	float: right;
+	margin: 18px 0px 0px 0px;
+	padding: 0px;
+}
+div#tabbedContent section#in_the_box div.contentsWrap ul.contentsList li {
+	float: left;
+	color: #414141;
+	/*font: .938em/1.233em 'ProximaNova-Regular-Italic';*/
+	font: .9em/1.233em 'ProximaNova-Regular-Italic';
+	/*font: italic .938em/1.233em Arial, Helvetica, sans-serif;*/
+	margin-bottom: .5em;
+	width: 200px;
+	margin-right: 20px;
+}
+body.branding_bt.branding_iPhone div#tabbedContent section#in_the_box div.contentsWrap ul.contentsList {
+	width:640px;
+	float: none;
+	margin:0 0 0 14px;
+}
+body.branding_bt.branding_iPhone div#tabbedContent section#in_the_box div.contentsWrap ul.contentsList li {
+	/*width:310px;*/
+	width:230px;
+	float:left;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - HOT APPS */
+div#tabbedContent section#hot_apps header {
+	background:url('../../img/2012/bt-hotapps-header-bg.gif') repeat-x;
+	height:90px;
+	margin:0 5px;
+}
+div#tabbedContent section#hot_apps header h1 {
+	float:left;
+	padding-top:39px!important;
+}
+div#tabbedContent section#hot_apps header ul {
+	float:right;
+	margin:48px 25px 0 0;
+}
+div#tabbedContent section#hot_apps header ul li {
+	float:left;
+	/*font: italic .938em/1.2em 'ProximaNova-Regular';*/
+	font: .8em/1.2em 'ProximaNova-Regular-Italic';
+	margin-left:35px;
+}
+div#tabbedContent section#hot_apps header ul li.first {
+	margin-left:0;
+}
+div#tabbedContent section#hot_apps header ul li a {
+	display:block;
+	color:#909090;
+	text-decoration:none;
+	padding-bottom:15px;
+	outline:0;
+}
+div#tabbedContent section#hot_apps header ul li a:hover {
+	color:#545454;
+}
+div#tabbedContent section#hot_apps header ul li a.active {
+	color:#d70020;
+	background:url('../../img/2012/bt-hotapps-header-nav-arrow.gif') top center no-repeat;
+}
+div#tabbedContent section#hot_apps div.appsTab {
+	display:none;
+	height: 130px;
+	position: relative;
+	padding-top: 1px; /* Fixes IE9 Float Bug */
+}
+div#tabbedContent section#hot_apps div.appsTab div.scrollContainer {
+	overflow:hidden;
+	height:365px;
+	width: 615px;
+	margin-left: 50px;
+	position: relative;
+}
+div#tabbedContent section#hot_apps div.appsTab.active {
+	display:block;
+}
+div#tabbedContent section#hot_apps div.appsTab div.scrollLeft,
+	div#tabbedContent section#hot_apps div.appsTab div.scrollRight {
+	width: 42px;
+	height: 84px;
+	position: absolute;
+	text-indent: -999999px;
+	cursor: pointer;
+	z-index: 10;
+	top: 10px;
+}
+div#tabbedContent section#hot_apps div.appsTab div.scrollLeft {
+	background: url('../../img/2012/bt-apps-scroll-left.gif') 0px -84px no-repeat;
+	left: 1px;
+}
+div#tabbedContent section#hot_apps div.appsTab div.scrollRight {
+	background: url('../../img/2012/bt-apps-scroll-right.gif') 0px -84px no-repeat;
+	right: 3px;
+}
+div#tabbedContent section#hot_apps div.appsTab div.scrollLeft:hover,
+div#tabbedContent section#hot_apps div.appsTab div.scrollRight:hover {
+	background-position: 0px -168px;
+}
+div#tabbedContent section#hot_apps div.appsTab div.scrollLeft.inactive,
+div#tabbedContent section#hot_apps div.appsTab div.scrollRight.active,
+div#tabbedContent section#hot_apps div.appsTab div.scrollLeft.inactive:hover,
+div#tabbedContent section#hot_apps div.appsTab div.scrollRight.active:hover {
+	background-position: 0px 0px;
+	cursor: default;
+}
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller {
+	height:120px;
+	width: 2050px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail {
+	width:205px;
+	height:365px;
+	float:left;
+}
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail div.preview {
+	padding-top:25px;
+	width:205px;
+	height:230px;
+}
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail a {
+	text-decoration: none;
+}
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail a:hover h4,
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail a:hover p {
+	color: #000;
+}
+
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail div.detail {
+	padding-left:20px;
+}
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail div.detail h4 {
+	/*font: italic 14px/26px ProximaNova-Semibold;*/
+	font: 12px/26px ProximaNova-Bold-Italic;
+	color:#414141;
+	text-transform:uppercase;
+	margin:0;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail div.detail h4 img.icon {
+	width: 26px;
+	height: 26px;
+	margin-right: 0;
+}
+div#tabbedContent section#hot_apps div.appsTab div.appsScroller div.appDetail div.detail p {
+	font: normal 12px/1.3 Arial;
+	color:#999;
+	margin:2px 0;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - Plan Overview */
+div#tabbedContent section#plan_overview header h1 {
+	font: 25px/25px 'ProximaNova-Bold-Italic' !important;
+	color: #000 !important; text-transform: uppercase;
+	padding: 28px 0px 0px 25px !important;
+}
+div#tabbedContent section#plan_overview header h1 em {
+	color: #d70020 !important;
+}
+div#tabbedContent section#plan_overview p.plan-sub-p {
+	color: #505050; text-transform: uppercase;
+	font: 22px/24px 'ProximaNova-Regular-Italic';
+	margin: 0px;
+	padding: 0px 0px 0px 25px;
+}
+div#tabbedContent section#plan_overview p.plan-sub-p > span {
+	letter-spacing: -.5px;
+}
+div#tabbedContent section#plan_overview a.plan-sub-a {
+	display: inline-block;
+	text-decoration: none;
+	font: 14px/24px 'ProximaNova-Regular-Italic', sans-serif;
+	margin: 0px;
+	padding: 0px 0px 12px 25px;
+}
+div#tabbedContent section#plan_overview p.plan-p  {
+	position: absolute;
+	font: normal 14px 'ProximaNova-Regular-Italic';
+	color: #fff;
+	margin: 0px 0px 0px 0px;
+	letter-spacing: -.2px;
+}
+div#tabbedContent section#plan_overview p.vm-plan-bottom-banner {
+	top: 301px;
+}
+div#tabbedContent section#plan_overview p.vm-plan-hs-bottom-banner {
+	top: 301px;
+	left: 4px;
+	width: 705px;
+	text-align: center; 
+}
+div#tabbedContent section#plan_overview p.vm-plan-iphone-bottom-banner {
+	top: 351px;
+	left: 4px;
+	width: 707px;
+	text-align: center;
+}
+div#tabbedContent section#plan_overview span.vm-plan-bottom-banner-bold {
+	font-family: 'ProximaNova-Bold-Italic';
+}
+div#tabbedContent section#plan_overview p.plan-p a {
+	color: #fff;
+	padding: 0px;
+	text-decoration: underline;
+}
+
+
+/* For Phone Detail plan page - phone-detail-beyond-talk-plan.xsl: plan rates grid with stream music */
+#plan-rate-grid { position: relative; }
+#plan-rate-grid .tt-pane { position: absolute; left: 20px; top: 340px; width: 350px; }
+#plan-rate-grid .tt-pane h3.tt-header
+{
+	font: 22px/22px 'ProximaNova-Regular', sans-serif; color: #fff;
+	text-transform: uppercase; margin: 0 0 5px 0;
+}
+#plan-rate-grid .tt-pane p.tt-disclaimer
+{
+	font: 12px/14px 'ProximaNova-Regular-Italic', sans-serif; color: #fff;
+	text-transform: uppercase; margin: 0;
+}
+
+#plan-rate-grid .data-pane { position: absolute; left: 25px; top: 212px; }
+#plan-rate-grid .data-pane h4.data-header
+{
+	font: 14px/14px 'ProximaNova-Bold-Italic', sans-serif; color: #fff;
+	text-transform: uppercase; margin: 0;
+}
+#plan-rate-grid .data-pane p.data-disclaimer
+{
+	font: 12px/12px 'ProximaNova-Regular', sans-serif; color: #fff;
+	margin: 8px 0 10px;
+}
+#plan-rate-grid .data-pane span.data-offer
+{
+	font: 16px/16px 'ProximaNova-Semibold', sans-serif; color: #fff;
+	padding: 0 20px 0 22px;
+}
+
+#plan-rate-grid .xtra-pane { position: absolute; left: 320px; top: 212px; width:240px;}
+#plan-rate-grid .xtra-pane h4.xtra-header
+{
+	font: 14px/14px 'ProximaNova-Bold-Italic', sans-serif; color: #fff;
+	text-transform: uppercase; margin: 0 0 6px 0;
+}
+#plan-rate-grid .xtra-pane a.xtra-link
+{
+	font: 12px/12px 'ProximaNova-Regular', sans-serif; color: #fff;
+	text-decoration: none; margin: 0 0 7px 20px; display: block;
+}
+#plan-rate-grid .xtra-pane a.xtra-services-link
+{
+	font: 14px/14px 'ProximaNova-Semibold', sans-serif; color: #fff;
+	text-decoration: none; text-transform: uppercase;
+}
+#plan-rate-grid a.butt-more
+{
+	position: absolute; left: 490px; top: 135px; width: 140px;
+	background: url("../../img/2012/deals-bt-btn-bg.gif") repeat-x 0 0;
+	font: 13px/27px 'ProximaNova-Semibold', sans-serif; color: #fff;
+	text-align: center; text-decoration: none; text-transform: uppercase;
+}
+#plan-rate-grid a.butt-more:hover { background-position: left bottom; }
+
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - Coverage */
+div#tabbedContent section#coverage div.map {
+	float:left;
+	padding:40px 10px 5px 12px;
+}
+div#tabbedContent section#coverage header h1 {
+	padding:40px 0 12px!important;
+}
+div#tabbedContent section#coverage p {
+	font: .875em/1.571em 'ProximaNova-Regular-Italic';
+	color: #414141;
+	margin: 0;
+	padding: 0 60px 20px 0;
+}
+div#tabbedContent section#coverage a.coverageBtn {
+    background: url("../../img/2012/deals-bt-btn-bg.gif") repeat-x scroll 0 0 transparent;
+    border: 0 none;
+    box-shadow: 1px 1px 1px #999999;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font: 0.75em/0.9em 'ProximaNova-Semibold';
+    height: 18px;
+    margin: 0 2px 0 0;
+    outline: 0 none;
+    padding: 7px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 10px #333333;
+    text-transform: uppercase;
+    width: 187px;
+}
+div#tabbedContent section#coverage a.coverageBtn:hover { background-position: 0 -22px; }
+div#tabbedContent section#intl_rates a.intlBtn {
+    background: url("../../img/2012/deals-bt-btn-bg.gif") repeat-x scroll 0 0 transparent;
+    border: 0px none;
+    box-shadow: 1px 1px 1px #999999;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font: 0.8em/0.9em 'ProximaNova-Semibold';
+    height: 18px;
+	margin: 2px 0px 41px 40px;
+	outline: 0 none;
+    padding: 7px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #333333;
+    text-transform: uppercase;
+    width: 187px;
+}
+div#tabbedContent section#intl_rates a.intlBtn:hover { background-position: 0 -22px; }
+div#tabbedContent section#coverage div.sprint {
+	/*position: absolute;*/
+	/*right: 15px;*/
+	/*bottom: 18px;*/
+	position: relative;
+	left:300px;
+	bottom: 20px;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - IPHONE UPGRADE*/
+div#tabbedContent section#iOSUpgrade div.iOSUpgrade.pad-left {
+	padding-left: 20px; padding-bottom: 30px;
+}
+div#tabbedContent section#iOSUpgrade div.iOSUpgrade p {
+	float: left;
+	margin-left: -20px;
+	font: .938em/1.533em 'ProximaNova-Regular-Italic';
+	color:#505050;
+}
+div#tabbedContent section#iOSUpgrade div.iOSUpgrade ol li img {
+	float: left;
+	width: 73px;
+	height: 72px;
+}
+div#tabbedContent section#iOSUpgrade div.iOSUpgrade ol li.step1 p {
+	padding-top: 12px;
+	margin-right: 25px;
+}
+
+/* Tabbed Content - Content Buckets - Main Content Boxes - How This Works*/
+div#tabbedContent section#how_this_works div.howthisworks_horz {
+	margin: 0px 0px 0px 10px;
+	background:url('../../img/2012/bt-how-works-arrow-horz.png') 110px 5px no-repeat;
+}
+div#tabbedContent section#how_this_works div.howthisworks_horz.pad-left {
+	padding-left: 40px;
+}
+div#tabbedContent section#how_this_works div.howthisworks_horz ol {
+	list-style-type:none;
+	margin:0;
+	height:150px;
+	padding-left: 0;
+}
+div#tabbedContent section#how_this_works div.howthisworks_horz ol li {
+	display: block;
+	float: left;
+}
+div#tabbedContent section#how_this_works div.howthisworks_horz ol li img {
+	float: left;
+	width: 170px;
+	height: 103px;
+}
+div#tabbedContent section#how_this_works div.howthisworks_horz ol li p {
+	float: left;
+	margin-left: -20px;
+	/*font: .938em/1.533em 'ProximaNova-Regular-Italic';*/
+	font: .9em/1.533em 'ProximaNova-Regular-Italic';
+	/*font: italic .938em/1.533em Arial, Helvetica, sans-serif;*/
+	color:#505050;
+}
+div#tabbedContent section#how_this_works div.howthisworks_horz ol li.step1 p {
+	padding-top: 13px;
+	margin-right: 25px;
+	min-width: 97px;
+}
+div#tabbedContent section#how_this_works div.howthisworks_horz ol li.step2 p {
+	padding-top: 10px;
+}
+
+/* jd power */
+div#tabbedContent section#jdpower p {
+	font: .938em/1.533em 'ProximaNova-Regular-Italic';
+	color: #505050;
+	margin: 0px;
+	padding: 0px 270px 20px 40px;
+}
+div#tabbedContent section#jdpower div.jdp {
+	position: absolute;
+	right: 3px;
+	top: -10px;
+}
+
+/* Phone Page - Content Bucket - International Rates */
+div#tabbedContent section#intl_rates p {
+	/*font: .938em/1.533em 'ProximaNova-Regular-Italic';*/
+	font: .9em/1.533em 'ProximaNova-Regular-Italic';
+	/*font: italic .938em/1.533em Arial, Helvetica, sans-serif;*/
+	color:#505050;
+	margin: 0;
+	padding: 0 250px 20px 40px;
+}
+div#tabbedContent section#intl_rates div.globe {
+	position: absolute;
+	right: 1px;
+	top: -10px;
+}
+div#tabbedContent section#intl_rates select {
+	border: 1px solid #bababa;
+	font: 1em 'ProximaNova-Bold-Italic';
+	color: #000;
+	width: 300px;
+	/*height: 36px;*/
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	background: #FFF url('../../img/2012/select.png') right center no-repeat;
+	outline: 1px;
+	margin: 0 0 60px 40px;
+	padding: 8px 10px;
+}
+div#tabbedContent section#intl_rates select:hover {
+	border: 1px solid #000;
+	cursor: pointer;
+}
+div#tabbedContent section#intl_rates div#rates_wrap {
+	display:none;
+	padding:0 30px 30px;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_tips {
+	padding:30px 0 0 10px;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_tips p {
+	color:#505050;
+	font: .813em 'ProximaNova-Regular-Italic';
+	margin:0 0 10px;
+	padding:0;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block {
+	width:312px;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block.right {
+	float:right;
+	margin-top:24px;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block ul li {
+	color: #505050;
+	font: .813em 'ProximaNova-Regular-Italic';
+	height: 14px;
+	padding: 6px 10px 4px;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block ul li.altrow {
+	background-color:#f9f9f9;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block ul li span.rate {
+	/*font-style: italic;*/
+	font-family: 'ProximaNova-Bold-Italic';
+	float:right;
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_tips h3,
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block ul li.title {
+	color:#d70020;
+	font: .938em 'ProximaNova-Bold-Italic';
+}
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block.left,
+div#tabbedContent section#intl_rates div#rates_wrap div#rates_display div.country_block ul li span.location {
+	float:left;
+}
+
+/* Plan Page - Content Bucket - INTERNATIONAL RATES */
+div#planDetailsTabbed section#intl_rates div#rates_wrap div#rates_display div.country_block {
+	width: 280px;
+}
+
+/* Plan Page - Content Bucket - PHONE COMES WITH */
+div#planDetailsTabbed section#comes_with ul {
+	list-style-type:none;
+	margin:0;
+	padding:0 0 0 45px;
+}
+div#planDetailsTabbed section#comes_with ul li {
+	float: left;
+	padding-left: 18px;
+	font: .938em/1.4em 'ProximaNova-Regular-Italic';
+	color: #5b5b5b;
+	background: url('../../img/mobile-broadband-plans/bt-list-check-icon-plan-page.gif') no-repeat 0 2px;
+}
+div#planDetailsTabbed section#comes_with ul li.col1 {
+	/*width: 200px;*/
+	width: 178px;
+	margin-right: 8px;
+}
+div#planDetailsTabbed section#comes_with ul li.col2 {
+	/*width: 160px;*/
+	width: 132px;
+	margin-right: 8px;
+}
+div#planDetailsTabbed section#comes_with ul li.col3 {
+	/*width: 170px;*/
+	width: 208px;
+}
+
+/* Plan Page - Content Bucket - Pricing/Service Details */
+section#legal {
+	margin: 0 auto;
+	margin-bottom: 20px; 
+	padding: 20px 0;
+	width: 960px;
+}
+section#legal header {
+	padding: 0px 0px 10px 0px;
+}
+section#legal ul.left {
+	float: left;
+	width: 450px;
+	padding: 0px;
+	margin: 0px;
+	list-style: disc inside;
+	zoom: 1;
+}
+section#legal ul.right {
+	float: right;
+	width: 450px;
+	padding: 0px;
+	margin: 0px;
+}
+section#legal ul li {
+	float: left;
+	/*padding-left:18px;*/
+	margin: 3px 10px 3px 10px;
+	font: bold .75em 'ProximaNova-Light';
+	color: #5b5b5b;
+	list-style: disc;
+}
+html.lt-ie9 section#legal ul li {
+	float: none;
+	clear: both;
+	display: block;
+	width: 380px;
+	zoom: 1;
+	vertical-align: top;
+	margin: 5px 10px 5px 0;
+	list-style: disc inside;
+}
+section#legal ul li a {
+	text-decoration: none;
+	underline: 1px solid #5b5b5b;
+	font: bold 1em 'ProximaNova-Light';
+    color: #565656;
+}
+section#legal ul li a:hover {
+	text-decoration: none;
+	underline: 1px solid #5b5b5b;
+	color: #000;
+}
+
+/* Plan Page - Content Bucket - WHAT PEOPLE ARE SAYING */
+div#planDetailsTabbed section#consumer_response:hover {
+	cursor: pointer;
+}
+div#planDetailsTabbed section#consumer_response p {
+	color: #5b5b5b;
+	font: 1em/1.438em 'ProximaNova-Regular-Italic';
+	margin: 0 60px 10px 45px;
+}
+div#planDetailsTabbed section#consumer_response p span {
+	color:#d70020;
+	font-size: 1.3em;
+}
+div#planDetailsTabbed section#consumer_response p em {
+	color:#676767;
+	font: italic .75em 'ProximaNova-Semibold';
+	padding-left:10px;
+}
+div#planDetailsTabbed section#consumer_response div.stars {
+	margin:12px 0 12px 45px;
+}
+
+/* Plan Page - Content Bucket - "More Details" Link */
+div#planDetailsTabbed section p.detailLink {
+	margin:10px 0 35px 45px !important;
+}
+div#planDetailsTabbed section p.detailLink,
+div#planDetailsTabbed section p.detailLink a {
+	color:#5b5b5b !important;
+	font:normal .875em/1.143em 'ProximaNova-Semibold' !important;
+	text-decoration:none;
+}
+div#planDetailsTabbed a:hover section p.detailLink,
+div#planDetailsTabbed section#consumer_response:hover p.detailLink,
+div#planDetailsTabbed section p.detailLink a:hover {
+	color:#000 !important;
+}
+
+/* Plan Page - PayLo Banner */
+div#planDetailsTabbed div#payLo_banner {
+	width:650px;
+	height:100px;
+	background:url('../../img/data-messaging-plans/bt-paylo-banner-bg.png') no-repeat;
+	color:#fff;
+	position:relative;
+	margin-bottom:10px;
+	clear: both;
+}
+div#planDetailsTabbed div#payLo_banner:hover {
+	background-position: 0 -100px;
+}
+div#planDetailsTabbed div#payLo_banner div.logo {
+	position: absolute;
+	top: 18px;
+	left: 84px;
+}
+div#planDetailsTabbed div#payLo_banner h2 {
+	font: normal 1.125em/1em 'Uni-Sans-SemiBold-Italic';
+	position: absolute;
+	top: 18px;
+	left: 270px;
+	margin: 0px;
+}
+div#planDetailsTabbed div#payLo_banner p {
+	font: normal .813em/1.231em 'Uni-Sans-Regular-Italic';
+	position: absolute;
+	top: 40px;
+	left: 270px;
+	width: 250px;
+	margin: 0px;
+}
+div#planDetailsTabbed div#payLo_banner div.link {
+	font:normal .688em/1.455em 'Uni-Sans-Bold';
+	color:#fff;
+	text-decoration:none;
+	top:66px;
+	left:540px;
+	position:absolute;
+}
+
+/* Tabbed Content -  Phone Details Page - Asides */
+div#tabbedContent aside div.link {
+	padding:10px 0 14px 19px;
+	font:normal .688em/1.364em 'ProximaNova-Semibold';
+	color:#5d5d5d;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+div#tabbedContent aside div.hoverable:hover > div.link, 
+div#tabbedContent aside div.hoverable:hover > a div.link {
+	color: #292929;
+}
+div#tabbedContent aside a {
+	text-decoration:none;
+}
+div#tabbedContent aside a:hover > div.link {
+	color: #292929;
+}
+div#tabbedContent aside div#aboxComesWith:hover,
+div#tabbedContent aside div#aboxReviews:hover,
+div#tabbedContent aside div#aboxBeyondTalk:hover {
+	cursor:pointer;
+}
+div#tabbedContent aside div#aboxBeyondTalk img {
+	margin-left:4px;
+}
+div#tabbedContent aside div#aboxBeyondTalk p.iphone-discount {
+	position: absolute;
+	top: 318px;
+	left: 14px;
+	font: 10px/13px 'ProximaNova-Regular-Italic';
+	color: #fff;
+}
+div#tabbedContent aside div#aboxBeyondTalk p.iphone-discount span.big {
+	font: 15px 'ProximaNova-Semibold-Italic';
+}
+div#tabbedContent aside div#aboxBeyondTalk p.iphone-discount span.big span.upper-small {
+	font: 10px/13px 'ProximaNova-Semibold-Italic';
+	position: relative;
+	top: -4px;
+}
+div#tabbedContent aside div#aboxBeyondTalk p.iphone-discount span.ul {
+	text-decoration: underline;
+}
+
+div#tabbedContent aside div#aboxBeyondTalk p.plan-no-contract {
+	color: #d70020;
+	font: 11px 'ProximaNova-Bold-Italic';
+	margin: 4px 0px 4px 20px;
+}
+div#tabbedContent aside div#aboxBeyondTalk p.plan-iphone-no-contract {
+	color: #d70020;
+	font: 11px 'ProximaNova-Bold-Italic';
+	margin: 4px 0px 0px 20px;
+}
+/*div#tabbedContent aside div.sprintTag {
+	position:absolute;
+	top:4px;
+	right:10px;
+}*/
+div#tabbedContent aside div.twitterIcon {
+	position:absolute;
+	top:18px;
+	right:24px;
+}
+div#tabbedContent aside div#aboxComesWith:hover {
+	cursor:pointer;
+}
+div#tabbedContent aside ul.checkedList {
+	list-style-type: none;
+	font: .75em 'ProximaNova-Regular-Italic';
+	color: #414141;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+div#tabbedContent aside ul.checkedList li {
+	background:url('../../img/2012/list-check-icon.jpg') no-repeat;
+	padding:2px 0 18px 25px;
+}
+div#tabbedContent aside ul.checkedList li.last {
+	background-position:0 4px;
+	padding-bottom:10px;
+}
+div#tabbedContent aside p {
+	color: #414141;
+	font: .75em/1.25em 'ProximaNova-Regular-Italic';
+	margin: 0 20px;
+}
+div#tabbedContent aside p.reviewText {
+	margin-bottom:14px;
+}
+div#tabbedContent aside div.reviewStars {
+	margin-left:20px;
+}
+div#tabbedContent aside p.reviewSubmitter {
+	text-align:right;
+	font: italic .688em/1.727em 'ProximaNova-Semibold';
+	margin-top:16px;
+}
+div#tabbedContent aside div#aboxHelloAndroid div.link {
+	padding: 10px 0 3px 10px;
+	color: #d70020;
+	font: italic .813em/1.077em 'ProximaNova-Semibold';
+}
+div#tabbedContent aside div#aboxHelloAndroid:hover div.link {
+	color: #292929;
+}
+div#tabbedContent aside p.tweet {
+	font: .75em/1.583em 'ProximaNova-Regular-Italic';
+	margin: 8px 16px 0;
+}
+div#tabbedContent aside p.tweetSubmitter {
+	font-style: italic;
+	font-family: 'ProximaNova-Semibold';
+	color: #414141;
+	padding: 10px 0 20px;
+}
+div#tabbedContent aside p.tweetSubmitter span {
+	color:#939393;
+	float:right;
+}
+div#tabbedContent aside a.fullBoxImgLink img,
+div#tabbedContent aside img.fullBoxImg,
+div#tabbedContent aside div#aboxUsVThem img {
+	margin-left:4px;
+}
+div#tabbedContent aside div#aboxUsVThem:hover {
+	cursor: pointer;
+}
+div#tabbedContent aside div#aboxJDPowers:hover {
+	cursor: pointer;
+}
+div#tabbedContent aside div#aboxHowThisWorks div.howthisworks_vert {
+	width: 230px;
+	/*height: 380px;*/
+	height: 395px;
+	text-align: center;
+	
+}
+div#tabbedContent aside div#aboxHowThisWorks div.howthisworks_vert ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 190px;
+	margin-left: 20px;
+	background: url('../../img/2012/bt-how-works-arrow-vert.gif') 55px 40px no-repeat;
+}
+div#tabbedContent aside div#aboxHowThisWorks div.howthisworks_vert ol li {
+	/*font: 0.813em/1.231em 'ProximaNova-Regular-Italic';*/
+	font: 0.85em/1.231em 'ProximaNova-Regular-Italic';
+	/*font: italic 0.813em/1.231em Arial, Helvetica, sans-serif;*/
+	color: #000000;
+}
+div#tabbedContent aside div#aboxHowThisWorks div.howthisworks_vert ol li.step2 {
+	padding-top: 85px;
+	text-align: left;
+}
+
+/* Tabbed Content -  Plan Details Page - Asides */
+div#planDetailsTabbed aside h2 {
+	width: 285px;
+	font: 1.125em 'ProximaNova-Regular-Italic';
+	color: #000;
+	margin: 0 0 0 13px;
+	padding: 0 0 10px;
+}
+div#planDetailsTabbed aside div.phoneDisplay {
+	width:285px;
+	border-top:1px solid #e6e6e6;
+	position:relative;
+	margin:0 0 0 13px;
+	padding:18px 0;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.sale {
+	width:50px;
+	height:50px;
+	background:url('../../img/2012/sales-tag-listing-sm.png') no-repeat;
+	position:absolute;
+	color:#fff;
+	top:22px;
+	left:24px;
+	font: 1em/.88em 'ProximaNova-Bold-Italic';
+	/*padding:12px 0 0 8px;*/
+}
+div#planDetailsTabbed aside div.phoneDisplay div.sale div {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 50px;
+	width: 50px;
+	/*text-shadow: 0px 1px 1px #600;*/
+}
+div#planDetailsTabbed aside div.phoneDisplay div.sale div > span {
+	top: -6px !important;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.zoom {
+	position:absolute;
+	top:10px;
+	right:6px;
+	width:15px;
+	height:15px;
+	background: url('../../img/2012/bt-icon-magnify-glass.gif') no-repeat;
+	cursor: pointer;
+}
+
+#phonesModal .modal-dialog{max-height: auto !important;}
+
+div#planDetailsTabbed aside div.phoneDisplay div.zoom a {
+	display: block;
+	outline: none;
+	text-indent: -99999px;
+	width:15px;
+	height:15px;
+	background: url('../../img/2012/bt-icon-magnify-glass.gif') no-repeat;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.zoom a:hover {
+	background-position: 0 -15px;
+}
+div#planDetailsTabbed aside div.phoneDisplay h3 {
+	font: 1.125em 'ProximaNova-Bold-Italic';
+	color: #000;
+	margin: 0;
+	padding: 12px 0 6px 80px;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.image {
+	float:left;
+	width:86px;
+	min-height: 125px;
+	margin-left:-8px;
+	display: none;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.image.active {
+	display: inline;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.rating {
+	line-height:.8em;
+	padding-left: 80px;
+	text-shadow: none;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.rating span {
+	font: italic 0.688em 'ProximaNova-Semibold';
+	padding-left: 3px;
+}
+
+/* Phone Splash - Phone Detils and Overview - Color Selector */
+div#planDetailsTabbed aside div.phoneDisplay ul.color_nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 5px 4px 0;
+	height: 19px;
+	background-color: #eeeeee;
+	float: left;
+}
+div#planDetailsTabbed aside div.phoneDisplay ul.color_nav li {
+	display: block;
+	float: left;
+	padding: 3px;
+}
+div#planDetailsTabbed aside div.phoneDisplay ul.color_nav li.copy {
+	color: #7f7f7f;
+	font: italic 0.750em 'ProximaNova-Semibold';
+	padding: 5px 5px 2px 8px;
+}
+div#planDetailsTabbed aside div.phoneDisplay ul.color_nav li a {
+	display: block;
+	text-indent: -99999px;
+	width: 12px; height: 12px;
+}
+div#planDetailsTabbed aside div.phoneDisplay ul.color_nav li a.active {
+	border: 1px solid #fff;
+}
+div#planDetailsTabbed aside div.phoneDisplay ul.color_nav li a:hover {
+	border: 1px solid #575757;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.pricing {
+	display: none;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.pricing.active {
+	display: block;
+	text-shadow: none;
+}
+div#planDetailsTabbed aside div.phoneDisplay h4.price {
+	font: 14px 'ProximaNova-Bold-Italic';
+	color: #666;
+	margin: 4px 0 10px;
+	padding-top: 4px;
+	padding-left: 80px;
+}
+div#planDetailsTabbed aside div.phoneDisplay span.orgPrice {
+	color: #5d5d5d;
+	font-size: 12px;
+	text-decoration: line-through;
+}
+div#planDetailsTabbed aside div.phoneDisplay span.salePrice {
+	color: #d70020;
+	/*padding-right: 6px;*/
+	/*text-shadow: 0px 1px 0px #ddd;*/
+}
+div#planDetailsTabbed aside div.phoneDisplay div.price span.orgPrice {
+	font-size:.882em;
+	text-decoration:line-through;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.price span.salePrice {
+	color:#d70020;
+	padding-left:10px;
+}
+div.accDisplay div.lower p.price span.salePrice {
+	color:#d70020;
+	padding-left:10px;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.actions {
+	padding-left: 80px;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.actions a.detailsBtn {
+	background:#3a3a3a url('../../img/2012/bt-btn-phone-details-sm-bg.gif') repeat-x;
+	font:normal 0.625em 'ProximaNova-Semibold';
+	text-transform: uppercase;
+	color:#fff;
+	border:0;
+	outline:0;
+	-moz-box-shadow:1px 1px 2px #999;
+	-webkit-box-shadow:1px 1px 2px #999;
+	box-shadow:1px 1px 2px #999;
+	margin:0 2px 0 0;
+	padding:6px 6px 4px;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.actions a.detailsBtn.findStoreBtn {
+	padding:6px 50px 4px !important;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.actions a.cartBtn {
+	background:#ab1b1b url('../../img/2012/bt-btn-phone-tocart-sm-bg.gif') repeat-x;
+	font:normal 0.625em 'ProximaNova-Semibold';
+	text-transform: uppercase;
+	color:#fff;
+	border:0;
+	outline:0;
+	-moz-box-shadow:1px 1px 2px #999;
+	-webkit-box-shadow:1px 1px 2px #999;
+	box-shadow:1px 1px 2px #999;
+	margin:0;
+	padding:6px 6px 4px;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.actions a.cartBtn.outofstock {}
+div#planDetailsTabbed aside div.phoneDisplay div.actions a.detailsBtn:hover,
+div#planDetailsTabbed aside div.phoneDisplay div.actions a.cartBtn:hover {
+	background-position: 0 -21px;
+}
+div#planDetailsTabbed aside div.phoneDisplay div.actions div.ship-date {
+	padding-top: 6px;
+	font: italic 0.7em 'ProximaNova-Semibold';
+}
+
+/* Ask & Answer Display */
+div#ask header h1 {
+	font: 1.563em 'ProximaNova-Bold-Italic';
+	margin:0 0 33px;
+	text-transform: uppercase;
+}
+
+/* Accessory Display */
+div#accessories header h1 {
+	font: 1.563em 'ProximaNova-Bold-Italic';
+	margin: 0 0 33px;
+}
+div.accDisplay {
+	width:232px;
+	margin-left:11px;
+	background:url('../../img/2012/bt-accessory-bucket-bg.gif') repeat-y;
+	float:left;
+	position:relative;
+}
+div.accDisplay.first {
+	margin:0;
+}
+div.accDisplay div.top {
+	width:232px;
+	height:6px;
+	background:url('../../img/2012/bt-accessory-bucket-top.gif') no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+}
+div.accDisplay div.bot {
+	width:232px;
+	height:5px;
+	background:url('../../img/2012/bt-accessory-bucket-bot.gif') no-repeat;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+div.accDisplay img.accPhoto {
+	width:200px;
+	margin:30px 13px 26px;
+}
+div.accDisplay div.upper {
+	min-height:300px;
+}
+div.accDisplay div.upper h2 {
+	font: .875em/1.143em 'ProximaNova-Bold-Italic';
+	color: #000;
+	text-transform: uppercase;
+	width: 180px;
+	margin: 0 0 12px 22px;
+}
+div.accDisplay div.upper p {
+	font:normal .813em/1.231em Arial, Helvetica, sans-serif;
+	color:#686868;
+	width:180px;
+	margin:0 0 0 22px;
+}
+div.accDisplay div.upper div.saleTag {
+	position: absolute;
+	z-index: 4;
+	background: url('../../img/2012/sales-tag-sm-bg.png') no-repeat;
+	width: 64px;
+	height: 64px;
+	top: 30px;
+	left: 150px;
+	color: #fff;
+	font: 1.4em/.9em 'ProximaNova-Bold-Italic';
+	padding: 12px 0 0 10px;
+}
+div.accDisplay div.lower {
+	padding-top:20px;
+	height:90px;
+}
+div.accDisplay div.lower h3.price {
+	font: 1.063em 'ProximaNova-Bold-Italic';
+	color: #414141;
+	margin: 0 0 6px 22px;
+}
+div.accDisplay div.lower h3.price span.orgPrice {
+	font-size:.882em;
+	text-decoration:line-through;
+}
+div.accDisplay div.lower h3.price span.salePrice {
+	color:#d70020;
+	padding-left:10px;
+}
+div.accDisplay div.lower p.model {
+	font: .625em 'ProximaNova-Bold-Italic';
+	color: #414141;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	margin: 0 0 0 22px;
+}
+div.accDisplay div.lower a.addToCart {
+	border:0;
+	outline:0;
+	background: #8e1818 url('../../img/2012/bt-atc-button-sm-bg.gif') repeat-x;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	font:normal .75em 'ProximaNova-Semibold';
+	color:#FFF;
+	text-decoration:none;
+	-moz-box-shadow:1px 1px 3px 0 #333;
+	-webkit-box-shadow:1px 1px 3px 0 #333;
+	box-shadow:1px 1px 3px 0 #333;
+	text-shadow:0 0 10px #333;
+	margin:0 0 0 22px;
+	padding:8px 47px 4px;
+}
+div.accDisplay div.lower a.addToCart:hover {
+	background-position: 0 -25px;
+}
+div.accDisplay div.lower a.addToCart.outofstock {
+	background:url('../../img/2012/bt-atc-button-sm-faded-bg.gif') repeat-x;
+	-moz-box-shadow:1px 1px 3px 0 #999;
+	-webkit-box-shadow:1px 1px 3px 0 #999;
+	box-shadow:1px 1px 3px 0 #999;
+	cursor: default;
+}
+
+/* FAQs Display */
+div#faqs header h1 {
+	font: 1.563em 'ProximaNova-Bold-Italic' !important;
+	text-transform: uppercase;
+	color: #000 !important;
+	margin: 0 0 20px;
+}
+div#faqs div.left {
+	float:left;
+	width: 722px;
+}
+div#faqs div.faq_bar_wrapper {
+	background: url('../../img/mobile-broadband-plans/bt-faq-bar-bg.png') 0 0 no-repeat;
+	margin: 0;
+	width: 686px;
+	height: 50px;
+	padding: 9px 17px;
+	font-size: 0.750em;
+}
+div#faqs div.faq_bar_wrapper.full {
+	width: 900px;
+	background: url('../../img/mobile-broadband-plans/bt-faq-bar-wide-bg.png') 0 0 no-repeat;
+}
+div#faqs div.faq_bar_wrapper div.page_range {
+	margin-top: 8px;
+	float: left;
+}
+div#faqs div.faq_bar_wrapper div#pageList {
+	float: right;
+}
+div#faqs div.faq_bar_wrapper div#pageList select {
+	width: 90px !important;
+	border: 1px solid #E5E5E5;
+	font: normal 1.083em Arial, Verdana, Helvetica, sans-serif;
+	color: #636466;
+	margin: 0 8px 9px;
+	padding: 5px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	background: white url('../../img/2012/select-faqs.png') right center no-repeat;
+	outline: 1px;
+}
+div#faqs div.faq_container {
+	margin: 20px 0 20px;
+	width: 720px;
+}
+div#faqs div.faq_container.wide {
+	with: 866px;
+}
+div#faqs div.faq_container ul.accordion {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+div#faqs div.faq_container ul.accordion li {
+	background: url('../../img/data-messaging-plans/list_arrow.png') 0 5px no-repeat;
+	padding: 0 0 4px 13px;
+	margin: 0;
+	font: normal 0.850em/1.833em arial;
+}
+div#faqs div.faq_container ul.accordion li li { font-size: 1em; width: 500px; }
+div#faqs div.faq_container ul.accordion li h2 {
+	margin: 0;
+	font-size: 14px;
+}
+div#faqs div.faq_container ul.accordion li h2 a {
+	color: #727375;
+	font-weight: normal;
+}
+div#faqs div.faq_container ul.accordion li h2 a:hover {
+	color: #000000;
+}
+div#faqs div.faq_container ul.accordion li div.body {
+	display: none;
+	width: 600px;
+}
+div#faqs div.faq_container ul.accordion li div.body p {
+	color: #727375;
+	margin: 8px 0;
+	font-size: 1em;
+	line-height: 1.385em;
+}
+div#faqs div.faq_container ul.accordion li div.body a {
+	color: #727375;
+}
+div#faqs aside div.aside_box {
+	width: 231px;
+	background: url('../../img/2012/bt-faq-aside-bg.gif');
+	margin-bottom: 13px;
+	font-size: 0.95em;
+}
+div#faqs aside div.aside_box div.top {
+	width: 231px;
+	height: 6px;
+	background: url('../../img/2012/bt-faq-aside-top.gif');
+}
+div#faqs aside div.aside_box div.bot {
+	width: 231px;
+	height: 6px;
+	margin-top: 20px;
+	background: url('../../img/2012/bt-faq-aside-bot.gif');
+}
+div#faqs aside div.aside_box h2 {
+	font: 0.938em/1em 'ProximaNova-Bold-Italic';
+	color: #000000;
+	margin: 15px 0 0 20px;
+}
+div#faqs aside div.aside_box div.link {
+	padding: 20px 10px 0px 19px !important;
+	font-family: 'ProximaNova-Semibold';
+}
+
+/********* RATINGS ********/
+div.device p.ratingCallout {
+	font: 0.625em 'ProximaNova-Bold-Italic';
+	color: #454545;
+	text-transform: uppercase;
+	margin: 0;
+	padding-top: 8px;
+}
+div.device p.ratingCallout img {
+	margin-top: -2px;
+}
+div.device p.ratingCallout a {
+	color: #454545;
+}
+div.device p.ratingCallout a:hover {
+	color: #000000;
+}
+#phoneDetailsSplash p.ratingCallout {
+	margin: 0;
+	padding: 4px 0;
+}
+#phoneDetailsSplash p.ratingCallout img {
+	margin-top: -6px;
+}
+#phoneDetailsSplash p.ratingCallout span.rate {
+	font: 1.063em 'ProximaNova-Bold-Italic';
+	color: #000;
+	padding-left: 10px;
+}
+#phoneDetailsSplash p.ratingCallout span.revLink {
+	font: 0.688em 'ProximaNova-Regular-Italic';
+	color: #727272;
+	text-transform: uppercase;
+}
+#phoneDetailsSplash p.ratingCallout span.revLink a {
+	color: #727272;
+	padding-left: 19px;
+	text-decoration: none;
+}
+#phoneDetailsSplash p.ratingCallout span.revLink a:hover {
+	color: #000000 !important;
+}
+
+/* Fixed live chat - Scrolls with the page. */
+#livechat div.chatbtn {
+	position: absolute;
+	top: 94px;
+	left: 170px;
+	z-index: 999;
+}
+#livechat div.chatbtn.sticky {
+	position: fixed;
+	top: 275px;
+	left: 0px;
+}
+#livechat div.chatbtn ol {
+	height: 296px;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	list-style-type: none;
+	text-align: left;
+}
+#livechat div.chatbtn li {
+	overflow: hidden;
+	white-space: nowrap;
+	font: 1.125em/1.278em 'ProximaNova-Regular-Italic';
+	color: #414141;
+	text-transform: uppercase;
+	background-color: #e9e9e9;
+	width: 284px;
+	height: 29px;
+	margin-bottom: 1px;
+	padding-top: 12px;
+}
+#livechat div.chatbtn li span {
+	font: italic 0.889em/1.438em 'ProximaNova-Semibold';
+	color: #d70020;
+	padding: 0 18px;
+}
+html.lt-ie8 #livechat div.chatbtn li { line-height: 1.35em; }
+html.lt-ie8 #livechat div.chatbtn li span { float: left; display: block; }
+#livechat div.chatbtn ol li:hover {
+	cursor: pointer;
+	width: 284px;
+	background-color: #464646;
+	color: #fff;
+}
+#livechat div.chatbtn ol li:hover span {
+	color: #fff;
+}
+
+#livechat div.chatbtn li.active,
+#livechat div.chatbtn li.active:hover {
+	width: 305px;
+	/*background: url('../../img/2012/livechat/wcu-nav-active-bg.png');*/
+	background: none;
+	color: #fff;
+}
+#livechat div.chatbtn li.active span,
+#livechat div.chatbtn li.active:hover span {
+	color: #fff;
+}
+
+/* Buyback tab / pane */
+#buyback-tab
+{
+	position: absolute; display: inline-block;
+	left: 312px; bottom: 0px;
+	width: 167px; height: 23px;
+	text-indent: -999999px;
+	background: url("../../img/2012/buyback-tab.png") no-repeat;
+}
+#buyback-tab.is-open { background-position: 0px -23px; }
+#buyback-pane {
+	display: none; width: 100%; height: 100px;
+	background-color: #525252; text-align: center;
+	background: url("../../img/2012/buyback-bg.png") repeat;
+}
+#buyback-content {
+	position: relative; display:inline-block; width: 963px; height:70px; background-color: #525252; margin: 15px auto 0 auto;
+	background: url("../../img/2012/buyback-icon.png") no-repeat;
+}
+#buyback-content iframe { position: absolute; left: 150px; top: 30px; }
+#buyback-content h2 {
+	margin:0; padding:0; position: absolute; left: 150px; top: 0px;
+	font: bold italic 14px/14px arial,helvetica,sans-serif;
+	color: #ffffff;
+}
+
+/* Plans Page - BT - Content Bucket - Buyback program */
+div#tabbedContent section#buyback_program p {
+	font: .938em/1.533em 'ProximaNova-Regular-Italic'; color:#505050;
+	margin: 0px; 
+	padding: 0px 200px 20px 40px;
+}
+div#tabbedContent section#buyback_program span.bold { font-weight: bold; }
+div#tabbedContent section#buyback_program div.buyback_phone_img {
+	position: absolute; 
+	right: 4px; 
+	top: 40px;
+}
+div#tabbedContent section#buyback_program p.legal { font-size: 10px; padding-right: 197px; }
+div.contentBucket div.phoneDisplay div.details {
+	padding-right: 20px;
+	font-family: ProximaNova-Semibold-Italic;
+	/*text-shadow: 0px 1px 0px #bbb;*/
+}

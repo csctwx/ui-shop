@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Data Sharing International Rates - Search By Phone Number | Virgin Mobile</title>
+
+	<link rel="canonical" href="http://www.virginmobileusa.com/international_connect/phone_number_lookup/pnlookupItsOn.html" />
+	
+	<script src="../../../js/vmu-international-rates/jquery-1.7.2.min.js"></script>
+	<!--script src="/_js/2012/jquery-1.7.2.min.js"></script-->
+
+ 	<style>
+	body { margin: 0 0 10px 0; background-color: #fff; }
+	h1 { font: bold 16px/16px arial,helvetica,sans-serif; color: #000; margin: 0; text-transform: uppercase; }
+	h2 { font: bold 15px/15px arial,helvetica,sans-serif; color: #000; margin: 30px 0 10px 0; }
+	
+	.rate_calc_form { margin: 15px 0 0 0; }
+	.rate_calc_form select
+	{
+		border: 1px solid #ccc; border-radius: 5px;
+		color: #000; vertical-align: middle;
+		margin: 5px 10px 0 0; padding: 4px;
+	}
+	.rate_calc_form input
+	{
+		border: 1px solid #ccc; border-radius: 5px;
+		color: #000; vertical-align: middle;
+		width: 200px; padding: 6px; margin: 5px 10px 0 0;
+	}
+	
+	a.vm_butt_gray01
+	{
+		display: inline-block; padding: 6px 50px; margin: 5px 0 0 0;
+		font: bold 12px/12px arial,helvetica,sans-serif; color: #ffffff;
+		text-align: center; text-decoration: none; vertical-align: middle;
+		box-shadow: 1px 1px 3px 0 #333333; text-shadow: 1px 1px 3px #333333;
+		background-color: #585858; background: linear-gradient(#585858, #3a3a3a) repeat;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585858', endColorstr='#3a3a3a');
+	}
+	a.vm_butt_gray01:hover
+	{
+		background-color: #000000;
+		background: linear-gradient(#3d3d3d, #1f1f1f) repeat;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d3d3d', endColorstr='#1f1f1f');
+	}
+	
+	p { font: 13px/16px arial,helvetica,sans-serif; color: #000; margin: 10px 0; }
+	p.error_message, .error { color: #d70020; }
+	p.legal { font: 11px/11px arial,helvetica,sans-serif; color: #333; margin: 20px 0 0 0; }
+	p span#country-name { font-weight: bold; color: #d70020; }
+	
+	p#search_results_note { display: none; font: bold 15px/20px arial,helvetica,sans-serif; color: #000; margin: 30px 0 10px 0; }
+	
+	#search_results { display: none; margin: 30px 0 0 0; }
+	#search_results table { font: bold 14px/16px arial,helvetica,sans-serif; color: #000; width: 95%; text-align: center; }
+	#search_results table #specific_standard_rate, #search_results table #other_standard_rate
+	{ font-size: 17px; color: #000; background-color: #f7f7f7; }
+	#search_results table #specific_ic_rate, #search_results table #other_ic_rate
+	{
+		font-size: 15px; color: #fff; background-color: #ff0000;
+		background: #933087; /* Old browsers */
+		background: -moz-linear-gradient(left, #933087 0%, #b40947 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#933087), color-stop(100%,#b40947)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, #933087 0%,#b40947 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, #933087 0%,#b40947 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, #933087 0%,#b40947 100%); /* IE10+ */
+		background: linear-gradient(to right, #933087 0%,#b40947 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#933087', endColorstr='#b40947',GradientType=1 ); /* IE6-9 */		
+	}
+	#search_results table #specific_icp_rate, #search_results table #other_icp_rate
+	{
+		font-size: 15px; color: #fff; background-color: #ff0000;
+		background: #b40947; /* Old browsers */
+		background: -moz-linear-gradient(left, #b40947 0%, #e6021d 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#b40947), color-stop(100%,#e6021d)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, #b40947 0%,#e6021d 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, #b40947 0%,#e6021d 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, #b40947 0%,#e6021d 100%); /* IE10+ */
+		background: linear-gradient(to right, #b40947 0%,#e6021d 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b40947', endColorstr='#e6021d',GradientType=1 ); /* IE6-9 */
+	}
+	</style>
+</head>
+
+
+<body>
+
+	
+	<h1>Search By Phone Number</h1>
+	<p>
+	Need help deciding which International Connection plan is right for you?
+	Enter the phone number you'll be calling to determine if the number is included in the $5 International Connection or $10 International Connection+ add-on.
+	</p>
+
+	<h2>Enter the phone number you'll be calling:</h2>
+	
+	<div class="rate_calc_form"> 
+		<form id="rate_calculator_form">
+		<select id="phone_prefix" name="phone_prefix"> 
+			<option value="001">001</option> 
+			<option selected="selected" value="011">011</option> 
+		</select> 
+		<input type="text" value="XXXXXXXXXX" id="phone_number" name="phone_number" class="" />
+		<a href="#" class="vm_butt_gray01 btn_search">SEARCH</a>
+		</form>
+	</div> 
+	<p class="error_message" style="display:none;">Number is not valid.</p> 
+
+
+	<div id="search_results">
+		<p>Search Results: <span id="country-name">.</span></p>
+		
+		<table border="0" cellspacing="3" cellpadding="8" align="center">
+			<colgroup>
+				<col width="20%" />
+				<col width="40%" />
+				<col width="40%" />
+			</colgroup>
+			<tr>
+				<td>&nbsp;</td>
+				<td>International Connection</td>
+				<td>International Connection+</td>
+			</tr>
+			<tr>
+				<td id="specific_label">.</td>
+				<td id="specific_ic_rate">.</td>
+				<td id="specific_icp_rate">.</td>
+			</tr>
+			<tr>
+				<td id="other_label">.</td>
+				<td id="other_ic_rate">.</td>
+				<td id="other_icp_rate">.</td>
+			</tr>
+			<!--
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td><a href="https://myaccount.virginmobileusa.com/myaccount/home.do" class="vm_butt_gray01" target="_top">ADD OFFER</a></td>
+				<td><a href="https://myaccount.virginmobileusa.com/myaccount/home.do" class="vm_butt_gray01" target="_top">ADD OFFER</a></td>
+			</tr>
+			-->
+		</table>
+	</div>
+	
+	<p id="search_results_note"></p>
+	<p class="legal">
+	* For some destinations, not all landline and mobile phones are included. Search by the number you would like to call for complete details.
+	<br />
+	**Included until monthly plan allowance of 1,000 International calling minutes is reached.
+	</p>
+
+	
+	<!--script src="/international_connect/rate_calculator/_js/rate_calculator_its_on.js"></script-->
+	<script src="../rate_calculator/_js/rate_calculator_its_on.js"></script>
+
+	
+</body>
+</html>

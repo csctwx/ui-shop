@@ -1,0 +1,1273 @@
+{
+  "responses": {
+    "response": [
+      {
+        "@uuid": "ad9a9990-5649-4ed8-bade-c791d9d58eb9",
+        "@class": "",
+        "@name": "Section 19029",
+        "@code": "0",
+        "phoneGenieListResponse": {
+          "phone": [
+            {
+              "phoneName": {
+                "$": "G Stylo™"
+              },
+              "externalUrl": {
+                "$": "lg-g-stylo"
+              },
+              "manufacturerName": {
+                "$": "LG"
+              },
+              "shortDescription": {
+                "$": "Go from serious multitasking to snapping silly selfies – instantly – with this versatile Android™ 5.0 device. The LG G Stylo features an enormous 5.7\" high-definition IPS touchscreen with an embedded stylus for extra easy navigation. And its dual cameras deliver great-looking pictures, videos and selfies. Work or play, the LG G Stylo delivers serious performance at a price you can afford."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Bar"
+                  },
+                  {
+                    "$": "TouchScreen"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "FrontFacingCamera"
+                  },
+                  {
+                    "$": "GPS"
+                  },
+                  {
+                    "$": "4GWiMax"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "SpeakerPhone"
+                  },
+                  {
+                    "$": "3G"
+                  },
+                  {
+                    "$": "4GLTE"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "HotSpot"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "4G"
+                  },
+                  {
+                    "$": "LG"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20150501"
+              },
+              "genieOrder": {
+                "$": "1"
+              },
+              "disclaimerMini": {
+                "$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Android"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "LGLS770ASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {
+                    "$": "gray"
+                  },
+                  "gradientColor": {},
+                  "price": {
+                    "$": "199.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/a/h/genie.png?action=access&assetId=A-zCj6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/a/i/hero.png?action=access&assetId=A-zCj6XVKM1TW"
+                    }
+                  },
+                  "purchaseLimit": {
+                    "$": "3"
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare_thumb"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/h/g/compare_thumb.jpg?action=access&assetId=A-zCj6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/e/f/compare.png?action=access&assetId=A-zCj6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "phoneName": {
+                "$": "Galaxy Core Prime™"
+              },
+              "externalUrl": {
+                "$": "samsung-galaxy-core-prime"
+              },
+              "manufacturerName": {
+                "$": "Samsung"
+              },
+              "shortDescription": {
+                "$": "Get a simple and elegant design built with a durable frame. With a thickness of just 8.8 mm, the Galaxy Core Prime fits comfortably in one hand or in your pocket, making it easy to carry with you anywhere."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Bar"
+                  },
+                  {
+                    "$": "TouchScreen"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "FrontFacingCamera"
+                  },
+                  {
+                    "$": "GPS"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "SpeakerPhone"
+                  },
+                  {
+                    "$": "4GLTE"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "HotSpot"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "Samsung"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20140505"
+              },
+              "genieOrder": {
+                "$": "9"
+              },
+              "disclaimerMini": {
+                "$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Android"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "SPHG360ASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {},
+                  "gradientColor": {},
+                  "msrp": {
+                    "$": "129.99"
+                  },
+                  "discount": {
+                    "$": "30.00"
+                  },
+                  "price": {
+                    "$": "99.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/i/a/genie.png?action=access&assetId=A-yrg6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/i/a/hero.png?action=access&assetId=A-yrg6XVKM1TW"
+                    }
+                  },
+                  "purchaseLimit": {
+                    "$": "3"
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare_th"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/a/b/i/compare_th.png?action=access&assetId=A-yrg6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/i/d/compare.png?action=access&assetId=A-yrg6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "phoneName": {
+                "$": "Desire® 510"
+              },
+              "externalUrl": {
+                "$": "htc-desire-510"
+              },
+              "manufacturerName": {
+                "$": "HTC"
+              },
+              "shortDescription": {
+                "$": "Hit the sweet spot between readability and pocketability with a 4.7-inch screen. Multitask the day away with Android 4.4 Kit Kat and the power of a 1.2 GHz Quad-Core processor. Stream your content over Sprint Spark, our fastest 4G LTE network. And, expand your storage by as much as 128 GB with the micro SD slot."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Bar"
+                  },
+                  {
+                    "$": "TouchScreen"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "FrontFacingCamera"
+                  },
+                  {
+                    "$": "GPS"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "SpeakerPhone"
+                  },
+                  {
+                    "$": "4GLTE"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "HotSpot"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "UleCertified"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "HTC"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20150401"
+              },
+              "genieOrder": {
+                "$": "8"
+              },
+              "disclaimerMini": {},
+              "phoneType": {
+                "$": "Android"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "HTC0PCV1ASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {
+                    "$": "blue"
+                  },
+                  "gradientColor": {},
+                  "price": {
+                    "$": "99.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/a/j/b/genie.png?action=access&assetId=A-Qbg6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/d/e/hero.png?action=access&assetId=A-Qbg6XVKM1TW"
+                    }
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare_th"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/d/j/compare_th.png?action=access&assetId=A-Qbg6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/j/i/compare.png?action=access&assetId=A-Qbg6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "phoneName": {
+                "$": "Tribute™"
+              },
+              "externalUrl": {
+                "$": "lg-tribute"
+              },
+              "manufacturerName": {
+                "$": "LG"
+              },
+              "shortDescription": {
+                "$": "Get the blazing-fast speed of 4G LTE at an affordable price. The LG Tribute™ captures everything savvy surfers and social bugs crave, like a 4.5-inch touchscreen, a 1.2 GHz Quad-Core Processor and Android 4.4.2 Kit Kat. And keep on smiling, because with its 5 MP camera as well as a selfie-friendly, front-facing camera, you can click a perfect pic from any angle."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Bar"
+                  },
+                  {
+                    "$": "TouchScreen"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "FrontFacingCamera"
+                  },
+                  {
+                    "$": "GPS"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "SpeakerPhone"
+                  },
+                  {
+                    "$": "4GLTE"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "HotSpot"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "LG"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20150401"
+              },
+              "genieOrder": {
+                "$": "7"
+              },
+              "disclaimerMini": {
+                "$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Android"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "LGLS660ASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {},
+                  "gradientColor": {},
+                  "price": {
+                    "$": "79.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/c/f/genie.png?action=access&assetId=A-Sbg6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/f/f/hero.png?action=access&assetId=A-Sbg6XVKM1TW"
+                    }
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/d/g/compare.png?action=access&assetId=A-Sbg6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare_th"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/e/c/compare_th.png?action=access&assetId=A-Sbg6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "phoneName": {
+                "$": "AQUOS® Crystal"
+              },
+              "externalUrl": {
+                "$": "sharp-aquos-crystal"
+              },
+              "manufacturerName": {
+                "$": "Sharp®"
+              },
+              "shortDescription": {
+                "$": "Affordable refinement is yours with the Sharp AQUOS® Crystal. The edgeless design shimmers like an infinity pool in your hands. Underneath that chic exterior is the powerful Android™ operating system that supports the ultra-fast 4G LTE Sprint Spark™ network. You can rock your music right with Harman Kardon sound and patented Clari-Fi™ technology for crisper, wider and more dynamic audio."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Bar"
+                  },
+                  {
+                    "$": "TouchScreen"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "FrontFacingCamera"
+                  },
+                  {
+                    "$": "GPS"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "SpeakerPhone"
+                  },
+                  {
+                    "$": "4GLTE"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "HotSpot"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "Sharp®"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20140401"
+              },
+              "genieOrder": {
+                "$": "3"
+              },
+              "disclaimerMini": {
+                "$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Android"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "SH306SHASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {
+                    "$": "black"
+                  },
+                  "gradientColor": {},
+                  "price": {
+                    "$": "149.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/f/c/genie.png?action=access&assetId=A-Tbg6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/d/g/hero.png?action=access&assetId=A-Tbg6XVKM1TW"
+                    }
+                  },
+                  "purchaseLimit": {
+                    "$": "3"
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare_th"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/g/b/compare_th.png?action=access&assetId=A-Tbg6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/a/i/compare.png?action=access&assetId=A-Tbg6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "phoneName": {
+                "$": "Galaxy S® 3"
+              },
+              "externalUrl": {
+                "$": "samsung-galaxy-s3"
+              },
+              "manufacturerName": {
+                "$": "Samsung"
+              },
+              "shortDescription": {
+                "$": "Expand your Universe. Introducing the Samsung Galaxy S® III with Shrinking Payments. Loaded with access to 4G LTE speed (where coverage is available), Android¿ power, dual cameras and a beautiful touchscreen display, this phone does it big. To top it off, it's easy to use - the S Beam feature lets you share your favorite HD pictures, music and videos by just tapping your phone to a friend¿s. Power. Simplicity. Sharing. The Samsung Galaxy S® III Android-powered phone lets you have it all."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Bar"
+                  },
+                  {
+                    "$": "TouchScreen"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "FrontFacingCamera"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "SpeakerPhone"
+                  },
+                  {
+                    "$": "4GLTE"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "Samsung"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20140401"
+              },
+              "genieOrder": {
+                "$": "5"
+              },
+              "disclaimerMini": {
+                "$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Android"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "SPHL710TASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {},
+                  "gradientColor": {},
+                  "msrp": {
+                    "$": "249.99"
+                  },
+                  "discount": {
+                    "$": "50.00"
+                  },
+                  "price": {
+                    "$": "199.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/c/h/genie.png?action=access&assetId=A-Ubg6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/j/e/hero.png?action=access&assetId=A-Ubg6XVKM1TW"
+                    }
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare_th"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/i/a/compare_th.png?action=access&assetId=A-Ubg6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/b/b/f/compare.png?action=access&assetId=A-Ubg6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "phoneName": {
+                "$": "ONETOUCH Retro™"
+              },
+              "externalUrl": {
+                "$": "alcatel-onetouch-retro"
+              },
+              "manufacturerName": {
+                "$": "Alcatel"
+              },
+              "shortDescription": {
+                "$": "The Alcatel Onetouch Retro™ is the perfect fit if you like the simplicity of a feature phone. The sleek and stylish flip design with large keypad makes dialing, texting and picture messaging uncomplicated. Snap and share photos with the 2 MP camera, plus enjoy recording videos."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Flip"
+                  },
+                  {
+                    "$": "Qwerty"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "SpeakerPhone"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "Alcatel"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20140401"
+              },
+              "genieOrder": {
+                "$": "10"
+              },
+              "disclaimerMini": {
+                "$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Basic"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "AL2017BASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {},
+                  "gradientColor": {},
+                  "price": {
+                    "$": "19.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/i/j/genie.png?action=access&assetId=A-Vbg6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/j/a/hero.png?action=access&assetId=A-Vbg6XVKM1TW"
+                    }
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/g/d/compare.png?action=access&assetId=A-Vbg6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare_th"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/d/d/compare_th.png?action=access&assetId=A-Vbg6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "phoneName": {
+                "$": "Volt™"
+              },
+              "externalUrl": {
+                "$": "lg-volt"
+              },
+              "manufacturerName": {
+                "$": "LG"
+              },
+              "shortDescription": {
+                "$": "Those who are on the go. Stream your favorite content, take pics on the 8 MP BSI camera and enjoy it all on the sharp 4.7-inch qHD display. With 4G LTE and fueled by the powerful Qualcomm® Snapdragon™ 1.2 GHz Quad-Core processor, the LG Volt™ delivers seamlessly."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Bar"
+                  },
+                  {
+                    "$": "TouchScreen"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "FrontFacingCamera"
+                  },
+                  {
+                    "$": "GPS"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "SpeakerPhone"
+                  },
+                  {
+                    "$": "4GLTE"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "HotSpot"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "LG"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20150601"
+              },
+              "genieOrder": {
+                "$": "6"
+              },
+              "disclaimerMini": {
+                "$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Android"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "LGLS740ASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {},
+                  "gradientColor": {},
+                  "price": {
+                    "$": "179.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/e/g/genie.png?action=access&assetId=A-Wbg6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/e/d/hero.png?action=access&assetId=A-Wbg6XVKM1TW"
+                    }
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/a/j/f/compare.png?action=access&assetId=A-Wbg6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare_th"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/b/a/compare_th.png?action=access&assetId=A-Wbg6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "phoneName": {
+                "$": "Moto E"
+              },
+              "externalUrl": {
+                "$": "moto-e-lte"
+              },
+              "manufacturerName": {
+                "$": "Motorola®"
+              },
+              "shortDescription": {
+                "$": "Motorola Moto E delivers the functionality and durability you need at a price you can afford. The 4.5-inch touchscreen is the sharpest display in its class and protected with Corning® Gorilla® Glass and a water-resistant splash guard. The long-lasting 2390 mAh battery provides up to 21 hours hours of use. Interchangeable backs customize the look of your phone. The microSD slot expands your storage by as much as 32 GB. And, Android 5.0 Lollipop helps you multitask on the go."
+              },
+              "filters": {
+                "feature": [
+                  {
+                    "$": "Bar"
+                  },
+                  {
+                    "$": "TouchScreen"
+                  },
+                  {
+                    "$": "Camera"
+                  },
+                  {
+                    "$": "FrontFacingCamera"
+                  },
+                  {
+                    "$": "GPS"
+                  },
+                  {
+                    "$": "Wifi"
+                  },
+                  {
+                    "$": "Bluetooth"
+                  },
+                  {
+                    "$": "4GLTE"
+                  },
+                  {
+                    "$": "Text"
+                  },
+                  {
+                    "$": "Video"
+                  },
+                  {
+                    "$": "HotSpot"
+                  },
+                  {
+                    "$": "Email"
+                  },
+                  {
+                    "$": "HtmlBrowser"
+                  },
+                  {
+                    "$": "Music"
+                  },
+                  {
+                    "$": "Motorola®"
+                  }
+                ]
+              },
+              "associatedAccessoryId": {},
+              "generalAvailabilityDate": {
+                "$": "20150511"
+              },
+              "genieOrder": {
+                "$": "2"
+              },
+              "disclaimerMini": {
+                "$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Android"
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "MOT1526ASB"
+                  },
+                  "memoryVariant": {},
+                  "colorVariant": {
+                    "$": "black"
+                  },
+                  "gradientColor": {},
+                  "price": {
+                    "$": "99.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "genie"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/a/d/g/genie.png?action=access&assetId=A-Ybg6XVKM1TW"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/j/f/hero.png?action=access&assetId=A-Ybg6XVKM1TW"
+                    }
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  }
+                }
+              },
+              "compareImages": {
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare_th"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/h/f/compare_th.png?action=access&assetId=A-Ybg6XVKM1TW"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/a/d/compare.png?action=access&assetId=A-Ybg6XVKM1TW"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "status": {
+            "$": "0"
+          },
+          "description": {
+            "$": "SUCCESS"
+          }
+        }
+      }
+    ]
+  }
+}

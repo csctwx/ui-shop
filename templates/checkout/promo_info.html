@@ -1,0 +1,7 @@
+<section>
+  <div class="col-xs-12">
+    <h4>Promo Codes</h4>
+    <p ng-show="checkoutController.data.orderCode" style="width:120px" class="pull-right">-{{checkoutController.data.promoCode.totalDiscount|currency}}</p>
+    <p ng-show="!checkoutController.data.orderCode">No additional promotional codes applied to order.</p>
+  </div>
+</section>

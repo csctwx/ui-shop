@@ -1,0 +1,557 @@
+{
+  "responses": {
+    "response": [{
+      "@uuid": "084d8295-f3fc-435a-a560-5d56eb1c7053",
+      "@code": "0",
+      "getListPhonesResponse": {
+        "phones": {
+          "phone": [{
+            "assetId": {
+              "$": "A-sAa6XVKM1TW"
+            },
+            "phoneName": {
+              "$": "Galaxy S® 5"
+            },
+            "available": {
+              "$": "true"
+            },
+            "shortDescription": {
+              "$": "TEST-TEST-TEST-TEST-TEST-TEST-TEST-The Next Big Thing Is Here&#8482;. And the features are out of this world. The Samsung Galaxy S® 5 features S Health&#8482; that helps you track your fitness goals, a 16 megapixel camera  to give you crisp photos, and a 5.1-inch HD Super AMOLED&#8482; display so you can see it all in stunning high definition."
+            },
+            "releaseDate": {
+              "$": "02\/23\/2015 00:00:00"
+            },
+            "filters": {
+              "feature": [{
+                "$": "Wifi"
+              }, {
+                "$": "3G"
+              }, {
+                "$": "SpeakerPhone"
+              }, {
+                "$": "Music"
+              }, {
+                "$": "FrontFacingCamera"
+              }, {
+                "$": "TouchScreen"
+              }, {
+                "$": "Camera"
+              }, {
+                "$": "4GLTE"
+              }, {
+                "$": "Text"
+              }, {
+                "$": "HotSpot"
+              }, {
+                "$": "Bar"
+              }, {
+                "$": "GPS"
+              }, {
+                "$": "Bluetooth"
+              }, {
+                "$": "Video"
+              }, {
+                "$": "UleCertified"
+              }, {
+                "$": "HtmlBrowser"
+              }, {
+                "$": "Email"
+              }, {
+                "$": "onSale"
+              }]
+            },
+            "manufacturerName": {
+              "$": "Samsung"
+            },
+            "associatedAccessoryId": {
+              "$": "MCX8842R;MMU3016Q;MMU3032Q;PSU9980V;PVX8721R;PVX9642V;BSS8192Q;CFS0550Q;CFS2327Q;CFS4747Q;CFS4870Q;ZCS6272Q;"
+            },
+            "genieOrder": {
+              "$": "10"
+            },
+            "isRedVentures": {
+              "$": "true"
+            },
+            "phoneVariantsDefault": {
+              "pictures": {
+                "picture": [{
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/d\/f\/c\/back.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/h\/f\/b\/front.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/b\/h\/d\/left.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/a\/g\/h\/right.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/j\/d\/j\/side.png"
+                }]
+              },
+              "minimumAdvPrice": {
+                "$": "598"
+              },
+              "available": {
+                "$": "true"
+              },
+              "oosThreshold": {
+                "$": "100"
+              },
+              "overrideOOS": {
+                "$": "200"
+              },
+              "retail-price": {
+                "$": "79.99"
+              },
+              "discount": {
+                "$": "-518.01"
+              },
+              "price": {
+                "$": "598.0"
+              }
+            },
+            "phoneId": {
+              "$": "SPHG900BBBA"
+            }
+          }, {
+            "assetId": {
+              "$": "A-rAa6XVKM1TW"
+            },
+            "phoneName": {
+              "$": "iPhone® 4s"
+            },
+            "available": {
+              "$": "true"
+            },
+            "shortDescription": {
+              "$": "iPhone 4s has a 3.5-inch Retina display, an 8-megapixel iSight camera with 1080p HD video recording, a FaceTime camera, and long battery life. And with iOS 8 and iCloud, it does more than ever."
+            },
+            "releaseDate": {
+              "$": "02\/23\/2015 00:00:00"
+            },
+            "filters": {
+              "feature": [{
+                "$": "Video"
+              }, {
+                "$": "HtmlBrowser"
+              }, {
+                "$": "Email"
+              }, {
+                "$": "Wifi"
+              }, {
+                "$": "3G"
+              }, {
+                "$": "SpeakerPhone"
+              }, {
+                "$": "Music"
+              }, {
+                "$": "FrontFacingCamera"
+              }, {
+                "$": "TouchScreen"
+              }, {
+                "$": "Camera"
+              }, {
+                "$": "Text"
+              }, {
+                "$": "HotSpot"
+              }, {
+                "$": "Bar"
+              }, {
+                "$": "GPS"
+              }, {
+                "$": "Bluetooth"
+              }]
+            },
+            "manufacturerName": {
+              "$": "Apple®"
+            },
+            "associatedAccessoryId": {
+              "$": "PSA9594Q;CFA9833Q;ZCA4009Q;MCA9497V;PVA9999V;"
+            },
+            "isRedVentures": {
+              "$": "false"
+            },
+            "phoneVariantsDefault": {
+              "pictures": {
+                "picture": [{
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/i\/i\/d\/all.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/i\/a\/c\/allcolors.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/d\/e\/a\/front.png"
+                }]
+              },
+              "available": {
+                "$": "true"
+              },
+              "oosThreshold": {
+                "$": "100"
+              },
+              "retail-price": {
+                "$": "79.99"
+              },
+              "discount": {
+                "$": "0.0"
+              },
+              "price": {
+                "$": "79.99"
+              }
+            },
+            "phoneId": {
+              "$": "885909833894"
+            }
+          }, {
+            "assetId": {
+              "$": "A-um96XVKM1TW"
+            },
+            "phoneName": {
+              "$": "Moto E"
+            },
+            "available": {
+              "$": "true"
+            },
+            "shortDescription": {
+              "$": "Motorola Moto E delivers the functionality and durability you need at a price you can afford. The 4.5-inch touchscreen is the sharpest display in its class and protected with Corning® Gorilla® Glass and a water-resistant splash guard. The long-lasting 2390 mAh battery provides up to 21 hours hours of use. Interchangeable backs customize the look of your phone. The microSD slot expands your storage by as much as 32 GB. And, Android 5.0 Lollipop helps you multitask on the go."
+            },
+            "filters": {
+              "feature": [{
+                "$": "HtmlBrowser"
+              }, {
+                "$": "3G"
+              }, {
+                "$": "Wifi"
+              }, {
+                "$": "4G"
+              }, {
+                "$": "HotSpot"
+              }, {
+                "$": "Camera"
+              }, {
+                "$": "Bar"
+              }, {
+                "$": "4GLTE"
+              }, {
+                "$": "Text"
+              }, {
+                "$": "UleCertified"
+              }, {
+                "$": "Video"
+              }, {
+                "$": "Email"
+              }, {
+                "$": "Qwerty"
+              }, {
+                "$": "GPS"
+              }, {
+                "$": "SpeakerPhone"
+              }, {
+                "$": "VisualVoiceMail"
+              }, {
+                "$": "Music"
+              }, {
+                "$": "Bluetooth"
+              }, {
+                "$": "FrontFacingCamera"
+              }, {
+                "$": "TouchScreen"
+              }]
+            },
+            "manufacturerName": {
+              "$": "Motorola"
+            },
+            "isRedVentures": {
+              "$": "false"
+            },
+            "phoneVariantsDefault": {
+              "minimumAdvPrice": {
+                "$": "99,99"
+              },
+              "colorVariant": {
+                "$": "black"
+              },
+              "available": {
+                "$": "true"
+              },
+              "oosThreshold": {
+                "$": "100"
+              },
+              "retail-price": {
+                "$": "99.99"
+              },
+              "discount": {
+                "$": "0.0"
+              },
+              "price": {
+                "$": "99.99"
+              }
+            },
+            "phoneId": {
+              "$": "MOT1526AS1"
+            }
+          }, {
+            "assetId": {
+              "$": "A-ukb6XVKM1TW"
+            },
+            "phoneName": {
+              "$": "Theory&#8482;"
+            },
+            "available": {
+              "$": "true"
+            },
+            "shortDescription": {
+              "$": "You want affordable? Lets talk affordable. This talk and text phone does everything you want at a price you want too. And with a full keyboard, doing everything you want is easier than ever."
+            },
+            "releaseDate": {
+              "$": "20130215"
+            },
+            "filters": {
+              "feature": [{
+                "$": "Camera"
+              }, {
+                "$": "onSale"
+              }]
+            },
+            "manufacturerName": {
+              "$": "Motorola"
+            },
+            "associatedAccessoryId": {
+              "$": "ZCU1234V;HRX3634Q;PVX8721R;MMU3008Q;"
+            },
+            "isRedVentures": {
+              "$": "false"
+            },
+            "phoneVariantsDefault": {
+              "pictures": {
+                "picture": [{
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/g\/b\/d\/front.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/h\/j\/d\/three-quarter-vertical-right.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/g\/a\/g\/three-quarter-vertical-left.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/i\/j\/a\/back.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/g\/b\/g\/side.png"
+                }]
+              },
+              "available": {
+                "$": "true"
+              },
+              "oosThreshold": {
+                "$": "100"
+              },
+              "retail-price": {
+                "$": "199"
+              },
+              "discount": {
+                "$": "100.0"
+              },
+              "price": {
+                "$": "99.0"
+              }
+            },
+            "phoneId": {
+              "$": "MOTW430ABC"
+            }
+          }, {
+            "assetId": {
+              "$": "A-skb6XVKM1TW"
+            },
+            "phoneName": {
+              "$": "635"
+            },
+            "available": {
+              "$": "true"
+            },
+            "shortDescription": {
+              "$": "Small and powerful, the Lumia 635 is everything you need right in the palm of your hand. Equipped with Windows Phone 8.1, a highly advanced quad-core processor and the Windows personal voice assistant, Cortana, this phone lets you do it all."
+            },
+            "releaseDate": {
+              "$": "20141222"
+            },
+            "filters": {
+              "feature": [{
+                "$": "Video"
+              }, {
+                "$": "4GWiMax"
+              }, {
+                "$": "4G"
+              }, {
+                "$": "HtmlBrowser"
+              }, {
+                "$": "Email"
+              }, {
+                "$": "Wifi"
+              }, {
+                "$": "3G"
+              }, {
+                "$": "SpeakerPhone"
+              }, {
+                "$": "Music"
+              }, {
+                "$": "TouchScreen"
+              }, {
+                "$": "Camera"
+              }, {
+                "$": "4GLTE"
+              }, {
+                "$": "Text"
+              }, {
+                "$": "HotSpot"
+              }, {
+                "$": "Bar"
+              }, {
+                "$": "GPS"
+              }, {
+                "$": "Bluetooth"
+              }]
+            },
+            "manufacturerName": {
+              "$": "Lumia"
+            },
+            "associatedAccessoryId": {
+              "$": "PRX8740V;PVX8721R;MMU3008Q;MMU3016Q;MMU3032Q;CCU7611V;ZCU1234;"
+            },
+            "isRedVentures": {
+              "$": "true"
+            },
+            "phoneVariantsDefault": {
+              "pictures": {
+                "picture": [{
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/g\/e\/g\/front.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/f\/h\/j\/left.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/b\/f\/j\/side.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/a\/e\/e\/back.png"
+                }]
+              },
+              "available": {
+                "$": "true"
+              },
+              "oosThreshold": {
+                "$": "100"
+              },
+              "retail-price": {
+                "$": "199"
+              },
+              "discount": {
+                "$": "0.0"
+              },
+              "price": {
+                "$": "199.0"
+              }
+            },
+            "phoneId": {
+              "$": "NOK635ABB"
+            }
+          }, {
+            "assetId": {
+              "$": "A-rkb6XVKM1TW"
+            },
+            "phoneName": {
+              "$": "Galaxy S® 5"
+            },
+            "available": {
+              "$": "true"
+            },
+            "shortDescription": {
+              "$": "The Next Big Thing Is Here&#8482;. And the features are out of this world. The Samsung Galaxy S® 5 features S Health&#8482; that helps you track your fitness goals, a 16 megapixel camera  to give you crisp photos, and a 5.1-inch HD Super AMOLED&#8482; display so you can see it all in stunning high definition."
+            },
+            "releaseDate": {
+              "$": "20140518"
+            },
+            "filters": {
+              "feature": [{
+                "$": "Video"
+              }, {
+                "$": "UleCertified"
+              }, {
+                "$": "HtmlBrowser"
+              }, {
+                "$": "Email"
+              }, {
+                "$": "Wifi"
+              }, {
+                "$": "3G"
+              }, {
+                "$": "SpeakerPhone"
+              }, {
+                "$": "Music"
+              }, {
+                "$": "FrontFacingCamera"
+              }, {
+                "$": "TouchScreen"
+              }, {
+                "$": "Camera"
+              }, {
+                "$": "4GLTE"
+              }, {
+                "$": "Text"
+              }, {
+                "$": "HotSpot"
+              }, {
+                "$": "Bar"
+              }, {
+                "$": "GPS"
+              }, {
+                "$": "Bluetooth"
+              }]
+            },
+            "manufacturerName": {
+              "$": "Samsung"
+            },
+            "associatedAccessoryId": {
+              "$": "MCX8842R;MMU3016Q;MMU3032Q;PSU9980V;PVX8721R;PVX9642V;BSS8192Q;CFS0550Q;CFS2327Q;CFS4747Q;CFS4870Q;ZCS6272Q;"
+            },
+            "isRedVentures": {
+              "$": "true"
+            },
+            "phoneVariantsDefault": {
+              "pictures": {
+                "picture": [{
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/b\/a\/f\/front.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/a\/g\/j\/left.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/g\/c\/e\/side.png"
+                }, {
+                  "$": "\/repository\/store\/P-d0avx1PuX34\/h\/a\/h\/back.png"
+                }]
+              },
+              "minimumAdvPrice": {
+                "$": "598"
+              },
+              "available": {
+                "$": "true"
+              },
+              "oosThreshold": {
+                "$": "100"
+              },
+              "overrideOOS": {
+                "$": "200"
+              },
+              "retail-price": {
+                "$": "199"
+              },
+              "discount": {
+                "$": "0.0"
+              },
+              "price": {
+                "$": "199.0"
+              }
+            },
+            "phoneId": {
+              "$": "SPHG900BBB"
+            }
+          }]
+        },
+        "status": {
+          "$": "0"
+        },
+        "description": {
+          "$": "SUCCESS"
+        }
+      }
+    }]
+  }
+}

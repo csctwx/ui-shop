@@ -1,0 +1,86 @@
+<section class="checkout" id="checkout_step_2">
+  <h3 class="mainColor" style="padding-left:10px">You're almost done!</h3>
+  <p>Please confirm that the info below is accurate then click complete purchase.</p>
+  <div class="col-xs-12 col-md-8">
+
+    <div style="min-height:80px">
+      <h2 ng-show="checkoutController.data.equipments.length!=0" class="orange">Review Order<span><a href="" ng-click="checkoutController.restartCheckout()">Edit information </a><i class="glyphicon glyphicon glyphicon-chevron-left"></i></span></h2>
+      <div ng-if="appName=='bst' && checkoutController.step!=1" class="cart-item alert alert-dismissible fade in" role="alert" ng-repeat="item in checkoutController.data.equipments">
+        <div class="pull-left col-xs-9">
+          <h4><span style="color:#000000">{{item.quantity}} <img alt="{{item.brand}} {{item.name}} - {{appDisplayName}}" ng-src="{{item.image}}" style="float:none"></img> x </span> 
+          <a ng-href='{{item.myUrl}}'>{{item.name}} {{item.phoneCondition}} {{item.color}} {{item.memory}}</a> {{item.checkoutText}} <span style="color:#000000">({{item.modelPrice|currency}})</span></h4>
+        </div>
+        <div class="col-xs-3"><p style="padding-top:55px;text-align:right;font-weight:bold;font-size:15px;" class="pull-right">{{item.modelPrice*item.quantity|currency}}</p></div>
+        <span class="appliedPromo">
+          <ul>
+            <li ng-show="item.discountTotal"><span>Discount applied:</span><p>-{{item.discountTotal|currency}}</p></li>
+          </ul>
+        </span>
+        <center><span class="errorMessage">{{item.errorMessage}}</span></center>
+      </div>
+    </div>
+
+    <checkout-summary-info></checkout-summary-info>
+    <checkout-billing-info></checkout-billing-info>
+    <checkout-shipping-info></checkout-shipping-info>
+  </div>
+  <div class="hidden-xs hidden-sm col-md-4">
+    <section class="entrust">
+      <h3>Secure Credit Card Payment</h3>
+      <div>
+        <img ng-src="{{appName}}/img/entrust.png"></img>
+      </div>
+    </section>
+    <section>
+      <div class="orderbyphone">
+        <h3>Order by Phone</h3>
+        <p>Need help choosing a phone or a plan? Just give us a call.</p>
+        <h3 class="phonenumber">1-866-402-7366</h3>
+      </div>
+    </section>
+    <section>
+      <h3>How it Works</h3>
+      <ul class="features howitworks" ng-if="appName=='spp'">
+        <li>
+          <img ng-src="{{appName}}/img/icons/smartphone.png"/>
+          <div>
+            <p>Order by phone, online, or in a store.</p>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/activate.png"/>
+          <div>
+            <p>When you get your phone, activate a no-contract plan online.</p>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/keepyournumber.png"/>
+          <div>
+            <p>Keep your number or choose a new one. Enjoy!</p>
+          </div>
+        </li>
+      </ul>
+       <ul class="features howitworks" ng-if="appName=='bst'">
+        <li>
+          Order by phone, online, or in a store.
+        </li>
+        <li>
+          When you get your phone, activate a no-contract plan online.
+        </li>
+        <li>
+          Keep your number or choose a new one. Enjoy!
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Phone Insurance</h3>
+      <p>Can't live without your Sprint Mobile phone? Get phone insurance and you'll never have to.</p>
+      <div class="col-xs-12">
+        <a class="btn btn-default btn-block" target="_blank" href="http://www.boostmobile.com/about/legal/privacy-policy">Privacy Policy</a>
+        <a class="btn btn-default btn-block" target="_blank" href="http://www.boostmobile.com/about/legal/return-policy">Return Policy</a>
+      </div>
+    </section>
+  </div>
+</section>
+
+

@@ -1,0 +1,728 @@
+var linkMap={
+  setting:{
+    bst:{
+      shop:{
+
+         host:"//www.boostmobile.com/"
+      },
+	  shop1:{
+
+         host:"//www3.boostmobile.com/"
+      },
+      myAccount:{
+        host:"//myaccount.boostmobile.com/"
+      }
+    },
+    spp:{
+      shop:{
+        host:"//prepaid.sprint.com/"
+      }
+    },
+  vmu:{
+      shop:{
+        host:"//www.virginmobileusa.com/"
+      }
+    },
+    maps:{
+      shop:{
+        home:"#!/|Nav:Logo",
+        coveragemap:"#!/coveragemap/",
+        store:"#!/store/",
+        shop:"#!/shop/|Nav:Shop",
+        phones:"#!/shop/phones/|Nav:Shop:AllPhones",
+
+        iPhones:"#!/shop/phones/@iPhone/",
+        Android:"#!/shop/phones/@Android/",
+        PayLo:"#!/cell-phone-plans/paylo-plans/overview/",
+        hotspots:"#!/shop/hotspots/r850-mobile-hotspot/features/",
+        deals:"#!/shop/deals/",
+        inStoreOffers:"#!/shop/in-store-offers/",
+        accessories:"#!/shop/accessories/",
+        market:"#!/shop/boost-market#apps/",
+        orderStatus:"#!/shop/orderStatus/",
+        plans:"#!/shop/plans/",
+        monthlyPlans:"#!/shop/plans/monthly-phone-plans/",
+        dailyPlans:"#!/shop/plans/daily-unlimited-plans/",
+        familyPlans:"#!/shop/plans/family-plans/",
+        hotspotPlans:"#!/shop/plans/mobile-hotspot/",
+        wifiHotspotPlans:"#!/shop/plans/wifi-hotspots/",
+        internationalCalling:"#!/shop/plans/international-services",
+        whyChoose:"#!/whychoose#value/",
+        whyChoosePrepaid:"#!/whychoose#prepaid/",
+        supportMilitaryFamilies:"#!/whychoose#military/",
+        checkout:"#!/shop/checkout",
+        phoneInsurance:"#!/shop/plans/phone-insurance",
+        refProgram:"#!/whychoose#referral",
+        contactUs:"#!/framework_contact_us",
+        returnPolicy:"#!/about/legal/return-policy/",
+        careers:"#!/about/careers/",
+		homebst:"/",
+		shopbst:"/shop/",
+		plansbst:"/shop/plans/",
+		whyChoosebst:"/why-boost/value-without-compromise/",
+		coveragemapbst:"/coverage/",
+		storebst:"/stores/",
+		checkoutbst:"/shop/checkout/",
+
+    vmuExtras:"#!/extras/",
+    vmuCareers:"#!/about-virgin-mobile/virgin-mobile-careers-jobs/",
+    vmuAboutUs:"#!/about-virgin-mobile/",
+    vmuInternationalOffers:"#!/cell-phone-plans/international-offers/",
+    vmuHotspot:"#!/shop/hotspots/netgear-mingle/features/",
+    vmuSupport:"#!/help-support/",
+        dealerOpportunities:"#!/about/dealers/",
+        affiliateProgram:"#!/about/affiliate-program/",
+        sitemap:"#!/sitemap/",
+        faq:"#!/support/faq/",
+        reboost:"#!/reboost",
+        support:"#!/support/faq/",
+        legal:"#!/about/legal/",
+        privacy:"#!/about/legal/privacy-policy/",
+        regulatory:"#!/about/legal/ctia-regulatory/",
+        adchoices:"#!/about/legal/adchoices/",
+    vmuAllPlans:"#!/cell-phone-plans/",
+    vmuBroadband2Go:"#!/mobile-broadband-plans/broadband-2-go/overview/",
+    vmuContactUs:"#!/about/prepareEmailUs/",
+    vmuPayLoPlans:"#!/cell-phone-plans/paylo-plans/overview/",
+    vmuUnlimitedPlans:"#!/cell-phone-plans/data-messaging-plans/overview/",
+    vmuWhyChoose:"#!/why-choose-us/",
+    vmuDataShare:"#!/datashare/",
+    vmuPrivacy:"#!/privacy/",
+    vmuCopyright:"#!/legal/copyright-info/",
+    vmuWebsiteUse:"#!/privacy/privacy-policy/",
+    vmuTermsConditions:"#!/legal/terms-and-conditions/",
+    vmuAdChoices:"#!/legal/adchoices/",
+        vmuNetNeutrality:"#!/networkmanagement/",
+    vmuCTIA:"#!/unlock/",
+  deadlink:"#!/framework_comingsoon"
+      },
+      myAccount:{
+        login:"",
+        activate:"primary/activations-home"
+      },
+      other:{
+        reboost:"",
+        support:""
+      }
+    }
+  },
+  data:{
+     bst:{
+      "#mini-header":{
+        ".mobilenav":{
+          items:[
+            {
+              label:"Shop",
+              href:"//www.boostmobile.com/shop/"
+
+            },
+            {
+              label:"Plans",
+              href:"//www.boostmobile.com/shop/plans/"
+
+            },
+            {
+              label:"My Account",
+              refHref:"myAccount.login"
+            }
+          ]
+        }
+      },
+      header:{
+        ".top-left-menu":{
+          "class":"navbar-item",
+          items:[
+            {
+              label: "Espa&ntilde;ol",
+              mporgnav:"mporgnav", 
+              href:"//espanol.boostmobile.com/",
+              onclick:"return chooser('es');function chooser(lang){MP.SrcUrl=unescape ('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();var script=document.createElement ('SCRIPT');script.src='//espanol.prepaid.sprint.com/mpel/chooser.js';document.body.appendChild(script);return true;}"
+            },
+            {
+              id: "coverageMapLink",
+              label:"Coverage Map",
+              href:"//www.boostmobile.com/coveragemap/"
+            },
+            {
+              label:"Find a Store",
+              href: "//www.boostmobile.com/stores/"
+            }
+          ]
+        },
+        ".top-right-menu":{
+          "class":"navbar-item",
+          items:[
+            {
+              label: "Reboost",
+              href: "//www.boostmobile.com/reboost/"
+
+            },
+            {
+              label:"Support",
+              href:"//www.boostmobile.com/support/faq/"
+            },
+            {
+              label:"Activate",
+              refHref:"myAccount.activate"
+            },
+            {
+              label:"My Account",
+              href:"//myaccount.boostmobile.com/"
+
+            }
+          ]
+        },
+        ".mini-menu":{
+          items:[
+            {
+              label:"My Account",
+              refHref:"myAccount.login",
+            },
+            {
+              label: "Reboost",
+              href: "//www.boostmobile.com/reboost/"
+
+            },
+            {
+              label: "Phones",
+              href: "//www.boostmobile.com/shop/phones/"
+            },
+            {
+              label: "Wi-Fi Hotspots",
+              href:"//www.boostmobile.com/shop/wifi-hotspots/r850-mobile-hotspot/"
+            },
+            {
+              label: "Plans",
+              href:"//www.boostmobile.com/shop/plans/"
+            },
+            {
+              label: "Online Deals",
+              href:"//www.boostmobile.com/deals/"
+            },
+            {
+              label: "Boost Market",
+              href:"//www.boostmobile.com/shop/boost-market/apps-and-more/"
+
+            },
+            {
+              label:"Why Choose Boost",
+              href:"//www.boostmobile.com/why-boost/value-without-compromise/"
+            },
+
+            {
+              label: "Order Status",
+              href:"//www3.boostmobile.com/shop/orderStatus/"
+            },
+            {
+              label: "Support",
+              href:"//www.boostmobile.com/support/faq/"
+            },
+            {
+              label: "Activate",
+              refHref:"myAccount.activate"
+            },
+            {
+
+              label: "Espa&ntilde;ol",
+              href:"//espanol.boostmobile.com/"
+            },
+          ]
+        },
+        "#shop-drop-down-menu":{
+          items:[
+            {
+              label:"Phones",
+              href:"//www.boostmobile.com/shop/phones/"
+            },
+            {
+              label:"Wi-Fi Hotspots",
+              href:"//www.boostmobile.com/shop/wifi-hotspots/r850-mobile-hotspot/"
+            },
+            {
+              label:"Online Deals",
+              href:"//www.boostmobile.com/shop/deals/"
+            },
+            {
+              label:"In Store Offers",
+              href:"//www.boostmobile.com/shop/in-store-offers/"
+            },
+            {
+              label:"Accessories",
+              href:"//www.boostmobile.com/shop/accessories/"
+            },
+            {
+              label:"Boost Market",
+              href:"//www.boostmobile.com/shop/boost-market/apps-and-more/"
+            },
+            {
+              label:"Order Status",
+              href:"//www3.boostmobile.com/shop/orderStatus/"
+            }
+          ]
+        },
+        "#plans-drop-down-menu":{
+          items:[
+            {
+              label:"Monthly Plans",
+              href:"//www.boostmobile.com/shop/plans/monthly-phone-plans/"
+            },
+            {
+              label:"Family Plans",
+              href:"//www.boostmobile.com/shop/plans/family-plans/"
+
+            },
+            
+            {
+              label:"Wi-Fi Hotspot Plans",
+              href:"//www.boostmobile.com/shop/plans/family-plans/"
+            },
+            {
+              label:"International Calling",
+              href:"//www.boostmobile.com/shop/plans/international-services/"
+            }
+          ]
+        },
+        "#why-drop-down-menu":{
+          items:[
+            {
+              label:"Value Without Compromise",
+              href:"//www.boostmobile.com/why-boost/value-without-compromise/"
+            },
+            {
+              label:"Why Choose Prepaid",
+              href:"//www.boostmobile.com/why-boost/why-prepaid/"
+            },
+            {
+              label:"Support Military Families",
+              href:"//www.boostmobile.com/why-boost/support-military-families/"
+            }
+          ]
+        }
+      },
+      footer:{
+        "#footer-shop":{
+          items:[
+            {
+              label:"Phones",
+              href:"//www.boostmobile.com/shop/phones/"
+            },
+            {
+              label:"Plans",
+              href:"//www.boostmobile.com/shop/plans/"
+            },
+            {
+              label:"Online Deals",
+              href:"//www.boostmobile.com/deals/"
+            },
+            {
+              label:"Accessories",
+              href:"//www.boostmobile.com/shop/accessories/"
+            },
+            {
+              label:"Track Order",
+              href:"//www3.boostmobile.com/shop/orderStatus/"
+            },
+            {
+              label:"Find a Store",
+              href:"//www.boostmobile.com/stores/"
+            }
+          ]
+        },
+        "#footer-services":{
+          items:[
+            {
+              label:"International Rates",
+              href:"//www.boostmobile.com/shop/plans/international-services/"
+            },
+            {
+              label:"Phone Insurance",
+              href:"//www.boostmobile.com/shop/plans/phone-insurance/"
+            },
+            {
+              label:"Referral Program",
+              href:"//www.boostmobile.com/why-boost/referral-program/"
+            },
+            {
+              label:"Buyback Program",
+              href:"https://buyback.boostmobile.com/bst/"
+            }
+          ]
+        },
+        "#footer-support":{
+          items:[
+            {
+              label:"Device Support",
+              href:"http://devicehelp.boostmobile.com/"
+            },
+            {
+              label:"FAQs",
+              href:"//www.boostmobile.com/support/faq/"
+            },
+            {
+              label:"Return Policy",
+              href:"//www.boostmobile.com/about/legal/return-policy/"
+            },
+            {
+              label:"Coverage Map",
+              href:"//www.boostmobile.com/coverage/"
+            },
+            {
+              label:"Contact Us",
+              href:"//www3.boostmobile.com/support/contact-customer-service/"
+            }
+          ]
+        },
+        "#footer-manage-pay":{
+          items:[
+            {
+              label:"My Account",
+              refHref:"myAccount.login"
+            },
+            {
+              label:"Activate",
+              refHref:"myAccount.activate"
+            },
+            {
+              label:"Re-Boost/Add Money",
+             href:"//www.boostmobile.com/reboost/"
+            }
+          ]
+        },
+        "#footer-about":{
+          items:[
+            {
+              label:"Newsroom",
+              href:"http://newsroom.boostmobile.com/"
+            },
+            {
+              label:"Careers",
+              href:"//www.boostmobile.com/about/careers/"
+            },
+            {
+              label:"Dealer Opportunities",
+              href:"//www.boostmobile.com/about/dealers/"
+            },
+            {
+              label:"Affiliate Program",
+              href:"//www.boostmobile.com/about/affiliate-program/"
+            },
+            {
+              label:"Sitemap",
+              href:"//www.boostmobile.com/sitemap/"
+            }
+          ]
+        },
+        "#footer-legal":{
+          linksOnly:true,
+          items:[
+            {
+              label:"Legal",
+              href:"//www.boostmobile.com/about/legal/"
+            },
+            {
+              label:"Privacy",
+              href:"//www.boostmobile.com/about/legal/privacy-policy/"
+            },
+            {
+              label:"CTIA/Regulatory",
+              href:"//www.boostmobile.com/about/legal/ctia-regulatory/"
+            },
+            {
+              label:"Ad-Choices",
+              href:"//www.boostmobile.com/about/legal/adchoices/"
+            }
+          ]
+        }
+      }
+    },
+  vmu:{
+      "#mini-header":{
+        
+      },
+      header:{
+        ".top-left-menu":{
+          "class":"navbar-item",
+          items:[
+            {
+              id: "coverageMapLink",
+              label:"Coverage Map",
+              refHref: "shop.coveragemap"
+            },
+            {
+              label:"Find a Store",
+              refHref: "shop.store"
+            },
+            {
+              label: "Espa&ntilde;ol",
+              mporgnav:"mporgnav", 
+              href:"//espanol.virginmobileusa.com",
+              onclick:"return chooser('es');function chooser(lang){MP.SrcUrl=unescape ('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();var script=document.createElement ('SCRIPT');script.src='//espanol.virginmobileusa.com/mpel/chooser.js';document.body.appendChild(script);return true;}"
+            }
+          ]
+        },
+        ".top-right-menu":{
+          "class":"navbar-item",
+          items:[
+            {
+              label: "Track Order",
+              refHref:"shop.orderStatus"
+            },
+            {
+              label:"Activate",
+              href:"https://activate.virginmobileusa.com/activate/overview.jsp"
+            },
+            {
+              label:"Top-Up",
+              href:"https://myaccount.virginmobileusa.com/myaccount/topup.do"
+            },
+            {
+              label:"Manage My Account",
+              href:"https://myaccount.virginmobileusa.com/myaccount/home.do"
+            }
+          ]
+        },
+        ".mini-menu":{
+          items:[
+            {
+              label:"My Account",
+              href:"https://myaccount.virginmobileusa.com/myaccount/home.do"
+            },
+            {
+              label: "Sign In/Out",
+              href:"https://myaccount.virginmobileusa.com/myaccount/home.do"
+            },
+            {
+              label: "Top-Up",
+              href:"https://myaccount.virginmobileusa.com/myaccount/topup.do"
+            },
+            {
+              label: "Phones",
+              refHref:"shop.phones"
+            },
+            {
+              label: "Plans",
+              refHref:"shop.vmuAllPlans"
+            },
+            {
+              label: "Why Choose Us",
+              refHref:"shop.vmuWhyChoose"
+            },
+            {
+              label: "Track Order Status",
+              refHref:"shop.orderStatus"
+            },
+            {
+              label: "Support",
+              refHref:"shop.vmuSupport"
+            },
+            {
+              label: "Activate",
+              href:"https://activate.virginmobileusa.com/activate/overview.jsp"
+            },
+            {
+              label: "Espa&ntilde;ol",
+              mporgnav:"mporgnav", 
+              href:"//espanol.virginmobileusa.com",
+              onclick:"return chooser('es');function chooser(lang){MP.SrcUrl=unescape ('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();var script=document.createElement ('SCRIPT');script.src='//espanol.virginmobileusa.com/mpel/chooser.js';document.body.appendChild(script);return true;}"
+            },
+          ]
+        },
+        "#shop-drop-down-menu":{
+          items:[
+            {
+              label:"All Phones",
+              refHref:"shop.phones"
+            },
+            {
+              label:"iPhone",
+              refHref:"shop.iPhones"
+            },
+            {
+              label:"Android&trade;-Powered Phones",
+              refHref:"shop.Android"
+            },
+            {
+              label:"payLo Phones",
+              refHref:"shop.PayLo"
+            },            
+            {
+              label:"Accessories",
+              refHref:"shop.accessories"
+            },
+            {
+              label:"Deals",
+              refHref:"shop.deals"
+            }
+          ]
+        },
+        "#plans-drop-down-menu":{
+          items:[
+            {
+              label:"All Plans",
+              refHref:"shop.vmuAllPlans"
+            },
+            {
+              label:"Virgin Mobile Unlimited Plans",
+              refHref:"shop.vmuUnlimitedPlans"
+            },
+            {
+              label:"payLo Talk & Text Plans",
+              refHref:"shop.vmuPayLoPlans"
+            },
+            {
+              label:"Broadband2Go Plans",
+              refHref:"shop.vmuBroadband2Go"
+            },
+            {
+              label:"International Offers",
+              refHref:"shop.vmuInternationalOffers"
+            },
+            {
+              label:"Virgin Mobile Extras",
+              refHref:"shop.vmuExtras"
+            }
+          ]
+        }
+      },
+      footer:{
+        "#footer-shop":{
+          items:[
+            {
+              label:"All Phones",
+              refHref:"shop.phones"
+            },
+            {
+              label:"iPhone",
+              refHref:"shop.iPhones"
+            },
+            {
+              label:"Android&trade;-Powered Phones",
+              refHref:"shop.Android"
+            },
+            {
+              label:"payLo Talk & Text Phones",
+              refHref:"shop.PayLo"
+            },            
+            {
+              label:"Accessories",
+              refHref:"shop.accessories"
+            },
+            {
+              label:"Deals",
+              refHref:"shop.deals"
+            }
+          ]
+        },
+        "#footer-no-contract-plans":{
+          items:[
+            {
+              label:"All Plans",
+              refHref:"shop.vmuAllPlans"
+            },
+            {
+              label:"Virgin Mobile Unlimited Plans",
+              refHref:"shop.vmuUnlimitedPlans"
+            },
+            {
+              label:"payLo Talk & Text Plans",
+              refHref:"shop.vmuPayLoPlans"
+            },
+            {
+              label:"Broadband2Go Plans",
+              refHref:"shop.vmuBroadband2Go"
+            },
+            {
+              label:"International Offers",
+              refHref:"shop.vmuInternationalOffers"
+            },
+            {
+              label:"Virgin Mobile Extras",
+              refHref:"shop.vmuExtras"
+            }
+          ]
+        },
+        "#footer-useful-links-left":{
+          items:[
+            {
+              label:"Find A Store",
+              refHref:"shop.store"
+            },
+            {
+              label:"Coverage Map",
+              refHref:"shop.coveragemap"
+            },
+            {
+              label:"Support",
+              refHref:"shop.vmuSupport"
+            },
+            {
+              label:"Careers",
+              refHref:"shop.vmuCareers"
+            },
+            {
+              label:"Referral Program",
+              href:"https://refer.virginmobileusa.com/public/home.pg"
+            }
+          ]
+        },
+        "#footer-useful-links-right":{
+          items:[
+            {
+              label:"Contact Us",
+              refHref:"shop.vmuContactUs"
+            },
+            {
+              label:"Sitemap",
+              refHref:"shop.sitemap"
+            },
+            {
+              label:"About us",
+              refHref:"shop.vmuAboutUs"
+            },
+            {
+              label:"Newsroom",
+              href:"http://newsroom.virginmobileusa.com/"
+            },
+            {
+              label:"Affiliates",
+              refHref:"shop.affiliateProgram"
+            }
+          ]
+        },
+        "#footer-legal":{
+          linksOnly:true,
+          items:[
+            {
+              label:"Privacy Policy",
+              refHref:"shop.vmuPrivacy"
+            },
+            {
+              label:"Copyright Notice",
+              refHref:"shop.vmuCopyright"
+            },
+            {
+              label:"Web Site & Use Terms",
+              refHref:"shop.vmuWebsiteUse"
+            },
+            {
+              label:"Terms & Conditions",
+              refHref:"shop.vmuTermsConditions"
+            },
+            {
+              label:"Ad-Choices",
+              refHref:"shop.vmuAdChoices"
+            },
+            {
+              label:"Net Neutrality",
+              refHref:"shop.vmuNetNeutrality"
+            },
+            {
+              label:"CTIA/Regulatory",
+              refHref:"shop.vmuCTIA"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

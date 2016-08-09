@@ -1,0 +1,411 @@
+/* The below options are CSS classes added to #genie-options 
+            show-carousel           Determines whether the carousel is initialized
+            show-phones-X           limit the phones in the display window to only show X number of phones, IE: show-phones-1, show-phones-2, show-phones-3, etc
+              
+            show-all                show all phones
+            show-brand-XXXX         show only this brand of phones, IE: show-brand-apple, show-brand-samsung
+            show-type-XXXX          show only phones of this type, IE: show-type-android, show-type-iphone, show-type-feature, show-type-blackberry
+            show-condition-XXXX     show only phones by condition, IE: show-condition-new, show-condition-cpo
+            
+            hide-brand-XXXX         hide only this brand of phones, IE: hide-brand-apple, hide-brand-samsung
+            hide-type-XXXX          hide only phones of this type, IE: hide-type-android, hide-type-iphone, hide-type-feature, hide-type-blackberry
+            hide-condition-XXXX     hide only phones by condition, IE: hide-condition-new, hide-condition-cpo
+*/
+
+/**************** Phone Genie 3.0  ****************/
+    #genie3{
+        background:#fff url('/_themes/h5bp/images/genie3/genie3-bg-full2.jpg') repeat-x bottom left;
+        color:#000;
+        margin-bottom:2px;
+        font-size:13px;
+        position:relative;
+    }
+
+    #genie3-controller{
+        float:left;
+        width:176px;
+        padding-left:20px;
+        padding-top:40px;
+    }
+
+    #genie3-controller p{
+        font-size: 12px;
+        letter-spacing:-0.5px;
+    }
+
+    #genie3-phones{
+        float:left;
+        width: 694px;
+        height:200px;
+        position:relative;
+        overflow:hidden;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    #genie3-ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        height:200px;
+        width: 20000em;
+        position: relative;
+    }
+
+    #genie3-ul-hidden{
+        display:none;
+    }
+
+    #genie3-ul li{
+        margin:0;
+        padding:0;
+        padding-top:25px;
+        float:left;
+        padding-left:5px;
+        width:226px;
+        height:175px;
+        position:relative;
+        cursor:pointer;
+    }
+
+    #genie3-ul li:hover{
+        background:url('/_themes/h5bp/images/genie3/genie3-bg-rollover.jpg') repeat-x top left;
+    }
+
+    #genie3-phones sup{
+        font-size:70%;
+    }
+
+    .genie3-image{
+        float:left;
+        width:85px;
+        margin-right:10px;
+    }
+       
+    .genie3-content{
+        float:left;
+        width:123px;
+    }
+
+    .genie3-content p{
+        margin-bottom:0;
+    }
+
+    .genie3-price-crossout{
+        color: #898989;
+        margin-right: 10px;
+        text-decoration: line-through;
+    }
+
+    .genie3-cpo{
+        color:#f7901e;
+        font-size: 11px;
+    }
+
+    .genie3-variations{
+        letter-spacing: -0.5px;
+    }
+
+    .genie3-discount{
+        color:#f7901e;
+        font-weight:bold;
+    }
+
+    .phoneRating{
+        position: relative;
+        left: -5px;
+    }
+
+    .jcarousel-clip{
+        overflow:hidden;
+    }
+
+    .jcarousel-prev, .jcarousel-next{
+        height:25px;
+        width:25px;
+        position:absolute;
+        top: 90px;background-image:url('/_themes/h5bp/images/genie3/genie3-scrollers.png');
+        background-position:0 0;
+        background-repeat:no-repeat
+    }
+
+    .jcarousel-prev:hover{
+        background-position:0 -25px;
+    }
+
+    .jcarousel-next{
+        background-position:0 -50px;
+    }
+
+    .jcarousel-next:hover{
+        background-position:0 -75px;
+    }
+
+    .jcarousel-prev{
+        left:205px;
+        z-index:101
+    }
+
+    .jcarousel-next{
+        right:10px;
+        background-image:url('/_themes/h5bp/images/genie3/genie3-scrollers.png');
+        z-index:101
+    }
+
+    .genie3-modal{
+        width:450px;
+        min-height:200px;
+        background-color:#fff;
+        position:relative;
+        z-index:999;
+        color:#000;
+        border:1px solid #bfbebe;
+        font-size:12px;
+    }
+
+    .genie3-modal-top{
+        padding:20px;
+        position:relative;
+    }
+    
+    .main.container section .genie3-modal h2,
+    .main.container section .genie3-modal .genie3-modal-cpo{
+        padding-left:0;
+        margin-left:0!important;
+        /*float: right;  */
+        margin-right: 10px;      
+    }
+
+    .main.container section .genie3-modal .limitPerCustomer {
+        float: right;
+        clear: both;
+        font-size: 9px;
+    }
+
+    .vmu_heading {
+        font-family: 'ProximaNova-Bold-Italic', Arial, Helvetica, sans-serif;
+    }
+
+    .main.container section .genie3-modal h2 .bn-bk{
+        font-family: BoostNeoBlack,Arial,Helvetica,sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: bold;
+    }    
+
+    .genie3-modal-cpo{
+        color:#f7901e;
+    }
+
+    .genie3-modal ul{
+        list-style:none;
+        padding:0;
+    }
+
+    .genie3-modal li{
+        width:auto;
+        height:auto;
+        padding:5px 0 5px 30px;
+        float:none;
+        background:url('../img/genie3-icons.png') no-repeat 0 5px;
+    }
+
+    .genie3-modal li.genie3-modal-icon1{
+        background-position:0 5px;
+    }
+
+    .genie3-modal li.genie3-modal-android{
+        background-position:0 -248px;
+    }
+
+    .genie3-modal li.genie3-modal-iphone{
+        background-position:0 -302px;
+    }
+
+    .genie3-modal li.genie3-modal-feature{
+        background-position:0 5px;
+    }
+
+    .genie3-modal li.genie3-modal-windows{
+        background-position:0 -347px;
+    }
+
+    .genie3-modal li.genie3-modal-icon2{
+        background-position:0 -47px;
+    }
+
+    .genie3-modal li.genie3-modal-icon3{
+        background-position:0 -96px;
+    }
+
+    .genie3-modal li.genie3-modal-icon4{
+        background-position:0 -146px;
+    }
+    
+    .genie3-modal p{
+        margin:0
+    }
+
+    .genie3-modal .genie3-promo{
+        border-top:1px solid #bfbebe;
+    }
+
+    .genie3-modal-image{
+        float:left;
+        width:130px;
+    }
+
+    .genie3-modal-content{
+        float:left;
+        width:269px;
+    }
+    
+    #genie3 .learnmore,
+    .genie3-modal .learnmore{
+        display:inline-block;
+        color:#fff!important;
+        background-color:#000;
+        padding:10px;
+        text-decoration:none;
+        font-size:17px;
+        letter-spacing:.5px;
+        float:right;
+        font-family:'Boost_bold', Helvetica, Arial, sans-serif;
+    }
+
+    #genie3 .learnmore:hover,
+    .genie3-modal .learnmore:hover{
+        background-color:#6fdbdb;
+    }
+
+    .genie3-modal .vmu_learnmore{
+        display: block;
+	    font: normal 12px "ProximaNova-Semibold";
+	    text-transform: uppercase;
+	    line-height: 8px;
+	    color: #fff !important;
+	    height: 25px;
+	    font-size: 12px;
+	    text-shadow: 1px 1px 5px #000000;
+	    background-color: #c9101e;
+	    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c9101e), to(#980915)); /* Safari 4-5, Chrome 1-9 */
+	    background: -webkit-linear-gradient(top, #c9101e, #980915); /* Safari 5.1, Chrome 10+ */
+	    background: -moz-linear-gradient(top, #c9101e, #980915); /* Firefox 3.6+ */
+	    background: -ms-linear-gradient(top, #c9101e, #980915); /* IE 10 */
+	    background: -o-linear-gradient(top, #c9101e, #980915); /* Opera 11.10+ */
+    }
+
+    #sku-SPHG360ABB .genie3-phone{
+        letter-spacing: -0.8px;
+    }
+
+    #modal-LGLS770ABB{
+        padding-bottom:57px;
+        background: #fff url('/_themes/h5bp/images/genie3/freecase.jpg') no-repeat bottom center;
+    }
+     /*
+     * qTip2 - Pretty powerful tooltips - v2.2.1
+     * http://qtip2.com
+     *
+     * Copyright (c) 2014
+     * Released under the MIT licenses
+     * http://jquery.org/license
+     *
+     * Date: Sat Sep 6 2014 11:12 GMT+0100+0100
+     * Plugins: tips modal viewport svg imagemap ie6
+     * Styles: core basic css3
+     */
+    .qtip{
+	    position: absolute;
+	    left: -28000px;
+	    top: -28000px;
+	    display: none;
+	    font-size: 10.5px;
+	    line-height: 12px;
+	    direction: ltr;
+	    box-shadow: none;
+	    padding: 0;
+    }
+
+	.qtip-content{
+		position: relative;
+		padding: 5px 9px;
+		overflow: hidden;
+		text-align: left;
+		word-wrap: break-word;
+	}
+
+	.qtip-titlebar{
+		position: relative;
+		padding: 5px 35px 5px 10px;
+		overflow: hidden;
+
+		border-width: 0 0 1px;
+		font-weight: bold;
+	}
+
+	.qtip-titlebar + .qtip-content{
+        border-top-width: 0 !important;
+    }
+
+	/* Default close button class */
+	.qtip-close,
+    .qtip-close-vmu{
+		position: absolute;
+		right: 20px; top: 20px;
+		z-index: 1100; /* Overlap .qtip-tip */
+		cursor: pointer;
+		outline: medium none;
+        background-color:#fff;
+		border: 1px solid #ccc;color:#ccc;
+	}
+    .qtip-close:hover{
+        color:#fff;
+        background-color:#6fdbdb;
+    }
+
+    .qtip-close-vmu:hover{
+        color:#ffffff;
+        background-color: #d70020 !important;
+        text-decoration: none;
+    }
+
+    .qtip-titlebar .qtip-close{
+	    right: 4px; top: 50%;
+		margin-top: -9px;
+    }
+
+	* html .qtip-titlebar .qtip-close{
+        top: 16px;
+    } /* IE fix */
+
+	.qtip-titlebar .ui-icon,
+	.qtip-icon .ui-icon{
+	    display: block;
+		text-indent: -1000em;
+		direction: ltr;
+    }
+
+	.qtip-icon, .qtip-icon .ui-icon{
+		-moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+
+	.qtip-icon .ui-icon{
+	    width: 18px;
+		height: 14px;
+		text-align: center;
+		text-indent: 0;
+		font: normal bold 10px/13px Tahoma,sans-serif;
+		color: inherit;
+		background: transparent none no-repeat -100em -100em;
+	}
+
+    /* Applied to 'focused' tooltips e.g. most recently displayed/interacted with */
+    .qtip-focus{}
+
+    /* Applied on hover of tooltips i.e. added/removed on mouseenter/mouseleave respectively */
+    .qtip-hover{}

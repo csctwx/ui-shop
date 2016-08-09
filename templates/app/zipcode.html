@@ -1,0 +1,28 @@
+<div class="modal fade" id="zipcodeDialog" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width:auto;">
+      <div class="modal-header" style="border:0;height:0">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12">
+            Please input your zip code to find a Preferred {{appName=='bst'?'Boost':'Sprint'}} Mobile Retailer near you that carries the {{phoneController.details.data.name}}
+          </div>
+        </div>
+        <div class="row" style="padding-top:20px">
+          <div class="col-xs-3">
+            <input class="form-control" maxlength="5" ng-model="app.zipCodeHandler.value" ng-keydown="($event.keyCode==13)?app.zipCodeHandler.update():''" ng-keyup="($event.keyCode==13)?app.zipCodeHandler.update():''" />
+          </div>
+          <div class="col-xs-5">
+            <button class="btn btn-primary" ng-click="app.zipCodeHandler.update()" ng-disabled="!appUtil.data.validZip(app.zipCodeHandler.value)" data-dismiss="modal"> Find Locations </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer " >
+        <span style="required">*Required Information</span>
+      </div>
+    </div>
+  </div>
+</div>
+

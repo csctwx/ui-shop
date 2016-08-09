@@ -1,0 +1,6 @@
+
+/*  For browsers less than IE 9, we need to adjust the padding. Line-height doesn't seem to work here. */
+
+.rate_calc_form input#phone_number {
+	padding: 7px 8px 0 8px !important;
+}

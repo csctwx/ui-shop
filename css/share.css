@@ -1,0 +1,948 @@
+.disabled_label {
+    color: #AAAAAA !important;
+}
+
+.enabled_label {
+    color: #FFFFFF;
+}
+
+#hotspotsImageDialog img,
+#phoneImageDialog img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#features .specs a {
+    font-size: 13px;
+}
+
+#features .specs .hidden-xs a {
+    white-space: nowrap;
+}
+
+.phoneRating {
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.3em;
+    background: url('../bst/img/rates.png') no-repeat;
+    overflow: hidden
+}
+
+.star5point0 {
+    padding-left: 78px;
+    background-position: -150px top
+}
+
+.star4point5 {
+    padding-left: 74px;
+    background-position: -150px -34px
+}
+
+.star4point0 {
+    padding-left: 64px;
+    background-position: -150px -68px
+}
+
+.star3point5 {
+    padding-left: 60px;
+    background-position: -150px -102px
+}
+.star3point0 {
+    padding-left: 50px;
+    background-position: -150px -136px
+}
+.star2point5 {
+    padding-left: 44px;
+    background-position: -150px -170px
+}
+.star2point0 {
+    padding-left: 38px;
+    background-position: -150px -204px
+}
+.star1point5 {
+    padding-left: 32px;
+    background-position: -150px -238px
+}
+.star1point0 {
+    padding-left: 24px;
+    background-position: -150px -272px
+}
+.star0point5 {
+    padding-left: 18px;
+    background-position: -150px -306px
+}
+.star0point0,.starNaNpoint0{
+    padding-left: 6px;
+    background-position: -150px -340px
+}
+
+.tab-pane .col-md-8 img.mapImg{
+  max-width:100%;
+  width:100%;
+}
+
+section.inthebox{
+  background-image:url(../img/img-box.png);
+  background-repeat:no-repeat;
+  background-size:inherit;
+  background-position:95% 85%;
+  background-size: 240px 200px;
+}
+section.specs .lists {
+    width: 65%;
+}
+
+.cartSecurity {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: block;
+    /*text-align: justify;*/
+    width: 210px;
+    padding: 10px 0px;
+    color: #fff;
+    background: #909090
+}
+
+.cartSecurity  h5 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.main.container section .cartSecurity p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.col-xs-12.cc {
+    background-image: url(../img/entrust.jpg);
+    background-repeat: no-repeat;
+    /*background-position: 98% 98%;*/
+    background-position: 98% 120px;
+    background-size: 75px;
+}
+
+.cartSecurity .col-xs-11 {
+    width: 87%;
+    padding-right: 0px;
+}
+
+.col-sm-1.control-label {
+    width: 109px;
+    margin-left: -10px !important;
+}
+
+#BVSectionReviewSubmissionID *{
+  -webkit-box-sizing:initial !important;
+  box-sizing:initial !important;
+}
+
+.BVMEStaticTip a{
+  font-size: 11px;
+}
+
+.BV label{
+  display:initial;
+}
+
+/*Installment Billing */
+.title .welcome{
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    line-height: 20px;
+}
+.IB {
+  position:absolute;
+  display:none;  
+  z-index: 9999;
+  width: 468px;  
+}
+.IB .col-xs-8 {
+  height:254px;
+}
+.IB .ibContent{
+  padding: 0px;
+  height:inherit !important;
+}
+.IB h3.title {
+  padding:0 !important;
+  white-space:wrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  background:none;
+}
+.IB h3.title a {color:#F7901E; display:block; padding:10px 0 2px;}
+.IB h3.title span {padding-left:5px;}
+.IB h3.title span.phoneBrand {padding-left:0px;}
+.IB h3.title span.phoneName {
+  font-weight:bold;
+  padding-left:5px;
+}
+.IB p.phoneBody {
+  margin:10px 0px 5px 0px !important;
+}
+.IB b {display:block;}
+.IB .prices {
+  position:absolute;
+  bottom:5px;
+  left:0px;
+  padding-left:10px;
+  padding-right:0;
+  padding-bottom:0 !important;
+}
+.IB .prices > p {
+  text-align:right;
+  margin:0 10px 0 0 !important;
+}
+.IB .prices > p:before {
+  content:"$";
+  color:transparent;
+}
+.IB .prices > p phonePromoDiscount {
+  color:#F7901E;
+  font-weight:bold;
+}
+.IB .prices > p:last-of-type {
+  border-bottom:1px dotted #000000;
+  padding-bottom:0px;
+  margin-bottom:0px !important;
+}
+.IB .prices h2.phoneFinalPrice {
+  text-align:right;
+  font-weight:bold;
+  margin:7px 0 0 0;
+  padding:0 10px 0 0;  
+}
+
+.IB .prices h2.phoneFinalPrice:before {
+  content:"$";
+  font-size:18px;
+  position:relative;
+  top:-7px;
+}
+.IB .phoneRetailPrice,
+.IB .phonePromoDiscount {
+  padding:0;
+  margin:0;
+  text-align:right;
+}
+.IB .phoneRetailPrice:before,
+.IB .phonePromoDiscount:before {
+  content:"$";
+}
+.IB > div {
+  display:block;
+  visibility:visible;  
+  height:348px;
+}
+.IB > div > div {
+  padding:20px 0 0 0;
+}
+.IB > div > div > div {
+  width:100%;
+  height:100%;
+  border-right:none !important;
+}
+.IB .ibBottom {
+  background:#E4E4E4;
+  padding:0 !important;
+  border-right:none !important;
+}
+.IB .ibBottom  div {
+  width:100%;
+}
+.IB .ibBottom  div a {
+  margin:10px;
+  width:45%;
+  padding: 6px 0;
+}
+
+#contractInitials{
+  width: 40px;
+}
+#contractSignature{
+  margin: 5px 0;
+}
+
+.checkout .col-xs-12 label a {
+  font-size:11px;
+  color: #0468cc;
+  text-decoration: underline;
+}
+
+.row#easy-pay-title{
+  border-bottom: 1px solid #ccc !important;  
+}
+
+.row#easy-pay-content, .row#easy-pay-title{  
+  margin: 0 0 5px 0;
+}
+
+.row#easy-pay-content div, .row#easy-pay-title div{
+  padding-left: 0;
+}
+
+label#easy-pay-header{
+  font-size: 14px !important;
+}
+
+label.check input{
+  margin: 10px 5px 10px 0 !important;
+}
+
+label.check p{
+  margin-left: 18px !important;
+  margin-bottom: 10px !important;
+}
+
+.chk-btn{
+  margin:15px; 
+  width:120px; 
+}
+/*End of IB*/
+
+/*Media query*/
+@media (max-width: 991px) {
+  #BVSubmissionContainer .BVPageEditReview .BVMEPageHeader,
+  #BVSubmissionContainer .BVPageEditComment .BVMEPageHeader {
+    background-size: 100% 406%;
+  }
+
+  #BVSubmissionContainer #BVModuleReviewSubmissionTipsID,
+  #BVSubmissionContainer #BVModuleCommentSubmissionTipsID{
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+    .col-xs-12.cc {
+        background-position-y: 190px;
+    }
+
+    .coverageMap_Banner {
+        display: none;
+    }
+
+    .main.container {
+        /*background-color: transparent;*/
+    }
+
+    a#ccOverlayOpenner {
+        height: 35px;
+        margin-left: 10px;
+        font-size: 10px;
+        line-height: 35px;
+    }
+
+    .cartSecurity {
+        position: relative;
+        width: 100%;
+        margin-top: -49px;
+        margin-bottom: 55px;
+        height: 50px;
+    }
+
+  #BVRRTitle,
+  .BVDIHeader.BVDI_QTHeader {
+    display: none;
+  }
+
+  .BVRRQuickTakeSummary .BVRRRatingSummary .BVRROverallRatingContainer {
+    width: 98% !important;
+    margin-left:1% !important;
+    margin-right: auto !important;
+    background: #e4e4e4 !important;
+  }
+
+  .BVRRQuickTakeSummary .BVRRRatingSummary .BVRRTrustMark.BVRRTrustMarkDiv {
+    display: none !important;
+  }
+
+  .BVRRQuickTakeSummary .BVRRRatingSummary .BVRROverallRatingContainer .BVRRRatingContainerStar {
+    margin-left: 1%;
+    margin-top: -20px;
+    width: 98%;
+    background-color: #fff;
+  }
+
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRROverallRatingContainer .BVRRRatingOverall {
+      background: transparent;
+      border: none;
+      padding: 10px 0;
+      height: 60px;
+      width: 100%;
+      margin-top: 58px;
+      position: relative;
+      zoom: 1;
+  }
+
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRRBuyAgainContainer {
+    width: 98%;
+    top: 60px;
+      left: 0;
+      text-align: center;
+      padding: 10px 1%;
+  }
+
+  .BVRRRatingNormalImage img {
+    width: 60%;
+  }
+
+  .BVParentContentSummary .BVRRRatingNormalImage img {
+    width: 100%;
+  }
+
+  .BVPageBody  .BVParentContentSummary .BVRRRating .BVRRRatingNormalOutOf {
+      display: block;
+      clear: both;
+
+  }
+
+  .BVPageBody .BVParentContentSummary .BVRRRating .BVRRRatingNormalOutOf .BVRRNumber,
+  .BVPageBody .BVParentContentSummary .BVRRRating .BVRRRatingNormalOutOf .BVRRSeparatorText{
+    color: #333;
+    font-size: 12px;
+  }
+
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRRRatingOverall .BVRRRatingNormalOutOf,
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRRRatingOverall .BVRRRatingNormalOutOf .BVRRNumber,
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRRRatingOverall .BVRRRatingNormalOutOf .BVRRSeparatorText,
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRRRatingOverall .BVRRRatingNormalOutOf .BVRRRatingRangeNumber {
+    font-size: 11px;
+  }
+
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRRatingsHistogramButton {
+      background: #e4e4e4;
+      clear: none;
+      float: left;
+      width: 98%;
+      padding: 0;
+      margin-left: 1%;
+  }
+
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRHistogram {
+
+      width: 98%;
+      padding: 0 1%;
+  }
+
+  #BVRRContainer .BVRRQuickTakeSummary .BVRROverallRatingContainer .BVRRRatingContainerStar{
+    margin-bottom: 14px;
+  }
+
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRHistogramTitle,
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRHistogramContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #BVRRContainer #BVRRQuickTakeContentContainerID .BVRRRatingSummaryLinks {
+      float: none;
+      margin-left: 1%;
+      width: 98%;
+      padding: 10px 0;
+  }
+
+  #BVRRContainer .BVRRRatingSummaryLinks .BVRRRatingSummaryLink {
+      margin-right: 0;
+      width: 100%;
+  }
+
+  #BVRRContainer .BVRRContainer .BVDI_QT .BVRRRatingSummaryLinks .BVRRRatingSummaryLink a,
+  #BVRRContainer .BVRRContainer .BVDI_QT .BVRRRatingSummaryLinks .BVRRRatingSummaryLink a:visited,
+  #BVRRContainer .BVRRContainer .BVDI_QT .BVRRRatingSummaryLinks .BVRRRatingSummaryLink a:active,
+  #BVRRContainer .BVRRContainer .BVDI_QT .BVRRRatingSummaryLinks .BVRRRatingSummaryLink a:hover {
+      overflow: hidden;
+      text-indent: 0;
+      zoom: 1;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      width: 100%;
+      height: 28px;
+
+      background-image: linear-gradient(top, #666 15%, #333 100%);
+      background-image: -o-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -moz-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -webkit-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -ms-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.15, #666), color-stop(1, #333));
+      background-color: #262626;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: white !important;
+      display: block;
+      text-align: center;
+      line-height: 1.9em;
+  }
+
+  #BVRRContainer .BVRRContainer .BVDI_QTSummaryBox .BVRRRatingSummaryStyle2 {
+    background: #fff;
+  }
+
+  #BVRRContainer .BVRRContainer .BVDI_QTSummaryBox {
+    margin-bottom: 0;
+  }
+
+  #BVRRContainer .BVRRContainer .BVDI_QT .BVDI_QTAttributes {
+      margin-left: 1%;
+      padding-top: 36px;
+      zoom: 1;
+      width: 98%;
+  }
+
+  #BVRRContainer .BVRRDisplayContent {
+    width: 98%;
+    margin-left: 1%;
+  }
+
+  #BVRRContainer .BVRRDisplayContentHeader {
+      border: none;
+      margin: 0;
+      overflow: hidden;
+      zoom: 1;
+  }
+
+  #BVRRContainer .BVRRDisplayContentSort .BVRRSortSelectWidget {
+    width:125px;
+    overflow: hidden;
+    display: block;
+    border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+  }
+
+  #BVRRContainer .BVRRDisplayContentSort .BVRRSelect {
+      color: #fff;
+        border: 0;
+      background: url('http://us.usablenet.net/img/c/gw_414/d_boostmobile.com/ttl_l1386863833000/scale_60/0url_images/new_white_drop_arrow.png') no-repeat 80% 50%, -webkit-gradient( linear, left top, left bottom, color-stop(0.15, #666), color-stop(1, #333));
+      background: url('http://us.usablenet.net/img/c/gw_414/d_boostmobile.com/ttl_l1386863833000/scale_60/0url_images/new_white_drop_arrow.png') no-repeat 80% 50%, -moz-linear-gradient(center top , #666666 15%, #333333 100%);
+      background: url('http://us.usablenet.net/img/c/gw_414/d_boostmobile.com/ttl_l1386863833000/scale_60/0url_images/new_white_drop_arrow.png') no-repeat 80% 50%, -ms-linear-gradient(top, #666666 15%, #333333 100%);
+      padding: 5px 10px;
+      overflow: hidden;
+  }
+
+  #BVRRContainer .BVRRDisplayContentSort .BVRRSelect option {
+    color: #333;
+  }
+
+  #BVRRContainer .BVRRContainer .BVDI_QT .BVDI_QTHeaderAttributes .BVDITitle {
+      line-height: 18px;
+      margin-right: 15px;
+      background-image: linear-gradient(top, #666 15%, #333 100%);
+      background-image: -o-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -moz-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -webkit-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -ms-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.15, #666), color-stop(1, #333));
+      background-color: #262626;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: white !important;
+      font-weight: normal;
+      display: inline-block;
+      padding: 5px 10px;
+      width: 104px;
+  }
+
+  #BVRRContainer .BVDI_QTAttributes .BVDI_QTGroup {
+      padding: 0;
+      margin-right: 15px;
+      zoom: 1;
+      background-image: linear-gradient(top, #666 15%, #333 100%);
+      background-image: -o-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -moz-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -webkit-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -ms-linear-gradient(top, #666 15%, #333 100%);
+      background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.15, #666), color-stop(1, #333));
+      background-color: #262626;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: white !important;
+      font-weight: normal;
+      display: inline-block;
+      padding: 5px 10px;
+  }
+
+  #BVRRContainer .BVDI_QT .BVDI_QTAttributes a, .BVDI_QT .BVDI_QTAttributes a:visited, .BVDI_QT .BVDI_QTAttributes a:hover, .BVDI_QT .BVDI_QTAttributes a:focus, .BVDI_QT .BVDI_QTAttributes a:active {
+      line-height: 1.5em;
+      color: #fff;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none;
+      outline: 0;
+  }
+
+  #BVRRContainer .BVDI_QTFilterList li.BVDI_QTFilter {
+      color: #999;
+  }
+
+  #BVRRContainer .BVRRContainer .BVDI_QT .BVDI_QTFilterSummary {
+      margin: 0 10px 0;
+  }
+
+  #BVRRContainer .BVRRDisplayContentReview {
+      /*background: #fff url(section_background-bt.gif) repeat-x center bottom;*/
+      border-bottom: 1px solid #e5e5e5;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      zoom: 1;
+      position: relative;
+  }
+
+  #BVRRContainer .BVRRReviewDisplayStyle5Header .BVRRReviewRatingsContainer{
+    width: 50%;
+  }
+
+  #BVRRContainer .BVRRReviewDisplayStyle5BodyUser {
+    width: 100%;
+  }
+
+  #BVRRContainer .BVRRReviewDisplayStyle5BodyContent {
+      margin-bottom: 20px;
+      width: 98%;
+      margin: 0;
+      padding: 0 1%;
+  }
+
+  #BVRRContainer .BVRRReviewDisplayStyle5BodyContentPrimary {
+      vertical-align: top;
+      margin-right: 0;
+  }
+
+  #BVRRContainer .BVRRReviewDisplayStyle5BodyContentSecondary {
+      float: right;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 12px;
+      vertical-align: top;
+  }
+
+  #BVRRContainer .BVRRReviewDisplayStyle5Footer {
+    width: 98%;
+      padding: 0 1%;
+  }
+
+  #BVRRContainer .BVDI_COHeader {
+    padding-right: 1%;
+  }
+
+  #BVRRContainer .BVRRContainer .BVDI_QTBodyAttributes.BVDIBody {
+      /*display: none;*/
+  }
+
+  #BVRRContainer .BVDI_QTAttributes .BVDI_QTGroupCollapsed .BVDITitle .BVDILinkToggle {
+     /* background-position: 0 -478px;*/
+  }
+
+  #BVRRContainer .BVDI_COHeader .BVDI_COLinkPost {
+      text-decoration: none;
+      color: #727375 !important;
+      display: block;
+      background-image: linear-gradient(top, #F9F9F9 0%, #DCDCDC 75%);
+      background-image: -o-linear-gradient(top, #F9F9F9 0%, #DCDCDC 75%);
+      background-image: -moz-linear-gradient(top, #F9F9F9 0%, #DCDCDC 75%);
+      background-image: -webkit-linear-gradient(top, #F9F9F9 0%, #DCDCDC 75%);
+      background-image: -ms-linear-gradient(top, #F9F9F9 0%, #DCDCDC 75%);
+      background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #F9F9F9),color-stop(0.75, #DCDCDC));
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      padding: 2px;
+      border: 1px solid #ccc;
+      width: 100px;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  #BVRRContainer .BVRRReviewSocialLinksContainer {
+    position: absolute;
+    bottom: 5px;
+  }
+
+  #BVRRContainer .BVRRRatingOverall .BVRRRatingNormalOutOf {
+      /*display: none;*/
+  }
+
+  #BVRRContainer .BVRRQuickTakeSummary .BVRRRatingOverall .BVRRRatingNormalImage {
+      padding-left: 50%;
+      margin-left: -95px;
+  }
+
+  #BVSubmissionContainer .BVSectionSubjectInformation {
+    display: none;
+  }
+
+
+
+
+  #BVSubmissionContainer .BVSection {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #BVSubmissionContainer .BVPageComment .BVSection {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  #BVSubmissionContainer .BVSection.BVSectionEmailAuthentication {
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+  }
+
+  #BVSubmissionContainer .BVPageComment .BVSection.BVSectionEmailAuthentication {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  #BVSubmissionContainer #BVModuleButtonsID{
+    width: 100%;
+  }
+
+  #BVSubmissionContainer #BVModuleButtonsID .BVFieldButton{
+    width: 49%;
+    display: inline-block;
+  }
+  #BVSubmissionContainer #BVModuleButtonsID .BVFieldButton:first-child{
+    margin-right:1%;
+  }
+
+  #BVSubmissionContainer .BVFieldText,
+  #BVSubmissionContainer .BVFieldTextArea {
+    width: 99%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #BVSubmissionContainer .BVTagsField,
+  #BVSubmissionContainer .BVTagRow{
+    width: 100%;
+  }
+
+  #BVSubmissionContainer .BVProTagInputTextBox,
+  #BVSubmissionContainer .BVConTagInputTextBox {
+    margin-left: 2%;
+    padding-left:1%;
+    width: 90%;
+  }
+
+
+
+  #BVSubmissionContainer .BVFieldSelect  {
+    color: #fff;
+    width: 100%;
+      border: 0px;
+      background: url('http://us.usablenet.net/img/c/gw_1/d_boostmobile.com/ttl_l1386863833000/width_27/0url_images/btn_sortby2.png') no-repeat 100% 50%, -webkit-gradient( linear, left top, left bottom, color-stop(0.15, #666), color-stop(1, #333));
+      background: url('http://us.usablenet.net/img/c/gw_1/d_boostmobile.com/ttl_l1386863833000/width_27/0url_images/btn_sortby2.png') no-repeat 100% 50%, -moz-linear-gradient(center top , #666666 15%, #333333 100%);
+      background: url('http://us.usablenet.net/img/c/gw_414/d_boostmobile.com/ttl_l1386863833000/scale_27/0url_images/btn_sortby.png') no-repeat 90% 50%, -ms-linear-gradient(top, #666666 15%, #333333 100%);
+  }
+
+  #BVSubmissionContainer .BVFieldSelect option {
+    color: #333;
+  }
+
+  #BVSubmissionContainer .BVSectionBody .BVFieldContextDataGroup {
+    margin-bottom: 20px;
+  }
+
+  #BVSubmissionContainer .BVPageEditReview .BVFooter {
+    width: 100%;
+    margin-right: 0;
+    padding: 0 30px;
+  }
+
+  #BVSubmissionContainer .BVPageEditReview .BVFooter .BVModuleButtons {
+    width: 100%;
+  }
+  #BVSubmissionContainer .BVButton,
+  #BVSubmissionContainer .BVButton:hover {
+    width: 100%;
+      -webkit-appearance: none;
+      border: 0;
+      -webkit-border-radius: 3px !important;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      background-image: linear-gradient(top, #F49725 0%, #E27924 100%);
+      background-image: -o-linear-gradient(top, #F49725 40%, #E27924 100%);
+      background-image: -moz-linear-gradient(top, #F49725 0%, #E27924 100%);
+      background-image: -webkit-linear-gradient(top, #F49725 0%, #E27924 100%);
+      background-image: -ms-linear-gradient(top, #F49725 0%, #E27924 100%);
+      background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #F49725),color-stop(1, #E27924));
+      background-color: #F7901E;
+      text-indent: 0;
+      color: #fff;
+      font-size: 12px;
+  }
+
+  #phoneDetail #BVSubmissionContainer form {
+      width: 100%;
+  }
+
+  #phoneDetail #BVSubmissionContainer form .BVRRReviewDisplayStyle5BodyContentSecondary {
+    display: none;
+  }
+
+  #phoneDetail #BVSubmissionContainer form .BVRRReviewDisplayStyle5BodyContent {
+      width: 100%;
+      margin: 0 0 20px 0;
+  }
+
+  #phoneDetail #BVSubmissionContainer form .BVRRReviewDisplayStyle5BodyUser{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #BVSubmissionContainer .BVFieldSubmit .BVButton {
+      background: url('../img/buttonSubmit.gif') no-repeat 0 0;
+      border: 0;
+      zoom: 1;
+      text-decoration: none;
+      width: 134px;
+      height: 28px;
+      text-indent: 120%;
+      white-space: nowrap;
+      overflow: hidden;
+      outline: 0;
+  }
+
+  #BVSubmissionContainer .BVFieldEdit .BVButton {
+      background: url('../img/buttonEdit.gif') no-repeat 0 0;
+      border: 0;
+      zoom: 1;
+      text-decoration: none;
+      width: 134px;
+      height: 28px;
+      text-indent: 120%;
+      white-space: nowrap;
+      overflow: hidden;
+      outline: 0;
+  }
+
+  #BVSubmissionContainer .BVModuleFooterLinks {
+      padding-top: 35px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;      
+      text-align: center;
+  }
+
+  #BVSubmissionContainer .BVModuleFooterLinks a {
+    text-decoration: underline;
+    margin: 0;
+  }
+
+  #BVSubmissionContainer .BVModuleFooterLinks a:first-child {
+    margin-right: 30px;
+  }
+
+  #BVSubmissionContainer .BVTagSectionHeaderContainer {
+    display: none;
+  }
+
+  #BVSubmissionContainer .BVParentContentSummary {
+    margin-left: 0;
+  }
+
+  #BVSubmissionContainer .BVParentContentSummary .BVRRRating .BVRRRatingNormalLabel {
+      display: block;
+      font-size: 12px;
+      color: #333;
+  }
+
+  #BVSubmissionContainer .BVPageEditComment .BVMEPageHeader{
+    margin-bottom: 0;
+  }
+
+  #BVSubmissionContainer .BVSectionBody .BVFieldContextDataGroup  .BVFieldLabel {    
+  }
+  
+  .IB .ibBottom  div a {
+     font-size:7.5px !important;      
+  }
+
+  .IB .ibBottom  div a:first-child {     
+     margin:10px 2% 10px 3%;
+  }
+
+  .IB .ibBottom  div a:last-child {     
+     margin:10px 3% 10px 2%;
+  }
+  .progressArrows.progressArrows-five ul li a span {
+      font-size: 10px;
+      width: 15px;
+      height: 15px;
+  }
+
+  .progressArrows.progressArrows-five ul li a span:after {
+      top: 0px;
+      left: 6px;
+  }
+
+  .IB h3.title {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 539px){
+  .progressArrows.progressArrows-five ul li a span {
+      font-size: 8px;
+      width: auto;
+      height: 10px;
+  }
+
+  .progressArrows.progressArrows-five ul li a span:after {
+      top: 0px;
+      left: 4px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  select#contractLanguage{
+    display: block;
+  }
+}
+
+@media print{
+   .header, .hide { visibility: hidden; }
+    .mobilelinks,
+    .mobilenav,
+    #social_strip,
+    .topnavcontainer,
+    .topControls{
+        display: none;
+    }
+    .linkHome{
+        display: block;
+    }
+    a[href].linkHome:after,
+    a[href]:after{
+        content: none !important;
+    }
+}
+/****** END MEDIA QUERIES    *******/
+
+
+

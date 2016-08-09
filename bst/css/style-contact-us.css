@@ -1,0 +1,33 @@
+.font-boostneo-gradient{
+	color: #f7901e;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+}
+
+#contentContainer{
+	color: #eee;
+}
+
+#form1 .fieldLabel:first-child{
+	margin-top: 10px;
+}
+
+.contentColumnSplit input[type="text"], .contentColumnSplit input[type="password"], .contentColumnSplit select, .contentColumnSplit textarea {
+	background-color: #000;
+	color: #fff;
+	float: right;
+	min-width: 146px;
+}
+
+.fieldLabel{
+	margin-bottom: 10px;
+}
+
+/* Style black background for Contact Us page*/
+.containerContact{max-width: 960px; background:#000000;}
+
+/*
+.main {}
+	.main.container{margin:0 auto 0; padding:0; min-height:400px; background:#000000;}
+*/

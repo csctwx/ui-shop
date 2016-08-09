@@ -1,0 +1,5 @@
+<section class="legal">
+  <p ng-if="appName=='spp'">Limited time only, while supplies last. Price and availability subject to change. Pricing does not include applicable sales tax, if any. Unless noted, Sprint Prepaid devices are only compatible with Sprint Prepaid plans. Restrictions apply.</p>
+  <p ng-repeat="legal in phoneController.list.legals track by $index"><span ng-bind-html="appUtil.ui.trustAsHtml(legal)"></span></p>
+  <p ng-if="appName=='bst'">Limited time only. While supplies last and only on select devices directly from boostmobile.com. Restrictions apply.</p>
+</section>

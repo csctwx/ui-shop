@@ -1,0 +1,337 @@
+<section>
+    <div class="container main">
+        <section class="phoneDetailsTop hotspotDetailsTop">
+            <div class="col-sm-6 images">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic"
+                            ng-repeat="img in phoneController.hotspots.device.images" data-slide-to="{{$index}}"
+                            ng-class="{active:$first}"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item" ng-class="{'active':$first}"
+                             ng-repeat="img in phoneController.hotspots.device.images">
+                            <img ng-src="{{img.uRI}}" style="height: 300px !important;">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 details {{phoneController.getDiscountClass(phoneController.hotspots.device)}}">
+                <div class="col-xs-12">
+				<h1 class="title bb2goName"><span class="phoneName">{{phoneController.hotspots.device.name}}</span></h1>
+
+                    <p class="rating" ng-show="phoneController.hotspots.device.rate!=null">
+                        <span class="{{phoneController.getRateStarClass(phoneController.hotspots.device.rate)}}">&nbsp;</span>
+                        <span>({{phoneController.hotspots.device.rate.toFixed(1)}}/5)</span>
+						<span class="reviewAsk" data-toggle="tooltip" data-placement="bottom"
+                              title="See all user submitted reviews for this phone." ng-if="appName!='vmu'"></span>
+                        <a class="reviews"
+                           ng-href="{{pathMap._hotspotDetails._hash}}{{phoneController.hotspots.device.id}}/reviews/">
+                            {{phoneController.hotspots.device.review}}
+                        </a>
+                        <a ng-href="{{pathMap._hotspotDetails._hash}}{{phoneController.hotspots.device.id}}/write_reviews/">
+                            Write a review</a>
+                    </p>
+
+                    <p class="longDescription">{{phoneController.hotspots.device.extendedDescription}}</p>
+
+                    <div ng-if="phoneController.hotspots.device.inventory!='end-of-life'">
+                        <div class="col-xs-12 col-sm-10 prices">
+                            <!--<p class="phoneBody"><b>FREE Shipping. All the time.</b> Ship to anywhere in the United States for free.</p>-->
+
+                            <p class="phoneRetailPrice" ng-show="phoneController.hotspots.device.discount">
+                                <span class="pull-left">Retail Price</span>{{phoneController.hotspots.device.msrp|currency:""}}</p>
+
+                            <p class="phonePromoDiscount" ng-show="phoneController.hotspots.device.discount"><span class="pull-left">Promotional discount</span>{{phoneController.hotspots.device.discount|currency:""}}
+                            </p>
+                        </div>
+                        <div class="col-xs-12 phoneBottom">
+            <span class="phonedetailsPrice">
+              <h2 class="phoneFinalPrice">{{phoneController.hotspots.device.price|currency:""}}</h2>
+<!--
+              <a class="btn btn-primary" ng-click="cartController.addHostpotToCart(phoneController.hotspots.device)" ng-disabled="phoneController.hotspots.device.noMore">{{phoneController.hotspots.device.cartLabel}}</a>
+-->
+              <a class="btn btn-primary"
+                 ng-href="{{pathMap._checkout._hash}}addToCart/sku={{phoneController.hotspots.device.sku}}/"
+                 ng-disabled="phoneController.hotspots.device.noMore">{{phoneController.hotspots.device.cartLabel}}</a>
+            </span>
+                            <!--span class="callNow"></span-->
+                        </div>
+                        <div ng-show="phoneController.hotspots.device.isRedVentures">
+                            <banner-item style="margin-top:10px" url="get_banner_phone_details"
+                                         extraheaders="{RedVentures:true,brandId:sppName}" index="0"
+                                         options="no_url,phone_details"></banner-item>
+                        </div>
+                        <div ng-show="!phoneController.hotspots.device.isRedVentures">
+                            <banner-item style="margin-top:10px" url="get_banner_phone_details"
+                                         extraheaders="{RedVentures:false,brandId:sppName}" index="0"
+                                         options="no_url,phone_details"></banner-item>
+                        </div>
+                        <!--Find phone in store-->
+                        <a style="margin-top:30px" class="pull-right"
+                           ng-if="phoneController.details.data.findInStoreFlag"
+                           ng-click="storeController.popPhoneStores()" href="javascript:">Find this phone in store</a>
+
+                        <div class="col-xs-12 detailsLegal" ng-if="appName=='bst'">Promotional pricing available only for select wi-fi hotspots
+                            directly from boostmobile.com. Limited time only, while supplies last.
+                        </div>
+                    </div>
+                    <div class="col-xs-12" ng-if="phoneController.hotspots.device.inventory=='end-of-life'"
+                         style="display:block">
+                        <p>
+                            This device is no longer available online.
+                        <ul style="list-style:initial">
+                            <li><a ng-href="{{pathMap._phones._hash}}">Shop available phones</a></li>
+                            <li><a ng-href="{{pathMap._store._hash}}">Find a store</a></li>
+                            <li ng-if="appName=='spp'"><a
+                                    ng-href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support"
+                                    target="_blank">Device support</a></li>
+                            <li ng-if="appName=='bst'"><a
+                                    ng-href="http://devicehelp.boostmobile.com/?INTNAV=BST:Support#!/?INTNAV=Nav:Support"
+                                    target="_blank">Device support</a></li>
+							<li ng-if="appName=='vmu'"><a
+                                    ng-href="http://devicehelp.virginmobileusa.com/"
+                                    target="_blank">Device support</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tabs">
+            <div role="tabpanel" class="maintabs">
+                <ul class="nav nav-tabs hotspot" role="tablist">
+                    <li role="presentation" class="{{phoneController.selectedTab=='features'?'active':''}}"><a
+                            href="{{pathMap._hotspotDetails._hash}}{{phoneController.hotspots.device.id}}/features/">Features
+                        &amp; Specs</a></li>
+                    <li role="presentation" ng-if="phoneController.hotspots.device.inventory!='end-of-life'"
+                        class="{{phoneController.selectedTab=='plans'?'active':''}}">
+                        <a href="{{pathMap._hotspotDetails._hash}}{{phoneController.hotspots.device.id}}/plans/">Plans</a>
+                    </li>
+                    <li role="presentation" ng-if="phoneController.selectedTab!='write_reviews'"
+                        class="{{phoneController.selectedTab=='reviews'?'active':''}}">
+                        <a href="{{pathMap._hotspotDetails._hash}}{{phoneController.hotspots.device.id}}/reviews/">Reviews</a>
+                    </li>
+                    <li role="presentation" ng-if="phoneController.selectedTab=='write_reviews'" class="active">
+                        <a href="{{pathMap._hotspotDetails._hash}}{{phoneController.hotspots.device.id}}/write_reviews/">Reviews</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel"
+                         class="tab-pane {{phoneController.selectedTab=='features'?'active':''}} col-md-12"
+                         id="features">
+                        <div class="col-md-8">
+                            <div>
+                                <section>
+                                    <h3 ng-if="appName!='vmu'" class="hotspot-features-title">
+                                        {{phoneController.hotspots.device.name}} <span>Features</span></h3>
+                                    <h3 ng-if="appName=='vmu'" class="hotspot-features-title">Top <span>Features</span></h3>
+                                    <ul class="features features-half-hotspot">
+                                        <li ng-repeat="feat in phoneController.hotspots.device.generalFeatures">
+                                            <span class="features-icons {{feat.type}}"></span>
+
+                                            <div>
+                                                <p ng-bind-html="appUtil.ui.trustAsHtml(feat.title)"></p>
+                                                <span ng-bind-html="appUtil.ui.trustAsHtml(feat.description)"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    <a ng-if="appName=='vmu'" class="fullfeatures link-default" style="cursor:pointer" onclick="$('#fullfeaturesDetails').css('display')!='none'?$('#fullfeaturesDetails').fadeOut():$('#fullfeaturesDetails').fadeIn(10,function(){appUtil.ui.setEqualHeightLists('ul.details.half')});changeLinkText();">Show Full Features<b class="caret"></b></a>
+
+								      <div style="display:none" id="fullfeaturesDetails">
+								        <div class="well">
+								          <ul class="details half">
+								            <li ng-repeat="feature in phoneController.hotspots.device.specialFeatures" ng-bind-html="appUtil.ui.trustAsHtml(feature.title)"></li>               
+								          </ul>
+								        </div>
+								      </div>
+                                </section>
+                            </div>
+                            <div>
+                                <section class="specs">
+                                    <div class="hidden-sm hidden-md hidden-lg">
+                                        <h3 ng-if="appName!='vmu'" class="hotspot-features-title">
+                                            {{phoneController.hotspots.device.name}} <span>Specs</span></h3>
+                                        <h3 ng-if="appName=='vmu'" class="hotspot-features-title"><span>Specifications</span></h3>
+                                        <table class="table table-condensed table-striped">
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">Size</th>
+                                                <td>
+                                                    Height {{phoneController.hotspots.device.technicalFeatures.dimensions.height}},
+                                                    Width {{phoneController.hotspots.device.technicalFeatures.dimensions.width}},
+                                                    Depth {{phoneController.hotspots.device.technicalFeatures.dimensions.depth}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Weight</th>
+                                                <td>{{phoneController.hotspots.device.technicalFeatures.dimensions.weight}}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Memory</th>
+                                                <td>{{phoneController.hotspots.device.memory}}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Battery</th>
+                                                <td ng-bind-html="appUtil.ui.trustAsHtml(phoneController.hotspots.device.technicalFeatures.battery.talking_time)"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Battery Type</th>
+                                                <td>{{phoneController.hotspots.device.technicalFeatures.battery.battery_type}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Removable</th>
+                                                <td>{{phoneController.hotspots.device.technicalFeatures.battery.removable}}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Processor</th>
+                                                <td>{{phoneController.hotspots.device.processor}}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">OS</th>
+                                                <td>{{phoneController.hotspots.device.os}}</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="hidden-xs">
+                                        <h3 ng-if="appName!='vmu'" class="hotspot-features-title">
+                                            {{phoneController.hotspots.device.name}} <span>Specs</span></h3>
+                                        <h3 ng-if="appName=='vmu'" class="hotspot-features-title"><span>Specifications</span></h3>
+
+                                        <div class="pull-left lists">
+                                            <ul>
+                                                <p><span>Size &amp; Weight</span></p>
+                                                <li><span>Height</span>{{phoneController.hotspots.device.technicalFeatures.dimensions.height}}
+                                                </li>
+                                                <li><span>Width</span>{{phoneController.hotspots.device.technicalFeatures.dimensions.width}}
+                                                </li>
+                                                <li><span>Weight</span>{{phoneController.hotspots.device.technicalFeatures.dimensions.weight}}
+                                                </li>
+                                                <li><span>Depth</span>{{phoneController.hotspots.device.technicalFeatures.dimensions.depth}}
+                                                </li>
+                                                <p><span>Memory<span class="glyphicon glyphicon-info-sign"
+                                                                     style="display:inline;padding-left:5px;font-size:11px;"
+                                                                     data-delay='{"show":"0", "hide":"3000"}'
+                                                                     data-toggle="tooltip" data-placement="right"
+                                                                     title="" data-html="true"
+                                                                     data-original-title="Portion of memory occupied by existing content.<a href='javascript:window.scrollTo(0,document.body.scrollHeight);' style='font-size:10px;'>Learn More</a>"></span></span>{{phoneController.hotspots.device.memory}}
+                                                </p>
+
+                                                <p><span>Operating System</span>{{phoneController.hotspots.device.os}}
+                                                </p>
+                                            </ul>
+                                            <ul>
+                                                <p><span>Battery</span></p>
+                                                <li><span>Battery Life</span>{{phoneController.hotspots.device.technicalFeatures.battery.talking_time}}
+                                                </li>
+                                                <li><span>Battery Type</span>{{phoneController.hotspots.device.technicalFeatures.battery.battery_type}}
+                                                </li>
+                                                <li><span>Removable</span>{{phoneController.hotspots.device.technicalFeatures.battery.removable}}
+                                                </li>
+                                                <p><span>Processor</span>{{phoneController.hotspots.device.processor}}
+                                                </p>
+                                            </ul>
+                                        </div>
+                                        <img class="hotspotImage" onload="$(this).show()"
+                                             alt="{{phoneController.hotspots.device.brand}} {{phoneController.hotspots.device.name}}"
+                                             ng-src="{{phoneController.hotspots.device.specificationImage}}">
+                                    </div>
+                                </section>
+                            </div>
+                            <div ng-if="appName=='vmu'">
+	                            <section class="inthebox" style="background-image:url({{phoneController.hotspots.device.iiboxImage}})">
+							      <h3 class="hotspot-features-title">What's in the Box</h3>
+							      <ul class="details {{appName=='spp'?'half':''}}" style="list-style-type:disc!important;">
+							        <li ng-repeat="feature in phoneController.hotspots.device.technicalFeatures['whats_included']">
+                                          <span>{{feature}}</span>
+							        </li>
+							      </ul>
+							    </section>
+						    </div>
+                            <div>
+                                <section class="userguides">
+                                    <h3 class="hotspot-features-title">User Guides &amp; Support</h3>
+
+                                    <p>Want to know everything there is to know about this phone? Learn everything, from
+                                        setting up your email to managing all of your games and applications.</p>
+                                    <a class="btn btn-lg btn-primary" ng-show="appName=='bst'" href="http://devicehelp.boostmobile.com/" name="place" target="_blank">Device Support</a>
+                                    <a class="btn btn-lg btn-primary" ng-show="appName=='spp'" href="http://support.sprint.com/support/devicepage?INTNAV=LeftNav:Support:Devices#!/" name="place" target="_blank">Device Support</a>
+                                    <a class="btn btn-lg btn-primary" ng-show="appName=='vmu'" href="http://devicehelp.virginmobileusa.com/" name="place" target="_blank">Device Support</a>
+                                </section>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+						<div class="col-md-4" ng-if="appName=='bst'">
+							<section>
+								<h3>How it works</h3>
+								<ul class="features howitworks hotspot">
+									<li>Order by phone, online or in a store.</li>
+									<li>When you get your phone, activate a no-contract plan online.</li>
+								</ul>
+							</section>
+							<section ng-show="phoneController.hotspots.device.isRedVentures">
+								<banner-item  url="get_banner_phone_details" extraheaders="{RedVentures:true,brandId:appName}" index="0" options="orderbyphone,no_url" ></banner-item>
+							</section>
+							<section ng-show="!phoneController.hotspots.device.isRedVentures">
+								<banner-item  url="get_banner_phone_details" extraheaders="{RedVentures:false,brandId:appName}" index="0" options="orderbyphone,no_url" ></banner-item>
+							</section>	
+							<section class="coverage askedquestions">
+								<h3>We've got you covered</h3>
+								<img src="img/sprint_logo.png">
+								<p>Boost Mobile® is powered by the Nationwide Sprint® Network.</p>
+								<a class="btn btn-default" href="{{pathMap._coverageMap._hash}}" target="_blank">Check Coverage</a>
+							</section>
+						</div>
+						<div class="col-md-4" ng-if="appName=='vmu'">
+
+							<div class="aside_box hoverable" id="aboxBeyondTalk">
+								<div class="top"></div>
+								<div class="asideboxcontent">
+									<a href="{{pathMap._hotspotDetails._hash}}{{phoneController.hotspots.device.id}}/plans/" class="link" style="padding:0!important;">
+										<banner-directive banner-id="vmu-bb2g-plan-sideBox"></banner-directive>
+									</a>
+								</div>
+								<div class="bot"></div>
+							</div>
+
+							<banner-directive banner-id="vmu-bb2g-sideBox"></banner-directive>
+
+						</div>
+					</div>
+                    <phone-hotspots-plans></phone-hotspots-plans>
+
+                    {{review_sku=phoneController.hotspots.device.sku;"";}}
+                    {{review_obj=phoneController.hotspots.device;"";}}
+                    <phone-review></phone-review>
+                    <phone-write-review></phone-write-review>
+                </div>
+            </div>
+        </section>
+        <section class="legal" ng-if="appName=='bst'">
+            <p>Offer valid from 10/20/15 – 1/25/16 only<br/>
+                Limited to new monthly accounts switching from non-Sprint related carriers on boostmobile.com. Savings
+                applied with new device purchase, while supplies last. Devices purchased from boostmobile.com must be
+                activated by 2/14/2016 to receive account credit. Cannot be exchanged, redeemed for cash, merchandise or
+                services. Excludes sales tax. Services subject to additional terms and other restrictions. See
+                boostmobile.com/accountcredit for details. ©2016 Boost Worldwide, Inc.
+                All rights reserved.<br/><br/>
+                † Visit <a href="#!/support/faq/phones-devices/enhanced-lte/">boostmobile.com/support/faq/phones-devices/enhanced-lte/</a> for more
+                details.<br/>
+                †† Claims based on internal testing; actual results may vary and depend on use, configuration and many
+                other factors, including signal strength and other usage patterns.</p>
+        </section>
+    </div>
+</section>
+
+

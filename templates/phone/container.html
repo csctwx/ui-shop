@@ -1,0 +1,49 @@
+<div id="phoneController" ng-controller="phoneController as phoneController">
+  <phone-list ng-if="app.isCurrentContext(pathMap._phones._formatedHash)"></phone-list>
+  <phone-hotspots ng-if="app.isCurrentContext(pathMap._hotspots._formatedHash)"></phone-hotspots>
+  <!--<phone-hotspots-list ng-if="app.isCurrentContext(pathMap._hotspotDetails._formatedHash)"></phone-hotspots-list>-->
+  <phone-hotspots ng-if="app.isCurrentContext(pathMap._hotspotDetails._formatedHash)"></phone-hotspots>
+  <phone-deals ng-if="app.isCurrentContext(pathMap._phoneDeals._formatedHash)"></phone-deals>
+  <phone-acc-phones ng-if="app.isCurrentContext(pathMap._phoneAccessories._formatedHash)"></phone-acc-phones>
+  <phone-acc-list ng-if="app.isCurrentContext(pathMap._accessoriesList._formatedHash)"></phone-acc-list>
+  <phone-details ng-if="app.isCurrentContext(pathMap._phoneDetails._formatedHash)"></phone-details>
+  <phone-compare ng-if="app.isCurrentContext(pathMap._phoneCompare._formatedHash)"></phone-compare>
+
+  
+  <div class="modal fade" id="phoneImageDialog" tabindex="-1" role="dialog" aria-labelledby="ccOverlayLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="height:60px;color:#f7901e" ng-class="{'zoom-image': appName=='vmu'}">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+          <h2 class="modal-title" id="myModalLabel">
+           <!--{{phoneController.details.data.displayBrand}} -->
+            {{phoneController.details.data.name}}
+            {{phoneController.details.data.selectedColor}}
+            {{phoneController.details.data.selectedMemory}}
+            Photos & Videos
+          </h2>
+        </div>
+        <div class="modal-body" style="height:450px">
+          <phone-details-dialog></phone-details-dialog>   
+        </div>              
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="hotspotsImageDialog" tabindex="-1" role="dialog" aria-labelledby="ccOverlayLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="height:60px;color:#f7901e">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title" id="myModalLabel">
+            {{phoneController.hotspots.deviceImgData.name}}
+            Photos & Videos
+          </h2>
+        </div>
+        <div class="modal-body" style="height:450px">
+          <phone-hotspots-details-dialog></phone-hotspots-details-dialog>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

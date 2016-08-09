@@ -1,0 +1,158 @@
+{  
+   "responses":{  
+      "response":[  
+         {  
+            "@uuid":"fc3cfaa2-1f79-40a8-81ad-d981eaba9d83",
+            "@class":"",
+            "@name":"Section 19029",
+            "@code":"0",
+            "deviceDetailsResponse":{  
+               "deviceDetails":{  
+                  "deviceDetail":{  
+                     "associatedAccessoryId":{  
+                        "$":"660543352785,846127163453,848467026320"
+                     },
+                     "isRedVentures":{  
+                        "$":"true"
+                     },
+                     "disclaimerMini":{  
+                        "$":"Limit 2 phones per customer."
+                     },
+                     "disclaimerFull":{  
+                        "$":"TM and &reg; 2015 Apple Inc. All rights reserved.<br>Promotional pricing available only for select phones directly from boostmobile.com. Limited time only, while supplies last."
+                     },
+                     "sku":{  
+                        "$":"IPH6SBT16GLD"
+                     },
+                     "promotions":{  
+                        "promotion":{  
+                           "message":{  
+                              "title":{  
+                                 "$":"FREE SHIPPING.  All the time."
+                              },
+                              "body":{  
+                                 "$":"Get a $50 account credit when you switch to Boost Mobile."
+                              }
+                           },
+                           "isDefault":{  
+                              "$":"false"
+                           },
+                           "webOnly":{  
+                              "$":"false"
+                           },
+                           "legal":{  
+                              "$":"<a href=\"#!\/accountcredit\/\">Learn more about the $50 credit<\/a>"
+                           },
+                           "dailyPlan":{  
+                              "$":"dailyplan"
+                           },
+                           "monthlyPlan":{  
+                              "$":"monthlyplan"
+                           }
+                        }
+                     },
+                     "phoneCondition":{  
+                        "$":"new"
+                     },
+                     "name":{  
+                        "$":"Apple® iPhone® 6s"
+                     },
+                     "deviceType":{  
+                        "$":"phone"
+                     },
+                     "id":{  
+                        "$":"apple-iphone-6s"
+                     },
+                     "brand":{  
+                        "$":"Apple®"
+                     },
+                     "color":{  
+                        "$":"gold"
+                     },
+                     "memory":{  
+                        "$":"16GB"
+                     },
+                     "purchaseLimit":{  
+                        "$":"2"
+                     },
+                     "price":{  
+                        "$":"549.99"
+                     },
+                      "ibEligibilityInd": {
+                        "$": "true"
+                      },
+                      "ibEmi": {
+                        "$": "20.00"
+                      },
+                      "loanTerm": {
+                        "$": "15"
+                      },
+                      "loanAmount": {
+                        "$": "300.00"
+                      },
+                      "downPaymentAmount": {
+                        "$": "50.00"
+                      },
+                      "lastInstallmentDueDate": {
+                        "$": "05/01/2018"
+                      },
+                     "deviceViewImages":{  
+                        "deviceViewImage":[  
+                           {  
+                              "fileName":{  
+                                 "$":"hero-gold"
+                              },
+                              "uRI":{  
+                                 "$":"http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/c\/j\/A-KQFleJYfxQ2_phoneDetails_1_hero-gold.png?action=access&assetId=A-KQFleJYfxQ2"
+                              }
+                           },
+                           {  
+                              "fileName":{  
+                                 "$":"all"
+                              },
+                              "uRI":{  
+                                 "$":"http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/j\/g\/c\/A-KQFleJYfxQ2_phoneDetails_2_all.png?action=access&assetId=A-KQFleJYfxQ2"
+                              }
+                           },
+                           {  
+                              "fileName":{  
+                                 "$":"front"
+                              },
+                              "uRI":{  
+                                 "$":"http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/j\/c\/c\/A-KQFleJYfxQ2_phoneDetails_3_front.png?action=access&assetId=A-KQFleJYfxQ2"
+                              }
+                           },
+                           {  
+                              "fileName":{  
+                                 "$":"skew"
+                              },
+                              "uRI":{  
+                                 "$":"http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/e\/f\/A-KQFleJYfxQ2_phoneDetails_4_skew.png?action=access&assetId=A-KQFleJYfxQ2"
+                              }
+                           }
+                        ]
+                     },
+                     "checkoutImage":{  
+                        "fileName":{  
+                           "$":"shop-rosegold"
+                        },
+                        "uRI":{  
+                           "$":"http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/b\/e\/A-KQFleJYfxQ2_shopGrid_1_shop-rosegold.png?action=access&assetId=A-KQFleJYfxQ2"
+                        }
+                     },
+                     "inventory":{  
+                        "$":"in-stock"
+                     }
+                  }
+               },
+               "status":{  
+                  "$":"0"
+               },
+               "description":{  
+                  "$":"SUCCESS"
+               }
+            }
+         }
+      ]
+   }
+}

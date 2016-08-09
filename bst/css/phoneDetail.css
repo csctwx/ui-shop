@@ -1,0 +1,670 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+cufon{overflow:hidden;}
+#phoneDetail .add_to_cart{width:140px;font-size:16px;float: right;padding-top: 3px;padding-bottom: 3px;}
+.enderlegal {width: 960px;margin-right: auto;margin-left: auto;padding-bottom: 4px;color: #818386;}
+
+/*.phoneDescriptionCPO .phonePromo {
+background-image: url('/_themes/libs/images/30perc_Tag.png')!important;
+background-position: 0px 0px!important;
+}*/
+
+
+/* Phone Detail Overlay 
+*************************************************************/
+#lbGallery{display:none}
+#cboxLoadedContent #lbGallery{display:block !important}
+.loading{text-align:center;padding-top:300px}
+.iframeWhite{background-color:#fff !important}
+.iframeWhite #container,.iframeWhite #body{width:745px !important}
+.iframeWhite header,.iframeWhite footer{display:none}
+#cboxLoadedContent #media{display:block !important}
+#media{float:left;margin:0;padding:35px;width:675px;background:#fff}
+#media h1{float:left;width:100%;margin:0;padding:0 0 35px;color:#000;font-size:22px !important;font-weight:700;line-height:1.4em}
+#media ul.moreViews{float:left;width:40px;margin:0;padding:0;left:0;top:20px;list-style:none}
+#media ul.moreViews li{float:left;display:inline-block;margin:0;text-align:center;border:2px solid #fff;background-color:rgba(0,0,0,.1);-webkit-transition:background-color .2s ease-in-out 0;-moz-transition:background-color .2s ease-in-out 0;-o-transition:background-color .2s ease-in-out 0;-ms-transition:background-color .2s ease-in-out 0;transition:background-color .2s ease-in-out 0}
+#media ul.moreViews li.selected{border:2px solid #999}
+.lt-ie9 #media ul.moreViews li{background-color:none;background-image:url('/shop/phones/_images/ltie9_overlay_bg.png');background-repeat:repeat-x}
+#media ul.moreViews li:hover{background-color:rgba(0,0,0,.4);-webkit-transition:background-color .2s ease-in-out 0;-moz-transition:background-color .2s ease-in-out 0;-o-transition:background-color .2s ease-in-out 0;-ms-transition:background-color .2s ease-in-out 0;transition:background-color .2s ease-in-out 0}
+.lt-ie9 #media ul.moreViews li:hover{background-color:none;background-image:url('/shop/phones/_images/ltie9_overlay_bg.png');background-repeat:repeat-x;background-position:left bottom}
+#media ul.moreViews li a{float:left;display:inline-block;width:40px;height:40px;text-align:center;text-decoration:none}
+#media ul.moreViews li.virtual a{height:27px;margin:0;padding:13px 0 0;color:#000;font-size:13px;}
+#media ul.moreViews li.virtual a:hover{color:#67cfcd}
+#media #selectedView{float:left;margin:0 0 0 35px;padding:0;width:550px;height:570px}
+#media ul.moreViews li a span{margin-top:12px;color:#f7901e;font-size:16px;display:inline-block}
+
+/* Phone Detail Page, Universal
+*************************************************************/
+#phoneContent{background-color:#fff;clear: both;}
+/*#phoneDetail{float:left;margin:0;padding:0;width:960px;padding-top: 10px;background-image:url('/shop/phones/_images/bg-bk-transparent-long.png');background-repeat:repeat-y;background-position: right top;}*/
+
+#phoneDetail .phoneIntro{float:left;margin:0;width:960px;min-height:380px;padding-bottom:40px;}
+
+#phoneDetail .phonedetailsPrice .installmentBilling {
+  display:inline-block;
+  margin-top:5px;
+}
+#phoneDetail .phonedetailsPrice .installmentBilling p {
+  margin:0px;
+  padding:0px;
+  font-size:18px;
+  line-height:1.0
+}
+#phoneDetail .phonedetailsPrice .installmentBilling p:last-of-type{
+  font-size:14px;
+}
+#phoneDetail .phonedetailsPrice .phoneFinalPrice {
+  padding:0px 5px 0px 5px;
+  margin:5px 0 0 0;"
+}
+#phoneDetail .phonedetailsPrice div {
+  float:right;
+  margin:10px 0 0 0;
+  padding:0px;
+}
+#phoneDetail .phonedetailsPrice div ul {
+  margin:0px;
+  padding:0px;
+  position:absolute;
+  left:-105px;
+  bottom:-54px;
+}
+#phoneDetail .phonedetailsPrice div ul li a:hover {
+  background:#67CFCD;
+  color:#FFFFFF;
+}
+
+body{background-image: url(/shop/phones/_images/detail_bg.png);background-position: center 120px;background-repeat: no-repeat;}
+    .page-samsung-galaxy-sii-4g-titanium,
+    .page-samsung-galaxy-sii-4g-white{background-image : url(/shop/phones/_images/galaxy-product-background.png)}
+    .page-zte-warp-sync, .page-sharp-aquos-crystal{background-image : url(/shop/phones/_images/detail_bg_sync.png) }
+    .page-kyocera-hydro-preowned, .page-kyocera-hydro{background-image : url(/shop/phones/_images/hydro-product-background.png)}
+
+ul.moreViews{position:relative;top:0;left:40px;float:left;width:40px;margin:0;padding:0;list-style:none}
+ul.moreViews li{float:left;display:inline-block;margin:0 0 2px 0;text-align:center;background-color:rgba(100,100,100,.5);-webkit-transition:background-color .2s ease-in-out 0;-moz-transition:background-color .2s ease-in-out 0;-o-transition:background-color .2s ease-in-out 0;-ms-transition:background-color .2s ease-in-out 0;transition:background-color .2s ease-in-out 0}
+#phoneDetail ul#blue{display:none}
+.lt-ie9 ul.moreViews li{background-color:none;background-image:url('/shop/phones/_images/ltie9_detail_bg.png');background-repeat:repeat-x}
+ul.moreViews li:hover{background-color:rgba(100,100,100,.9);-webkit-transition:background-color .2s ease-in-out 0;-moz-transition:background-color .2s ease-in-out 0;-o-transition:background-color .2s ease-in-out 0;-ms-transition:background-color .2s ease-in-out 0;transition:background-color .2s ease-in-out 0}
+.lt-ie9 #phoneDetail ul.moreViews li:hover{background-color:none;background-image:url('/shop/phones/_images/ltie9_detail_bg.png');background-repeat:repeat-x;background-position:left bottom}
+ul.moreViews li a{float:left;display:inline-block;width:40px;height:40px;text-align:center;text-decoration:none;outline:0}
+ul.moreViews li a span{margin-top:12px;color:#f7901e;font-size:16px;display:inline-block}
+ul.moreViews li.virtual a{height:27px;margin:0;padding:13px 0 0;color:#fff;font-size:13px;}
+ul.moreViews li.virtual a:hover{color:#67cfcd}
+#phoneDetail .phoneDescription{float:left;width:455px;position:relative;top:0;left:430px;padding:25px;padding-right:10px;}
+    #phoneDetail .promo-message{color: #cbcbcb;margin-top: 10px;font-size: 12px;}
+
+#phoneDetail .phoneDescription h1{width:100%;margin:0;margin-bottom:10px;padding:0;font-size:33px !important;line-height:1em;}
+#RECBT5C16YK .phoneDescription h1{width:100%;margin:0;margin-bottom:10px;padding:0;font-size:31px !important;line-height:1em;}
+#phoneDetail .phoneDescription p, #phoneDetail .phoneDescription .promoCode{width:100%;margin:0;padding:0;color:#ccc;font-size:12px;line-height:1.2em;color:#cbcbcb;}
+#phoneDetail ul.colorpicker{float:left;margin:13px 20px 0 0;padding:6px 0 6px 6px;list-style:none;background-color:#474747}
+#phoneDetail ul.colorpicker li{float:left;display:inline-block;width:18px;height:18px;padding:0 5px 0 0}
+#phoneDetail ul.colorpicker li a{width:14px;height:14px;display:block;text-indent:-9999px;border:2px solid #474747}
+#phoneDetail ul.colorpicker li a.selected{border:2px solid #67cfcd}
+#phoneDetail ul.colorpicker li a:hover{border:2px solid #f7901e}
+#phoneDetail .phoneDescription ul.features{width:420px;margin:0;padding:0;list-style:none}
+#phoneDetail .phoneDescription ul.features li{float:left;width:35px;height:50px;padding-right:6px;color:#474747;text-indent:-9999em;background:url('/shop/phones/_images/icons/feature_icons_large.png') no-repeat}
+#phoneDetail .phoneDescription ul.features li.android{background-position:left -8px}
+#phoneDetail .phoneDescription ul.features li.bb{background-position:left -224px}
+#phoneDetail .phoneDescription ul.features li.threeG{background-position:left -80px}
+#phoneDetail .phoneDescription ul.features li.fourG{background-position:left -152px}
+#phoneDetail .phoneDescription ul.features li.headset{background:url('/_themes/libs/images/2012/gs2/hero_freeheadset_icon.png') no-repeat;background-position:0 18px;width:110px}
+#phoneDetail .phoneDescription ul.features li.freeactivation{float:left;width:275px;height:30px;padding-right:6px;margin-top:20px;color:#474747;text-indent:-9999em;background:url('/shop/phones/_images/icons/feature_promotext_large.png') no-repeat;cursor:pointer}
+#features-modal{padding:20px;width:400px;display:none}
+#features-modal .legal{font-size:10px;color:#ccc}
+#cboxLoadedContent #features-modal{display:block}
+#phoneDetail .phoneDescription ul.features li.freeactivation{background-position:left 0}
+#phoneDetail .phoneDescription ul.colors{position:absolute;top:0;left:-70px;list-style:none}
+#phoneDetail .phoneDescription ul.colors li{height:14px;width:14px;margin-bottom:8px}
+#phoneDetail .phoneDescription ul.colors li.black{background-color:#000}
+#phoneDetail .phoneDescription ul.colors li.blue{background-color:#00f}
+#phoneDetail .phoneDescription ul.colors li a{height:14px;width:14px;display:block;text-indent:-9999px;border:1px solid #fff}
+#phoneDetail .phoneDescription ul.colors li a.colorCurr{border:1px solid red}
+
+#phoneDetail .phoneDescription .reviews_row{margin-bottom:15px;}
+        #phoneDetail .phoneDescriptionCPO .reviews_row{position:absolute;right:15px;top:72px;}
+        #phoneDetail .phoneDescriptionCPO h1{margin-bottom: 15px;}
+#phoneDetail .phoneDescription .promoCode{margin-top:10px;}
+#phoneDetail .phoneDescription .promoCode span{color:#f7901e}
+
+#phoneDetail .phoneDescription .addPhone{padding-top: 15px;margin-top: 15px;background:url('/shop/phones/_images/border-bottom-dotted.png') repeat-x left top;}
+#phoneDetail .phoneDescription .phonePrice{}
+#phoneDetail .phoneDescription .phoneRegPrice{margin-right:25px;float: right;font-size:32px;line-height:1;color:#f7901e;}
+    
+.priceblock-callout{font-size:14px;font-weight:bold;margin-top: 15px;width: 283px;}
+    .priceblock-callout span{float:right;}
+    .priceblock-callout .retail{color:#989898;}
+    .priceblock-callout .web{color:#cbcbcb;}
+#phoneDetail .phoneDescription .phoneSalePrice{clear:both;float:left;height:40px;font-size:20px;line-height:1;color:#f7901e;text-align:right}
+#phoneDetail .phoneDescription .phoneHiddenSalePrice{clear:both;float:left;height:40px;font-size:13px;line-height:1.4;color:#f7901e;text-align:right;text-transform:uppercase}
+#phoneDetail .addToCart,#phoneDetail .outOfStock{float:left;height:40px;margin:14px 0 15px;padding-right:30px;background:url('/shop/_images/icons/sprite_shop_icons.png') -157px -372px no-repeat}
+#phoneDetail .addToCart a{float:left;width:140px;margin:0}
+#phoneDetail .addToCart a span{float:left;width:120px;padding:6px 0 7px 20px;color:#fff;font-size:16px;background:url('/shop/phones/_images/icons/white_arrow.png') 112px 11px no-repeat}
+#phoneDetail .outOfStock a{float:left;width:147px;margin:0}
+#phoneDetail .outOfStock a span{float:left;width:120px;padding:6px 0 7px 20px;color:#fff;font-size:16px;background:url('/shop/phones/_images/icons/white_arrow.png') 119px 11px no-repeat}
+#phoneDetail .phoneIntro .specialNote{float:right;margin:0;width:470px;color:#cbcbcb;font-size:10px;text-align:right;padding-right: 10px;padding-left: 10px;}
+
+#findinstoremodal{background-color:#fff;padding:20px;width: 740px;}
+    
+    #findinstoremodal #fismtop{padding:20px;border: 1px solid #ccc;margin-bottom:20px;}
+    #findinstoremodal #fismtop h2{margin-bottom: 10px;margin-top:40px;}
+    #findinstoremodal #fismtop img{float:left;margin-right: 15px;}
+    #findinstoremodal #fismtop p{font-size:16px;color: #6c6b6b;}
+    #fismcontent tr:first-child{border-top: 1px dotted #a5a4a5;}
+    #findinstoremodal .fismbottom-h2{font-size:18px;}
+     #fismbottom .cell{padding-left:0px;}
+    #findinstoremodal .fisColumn{float:left;width:50%;text-align:center;padding-bottom: 40px;padding-top: 20px;}
+        #findinstoremodal .fisColumn h3{color:#f7901e;font-size:16px;margin-bottom: 0px;}
+        #findinstoremodal .fisColumn p{padding-bottom: 10px;font-size: 13px;margin-top: 5px;}
+        #findinstoremodal .fisColumn a{padding-left:10px;padding-right:10px;}
+    
+#findInStore{text-align:right;font-size:12px;margin-bottom:15px;}
+    #locatorNormal{background-color:#fff;}
+    #locatorNormal .preferred{background-color:#fff;}
+    #locatorNormal .showing-results{display:none;}
+#phoneDetail ul.tabNav{position:relative;top:0;left:0;z-index:11;float:left;width:960px;margin:0;padding:0;list-style:none;min-height:48px;}
+#phoneDetail ul.tabNav li{float:left;position:relative;display:none;height:36px;margin:10px 6px 0 0;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0;behavior:url(/_themes/libs/PIE.htc);min-width: 234px;}
+    #phoneDetail.type-wifi-hotspots ul.tabNav li{min-width: 314px;}
+    #phoneDetail ul.tabNav li:last-child{margin-right:0px;}
+
+#phoneDetail ul.tabNav li a{float:left;display:inline-block;width: 100%;height:36px;color:#d2cfcf;font-size:17px;line-height:36px;text-decoration:none;text-align:center}
+#phoneDetail ul.tabNav li.gradient-teal a{color:#fff}
+#phoneDetail ul.tabNav li.selected{border-top:2px solid #e5e5e5;border-right:2px solid #e5e5e5;border-left:2px solid #e5e5e5;height:46px;margin-top:0;background:#fff !important;background-color:#fff !important}
+#phoneDetail ul.tabNav li.selected a{width:100%;height:48px;color:#000;font-size:17px;line-height:48px;cursor:default}
+#phoneDetail ul.tabNav li.last{margin-right:0}
+
+/*
+#phoneDetail ul.tabNav li a{float:left;display:inline-block;width:233px;height:36px;color:#d2cfcf;font-size:17px;line-height:36px;text-decoration:none;text-align:center}
+#phoneDetail ul.tabNav li.gradient-teal a{color:#fff}
+#phoneDetail ul.tabNav li.selected{border-top:2px solid #e5e5e5;border-right:2px solid #e5e5e5;border-left:2px solid #e5e5e5;height:46px;margin-top:0;background:#fff !important;background-color:#fff !important}
+#phoneDetail ul.tabNav li.selected a{width:234px;height:48px;color:#000;font-size:17px;line-height:48px;cursor:default}
+#phoneDetail ul.tabNav li.last{margin-right:0;width: 236px;}
+*/
+#phoneInfoGraphic{position:absolute;left:100px;top:0px;display:none;}
+#phoneDetail .phoneInfo{position:relative;top:-2px;left:0;float:left;clear:both;width:956px;margin-bottom:20px;padding:0;background:#fff;border:2px solid #e5e5e5;display:none;}
+#phoneDetail .phoneFullCol{float:left;width:956px}
+#phoneDetail .phoneLeftCol{float:left;width:690px;margin-right:8px;padding-top:5px;border-right:2px solid #e5e5e5;background:#fff url('/shop/phones/_images/whats_included_bg.png') left bottom repeat-x;min-height:573px}
+#phoneDetail .phoneLeftCol h2,#phoneDetail .phoneFullCol h2{margin:20px 40px 6px;padding:0;color:#f7901e;font-size:20px;line-height:1.3em}
+#phoneDetail .phoneLeftCol h3{margin:10px 40px 8px;padding:0;color:#000;font-size:18px;line-height:1.3em}
+#phoneDetail .phoneRightCol{float:left;width:256px;padding-top:10px;}
+    #phoneDetail .phoneRightCol p{margin-top:0px;}
+#phoneDetail ul.available_plans{float:left;width:248px;margin:0 8px 35px 0;padding:8px 0 6px;list-style:none;border-bottom:2px solid #e5e5e5}
+#phoneDetail ul.available_plans li{float:left;width:233px;margin:0;padding:7px 0 10px 15px;color:#fff;font-size:14px;line-height:18px;border-bottom:1px solid #fff}
+#phoneDetail ul.available_plans li span,#phoneDetail ul.available_plans li a{float:left;width:230px;color:#fff;background:url('/shop/phones/_images/icons/white_arrow.png') 210px 4px no-repeat}
+#phoneDetail ul.available_plans li.no_contract_plans{height:72px;padding:0 0 0 15px}
+#phoneDetail ul.available_plans li.no_contract_plans span{padding:18px 0;background:url('/shop/phones/_images/diag_lines.png') right top no-repeat}
+#phoneDetail .phoneRightCol h3{margin:0;margin-bottom:20px;padding:0 10px 0 15px;color:#f7901e;font-size:20px;line-height:1.2em}
+#phoneDetail ul.how_it_works,#phoneDetail ul.comes_with,#phoneDetail ul.downloads_updates,#phoneDetail ul.user_manuals,#phoneDetail ul.plan_help{width:228px;margin:0 8px 30px 0;padding:0px 10px 30px;list-style:none;border-bottom:2px solid #e5e5e5;}
+    
+    #phoneDetail .phoneRightCol .red-ventures{width:228px;margin:0 8px 15px 0;padding:15px 15px 30px;list-style:none;border-bottom:2px solid #e5e5e5;}
+        #phoneDetail .phoneRightCol .red-ventures h3{float:none;padding-left:0px;}
+        #phoneDetail .phoneRightCol .red-ventures p{font-size:18px;margin-top:10px;}
+
+#phoneDetail ul.how_it_works{border-bottom:2px solid #e5e5e5;  padding-bottom: 0px;}
+    #phoneDetail ul.how_it_works li{margin:0;padding: 0px 0 30px 52px;font-size:13px;line-height:16px;background:url('/shop/_images/icons/sprite-how-it-works.png') 0px 0px no-repeat;}
+        #phoneDetail ul.how_it_works li.l2{background-position:0px -122px;}
+        #phoneDetail ul.how_it_works li.l3{background-position:0px -252px;}
+    
+#phoneDetail ul.how_it_works_hotspot li{background:url('/shop/_images/icons/sprite-how-it-works-hotspot.png') 0px 0px no-repeat;  }
+    #phoneDetail ul.how_it_works_hotspot li.l2{background-position:0px -106px;}
+
+    #phoneDetail .phoneRightCol hr{border-top:2px solid #e5e5e5;margin-right: 10px;}
+#phoneDetail ul.comes_with{border-bottom:2px solid #e5e5e5}
+.sidebar-box{float: left;border-bottom:2px solid #e5e5e5;margin-bottom:10px;}
+.sidebar-andyapp{float: left;border-bottom:0px solid #e5e5e5;margin-bottom:10px;}
+
+    
+#phoneDetail ul.comes_with li{width:214px;margin:0;padding:7px 0 7px 30px;color:#000;font-size:14px;line-height:16px;border-bottom:1px solid #fff;background:url('/shop/phones/_images/icons/check_orange.png') 5px center no-repeat}
+#phoneDetail ul.plan_help li{margin:7px 0;padding:0}
+#phoneDetail ul.plan_help li h4{margin:0;padding:0}
+#phoneDetail ul.plan_help li h4 a{padding-left:25px;color:#000;font-size:18px;line-height:1.3em;background:url('/_images/icons/sprite_action_icons.png') -45px -244px no-repeat;text-decoration:none;}
+#phoneDetail ul.plan_help li h4 a:hover{color:#67cfcd;background-position:-44px -284px}
+#phoneDetail ul.plan_help li h4 a.selected{color:#f7901e;background-position:-44px -362px}
+#phoneDetail ul.plan_help li div{display:none}
+#phoneDetail ul.plan_help li div p{margin:15px 0 0;padding:0 25px;color:#525252;font-size:12px;line-height:1.3em}
+#phoneDetail ul.downloads_updates li,#phoneDetail ul.user_manuals li{width:214px;margin:0;padding:0;color:#000;font-size:13px}
+#phoneDetail ul.downloads_updates li.empty{padding-left:5px;color:#000;font-size:13px}
+#phoneDetail ul.downloads_updates li a.dlink{display:inline-block;padding:7px 0 7px 30px;color:#000;font-size:14px;line-height:16px;background:url('/shop/phones/_images/icons/arrow_right.png') 5px 5px no-repeat;text-decoration:none}
+#phoneDetail ul.downloads_updates li a.dlink:hover{color:#67cfcd;background-position:5px -95px}
+#phoneDetail ul.user_manuals li a.dlink{display:inline-block;padding:7px 0 7px 30px;color:#000;font-size:13px;line-height:14px;background:url('/shop/phones/_images/icons/pdf.png') 5px center no-repeat;text-decoration:none}
+#phoneDetail ul.mobile_guides li a.dlink{background:url('/shop/phones/_images/icons/mobile.png') 5px center no-repeat}
+#phoneDetail ul.user_manuals li a.dlink:hover{color:#67cfcd}
+#phoneDetail img.sprint{margin-bottom:15px;padding:0 0 0 15px}
+#phoneDetail p.coverage{width:229px;margin:0;padding:0 0 0 15px;color:#6c6b6b;font-size:13px;line-height:1.3em}
+#phoneDetail form{float:left;padding-bottom:25px}
+/*#phoneDetail input[type='text']{float:left;width:60px;height:27px;margin:15px 10px 0 15px;padding:2px 10px;color:#525252;font-size:13px;border:0;background:url('/shop/phones/_images/input_bg.png') no-repeat}*/
+#phoneDetail a#checkCoverage, #phoneDetail .sidebar-learnmore{display:inline-block;width:145px;height:31px;margin:15px 0 25px 15px;padding:0;color:#fff;font-size:13px;line-height:28px;border:0;text-align:center;text-decoration: none;}
+
+#phoneDetail a#learnMore{float:left;display:inline-block;width:100px;height:31px;margin:15px 0 25px 15px;padding:0;color:#fff;font-size:13px;line-height:28px;border:0;text-align:center;text-decoration: none;}
+
+#phoneFeatures .legal{padding: 12px;padding-top: 0px;padding-bottom: 0px;color: #ccc;}
+#applecare{display:none;width:780px;padding:20px;float: left;font-size:12px;background-color:#fff;}
+#applecare p{width: 590px;}
+#applecare h3{font-size:18px;color:#000!important;margin-top: 0px;}
+#applecare .legal{font-size:11px;}
+#cboxLoadedContent #applecare{display:block!important;}
+/* Features/Specs tab
+*************************************************************/
+#phoneFeatures .phoneFeatures{float:left;background:#fff url('/shop/phones/_images/features_bg.png') repeat-x}
+#phoneFeatures .featureList{float:left;width:630px;margin:0;padding:14px 20px 10px 30px;list-style:none}
+#phoneFeatures .featureList .feature-entry{position:relative;min-height:46px;float:left;display:inline-block;width:305px;margin-left:10px;margin-bottom:10px;color:#525252;}
+    #phoneFeatures .featureList .feature-entry span{font-size:12px;}
+    .features-icons{position:absolute;width:35px;height:35px;background:url('/shop/phones/_images/icons/features_icons.png') no-repeat;background-position:-7px -2118px}
+    .features-content{padding-left:45px;}
+
+.featureList a,.featureList a:link,.featureList a:visited{color:#f7901e}
+.featureList a:hover{color:#6fdbdb}
+
+#phoneFeatures .hd,#phoneFeatures .hd-voice-logo, #phoneFeatures .hd-voice-2cross, #phoneFeatures .volt-hd-voice, #phoneFeatures .hd-voice-enabled-3cross, #phoneFeatures .hd-voice{background-position:-7px -2428px}
+
+#phoneFeatures .mobile-hotspot-capable{background-position:-7px -2500px}
+
+#phoneFeatures .android,#phoneFeatures .volt-4point1, #phoneFeatures .s5-android, #phoneFeatures .os-boostmax, #phoneFeatures .os-gs3, #phoneFeatures .os-motog,#phoneFeatures .android-4point1,#phoneFeatures .lg-mach-android-4point0, #phoneFeatures .icon-android, #phoneFeatures .edge-android-4point1,#phoneFeatures .warp4g-android,#phoneFeatures .prevail2-android-4point1,#phoneFeatures .f7-android-4point1,#phoneFeatures .venice-android-4point1,#phoneFeatures .android-2point3,#phoneFeatures .dual-1point2ghz,#phoneFeatures .sequent-1point4-ghz,#phoneFeatures .rush-android-4point0,#phoneFeatures .rush-1ghz,#phoneFeatures .force-android-4point0,#phoneFeatures .htc-one-android-4point0,#phoneFeatures .android-4point0,#phoneFeatures .android-4point3,#phoneFeatures .android-4point0-or-higher{background-position:-7px -17px}
+#phoneFeatures .camera,#phoneFeatures .verve-camera,#phoneFeatures .icon-camera, #phoneFeatures .volt-8mp-camera, #phoneFeatures .s5-camera, #phoneFeatures .boost-max-camera, #phoneFeatures .camera-motog,#phoneFeatures .mach-video,#phoneFeatures .mach-camera,#phoneFeatures .warp-camera,#phoneFeatures .s3-8mpcamera-1080video,#phoneFeatures .f7-8mp-camera,#phoneFeatures .edge-camera,#phoneFeatures .edge-video-camera,#phoneFeatures .prevail2-front-camera,#phoneFeatures .prevail2-5mpcamera,#phoneFeatures .s3-camera-2point-front,#phoneFeatures .camera-2-mp,#phoneFeatures .camera-5-mp-video,#phoneFeatures .camera-5-mp-zoom-video,#phoneFeatures .camera-5-mp-zoom-video2,#phoneFeatures .camera-3point0,#phoneFeatures .camera-3point2-flash,#phoneFeatures .camera-3point2-still,#phoneFeatures .camera-3point2-front,#phoneFeatures .camera-1point3-zoom,#phoneFeatures .digital-camera,#phoneFeatures .camera-2-mp-zoom,#phoneFeatures .camera-2-mp-zoom-novideo,#phoneFeatures .camera-3point0Rear,#phoneFeatures .camera-8point-1080,#phoneFeatures .camera-2point-front,#phoneFeatures .sequent-5mp-cam-video,#phoneFeatures .sequent-1point3-camera,#phoneFeatures .rush-3mp-camera,#phoneFeatures .rush-1point3-front-camera,#phoneFeatures .venice-720p-video,#phoneFeatures .venice-5mp-front,#phoneFeatures .htc-one-5mp,#phoneFeatures .force-5mp-camera,#phoneFeatures .camera-2-mp-zoom-bb{background-position:-7px -297px}
+#phoneFeatures .touchscreen, #phoneFeatures .volt-touchscreen, #phoneFeatures .icon-display, #phoneFeatures .boostmax-touchscreen, #phoneFeatures .f3-touchscreen, #phoneFeatures .display-motog,#phoneFeatures .screen-size-3point2{background-position:-7px -577px}
+#phoneFeatures .hotspot{background-position:-7px -857px}
+#phoneFeatures .windows{background-position:-7px -2562px}
+#phoneFeatures .cortana{background-position:-8px -2605px}
+#phoneFeatures .battery{background-position:-7px -2649px}
+#phoneFeatures .memory{background-position:-7px -1417px}
+#phoneFeatures .display{background-position:-7px -2732px}
+#phoneFeatures .voice-commands,#phoneFeatures .dura-speaker,#phoneFeatures .speakerphone-voice-activated-dialing{background-position:-7px -1137px}
+#phoneFeatures .16gb-internal-memory,#phoneFeatures .expandable-memory{background-position:-7px -1417px}
+#phoneFeatures .gps{background-position:-7px -1697px}
+#phoneFeatures .galaxys2-google-play,#phoneFeatures .force-google-play,#phoneFeatures .htc-one-google-play,#phoneFeatures .google-play{background-position:-6px -87px}
+#phoneFeatures .google-integration{background-position:-6px -367px}
+#phoneFeatures .verve-bluetooth,#phoneFeatures .bluetooth-motog,#phoneFeatures .dura-blue, #phoneFeatures .bluetooth,#phoneFeatures .f7-bluetooth,#phoneFeatures .warp-bluetooth,#phoneFeatures .venice-bluetooth,#phoneFeatures .sequent-bluetooth-4point0,#phoneFeatures .rush-bluetooth-4point0,#phoneFeatures .bluetooth-mono{background-position:-6px -647px}
+#phoneFeatures .music,#phoneFeatures .music-player,#phoneFeatures .htc-one-beats-audio,#phoneFeatures .enhanced-mp3{background-position:-7px -927px}
+#phoneFeatures .s5-display, #phoneFeatures .s3-4oint8-screen,#phoneFeatures .screen-size-4point0,#phoneFeatures .warp-display,#phoneFeatures .screen-size-4point3,#phoneFeatures .screen-size-4point0-hd,#phoneFeatures .screen-size-3point5,#phoneFeatures .screen-size-3point1,#phoneFeatures .screen-size-3point5-hvga,#phoneFeatures .screen-size-3point0,#phoneFeatures .screen-size-2point54-amoled,#phoneFeatures .f7-touchscreen,#phoneFeatures .edge-touchscreen,#phoneFeatures .prevail2-display,#phoneFeatures .sequent-4point3-touchscreen,#phoneFeatures .rush-3point5-touch,#phoneFeatures .venice-4point3-touchscreen,#phoneFeatures .htc-one-wga-touchscreen,#phoneFeatures .mach-touchscreen,#phoneFeatures .force-wga-widescreen,#phoneFeatures .screen-size-2point8{background-position:-6px -577px}
+#phoneFeatures .cameras-2, #phoneFeatures .dura-dual, #phoneFeatures .f3-5mp-camera,#phoneFeatures .cameras-2_3mp{background-position:-6px -1208px}
+#phoneFeatures .multimedia-im-text-messaging,#phoneFeatures .multimedia-im-text-messaging-capable,#phoneFeatures .mms-text,#phoneFeatures .im{background-position:-7px -1487px}
+#phoneFeatures .blackberry-messenger,#phoneFeatures .bbm-im-text{background-position:-6px -2046px}
+#phoneFeatures .s5-lte{background-position:-6px -1768px}
+#phoneFeatures .venice-thin-light,#phoneFeatures .vibrate-mode{background-position:-6px -155px}
+#phoneFeatures .verve-speakerphone,#phoneFeatures .hands-free-speakerphone,#phoneFeatures .speakerphone{background-position:-6px -437px}
+#phoneFeatures .verve-keyboard,#phoneFeatures .full-and-virtual-qwerty-keyboard,#phoneFeatures .full-qwerty-keyboard,#phoneFeatures .mach-keyboard,#phoneFeatures .full-qwerty-keyboard-bb,#phoneFeatures .full-qwerty-optical,#phoneFeatures .full-keyboard{background-position:-6px -717px}
+#phoneFeatures .texting{background-position:-6px -997px}
+#phoneFeatures .world,#phoneFeatures .wireless-web,#phoneFeatures .dura-web,#phoneFeatures .f7-dualmode-3g-4g,#phoneFeatures .icon-lte,#phoneFeatures .f3-dualmode-3g-4g,#phoneFeatures .s3-dualmode,#phoneFeatures .dualmode-3g-4g,#phoneFeatures .force-dualmode-3g-4g,#phoneFeatures .bb-wireless-web{background-position:-7px -1767px}
+#phoneFeatures .verve-web-gps,#phoneFeatures .wifi-motog,#phoneFeatures .mobile-hotspot,#phoneFeatures .f7-wifi-gps,#phoneFeatures .edge-wifi,#phoneFeatures .warp-wifi,#phoneFeatures .prevail2-wifi,#phoneFeatures .s3-wifi-gps,#phoneFeatures .wifi-hotspot,#phoneFeatures .sequent-wifi-gps,#phoneFeatures .rush-wifi-gps,#phoneFeatures .venice-wifi-gps,#phoneFeatures .htc-one-wifi-gps,#phoneFeatures .force-wifi-gps, #phoneFeatures .mobile-hotspot-enabled{background-position:-6px -857px}
+#phoneFeatures .visual-voicemail,#phoneFeatures .sequent-visual-voicemail,#phoneFeatures .standard-phone-features{background-position:-7px -997px}
+#phoneFeatures .tv-enabled{background-position:-6px -227px}
+#phoneFeatures .speech-to-text{background-position:-7px -1067px}
+#phoneFeatures .easy-parental-controls{background-position:-7px -1627px}
+#phoneFeatures .dedicated-text{background-position:-6px -1837px}
+#phoneFeatures .s5-resistant, #phoneFeatures .edge-waterproof,#phoneFeatures .icon-waterproof,#phoneFeatures .waterproof{background-position:-6px -1907px}
+#phoneFeatures .custom-ringtones{background-position:-7px -1557px}
+#phoneFeatures .proximity-sensor{background-position:-6px -787px}
+#phoneFeatures  h4{margin:0;padding:0 0 1px;color:#000;font-size:16px;}
+#phoneFeatures .external-touch-keyboard{background-position:-7px -1837px}
+#phoneFeatures .email-im{background-position:-7px -1977px}
+#phoneFeatures .green-certified-platinum,#phoneFeatures .green-certified{background-position:-7px -2200px}
+#phoneFeatures .cpo{background-position:-7px -2286px}
+#phoneFeatures .mobileID{float:left;width:380px;height:75px;margin:20px 40px;padding-left:230px;background:url('/shop/_images/icons/sprite_shop_icons.png') -159px -425px no-repeat}
+#phoneFeatures .mobileID h3{margin:0;padding:10px 0 0;color:#f7901e;font-size:19px;line-height:1.2em}
+#phoneFeatures .mobileID p{width:380px;margin:0;padding:0;color:#666;font-size:12px;line-height:1.4em}
+#phoneFeatures .mobileID a{color:#f7901e}
+#phoneFeatures .mobileID a:hover{color:#67cfcd}
+#phoneFeatures a.addlInfo{float:left;width:610px;margin:0 0 15px;padding:0 20px 0 60px;color:#f7901e;font-size:15px;background:url('/_images/icons/sprite_action_icons.png') -10px -325px no-repeat;cursor:pointer;}
+#phoneFeatures a.addlInfo:hover{color:#67cfcd;background-position:-10px -285px}
+#phoneFeatures a.open{background-position:-10px -364px}
+#phoneFeatures a.open:hover{color:#67cfcd;background-position:-10px -414px}
+.ie9 #phoneFeatures a.addlInfo,.lt-ie9 #phoneFeatures a.addlInfo{background-position:-10px -327px}
+.ie9 #phoneFeatures a.addlInfo:hover,.lt-ie9 #phoneFeatures a.addlInfo:hover{background-position:-10px -287px}
+.ie9 #phoneFeatures a.open,.lt-ie9 #phoneFeatures a.open{background-position:-10px -365px}
+.ie9 #phoneFeatures a.open:hover,.lt-ie9 #phoneFeatures a.open:hover{background-position:-10px -415px}
+#phoneFeatures .moreFeatures{float:left;display:none}
+#phoneFeatures .moreFeatures ul{float:left;width:600px;margin:0;padding:0 30px 35px 60px;list-style:none}
+#phoneFeatures .moreFeatures ul li{display:inline-block;width:175px;padding:0 20px 15px 0;color:#525252;font-size:12px;line-height:1.2em;vertical-align:top}
+#phoneFeatures .phoneSpecs,#phoneFeatures .phoneIncluded,#phoneFeatures .phoneApps{float:left;width:690px;padding:10px 0 0;border-top:2px solid #e5e5e5;padding-bottom:20px;}
+#phoneFeatures .phoneSpecs>div{float:left}
+#phoneFeatures .phoneSpecs{background-position:right center !important}
+#phoneFeatures .phoneSpecs #memory{padding:0 40px 40px;width:250px}
+#phoneFeatures .phoneSpecs #memory h3{margin:0 0 8px}
+#phoneFeatures .phoneSpecs #memory-desc{font-size:13px;line-height:1.3em;padding-bottom:50px;position:relative;top:-5px}
+#phoneFeatures .phoneIncluded{position:relative;padding-bottom:5px;}
+#phoneFeatures .phoneIncluded img{position:absolute;top:12px;right:0}
+#phoneFeatures ul.size_weight,#phoneFeatures ul.battery,#phoneFeatures ul.memory{float:left;margin:0 0 14px;padding:0 0 0 40px;list-style:none}
+#phoneFeatures ul.size_weight,#phoneFeatures ul.memory{width:170px}
+#phoneFeatures ul.battery{width:85px}
+#phoneFeatures ul.size_weight li,#phoneFeatures ul.memory li ,#phoneFeatures ul.battery li{float:left;display:inline-block;width:85px;margin-bottom:.5em;padding-right:0;color:#666;font-size:13px;line-height:1.4em}
+    #phoneFeatures ul.processor li{width:100px;}
+    #phoneFeatures ul.processor li, .specs-os li{float:left;display:inline-block;margin-bottom:.5em;padding-right:0;color:#666;font-size:13px;line-height:1.4em;}
+    .specs-os a:link, .specs-os a:visited{color: #f7901e;}
+#phoneFeatures ul.memory li{width:170px}
+#phoneFeatures ul.size_weight li span,#phoneFeatures ul.battery li span{clear:both;display:inline-block;width:110px;color:#000}
+#phoneFeatures ul.whatsIncluded{float:left;width:200px;margin:0;padding:6px 0 60px 40px}
+#phoneFeatures ul.whatsIncluded.short{width:140px;padding:6px 0 0 30px}
+#phoneFeatures ul.whatsIncluded li{list-style:none;width:205px;margin:0;padding:1px 0;color:#666;font-size:13px;line-height:21px;vertical-align:middle}
+#phoneFeatures .phoneApps{float:left;position:relative;top:0;left:0;padding-bottom:50px;-moz-user-select:none;-khtml-user-select:none;user-select:none}
+#phoneFeatures .prevItem{position:relative;top:10px;left:40px;z-index:99;float:left;width:49px;height:311px;background:url('/shop/phones/_images/carousel_nav_arrows.png') left top no-repeat;cursor:pointer}
+#phoneFeatures .prevItem:hover{background-position:left bottom}
+#phoneFeatures .nextItem{position:relative;top:10px;right:-5px;z-index:99;float:left;width:49px;height:311px;background:url('/shop/phones/_images/carousel_nav_arrows.png') right top no-repeat;cursor:pointer}
+#phoneFeatures .nextItem:hover{background-position:right bottom}
+#jcarousel1 .jcarousel-clip{margin:0px;}
+#phoneFeatures .jcarousel-apps-skin{position:relative;top:30px;left:23px;float:left;width:530px}
+#phoneFeatures .jcarousel-apps-skin .jcarousel{position:relative;top:0;left:0;overflow:hidden;width:530px;height:311px;z-index:90}
+#phoneFeatures .jcarousel-apps-skin ul{width:20000px;position:absolute;list-style:none;margin:0;padding:0}
+#phoneFeatures .jcarousel-apps-skin li{float:left;margin:0 15px;padding:0;width:135px;height:311px}
+#phoneFeatures .jcarousel-apps-skin li h5{float:left;margin:10px 0 0;padding:0;width:135px;color:#000}
+#phoneFeatures .jcarousel-apps-skin li p{float:left;margin:0;padding:0;width:135px;color:#666;font-size:11px;line-height:1.3em}
+*[dir=rtl] #phoneFeatures .jcarousel-apps-skin li{float:right;margin:0 0 0 10px}
+#phoneFeatures .jcarousel-apps-skin li img{border:0}
+.deviceSupport{font-size: 13px;float:left;border-top: 2px solid #e5e5e5;padding-bottom:20px;}
+    .deviceSupport p{margin: 20px 40px 6px;}
+    .deviceSupport a:link, .deviceSupport a:visited{padding-top:8px;padding-bottom:10px;color:#fff;font-size:14px;text-decoration:none;float:none!important;padding-left:10px;padding-right:10px;}
+    
+
+/* Plans tab
+*************************************************************/
+#phonePlans .phoneLeftCol h3{float:left;color:#f7901e;margin-left:50px}
+#phonePlans .phoneLeftCol h3.additional{width:590px;padding:50px 50px 10px;margin:20px 0 0;border-top:2px solid #e5e5e5}
+#phonePlans ul.availPlans{margin:20px 40px 0;padding:0;width:610px;height: 36px;list-style:none;}
+#phonePlans ul.availPlans li{float:left;display:inline-block;margin:0;padding:0;margin-left:15px;padding-left:15px;border-left:1px solid #e5e5e5}
+#phonePlans ul.availPlans li.first{margin-left:0;padding-left:0;border:0}
+#phonePlans ul.availPlans li a{float:left;display:inline-block;color:#8b8b8b;font-size:14px;text-decoration:none}
+#phonePlans ul.availPlans li.selected a{padding:0 0 7px;color:#f7901e;background:url('/shop/phones/_images/icons/orange_subnav_arrow.png') center bottom no-repeat}
+#phonePlans ul.availPlans li a:hover{color:#01b4b6}
+#phonePlans ul.availPlans li.selected a:hover{color:#f7901e;cursor:default}
+#phonePlans .planInfo{border-bottom:1px solid #e5e5e5}
+    .phoneInfo .legal{width:auto;}
+#phonePlans #module-how_it_works{float:left;width:590px;margin:0 50px;padding:20px 0}
+    #module-how_it_works .how_it_works-price sup{vertical-align:top;font-size:40%;position: relative; top: -13px;}
+#phonePlans #module-how_it_works div.left{float:left;width:175px;margin-right:25px;background:url("/shop/phones/_images/dotted_line.png") top right repeat-y}
+#phonePlans #module-how_it_works div.left .how_it_works-starting{color:#f7901e;padding-left:30px;font-size:13px;line-height:1.3em}
+#phonePlans #plan_payGo #module-how_it_works div.left .how_it_works-starting{padding-left:0}
+#phonePlans #module-how_it_works div.left .how_it_works-price{height:100px;margin:0;padding:0;font-size:110px;line-height:.7em;letter-spacing:-4px;color:#f7901e}
+#plan_du .how_it_works-price,#plan_adu .how_it_works-price{position:relative;left:15px}
+#phonePlans #module-how_it_works div.left .how_it_works-per_month{padding-left:30px;color:#f7901e;font-size:23px;line-height:1em;display:block;  padding-right: 20px;}
+#phonePlans #plan_payGo #module-how_it_works div.left .how_it_works-per_month{padding-left:0}
+#phonePlans #module-how_it_works div.right{float:left;position:relative;width:390px;padding:12px 0 0 0}
+#phonePlans #module-how_it_works div.right h2{margin:0 10 4px;font-size:28px;line-height:1.3em}
+#phonePlans #module-how_it_works div.right p{display:block;margin:0;color:#525252;font:13px arial}
+#phonePlans #whats_included-chart{float:left;display:block;width:590px;padding:0;margin:0 50px 5px}
+#phonePlans #whats_included-chart.gradient-orange{position:relative;background:#f7901e;background:-webkit-gradient(linear,0 0,0 bottom,from(#f7901e),to(#d1581c));background:-webkit-linear-gradient(#f7901e,#d1581c);background:-moz-linear-gradient(#f7901e,#d1581c);background:-ms-linear-gradient(#f7901e,#d1581c);background:-o-linear-gradient(#f7901e,#d1581c);background:linear-gradient(#f7901e,#d1581c);-pie-background:linear-gradient(#f7901e,#d1581c);behavior:url(/_themes/libs/PIE.htc);Required for PIE to work correctly */}
+#phonePlans .whats_included_legal{margin:0 50px 25px;clear:both;color:#434343;font:10px/16px arial}
+#phonePlans #whats_included-chart dt,#phonePlans #whats_included-chart dd{float:left;display:block}
+#phonePlans #whats_included-chart dt{width:400px;background:#d5d7db;margin:0;color:#000;vertical-align:middle;border-right:2px solid #fff;border-bottom:2px solid #fff}
+#phonePlans #whats_included-chart dt.single{height:28px;padding:15px 14px 1px}
+#phonePlans #whats_included-chart dt.double{height:35px;padding:9px 14px 0}
+#phonePlans #whats_included-chart dt.double p a{color:#d6601c}
+#phonePlans #whats_included-chart dt.double p a:hover{color:#01b4b6}
+#phonePlans #whats_included-chart dd.double{height:35px;padding:2px 0 7px}
+#phonePlans #whats_included-chart dt.triple{height:42px;padding:5px 14px 0}
+#phonePlans #whats_included-chart dt.triple p a{color:#d6601c}
+#phonePlans #whats_included-chart dt.triple p a:hover{color:#01b4b6}
+#phonePlans #whats_included-chart dd.triple{height:42px;padding:3px 0 7px}
+#phonePlans #whats_included-chart dt h4{padding:0;margin:0;font-size:14px;line-height:12px;color:#171717;vertical-align:middle}
+#phonePlans #whats_included-chart dt h4 span{padding-left:10px;color:#525252;font:10px/12px Arial}
+#phonePlans #whats_included-chart dt p{font:10px Arial;line-height:10px;color:#525252;padding:0;margin:0;display:block}
+#phonePlans #whats_included-chart dd{width:160px;height:33px;padding-top:11px;background-repeat:repeat-x;background-position:left top;margin:0;color:#fff;font-size:15px;text-align:center;border-bottom:2px solid #fff}
+#phonePlans #whats_included-chart .small{font-size:13px;height:37px;padding-top:7px}
+#phonePlans #whats_included-slider{float:left;display:block;background:url("/shop/plans/_images/2012_revamp/bg-how_it_works.png") repeat-x left bottom;width:538px;height:150px;margin:0 50px;padding:20px 25px 15px;border:1px solid #e5e5e5}
+#phonePlans #whats_included-slider h2{color:#2d2d2d;font-size:18px;margin:0 0 4px;padding:0;width:400px}
+#phonePlans #whats_included-slider p{font:12px/16px arial;color:#525252;margin:0}
+#phonePlans #whats_included-slider p a{color:#d6601c}
+#phonePlans #whats_included-slider p a:hover{color:#01b4b6}
+#whats_included-slider .plan_slider_guide-strut,#module-wcb-plans .plan_slider_guide-strut{background:url("/shop/phones/_images/bg-how_it_works-slider.png") no-repeat scroll -20px 3px transparent;height:90px;position:relative;width:412px;padding-left:146px;margin-top:0}
+#whats_included-slider .plan_slider_guide,#module-wcb-plans .plan_slider_guide{height:90px;width:412px;position:relative}
+#whats_included-slider .plan_slider_guide div,#module-wcb-plans .plan_slider_guide div{width:71px;height:90px;position:absolute;top:15px;background:url(/shop/plans/_images/slider_sprite.png) no-repeat;cursor:pointer}
+#plan_amu .price_0mos{background-position:-75px 0 !important}
+#plan_amu .price_6mos{background-position:-150px 0 !important}
+#plan_amu .price_12mos{background-position:-225px 0 !important}
+#plan_amu .price_18mos{background-position:-300px 0 !important}
+#plan_mu .price_0mos{background-position:-150px 0 !important}
+#plan_mu .price_6mos{background-position:-225px 0 !important}
+#plan_mu .price_12mos{background-position:-300px 0 !important}
+#plan_mu .price_18mos{background-position:-375px 0 !important}
+#plan_bmu .price_0mos{background-position:0 0 !important}
+#plan_bmu .price_6mos{background-position:-75px 0 !important}
+#plan_bmu .price_12mos{background-position:-150px 0 !important}
+#plan_bmu .price_18mos{background-position:-225px 0 !important}
+#plan_ttu .price_0mos,#plan_bbm .price_0mos{background-position:-225px 0 !important}
+#plan_ttu .price_6mos,#plan_bbm .price_6mos{background-position:-300px 0 !important}
+#plan_ttu .price_12mos,#plan_bbm .price_12mos{background-position:-375px 0 !important}
+#plan_ttu .price_18mos,#plan_bbm .price_18mos{background-position:-450px 0 !important}
+#phonePlans #plan_slider_guide-strut-wcb .price_0mos{background-position:-150px 0 !important}
+#phonePlans #plan_slider_guide-strut-wcb .price_6mos{background-position:-225px 0 !important}
+#phonePlans #plan_slider_guide-strut-wcb .price_12mos{background-position:-300px 0 !important}
+#phonePlans #plan_slider_guide-strut-wcb .price_18mos{background-position:-375px 0 !important}
+#phonePlans .included-disclaimer{float:left;color:#434343;font:10px/16px arial;margin:7px 50px 15px}
+#phonePlans .included-disclaimer a{color:#d6601c}
+#phonePlans .included-disclaimer a:hover{color:#01b4b6}
+#phonePlans ul.subLinks{float:left;width:590px;padding:0;margin:0 50px 40px;list-style:none}
+#phonePlans ul.subLinks li{position:relative;float:left;width:250px;height:118px;padding:15px 20px;border:1px solid #e5e5e5;background-position:right top;background-repeat:no-repeat;cursor:pointer}
+#phonePlans ul.subLinks li.noBorder{border:0;cursor:default}
+#phonePlans ul.subLinks li.service-hotspot{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-hotspot.png")}
+.service-hotspot{display:none}
+#phonePlans ul.subLinks li.service-mobile_id{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-mobile_id.png")}
+#phonePlans ul.subLinks li.service-intl_connect{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-intl_connect.png")}
+#phonePlans ul.subLinks li.service-intl_calling{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-intl_calling.png")}
+#phonePlans ul.subLinks li.service-referral{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-referral.png")}
+#phonePlans ul.subLinks li.service-bill_pay{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-bill_pay.png")}
+#phonePlans ul.subLinks li.service-award_service{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-award_service.png");background-position:190px 45px}
+#phonePlans ul.subLinks li h3{float:left;margin:0;padding:0;color:#000;font-size:18px;line-height:28px}
+#phonePlans ul.subLinks li p{float:left;width:190px;margin:0;padding:0;color:#525252;font-size:13px}
+#phonePlans ul.subLinks li.planAwards p{width:175px;font-size:10px}
+#phonePlans ul.subLinks li>a{display:inline-block;position:absolute;left:20px;bottom:20px;width:100%;padding-left:22px;color:#000;font-size:13px;line-height:19px;font-weight:700;text-decoration:none;background:url('/_images/icons/sprite_action_icons.png') -50px top no-repeat}
+#phonePlans ul.subLinks li.hover>a,#phonePlans ul.subLinks li>a:hover{color:#67cfcd;background-position:-50px -100px}
+#phonePlans .phoneRightCol{padding-top:40px}
+#cboxLoadedContent #bottom_disclaimer{float:left;width:900px;padding:30px}
+#cboxLoadedContent #bottom_disclaimer p{color:#525252;font:10px Arial;margin:0 0 12px}
+#cboxLoadedContent #bottom_disclaimer a{color:#d6601c}
+#cboxLoadedContent #bottom_disclaimer a:hover{color:#67cfcd}
+
+.shop_plans-new{}
+    .shop_plans-new .legal{font-size:11px;}
+    .shop_plans-new p{font-size:13px;}
+
+    .phone-type-feature .plans-top p{width:300px;}
+    .plans-top{padding:30px;padding-bottom:0px;background: url('/shop/phones/_images/plans-top-bg.png') no-repeat top center;}
+    .plans-top .sm{display:none;}
+    .phone-type-feature .mobile-hotspot{display:none;}
+    .plans-top h1{float:none;font-size:19px!important;color:#000;}
+    .plans-top p{width:320px; margin-top:5px;font-size:14px;}
+	
+	
+.plans-middle{padding:30px;padding-bottom:20px;border-bottom: 2px solid #e3e3e3;display:none;}
+	.plans-middle li{font-size:13px;margin-bottom:15px;}
+	.section-phones .plans-middle .legal{color:#000;}
+        .plans-middle .gradient-white{padding-bottom:0px!important;}
+.plans-middle{padding:30px;padding-bottom:20px;border-bottom: 2px solid #e3e3e3;background-color:#f1f0f0;}
+    .plans-middle h2{color:#000;margin-bottom:20px;}
+       .plans-middle img{width: 100%;}
+       .plans-middle .legal2, .plans-middle .legal3{font-size:11px;}
+    .plans-middle p{font-size:11px;}
+    .plans-middle-2{display:none;}
+    .legal3{display:block!important;}
+    .plans-callout{padding:30px;position:relative;border-bottom: 2px solid #e3e3e3;
+    position:relative;background:#f4f5f7;background:-webkit-gradient(linear,0 0,0 bottom,from(#fff),to(#f4f5f7));background:-webkit-linear-gradient(#fff,#f4f5f7);background:-moz-linear-gradient(#fff,#f4f5f7);background:-ms-linear-gradient(#fff,#f4f5f7);background:-o-linear-gradient(#fff,#f4f5f7);background:linear-gradient(#fff,#f4f5f7);-pie-background:linear-gradient(#fff,#f4f5f7);behavior:url(/_themes/libs/PIE.htc)}
+    #shop_plans-main .button:link, #shop_plans-main .button:visited{display:block;width: 150px;text-decoration:none;color:#fff;text-align:center;font-size:18px;padding-top:8px;padding-bottom:8px;}
+.plans-bottom{padding:30px;} 
+    .plans-bottom h2{color:#000;}
+    .plans-bottom p{margin-top:0px;}
+    .plans-bottom table{margin-bottom:20px;width:100%;}
+        .plans-bottom table h3{margin:0px;padding:0px;font-size:18px;}
+        .plans-bottom table p{margin:0px;padding:0px;font-size:11px;}
+        .plans-bottom td{padding:15px;padding-right:10px;background-color:#d5d7db;border-right:1px solid #fff;border-bottom:1px solid #fff;}
+        .plans-bottom .learnmore{width:120px;text-align:center;padding-top:23px;}    
+            .plans-bottom .learnmore a:link, .plans-bottom .learnmore a:visited{color:#fff;font-size:18px;text-decoration:none;}
+    .lt-ie9 #phonePlans .plans-bottom .gradient-orange{background: #f7901e!important;}        
+            
+    #plan_wifi .plans-top{}
+            
+            
+.plan2014 .h1{}
+.plan2014 h2{margin:0px!important;margin-bottom:10px!important;color:#000!important;}
+.plan2014 h3{margin:0px!important;color:#000!important;float:none!important;}
+
+/* Reviews tab
+*************************************************************/
+#phoneReviews .phoneFullCol h2 { margin:20px 25px; padding:0px; color:#f7901e; font-size:25px; line-height:1.3em }
+#phoneReviews #BVRRContainer { float:left;}
+
+/* Accessories tab
+*************************************************************/
+
+#phoneAccessories .genHeader{width:220px!important;}
+    #phoneAccessories .genHeader span{width:200px!important;}
+#phoneAccessories .viewControls{position:relative;top:2px;left:0;float:left;z-index:15;width:956px;height:68px;background:url('/shop/phones/_images/control_bg.png') left bottom repeat-x}
+#phoneAccessories .viewControls label{float:left;padding:15px 7px 25px 30px;font:700 11px/18px Arial,Helvetica,sans-serif;color:#333}
+#phoneAccessories .viewControls>span{float:right;padding:25px 15px;font:13px/18px Arial,Helvetica,sans-serif;color:#333}
+#phoneAccessories .viewControls>span a{color:#333}
+#phoneAccessories .viewControls>span a:hover{color:#67cfcd}
+#phoneAccessories .viewControls .fullSelect{padding:10px 0}
+#phoneAccessories .viewControls .menuHeader{top:48px;z-index:100}
+#phoneAccessories ul#products{position:relative;bottom:-2px;left:-2px;z-index:10;float:left;margin:0;padding:0;width:960px;list-style:none}
+#phoneAccessories ul#products li{float:left;position:relative;top:0;left:0;width:318px;height:375px;border:1px solid #e5e5e5;background:#ffffff url}
+#phoneAccessories .productInfo{float:left;position:relative;top:0;left:0;width:100%;height:100%;padding:0}
+#phoneAccessories .productInfo .productPromo{position:absolute;top:0;right:11px;margin:0}
+#phoneAccessories .productInfo .productName{float:left;width:228px;padding:25px 70px 0 20px;font-size:19px;line-height:1.3;color:#f7901e}
+#phoneAccessories .productInfo .productId{float:left;width:258px;padding-left:20px;font-size:14px;line-height:1.6em;color:#909090}
+#phoneAccessories .productInfo p{float:left;position:absolute;top:250px;left:20px;width:278px;margin:0;padding:0;font-size:12px;line-height:1.3em;color:#5f5f5f}
+#phoneAccessories .productInfo .promoCode{float:left;position:absolute;bottom:63px;left:0;width:318px;padding:0;color:#474747;font-size:10px;line-height:1.3em;font-weight:700;text-align:center}
+#phoneAccessories .productInfo .promoCode span{color:#f7901e}
+#phoneAccessories .productInfo .productPrices{float:left;position:absolute;bottom:25px;left:20px;width:133px;height:30px;text-align:right}
+#phoneAccessories .productInfo .productRegPrice{font-size:16px;padding:0 10px 0 0;line-height:1;color:#474747;text-decoration:line-through}
+#phoneAccessories .productInfo .productPrice{font-size:21px;line-height:30px;color:#f7901e}
+#phoneAccessories .cta{float:left;position:absolute;bottom:25px;right:20px;margin:0;text-align:right}
+#phoneAccessories .add_to_cart{display:inline-block;margin:0 2px;font-size:15px;color:#fff;text-decoration:none;text-align:center}
+
+/* FAQs/Resources tab
+*************************************************************/
+#phoneFaqs-guides .phoneLeftCol h2{padding-bottom:20px}
+#phoneFaqs-guides .featureList{float:left;width:610px;margin:0;padding:0 40px;list-style:none}
+    #phoneFaqs-guides .featureList div{margin-bottom:20px;}
+    #phoneFaqs-guides .featureList .video{margin-bottom:20px;}
+    #phoneFaqs-guides .featureList .video div{margin-bottom:0px;}
+#phoneFaqs-guides {float:left;display:inline-block;width:535px;padding:0 15px 35px 60px;color:#525252;font-size:13px;line-height:1.4em;background:url('/shop/phones/_images/icons/resource_icons.png') no-repeat}
+#phoneFaqs-guides .video{background-position:left top}
+#phoneFaqs-guides .help{background-position:left -150px}
+#phoneFaqs-guides .featureList div{float:left;width:510px;padding-left:15px;background:url('/shop/phones/_images/dotted_line.png') repeat-y}
+#phoneFaqs-guides .featureList div h4{margin:0;padding:0;color:#f7901e;font-size:22px}
+#phoneFaqs-guides .featureList div p{margin:0;padding:5px 0 10px;color:#525252;font-size:13px;line-height:1.5em}
+#phoneFaqs-guides  a{display:inline-block;margin-left:12px;padding:7px 0 7px 30px;color:#000;font-size:14px;line-height:16px;background:url('/_images/icons/sprite_action_icons.png') -45px 5px no-repeat;text-decoration:none}
+#phoneFaqs-guides  a:hover{color:#67cfcd;background-position:-45px -95px}
+#phoneFaqs-guides .phoneLeftCol{padding-bottom:80px}
+#phoneFaqs-guides .phoneRightCol{padding-top:82px}
+#phoneFaqs-guides .featureList .accordion{background-image:none}
+#phoneFaqs-guides .featureList .accordion h3{margin-left:0;margin-bottom:0;padding-left:16px;outline:0;background:url('/_images/icons/sprite_action_icons.png') -50px -240px no-repeat;clear:both}
+#phoneFaqs-guides .featureList .accordion h3:hover{background-position:-50px -280px !important}
+#phoneFaqs-guides .featureList .accordion a{margin-left:0;background-image:none;padding-left:0;outline:0;padding-bottom:0}
+#phoneFaqs-guides .featureList .accordion div{background-image:none;margin-left:0;padding-left:0;width:auto !important}
+#phoneFaqs-guides .featureList .accordion div{margin-left:18px;width:526px;display:none}
+#phoneFaqs-guides .featureList .accordion h3.ui-state-active{background-position:-50px -360px !important}
+#phoneFaqs-guides .featureList .accordion h3.ui-state-active:hover{background-position:-50px -410px !important}
+#phoneFaqs-guides .featureList .accordion h3.ui-state-active a{color:#e97c1d}
+#phoneFaqs-guides .featureList .accordion h3.ui-state-active a:hover{color:#59b9b4}
+li.no-result-grid{background:#191919 !important;color:#919497;border:1px solid #454545 !important;width:280px !important;margin-top:30px !important;margin-left:225px !important;padding:20px !important;text-align:center;height:150px !important}
+#none p.font-boostneo{font-size:21px}
+li.no-accessories{background:#eaeaea !important;border:1px solid #d7d6d6 !important;width:280px !important;margin-top:30px !important;margin-left:320px !important;margin-bottom:30px;padding:20px !important;text-align:center;height:150px !important;font-size:22px;}
+#no-accessories p.font-boostneo{font-size:21px}
+#cartOverlay{width:100%;height:100%;position:fixed}
+.phonePriceMap{position:relative}
+.phoneHiddenPrice,phoneHiddenPrice{color:#f7901e}
+.phonePriceMap .phoneHiddenPrice{font-size:14px;width:140px}
+.grid #SPHD710BBB .phoneInfo{background-image:url('/shop/phones/_images/galaxy-screen.gif') !important;background-repeat:no-repeat !important;background-position:38px 27px !important}
+.grid #SPHD710BBB #shell_samsung-galaxy-sii-4g-titanium .imageClickthrough{background:url(/shop/phones/_images/phones/samsung-galaxy-sii-4g-titanium/shop.png) no-repeat !important;background-position:-25px -10px !important;height:195px !important}
+#whats_included-chart .single{padding:15px 14px 0 !important;height:29px !important}
+#whats_included-chart .double{padding:13px 14px 0 !important;height:31px !important}
+#whats_included-chart .triple{padding:8px 14px 0 !important;height:36px !important}
+#service-shrinking-payments{background-image:url("/shop/plans/_images/shrinking.jpg")}
+#service-airg{background-image:url("/shop/plans/_images/airg_phone.jpg")}
+#service-phone-insurance{background-image:url("/shop/plans/_images/phoneinsurance.jpg");display:none;}
+#service-shrinking-payments p{width:150px}
+#service-phone-insurance p{width:170px;}
+#service-hotspot{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-hotspot.png");}
+#service-mobile_id{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-mobile_id.png");display:none;}
+#service-intl_connect{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-intl_connect.png")}
+#service-intl_calling{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-intl_calling.png")}
+#service-referral{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-referral.png")}
+#service-miltary{background-image:url("/shop/plans/_images/2012_revamp/bg-military-services.png")}
+#service-bill_pay{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-bill_pay.png")}
+#service-award_service{background-image:url("/shop/plans/_images/2012_revamp/bg-addl_services-award_service.png")}
+#service-hotspot p{width:150px}
+#service-mobile_id p{width:180px}
+#service-intl_connect p{width:135px}
+#service-intl_calling p{width:140px}
+#service-referral p{width:135px}
+#service-bill_pay p{width:125px}
+#service-award_service p{width:205px}
+#ule{font-size:13px;clear:both;padding:20px;width:745px;display:none}
+#cboxLoadedContent #ule{display:block;
+	background-color:#fff;
+}
+#ule ul{margin:0;padding:0}
+#ule li{list-style-type:none;margin:0;padding:0;line-height:22px;width:420px;background-image:url('/_themes/h5bp/images/ule-leaves-sm.png');background-repeat:no-repeat;background-position:right 0}
+#ule ul .leafrating_5{background-position:right -22px}
+#ule ul .leafrating_10{background-position:right -44px}
+#ule ul .leafrating_15{background-position:right -66px}
+#ule ul .leafrating_20{background-position:right -88px}
+#ule ul .leafrating_25{background-position:right -110px}
+#ule ul .leafrating_30{background-position:right -132px}
+#ule ul .leafrating_35{background-position:right -154px}
+#ule ul .leafrating_40{background-position:right -176px}
+#ule ul .leafrating_45{background-position:right -198px}
+#ule ul .leafrating_50{background-position:right -220px}
+#ule p.leafaverage{list-style-type:none;margin:0;margin-top:5px;padding:0;line-height:37px;width:420px;background-image:url('/_themes/h5bp/images/ule-leaves-lg.png');background-repeat:no-repeat;background-position:right 0}
+#ule p.leafrating_5{background-position:right -37px}
+#ule p.leafrating_10{background-position:right -74px}
+#ule p.leafrating_15{background-position:right -111px}
+#ule p.leafrating_20{background-position:right -148px}
+#ule p.leafrating_25{background-position:right -185px}
+#ule p.leafrating_30{background-position:right -222px}
+#ule p.leafrating_35{background-position:right -259px}
+#ule p.leafrating_40{background-position:right -296px}
+#ule p.leafrating_45{background-position:right -333px}
+#ule p.leafrating_50{background-position:right -370px} 
+#phoneInteractive{position:absolute;left:100px;top:0}
+#phoneInteractive li{margin:0;padding:0;list-style-type:none;float:left;margin-right:13px}
+#phoneInteractive ul{margin:0;padding:0;margin-top:50px;position:relative;left:120px;top:310px;z-index:10;}
+#phoneInteractive a,#phoneInteractive a:link,#phoneInteractive a:visited{background-image:url('/shop/phones/_images/bullet-boost-logo.png');width:13px;height:13px;display:block;opacity:.5;-ms-filter:"alpha(opacity=0.5)";filter:alpha(opacity=0.5)}
+#phoneInteractive a:hover,#phoneInteractive a.active{color:#fff;opacity:1;-ms-filter:"alpha(opacity=1)";filter:alpha(opacity=1)}
+#phoneInteractive .phoneInteractiveImg{position:absolute;left:0;top:0;text-align:center;width:370px}
+    .phoneInteractiveImg #phoneInfoGraphic{left:0px;}
+#phoneInteractive .phoneInteractiveImg img{display:none;margin-left:auto;margin-right:auto}
+#selectedView h3{text-align:center;font-size:11px;color:#ccc}
+.section-samsung-galaxy-s3 #service-hotspot{display:none}
+#service-hotspot{display:none}
+.eol{color:#fff;padding:15px}
+.eol a:link,.eol a:visited{color:#f7901e}
+#phoneDetail #condition{background-image:none;text-indent:0;width:auto}
+#phoneDetail #condition a{margin-top:8px;display:block;overflow:hidden;padding-top:10px;color:#f7901e}
+#phoneDetail #condition a:hover{color:#67cfcd}
+.phone-flag{font-size:18px;color:#000;top:-14px}
+@media print{#video-bg{display:none}
+video{display:none}
+}
+
+.page-apple-iphone4s #phoneFeatures .featureList div{background: url('/shop/phones/_images/arrow-grey.png') no-repeat!important;padding-left: 20px;width: 285px!important;padding-top: 2px;}
+.tile-right-variations {clear:both; }
+.variation-memory{float:left;padding-top:17px;position:relative;}
+.variation-color{float:left;margin-right:35px;}
+.phoneRating span{font-size:12px;position:relative;top:1px;}
+#phonePlans .plans-middle .button{display:none;}
+
+#phonePlans #plan_wifi{padding-right:370px;padding-left:40px;background-image: url('/shop/plans/_images/plans-detail-bg.png');background-repeat:no-repeat;background-position: 345px center;}
+#phonePlans #plan_wifi ul{padding-left:10px;}
+#phonePlans #plan_wifi h2{ margin: 0px;font-size:38px;margin-bottom:20px;}
+#phonePlans #plan_wifi h3{float:none;color:#000; margin: 0px;}
+#phonePlans #plan_wifi img{float:right;}
+
+.no-js #phones .tile, .no-js #phoneInfoGraphic, .no-js #phoneContent .phoneInfo, .no-js #tabNav li{display:block!important;}
+.page-apple-iphone-6-plus #phoneFeatures h4{font-size: 15px;}
+
+@media (max-width:480px) {
+#phonePlans #module-how_it_works,#phonePlans #module-how_it_works div.right {max-width:320px;}
+#phonePlans #module-how_it_works div.right h2 {margin-left:5px;font-size:21px;}
+#phonePlans .phoneLeftCol h3.additional {margin-left:-35px;}
+#phonePlans ul.subLinks {margin-left:15px;}
+#phonePlans .phoneLeftCol h3.additional {border:none;}
+}
+@media (max-height:320px) {
+  #phonePlans #module-how_it_works,#phonePlans #module-how_it_works div.right {max-width:480px;}
+  #phoneDetail .phoneFullCol h2 {margin-left:10px;}
+  }
+@media only screen and (min-width:360px) and (max-width:640px) {
+  #phonePlans #module-how_it_works,#phonePlans #module-how_it_works div.right {max-width:360px;}
+  #phonePlans #module-how_it_works div.right h2 {font-size:16px;}
+  #phoneDetail ul.how_it_works, #phoneDetail ul.comes_with, #phoneDetail ul.downloads_updates, #phoneDetail ul.user_manuals, #phoneDetail ul.plan_help {border:none;}
+  #phoneDetail .phoneInfo {border:none;}
+  }
+@media only screen and (max-width:640px)and (max-height:360px)  {#phonePlans #module-how_it_works,#phonePlans #module-how_it_works div.right {max-width:640px;}}
+@media (min-width:768px) and (max-width:1024px) {#phonePlans #module-how_it_works,#phonePlans #module-how_it_works div.right {max-width:1024px;}}

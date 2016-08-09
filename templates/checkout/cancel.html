@@ -1,0 +1,62 @@
+<section class="checkout">
+  <div class="col-xs-12 col-md-8">
+    <div class="alert alert-danger" role="alert">
+      <h2>Your order has been cancelled.</h2>
+    </div>
+  </div>
+  <div class="hidden-xs hidden-sm col-md-4">
+    <section class="entrust">
+      <h3>Secure Credit Card Payment</h3>
+      <div>
+        <img ng-src="{{appName}}/img/entrust.png"></img>
+      </div>
+    </section>
+    <section>
+      <div class="orderbyphone">
+        <h3>Order by Phone</h3>
+        <p>Need help choosing a phone or a plan? Just give us a call.</p>
+        <h3 class="phonenumber">{{appName=='bst'?'1-877-602-4907':'1-866-866-7509'}}</h3>
+      </div>
+    </section>
+    <section>
+      <h3>How it Works</h3>
+      <ul class="features howitworks">
+        <li>
+          <i class="glyphicon glyphicon-apple"></i>
+          <div>
+            <p>Order by phone, online, or in a store.</p>
+          </div>
+        </li>
+        <li>
+          <i class="glyphicon glyphicon-hourglass"></i>
+          <div>
+            <p>When you get your phone, activate a no-contract plan online.</p>
+          </div>
+        </li>
+        <li>
+          <i class="glyphicon glyphicon-knight"></i>
+          <div>
+            <p>Keep your number or choose a new one. Enjoy!</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Phone Insurance</h3>
+      <p>Can't live without your Sprint Mobile phone? Get phone insurance and you'll never have to.</p>
+      <div ng-if="appName=='spp'"class="col-xs-12">
+        <a class="btn btn-default btn-block" target="_blank" href="http://www.sprint.com/legal/privacy.html?INTNAV=ATG:FT:Privacy">Privacy Policy</a>
+        <a class="btn btn-default btn-block" target="_blank" href="http://www.sprint.com/landings/returns/?question_box=return%20policy&id16=return%20policy">Return Policy</a>
+      </div>
+      <div ng-if="appName=='bst'"class="col-xs-12">
+        <a class="btn btn-default btn-block" target="_blank" href="#!/about/legal/privacy-policy/">Privacy Policy</a>
+        <a class="btn btn-default btn-block" target="_blank" href="#!/about/legal/return-policy/">Return Policy</a>
+      </div>
+      <div ng-if="appName=='vmu'"class="col-xs-12">
+        <a class="privacy-policy" target="_blank" href="#!/privacy/">// Privacy Policy</a>
+        <a class="return-policy" target="_blank" href="#!/7-day-guarantee/">// Return Policy</a>
+      </div>
+    </section>
+  </div>
+
+</section>

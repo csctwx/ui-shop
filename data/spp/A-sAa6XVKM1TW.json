@@ -1,0 +1,130 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "6b188564-2891-4e07-a353-c7adc1355873",
+			"@code": "0",
+			"getPhoneResponse": {
+				"phone": {
+					"assetId": {
+						"$": "A-sAa6XVKM1TW"
+					},
+					"phoneName": {
+						"$": "Moto E"
+					},
+					"extendedDescription": {
+						"$": "The Moto E is built to last and priced for everyone. Get this sleek new phone online without the hassle of a contract from Sprint Prepaid."
+					},
+					"available": {
+						"$": "true"
+					},
+					"shortDescription": {
+						"$": "TEST-TEST-TEST-TEST-TEST-TEST-TEST-The Next Big Thing Is Here&#8482;. And the features are out of this world. The Samsung Galaxy S® 5 features S Health&#8482; that helps you track your fitness goals, a 16 megapixel camera  to give you crisp photos, and a 5.1-inch HD Super AMOLED&#8482; display so you can see it all in stunning high definition.\n\t"
+					},
+					"filters": {
+						"feature": [{
+							"$": "Qwerty"
+						},
+						{
+							"$": "Email"
+						},
+						{
+							"$": "Wifi"
+						},
+						{
+							"$": "Bluetooth"
+						},
+						{
+							"$": "isNew"
+						},
+						{
+							"$": "Video"
+						},
+						{
+							"$": "UleCertified"
+						},
+						{
+							"$": "GPS"
+						},
+						{
+							"$": "Text"
+						},
+						{
+							"$": "HotSpot"
+						},
+						{
+							"$": "Camera"
+						},
+						{
+							"$": "4GLTE"
+						},
+						{
+							"$": "Bar"
+						},
+						{
+							"$": "4G"
+						},
+						{
+							"$": "HtmlBrowser"
+						},
+						{
+							"$": "FrontFacingCamera"
+						},
+						{
+							"$": "TouchScreen"
+						},
+						{
+							"$": "SpeakerPhone"
+						},
+						{
+							"$": "Music"
+						},
+						{
+							"$": "3G"
+						},
+						{
+							"$": "VisualVoiceMail"
+						}]
+					},
+					"manufacturerName": {
+						"$": "Motorola"
+					},
+					"isRedVentures": {
+						"$": "false"
+					},
+					"phoneVariantsDefault": {
+						"minimumAdvPrice": {
+							"$": "99,99"
+						},
+						"colorVariant": {
+							"$": "black"
+						},
+						"available": {
+							"$": "true"
+						},
+						"oosThreshold": {
+							"$": "100"
+						},
+						"retail-price": {
+							"$": "99.99"
+						},
+						"discount": {
+							"$": "0.0"
+						},
+						"price": {
+							"$": "199.99"
+						}
+					},
+					"phoneId": {
+						"$": "MOT1526ASB"
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

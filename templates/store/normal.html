@@ -1,0 +1,57 @@
+<div id="locatorNormal">
+  <h2 ng-if="app.isCurrentContext(pathMap._store._formatedHash) && appName=='bst'" style="margin-top:20px;" class="title font-boostneo">Additional locations to purchase {{appDisplayName}} phones or Re-Boost cards</h2>
+  <div class="showing-results" style="padding-left:0px;padding-bottom:20px;border-bottom:1px dotted #a5a4a5; display:block;">
+    Results {{storeController.pageHandler.curPage.firstRecordIdx}} - {{storeController.pageHandler.curPage.lastRecordIdx}} of {{storeController.pageHandler.data.length}} results
+  </div>
+  <div class="row sm-text-center mapheadings hidden-xs" ng-if="appName=='vmu'">
+  	<div class="col-md-5 col-sm-4">
+      Store Name / Address
+    </div>
+    <div class="col-md-7 col-sm-8 row">
+      <div class="col-sm-4 text-align phone-number">Phone</div>
+      <div class="col-sm-3 text-align">Distance</div>
+      <div class="col-sm-5 text-align hidden-xs">Map</div>
+    </div>
+  </div>
+  <div class="row sm-text-center" style="padding-top:20px;padding-bottom:20px;border-bottom:1px dotted #a5a4a5;" ng-repeat="item in storeController.pageHandler.curPage.data">
+    <div class="col-md-5 col-sm-4">
+      <div>
+        <h2 class="md-pull-left">{{item.name}}</h2>
+        <div class="icons-callout md-pull-left">
+          <store-options ng-model="item"></store-options>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+      <div ng-if="appName=='vmu'">
+	 	<ul class="storeproducts">
+			<li ng-if="item.phoneSalesInd">Phones</li>
+			<li ng-if="item.topupInd">Top-Up Cards</li>
+			<li ng-if="item.b2gInd">Broadband2Go</li>
+		</ul>
+		<div style="clear:both;"></div>
+	  </div>
+      <div> 
+        <span>{{item.addressLine}}</span> <br/> 
+        <span>{{item.city}}</span> 
+        <span>{{item.state}}</span>, 
+        <span>{{item.zipCode}}</span> 
+      </div>
+    </div>
+    <div class="col-md-7 col-sm-8 row">
+      <div class="col-sm-4 text-align phone-number">{{item.phoneNumber}}</div>
+      <div class="col-sm-3 text-align">Distance: <b>{{item.distance}}</b> <span ng-if="appName=='vmu'">mi</span></div>
+      <div class="col-sm-5 text-align hidden-xs">
+        <div class="icons icon-pin"></div>
+        <a itemprop="map" class="map" target="_blank" ng-href="http://maps.google.com/maps?q={{item.addressLine}} {{item.city}} {{item.state}}, {{item.zipCode}} " title="Maps &amp; directions to {{item.name}}"> Maps &amp; Directions </a>
+      </div>
+    </div>
+  </div>
+  <div id="pagination">
+    <ul>
+      <li ng-repeat="item in storeController.pageHandler.pages"> 
+        <a ng-if="app.isCurrentContext(pathMap._store._formatedHash)" class="{{item==storeController.pageHandler.curPage.number?'active':''}}" ng-href="{{pathMap._store._hash}}{{storeController.paramHash}}/{{item}}/">{{item}}</a>
+        <a ng-if="!app.isCurrentContext(pathMap._store._formatedHash)" class="{{item==storeController.pageHandler.curPage.number?'active':''}}" href="javascript:" ng-click="storeController.initStoreMapByPhone(storeController.params.zipCode,item)">{{item}}</a>
+      </li> 
+    </ul> 
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<section class="accessories">
+  <h2 ng-if="appName!='vmu'" class="h2heading">ACCESSORIES FOR YOUR PHONE</h2>
+  <h1 ng-if="appName=='vmu'" class="h2heading">ACCESSORIES FOR YOUR PHONE</h1>
+  <div class="col-xs-12 notyourphone">
+    <img ng-src="{{phoneController.accList.phone.compare_thumb_img}}">
+    <h4>{{phoneController.accList.phone.name}}</h4>
+    <a href="{{pathMap._phoneAccessories._hash}}">{{appName=='vmu' ? '// Switch Phone' : 'Not your phone ? Switch here'}}</a>
+  </div>
+  <div ng-repeat="item in phoneController.accList.accessories" id="item.sku" class="col-xs-12 col-sm-4 col-md-3 acc {{phoneController.accList.accDiscountClass(item)}}" >
+    <span>
+      <h4 ng-if="appName=='bst'" class="acc_item_label">{{item.label}}</h4>
+      <img ng-src="{{item.shopImage.uRI}}" alt="image: {{item.label}}">
+      <h4 ng-if="appName!='bst'">{{item.label}}</h4>
+      <p style="margin: 0 10px;">{{item.description}}</p>
+      <span class="retail_price">{{item.retail_price|currency}}</span>
+      <div class="price">{{item.price|currency}}</div>
+      <a class="btn btn-sm btn-primary acc-add-to-cart-btn" ng-href="{{pathMap._checkout._hash}}addToCart/sku={{item.sku}}/" ng-disabled="item.noMore">{{item.cartLabel}}</a>
+    </span>
+  </div>
+  <div ng-if="phoneController.accList.accessories.length==0" id="no-accessories" class="text-center" >
+    <p>We're sorry.<br>We don't currently<br>sell accessories<br>for this phone.</p>
+  </div>
+</section>

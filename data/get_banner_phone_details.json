@@ -1,0 +1,12 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "6c65a6ad-f80c-4d84-85e1-d493450b0e25",
+			"@class": "",
+			"@name": "section_banner",
+			"@position": "phone-number",
+			"@code": "0",
+			"$": "1-844-555-1445"
+		}]
+	}
+}

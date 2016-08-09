@@ -1,0 +1,20 @@
+<div id="phoneContent" class="tab-pane {{phoneController.selectedTab=='plans'?'active':''}}">
+  <div class="phoneInfo phone-type-android" id="phonePlans" style="display: block;">
+    <div class="phoneLeftColumn col-md-9">
+      
+      <div ng-show="phoneController.planType=='UNLIMITED'" id="unlimitedplan" style="display:block!important;">
+	      <banner-directive banner-id="vmu-unlimited-plan"></banner-directive>
+      </div>
+      <div ng-show="phoneController.planType=='PAYLO'" id="payloplan">
+		  <banner-directive banner-id="vmu-paylo-plan"></banner-directive>
+      </div>
+      
+      <div class="clearfix"></div>
+		<banner-directive banner-id="vmu-phoneDetail-greyBox"></banner-directive>
+	</div>
+    <div class="phoneRightColumn col-md-3">
+		<banner-directive banner-id="vmu-hassleFree-sideBox"></banner-directive>
+
+    </div>
+  </div>
+</div>

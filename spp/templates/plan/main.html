@@ -1,0 +1,92 @@
+<div>
+  <section class="promo-full plans">
+    <div class="col-xs-12">
+      <banner-item  url="get_banner_shop_plans" index="0" class="promo08" options="image"></banner-item>
+    </div>
+  </section>
+  <section class="legal">
+    <p><strong>Sprint Prepaid has no annual contracts. Monthly plan:</strong> No plan discounts apply.  Unlimited domestic services are while on-network (non-roaming) only.  Plans include 50 voice roaming minutes.  After plan's applicable data allotment reached, data access continues but speeds reduced to 2G speeds for remainder of plan cycle. Usage limitations apply.   <strong>Data pack:</strong> Add-on provides additional data for device and/or hotspot (select devices only).  Access expires 30 days from purchase date or when monthly data allowance is depleted, whichever occurs first.  Actual speeds may vary.  <strong>Other terms:</strong> Coverage not available everywhere.  The Nationwide Sprint and Sprint 3G networks for voice and 3G data services both reach more than 281 million people.  The Sprint 4G LTE network reaches more than 280 million people.  Price, plans & offers subject to change without notice and vary by market/retailer.  Taxes and fees may apply when adding funds to accounts. Service subject to certain terms.  Not all features available on all phones.  Depending on the plan selected, certain preinstalled applications may not be functional.  Offer, network use rules and other restrictions apply. See <a target="_blank" href="http://www.sprint.com/legal/terms_conditions_spp.html">terms and conditions</a>  for complete details. ©2015 Sprint.  All rights reserved.</p>
+  </section>
+
+  <section class="featuredPhones" ng-init="phoneController.genie.loadGenieList()">
+    <div class="col-sm-3 hidden-xs">
+      <div class="dropdown">
+        <select class="btn btn-default sortby" ng-model="phoneController.genie.sort">
+          <option value="featured" selected>Featured</option>
+          <option value="timeZA">Newest to Oldest</option>
+          <option value="priceAZ">Price: Low to High</option>
+          <option value="priceZA">Price: High to Low</option>
+          <option value="nameAZ">Alphabetically</option>
+        </select>
+      </div>
+      <p><b><a href="{{pathMap._phones._hash}}">Shop our phones</a></b></p><p>Find the phone that's right for you.</p>
+    </div>
+    <div class="col-xs-12 col-sm-9" ng-if="phoneController.genie.pages.length">
+      <div id="carousel-plans" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div ng-repeat="page in phoneController.genie.getSortPages()" class="item {{$index==0?'active':''}}">
+            <div class="col-xs-4 phoneEntry" ng-repeat="item in page">
+              <a ng-href="{{pathMap._phoneDetails._hash}}{{item.id}}/features/">
+                <img alt="{{item.brand}} {{item.name}} - {{appDisplayName}}" ng-src="{{item.selectedVariant.gridImage}}" style="padding-left:10px"></img>
+                <div class="phoneEntryInfo">
+                  <p class="phoneBrand">{{item.displayBrand}}</p>
+                  <p class="phoneName">{{item.name}}</p>
+                  <p><span class="{{phoneController.getRateStarClass(item.rate)}}">&nbsp;</span></p>
+                  <span class="price">
+                  <p class="phonePromoDiscount" ng-if="item.selectedVariant.discount">{{item.selectedVariant.discount|currency}}</p>
+                  <p class="phoneFinalPrice" ng-if="!item.selectedVariant.hiddenPrice">
+                    <span class="phonePriceOld" ng-show="item.selectedVariant.msrp">{{item.selectedVariant.msrp|currency:""}}</span>
+                    <span>{{item.selectedVariant.price|currency:""}}</span>
+                  </p>
+                  <p ng-if="item.selectedVariant.hiddenPrice">
+                    <span>See price in cart</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a ng-if="phoneController.genie.pages.length!=1" class="left carousel-control" href="#carousel-plans" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a ng-if="phoneController.genie.pages.length!=1" class="right carousel-control" href="#carousel-plans" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-half">
+    <div class="col-xs-6">
+      <banner-item url="get_banner_shop_plans" index="1" class="promo03" options="url,image,title,description,link_text"></banner-item>
+    </div>
+    <div class="col-xs-6">
+      <banner-item url="get_banner_shop_plans" index="2" class="promo07" options="url,image,title,description,link_text"></banner-item>
+    </div>
+  </section>
+  <section class="banner">
+    <banner-item url="get_banner_shop" class="promo11" index="3" options="hide_image_in_small,url,bg_image,title,description,link_text"></banner-item> 
+  </section>
+    <section class="askedquestions faqs">
+      <h3>FAQs</h3>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default" ng-repeat="item in planController.data.faqs">
+          <div class="panel-heading" role="tab" id="faq{{$index+1}}">
+            <h4 class="panel-title">
+            <a class="{{phoneController.collapseIndex == $index?'':'collapsed'}}" ng-click="phoneController.collapseIndex = $index">
+              {{item.title}}
+            </a>
+            </h4>
+          </div>
+          <div class="panel-collapse collapse {{phoneController.collapseIndex == $index?'in':''}}">
+            <div class="panel-body" ng-bind-html="item.content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="legal">
+    <p>Price, plans & offers subject to change without notice and vary by market/retailer. Taxes and fees may apply when adding funds to accounts. Additional terms, prohibited network use rules and restrictions apply. See  <a target="_blank" href="http://www.sprint.com/legal/terms_conditions_spp.html">terms and conditions</a> for complete details. ©2015 Sprint. All rights reserved.</p> 
+  </section>
+</div>

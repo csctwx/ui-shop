@@ -1,0 +1,9 @@
+.loadingImg{
+  display:none;
+}
+.support_browser{
+  display:none;
+}
+.non_support_browser{
+  display:block;
+}

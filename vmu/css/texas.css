@@ -1,0 +1,61 @@
+#mainContent {
+    font-size: 10px;
+    color: #727375;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    background: none;
+}
+
+#content_wrapper, #mainContent, #col_wrapper, #mainContent .col.full {
+    font-size: 10px;
+    margin: 0px auto !important;
+    width: 956px;
+    float: none;
+    clear: both;
+    padding: 0px 5px;
+}
+
+#col_wrapper h2.hdl {
+    overflow: hidden;
+    text-indent: 0;
+    margin: 10px !important;
+    height: auto;
+    padding-top: 20px;
+    background-position: 0px 20px !important;
+    background: none !important;
+    font: bold italic 30px/32px 'ProximaNova-Semibold', Arial, Helvetica, sans-serif;
+    color: #000;
+    overflow: visible;
+    text-transform: uppercase;
+}
+
+#col_wrapper .wide {
+    width: 676px;
+    margin: 0 10px;
+}
+
+.col.wide h4{
+	text-transform: none !important;
+	font-weight: bold;
+	font-family: ProximaNovaRegular, Arial, Verdana, Helvetica, sans-serif !important;
+}
+
+#col_wrapper .narrow {
+    width: 225px;
+    margin: 0 0 0 10px;
+}
+
+#promo1 {
+    height: 538px;
+    width: 225px;
+    text-indent: -9999px;
+}
+
+#col_wrapper .default1 {
+    background: url('../img/texas/lost_phone.jpg') left top no-repeat;
+}
+.col.wide h4, .col.wide p{
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+}

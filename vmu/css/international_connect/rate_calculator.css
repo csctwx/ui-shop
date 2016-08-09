@@ -1,0 +1,482 @@
+/*  --  Styles associated only with the Rate Calculator for International Connect.  --  */
+
+.rate_calculator_container {
+	
+	font-family: Arial;
+}
+.bn-bk, .font-boostneo-black {
+    font-family: BoostNeoBlack,Arial,Helvetica,sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ratetable h4{letter-spacing: 0.5px; padding-top: 15px !important;padding-bottom: 15px !important;}
+.arrow-black, .arrow-black:link, .arrow-black:visited {
+    background-image: url(../../img/arrow-black.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+.arrows-orange:link, .arrows-orange:visited, h2.arrows-orange {
+    font-weight: bold;
+    background-image: url(../../img/links-arrows-orange.png);
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    padding-left: 25px !important;
+	font: 19px/19px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif !important;
+    color: #fff;
+    text-decoration: none;
+	margin-top: 85px;
+}
+.ratetable .disclaimer p{font-size: 11px;}
+.ratetable .disclaimer p a{font-size: 11px !important; text-decoration: underline !important;}
+.ratetable .disclaimer {
+    margin: 20px 30px !important;
+    font-size: 10px!important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #000;
+}
+#view-rates {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+#rates .int-rates h2{
+	font: 19px/19px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif !important;
+	font-weight: bold !important;
+	padding-left: 0px !important;
+	margin-bottom: 5px !important;
+}
+#rates .int-rates h3{
+	margin: 0px !important;
+	margin-top: 0px !important;
+	color: #000 !important;
+	font-size: 18px !important;
+}
+.modal .col {
+    float: left;
+    width: 25%;
+    font-size: 19px;
+}
+.bn-b, .font-boostneo-bold, .font-boostneo-bold-hover {
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.countryBody{padding: 0px 20px;}
+.flag {
+    color: #000;
+    display: inline-block;
+    background-color: #6fdbdb;
+    padding: 5px;
+    font-size: 14px!important;
+}
+#search_results ul, #search_results ol, #search_results_note ul, #search_results_note ol{margin:0px;padding:0px;}
+#search_results li, #search_results_note li{list-style-type: none;}
+	.rate_calculator_container h2 {
+		font: 19px/19px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif;
+		margin-bottom: 17px;
+	}
+
+	.rate_calculator {
+		background-color: #000;
+		color: #FFF;
+		border-radius: 3px;
+		padding-bottom: 16px;
+	}
+		.rate_calculator .instructions {
+		    border-right: 1px solid #9E9E9E;
+		    float: left;
+		    height: 182px;
+		    margin: 16px 18px 0px 14px;
+		    /*padding: 15px 38px 0 10px;*/
+			padding: 0px;
+		    width: 331px;
+			display: table;
+		}
+			.rate_calculator .instructions h3 {
+				font-size: 16px;
+				margin: 0 0 9px 14px;
+			}
+			.rate_calculator .instructions p {
+				font: 13px/16px Arial, Helvetica, sans-serif;
+				color: #A8A8A8;
+				margin: 0 0 0 14px;
+			}
+			#rates .ratetable .rate_calc_form {
+				padding: 10px 20px 0 !important;
+		}
+			.rate_calc_form .phone_number_fields {
+				/*width: 527px;*/
+			}
+			.clearfix {
+				display: block;
+			}
+			.rate_calc_form .indented {
+				margin-left: 14px;
+			}
+			#rates .ratetable .rate_calc .rate_calculator {
+				width: 50%;
+				border-right: none !important; 
+				min-height: 150px;
+				padding: 10px 30px;
+			}
+			.rate_calc_form .phone_number_fields div#phone_prefix {
+				overflow: hidden;
+				background: url('../../img/styled_pulldown_button.gif') no-repeat top left #fff !important;
+				color: #000;
+				width: 65px;
+				height: 28px;
+				float: left;
+				margin: 5px 14px 0;
+			}
+			.rate_calc_form .phone_number_fields + p {
+				margin: 0 !important;
+				padding-top: 0px !important;
+			}
+			.rate_calc_form input#phone_number {
+				border: none;
+				float: left;
+				margin: 5px 0pt 0pt;
+				height: 28px;
+				background: url('../../img/phone_field_background.gif') no-repeat left top;
+				width: 130px;
+				padding: 2px 8px 0 8px;
+				font: 16px/16px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif;
+			}
+			.rate_calc_form #phone_prefix select {
+				background: transparent;
+				width: 83px;
+				height: 31px;
+				border: none;
+				outline: none;
+				padding: 5px 0 0 4px;
+				font: 16px/16px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif;
+			}
+
+
+			.rate_calc_form .error_message {
+				color: #DE0000;
+			    /*display: none;*/
+			    font: bold 10px/10px Arial;
+			    margin: 12px 0 0 195px;
+			    position: absolute;
+				right: 0;
+				height: 50px !important;
+			    text-align: center;
+			    width: 130px;
+			}
+			.error {
+				color: #DE0000;
+			}
+
+
+			.rate_selection {
+				margin: 11px 0 0 0;
+				display: block;
+			}
+				.rate_selection p {
+					margin: 0 0 0 22px;
+					font-size: 12px;
+					line-height: 12px;
+					width: 410px;
+				}
+				.rate_selection p label {
+					line-height: 18px;
+					color: #B3B3B3;
+				}
+				.rate_selection p label strong {
+					color: #FFF;
+				}
+				.rate_selection .radio {
+					width: 19px;
+					height: 23px;
+					padding: 0 2px 0 0;
+					background: url('../_images/radio_styled.gif') no-repeat;
+					display: block;
+					clear: left;
+					float: left;
+					margin-top: -2px;
+				}
+
+			.rate_calc_form a.btn_search {
+				display: block;
+				text-indent: -9999px;
+				width: 110px;
+				height: 25px;
+				background: url('../../img/btn_search.png') no-repeat left top;
+				margin-top: 10px;
+			}
+			.rate_calc_form a.btn_search:hover {
+				background: url('../../img/btn_search.png') no-repeat left bottom;
+			}
+			.rate_calc_form a.btn_search.over {
+				background-position: left -25px;
+			}
+
+	.rate_calculator_container p.tinytext {
+		color: #474747;
+	}
+
+	.rate_calculator_container p.subtext {
+		font-size: 13px;
+		margin-top: 11px !important;
+	}
+		.rate_calculator_container p.subtext a {
+			text-decoration: underline;
+			font-weight: normal;
+		}
+
+
+body.ie6 .rate_calc_form .error_message {
+	margin: 15px 0 0 -8px !important;
+}
+
+body.ie6 .rate_calculator { padding-bottom: 12px; }
+
+body.ie6 .rate_calculator .instructions {
+    border-right: 1px solid #9E9E9E;
+    float: left;
+    height: 166px;
+    margin: 13px 18px 15px 14px;
+    padding: 36px 38px 0 10px;
+    width: 260px !important;
+}
+
+body.ie6 .rate_calculator .rate_calc_form {
+    width: 450px;
+}
+
+
+
+
+
+.rate_calc_search_results.add5 {
+	background: url('../_images/chart_rate_calculator_results_full.gif') no-repeat left -202px;
+}
+.rate_calc_search_results.gf {
+	background: url('../_images/chart_rate_calculator_results_gf.gif') no-repeat left 0px;
+}
+	.rate_calc_search_results.gf #best_deal {
+		display: none;
+	}
+
+
+.rate_calc_search_results.single {
+	background: url('../_images/chart_rate_calculator_results_partial.gif') no-repeat left 0px;
+	width: 880px;
+	height: 152px;
+}
+.rate_calc_search_results.single.add5 {
+	background: url('../_images/chart_rate_calculator_results_partial.gif') no-repeat left -152px;
+}
+.rate_calc_search_results.single.gf {
+	background: url('../_images/chart_rate_calculator_results_gf.gif') no-repeat left -202px;
+}
+	.rate_calc_search_results.single.gf #best_deal {
+		display: none;
+	}
+  
+
+	.rate_calc_search_results li {
+		float: left;
+		width: 183px;
+		min-height: 43px;
+		margin: 0 1px 1px 0 !important;
+		padding-top:15px;padding-left:10px;  line-height: 14px;background-color:#e9eaeb;
+	}
+		.rate_calc_search_results ul.other li {
+			height: 49px;
+		}
+
+	.rate_calc_search_results ul.column_headers li {
+                font-size:22px;
+	}
+        .rate_calc_search_results ul.column_headers li p{margin:0px;padding:0px;}
+        
+        
+        .rate_calc_search_results ul.column_headers li span{font-size:14px;}
+        
+	.rate_calc_search_results li.shortest {
+		width: 147px;
+	}
+        
+        .rate_calc_search_results li.short {
+            width: 177px;
+        }
+        
+	.rate_calc_search_results .column_headers li.short {
+		
+                padding-top:23px;
+                min-height: 35px;
+                
+	}
+	.rate_calc_search_results li p.subtle {
+		color: #5F5F5F;
+	}
+
+	.rate_calc_search_results #country {
+		width: 147px;
+		font-family: Arial;
+		font-size: 14px;
+		line-height: 14px;
+                color:#000;
+                padding-top: 18px;
+                min-height: 40px;
+	}
+		.rate_calc_search_results #country p {
+			text-indent: 0px;
+		}
+		.rate_calc_search_results #country .country_name {
+			font-weight: bold;
+		}
+
+		.rate_calc_search_results #specific_label div, .rate_calc_search_results #other_label div {
+			font: 18px/18px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif;
+			margin: 9px 0 0 16px;
+			font-weight: bold;
+		}
+		.rate_calc_search_results.single #specific_label div, .rate_calc_search_results.single #other_label div {
+			font: 14px/14px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif;
+			margin: 15px 0 0 11px;
+			font-weight: bold;
+		}
+		#search_results_note.rate_calc_search_results #specific_label div {
+			margin: 11px 0 0 16px;
+		}
+
+		.rate_calc_search_results #specific_label .pre_label, .rate_calc_search_results.single #specific_label {
+			margin: 0px;
+			font: 14px/14px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif;
+		}
+		#search_results_note.rate_calc_search_results #specific_label .pre_label {
+			margin: 0px;
+		}
+
+		.rate_calc_search_results ul.specific li p, .rate_calc_search_results ul.other li p {
+			font: 16px/16px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif;
+			margin: 0px;
+		}
+		.rate_calc_search_results ul.specific li p.stacked, .rate_calc_search_results ul.other li p.stacked {
+			margin: 6px 0 0 26px;
+		}
+
+		.rate_calc_search_results #other_label p {
+			margin: 16px 0px 0px 16px;
+			font: 18px/18px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif;
+			font-weight: bold;
+		}
+		#search_results_note.rate_calc_search_results #other_label p {
+			margin: 19px 0px 0px 16px;
+		}
+
+
+		.rate_calc_search_results #best_deal {
+			background: url('../_images/best_deal.png') no-repeat left top;
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			z-index: 90;
+			margin: 3px 0 0 206px;
+		}
+			.rate_calc_search_results #best_deal.add5 {
+				margin: 3px 0 0 -71px;
+			}
+
+
+	.rate_calc_search_results .add_offer_buttons {
+		margin-left: 346px!important;text-align:center;
+	}
+
+	.rate_calc_search_results .add_offer_buttons a.over {
+		background-position: left -31px;
+	}
+
+
+	.no_ic_rates .notice {
+            padding-top:20px;
+	}
+		.no_ic_rates .notice h3 {
+			margin-bottom: -3px;
+			font: 18px/18px BoostNeoGroteskRegular, Arial, Helvetica, sans-serif !important;
+			color: #000;
+			font-weight: normal;
+		}
+	.no_ic_rates li#country p {
+		margin: 8px 0 0 3px !important;
+	}
+	.no_ic_rates ul.column_headers li {
+		height: 46px !important;
+	}
+        
+        
+.table{display:table;}
+.tr{display:table-row;}
+.td{display:table-cell;}
+
+.ic-new .td{height:70px;background-color: #e9eaeb;vertical-align: middle;font-size:17px;width:194px;padding-left:0px;border-right:1px solid #fff;border-bottom:1px solid #fff;}
+    .ic-new .td.wht{background-color:#fff;}
+    .ic-new .td.center{text-align:center;}
+    .ic-new .td.greydk{background-color:#c1c1c1;font-weight:bold;}
+    .ic-new .td.full{width:391px;height:210px;position:absolute;}
+        .ic-new .td.greydk .pre_label{font-weight:normal;}
+    .ic-new .country_name{font-weight:bold;}
+    .ic-new h3{margin:0px;}
+    .ic-new .sm{font-size:13px;}
+    
+    section.ratetable + section{/*background-color: #000 !important;*/}
+    
+.rate_calc_search_results {
+	display: none;
+}
+
+.rate_calc_search_results_showed{
+	display: true;
+}
+
+.gradient-orange, .gradient-orange-hover, .gradient-orange-nohover {
+    position: relative;
+    background: #f7901e !important;
+    background: -webkit-gradient(linear,0 0,0 bottom,from(#f7901e),to(#d1581c)) !important;
+    background: -webkit-linear-gradient(#f7901e,#d1581c) !important;
+    background: -moz-linear-gradient(#f7901e,#d1581c) !important;
+    background: -ms-linear-gradient(#f7901e,#d1581c) !important;
+    background: -o-linear-gradient(#f7901e,#d1581c) !important;
+    background: linear-gradient(#f7901e,#d1581c) !important;
+}
+
+.ratetable h3{
+	background-color: transparent !important;
+	padding: 0px !important;
+}
+
+#rates .ratetable div>div a.btn{
+	color: #fff;
+	width: 80% !important;
+}
+
+#rates .rate-header{
+	background-color: #f7901e !important;
+}
+.td{
+	text-align: center !important;
+}
+div.wht{
+	background-color: #fff !important;
+}
+
+section.legal a{
+    color:#888!important;
+}
+
+section.legal p{
+    font-family: verdana;
+    color: #666;
+    font-size: 10px!important;
+    line-height: 1.231;
+}

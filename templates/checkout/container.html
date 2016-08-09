@@ -1,0 +1,105 @@
+<div id="checkoutController" ng-controller="checkoutController as checkoutController">
+  <h1 ng-if="appName=='vmu'" class="hidden">Checkout</h1>
+  <div ng-show="app.isCurrentContext(pathMap._checkout._formatedHash)">
+		<section class="progressArrows" ng-if="checkoutController.ibCart==false">
+			<ul>
+				<li>
+          <a class="{{checkoutController.step==1?'current':''}}" ng-click="checkoutController.setStep(1)">
+          <i class="glyphicon glyphicon-ok-sign" ng-if="appName=='spp'"></i>
+          <span ng-if="appName=='bst'">Step 1</span><span ng-if="appName=='vmu'"></span>Shipping/Billing</a></li>
+				<li>
+          <a class="{{checkoutController.step==2?'current':''}}" ng-click="checkoutController.setStep(2)">
+          <i class="glyphicon glyphicon-info-sign" ng-if="appName=='spp'"></i>
+          <span ng-if="appName=='bst'">Step 2</span><span ng-if="appName=='vmu'"></span>Review &amp; Purchase</a></li>
+				<li>
+          <a class="{{checkoutController.step==3?'current':''}}">
+          <i class="glyphicon glyphicon-info-sign" ng-if="appName=='spp'"></i>
+          <span ng-if="appName=='bst'">Step 3</span><span ng-if="appName=='vmu'"></span>Confirmation</a></li>
+			</ul>
+		</section>
+		<section class="progressArrows progressArrows-five" ng-if="checkoutController.ibCart==true">
+			<ul>
+				<li>
+          <a class="{{checkoutController.step==0?'current':''}}">
+          <i class="glyphicon glyphicon-ok-sign" ng-if="appName=='spp'"></i>
+          <span ng-if="appName=='bst'">Step 1</span><span ng-if="appName=='vmu'"></span>Buy With Installments</a></li>
+				<li>
+          <a class="{{checkoutController.step==1?'current':''}}">
+          <i class="glyphicon glyphicon-info-sign" ng-if="appName=='spp'"></i>
+          <span ng-if="appName=='bst'">Step 2</span><span ng-if="appName=='vmu'"></span>Payment Shipping</a></li>
+				<li>
+          <a class="{{checkoutController.step==4?'current':''}}">
+          <i class="glyphicon glyphicon-info-sign" ng-if="appName=='spp'"></i>
+          <span ng-if="appName=='bst'">Step 3</span><span ng-if="appName=='vmu'"></span>Contract Details</a></li>
+				<li>
+          <a class="{{checkoutController.step==2?'current':''}}">
+          <i class="glyphicon glyphicon-info-sign" ng-if="appName=='spp'"></i>
+          <span ng-if="appName=='bst'">Step 4</span><span ng-if="appName=='vmu'"></span>Review</a></li>
+				<li>
+          <a class="{{checkoutController.step==3?'current':''}}">
+          <i class="glyphicon glyphicon-info-sign" ng-if="appName=='spp'"></i>
+          <span ng-if="appName=='bst'">Step 5</span><span ng-if="appName=='vmu'"></span>Success</a></li>
+			</ul>
+		</section>
+    <section class="checkout" ng-show="checkoutController.data.equipments.length==0 && checkoutController.step!=3">
+      <div style="min-height:230px;padding:50px 10px">
+        <h2 ng-show="checkoutController.data.equipments.length==0">{{checkoutController.errorMsg}}</h2>
+        <br/>
+        
+        <a ng-if="appName!='bst'" style="padding-left:100px" href="" ng-click="appUtil.ui.previousPage()">Go To Shopping ...</a>
+         <a ng-if="appName=='bst' && (checkoutController.ibToken==='' || checkoutController.ibToken==null)" style="padding-left:100px" href="https://www.boostmobile.com/shop/phones/">Go To Shopping ...</a>
+        <a ng-if="appName=='bst' && (checkoutController.ibToken!=null)" style="padding-left:100px" href="" ng-click="appUtil.ui.previousPage()">Go To Shopping ...</a>
+        
+		<!-- IBM URL Change END -->	
+      </div>
+    </section>
+    <div ng-if="!checkoutController.ibCart">
+      <checkout-step1 ng-show="checkoutController.step==1 && checkoutController.data.equipments.length!=0"></checkout-step1>
+      <checkout-step2 ng-show="checkoutController.step==2 && checkoutController.data.equipments.length!=0"></checkout-step2>
+      <checkout-step3 ng-show="checkoutController.step==3 && !checkoutController.data.error"></checkout-step3>
+    </div>
+    <div ng-if="checkoutController.ibCart">
+      <checkout-step0 ng-show="checkoutController.step==0 && checkoutController.data.equipments.length!=0"></checkout-step0>
+      <checkout-step1 ng-show="checkoutController.step==1 && checkoutController.data.equipments.length!=0"></checkout-step1>
+      <checkout-step4 ng-show="checkoutController.step==4 && !checkoutController.data.error"></checkout-step4>
+      <checkout-step2 ng-show="checkoutController.step==2 && checkoutController.data.equipments.length!=0"></checkout-step2>
+      <checkout-step3 ng-show="checkoutController.step==3 && !checkoutController.data.error"></checkout-step3>
+    </div>    
+    <checkout-step3-in-error ng-show="checkoutController.step==3 && checkoutController.data.error"></checkout-step3-in-error>
+    <checkout-legal></checkout-legal>
+  </div>
+  <checkout-order_status ng-show="app.isCurrentContext(pathMap._orderStatus._formatedHash)"></checkout-order_status>
+  <div class="modal fade" id="checkout_help_reminder" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width:auto;">
+        <div class="modal-body">
+          <h2 id="d_help_reminder" style="color:#f5941e;position:absolute;top:107px;left:237px;">{{checkoutController.reminderPhone}}</h2>
+          <h3 id="m_help_reminder" style="color:#f5941e;position:absolute;top:75px;left:28px;">{{checkoutController.reminderPhone}}</h3>
+          <img id="d_help_reminder" usemap="#d_help_reminder_map" src="bst/img/help_reminder.png" />
+          <img id="m_help_reminder" usemap="#m_help_reminder_map" src="bst/img/help_reminder_m.png" />
+          <map id="d_help_reminder_map" name="d_help_reminder_map">
+            <area coords="415,5,425,15" onclick="$('.modal-backdrop').click()" style="cursor:pointer" shape="rect"/>
+          </map>
+          <map id="m_help_reminder_map" name="m_help_reminder_map">
+            <area coords="255,5,265,15" onclick="$('.modal-backdrop').click()" style="cursor:pointer" shape="rect"/>
+          </map>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="what_is_paypal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="max-width:390px;width:100%;margin:auto;">
+        <div class="modal-body">
+        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <img src="vmu/img/whatispaypal.png" usemap="#registerPP1" border="0">
+			<map id="registerPP1" name="registerPP1">
+			<area shape="rectangle" coords="20,379,118,393" id="registerpaypal" href="https://www.paypal.com/signup/account" target="_new">
+			</map>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

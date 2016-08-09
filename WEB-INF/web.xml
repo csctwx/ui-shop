@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- BEGIN OF MAIL SERVLETS -->
+
+	<servlet>
+		<servlet-name>sendMailServlet</servlet-name>
+		<servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>vmuSendMailServlet</servlet-name>
+        <servlet-class>com.boostmobile.runtime.util.DynamicSendMail</servlet-class>
+	</servlet>
+
+	<servlet>
+			<servlet-name>dynamicSendMailServlet</servlet-name>
+			<servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>
+	</servlet>
+
+	<!-- END OF MAIL SERVLETS -->
+	
+	
+	
+	<!-- BEGIN OF International Connect SERVLETS -->
+	
+	<servlet>
+    	<servlet-name>InternationalConnectServlet</servlet-name>
+    	<servlet-class>com.boostmobile.runtime.international.InternationalConnectServlet</servlet-class>
+			<init-param>
+				<param-name>dataProviderName</param-name>
+				<param-value>boostDataProvider</param-value>
+			</init-param>
+   </servlet>
+
+	<servlet>
+		<servlet-name>vmuInternationalConnectServlet</servlet-name>
+		<servlet-class>com.boostmobile.runtime.international.InternationalConnectServlet</servlet-class>
+		<init-param>
+			<param-name>dataProviderName</param-name>
+			<param-value>boostDataProvider</param-value>
+		</init-param>
+	</servlet>
+	
+	<!-- END OF International Connect SERVLETS -->
+
+
+
+	<!-- BEGIN OF SEO SERVLET -->
+	
+	<servlet>
+		<servlet-name>SeoMapServlet</servlet-name>
+		<servlet-class>com.ericsson.shop.seo.SeoMapServlet</servlet-class>
+	</servlet>
+	
+	<!-- END OF SEO SERVLET -->
+       
+
+	<!-- BEGIN OF ALL MAPPING SERVLETS -->
+   
+	<servlet-mapping>
+		<servlet-name>SeoMapServlet</servlet-name>
+		<url-pattern>/SeoMapServlet</url-pattern>
+	</servlet-mapping>
+	
+  	<servlet-mapping>
+    	<servlet-name>InternationalConnectServlet</servlet-name>
+    	<url-pattern>/InternationalConnectServlet</url-pattern>
+  	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>vmuInternationalConnectServlet</servlet-name>
+		<url-pattern>/vmuInternationalConnectServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dynamicSendMailServlet</servlet-name>
+		<url-pattern>/dynamicSendMailServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>vmuSendMailServlet</servlet-name>
+        <url-pattern>/vmuSendMailServlet</url-pattern>
+	</servlet-mapping>
+        
+    <servlet-mapping>
+    	<servlet-name>sendMailServlet</servlet-name>
+    	<url-pattern>/SendMailServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- END OF ALL MAPPING SERVLETS -->
+
+
+	<!-- BEGIN OF ERROR PAGE 404 -->
+	
+    <error-page>
+      <error-code>404</error-code>
+      <location>/error.jsp</location>
+  </error-page>
+  
+  	<!-- END OF ERROR PAGE 404 -->
+  
+</web-app> 

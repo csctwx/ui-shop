@@ -1,0 +1,134 @@
+#net-content {
+    position: relative;
+    width: 100%;
+}
+
+#net-content .section-pane {
+    position: relative;
+}
+
+#net-content #intro-pane {
+    width: inherit;
+    height: 402px;
+    background: url('../img/network-updates/net-intro-bg.jpg') no-repeat 50% 0;
+}
+
+#net-content .section-pane .copy-content {
+    position: relative;
+    width: 965px;
+    margin: 0 auto;
+    padding: 60px 0 0 10px;
+}
+
+#net-content .section-pane .dividor {
+    position: absolute;
+    width: inherit;
+    height: 18px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 100;
+    background: url('../img/network-updates/div-bg.png') repeat-x 0 0;
+}
+
+#net-content .section-pane .copy-content h1 {
+    font: 36px/36px "ProximaNova-Semibold-Italic",arial,helvetica,sans-serif !important;
+    margin: 0 0 5px 0 !important;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#net-content .section-pane .copy-content h3 {
+    font: 30px/30px "ProximaNova-Regular-Italic",arial,helvetica,sans-serif;
+    margin: 0 0 30px 0;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#net-content .section-pane .copy-content h2 {
+    font: 24px/24px "ProximaNova-Semibold-Italic",arial,helvetica,sans-serif !important;
+    margin: 0 0 15px 0 !important;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#net-content .section-pane .copy-content p {
+    font: 18px/24px "ProximaNova-Regular-Italic",arial,helvetica,sans-serif;
+    margin: 0 0 40px 0 !important;
+    color: #000;
+}
+
+#net-content #intro-pane.section-pane .copy-content p {
+    width: 425px;
+}
+
+#net-content #four-g-pane {
+    width: inherit;
+    height: 489px;
+    background: url('../img/network-updates/net-4g-bg.jpg') no-repeat 50% 0;
+}
+
+#net-content #four-g-pane.section-pane .copy-content h2 {
+    color: #fff;
+    padding: 20px 0 0 0;
+}
+
+#net-content #four-g-pane.section-pane .copy-content p {
+    color: #fff;
+    width: 480px;
+}
+
+#net-content a.vmu_butt_red01 {
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 0 10px 0 0;
+    font: bold 14px/14px arial,helvetica,sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px 0 #333333;
+    text-shadow: 1px 1px 3px #333333;
+    background-color: #d52626;
+    background: linear-gradient(#d52626, #ab1b1b) repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d52626', endColorstr='#ab1b1b');
+}
+
+#net-content a.vmu_butt_gray01 {
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 0 10px 0 0;
+    font: bold 14px/14px arial,helvetica,sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px 0 #333333;
+    text-shadow: 1px 1px 3px #333333;
+    background-color: #585858;
+    background: linear-gradient(#585858, #3a3a3a) repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585858', endColorstr='#3a3a3a');
+}
+
+#net-content .section-pane .copy-content p a {
+    color: #fff;
+    font-family: "ProximaNova-Semibold-Italic" !important;
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+#net-content #three-g-pane {
+    width: inherit;
+    height: 440px;
+    background: url('../img/network-updates/net-3g-bg.png') no-repeat 50% 0;
+}
+
+#net-content #three-g-pane.section-pane .copy-content h2 {
+    color: #D70020;
+    padding: 20px 0 0 450px;
+}
+
+#net-content #three-g-pane.section-pane .copy-content p {
+    padding: 0 0 0 450px;
+}
+
+#net-content #three-g-pane a.vmu_butt_red01 {
+    margin: 0 10px 0 450px;
+}

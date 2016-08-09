@@ -1,0 +1,37 @@
+<section class="shippingInfo">
+  <div class="col-xs-12">
+    <h4>Shipping Information <a href="" ng-click="checkoutController.restartCheckout()" class="reduceFont">(Edit)</a></h4>
+    <dl>
+      <dt>First Name</dt>
+      <dd>{{checkoutController.data.shippingInfo.firstName}}</dd>
+      <dt>Last Name</dt>
+      <dd>{{checkoutController.data.shippingInfo.lastName}}</dd>
+      <dt>Address 1</dt>
+      <dd>{{checkoutController.data.shippingInfo.address1}}</dd>
+      <dt ng-if="checkoutController.data.shippingInfo.address2!=null">Address 2</dt>
+      <dd ng-if="checkoutController.data.shippingInfo.address2!=null">{{checkoutController.data.shippingInfo.address2}}</dd>
+      <dt>City</dt>
+      <dd>{{checkoutController.data.shippingInfo.city}}</dd>
+      <dt>State</dt>
+      <dd>{{checkoutController.data.shippingInfo.state}}</dd>
+      <dt>Zip Code</dt>
+      <dd>{{checkoutController.data.shippingInfo.zipCode}}</dd>
+      <dt>Phone Number</dt>
+      <dd>{{checkoutController.data.shippingInfo.phoneNumber}}</dd>
+      <dt ng-if="appName=='spp'">Email</dt>
+      <dd ng-if="appName=='spp'">{{checkoutController.data.shippingInfo.email}}</dd>
+      <!-- <dt class="mainColor">Shipping Via</dt>
+      <dd>{{checkoutController.data.shippingOption.label}}</dd> -->
+    </dl>
+
+    <div class="col-xs-12" ng-if="appName=='spp'">
+      <a class="btn btn-primary pull-right" ng-click="checkoutController.doComplete()" ng-disabled="checkoutController.data.equipmentError || checkoutController.isBlackZipcode(checkoutController.data.shippingInfo.zipCode) || shippingForm.$invalid">Complete Order <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+    </div>
+    <div class="col-xs-12" ng-if="appName=='bst'">
+      <a class="btn btn-primary pull-right" ng-click="checkoutController.doComplete()" ng-disabled="checkoutController.data.equipmentError || checkoutController.isBlackZipcode(checkoutController.data.shippingInfo.zipCode) || shippingForm.$invalid">Complete Purchase <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+    </div>
+    <div class="col-xs-12" ng-if="appName=='vmu'">
+      <a class="btn btn-primary pull-right" ng-click="checkoutController.doComplete()" ng-disabled="checkoutController.data.equipmentError || checkoutController.isBlackZipcode(checkoutController.data.shippingInfo.zipCode) || shippingForm.$invalid">Complete Purchase</a>
+    </div>
+  </div>
+</section>

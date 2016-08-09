@@ -1,0 +1,12 @@
+<div id="phoneDetail">
+  <section class="phoneDetailsTop {{phoneController.details.data.promotions[0].promotionCss.css}}">
+    <span class="return hidden-xs hidden-sm hidden-md hidden-lg"><i class="glyphicon glyphicon glyphicon-chevron-left"></i><a href="{{pathMap._phones._hash}}">Return to shop phones</a></span>
+    <div class="col-sm-6">
+      <phone-details-images></phone-details-images>
+    </div>
+    <phone-details-base></phone-details-base>
+  </section>
+  <phone-details-other></phone-details-other>
+  <phone-details-legal></phone-details-legal>
+  <phone-see-detail-modal ng-if="appName=='vmu'"></phone-see-detail-modal>
+</div>

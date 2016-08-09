@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+    <title>Boost Mobile - International Rates</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--link rel="canonical" href="http://www.boostmobile.com/shop/plans/international-connect/"/-->
+	<link rel="stylesheet" href="../../bst/css/international_connect/irates_style.css" />
+    <style type="text/css">
+        #lookup table td{color:#fff;}
+
+.small {font-size: 9px;}
+.tableContainer{margin-bottom:20px;padding-bottom:10px;padding-top:10px;}
+.tableContainer table {width:95%;display:none;
+	border-collapse: separate!important;
+  border-spacing: 3px!important;border-collapse: expression('separate', cellSpacing = '3px')!important;
+	}
+	.tableContainer table th {background: #FF6702;color:#000}
+	.tableContainer thead tr{
+	display:table-row!important;;margin-bottom:3px;
+}
+	.tableContainer tbody{border-bottom: 1px dotted #333;}
+	.tableContainer td {background: #131313;border: 1px dotted #333!important;padding:5px!important;}
+	.tableContainer table .prodinfoheadw {background-color:#333;}
+	.tableContainer .style1 {color:#FFF;}
+.show {display:table-row!important;}
+.hide {display:none!important;}
+h2 {padding-left:20px;}
+h2 input {font-size:14px;}
+
+    </style>
+        
+        
+    <script src="//assets.adobedtm.com/058f84f4e7e71054c64df8cf68552abe037a02d8/satelliteLib-eafbae910bf43e0229733e2a0197a9dcf1ccffaa.js"></script>
+        
+    </head>
+
+    <body>
+    <div id="container">
+        <div class="hdrPopup"><h1>Rates / International</h1></div>
+     
+      <div class="clear"></div>
+      <div class="hr">
+        <hr />
+      </div>
+      <div id="content"> <br />
+        <p>Use your Boost Mobile&reg; phone to dial internationally while in the U.S. International Long Distance calling capabilities may be enabled on your phone at activation. To activate or deactivate, visit <a target="_parent" href="https://activate.boostmobile.com/boostApp/myAccount.do">My Account</a>.</p>
+        <p><strong class="style2">Cost for International calls is the International Rate plus standard airtime rates.</strong> </p>
+        <!--<p><strong class="style2">Some mobile & landline numbers in select countries are excluded. <a id="closeModal" href="javascript:void();" target="_parent">Check your number</a> for details using our rate look-up by phone number. Included destinations and rates subject to change at any time.</strong> </p>-->
+        <br />
+        <a name="top" id="top"></a>
+        <h2 class="orange">Search By Country:
+          <input type="text" name="countury" value="" id="id_search" />
+          <span class="loading"></span></h2>
+
+        <div class="tableContainer" align="center">
+
+          <div id="lookup">
+            <table width="95%" border="0" cellspacing="3" cellpadding="4">
+              <col width="200">
+              <col width="200">
+              <col width="130">
+              <col width="135">
+			  <col width="135">
+              <thead>
+                <tr>
+                  <th class="backtotop" align="center">Country</th>
+                  <th class="backtotop" align="center">Type</th>
+                  <th class="backtotop" align="center">Standard Per Minute Rate</th>
+				  <th class="backtotop" align="center">$5 Todo Mexico Plus<br/>Per Minute Rate*</th>
+                  <th class="backtotop" align="center">$10 International Connect PLUS<br/>Per Minute Rate**</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+		<p class="legal">*Some mobile & landline numbers in select countries are excluded. <a id="closeModal" href="javascript:void();" target="_parent">Check your number</a> for details using our rate look-up by phone number. Included destinations and rates subject to change at any time.</p>
+		<br>
+        <p class="legal"> &#8224;&#36;5 Todo Mexico Plus: Available with select monthly plans &#36;45 and above.
+
+<br/>
+&#8224;&#8224;International Connect Plus: includes 200 calling minutes to select mobiles in select countries. After the 200 monthly minute allotment is depleted, additional talk minutes to mobiles charged at the reduced International Connect Plus rate. Add-on available with any monthly plan.
+      </div>
+    </div>
+	
+    <!-- SiteCatalyst Code -->
+    <script>window.jQuery || document.write('<script src="../../bst/js/international_connect/jquery-1.6.1.min.js"><\/script>')</script>
+    <!--script language="JavaScript" src="js/lib/jquery.min.js"></script-->
+    <script language="JavaScript" src="../../bst/js/international_connect/jquery.quicksearch.js"></script>
+    <script language="JavaScript" src="../../bst/js/international_connect/s_code.js"></script>
+	<!--script language="JavaScript" src="js/international_connect/jquery.quicksearch.js"></script>
+    <script language="JavaScript" src="bst/js/international_connect/s_code.js"></script-->
+    <script language="JavaScript"><!--
+		/* SiteCatalyst Variables */
+		s.pageName="International Rates"
+		var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+    <!-- End SiteCatalyst Code -->
+    <script language="JavaScript" src="../../bst/js/international_connect/boost.js" type="text/javascript">
+	</script>
+    <script>
+		
+    	$(document).ready(function(){
+			//Load the lookup table
+			$('#lookup tbody').load('../../bst/pages/lookup.html tr');
+			
+
+			var active = true;
+			//When the input box is clicked
+			$('#id_search').live("click", function(){
+				//Disable active, we don't want to initialized this on every single mouse click
+				if (active == true){
+					active = false;
+					//Initialized the quicksearch/sort function
+			 		$("#id_search").quicksearch("#lookup table tbody tr", {
+					noResults: '#noresults',
+					stripeRows: ['odd', 'even']
+					});
+				}
+			});
+			//Show the data table after the first character has been entered. This lets us hide the table onload via CSS
+			$('#id_search').keyup(function(){
+				$('.tableContainer table').css('display','block');
+			});
+		});    
+    </script>
+	
+	   <script>
+            var sdto = {
+                'page':{
+                    'channel':'eStore',
+                    'subSection':'Plans',
+                    'name':'International Rates',
+                    'language':'',
+                    'app':'bst'
+                }
+            }
+        </script>
+
+<script>
+  $(document).ready(function(){
+    $("#closeModal").click(function(){ 
+
+		window.parent.closeModal();
+    });
+  });
+</script>
+
+<script type="text/javascript">_satellite.pageBottom();</script>    	
+	
+</body>
+</html>

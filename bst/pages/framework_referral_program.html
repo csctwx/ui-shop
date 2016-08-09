@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<meta name="page-title" content="Why Boost">
+	<title>Prepaid Cell Phones &amp; No Contract Cell Phones | Boost Mobile</title>
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+	<link href="../css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="../css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="../css/app-framework.css" rel="stylesheet"/>
+	<link href="../css/wcb.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+	<div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<strong class="pull-left">Coverage Map</strong>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<!--<iframe src="http://coverage.sprint.com/mycoverage.jsp?id=SPREPAID" scrolling="no" width="100%" height="467" frameborder="0"></iframe>-->
+					<p>Sprint Prepaid offers dependable, nationwide coverage for voice and data. To view the coverage in your area, select the combination of voice and data cover you want to see, then enter an address or just your zip code in the fields to the right.</p>
+					<p><strong>Green regions denote voice coverage. Orange, blue and purple regions denote data coverage.</strong></p>
+					<p>View <a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a> on a full page and visit the <a class="more" href="http://www.sprint.com/prepaid">Shop</a> for Sprint Prepaid phone options.</p>
+					<p class="legal">Nationwide Sprint Network. This tool provides high-level estimates of our wireless coverage. Coverage is not available everywhere and varies based on a number of factors. Our coverage maps provide high level estimates of our coverage areas when using your device outdoors under optimal conditions. Coverage isn't available everywhere. Estimating wireless coverage and signal strength is not an exact science. There are gaps in coverage within our estimated coverage areas that, along with other factors both within and beyond our control (network problems, software, signal strength, your wireless device, structures, buildings, weather, geography, topography, etc.), will result in dropped and blocked connections, slower data speeds, or otherwise impact the quality of services. Services that rely on location information, such as E911 depend on your device's ability to acquire satellite signals (typically not available indoors) and network coverage. E911 services also depend local emergency service provider systems/support. Estimated future coverage subject to change.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="whychoose" class="container main plans whychoose">
+
+		
+		<section class="container main-contents">
+			<div class="col-xs-3 col-md-2">
+				<!--
+				<ul class="tabs-left">
+					<li><span>Why Choose Boost</span></li>
+					<li class="active"><a href="framework_whychoose.html">Value Without Compromise</a></li>
+					<li><span>Daily Plans</span></li>
+					<li><a href="framework_plans.html">$2 Daily Unlimited</a></li>
+					<li><a href="framework_plans.html">$3 Daily Unlimited</a></li>
+					<li><span>Additional Services</span></li>
+					<li><a href="framework_plans.html">International Services</a></li>
+					<li><a href="framework_plans.html">Mobile Hotspot</a></li>
+					<li><a href="framework_plans.html">Phone Insurance</a></li>
+					<li><a href="https://boostmobile.wipit.me">Mobile Wallet</a></li>
+					<li><a href="framework_market.html">Apps &amp; More</a></li>
+				</ul>-->
+				<ul class="tabs-left">
+					<li class="active"><a href="#value" data-toggle="tab">Value Without Compromise</a></li>
+					<li><a href="#prepaid" data-toggle="tab">Why Choose Prepaid</a></li>
+					<li><a href="#military" data-toggle="tab">Supports Military Families</a></li>
+					<li><a href="#referral"  data-toggle="tab">Referral Program</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-9 col-md-10">
+
+			 <div class="plans-top"> <h1>We've got some good news for you! </h1> <p>It's about time you get rewarded for spreading the word about Boost Mobile. </p> </div> <div class="referral-program-bottom"> <h3>We're pleased to introduce our new Referral Program. We're offering $25 for each friend you refer to Boost Mobile and up to a total of $500 referral rewards each year.</h3> <h2>How does it work?</h2> <ul> <li>Sign up for the Referral Program.</li> <li>Refer a friend though email, social media or text message.</li> <li>Enter your recipient information.</li> <li>Your friend accepts your offer, activates a phone with a monthly plan, confirms their new phone number and makes one monthly payment.</li> <li>You receive a $25 account credit - and so does your friend!</li> </ul> <p><a class="btn" href="http://refer.boostmobile.com/">Refer a Friend</a></p> <p>For more details regarding our referral program, read our <a href="/support/faq/plans-services/referral-program/">frequently asked questions</a>.</p> </div> 
+			
+		</section>
+	</div>	
+	<br />
+
+	
+
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/sprintprepaid-bootstrap.min.js"></script>
+    <script src="../js/lib/jasny-bootstrap.min.js"></script>
+	<script>
+		$('#coverageMap').on('shown.bs.modal', function () {
+			$('#coverageModal').focus()
+		})
+		$(function(){
+		$(".dropdown").hover(
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>

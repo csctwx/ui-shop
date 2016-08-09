@@ -1,0 +1,6 @@
+<section class="legal">
+  <p ng-if="appName=='spp'">After plan's applicable data allotment reached, data access continues but speeds reduced to 2G speeds for remainder of plan cycle. Not all features available on all phones. Depending on your service plan, certain applications that are preinstalled on your device may not be available or operational. Offer, prohibited network use rules and restrictions apply. See <a target="_blank" href="http://www.sprint.com/legal/terms_conditions_spp.html">terms and conditions</a> for complete details, including detailed coverage information.</p>
+  <p ng-if="appName=='bst'">A portion of phone memory storage is dedicated to the operating system and required services.  As a result this portion of memory is not usable by applications, pictures, videos or other personal data.</p>
+  <p ng-repeat="p in phoneController.details.data.promotions track by $index"><span ng-bind-html="appUtil.ui.trustAsHtml(p.legal)"></span></p>
+  <p ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.footerLegal)"></p>
+</section>

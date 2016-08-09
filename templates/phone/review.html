@@ -1,0 +1,15 @@
+<div class="tab-pane {{phoneController.selectedTab=='reviews'?'active':''}}">
+  <div class="col-md-12" ng-if="phoneController.selectedTab=='reviews'" style="padding-top:10px;padding-bottom:10px">
+    <div style="display:none" id="detailId">{{phoneController.showReview(review_sku)}}</div>
+    <style>
+    #BVRRContainer *{
+      box-sizing: content-box;
+    }
+    </style>
+    <div id="BVRRTitle">
+      <h3 style="padding:20px"> {{review_obj.name}} <span>Reviews</span></h3>
+	    <hr />
+    </div>    
+    <div id="BVRRContainer"></div> 
+  </div>
+</div>

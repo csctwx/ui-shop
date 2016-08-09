@@ -1,0 +1,30 @@
+<div class="modal fade" id="phoneStoreDialog" role="dialog">
+  <div class="modal-dialog" style="width:auto" onclick="$('.modal-backdrop.fade.in').click()">
+    <div class="modal-content container" onclick="event.stopPropagation()">
+      <div class="modal-header" style="border:0;height:0">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="$('.modal-backdrop.fade.in').click()">×</button>
+      </div>
+      <div class="modal-body">
+        <div id="store" class="row">
+          <div class="gradient-white" id="fismtop">
+            <img ng-src="{{phoneController.details.data.selectedVariant.gridImage}}" alt="HTC Desire 510 Cell Phone">
+            <h2> 
+              <span class="bn-b" itemprop="name">{{phoneController.details.data.name}}<br> </span>
+              <span class="bn-b"></span> 
+            </h2> 
+            <p>
+              {{phoneController.details.data.extendedDescription}}
+            </p> 
+            <div style="clear:both;"></div> 
+          </div>
+          <div id="locatorResults" class="row col-xs-12">
+            <div id="locatorTop">
+              <h2 class="font-boostneo-gradient">Here's a list of Preferred {{appDisplayName}} Retailers near you. Please call ahead to check availability.</h2>
+              <store-normal></store-normal>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

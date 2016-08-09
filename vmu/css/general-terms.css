@@ -1,0 +1,78 @@
+/* New Styles for VMU About Section */
+/* Author: alberto.decastillo@sprint.com */
+
+
+@font-face {
+    /* ProximaNova-Regular */
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/vmu/ProximaNova-Regular.eot');
+    src: url('../fonts/vmu/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/vmu/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/vmu/ProximaNova-Regular.ttf') format('truetype');
+    -webkit-font-smoothing: antialiased;
+}
+
+div.left-4-legal div.clearfix.col.wide.mod2 div.clearfix.padbottom20{
+    font: 62.5% 'ProximaNova-Regular',Arial,Verdana,Helvetica,sans-serif; 
+    color: #636466;
+    
+}
+
+div.left-4-legal div.clearfix.col.wide.mod2 div.clearfix.padbottom20 h3{
+    font-family:'ProximaNova-Regular',Arial,Verdana,Helvetica,sans-serif; 
+    margin-bottom: 7px;
+    color: #727375;
+    line-height: 1.5em;
+    font-size:  14px;
+    text-transform: none;
+}
+
+
+div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content ul.list,
+div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content ul.list_uder{
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content ul.list li i{
+    color:#727375;
+}
+
+div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content p i{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color:#727375;
+}
+
+div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content a ul.list li,
+div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content ul.list{
+    font-size: 11px;
+}
+
+div.left-4-legal div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content a p,
+div.left-4-legal div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content a:hover p,
+div.left-4-legal div.clearfix.col.wide.mod2 div.clearfix.padbottom20 div#legal_content.legal_content a:visited p{
+    font-size: 11px;
+	line-height: 1.5em;
+	color: #727375;
+    text-decoration: none;
+}
+
+
+#col_wrapper h1, #col_wrapper h2, #col_wrapper h3, #col_wrapper h4, 
+#col_wrapper h5, #col_wrapper h6, #col_wrapper p, #col_wrapper li, 
+#col_wrapper dt, #col_wrapper dd, #col_wrapper label{
+	font-size: 11px;
+	line-height: 1.5em;
+	color: #727375;
+}
+
+div#legal_content.legal_content p{
+    margin: 11px 10px;
+}
+
+div#legal_content.legal_content ul.list ul.list ul.list li u a.gotoanchor,
+div#legal_content.legal_content ul.list li b a.gotoanchor{
+    cursor: pointer;
+}
+

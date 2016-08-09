@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Sprint Prepaid - Additional Services</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/app-framework.css" rel="stylesheet"/>
+	<link href="css/accordion-slider.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<div class="container">
+			<div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+				<a href="framework_home.html">Home</a>
+			</div>
+			<div class="col-xs-9 col-md-10 pull-right">
+				<div class="navbar pull-left visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#" data-toggle="modal" data-target="#coverageMap">Coverage Map</a></li>
+						<li class="navbar-item"><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+					</ul>
+					<div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<h2>Coverage Map</h2>
+									<p>Text about coverage.</p>
+									<a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar pull-right visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill">Refill</a></li>
+						<li class="navbar-item"><a href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support">Support</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate">Activate</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct">My Account</a></li>
+						<li class="navbar-item"><a href="">Sign in</a></li>
+					</ul>
+				</div>
+				<div class="visible-sm visible-xs greeting">
+					<button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+						<i class="glyphicon glyphicon-remove"></i>
+					</button>
+					<p class="greeting-name"><span>Good morning, </span>UserName</p>
+					<p class="greeting-number">PhoneNumber</p>
+				</div>
+				<ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+					<li><a href="framework_shop.html">Shop</a></li>
+					<li><a href="framework_phones.html">All Phones</a></li>
+					<li><a href="">Android Phones</a></li>
+					<li><a href="framework_plans.html">Shop Plans</a></li>
+					<li><a href="framework_addservices.html">Additional Services</a></li>
+				</ul>
+				<ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_shop.html">Shop <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_phones.html">All Phones</a></li>
+							<li><a>Android Phones</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_plans.html">Plans <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_plans.html">Shop Plans</a></li>
+							<li><a href="framework_addservices.html">Additional Services</a></li>
+						</ul>
+					</li>
+					<li class="cart dropdown">
+						<a class="dropdown-toggle" href="framework_purchase-01.html"><img src="img/icons/cart-white.png"></img><span>Cart</span><span id="cart-count">1</span></a>
+						<ul class="dropdown-menu subnav">
+							<li>
+								<ul>
+									<li>
+										<img class="phoneImg" src="img/phone1-1.png"></img>
+										<div class="pull-left">
+											<span class="phoneBrand">Samsung</span>
+											<span class="phoneName">Galaxy S5</span>
+											<span class="phoneColor"></span>
+											<span class="phoneMemory"></span>
+										</div>
+										<div class="pull-right">
+											<span class="quantity">1</span>
+											<span class="totalPrice">199.99</span>
+											<a class="removePhone"><i class="glyphicon glyphicon-remove-circle"></i></a>
+										</div>
+									</li>
+								</ul>
+								<a class="cartAction">Empty cart</a>
+								<a class="cartAction pull-right" href="framework_purchase-01.html">Checkout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="#home" class="linkHome">Home</a>
+		<ul class="mobilelinks">
+			<li><a href="framework_purchase-01.html"><i class="glyphicon glyphicon-shopping-cart"><span id="cart-count">1</span></i></a></li>
+			<li><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+			<li><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct"><i class="glyphicon glyphicon-log-in"></i></a></li>
+		</ul>
+    </div>
+	<div class="container main">
+		<section class="addservices">
+			<h3>Additional Services</h3>
+			<div class="col-xs-12 askedquestions hidden-md hidden-lg">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+					  <h4 class="panel-title">
+						<a id="additional_services_internationalrates" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">International Rates</a>
+					  </h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					  <div class="panel-body">
+						<p>Connect to friends and family around the world with our low per-minute international rates. Sprint Prepaid lets you say goodbye to those confusing calling cards and talk on your terms.</p>
+						<h4>How it works</h4>
+						<ul>
+							<li>International calls are charged at the international per-minute rate for the country you’re calling plus your standard airtime rate.</li>
+							<li>Calls to Puerto Rico, Guam, Northern Mariana Islands and the U.S. Virgin Islands are included in Sprint Prepaid’s standard airtime rates. There is no additional international charge for these locations.</li>
+							<li>International text messages cost $0.15 each to send and receive.</li>
+						</ul>
+						<small>Available countries and/or calling rates are subject to change without notice. Please visit this page regularly for changes including, but not limited to, included countries, rates and fees. Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Price and offers subject to change. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply and be subject to the rates noted above. All features not available on all phones. Plans are for domestic use only within the U.S. unless stated otherwise noted and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply.</small>
+						<ul class="rates">
+							<li class="title">Country<span class="rate">Price/min</span></li>
+							<li class="title">Country<span class="rate">Price/min</span></li>
+							<li><span class="location">American Samoa</span> <span class="rate">$0.40</span></li>
+							<li><span class="location">Anguilla</span> <span class="rate">$0.35</span></li>
+							<li><span class="location">Antigua/Barbuda</span> <span class="rate">$0.45</span></li>
+							<li><span class="location">Bahamas</span> <span class="rate">$0.25</span></li>
+							<li><span class="location">Barbados</span> <span class="rate">$0.46</span></li>
+							<li><span class="location">Bermuda</span> <span class="rate">$0.20</span></li>
+							<li><span class="location">Bvi (Tortola)</span> <span class="rate">$0.35</span></li>
+							<li><span class="location">Canada</span> <span class="rate">$0.10</span></li>
+							<li><span class="location">Cayman Islands</span> <span class="rate">$0.29</span></li>
+							<li><span class="location">Dominica</span> <span class="rate">$0.50</span></li>
+							<li><span class="location">Dominican Republic</span> <span class="rate">$0.15</span></li>
+							<li><span class="location">Grenada</span> <span class="rate">$1.00</span></li>
+							<li><span class="location">Jamaica</span> <span class="rate">$0.30</span></li>
+							<li><span class="location">Jamaica - Mobile</span> <span class="rate">$0.30</span></li>
+							<li><span class="location">Montserrat</span> <span class="rate">$0.30</span></li>
+							<li><span class="location">Sint Maarten</span> <span class="rate">$0.55</span></li>
+							<li><span class="location">St Kitts/Nevis</span> <span class="rate">$0.43</span></li>
+							<li><span class="location">St Lucia</span> <span class="rate">$0.45</span></li>
+							<li><span class="location">St Vincent/Grenadine</span> <span class="rate">$0.45</span></li>
+							<li><span class="location">Trinidad/Tobago</span> <span class="rate">$0.40</span></li>
+							<li><span class="location">Trinidad/Tobago - Mobile</span> <span class="rate">$0.40</span></li>
+							<li><span class="location">Turks/Caicos</span> <span class="rate">$0.35</span></li>
+						</ul>
+						<p>Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Price and offers subject to change. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply and be subject to the rates noted above. All features not available on all phones. Plans are for domestic use only within the U.S. unless stated otherwise noted and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTwo">
+					  <h4 class="panel-title">
+						<a id="additional_services_mobilehotspot" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Mobile Hotspot</a>
+					  </h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					  <div class="panel-body">
+						<p>Turn your phone into a mobile Wi-Fi® hotspot and share your phone’s data connection with up to 5 wireless devices. Laptops, tablets, gaming consoles, and more. It’s Wi-Fi on the go.</p>
+						<p>Mobile Hotspot is already preloaded on most Sprint Prepaid phones and there is no extra charge. So you can start sharing right away.</p>
+						<p>Sharing your Mobile Hotspot is really simple. Just open "Settings" on your phone and follow the directions. Easy.</p>
+						<small>Mobile Hotspot available only with select devices/plans. Connectivity dependent upon compatibility and speeds vary. When hotspot ‘on’, all data usage (phone and hotspot) counts against data allowance; turn off hotspot when not connected to other devices.</small>
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingThree">
+					  <h4 class="panel-title">
+						<a id="additional_services_phoneinsurance" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Phone Insurance</a>
+					  </h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					  <div class="panel-body">
+						<h4>Only $7/month</h4>
+						<p>It's peace of mind for your Sprint Prepaid phone. For just $7/month, you'll be covered in case your phone is lost, stolen, accidentally damaged (even with liquid), or has an out-of-warranty mechanical or electrical breakdown. Receive a replacement phone as early as the next business day. Plus, Gadget Guardian security app is included at no extra cost. To learn more, click here.</p>
+						<p>Gadget Guardian security app included at no extra cost. <a href="https://play.google.com/store/apps/details?id=com.lookout.gadgetguardian&hl=en">Install now</a></p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-12 askedquestions hidden">
+				<h2>International Rates</h2>
+				<p>Connect to friends and family around the world with our low per-minute international rates. Sprint Prepaid lets you say goodbye to those confusing calling cards and talk on your terms.</p>
+				<h4>How it works</h4>
+				<ul>
+					<li>International calls are charged at the international per-minute rate for the country you’re calling plus your standard airtime rate.</li>
+					<li>Calls to Puerto Rico, Guam, Northern Mariana Islands and the U.S. Virgin Islands are included in Sprint Prepaid’s standard airtime rates. There is no additional international charge for these locations.</li>
+					<li>International text messages cost $0.15 each to send and receive.</li>
+				</ul>
+				<small>Available countries and/or calling rates are subject to change without notice. Please visit this page regularly for changes including, but not limited to, included countries, rates and fees. Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Price and offers subject to change. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply and be subject to the rates noted above. All features not available on all phones. Plans are for domestic use only within the U.S. unless stated otherwise noted and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply.</small>
+				<ul class="rates">
+					<li class="title">Country<span class="rate">Price/min</span></li>
+					<li><span class="location">American Samoa</span> <span class="rate">$0.40</span></li>
+					<li><span class="location">Anguilla</span> <span class="rate">$0.35</span></li>
+					<li><span class="location">Antigua/Barbuda</span> <span class="rate">$0.45</span></li>
+					<li><span class="location">Bahamas</span> <span class="rate">$0.25</span></li>
+					<li><span class="location">Barbados</span> <span class="rate">$0.46</span></li>
+					<li><span class="location">Bermuda</span> <span class="rate">$0.20</span></li>
+					<li><span class="location">Bvi (Tortola)</span> <span class="rate">$0.35</span></li>
+					<li><span class="location">Canada</span> <span class="rate">$0.10</span></li>
+					<li><span class="location">Cayman Islands</span> <span class="rate">$0.29</span></li>
+					<li><span class="location">Dominica</span> <span class="rate">$0.50</span></li>
+					<li><span class="location">Dominican Republic</span> <span class="rate">$0.15</span></li>
+					<li><span class="location">Grenada</span> <span class="rate">$1.00</span></li>
+					<li><span class="location">Jamaica</span> <span class="rate">$0.30</span></li>
+					<li><span class="location">Jamaica - Mobile</span> <span class="rate">$0.30</span></li>
+					<li><span class="location">Montserrat</span> <span class="rate">$0.30</span></li>
+					<li><span class="location">Sint Maarten</span> <span class="rate">$0.55</span></li>
+					<li><span class="location">St Kitts/Nevis</span> <span class="rate">$0.43</span></li>
+					<li><span class="location">St Lucia</span> <span class="rate">$0.45</span></li>
+					<li><span class="location">St Vincent/Grenadine</span> <span class="rate">$0.45</span></li>
+					<li><span class="location">Trinidad/Tobago</span> <span class="rate">$0.40</span></li>
+					<li><span class="location">Trinidad/Tobago - Mobile</span> <span class="rate">$0.40</span></li>
+					<li><span class="location">Turks/Caicos</span> <span class="rate">$0.35</span></li>
+				</ul>
+				<p>Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Price and offers subject to change. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply and be subject to the rates noted above. All features not available on all phones. Plans are for domestic use only within the U.S. unless stated otherwise noted and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply.</p>
+				<h2>Mobile Hotspot</h2>
+				<p>Turn your phone into a mobile Wi-Fi® hotspot and share your phone’s data connection with up to 5 wireless devices. Laptops, tablets, gaming consoles, and more. It’s Wi-Fi on the go.</p>
+				<p>Mobile Hotspot is already preloaded on most Sprint Prepaid phones and there is no extra charge. So you can start sharing right away.</p>
+				<p>Sharing your Mobile Hotspot is really simple. Just open "Settings" on your phone and follow the directions. Easy.</p>
+				<small>Mobile Hotspot available only with select devices/plans. Connectivity dependent upon compatibility and speeds vary. When hotspot ‘on’, all data usage (phone and hotspot) counts against data allowance; turn off hotspot when not connected to other devices.</small>
+				<h2>Phone Insurance</h2>
+				<h4>Only $7/month</h4>
+				<p>It's peace of mind for your Sprint Prepaid phone. For just $7/month, you'll be covered in case your phone is lost, stolen, accidentally damaged (even with liquid), or has an out-of-warranty mechanical or electrical breakdown. Receive a replacement phone as early as the next business day. Plus, Gadget Guardian security app is included at no extra cost. To learn more, click here.</p>
+				<p>Gadget Guardian security app included at no extra cost. <a href="https://play.google.com/store/apps/details?id=com.lookout.gadgetguardian&hl=en">Install now</a></p>
+			</div>
+			<div class="col-xs-12 visible-md visible-lg addservices">
+				<div id="example1" class="accordion-slider">
+					<div class="as-panels">
+						<!-- Panel 1 -->
+						<div class="as-panel">
+							<a><img class="as-background" src="" data-src="img/addserv0.jpg" data-retina="img/addserv0.jpg"/></a>
+							<div class="as-layer as-closed as-white panel-counter" data-position="bottomLeft" data-horizontal="28%" data-vertical="100">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</div>
+							<div class="as-layer as-closed" data-horizontal="70" data-vertical="98" data-show-transition="right" data-hide-transition="right">
+								<a><img class="as-closed" src="" data-src="img/addserv01.png" data-retina="img/addserv01.png"/></a>
+								<h2>International Rates</h2>
+								<p class="subtitle">Connect to friends and family around the world with our low international rates.</p>
+							</div>
+							<div class="as-layer as-opened text" data-horizontal="20" data-vertical="20" data-show-transition="left" data-hide-transition="left">
+								<h2>International Rates</h2>
+								<div class="compatiblephones">
+									<p>Connect to friends and family around the world with our low per-minute international rates. Sprint Prepaid lets you say goodbye to those confusing calling cards and talk on your terms.</p>
+									<ul>
+										<strong>How it works:</strong>
+										<li>International calls are charged at the international per-minute rate for the country you’re calling plus your standard airtime rate.</li>
+										<li>Calls to Puerto Rico, Guam, Northern Mariana Islands and the U.S. Virgin Islands are included in Sprint Prepaid’s standard airtime rates. There is no additional international charge for these locations.</li>
+										<li>International text messages cost $0.15 each to send and receive.</li>
+									</ul>
+									<p class="disclaimer">Available countries and/or calling rates are subject to change without notice.</p>
+								</div>
+								<div class="applink">
+									<ul>
+										<li class="title">Country<span class="rate">Price/min</span></li>
+										<li><span class="location">American Samoa</span> <span class="rate">$0.40</span></li>
+										<li><span class="location">Anguilla</span> <span class="rate">$0.35</span></li>
+										<li><span class="location">Antigua/Barbuda</span> <span class="rate">$0.45</span></li>
+										<li><span class="location">Bahamas</span> <span class="rate">$0.25</span></li>
+										<li><span class="location">Barbados</span> <span class="rate">$0.46</span></li>
+										<li><span class="location">Bermuda</span> <span class="rate">$0.20</span></li>
+										<li><span class="location">Bvi (Tortola)</span> <span class="rate">$0.35</span></li>
+										<li><span class="location">Canada</span> <span class="rate">$0.10</span></li>
+										<li><span class="location">Cayman Islands</span> <span class="rate">$0.29</span></li>
+										<li><span class="location">Dominica</span> <span class="rate">$0.50</span></li>
+										<li><span class="location">Dominican Republic</span> <span class="rate">$0.15</span></li>
+										<li><span class="location">Grenada</span> <span class="rate">$1.00</span></li>
+										<li><span class="location">Jamaica</span> <span class="rate">$0.30</span></li>
+										<li><span class="location">Jamaica - Mobile</span> <span class="rate">$0.30</span></li>
+										<li><span class="location">Montserrat</span> <span class="rate">$0.30</span></li>
+										<li><span class="location">Sint Maarten</span> <span class="rate">$0.55</span></li>
+										<li><span class="location">St Kitts/Nevis</span> <span class="rate">$0.43</span></li>
+										<li><span class="location">St Lucia</span> <span class="rate">$0.45</span></li>
+										<li><span class="location">St Vincent/Grenadine</span> <span class="rate">$0.45</span></li>
+										<li><span class="location">Trinidad/Tobago</span> <span class="rate">$0.40</span></li>
+										<li><span class="location">Trinidad/Tobago - Mobile</span> <span class="rate">$0.40</span></li>
+										<li><span class="location">Turks/Caicos</span> <span class="rate">$0.35</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Panel 2 -->
+						<div class="as-panel">
+							<a><img class="as-background" src="" data-src="img/addserv0.jpg" data-retina="img/addserv0.jpg"/></a>
+							<div class="as-layer as-closed as-white panel-counter" data-position="bottomLeft" data-horizontal="29%" data-vertical="105">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</div>
+							<div class="as-layer as-closed" data-horizontal="60" data-vertical="105" data-show-transition="right" data-hide-transition="right">
+								<a><img class="as-closed hotspot" src="" data-src="img/addserv02.png" data-retina="img/addserv02.png"/></a>
+								<h2>Mobile Hotspot</h2>
+								<p class="subtitle">Turn your phone into a mobile Wi-Fi hotspot. Now available on select Sprint Prepaid devices.</p>
+							</div>
+							<div class="as-layer as-opened text" data-horizontal="20" data-vertical="20" data-show-transition="left" data-hide-transition="left">
+								<h2>Mobile Hotspot</h2>
+								<div class="compatiblephones">
+									<p>Turn your phone into a mobile Wi-Fi® hotspot and share your phone’s data connection with up to 5 wireless devices. Laptops, tablets, gaming consoles, and more. It’s Wi-Fi on the go.</p>
+									<p>Mobile Hotspot is already preloaded on most Sprint Prepaid phones and there is no extra charge. So you can start sharing right away.</p>
+									<p>Sharing your Mobile Hotspot is really simple. Just open "Settings" on your phone and follow the directions. Easy.</p>
+									<small>Mobile Hotspot available only with select devices/plans. Connectivity dependent upon compatibility and speeds vary. When hotspot ‘on’, all data usage (phone and hotspot) counts against data allowance; turn off hotspot when not connected to other devices.</small>
+								</div>
+								<ul class="compatiblephones">
+									<li>Samsung Galaxy Core Prime</li>
+									<li>Samsung Galaxy S3</li>
+									<li>LG Volt</li>
+									<li>HTC Desire 510</li>
+									<li>Motorola Moto E</li>
+									<li>LG Tribute</li>
+									<li>Sharp AQUOS Crystal</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Panel 3 -->
+						<div class="as-panel">
+							<a><img class="as-background" src="" data-src="img/addserv0.jpg" data-retina="img/addserv0.jpg"/></a>
+							<div class="as-layer as-closed panel-counter" data-position="bottomLeft" data-horizontal="32%" data-vertical="110">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</div>
+							<div class="as-layer as-closed" data-horizontal="100" data-vertical="95" data-show-transition="right" data-hide-transition="right">
+								<a><img class="as-closed phoneinsurance" src="" data-src="img/addserv03.png" data-retina="img/addserv03.png"/></a>
+								<h2>Phone Insurance</h2>
+								<p class="subtitle">Get worry-free protection for your phone plus the Gadget Guardian app.</p>
+							</div>
+							<div class="as-layer as-opened text" data-horizontal="20" data-vertical="20" data-show-transition="left" data-hide-transition="left">
+								<h2>Phone Insurance</h2>
+								<div class="compatiblephones">
+									<h1>Only $7/<span>month</span></h1>
+									<p>It's peace of mind for your Sprint Prepaid phone. For just $7/month, you'll be covered in case your phone is lost, stolen, accidentally damaged (even with liquid), or has an out-of-warranty mechanical or electrical breakdown. Receive a replacement phone as early as the next business day. Plus, Gadget Guardian security app is included at no extra cost. To learn more, <a href="http://shop.sprint.com/popups/prepaid_phone_insurance.html?ECID=vanity:prepaidphoneinsurance">click here</a>.</p>
+								</div>
+								<div class="applink">
+									<a href="https://play.google.com/store/apps/details?id=com.lookout.gadgetguardian&hl=en"><img class="as-closed pull-left" src="" data-src="img/icons/insuranceapp.png" data-retina="img/icons/insuranceapp.png"/></a>
+									<span>Gadget Guardian security app included at no extra cost<a href="https://play.google.com/store/apps/details?id=com.lookout.gadgetguardian&hl=en">Install now</a>.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="legal">
+			<p>Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Price and offers subject to change. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply and be subject to the rates noted above. All features not available on all phones. Plans are for domestic use only within the U.S. unless stated otherwise noted and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply.</p>
+			<p>Available countries and/or calling rates are subject to change without notice. Please visit this page regularly for changes including, but not limited to, included countries, rates and fees. Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Price and offers subject to change. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply and be subject to the rates noted above. All features not available on all phones. Plans are for domestic use only within the U.S. unless stated otherwise noted and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply.</p>
+		</section>
+	</div>	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12">
+				<p>&copy; 2015 Sprint. <span class="hidden-xs">All rights reserved.</span></p>
+				<ul class="footer-links">
+					<li><a href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+					<li><a href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/sprintprepaid-bootstrap.min.js"></script>
+    <script src="../js/lib/jasny-bootstrap.min.js"></script>
+	<script src="../js/lib/jquery.accordionSlider.min.js"></script>
+	<script>
+		$(function(){
+		$(".dropdown").hover(
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+			});
+		});
+		$(function(){
+			$('#example1').accordionSlider({
+				width:1158,
+				height:420,
+				margin:0,
+				responsiveMode:'auto',
+				visiblePanels:3,
+				mouseWheel:false,
+				closePanelsOnMouseOut:true,
+				autoplay:false
+			})
+		});
+	</script>
+</body>
+</html>

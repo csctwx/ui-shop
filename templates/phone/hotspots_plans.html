@@ -1,0 +1,52 @@
+<div role="tabpanel" class="tab-pane {{phoneController.selectedTab=='plans'?'active':''}}" id="plans">
+
+	<div class="col-md-8" ng-if="appName=='bst'">
+        <section class="tab-plans">
+            <h3>{{phoneController.hotspots.device.brand}} {{phoneController.hotspots.device.name}} <span>Plans</span></h3>
+            <ul id="plan-tabs" class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#plan-1">Wi-Fi Hotspot Plans</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="plan-1" class="tab-pane fade in active" ng-bind-html="phoneController.hotspots.device.mbbPlan">
+                    <!-- <div class="mainplans hotspot col-xs-6">
+						<h1>Wi-Fi at home,<br>Wi-Fi on the go.</h1>
+						<h4>Share high-speed LTE data with up to 10 of your wireless devices - laptops, tablets, gaming consoles, cameras and lots of others.</h4>
+						<ul>
+							<li>No annual contract</li>
+							<li>4G <b>LTE/Enhanced LTE</b> coverage</li>
+							<li>Ability to connect up to 10 Wi-Fi enabled devices</li>
+							<li>Flexible plans that fits your needs</li>
+						</ul>
+						<p>See <a class="small legal" href="http://www.boostmobile.com/shop/plans/wifi-hotspots/#legal" target="_blank">Terms and Conditions</a></p>
+					</div>
+                    <div class="hotspot-img col-xs-6">
+                        <img alt="Hotspot Image" src="/producer/images.form?uuid=8aa6fee7-9571-4a5e-aefc-7536dcedd592" />
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-4" ng-if="appName=='bst'">
+        <section class="coverage askedquestions">
+            <h3>We've got you covered</h3>
+            <img src="img/sprint_logo.png"></img>
+            <p>Boost Mobile® is powered by the Nationwide Sprint® Network.</p>
+            <a class="btn btn-default" href="{{pathMap._coverageMap._hash}}">Check Coverage</a>
+        </section>
+        <section>
+            <h3>How it works</h3>
+            <ul class="features howitworks hotspot">
+                <li>Order by phone, online or in a store.</li>
+                <li>When you get your phone, activate a no-contract plan online.</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="hotspotLeftCol col-md-9" ng-if="appName=='vmu'">
+        <banner-directive banner-id="vmu-bb2g-plan"></banner-directive>
+    </div>
+    <div class="hotspotRightCol col-md-3" ng-if="appName=='vmu'">
+        <banner-directive banner-id="vmu-bb2g-plan-tab-sidebox"></banner-directive>
+    </div>
+
+</div>

@@ -1,0 +1,82 @@
+<section>
+    <!-- Banner doesn't show for VMU -->
+    <section ng-if="appName!='vmu'" class="banner-static">
+        <a href="{{pathMap._home._hash}}shop/plans/monthly-phone-plans/"><img src="bst/img/banner-02_old.jpg"></a>
+    </section>
+
+    <section class="deals">
+        <h1 ng-if="appName=='vmu'">Deals</h1>
+        <h1 ng-if="appName!='vmu'" class="title">Instant Savings<a href="{{pathMap._phones._hash}}@onSale/">See All</a></h1>
+        <div class="deals-container">
+            <div class="col-xs-12 col-md-4 col-sm-6 deal beyond-talk" ng-class="{'paylo':item.planType.planTypeId=='paylo', 'broadbands2go':item.planType.planTypeId=='broadbands2go'}" ng-repeat="item in phoneController.deals.discounts">
+                <div>
+                  <h3 ng-show="item.discount!='0'" class="savings">${{item.discount.toFixed()}} off</h3>
+                  <h3 ng-show="item.discount=='0'" class="savings"> </h3>
+                  <h3 ng-if="item.deviceType!='accessory'" class="name">{{item.name}}</h3>
+                  <h3 ng-if="item.deviceType=='accessory'" class="name">{{item.label}}</h3>
+                  <p ng-if="phoneController.deals.defaultPromoIndex!=-1"><b>{{phoneController.deals.promotions[phoneController.deals.defaultPromoIndex].message.title|uppercase}}</b><br>
+                    {{phoneController.deals.promotions[phoneController.deals.defaultPromoIndex].message.body}}</p>
+                    <p class="phonePriceDeals" ng-if="appName=='vmu'">
+                        <span class="phonePriceOld">{{item.msrp|currency}}</span>
+                        <span class="phonePriceDiscount">{{item.price|currency}}</span>
+                    </p>
+
+                    <!-- if plan type isn't bb2go -->
+                    <a ng-if="item.deviceType!='accessory' && item.planType.planTypeId!='broadbands2go'" ng-href="{{pathMap._phoneDetails._hash}}{{item.id}}/features/" class="btn btn-sm btn-primary">Learn More</a>
+                    <!-- if plan type is bb2go -->
+                    <a ng-if="item.deviceType!='accessory' && item.planType.planTypeId=='broadbands2go'" ng-href="#!/shop/hotspots/{{item.id}}/features/" class="btn btn-sm btn-primary">Learn More</a>
+                    <a ng-if="item.deviceType=='accessory' && appName!='vmu'" class="btn btn-sm btn-primary" ng-click="cartController.addAccessoryToCart(item)" ng-disabled="item.noMore">{{item.cartLabel}}</a>
+                    <a ng-if="item.deviceType=='accessory' && appName=='vmu'" class="btn btn-sm btn-primary" ng-href="{{pathMap._checkout._hash}}addToCart/sku={{item.sku}}/" ng-disabled="item.noMore">{{item.cartLabel}}</a>
+                    <div ng-if="item.planType.planTypeId" class="plan-name">{{item.planType.title}}</div>
+                </div>
+
+                <!-- if plan type isn't bb2go -->
+        <span class="dealImage" ng-if="item.deviceType!='accessory' && item.planType.planTypeId!='broadbands2go'"><a href="{{pathMap._phoneDetails._hash}}{{item.id}}/features/"><img ng-src="{{item.gridImage}}"></a></span>
+
+                <!-- if plan type isn't bb2go -->
+                <span class="dealImage" ng-if="item.deviceType!='accessory' && item.planType.planTypeId=='broadbands2go'"><a href="#!/shop/hotspots/{{item.id}}/features/"><img ng-src="{{item.gridImage}}"></a></span>
+
+        <span class="dealImage" ng-if="item.deviceType=='accessory'"><img ng-src="{{item.gridImage}}"></span>
+                <div ng-if="appName=='vmu'" class="sticker-plan-type"><span>{{item.discount.toFixed()|currency:undefined:0}}<br>OFF</span></div>
+    </div>
+            <div class="clearfix"></div>
+        </div>
+  </section>
+  <section class="deals" ng-repeat="p in phoneController.deals.promotions" ng-if="p.dealLabel && p.dealLabel!=''">
+    <h1 class="title">{{p.dealLabel}}</h1>
+    <a ng-repeat="b in p.banners" class="banner-static hidden-xs" ng-href="{{b.url}}"><img ng-src="{{b.imageUrl}}"></img></a>
+    
+    <div ng-class="p.devices.length == 1 ? 'width50 deals-container' : 'deals-container'">
+        <div ng-class="!p.devices.length == 1 ? 'col-md-4 col-sm-6 col-xs-12 deal' : 'col-xs-12 deal'" ng-repeat="d in p.devices">
+      <div>
+        <h3 ng-show="p.message.offer!=''" class="savings">{{p.message.offer}}</h3>
+        <h3 ng-show="p.message.offer=='' && d.discount!='0'" class="savings">${{d.discount.toFixed()}} off</h3>
+        <h3 ng-show="p.message.offer=='' && d.discount=='0'" class="savings"> </h3>
+        <h3 ng-if="d.deviceType!='accessory'">{{d.name}}</h3>
+        <h3 ng-if="d.deviceType=='accessory'">{{d.label}}</h3>
+
+        <p><b>{{p.message.title|uppercase}}
+          </b><br>{{p.message.body}} <span  class="glyphicon glyphicon-info-sign" ng-if="p.message.toolTip" data-popover="true" data-html="true" data-content="{{p.message.toolTip}}" data-original-title="">
+          </span></p>
+        <a ng-if="d.deviceType!='accessory'" class="btn btn-sm btn-primary pull-down " href="{{pathMap._phoneDetails._hash}}{{d.id}}/features/">Learn More</a>
+        <a ng-if="d.deviceType=='accessory'" class="btn btn-sm btn-primary pull-down" ng-click="cartController.addAccessoryToCart(d)" ng-disabled="d.noMore">{{d.cartLabel}}</a>
+      </div>
+      <span class="dealImage" ng-if="d.deviceType!='accessory'"><a href="{{pathMap._phoneDetails._hash}}{{d.id}}/features/"><img ng-src="{{d.gridImage}}"></img></a></span>
+      <span class="dealImage" ng-if="d.deviceType=='accessory'"><img ng-src="{{d.gridImage}}"></img></span>
+    </div>
+    
+    <div class="clearfix"></div>
+    </div>
+  </section>
+    <div ng-if="appName!='vmu'">
+  <section class="banner-static hidden-xs">
+    <!--  <h2 class="title"></h2>-->
+			<a href="#!/shop/in-store-offers/"><img src="bst/img/banner-06.jpg"></a>
+	</section>
+  <section class="legal">
+    <p ng-repeat="p in phoneController.deals.promotions" ng-bind-html="appUtil.ui.trustAsHtml(p.legal)"></p>
+    <p>Limited time only. While supplies last and only on select devices directly from boostmobile.com. Restrictions apply.</p>
+  </section>
+    </div>
+</section>
+

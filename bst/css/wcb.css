@@ -1,0 +1,566 @@
+@media (max-width: 767px){
+
+    #legal_referral_wcb{
+	
+	margin-left : 0px !important;
+	
+	}
+
+	.tab-pane > img + section {
+		background: none !important;
+		padding: 0px 30px !important;
+		height: auto !important;
+		min-height: 50px !important;
+	}
+	.tab-pane > img + section > h2{
+		color: #f7901e !important;
+	}	
+	section .tab-content #military section:first-of-type p {
+		color: #000 !important;
+	}
+	.whychoose section .tab-content #referral section:nth-of-type(2) {
+		height: auto !important;
+}
+	.whychoose section .tab-content #military section:nth-of-type(3) {
+		background: url(../img/logo-sprint.png) center right no-repeat !important;
+		background-size: 50% !important;
+	}
+	.whychoose section .tab-content #military section:nth-of-type(4) {
+		padding: 40px 0 20px 20px !important;
+	}
+	.whychoose section .tab-content #referral section h2 {
+		background-color: #fff !important;
+		margin-top: 0px !important;
+	}
+	.btn-boost {
+		font-size: 13px !important;
+	}
+}
+	div#whychoose, div#social{
+		background-color: #000;
+	}
+	
+	.whychoose section .tab-content #military section:nth-of-type(3) {
+		background:url(../img/logo-sprint.png) bottom right no-repeat;
+		padding:20px 40% 20px 20px;
+		height:250px;
+	}
+	.whychoose section .tab-content #military section:nth-of-type(4) {
+		background:url(../img/military-map.png) bottom right no-repeat;
+		padding:20px 40% 20px 20px;
+		height:250px;
+	}
+
+	.whychoose section .tab-content #referral section:first-of-type {
+		background:url(../img/referral-bg.jpg) top right no-repeat;
+		background-size:cover;
+		height:280px;
+	}	
+
+		.whychoose section .tab-content #referral img {
+			float:left;
+		}	
+
+		.whychoose section .tab-content #referral div {
+			margin:-10px 0 0 100px;
+		}
+
+	.whychoose section .tab-content #referral section {
+		border-bottom:1px solid #DDDDDD; padding:20px; background:none;
+		/*padding: 20px 40% 20px 20px !important;*/
+	}
+		.whychoose section .tab-content #referral section h3 {
+			color:#F99100;
+		}
+		
+		.whychoose section .tab-content #referral section h2 {
+			color:#fff;
+			background-color: #000;
+			padding: 5px 10px 10px;
+			margin-top: 100px;
+		}
+
+	.whychoose section .tab-content #referral section:first-of-type h1,
+	.whychoose section .tab-content #referral section:first-of-type h4 {
+		padding:0;
+	}
+		.whychoose section .tab-content #referral section:first-of-type h1{color:#F99100;}
+		.whychoose section .tab-content #referral section:first-of-type p {color:#FFFFFF;}
+	.whychoose section .tab-content #referral section:nth-of-type(2) p b {
+		color:#000000;
+	}
+
+	.whychoose section .tab-content #referral section:first-of-type {
+		padding:20px 40% 20px 20px;
+		height:245px;
+	}
+
+	.whychoose section .tab-content #referral section:first-of-type p {color:#000000;}
+	.whychoose section .tab-content #referral section:nth-of-type(2) {
+		/*background:url(../img/img-military01.jpg) bottom right no-repeat;*/
+		/*padding:20px 40% 20px 20px;*/
+		height:350px;
+	}
+	
+	.whychoose section .tab-content #referral ul{
+		list-style: square;
+		margin: 0px 0px 0px 40px;
+	}
+	
+	.whychoose section .tab-content #referral section:nth-of-type(3) {
+		background:url(../img/img-coverageVector.png) bottom right no-repeat;
+		padding:20px 40% 20px 20px;
+		height:250px;
+	}								
+
+.whychoose section .tab-content #referral section:first-of-type h1 {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+     min-width:80%;
+    
+		}
+.whychoose section .tab-content #referral section:first-of-type p {
+			max-width:300px;
+			min-width:20%;
+			font-size:15px;
+			line-height:16px;
+			padding:10px 0 0;
+			color:#000000;
+		}	
+
+
+
+#social_strip {
+    float: right;
+    list-style: none;
+    display: block;
+    margin-top: -35px;
+}
+
+	#social_strip li {
+		float: left;
+		margin: 0 0 0 3px;
+	}
+	
+		#social_strip li#label {
+			color: #7c7d80;
+			padding-top: 4px;
+			text-transform: uppercase;
+			padding-right: 4px;
+			font-size: 10px;
+		}
+		
+		#social_strip li a {
+			height: 19px;
+			width: 19px;
+			background-position: top left;
+			background-repeat: no-repeat;
+			display: block;
+			text-indent: -9999px;
+		}
+
+		#social_strip li#social_strip-fb a {
+			background-image: url("../img/sprite-social-icons.png");
+		}
+
+		#social_strip li#social_strip-tw a {
+			background-image: url("../img/sprite-social-icons.png");
+			background-position: -19px 0;
+		}
+
+		#social_strip li#social_strip-gp a {
+			background-image: url("../img/sprite-social-icons.png");
+			background-position: -38px 0;
+		}
+
+		#social_strip li#social_strip-pt a {
+			background-image: url("../img/sprite-social-icons.png");
+			background-position: -57px 0;
+		}	
+
+		#social_strip li#share_label{
+			color: #7c7d80;
+			margin-top: 2px;
+		}
+
+.main-contents{
+	position: relative;
+	background: #fff;
+}
+
+.container div#left-panel{
+	background: #fff;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.container div#right-panel{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.footer-social{
+	font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+	.footer-social ul{
+		margin: 0;
+		padding: 0;
+	}
+
+		.footer-social ul li {
+			font: 11px arial;
+			color: #999;
+			width: 40px !important;
+			padding: 0!important;
+			float: left;
+			list-style: none;
+		}
+
+			.footer-social li a, #footer-social li a:hover {
+				color: #999;
+				text-decoration: none;
+				display: block;
+				overflow: hidden;
+				text-indent: -999px;
+				width: 32px;
+				height: 35px;
+				margin-right: 8px;
+				background-image: url(../img/masterpage-sprite.png);
+			}
+
+.footer-social #footer-social-facebook a {
+    background-position: -284px -93px;
+}
+
+.footer-social #footer-social-twitter a {
+    background-position: -284px -178px;
+}
+
+.footer-social #footer-social-youtube a {
+    background-position: -284px -262px;
+}
+
+.footer-social #footer-social-gplus a {
+    background-position: -247px -304px;
+}
+
+.footer-social #footer-social-instagram a {
+    background-position: -247px -136px;
+}
+
+.footer-social #footer-social-tumblr a {
+    background-position: -247px -220px;
+}
+
+div#social div.social-menu{
+	width: 100%;
+	display: table;
+	position: relative;
+	background: #2B2B2C;
+	background: linear-gradient(to bottom, #2b2b2e 0%, #121212 100%);
+	background: -webkit-linear-gradient(to bottom, #2b2b2e 0%, #121212 100%);
+}
+
+div#social div.social-menu div.social-menu-options > a{
+	display: table-cell;
+	vertical-align: middle;
+	color: #d7dae1;
+	font-weight: bold;
+	padding: 10px;
+}
+
+div#social div.social-menu div.social-menu-options > a.active{
+	display: table-cell;
+	vertical-align: middle;
+	color: #d7dae1;
+	font-weight: bold;
+	background: linear-gradient(to bottom, #f7901e 0%, #d1581c 100%);
+	background: -webkit-linear-gradient(to bottom, #f7901e 0%, #d1581c 100%);
+	padding: 10px;
+}
+
+div#social div.social-menu div.social-menu-options > a:hover{
+	text-decoration: none;
+	background: #2B2B2C;
+}
+
+div#social div.squares-box img{
+	width: 90%;
+	margin: 0 auto;
+}
+
+div#social div.squares-box .square-row{
+	margin-top: 10px;
+}
+
+
+#collapseOne a {
+    display: block;
+    padding: 10px;
+    background-color: #000;
+    color: #f7901e;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+/* start of Value tab*/
+@media (min-width: 768px){
+	.whychoose section .tab-content #value section {
+	    padding: 0
+	}
+	.whychoose section .tab-content #value section:nth-of-type(3) {
+    	background: none;
+	}
+	.whychoose section .tab-content #value section:nth-of-type(5) {
+	    background: none;
+	    border-bottom: 1px solid #DDDDDD;
+	}
+	.whychoose section .tab-content #value section:nth-of-type(4) {
+    	background: none;
+	}
+}
+
+.whychoose section .tab-content #value section:first-of-type {
+    background: none;
+    height: auto;
+    padding: 0;
+}
+
+.whychoose section .tab-content #value section.intro {
+    background: none;
+    height: auto;
+    padding: 0px;
+}
+
+.whychoose section .tab-content #value section.intro .header {
+    background: url(../img/whychoose/img-bg-whychoose.jpg) top left no-repeat;
+    background-size: cover;
+    height: 272px;
+    padding: 100px 30px;
+}
+
+.whychoose section .tab-content #value section.intro h2 {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+}
+
+.whychoose section .tab-content #value section.intro h2 strong {
+    font-family:'Boost_black';
+}
+
+.whychoose section .tab-content #value section.intro .content {
+    padding: 40px 40px 40px 20px;
+}
+
+.whychoose section .tab-content #value section.intro .content strong {
+   font-size: 18px;
+   font-family: 'Boost_black', Helvetica, Arial, sans-serif !important;
+}
+
+.whychoose section .tab-content #value section.intro p {
+    max-width: none;
+    min-width: none;
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 0;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.coverage {
+    background: url(../img/whychoose/map.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 290px;
+}
+
+.whychoose section .tab-content #value section.coverage {
+    padding: 40px 65% 20px 20px;
+}
+
+.whychoose section .tab-content #value section.coverage h3 {
+    color: #F7901E;
+    font-size: 30px;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.coverage a.button.check {
+    display: block !important;
+    max-width: 170px;
+    text-align: left;
+    margin: 5px 0 20px 0;
+    font-size: 13px;
+    color: inherit;
+    background-image: url(../img/whychoose/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 26px;
+}
+
+.whychoose section .tab-content #value section.speed {
+    background: url(../img/whychoose/4glte.jpg) no-repeat;
+    min-height: 290px;
+    background-size: cover;
+    background-position: left center;
+}
+
+.whychoose section .tab-content #value section.speed {
+    padding: 40px 14% 20px 60%;
+}
+
+.whychoose section .tab-content #value section.speed h3 {
+    color: #F7901E;
+    font-size: 30px;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.speed h3 {
+    color: #F7901E;
+    font-size: 30px;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.great-value {
+    background: url(../img/whychoose/growdata.jpg) bottom right no-repeat;
+    background-size: contain;
+    min-height: 290px;
+}
+
+.whychoose section .tab-content #value section.great-value {
+    padding: 40px 67% 20px 20px;
+}
+
+.whychoose section .tab-content #value section.great-value h3 {
+    color: #F7901E;
+    font-size: 30px;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.great-value p {
+    margin-bottom: 30px;
+}
+
+.whychoose section .tab-content #value section.family-plans {
+    background: url(../img/whychoose/bg-5.jpg) no-repeat;
+    min-height: 290px;
+    background-position: left center;
+}
+
+.whychoose section .tab-content #value section.family-plans {
+    padding: 40px 10% 20px 60%;
+}
+
+.whychoose section .tab-content #value section.family-plans h3 {
+    color: #F7901E;
+    font-size: 30px;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.phones {
+    background: url(../img/whychoose/bg-6.jpg) bottom right no-repeat;
+    background-size: cover;
+    min-height: 328px;
+}
+
+.whychoose section .tab-content #value section.phones {
+    padding: 40px 63% 20px 20px;
+}
+
+.whychoose section .tab-content #value section.phones h3 {
+    color: #F7901E;
+    font-size: 30px;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.phones p {
+    margin-bottom: 30px;
+}
+
+.whychoose section .tab-content #value section.no-contract {
+    background: url(../img/whychoose/bg-8.jpg) no-repeat;
+    min-height: 290px;
+    background-position: left center;
+}
+
+.whychoose section .tab-content #value section.no-contract {
+    padding: 40px 75px 20px 60%;
+}
+
+.whychoose section .tab-content #value section.no-contract h3 {
+    color: #F7901E;
+    font-size: 30px;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.no-contract p {
+   margin-bottom: 30px;	
+}
+
+.whychoose section .tab-content #value section.intl-roaming {
+    background: url(../img/whychoose/bg-9.jpg) bottom right no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.whychoose section .tab-content #value section.intl-roaming {
+    padding: 40px 43% 20px 20px;
+}
+
+.whychoose section .tab-content #value section.intl-roaming h3 {
+    color: #F7901E;
+    font-size: 30px;
+    margin:0;
+}
+
+.whychoose section .tab-content #value section.intl-roaming p {
+   max-width: 270px;
+   margin-bottom: 30px;
+}
+
+@media (max-width: 870px){
+	.whychoose section .tab-content #value section.intl-roaming, .whychoose section .tab-content  #value section.phones  {
+    background-size: contain;
+	}
+}
+
+@media (max-width: 767px){
+	.whychoose section .tab-content #value section {
+	    padding: 0;
+	    background: none;
+	}
+	.whychoose section .tab-content #value section.intro .header, .whychoose section .tab-content #value section.intro .content {
+	    background: none;
+	    height: auto;
+	    padding: 0;
+	}
+	.whychoose section .tab-content #value section.intro .header h2 {
+	    background-color: transparent;
+	    color: #F7901E;
+	    padding: 0;
+	}
+	.whychoose section .tab-content #value section.intro .content p {
+	   margin-bottom: 20px;
+	}
+	.whychoose section .tab-content #value section.intro, .whychoose section .tab-content #value section.coverage, .whychoose section .tab-content #value section.speed, .whychoose section .tab-content #value section.great-value, .whychoose section .tab-content #value section.family-plans, .whychoose section .tab-content #value section.phones, .whychoose section .tab-content #value section.no-contract, .whychoose section .tab-content #value section.intl-roaming {
+	    background: none;
+	    min-height: auto;
+	    padding: 20px;
+	}
+	.whychoose section .tab-content #value section.coverage a.button.check {
+    display: block;
+	}
+}
+
+/* end of Value tab*/

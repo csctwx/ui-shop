@@ -1,0 +1,229 @@
+
+<section>
+  <div class="col-xs-12">
+    <span class="requiredInfo pull-right">*Required Information</span>
+    <h2 style="margin-top:0px;">Easy Pay Installment Purchase</h2>
+    <div>Please fill in your details to complete your phone purchase using installment payments.<br />With Easy Pay Installment Payments, you'll pay the balance of your purchase in monthly installments over the course of your agreement.</div>
+    <br />
+    <div><span class="required">All fields with</span> are mandatory.</div>
+    <br />
+    <form name="contractForm" class="form-group form-group-sm">
+      <label class="col-sm-3 control-label required hidden-xs" for="firstName">First Name</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="firstName" id="firstName" maxlength="25" ng-model="checkoutController.data.contractInfo.firstName" 
+          ng-change="checkoutController.changeStatus.contractInfo.firstName.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.firstName.check=false"
+          ng-blur="checkoutController.changeStatus.contractInfo.firstName.check=true"
+          placeholder="First Name" ng-pattern="/^[0-9a-zA-Z ]+$/" required/>
+          <div ng-show="checkoutController.changeStatus.contractInfo.firstName.changed && 
+                        checkoutController.changeStatus.contractInfo.firstName.check &&
+                        contractForm.firstName.$error.required" class="errorMessage">* First Name is required</div>
+          <div ng-show="checkoutController.changeStatus.contractInfo.firstName.changed && 
+                        checkoutController.changeStatus.contractInfo.firstName.check &&
+                        contractForm.firstName.$error.pattern" class="errorMessage">* Only letters and numbers are acceptable</div>
+      </div>
+      <label class="col-sm-3 control-label required hidden-xs" for="lastName">Last Name</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="lastName" id="lastName" maxlength="25" ng-model="checkoutController.data.contractInfo.lastName" 
+          ng-change="checkoutController.changeStatus.contractInfo.lastName.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.lastName.check=false"
+          ng-blur="checkoutController.changeStatus.contractInfo.lastName.check=true"
+          placeholder="Last Name" ng-pattern="/^[0-9a-zA-Z ]+$/" required/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.lastName.changed &&
+                      checkoutController.changeStatus.contractInfo.lastName.check &&
+                      contractForm.lastName.$error.required" class="errorMessage">* Last Name is required</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.lastName.changed &&
+                      checkoutController.changeStatus.contractInfo.lastName.check &&
+                      contractForm.lastName.$error.pattern" class="errorMessage">* Only letters and numbers are acceptable</div>
+      </div>
+      <label class="col-sm-3 control-label required hidden-xs" for="address1">Address 1</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="address1" id="address1" maxlength="50" ng-model="checkoutController.data.contractInfo.address1" 
+          ng-change="checkoutController.changeStatus.contractInfo.address1.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.address1.check=false"
+          ng-blur="checkoutController.changeStatus.contractInfo.address1.check=true"
+          placeholder="{{checkoutController.data.shippingInfo!=checkoutController.data.contractInfo?'Address':'No PO Boxes or Military Addresses for Shipping Address'}}" required/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.address1.changed &&
+                      checkoutController.changeStatus.contractInfo.address1.check &&
+                      contractForm.address1.$error.required" class="errorMessage">* Address1 is required</div>
+        <div ng-show="checkoutController.data.shippingInfo==checkoutController.data.contractInfo && !checkoutController.checkShippingInfo(checkoutController.data.shippingInfo.address1,1)" class="errorMessage">* Sorry, no PO Boxes or Military Addresses for Shipping Address</div>
+      </div>
+      <label class="col-sm-3 control-label hidden-xs" for="address2">Address 2</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="address2" id="address2" maxlength="50" ng-model="checkoutController.data.contractInfo.address2" placeholder="Apt., Suite, Building (optional)">
+        <div ng-show="checkoutController.data.shippingInfo==checkoutController.data.contractInfo && !checkoutController.checkShippingInfo(checkoutController.data.shippingInfo.address2,2)" class="errorMessage">* Sorry, no PO Boxes or Military Addresses for Shipping Address</div>
+      </div>
+      <label class="col-sm-3 control-label required hidden-xs" for="city">City</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="city" maxlength="25" id="city" ng-model="checkoutController.data.contractInfo.city"
+          ng-change="checkoutController.changeStatus.contractInfo.city.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.city.check=false" 
+          ng-blur="checkoutController.changeStatus.contractInfo.city.check=true" 
+          placeholder="City" ng-pattern="/^[0-9a-zA-Z ]+$/" required/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.city.changed &&
+                      checkoutController.changeStatus.contractInfo.city.check &&
+                      contractForm.city.$error.pattern" class="errorMessage">* Only letters and numbers are acceptable</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.city.changed &&
+                      checkoutController.changeStatus.contractInfo.city.check &&
+                      contractForm.city.$error.required" class="errorMessage">* City is required</div>
+      </div>
+      <label class="col-sm-3 control-label required hidden-xs" for="zipCode">Zip Code</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" id="zipCode" name="zipCode" ng-model="checkoutController.data.contractInfo.zipCode" 
+          ng-change="checkoutController.changeStatus.contractInfo.zipCode.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.zipCode.check=false" 
+          ng-blur="checkoutController.changeStatus.contractInfo.zipCode.check=true" 
+          placeholder="Zip Code" ng-pattern="/^[0-9]{5}$/" ng-maxlength="5" maxlength="5" required/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.zipCode.changed &&
+                      checkoutController.changeStatus.contractInfo.zipCode.check &&
+                      contractForm.zipCode.$error.pattern" class="errorMessage">* Not a valid Zip Code</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.zipCode.changed &&
+                      checkoutController.changeStatus.contractInfo.zipCode.check &&
+                      contractForm.zipCode.$error.required" class="errorMessage">* Zip Code is required</div>
+                      {{checkoutController.checkBlackZipcode(checkoutController.data.contractInfo.zipCode)}}
+      </div>
+      <label class="col-sm-3 control-label required hidden-xs" for="state">State</label>
+      <div class="col-sm-6">
+        <select class="form-control" name="state" ng-model="checkoutController.data.contractInfo.state" 
+          ng-change="checkoutController.changeStatus.contractInfo.state.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.state.check=false" 
+          ng-blur="checkoutController.changeStatus.contractInfo.state.check=true" 
+          ng-options="state.value as state.label for state in commonData.stateOptions" required></select>
+        <div ng-show="checkoutController.changeStatus.contractInfo.state.changed &&
+                      checkoutController.changeStatus.contractInfo.state.check &&
+                      contractForm.state.$error.required" class="errorMessage">* State is required</div>
+      </div>
+
+      <!-- <label class="col-sm-3 control-label required hidden-xs" for="phoneNumber">Phone Number</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" id="phoneNumber" name="phoneNumber" ng-model="checkoutController.data.contractInfo.phoneNumber" 
+          ng-change="checkoutController.changeStatus.contractInfo.phoneNumber.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.phoneNumber.check=false" 
+          ng-blur="checkoutController.changeStatus.contractInfo.phoneNumber.check=true" 
+          placeholder="Phone" required="required" 
+          ng-pattern="/^(1[ -]?)?(\([2-9]\d{2}\)|[2-9]\d{2})[ -]?[2-9]\d{2}[ -]?\d{4}$/" maxlength="12"/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.phoneNumber.changed &&
+                      checkoutController.changeStatus.contractInfo.phoneNumber.check &&
+                      contractForm.phoneNumber.$error.pattern" class="errorMessage" class="errorMessage">* Not a phone number</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.phoneNumber.changed &&
+                      checkoutController.changeStatus.contractInfo.phoneNumber.check &&
+                      contractForm.phoneNumber.$error.required" class="errorMessage" class="errorMessage">* Phone Number is required</div>
+      </div> -->
+      
+      <label class="col-sm-3 control-label required hidden-xs" for="email">Your Email 
+      Address</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="email" id="email" name="email" maxlength="75" ng-model="checkoutController.data.contractInfo.email" 
+          ng-change="checkoutController.changeStatus.contractInfo.email.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.email.check=false" 
+          ng-blur="checkoutController.changeStatus.contractInfo.email.check=true" 
+          placeholder="Email" required="required"/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.email.changed &&
+                      checkoutController.changeStatus.contractInfo.email.check &&
+                      contractForm.email.$error.required" class="errorMessage">* Email is required</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.email.changed &&
+                      checkoutController.changeStatus.contractInfo.email.check &&
+                      contractForm.email.$error.email" class="errorMessage">* Email format is not invalid (ex. xxx@xxx)</div>
+      </div>
+      <label class="col-sm-3 control-label required hidden-xs" for="validateEmail">Confirm Email 
+      Address</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="email" id="validateEmail" name="validateEmail" maxlength="75" ng-model="checkoutController.data.contractInfo.validateEmail" 
+          ng-change="checkoutController.changeStatus.contractInfo.validateEmail.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.validateEmail.check=false" 
+          ng-blur="checkoutController.changeStatus.contractInfo.validateEmail.check=true" 
+          placeholder="Validate Email" required="required"/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.validateEmail.changed &&
+                      checkoutController.changeStatus.contractInfo.validateEmail.check &&
+                      contractForm.validateEmail.$error.required" class="errorMessage">* Validate Email is required</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.validateEmail.changed &&
+                      checkoutController.changeStatus.contractInfo.validateEmail.check &&
+                      contractForm.validateEmail.$error.email" class="errorMessage">* Email format is not invalid (ex. xxx@xxx)</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.validateEmail.changed &&
+                      checkoutController.changeStatus.contractInfo.validateEmail.check &&
+                      checkoutController.data.contractInfo.validateEmail && 
+                      checkoutController.data.contractInfo.validateEmail!=checkoutController.data.contractInfo.email" class="errorMessage">* Emails do not match</div>
+      </div>   
+      <label class="col-sm-3 control-label hidden-xs" for="driversLicenseNumber">Driver's License Number<br />(Optional)</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="driversLicenseNumber" id="driversLicenseNumber" minlength="5" maxlength="15" ng-model="checkoutController.data.contractInfo.driversLicenseNumber" 
+          ng-change="checkoutController.changeStatus.contractInfo.driversLicenseNumber.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.driversLicenseNumber.check=false"
+          ng-blur="checkoutController.changeStatus.contractInfo.driversLicenseNumber.check=true"
+          placeholder="Driver's License Number" ng-pattern="/^[0-9a-zA-Z]{5,25}$/" />
+          <div ng-show="checkoutController.changeStatus.contractInfo.driversLicenseNumber.changed && 
+                        checkoutController.changeStatus.contractInfo.driversLicenseNumber.check &&
+                        contractForm.driversLicenseNumber.$error.required" class="errorMessage">* Driver's License Number is required</div>
+          <div ng-show="checkoutController.changeStatus.contractInfo.driversLicenseNumber.changed && 
+                        checkoutController.changeStatus.contractInfo.driversLicenseNumber.check &&
+                        contractForm.driversLicenseNumber.$error.pattern" class="errorMessage">* Not a valid driver's license number</div>
+      </div>
+      <label class="col-sm-3 control-label required hidden-xs" for="dob">Date of Birth</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="dob" id="dob" maxlength="25" ng-model="checkoutController.data.contractInfo.dob" 
+          ng-change="checkoutController.changeStatus.contractInfo.dob.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.dob.check=false"
+          ng-blur="checkoutController.changeStatus.contractInfo.dob.check=true"
+          placeholder="YYYY/MM/DD" ng-pattern="/^(19|20)([0-9]{2})[\/](0[1-9]|1[012])[\/](0[1-9]|[12][0-9]|3[01])*$/" required/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.dob.changed &&
+                      checkoutController.changeStatus.contractInfo.dob.check &&
+                      contractForm.dob.$error.required" class="errorMessage">* Date of birth is required</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.dob.changed &&
+                      checkoutController.changeStatus.contractInfo.dob.check &&
+                      contractForm.dob.$error.pattern" class="errorMessage">* Not a valid date of birth (YYYY/MM/DD)</div>
+      </div>
+      <label class="col-sm-3 control-label required hidden-xs" for="mdnNumber">Phone Number</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="text" name="mdnNumber" id="mdnNumber" maxlength="50" ng-model="checkoutController.data.contractInfo.mdnNumber" 
+          ng-change="checkoutController.changeStatus.contractInfo.mdnNumber.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.mdnNumber.check=false"
+          ng-blur="checkoutController.changeStatus.contractInfo.mdnNumber.check=true"
+          placeholder="123-456-7890" ng-pattern="/^([0-9]{3}[-][0-9]{3}[-][0-9]{4})$/" required/>
+        <div ng-show="checkoutController.changeStatus.contractInfo.mdnNumber.changed &&
+                      checkoutController.changeStatus.contractInfo.mdnNumber.check &&
+                      contractForm.mdnNumber.$error.required" class="errorMessage">* MDN number is required</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.mdnNumber.changed &&
+                      checkoutController.changeStatus.contractInfo.mdnNumber.check &&
+                      contractForm.mdnNumber.$error.pattern" class="errorMessage">* Not a valid MDN number</div>
+        <div ng-show="checkoutController.data.shippingInfo==checkoutController.data.contractInfo && !checkoutController.checkShippingInfo(checkoutController.data.shippingInfo.address1,1)" class="errorMessage">* Sorry, no PO Boxes or Military Addresses for Shipping Address</div>
+      </div>
+      <label class="col-sm-3 control-label hidden-xs" for="ssn">Social Security Number<br />(Optional)</label>
+      <div class="col-sm-6">
+        <input class="form-control" type="password" name="ssn" id="ssn" maxlength="50" ng-model="checkoutController.data.contractInfo.ssn" 
+          ng-change="checkoutController.changeStatus.contractInfo.ssn.changed=true" 
+          ng-focus="checkoutController.changeStatus.contractInfo.ssn.check=false"
+          ng-blur="checkoutController.changeStatus.contractInfo.ssn.check=true"
+          placeholder="xxx-xx-xxxx" ng-pattern="/^([0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4})$/" />
+        <div ng-show="checkoutController.changeStatus.contractInfo.ssn.changed &&
+                      checkoutController.changeStatus.contractInfo.ssn.check &&
+                      contractForm.ssn.$error.required" class="errorMessage">* Social Security number is required</div>
+        <div ng-show="checkoutController.changeStatus.contractInfo.ssn.changed &&
+                      checkoutController.changeStatus.contractInfo.ssn.check &&
+                      contractForm.ssn.$error.pattern" class="errorMessage">* Not a valid social security number</div>
+        <div ng-show="checkoutController.data.shippingInfo==checkoutController.data.contractInfo && !checkoutController.checkShippingInfo(checkoutController.data.shippingInfo.address1,1)" class="errorMessage">* Sorry, no PO Boxes or Military Addresses for Shipping Address</div>
+      </div>
+      <label id="easy-pay-header" class="col-sm-3 control-label required hidden-xs" for="city">Easy Pay Installments:</label>
+      <div class="col-sm-6" style="width:100%; border:1px solid #CCCCCC !important; padding:10px; clear:both;" ng-hide="checkoutController.data.equipments.length!=1">        
+        <div class="row" id="easy-pay-title">
+          <div class="col-xs-4">Easy Pay Balance</div>
+          <div class="col-xs-4">Down Payment</div>
+          <div class="col-xs-4">Monthly Installment</div>
+        </div>
+        <div class="row" id="easy-pay-content">
+          <div class="col-xs-4">${{checkoutController.data.equipments[0].loanAmount}}</div>
+          <div class="col-xs-4">${{checkoutController.data.equipments[0].downPaymentAmount}}</div>
+          <div class="col-xs-4">${{checkoutController.data.equipments[0].ibEmi}}</div>
+        </div>
+        <p style="width:100%; margin:0px; padding:10px 0 0 0 !important; clear:both">Length of Agreement: {{checkoutController.data.equipments[0].loanTerm}} Months</p>       
+        <p style="width:100%; margin:0px; padding:10px 0 0 0 !important;">Last Installment Date: {{appUtil.$scope.app.lastInstallmentDueDate}}</p>
+      </div>
+    <label style="line-height:1.1; padding:10px; display:block; width:100%;">
+      <input type="checkbox" style="margin:0 5px 10px 0;" ng-model="checkoutController.data.contractInfo.agreeEC" required/> I agree to receive email/SMS regarding my installment agreement.</input>
+    </label>
+    <a class="btn btn-primary pull-right" style="margin:15px; width:120px;" ng-href=""
+       ng-click="checkoutController.doContract()" ng-disabled="contractForm.$invalid || checkoutController.data.contractInfo.validateEmail!=checkoutController.data.contractInfo.email">Continue</a>
+    <a class="btn btn-primary pull-right" style="margin:15px; width:120px;" ng-href=""
+       ng-click="checkoutController.back()" >Back</a>   
+    </form>
+  </div>
+</section>

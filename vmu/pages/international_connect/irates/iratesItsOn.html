@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Data Sharing International Rates - Search By Country | Virgin Mobile</title>
+	
+	<link rel="canonical" href="http://www.virginmobileusa.com/international_connect/irates/iratesItsOn.html" />
+	
+    <style type="text/css">
+	body { margin: 0 0 10px 0; background-color: #fff; }
+	h1 { font: bold 16px/16px arial,helvetica,sans-serif; color: #000; margin: 0; text-transform: uppercase; }
+	h2
+	{
+	font: 18px/18px arial,helvetica,sans-serif; color: #000; text-transform: uppercase; 
+	margin: 0 10px 0 0; display: inline-block; vertical-align: middle;
+	}
+	p { font: 13px/16px arial,helvetica,sans-serif; color: #000; margin: 10px 0; }
+	p a { color: inherit; }
+	p.legal { font: 11px/14px arial,helvetica,sans-serif; color: #000; margin: 20px 0 0 0; }
+	.search-for { margin: 40px 0 0; }
+	.search-for input
+	{
+		border: 1px solid #ccc; border-radius: 5px;
+		color: #000; vertical-align: middle;
+		width: 250px; padding: 8px;
+	}
+	.tableContainer{ margin: 20px 0 0 0; }
+	.tableContainer table
+	{
+		width: 100%; display: none;
+		font: bold 13px/18px arial,helvetica,sans-serif; color: #000;
+	}
+	.tableContainer table th { color: #d70020; }
+	.tableContainer table tr.odd { background-color: #f7f7f7; }
+	.tableContainer table td { width: 25% !important; }
+    </style>
+
+	<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/international_connect/irates/includes/js/jquery.quicksearch.js"></script-->
+	<script src="../../../js/international_connect/jquery.min.js"></script>
+    <script src="../../../js/international_connect/jquery.quicksearch.js"></script>
+	
+	
+    <script>
+    	$(document).ready(function()
+		{
+			$('#lookup tbody').load('lookupItsOn.html tr', function()
+			{
+				$("#id_search").quicksearch("#lookup table tbody tr",
+				{
+					noResults: '#noresults',
+					stripeRows: ['odd', 'even'],
+					onAfter: function()
+					{
+						$('.tableContainer table').css('display','block');
+						if( $('#lookup table tbody tr:visible').length == 0 || $("#id_search").val() == '' )
+							$('.tableContainer table').css('display','none');
+					}
+				});
+			});
+		});    
+    </script>
+</head>
+
+
+<body>
+
+
+	<h1>International Calling</h1>
+	<p>
+	Use your Virgin Mobile phone to dial internationally while in the U.S.
+	International Long Distance calling capabilities may be enabled by adding an International Special Offer add-on from your phone
+	or by visiting <a href="http://my.virginmobileusa.com/" target="_top">My Account</a>.
+	</p>
+	
+	<div class="search-for">
+		<h2>Search By Country:</h2>
+		<input type="text" name="country" value="" id="id_search" />
+	</div>
+
+	<div class="tableContainer" align="center">
+		<div id="lookup">
+			<table border="0" cellspacing="2" cellpadding="3">
+				<thead>
+					<tr>
+						<th align="center">Country</th>
+						<th align="center">Type</th>
+						<th align="center">International Connection</th>
+						<th align="center">International Connection+</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+
+	<p class="legal">
+	* For some destinations, not all landline and mobile phones are included. Search by the number you would like to call for complete details.
+	<br />
+	**Included until monthly plan allowance of 1,000 International calling minutes is reached.
+	</p>
+
+	
+</body>
+</html>

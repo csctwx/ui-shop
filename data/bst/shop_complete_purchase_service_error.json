@@ -1,0 +1,6 @@
+{
+  "status": 101,
+  "description": "THIS IS ERROR TEXT RECEIVED FROM SERVER",
+  "technicalError":"TECH ERR INFO: bad stuff happened",
+  "errorCode":"ERR1234"
+}

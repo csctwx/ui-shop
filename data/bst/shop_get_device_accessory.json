@@ -1,0 +1,48 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "fc3cfaa2-1f79-40a8-81ad-d981eaba9d83",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"deviceDetailsResponse": {
+				"deviceDetails": {
+					"deviceDetail": {
+            "deviceType":{
+              "$":"accessory"
+            },
+            "label":{  
+              "$":"SanDisk 16GB MicroSD Memory Card"
+            },
+            "sku":{  
+              "$":"MMU3016Q"
+            },
+            "inventory":{  
+              "$":"in-stock"
+            },
+            "price":{  
+              "$":"20"
+            },
+            "checkoutImage":{  
+              "fileName":{  
+                "$":"cart"
+              },
+              "uRI":{  
+                "$":"data/img/16gb_sandisk_cart.png"
+              }
+            },
+            "purchaseLimit":{  
+              "$":"2"
+            }
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

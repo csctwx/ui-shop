@@ -1,0 +1,132 @@
+/*@font-face{
+    font-family:BoostNeoRegular;
+    src:url(../fonts/v2/BoostNeo-Regular.eot);
+    src:url(../fonts/v2/BoostNeo-Regular.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Regular.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Regular.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Regular.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Regular.svg#boost_neoregular) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+
+@font-face{
+    font-family:BoostNeoBold;
+    src:url(../fonts/v2/BoostNeo-Bold.eot);
+    src:url(../fonts/v2/BoostNeo-Bold.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Bold.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Bold.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Bold.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Bold.svg#boost_neobold) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:BoostNeoBlack;
+    src:url(../fonts/v2/BoostNeo-Black.eot);
+    src:url(../fonts/v2/BoostNeo-Black.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Black.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Black.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Black.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Black.svg#boost_neoblack) format("svg");
+    font-weight:400;
+    font-style:normal
+}*/
+
+
+/********** scaffolding *************/
+
+
+
+/********** Saming hero coming soon *************/
+
+        body { margin:0px; }
+            #samsung-hero-coming-soon .container {
+               padding: 0;
+            }
+            #samsung-hero-coming-soon.container{ margin: 0 auto; width:100%; max-width: 960px;  }
+            #samsung-hero-coming-soon .section { overflow: hidden; position: relative; width:100%; }
+            #samsung-hero-coming-soon img.full { width:100%; height: auto; }
+            #samsung-hero-coming-soon img.left { float:left;}
+            #samsung-hero-coming-soon img.half { width:50%; }
+            
+            #samsung-hero-coming-soon .gray { background-color: #efefef; }
+             @media( max-width: 767px ){
+                #samsung-hero-coming-soon  .mobile{ display: block; }
+                #samsung-hero-coming-soon  .desktop { display: none; }}
+            
+            @media( min-width: 768px ){
+                #samsung-hero-coming-soon .mobile{ display: none; }
+                #samsung-hero-coming-soon .desktop { display: block; }
+            }
+            
+            /* CSS BTNS */
+            #samsung-hero-coming-soon .css_btn { position:absolute; display:  block; background-repeat: no-repeat;  background-size: contain; }
+              
+            #samsung-hero-coming-soon  .btn_watchvideo { background-image: url('../img/samsung-hero-coming-soon/btn_watchvideo.png'); }
+            #samsung-hero-coming-soon .btn_watchvideo:hover { background-image: url('../img/samsung-hero-coming-soon/btn_watchvideo_hover.png'); }
+            
+            #samsung-hero-coming-soon .btn_preorder { background-image: url('../img/samsung-hero-coming-soon/btn_preorder.png'); }
+            #samsung-hero-coming-soon .btn_preorder:hover { background-image: url('../img/samsung-hero-coming-soon/btn_preorder_hover.png'); }
+            
+            #samsung-hero-coming-soon .btn_header{ width: 15.1%; top: 76%; right: 18.5%; height: 6%; }
+            #samsung-hero-coming-soon .btn_carrier { width: 15.1%; top: 39.5%; right: 3.7%; height: 27%; }
+            #samsung-hero-coming-soon .btn_gearvr{ width: 15.1%; top: 77.3%; right: 42.5%; height: 6%; }
+            #samsung-hero-coming-soon .btn_footer{ width: 15.1%; top: 92%; right: 42.0%; height: 3%; }
+            
+            #samsung-hero-coming-soon .mobile_btn_header{ width: 41%; top: 90.2%; right: 29.4%; height: 5.3%; }
+            #samsung-hero-coming-soon .mobile_btn_carrier { width: 41%; top: 73%; right: 29.4%; height: 16.1%; }
+            #samsung-hero-coming-soon .mobile_btn_gearvr{ width: 41%; top: 87.8%; right: 29.4%; height: 5.3%; }
+            #samsung-hero-coming-soon .mobile_btn_footer{ width: 41%; top: 91%; right: 29.4%; height: 5.3%; }
+            
+             /*debug button sizes*/ /*.css_btn { background-color: #FF0000; } */
+            
+            /* VIDEO PLAYER */
+            #samsung-hero-coming-soon .video-modal { display:none; }
+            #samsung-hero-coming-soon .video-modal.open { 
+                display:block; position: fixed; top: 50%; left: 50%;
+                width: 90%;
+                min-width: 320px;
+                max-width: 967px;
+                height: auto;
+                z-index: 2000; 
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                -ms-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);}
+            #samsung-hero-coming-soon #close{
+                background-image: url(../img/samsung-hero-coming-soon/close.png);
+                width: 22px;
+                height: 23px;
+                display: block;
+                position: absolute;
+                top: 24px;
+                right: 24px;
+                z-index: 10;
+                cursor: pointer; }
+
+            #samsung-hero-coming-soon .video-modal-background {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                opacity: 0;
+                background: rgba(255, 255, 255, .8);
+                transition: all .3s;}
+    
+            #samsung-hero-coming-soon .video-modal-background.open {
+                opacity: 1; visibility: visible;}
+           
+           /*bg video loops */
+           #samsung-hero-coming-soon .bgVideo { width:100% }
+           #samsung-hero-coming-soon .bg_vid_container { width:100%; max-height:316px; overflow: hidden; position:relative;}
+           #samsung-hero-coming-soon .bg_vid_button_container{ height:0px; width:100%; position:absolute; top:113%; left:50%; }
+           #samsung-hero-coming-soon .bg_vid_button { position: absolute; width: 15.1%; height: 52px; text-align: center; margin-left: -7.5%; margin-top: -106px; background-image: url('../img/samsung-hero-coming-soon/btn_preorder.png'); background-size: contain; background-repeat: no-repeat;}
+           #samsung-hero-coming-soon .bg_vid_button:hover { background-image: url(../img/samsung-hero-coming-soon/btn_preorder_hover.png);  }
+           #samsung-hero-coming-soon .bg_vid_text_container{ height:0px; width:100%; position:absolute; top:50%; }
+           #samsung-hero-coming-soon .bg_vid_overlay { position: absolute; text-align: center; margin: 0 auto; width: 100%; height: 316px; background-image: url('../img/samsung-hero-coming-soon/desktop/videotext_overlay.png'); background-size: contain; background-repeat: no-repeat; }
+           #samsung-hero-coming-soon .bg_vid_overlay_color { position:absolute; width:100%; height:400px; background-color: rgba(0, 0, 0, .7); }
+           #samsung-hero-coming-soon .blue { color:#0077c8; }
+           #samsung-hero-coming-soon .white { color:#FFFFFF; }

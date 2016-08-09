@@ -1,0 +1,102 @@
+div.square{
+	width: 50%;
+	height: 250px;
+	padding: 10px;
+	float: left;
+	margin-top: 20px;
+}
+
+div.square  > img{margin: 0 auto;}
+div.square.r1{height: 214px;}
+div.square.r2{height: 256px;}
+div.square.r3{height: 262px;}
+
+div.t-banner{
+	width: 100%;
+	position: relative;
+	height: 272px;
+	background: url('../img/careers/main_hdr_bg.png');
+}
+
+div.border-none{
+		padding-top: 0px !important;
+}
+.tab-content{margin-top: 0px !important;}
+
+div.t-banner > h2{
+	text-align: center !important;
+	padding-top: 50px !important;
+	color: #fff;
+}
+
+div.t-banner > a{
+	position: absolute;
+    left: -70px;
+    top: 140px;
+    width: 140px;
+    margin-left: 50%;
+    background: url("../img/iphone/deals-bt-btn-bg.gif") repeat-x 0 0;
+    font: 13px/27px 'ProximaNova-Semibold', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.square > ul{
+	list-style-type: disc;
+    padding-left: 25px;
+    color: #000;
+}
+div.square > ul > li{
+	padding: 10px 0px 0px;
+}
+
+div.square > h2{
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+div.bottom-btn{
+	clear: both;
+    position: relative;
+    width: 100%;
+    margin: 40px 0px;
+    padding-top: 40px;
+}
+div.bottom-btn a{
+	color: #fff !important;
+	background: url(../img/careers/job-bg.png);
+    width: 200px;
+    font-family: 'ProximaNova-Bold', Helvetica, Arial, sans-serif;
+    position: absolute;
+    text-align: center;
+    padding: 6px 0px;
+    left: -100px;
+    margin-left: 50%;
+}
+
+div.bottom-btn a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+@media(max-width:767px){
+	div.square{
+		width: 100%;
+		min-height: 100px;
+		height: auto !important;
+		padding: 10px;
+		float: left;
+	}
+	div.square > h2{
+		text-align: center;
+	}
+	div.square img{
+		margin: 0 auto;
+	}
+	div.t-banner > a{
+		top: auto;
+		bottom: 50px;
+	}
+}

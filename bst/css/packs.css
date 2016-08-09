@@ -1,0 +1,60 @@
+div#body {
+	background-color: #000;
+}
+
+#nav_3_li_2 a {
+    background-position: -220px 0!important;
+    color: #fff!important;
+}
+
+.btn-show-all {
+    position: absolute;
+    right: -10px;
+}
+
+.btn-show-all a {
+	background: url(../img/btn-see-all-id-packs.gif) !important;
+    background-position: 0px 0px;
+    display: block;
+    height: 36px;
+    width: 185px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.btn-show-all a:hover {
+    background-position: bottom center !important;
+}
+
+#plan > div.inside div.slide > blockquote{width: auto; color: #fff !important; font-size: 12px !important;
+    padding: 20px;
+    margin: 10px 50px;
+    background-color: #121212;
+    background-image: url("../img/mobile_id/tile-vertical.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+	border-left: 0px !important;
+    border: 1px solid #2d2e2e !important;
+}
+
+.section-mobile-id .inside ol, .section-mobile-id .inside ul {
+    color: #fff;
+    margin-bottom: 20px;
+}
+#screenshots li {
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #202123;
+    list-style-type: none;
+	transition: top 0.2s;
+}
+#screenshots li:hover {
+	top: -10px !important;
+}
+
+.section-mobile-id .inside li {
+    font-size: 12px;
+}

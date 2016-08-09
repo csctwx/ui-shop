@@ -1,0 +1,24 @@
+<section>
+  <div class="col-xs-12 col-sm-8 finalamount pull-right">
+    <ul>
+      <li><span>Subtotal</span><p>{{checkoutController.data.summary.subtotal()|currency:""}}</p></li>
+      <li><span>Shipping {{checkoutController.data.orderCode.promoCode ? " discount applied":""}}</span><p>{{checkoutController.data.summary.shipping()|currency:""}}</p></li>
+      <li ng-if="checkoutController.data.promoCode.status==0"><span>Discount</span><p>-{{checkoutController.data.promoCode.totalDiscount|currency:""}}</p></li>
+      <li><span>Tax</span><p>{{checkoutController.data.summary.tax()|currency:""}}</p></li>
+      <li><span>Current Total Due</span><p>{{checkoutController.data.summary.total()|currency:""}}</p></li>
+      <a class="btn btn-primary pull-right" href="" 
+          ng-click="checkoutController.doReviewOrder()" 
+          ng-show="checkoutController.step==1" 
+          ng-disabled="(checkoutController.data.equipments.length==0 
+          || itemsForm.$invalid 
+          || billingForm.$invalid 
+          || shippingForm.$invalid 
+          || paymentForm.$invalid 
+          || !checkoutController.data.agree 
+          || checkoutController.isBlackZipcode(checkoutController.data.billingInfo.zipCode))">
+          Review Order 
+     	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </ul>
+  </div>
+</section>

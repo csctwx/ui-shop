@@ -1,0 +1,9 @@
+
+
+<div id="phoneContent" class="tab-pane {{phoneController.selectedTab=='plans'?'active':''}}">
+  <div class="phoneInfo phone-type-android" id="phonePlans" style="display: block;">
+    <h3 style="padding:20px">{{phoneController.details.data.name}} <span>Plans</span></h3>      
+    <div class="tab-content"  ng-bind-html="phoneController.details.planPage"></div>
+  </div>
+</div>
+

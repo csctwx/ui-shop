@@ -1,0 +1,90 @@
+<div ng-if="app.isCurrentContext(pathMap._home._formatedHash)">
+  <app-carousel carousel="app.carousel.bannerTop"></app-carousel>
+  <app-carousel carousel="app.carousel.bannerTopMobile"></app-carousel>
+  <phone-genie></phone-genie>
+   <section class="promo-half">
+    <div class="col-xs-12 hidden-xs col-sm-6 col-md-6 promo02a" id="promo02a">
+      <a href="#!/shop/plans/monthly-phone-plans/?icamp=INTC_HP_Row1b_Main_RateCard"></a>
+		</div>
+    <div class="col-xs-12 col-sm-6 col-md-6 promo02b " id="promo02b">
+      <!-- <a href="#!/store"></a> -->
+      <img src="./bst/img/home_promo02b-2.png"></img>
+      <p class="promo02bText">Get iPhone 5s in-store for just $149.99 after $150 instant savings.</p>   
+      <a class="btn-boost" href="#!/store/" style="padding: 8px 12px; font-size:17px; letter-spacing:.5px; font-family: 'Boost_bold', Helvetica, Arial, sans-serif; bold; width:118px; height:40px; min-height:auto; margin-top:12px; margin-left:5%;">Find a Store</a>
+      <p class="promo02bText2">Get iPhone 5s online for $199.99 and receive a $50 account credit*</p>
+      <a class="btn-boost" href="#!/shop/phones/apple-iphone5s/features/Gray,16GB/" style="padding: 8px 12px; font-size:17px; letter-spacing:.5px; font-family: 'Boost_bold', Helvetica, Arial, sans-serif; bold; width:118px; height:40px; min-height:auto; margin-left:5%;">Shop Now</a>
+      <p style="color:#000; text-align:left; font-size:11px; font-weight:bold; margin-left:5%; width:200px;">Limited Time Offer</p>
+      <p  style="text-align:left; font-size:.8em; font-weight:bold; margin-left:5%;width:50%;">*Requires payment of second month of service</p>
+    </div>
+  </section>
+
+  <section class="banner-static hidden-xs" style="border-bottom:2px solid black;">
+	<a href="#!/shop/phones/samsung-galaxy-s7/features/"><img src="bst/img/promo-samsung.jpg"></a>
+  </section>
+   
+  <section class="promo-half hidden-xs">
+    <div class="col-xs-12 col-sm-6 col-md-6 promo04a" style="background-color:#70DADA;" id="promo04a">
+      <p id="promo04aText1">PLANS NOW WORK IN THE</p>
+      <p id="promo04aText2">U.S. & MEXICO</p>
+      <div style="width:45%; border:none !important;">
+        <img src="./bst/img/home_promo04a.png"</img>
+      </div>
+      <div style="width:45%; border:none; margin-left:50%; background-color:inherit; text-align:left; font-family:'Boost_black'; color:black;">
+        <p style="margin:10px 0px 0px 0px;">
+          <span class="promo04aMexico" style="display:inline-block; white-space:nowrap;">
+          <span id="promo04aText3">Extra </span>
+          <span id="promo04aText4">$</span>
+          <span id="promo04aText5">5</span>
+          <span id="promo04aText6">/mo.</span>
+          </span>
+        </p>
+        <p style="margin:-3px 0px 10px 0px; font-size:17px;">Unlimited talk & text w/up to <span style="font-size:22px;">8GB</span> of data in Mexico</p>
+        <a class="btn-boost" href="#!/shop/plans/international-services/">Learn More</a>
+        <p id="promoNotice">Limited time.  Select phones.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 hidden-xs col-sm-6 col-md-6 promo04b" id="promo04b">
+      <!-- <a href="#!/shop/phones/?icamp=INTC_HP_Row1a_Main_SalePhones"></a> -->
+      <a href="//www.fubo.tv/boost-copa" target="_blank"></a>
+		</div>
+  </section> 
+  <section class="menublocks hidden-md hidden-lg visible-xs">
+   <ul>
+    <li><a href="#!/shop/phones/">Shop Phones<span class="glyphicon glyphicon-chevron-right" ></span></a></li>
+    <li><a href="#!/shop/plans/">Shop Plans<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+    <li><a href="#!/coveragemap/">Coverage Map<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+    <li><a href="#!/store/">Find a Store<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+    <li><a href="https://myaccount.boostmobile.com">My Account<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+   </ul>
+  </section>
+  <section class="fourblocks hidden-xs">
+    <div class="col-sm-3">
+      <a class="first" href="{{pathMap._phones._hash}}@PreOwned/">
+        <h3>Certified Pre-owned Phones</h3>
+        <p>Get a phone that looks like new - at a fraction of the cost. Inspected, tested &amp; equipped with the latest software.</p>
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#!/shop/plans/datapacks/">
+        <h3>Data Packs</h3>
+        <p>Need more high-speed data? Add a data pack to your monthly plan.</p>
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#!/shop/boost-market#dealz/">
+        <h3>Boost Dealz</h3>
+        <p> Get a $5 credit every month for receiving customized deals customized just for you!</p>
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a class="last" href="{{pathMap._phones._hash}}">
+        <h3>Amazing phones, amazing prices</h3>
+        <p>Free Shipping too! All the time. No minimums. No kidding.</p>
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+</div>

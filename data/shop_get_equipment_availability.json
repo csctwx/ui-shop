@@ -1,0 +1,31 @@
+{  
+   "responses":{  
+      "response":[  
+         {  
+            "@uuid":"58c1d129-67fc-4649-9059-50e789d6744d",
+            "@class":"",
+            "@name":"Section 19029",
+            "@code":"0",
+            "equipmentAvailabilityResponse":{  
+               "equipmentAvailability":{  
+                  "availableForSaleIndicator":{  
+                     "$":"true"
+                  },
+                  "preOrderIndicator":{  
+                     "$":"false"
+                  }
+               },
+               "status":{  
+                  "$":"0"
+               },
+               "description":{  
+                  "$":"SUCCESS"
+               },
+               "modelId":{  
+                  "$":"IPH6SBT16GLD"
+               }
+            }
+         }
+      ]
+   }
+}

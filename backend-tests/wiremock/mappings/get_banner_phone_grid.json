@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/primary-rest/get_banner_phone_grid?brandId=SPP"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "sprint/get_banner_phone_grid.json"
+    }
+}

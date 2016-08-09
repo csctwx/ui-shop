@@ -1,0 +1,30 @@
+{
+  "addressValid": true,
+  "paymentValid": true,
+  "equipments": [
+    {
+      "orderLineId": "1",
+      "modelId": "LGLS990ABB",
+      "modelPrice": 329.99,
+      "tax": 19.8,
+      "accessoryInd": false,
+      "taxTransactionId": 1001352790,
+      "invoiceDate": "2016-03-23",
+      "quantity": 1,
+      "subTotalAmt": 349.79,
+      "isPreOrder": false,
+      "discount": 0.0,
+      "ignoreInventory": false,
+      "promoCodes": []
+    }
+  ],
+  "transactionId": "BST_SALES_5727957145",
+  "orderId": "BST_ORDER_1638267135",
+  "status": 0,
+  "description": "SUCCESS",
+  "CardType": "CREDIT",
+  "paymentCardType": "VISA",
+  "shippingFee": "0",
+  "totalAmt": 131.80,
+  "orderCodes": []
+}

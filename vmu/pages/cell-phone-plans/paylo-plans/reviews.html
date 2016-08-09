@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <link href="http://reviews.virginmobileusa.com/static/5166rrpaylo/bazaarvoice.css" rel="stylesheet" type="text/css">  
+        <script src="http://reviews.virginmobileusa.com/static/5166rrpaylo/bazaarvoice.js" type="text/javascript"></script> 
+    </head>
+    <body>
+        <div id="BVReviewsContainer"></div>
+        <noscript> 
+            <iframe width="100%" src="http://reviews.virginmobileusa.com/5166rrpaylo/pp/reviews.htm?format=noscript"> <!--.--> </iframe> <br>
+        </noscript>
+        <div id="BVRLPLinkContainer">
+            <a href="http://reviews.virginmobileusa.com/5166rrpaylo/pp/reviews.htm">Read all Paylo Plan reviews</a>
+        </div>
+        
+        <!-- Reviews -->
+        <script type="text/javascript" language="javascript">
+        <!--
+            var BVisLoaded = false;
+            function BVcheckLoadState() {
+                if(!BVisLoaded) {
+                    var page = document.getElementById('BVFrame').src;
+                    document.getElementById('BVFrame').src='http://reviews.virginmobileusa.com/bvstaging/logging?page=' + escape(page);
+                    document.getElementById('BVReviewsContainer').innerHTML = '<!-- Review retrieval timed out -->';
+               }
+            }
+        //-->
+        </script>
+
+        <div id="BVSubmissionParameters" style="display: none;"></div>
+        <div id="BVContainerPageURL" style="display: none;">http://www.virginmobileusa.com/review-form.html</div>
+
+
+        <iframe id="BVFrame" name="BVFrame" onload="iframeloaded();" src="" style="visibility: hidden; width: 1px; height: 1px; position: absolute; left: -999px; top: -999px;"></iframe>
+        
+        
+
+        <script type="text/javascript" language="javascript">
+        <!--
+            
+            function iframeloaded(){
+               
+            }
+            
+            function bvLoadRR() {
+                // Start Configuration
+                var bvPage = 'http://reviews.virginmobileusa.com/5166rrpaylo/pp/reviews.htm?format=embedded';
+                var URLParamNames = {
+                    reviewID : 'featurereview',
+                    reviewPage : 'reviewspage'
+                };
+                // End Configuration
+
+                var getURLParam = function(name) { 
+                    if (!name) return null;
+                    var match = (new RegExp('[?&]' + name + '=([^&#]+)')).exec(window.location.search);
+                    return match ? decodeURIComponent(match[1]) : null;        
+                };
+
+                bvReviewID = getURLParam(URLParamNames.reviewID);
+                bvReviewPage = getURLParam(URLParamNames.reviewPage);
+
+                if (/^[0-9]+$/.test(bvReviewID)) {
+                    bvPage += '&reviewid=' + bvReviewID;
+                } else if (/^[0-9]+$/.test(bvReviewPage)) {
+                    bvPage += '&page=' + bvReviewPage;
+                }
+
+                document.getElementById('BVFrame').src = bvPage;
+            
+                //Timeout for review load.  Consider reviews unavailable if not loaded within 15 seconds
+                setTimeout("BVcheckLoadState()", 15000);
+            }
+
+            bvLoadRR();
+        //-->
+        </script>
+        <script type="text/javascript" language="javascript">  
+        <!--  
+            document.domain = "virginmobileusa.com";  
+
+            function bvShowTab(application, displayCode, subjectId, deepLinkId) {  
+                // Ratings & Reviews  
+                if (application == 'PRR') {  
+                    // TODO: insert code here to open the tab that R&R content lives in  
+                    //       if there is no such tab (content is visible by default), this  
+                    //       block may be removed.  
+                }  
+            }  
+
+            function BVAnalytics(json) {  
+
+                // Ratings & Reviews  
+                if(json.bvProduct == "RatingsAndReviews") {  
+                    // Injection  
+                    if(json.eventSource == "Display") {  
+                        // Display  
+                        if(json.eType == "Read") {  
+                            // Hide reviews and RLP link containers if there are zero reviews  
+                            if (json.attributes.numReviews == 0) {  
+                                var bvRevCntr = document.getElementById("BVReviewsContainer");  
+                                var bvRLPLink = document.getElementById("BVRLPLinkContainer");  
+                                if (bvRevCntr) { bvRevCntr.style.display = "none"; }  
+                                if (bvRLPLink) { bvRLPLink.style.display = "none"; }  
+                            }     
+                        }   
+                    }  
+                    // Click actions  
+                    else if(json.eventSource == "Action") {  
+                        // TODO: place web analytics tagging code here to track clicks  
+                    }  
+                }  
+
+            }  
+        //-->  
+        </script>  
+        
+        
+        <!-- End Reviews -->
+
+        
+    </body>
+</html>

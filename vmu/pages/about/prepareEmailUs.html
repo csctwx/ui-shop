@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="page-title" content="CONTACT US"/>
+    <title>Virgin Mobile USA</title>
+    <link rel="shortcut icon" href="vmu/img/favicon.ico" />
+    <!--
+    <link href="vmu/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vmu/css/app-framework.css" rel="stylesheet" />
+	<script src="vmu/js/jquery-1.12.0.min.js"/>
+    -->
+	<script src="vmu/js/jquery.validate.js"/>
+
+<!-- BEGIN STYLE CREATED BY SOFTTEK -->
+	<link href="vmu/css/contact-us.css" rel="stylesheet" />
+<!-- END STYLE CREATED BY SOFTTEK -->      
+
+</head>
+    
+<body>
+    <ol id="page-path" class="breadcrumb hidden-xs">
+        <li><a href="#!/">Home</a></li>
+        <li class="active">Contact Us</li>
+    </ol>    
+    <div id="support">
+        <div class="support-container clearfix">
+				
+                <section>	
+                    <div class="contact-top">
+                        <div class="contact-bottom">
+                            <div class="contact-content">
+                                <h2 style="font-size: 28px;">Contact Us</h2>
+                                <h3>Through Your Phone</h3>
+                                <p>Need to check your account balance or make a payment? Text or dial these <strong>short codes</strong> from your Virgin Mobile phone to take care of it ASAP.</p>
+                                <div class="row">
+                                    <div class="col-md-6 col-sd-6 col-xs-12 contact-payments contact-services">
+                                        <h3 class="title-services">Account Services</h3>
+                                        <h3>Call 611</h3>
+                                        <p>Call 611 to manage your account right from your phone. If you have an Android&#8482; device, you&#8217;ll link directly to Virgin Mobile Zone.</p>
+                                        <h3>Text BAL to 7225</h3>
+                                        <p>Text BAL to 7225 to get your account balance and your next payment due date.</p>
+                                    </div>
+                                    <div class="col-md-6 col-sd-6 col-xs-12 contact-payments">
+                                       <h3 class="title-services">Payments</h3>
+                                       <h3>Call *729 (*PAY)</h3>
+                                        <p>Call *729 (*PAY) to add funds through your Virgin Mobile phone using a credit or debit card or Top-Up PIN.</p>
+                                        <h3>Text ADD to 7225</h3>
+                                        <p>Text ADD to 7225 to pay using a Top-Up PIN. Type: Add + Top-Up PIN #<br />Example: ADD 123456789</p>
+                                        <h3>Text PAY to 7225</h3>
+                                        <p>Text PAY to 7225 to pay using your registered credit or debit card on file.
+Type: Pay + Amount + Last 4 digits of card. Example:  PAY 40 1234</p>
+                                    </div>
+                                </div>
+                                <img class="img-responsive" src="vmu/img/about/line-separator.png" />
+                                <div class="contact-through">
+                                <h3>Through The Web</h3>
+                                <p>For common questions about Virgin Mobile products and services, <a href="http://virginmobileusa.custhelp.com">check out the FAQs.</a></p>
+                                <p>Need to make changes to your account? You can do that <a href="https://myaccount.virginmobileusa.com/myaccount/home.do">here.</a></p> 
+                                <p>Still have questions? Use the form below to send us a note. Make sure to include your Virgin Mobile phone number and Account PIN.</p>
+                                <p class="all-fields">All fields are required.</p>
+                                </div>
+                                <div class="contact-form">
+                                     <form id="contactForm" name="emailUsForm" action="/dynamicSendMailServlet" method="post" novalidate="novalidate">
+                                    <fieldset>
+								    <input type="hidden" name="mail_complete_url" value="https://www.virginmobileusa.com/#!/about/thanks/"/>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sd-6 col-xs-12">
+                                            <div class="form-group">
+                                                <label for="input-name">Your Name</label>
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input-mobile-number">Your Mobile Phone Number</label>
+                                                <input type="text" class="form-control" id="mobileMnumber" name="mobileMnumber" placeholder="Your Mobile Phone Number">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="select-account-type">Account Type</label>
+                                                <select class="form-control" id="accountType" name="accountType">
+                                                    <option value="">Select</option>
+                                                    <option value="prepaid">Virgin Mobile or payLo</option>
+                                                    <option value="broadband">Broadband2Go</option>
+                                                    <option value="prepaid">Assurance Wireless</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sd-6 col-xs-12">
+                                            <div class="form-group">
+                                                <label for="input-email">Your Email</label>
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="input-account-pin-number">Your Account PIN Number</label>
+                                                <input type="password" class="form-control" id="inputAccountPinNumber" name="inputAccountPinNumber" placeholder="Your Account PIN Number">
+                                            </div>    
+                                                <div class="form-group">
+                                                    <label for="select-subject">Subject</label>
+                                                    <select class="form-control" id="subject" name="subject">
+                                                        <option value="">Select</option>
+                                                        <option value="Account Balance">Account Balance</option>
+                                                        <option value="Coverage">Coverage</option>
+                                                        <option value="Phone operations">Phone operations</option>
+                                                        <option value="Plans">Plans</option>
+                                                        <option value="Buy a New Phone/accessories">Buy a New Phone/accessories</option>
+                                                        <option value="Returns">Returns</option>
+                                                        <option value="Text Messaging">Text Messaging</option>
+                                                        <option value="Top-Up">Top-Up</option>
+                                                        <option value="Voicemail">Voicemail</option>
+                                                        <option value="VirginXtras">VXL</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sd-12 col-xs-12">
+                                            <div class="form-group">
+                                                <label for="text-area-message">Your Message</label>
+                                                <textarea class="form-control" rows="3" id="message" name="message"></textarea>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                         </fieldset>
+                                         <div class="row">
+                              <fieldset class="col-md-7 col-md-offset-5 text-right contact-buttons">  
+                                <button type="button" class="btn btn-link" title="Please be aware that, although this web form is encrypted, any email correspondences that may result from your inquiry  will not be encrypted.  Virgin Mobile will not email any of your account information to you without your request.  In the event that you request Virgin Mobile to email any account information to you, you do so at your own risk; and, by submitting this web form, you agree to indemnify and hold Virgin Mobile harmless from any unauthorized access, use or  disclosure of any account information that is emailed pursuant to your inquiry. Moreover, you are responsible for securing your own email account to help prevent any unauthorized access, use or disclosure of any account information that may be provided to you pursuant to your inquiry" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Disclaimer</button>
+                                <button id="button-submit" type="submit" class="detailBtn">Submit</button>
+                                  <!-- btn btn-default -->
+                              </fieldset>
+                            </div>
+                                    </form>         
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>  
+            <aside>
+                  <div id="follow_us" class="aside-top right-box-mobile">
+                        <div class="aside-bottom">
+                            <div class="aside-mid">
+                                <h2>FOLLOW US</h2>
+                                <ul>
+                                    <li class="follow-list follow-facebook">
+                                    	<a href="http://www.facebook.com/VirginMobileUSA" target="_blank">// BECOME A FAN ON FACEBOOK</a>
+                                    </li>
+                                    <li class="follow-list follow-twitter">
+                                    	<a href="http://www.twitter.com/virginmobileusa" target="_blank">// FOLLOW US ON TWITTER</a>
+                                    </li>
+                                    <li class="follow-list follow-youtube">
+                                    	<a href="http://www.youtube.com/virginmobileusa" target="_blank">// WATCH OUR YOUTUBE VIDEOS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <div id="contact_us" class="aside-top right-box-mobile">
+                        <div class="aside-bottom">
+                            <div class="aside-mid">
+                                <h2>CONTACT US</h2>
+                                <h3>Live Representatives are available</h3>
+                                <p class="contact_info">4 am PST - 8 pm PST: Monday-Friday<br>4 am PST - 7 pm PST: Saturday &amp; Sunday</p>        
+                                <h3>Virgin Mobile or payLo:</h3>
+                                <p class="contact_info">1-888-322-1122</p>                                
+                                <h3>Virgin Mobile Data Done Right:</h3>
+                                <p class="contact_info">Dial *611 from your Virgin Mobile Data Done Right Device</p>
+								<h3>Virgin Mobile Custom:</h3>
+                                <p class="contact_info">Dial *611 from your Virgin Mobile Custom Device</p>  
+								  								
+                                <h3>Broadband2Go:</h3>
+                                <p class="contact_info">1-877-877-8443</p>        
+                                <h3>Assurance Wireless:</h3>
+                                <p class="contact_info">1-888-321-5880<br>4 am PST - 8 pm PST: Monday-Friday<br>4 am PST - 6 pm PST: Saturday &amp; Sunday</p>
+                            </div>
+                        </div>
+                    </div>
+              
+            </aside>
+            
+        </div>   
+        
+        
+	<style type="text/css">
+	.topControls{
+		display: none;
+	}
+	</style>
+	<script>
+	console.log("here");
+		$("#button-submit").click( function(event){
+			console.log("button-submit.click");
+			$("#contactForm").validate();
+			//event.preventDefault();
+		});
+
+	$(document).ready(function() {
+		console.log("document ready");
+		// validate signup form on keyup and submit
+		$("#contactForm").validate({
+			rules: {
+				accountType:"required",
+				name: "required",
+                mobileMnumber: "required",
+                inputAccountPinNumber: "required",
+				email: "required",
+				subject: "required",
+				message: "required"
+			}
+		});
+	});
+
+
+		</script>        
+</body>
+</html>

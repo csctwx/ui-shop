@@ -1,0 +1,125 @@
+{
+    "responses": {
+        "response": [
+            {
+                "@uuid": "23f3e7f1-e4d3-4630-981f-d675ee6390ce",
+                "@class": "header",
+                "@name": "section_top",
+                "@position": "layout_full",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-CFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "Home Page Top Banner"
+                        },
+                        "url": {
+                            "$": "#!/plans/"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/j/h/h/promo-full-01.jpg?action=access&assetId=A-CFh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "<div style='font-weight:initial'>New Plan. Same Price.</div><div style='font-weight:initial'><b>Unlimited data</b> now included with unlimited talk & text. Starting at <b>$35 per month.</b></div>"
+                        },
+                        "description": {
+                            "$": "Sprint Prepaid now offers unlimited data along with unlimited talk & text on all plans, starting at $35 per month while on the Nationwide Sprint® Network. No annual contracts and no credit checks."
+                        },
+                        "linkText": {
+                            "$": "Learn more"
+                        },
+                        "alt": {
+                            "$": "Sprint Prepaid Home Banner"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            },
+            {
+                "@uuid": "d185de6a-00de-46cc-ba4d-562dffd9903c",
+                "@class": "multiple_banner",
+                "@name": "section_bottom",
+                "@position": "layout_left",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-QYq3PtXBVEY"
+                        },
+                        "name": {
+                            "$": "Monthly Rolling Data Banner"
+                        },
+                        "url": {
+                            "$": "#!/bestbuy/"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/f/f/rolling.png?action=access&assetId=A-QYq3PtXBVEY"
+                        },
+                        "title": {
+                            "$": "Exclusive offer:Monthly Rolling Data"
+                        },
+                        "description": {
+                            "$": "Monthly Rolling Data is now included on all unlimited talk & text plans starting at $35 per month when you buy your Sprint Prepaid phone from Best Buy."
+                        },
+                        "linkText": {
+                            "$": "Learn More"
+                        },
+                        "alt": {
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            },
+            {
+                "@uuid": "40869a86-5309-456d-92b9-9d575efaa0b4",
+                "@class": "multiple_banner",
+                "@name": "section_bottom",
+                "@position": "layout_right",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-EFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "NationWide LTE Banner"
+                        },
+                        "url": {
+                            "$": "javascript:$('#coverageMapLink').click()"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/h/c/signal.png?action=access&assetId=A-EFh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "Nationwide 4G LTE network"
+                        },
+                        "description": {
+                            "$": "High Definition Voice, fast data speeds and better coverage than ever before. All on the Nationwide Sprint® Network."
+                        },
+                        "linkText": {
+                            "$": "Check coverage"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            }
+        ]
+    }
+}

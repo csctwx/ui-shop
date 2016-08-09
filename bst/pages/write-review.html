@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div id="BVSubmissionContainer"></div>
+        <script type="text/javascript" src="//boost.ugc.bazaarvoice.com/static/8149-en_us/bvapi.js?c=5224"></script>
+        <script type="text/javascript">
+            /*Geting parameters for URL*/
+            var query_string = window.location.search.substring(1);
+            
+            $BV.configure("global",{facebookXdChannelUrl:"http://www.alencorp.com/facebook_xd_receiver.asp"});
+            $BV.ui("submission_container", {
+                userToken: "",
+                submissionContainerBvParameters:query_string
+            });
+        </script>
+    </body>
+</html>
+
+<!---
+
+Asi debe de llamarse y en teoría debería servir para las 3 páginas
+
+http://www.boostmobile.com:8080/shop/#!/write-review/?bvdisplaycode=8149-en_us&bvappcode=rr&bvproductid=DU&bvpage=http%3A%2F%2Fboost.ugc.bazaarvoice.com%2F8149-en_us%2FDU%2Fsubmitreview.htm%3Fformat%3Dembedded%26campaignid%3DBV_RATING_SUMMARY%26sessionparams%3D__BVSESSIONPARAMS__%26return%3Dhttp%253A%252F%252Fwww.boostmobile.com%252Fshop%252Fplans%252Fdaily-unlimited%252F2%252Freviews%252F%26innerreturn%3Dhttp%253A%252F%252Fboost.ugc.bazaarvoice.com%252F8149-en_us%252FDU%252Freviews.djs%253Fformat%253Dembeddedhtml%26user%3D__USERID__%26authsourcetype%3D__AUTHTYPE__&bvcontenttype=REVIEW_SUBMISSION&bvauthenticateuser=false
+
+-->
+

@@ -1,0 +1,693 @@
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url(../fonts/vmu/ProximaNova-Regular.woff);
+} 
+
+@font-face {
+    font-family: ProximaNova-Regular-Italic;
+    src: url(../fonts/vmu/ProximaNova-Regular-Italic.woff);
+} 
+
+@font-face {
+    font-family: ProximaNova-Bold;
+    src: url(../fonts/vmu/ProximaNova-Bold.woff);
+} 
+
+@font-face {
+    font-family: ProximaNova-Semibold;
+    src: url(../fonts/vmu/ProximaNova-Semibold.woff);
+} 
+
+@font-face {
+    font-family: ProximaNova-Semibold-Italic;
+    src: url(../fonts/vmu/ProximaNova-Semibold-Italic.woff);
+} 
+
+@font-face {
+    font-family: ProximaNova-Bold-Italic;
+    src: url(../fonts/vmu/ProximaNova-Bold-Italic.woff);
+} 
+
+#help-support-menu .vmu-tabs-left ul.sub-legal > li > a{
+	text-decoration: none !important;
+}
+
+#help-support-menu .vmu-tabs-left ul.sub-legal > li{
+	margin-bottom: 10px !important;
+}
+
+h2.hdl {
+    overflow: hidden;
+    text-indent: 0;
+    margin: 10px 10px 10px 0px !important;
+    height: auto;
+    padding-top: 20px;
+	padding-left: 0px !important;
+    background-position: 0px 20px !important;
+    background: none !important;
+    font: bold italic 30px/32px 'ProximaNova-Semibold', Arial, Helvetica, sans-serif;
+    color: #000;
+    overflow: visible;
+    text-transform: uppercase;
+}
+
+.border-box{
+	border: 1px solid #e5e5e5;
+	padding: 14px 44px 14px 14px;	
+}
+
+.border-box h3{
+	margin-top: 0px !important;
+} 
+
+.border-box ul.list{
+	padding-left: 15px;
+}
+.border-box ul.list > li > span > a{
+	text-decoration: none;
+}
+
+h3#hdl_sociallinks.help-support-social{
+	margin-top: 0px;
+}
+
+h2.hdl-title {
+    color: #D70020 !important;
+    font: 21px/32px 'ProximaNova-Regular-Italic', Arial, Helvetica, sans-serif !important;
+    margin: 10px 0px !important;
+	padding-left: 0px !important;
+	text-transform: uppercase;
+}
+
+
+/******************************************/
+/**********Help Support Layout*************/
+/******************************************/
+
+div#support div.support-container section {
+    float: left;
+}
+
+@media (min-width: 992px){
+	div#support div.support-container section {
+		width: 65% !important;
+	}
+	div#support div.support-container aside {
+		width: 30% !important;
+	}
+}
+
+div#support div.support-container #guides_manuals {
+    background: url("../img/help-support/support-bg-manuals.png") no-repeat scroll left top transparent;
+    height: 350px;
+    padding: 30px 32px 20px 32px;
+    /*width: 639px;*/
+	width: 100%;
+    margin: 19px 0 0;
+	background-size: 100%;
+}
+
+div#support div.support-container aside {
+    float: right;
+}
+
+div#support {
+    background: #ffffff url('../img/help-support/gray-to-white-bg-tile.gif') repeat-x top left;
+    zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+div#support div.support-header {
+    height: 77px;
+    width: 961px;
+    position: relative;
+    margin: 0px auto;
+}
+
+div#support div.support-container {
+    display: block;
+    width: 966px;
+    margin: 0 auto;
+}
+
+div.breadcrumbs {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font: normal 0.750em 'ProximaNova-Regular' !important;
+    color: #555555;
+    z-index: 3;
+}
+
+div.breadcrumbs a {
+    color: #555555 !important;
+	font-size: 12px !important;
+	text-decoration: underline !important;
+}
+
+div.breadcrumbs span {
+    color: #d70020;
+    font-family: 'ProximaNova-Semibold' !important;
+	font-size: 12px !important;
+}
+
+div#support div.support-header h1 {
+    font: 1.625em 'ProximaNova-Bold-Italic' !important;
+    padding-top: 46px;
+	font-size: 28px !important;
+    margin: 0;
+}
+
+div.topControls {
+    position: absolute;
+    top: 17px;
+    right: 0;
+    width: 305px;
+    font: normal 0.688em 'ProximaNova-Semibold';
+    z-index: 3;
+    text-align: right;
+}
+
+div.topControls div.actions {
+    float: left;
+    width: 165px;
+}
+
+div.topControls a.print {
+    background: url('../img/help-support/bt-splash-details-print-icon.gif') top left no-repeat;
+    padding: 3px 0 3px 21px;
+	text-decoration: underline;
+	font-size: 12px !important;
+    margin-right: 20px;
+    color: #909090;
+}
+
+div.topControls a.print:hover{
+	color: #565656;
+}
+
+div.topControls div.social {
+    width: 140px;
+    margin-top: -3px;
+    float: right;
+}
+
+div.topControls div.social a {
+    color: #909090 !important;
+    text-decoration: none !important;
+}
+
+.at-icon {
+    fill: #fff;
+    border: 0;
+}
+
+.addthis_counter.addthis_bubble_style a.addthis_button_expanded {
+    font-size: 11px;
+    height: 1pc;
+    line-height: 1pc;
+    width: 34px;
+    background: none;
+}
+
+.addthis_counter.addthis_bubble_style {
+    background-image: url('../img/help-support/download.gif');
+    background-repeat: no-repeat;
+}
+
+div.breadcrumbs span {
+    color: #d70020;
+    font-family: 'ProximaNova-Semibold';
+}
+
+div#support div.support-container div.aside-top {
+    background: url('../img/help-support/support-bg-right-top.png') no-repeat scroll top left;
+    padding-top: 1px !important;
+	background-size: 100%;
+}
+
+div#support div.support-container div.aside-top, div#support div.support-container div.aside-bottom {
+    width: 100%;
+}
+
+div#support div.support-container #faq-top {
+    background: url('../img/help-support/support-bg-left-top.png') no-repeat scroll top left;
+    padding-top: 27px;
+    margin: 14px 0 0;
+	background-size: 100%;
+}
+
+div#support div.support-container #faq_list {
+    background: url('../img/help-support/support-bg-left-mid.png') repeat-y scroll top left;
+    /*width: 639px;*/
+	width: 100%;
+    padding: 0 30px;
+	background-size: 100%;
+}
+
+div#support div.support-container #faq-top, div#support div.support-container #faq-bottom {
+    /*width: 639px;*/
+	width: 100%;
+}
+
+div#support div.support-container #faq-bottom {
+    background: url('../img/help-support/support-bg-left-bottom.png') no-repeat scroll bottom left;
+    padding-bottom: 28px;
+	background-size: 100%;
+}
+
+div#support div.support-container div.aside-bottom {
+    background: url('../img/help-support/support-bg-right-bottom.png') no-repeat scroll bottom left;
+    padding-bottom: 29px;
+	background-size: 100%;
+}
+
+div#support div.support-container aside #programs_policies .aside-bottom {
+    padding-bottom: 29px;
+}
+
+div#support div.support-container section h2 {
+    font: 31px/33px "ProximaNova-Bold-Italic" !important;
+    padding: 0 0 24px;
+    margin: 0;
+	text-transform: uppercase;
+}
+
+div#support div.support-container #guides_manuals h2 {
+    padding-bottom: 16px;
+}
+
+div#support div.support-container #guides_manuals p {
+    font: 14px/22px "ProximaNova-Regular-Italic" !important;
+    width: 385px;
+    padding: 9px 0px 11px 0px;
+}
+
+div#support div.support-container section a.detailBtn:hover {background: none !important; background-color: #333 !important;}
+div#support div.support-container section a.detailBtn {
+    display: block;
+    border: 0;
+    height: 25px;
+    margin: 0 2px 0 0;
+    outline: 0 none;
+    padding: 7px 0 0;
+    width: 154px;
+    /* float: left; */
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font: normal 0.750em/0.9em 'ProximaNova-Semibold' !important;
+    background: url('../img/help-support/deals-bt-btn-bg.gif') repeat-x;
+    -moz-box-shadow: 1px 1px 1px #999;
+    -webkit-box-shadow: 1px 1px 1px #999;
+    box-shadow: 1px 1px 1px #999 !important;
+    text-shadow: 0 0 10px #333333 !important;
+	font-size: 12px !important;
+}
+
+div#support div.support-container #guides_manuals a {
+    width: 252px;
+}
+
+div#support div.support-container #guides_videos {
+    background: url("../img/help-support/support-bg-videos.png") no-repeat scroll left top transparent;
+    /*width: 639px;*/
+	width: 100%;
+    height: 250px;
+    padding: 30px 32px 20px 32px;
+    margin: 0;
+	background-size: 100%;
+}
+
+div#support div.support-container #guides_videos p {
+    font: 14px/22px "ProximaNova-Regular-Italic" !important;
+    width: 300px;
+    padding: 0 0 20px;
+}
+
+div#support div.support-container #account_support {
+    background: url('../img/help-support/support-bg-help.png') no-repeat scroll top left;
+    /*width: 639px;*/
+	width: 100%;
+    height: 471px;
+    padding: 48px 34px 34px 34px;
+    margin: 0px;
+	background-size: 100%;
+}
+
+div#support div.support-container #account_support p {
+    font: 14px/22px "ProximaNova-Regular-Italic" !important;
+    width: auto;
+    padding: 0 0 28px;
+}
+
+div#support div.support-container #account_support ul{
+	list-style-type: disc;
+	padding-left: 35px;
+}
+
+#rn_Container .rn_KeywordText2 {
+    float: left;
+    width: 65%;
+}
+
+#rn_Container .rn_KeywordText2 input {
+    border: 1px solid #B1B1B1;
+    width: 100%;
+    font: bold 12px Helvetica,Arial,sans-serif;
+    padding: 4px;
+    background-color: #F8F8F8;
+}
+
+#rn_Container .rn_SearchButton2 {
+    float: right;
+    width: 30%;
+}
+
+#rn_Container .rn_SearchButton2 input {
+    background: url("../img/help-support/butt_bg.png") repeat-x scroll 0 0 #C50C27;
+    border: 1px solid #636466;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: bold 12px Helvetica,Arial,sans-serif;
+    padding: 4px 12px;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+div#support div.support-container #faq_list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 30px !important;
+}
+
+div#support div.support-container #faq_list ul li {
+    padding-bottom: 17px !important;
+}
+
+div#support div.support-container #faq_list ul li h2 {
+    margin: 0;
+    padding: 0;
+}
+
+div#support div.support-container #faq_list ul li a {
+    font: 14px/20px "ProximaNova-Regular-Italic" !important;
+    color: #5d5d5d;
+	text-decoration: underline;
+    text-transform: none;
+}
+
+div#support div.support-container div.aside-mid {
+    background: url('../img/help-support/support-bg-right-mid.png') repeat-y scroll top left;
+    padding: 0 10px 0 25px;
+    width: 100%;
+	background-size: 100%;
+}
+
+div#support div.support-container aside h2 {
+    font: normal 20px/26px Arial;
+    color: #000;
+}
+
+div#support div.support-container aside #programs_policies {
+    margin: 21px 0 0;
+}
+
+div#support div.support-container aside #programs_policies h2 {
+    padding-bottom: 0px;
+}	
+
+div#support div.support-container aside #programs_policies li {
+    padding: 0 0 8px;
+}
+
+div#support div.support-container aside #programs_policies p {
+    padding: 0 0 18px;
+}
+
+div#support div.support-container aside li a {
+    font: normal 11px/15px "ProximaNova-Semibold" !important;
+    color: #5d5d5d;
+    text-transform: uppercase;
+}
+
+div#support div.support-container aside #contact_us {
+    margin-top: 14px;
+}
+
+
+div#support div.support-container aside a.contactBtn {
+    background: url("../img/help-support/support-bg-contact-btn.png") repeat-x scroll left top transparent;
+    border: 0 none;
+    box-shadow: 1px 1px 1px #999999;
+    color: #3E3E3E;
+    display: block;
+    font: 10.9px/22px 'ProximaNova-Semibold' !important;
+    height: 21px;
+    margin: 0 2px 23px 0;
+    outline: 0 none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 194px;
+    -moz-box-shadow: 1px 1px 1px #efefef;
+    -webkit-box-shadow: 1px 1px 1px #efefef;
+    box-shadow: 1px 1px 1px #efefef;
+}
+
+div#support div.support-container aside h3 {
+    color: #212121;
+    font: 12px/16px "ProximaNova-Bold-Italic" !important;
+    display: block;
+	font-size: 12px;
+	margin-bottom: 0px !important;
+}
+
+div#support div.support-container aside li.follow-list {
+    height: 32px;
+    padding: 0 0 0 39px;
+    margin: 6px 0 0;
+}
+
+div#support div.support-container aside li.follow-facebook {
+    background: url('../img/help-support/support-icon-fb.png') no-repeat left 50%;
+}
+
+div#support div.support-container aside li.follow-twitter {
+    background: url('../img/help-support/support-icon-tw.png') no-repeat left 50%;
+}
+
+div#support div.support-container aside li.follow-youtube {
+    background: url('../img/help-support/support-icon-yt.png') no-repeat left 50%;
+}
+
+div#support div.support-container aside #follow_us {
+    margin: 15px 0 0;
+}
+
+div#support div.support-container aside #follow_us h2 {
+    margin-bottom: 20px;
+}
+
+span.skype_c2c_text_span{font-size: 0.9em !important;}
+
+@media (max-width: 991px){
+	.box-mobile{background-color: #fff !important; text-align: center !important;}
+	div#support div.support-container #account_support ul{padding-left: 0px !important; list-style-type: none !important;}
+	div#support div.support-container aside a.contactBtn{width: auto !important;}
+	div#support div.support-header, div#support div.support-container, div#support div.support-container #faq-top, div#support div.support-container #faq-bottom, div#support div.support-container #faq_list, div#support div.support-container aside, div#support div.support-container div.aside-bottom, div#support div.support-container div.aside-mid{
+		width: 100% !important;
+		max-width: 639px !important;
+	}
+	
+	div#support div.support-container section{
+		width: 100%;
+	}
+	div#support div.support-container .box-mobile{
+		float: left !important;
+		height: auto !important;
+		width: 100% !important;
+	}
+	#faq-top{clear: both;}
+}
+@media (min-width: 320px) and (max-width: 520px){
+	div#support div.support-container aside .right-box-mobile{
+		width: 100% !important;
+		float: left !important;
+		
+	}
+}
+@media (min-width: 320px) and (max-width: 629px){
+	div#support div.support-container div.aside-top, div#support div.support-container div.aside-bottom, div#support div.support-container div.aside-mid{
+		background: none !important;
+	}
+	div#support div.support-container .box-mobile{
+		background: none !important;
+	}
+	img.img-responsive{display: block !important; margin: 0 auto;}
+}
+@media (min-width: 630px) and (max-width: 767px){
+	div#support div.support-container .box-mobile{
+		padding: 30px 40% 20px 32px !important;
+		background-position: top right !important;
+	}
+}
+@media (min-width:521px) and (max-width: 991px){
+	.right-box-mobile{
+		width: 33% !important;
+		float: left !important;
+		
+	}
+	div#support div.support-container aside #follow_us{margin-top: 14px !important;}
+}
+@media (min-width:460px) and (max-width: 991px){
+	div#support div.support-container div.aside-top, div#support div.support-container div.aside-bottom, div#support div.support-container div.aside-mid{
+		background: none !important;
+	}
+	.right-box-mobile{
+		border: 1px solid #eee;
+	}
+	div#support div.support-container aside #programs_policies {
+		margin: 14px 0 0;
+	}
+}
+@media (min-width:320px) and (max-width: 767px){
+	div#support div.support-header h1{text-align: center;}
+	div#support div.support-container #guides_manuals p{
+		width: 100% !important;
+	}
+	div#support div.support-container #guides_videos p{
+		width: auto !important;
+	}
+	div#support div.support-container section h2{
+		font-size: 20px !important;
+		text-align: center;
+	}
+	div#support div.support-container section a.detailBtn{
+		margin: 0 auto !important;
+	}
+	div#support div.support-container .box-mobile{
+		/*background: none !important;*/
+		border-top: 1px #eee solid;
+		border-bottom: 1px #eee solid;
+	}
+}
+
+
+.contact-top{
+    background: url('../img/help-support/support-bg-left-top.png') no-repeat scroll top left;
+    padding-top: 27px;
+    margin: 14px 0 0;
+    background-size: 100%;
+    width: 100%;
+}
+
+.contact-bottom{
+    background: url('../img/help-support/support-bg-left-bottom.png') no-repeat scroll bottom left;
+    padding-bottom: 28px;
+    background-size: 100%;
+    width: 100%;
+}
+
+.contact-content{
+    background: url('../img/help-support/support-bg-left-mid.png') repeat-y scroll top left;
+    width: 100%;
+    padding: 0 30px;
+    background-size: 100%;
+}
+
+.contact-content h3{
+    color: #333333;
+    text-transform: uppercase;
+    margin:0;
+    font-size: 17px;
+}
+
+.contact-content p{
+    color: #333333;
+    margin:0!important;
+    padding: 0!important;
+    font-size: 14px;
+}
+
+.contact-content .contact-through h3{
+    padding: 20px 0;
+}
+
+.contact-content .contact-through p{
+    padding: 10px 0!important;
+}
+
+.contact-content .contact-through p.all-fields{
+    color: #cc0000;
+}
+
+.contact-payments{padding:20px 50px 20px 0!important;}
+
+.contact-content a:link,
+.contact-content a:visited,
+.contact-content a:hover{
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+.contact-content .row{
+    padding:5px!important;
+}
+
+.contact-content fieldset .row{
+    padding: 0!important;
+}
+
+.contact-payments h3.title-services{
+    color: #333333;
+    font: 700 12px ProximaNova-Regular;
+    text-transform: none;
+}
+
+.contact-payments h3{
+    color: #cc0000;
+    font: 700 14px ProximaNova-Regular;
+    padding: 10px 0 5px 0 !important;
+}
+
+.contact-payments p{
+    color: #333333;
+    font-family:ProximaNova-Regular;
+    font-size: 12px;
+}
+
+.contact-content .contact-form label.error{
+    color: red;
+}
+
+fieldset.contact-buttons button.btn-link{
+    color:#333333;
+    text-decoration: underline;
+}
+
+fieldset.contact-buttons button.detailBtn {
+    background: rgba(0, 0, 0, 0) url("../img/help-support/deals-bt-btn-bg.gif") repeat-x scroll 0 0;
+    border: 0 none;
+    box-shadow: 1px 1px 1px #999 !important;
+    color: #fff;
+    /*display: block;*/
+    font: 12px/0.9em "ProximaNova-Semibold" !important;
+    height: 25px;
+    margin: 0 2px 0 0;
+    outline: 0 none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 10px #333333 !important;
+    text-transform: uppercase;
+    width: 154px;
+}

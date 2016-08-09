@@ -1,0 +1,809 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+   <HEAD>
+      <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <TITLE>Nationwide Coverage</TITLE>
+      <SCRIPT src="jquery1.11.1.js" type="text/javascript"></SCRIPT>
+      <SCRIPT src="coverage_mobile.js" type="text/javascript"></SCRIPT>
+      <SCRIPT src="satelliteLib-5061fba463dc51d188e5dfc6d60bc8fde062036c.js" type="text/javascript"></SCRIPT>
+      <SCRIPT src="tag.js" type="text/javascript">{ site: "lCgfimK", mode: "sync" }</SCRIPT>
+      <META name="format-detection" content="telephone=no">
+      <META content="wireless phones, cellular, wireless, cellular phones, wireless services, wireless data, digital phones, cell phones, mobile phones, wireless web" name="keywords">
+      <META content="Wireless coverage tool." name="description">
+      <META content="Usablenet Mobile 4.9.3" name="generator">
+      <link rel="stylesheet" href="coverage_mobile.css">
+   </HEAD>
+   <BODY>
+      <DIV>
+         <DIV class="un_spaceL un_spaceR un_spacetop5">
+            <DIV id="mainContent">
+               <SCRIPT src="coverage_mobile2.js" type="text/javascript"></SCRIPT>
+               <DIV style="display:none; margin-left:530px; width:610px;border:0px solid blue; " id="impactRecenter" un-title="">
+                 <A class="un-url-label" id="recenterlinkold" href="#" onclick="recenterLastAddress(); return false;">
+                   <IMG style="position:relative; top:5px;" src="http://coverage.sprint.com/images/Recenter.gif" alt="" un-title="">
+                 </A>
+                 <A href="#" onclick="recenterLastAddress(); return false;">Re-center on last mapped address</A> 
+               </DIV>
+               <FORM name="frmImpact2" id="frmImpact2" onsubmit="return false;" un-form-id="i14452656566339959376101">
+                  <DIV style="margin-left:5px; position:relative; width:960px; height:430px; margin:0px; border:0px solid red; background-color:white;" id="impactMainContent" un-title="">
+                     <DIV style="display:none;position:relative; margin-top:12px; margin-left:48px; width:460px; border:0px solid gray;" id="mapoptions" un-title="">
+                        <TABLE cellspacing="0" cellpadding="0">
+                           <TBODY>
+                              <TR style="vertical-align:top">
+                                 <TD style="width:170px;">
+                                    <DIV style="position:relative;" un-title="">
+                                       <DIV style="position:absolute; top:1px;left:10px;display:;" id="mapScale0" un-title=""><IMG src="http://coverage.sprint.com/images/scale-01.gif" alt="" id="scaleImg0" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale1" un-title=""><IMG src="http://coverage.sprint.com/images/scale-02.gif" alt="" id="scaleImg1" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale2" un-title=""><IMG src="http://coverage.sprint.com/images/scale-03.gif" alt="" id="scaleImg2" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale3" un-title=""><IMG src="http://coverage.sprint.com/images/scale-04.gif" alt="" id="scaleImg3" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale4" un-title=""><IMG src="http://coverage.sprint.com/images/scale-05.gif" alt="" id="scaleImg4" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale5" un-title=""><IMG src="http://coverage.sprint.com/images/scale-06.gif" alt="" id="scaleImg5" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale6" un-title=""><IMG src="http://coverage.sprint.com/images/scale-07.gif" alt="" id="scaleImg6" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale7" un-title=""><IMG src="http://coverage.sprint.com/images/scale-08.gif" alt="" id="scaleImg7" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale8" un-title=""><IMG src="http://coverage.sprint.com/images/scale-09.gif" alt="" id="scaleImg8" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale9" un-title=""><IMG src="http://coverage.sprint.com/images/scale-10.gif" alt="" id="scaleImg9" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale10" un-title=""><IMG src="http://coverage.sprint.com/images/scale-11.gif" alt="" id="scaleImg10" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:1px;left:10px;display:none;" id="mapScale11" un-title=""><IMG src="http://coverage.sprint.com/images/scale-12.gif" alt="" id="scaleImg11" un-title=""></DIV>
+                                       <DIV style="position:absolute; top:25px; left:10px;" un-title="">Coverage updated on: <SPAN id="maplastupdated">10/19/15<SPAN> </SPAN></SPAN></DIV>
+                                    </DIV>
+                                 </TD>
+                                 <TD id="mapdetailoptions">
+                                    <DIV style="margin-left:5px;padding-top:5px;width:270px;" un-title="">
+                                       <DIV><B>Map Detail Options</B></DIV>
+                                       <HR>
+                                       <SPAN id="MajorCities" style="display:;"><INPUT type="checkbox" value="ON" id="chkCities" name="chkCities" checked="true" onclick="changinglayers=true;getMapImage();" un-form-pointer="i14452656566339959376101" un-title=""> City names &nbsp;</SPAN> <SPAN id="SecondaryRoads" style="display:none;"><INPUT type="checkbox" value="ON" id="chkHighways" name="chkHighways" onclick="changinglayers=true;getMapImage();" un-form-pointer="i14452656566339959376101" un-title=""> Secondary highways &nbsp;</SPAN> <SPAN id="MajorRoads" style="display:none;"><INPUT type="checkbox" value="ON" id="chkRoads" name="chkRoads" onclick="changinglayers=true;getMapImage();" un-form-pointer="i14452656566339959376101" un-title=""> Major roads &nbsp;</SPAN> <SPAN id="MajorRoadNames" style="display:none;"><INPUT type="checkbox" value="ON" id="chkRoadNames" name="chkRoadNames" checked="true" onclick="changinglayers=true;getMapImage();" un-form-pointer="i14452656566339959376101" un-title=""> Major road names &nbsp;</SPAN> <SPAN id="Streets" style="display:none;"><INPUT type="checkbox" value="ON" id="chkStreets" name="chkStreets" checked="true" onclick="changinglayers=true;getMapImage();" un-form-pointer="i14452656566339959376101" un-title=""> Street names &nbsp;</SPAN> <BR>
+                                    </DIV>
+                                 </TD>
+                              </TR>
+                           </TBODY>
+                        </TABLE>
+                     </DIV>
+                     <DIV style="position:absolute; top:0px; left:510px; " id="drawersntabs" un-title="">
+                        <DIV style="" un-title="">
+                           <TABLE style="display:none;">
+                              <TBODY>
+                                 <TR style="vertical-align:middle;">
+                                    <TD nowrap="" align="left"><A class="un-url-label" id="recenterlink" href="#" onclick="recenterLastAddress(); return false;"><IMG style="position:relative; top:5px;" src="http://coverage.sprint.com/images/Recenter.gif" alt="" un-title=""></A><A href="#" onclick="recenterLastAddress(); return false;">Re-center on last mapped address</A> </TD>
+                                    <TD>&nbsp;</TD>
+                                    <TD nowrap="" align="right"><A href="/mycoverage.jsp?id=BO543STC&amp;language=ES">En Espa&ntilde;ol</A></TD>
+                                 </TR>
+                              </TBODY>
+                           </TABLE>
+                        </DIV>
+                        <DIV style="display:none;" class="drawerheader" align="left" un-title="">
+                           <IMG style="width: 100% !important;" src="http://coverage.sprint.com/images/Map_location_header.png" alt="" width="452" height="54" un-title="">
+                           <DIV style="position:absolute; top:10px;left:15px;" class="drawerlabel" un-title="">Map a location&nbsp;&nbsp;</DIV>
+                           <DIV style="display:none; position:absolute; top:-8px;right:15px;" id="printcontrol" un-title="">
+                              <TABLE>
+                                 <TBODY>
+                                    <TR>
+                                       <TD align="right"><A href="#" onclick="openPrintPage();">printmap<IMG style="position:relative; top:12px;" src="http://coverage.sprint.com/images/printer_icon.gif" alt="" un-title=""></A> </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </DIV>
+                        </DIV>
+                        <DIV id="mapanaddress" un-title="">
+                           <DIV style="height:4px;" class="spacerForFF" un-title=""></DIV>
+                           <DIV style="z-index:10;position:relative; margin-top:4px;margin-left:4px;" align="left" un-title="">
+                              <TABLE class="un_map_form" style="display: none;" border="0" cellspacing="0" cellpadding="0">
+                                 <TBODY>
+                                    <TR align="left" id="error_msg" style="display:none;background-color:pink;width:">
+                                       <TD colspan="2" align="left" style="padding-bottom:4px;padding-right:4px;padding-left:4px;border:0px solid red;"><IMG style="position:relative; top:4px;margin-right:2px;" src="http://coverage.sprint.com/images/erroricon2.gif" alt="" un-title=""><SPAN id="error_txt" style=""></SPAN></TD>
+                                    </TR>
+                                    <TR align="left" id="sevr_loc_txt" style="display: none; z-index: 90;">
+                                       <TD colspan="1" align="left">Several locations match the information you entered. Please pick one from the list below, or <A href="#" onclick="reStoreAddrForm();return false;">start over</A>. </TD>
+                                    </TR>
+                                    <TR id="map_opt" style="display:none;">
+                                       <TD colspan="2" align="left">
+                                          <TABLE width="100%" cellspacing="0" cellpadding="0">
+                                             <TBODY>
+                                                <TR align="center">
+                                                   <TD id="cand0td"> <SPAN id="cand0addr"> 1131 Shawnee Drive<BR>Kansas City, KS 66206</SPAN><BR><A class="un-url-label" href="#"><IMG style="border:1px solid black;" src="http://coverage.sprint.com/images/overlay50g_t.gif" alt="" id="cand0map" onclick="selectCandidate(0);return false;" un-title=""></A></TD>
+                                                   <TD id="cand1td"><SPAN id="cand1addr">1131 Shawnee Drive<BR>Kansas City, KS 66206</SPAN><BR><A class="un-url-label" href="#"><IMG style="border:1px solid black;" src="http://coverage.sprint.com/images/overlay50g_t.gif" alt="" id="cand1map" onclick="selectCandidate(1);return false;" un-title=""></A></TD>
+                                                   <TD id="cand2td"><SPAN id="cand2addr">1131 Shawnee Drive<BR>Kansas City, KS 66206</SPAN><BR><A class="un-url-label" href="#"><IMG style="border:1px solid black;" src="http://coverage.sprint.com/images/overlay50g_t.gif" alt="" id="cand2map" onclick="selectCandidate(2);return false;" un-title=""></A></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                    </TR>
+                                    <TR align="left" id="complete_info">
+                                       <TD>
+                                          <TABLE cellpadding="0" cellspacing="0">
+                                             <DIV style="display:block;" class="unCompleteInfo">
+                                                <DIV class="un_space_bottom10 "><LABEL for="mapstreet">Address or Intersection<BR></LABEL><INPUT type="text" value="" id="mapstreet" name="mapstreet" tabindex="1" un-form-pointer="i14452656566339959376101" un-title=""></DIV>
+                                                <DIV class="un_space_bottom10">
+                                                   <DIV class="un_float_left un_width_45"><LABEL for="mapcity">City<BR></LABEL><INPUT type="text" maxlength="100" value="" id="mapcity" name="mapcity" tabindex="2" un-form-pointer="i14452656566339959376101" un-title=""></DIV>
+                                                   <DIV class="un_width_50 un_float_right">
+                                                      <SELECT class="un_select_coverage" name="mapstate" id="mapstate" tabindex="3" style="width:110px;vertical-align: baseline;" un-form-pointer="i14452656566339959376101">
+                                                         <OPTION value="">Choose a state</OPTION>
+                                                         <OPTION value="AL">Alabama</OPTION>
+                                                         <OPTION value="AK">Alaska</OPTION>
+                                                         <OPTION value="AZ">Arizona</OPTION>
+                                                         <OPTION value="AR">Arkansas</OPTION>
+                                                         <OPTION value="CA">California</OPTION>
+                                                         <OPTION value="CO">Colorado</OPTION>
+                                                         <OPTION value="CT">Connecticut</OPTION>
+                                                         <OPTION value="DE">Delaware</OPTION>
+                                                         <OPTION value="FL">Florida</OPTION>
+                                                         <OPTION value="GA">Georgia</OPTION>
+                                                         <OPTION value="HI">Hawaii</OPTION>
+                                                         <OPTION value="ID">Idaho</OPTION>
+                                                         <OPTION value="IL">Illinois</OPTION>
+                                                         <OPTION value="IN">Indiana</OPTION>
+                                                         <OPTION value="IA">Iowa</OPTION>
+                                                         <OPTION value="KS">Kansas</OPTION>
+                                                         <OPTION value="KY">Kentucky</OPTION>
+                                                         <OPTION value="LA">Louisiana</OPTION>
+                                                         <OPTION value="ME">Maine</OPTION>
+                                                         <OPTION value="MD">Maryland</OPTION>
+                                                         <OPTION value="MA">Massachusetts</OPTION>
+                                                         <OPTION value="MI">Michigan</OPTION>
+                                                         <OPTION value="MN">Minnesota</OPTION>
+                                                         <OPTION value="MS">Mississippi</OPTION>
+                                                         <OPTION value="MO">Missouri</OPTION>
+                                                         <OPTION value="MT">Montana</OPTION>
+                                                         <OPTION value="NE">Nebraska</OPTION>
+                                                         <OPTION value="NV">Nevada</OPTION>
+                                                         <OPTION value="NH">New Hampshire</OPTION>
+                                                         <OPTION value="NJ">New Jersey</OPTION>
+                                                         <OPTION value="NM">New Mexico</OPTION>
+                                                         <OPTION value="NY">New York</OPTION>
+                                                         <OPTION value="NC">North Carolina</OPTION>
+                                                         <OPTION value="ND">North Dakota</OPTION>
+                                                         <OPTION value="OH">Ohio</OPTION>
+                                                         <OPTION value="OK">Oklahoma</OPTION>
+                                                         <OPTION value="OR">Oregon</OPTION>
+                                                         <OPTION value="PA">Pennsylvania</OPTION>
+                                                         <OPTION value="PR">Puerto Rico</OPTION>
+                                                         <OPTION value="RI">Rhode Island</OPTION>
+                                                         <OPTION value="SC">South Carolina</OPTION>
+                                                         <OPTION value="SD">South Dakota</OPTION>
+                                                         <OPTION value="TN">Tennessee</OPTION>
+                                                         <OPTION value="TX">Texas</OPTION>
+                                                         <OPTION value="UT">Utah</OPTION>
+                                                         <OPTION value="VT">Vermont</OPTION>
+                                                         <OPTION value="VA">Virginia</OPTION>
+                                                         <OPTION value="WA">Washington</OPTION>
+                                                         <OPTION value="DC">Washington, DC</OPTION>
+                                                         <OPTION value="WV">West Virginia</OPTION>
+                                                         <OPTION value="WI">Wisconsin</OPTION>
+                                                         <OPTION value="WY">Wyoming</OPTION>
+                                                      </SELECT>
+                                                   </DIV>
+                                                   <DIV class="un_clear"></DIV>
+                                                </DIV>
+                                                <DIV class="un_space_bottom10 un_width_45"><LABEL for="mapzip">ZIP code<BR></LABEL><INPUT type="text" maxlength="9" value="" id="mapzip" name="mapzip" tabindex="4" size="9" un-form-pointer="i14452656566339959376101" un-title=""></DIV>
+                                                <DIV class="un_space_bottom10">
+                                                   <TABLE cellpadding="0" cellspacing="0" style="margin-top:8px;">
+                                                      <TBODY>
+                                                         <TR>
+                                                            <TD></TD>
+                                                            <TD>
+                                                               <DIV style="position:relative;" un-title=""><INPUT type="image" src="http://coverage.sprint.com/images/clear.gif" style="vertical-align: baseline;" alt="Submit" id="clear" tabindex="0" onclick="clear_form();" un-form-pointer="i14452656566339959376101" un-title=""> </DIV>
+                                                            </TD>
+                                                            <TD>
+                                                               <DIV style="position:relative;" un-title=""><INPUT type="image" src="http://coverage.sprint.com/images/map_it_button_gray.gif" style="vertical-align: baseline;" alt="Submit" id="mapit" tabindex="5" onclick="zooming=false;changinglayers=false;if (checkFields()) geocodeAddress(this.form); else showError(errEnterMoreInfo); return false;" un-form-pointer="i14452656566339959376101" un-title=""> </DIV>
+                                                            </TD>
+                                                         </TR>
+                                                      </TBODY>
+                                                   </TABLE>
+                                                </DIV>
+                                                <DIV class="un_space_bottom10">
+                                                   <TR>
+                                                      <TD>
+                                                         <TABLE class="un_expand_content" width="100%">
+                                                            <TBODY>
+                                                               <TR style="vertical-align:middle;">
+                                                                  <TD style="display:none;" class="subtitle">Enter as much information as you can or want.</TD>
+                                                                  <TD align="right"><INPUT type="submit" class="un_filter_btn" src="http://coverage.sprint.com/images/Recent_searches_gray.gif" value="RECENT SEARCHES" alt="Submit" id="recentsearch" onclick="showRecentSearches();setParentFrameSize();return false;" un-form-pointer="i14452656566339959376101" un-title=""></TD>
+                                                               </TR>
+                                                            </TBODY>
+                                                         </TABLE>
+                                                         <DIV style="width:100%;" un-title=""></DIV>
+                                                      </TD>
+                                                   </TR>
+                                                </DIV>
+                                             </DIV>
+                                          </TABLE>
+                                       </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD>
+                                          <DIV style="width:100%;" class="un_firstCont" un-title="">
+                                             <DIV class="" un-title="">
+                                                <DIV class=" un_radius_gray un_space5">
+                                                   <DIV class="un_width100 un_left" id="impactServices" un-title="">
+                                                      <DIV class="un_fleft unWidth49"><SPAN id="spnchkSpark"><INPUT type="checkbox" id="chkSpark" name="chkSpark" onclick="changinglayers=true;getMapImage();" un-title=""> <A class="un_black un_fs11 un_spaceR" href="coverageDescBoost.html" target="covdesc" onclick="popUp(this.href,'','480','640','1');return false;">Enhanced LTE</A></SPAN></DIV>
+                                                      <DIV class="un_fright unWidth49"><SPAN id="spnchkLTE"><INPUT type="checkbox" id="chkLTE" name="chkLTE" onclick="changinglayers=true;getMapImage();" un-title=""> <A class="un_black un_fs11 un_spaceR" href="coverageDescBoost.html" target="covdesc" onclick="popUp(this.href,'','480','640','1');return false;">4G LTE</A></SPAN></DIV>
+                                                      <DIV class="un_clear"></DIV>
+                                                      <DIV class="un_fleft unWidth49"><SPAN id="spnchk4G"><INPUT type="checkbox" id="chk4G" name="chk4G" onclick="changinglayers=true;getMapImage();" un-title=""> <A class="un_black un_fs11 un_spaceR" href="coverageDescBoost.html" target="covdesc" onclick="popUp(this.href,'','480','640','1');return false;">4G (WiMAX)</A></SPAN></DIV>
+                                                      <DIV class="un_fright unWidth49"><SPAN id="spnchkData"><INPUT type="checkbox" id="chkData" name="chkData" onclick="changinglayers=true;getMapImage();" un-title=""> <A class="un_black un_fs11 un_spaceR" href="coverageDescBoost.html" target="covdesc" onclick="popUp(this.href,'','480','640','1');return false;">Data Coverage</A></SPAN></DIV>
+                                                      <DIV class="un_clear"></DIV>
+                                                   </DIV>
+                                                   <DIV style="background-color:white; position:relative; top:10px;left:50px;height:354px; width:460px; border:0px solid red;z-index: 50;" id="impactMap" onmouseup="if (!dragmap) return; dragmap=false; dropMap(); " onmousemove="showposmap(this,event);" un-title="">
+                                                      <DIV style="position:absolute;top:16px;left:16px; border:0px; visibility:hidden; z-index:60;" id="busy" un-title=""><IMG style="z-index: 60;" src="http://coverage.sprint.com/images/overlay420.gif" alt="" un-title=""><IMG style="position:absolute;left:163px;top:146px;" src="http://coverage.sprint.com/images/loading-anim.gif" alt="" un-title=""></DIV>
+                                                      <INPUT type="image" src="http://coverage.sprint.com/images/NW_corner.gif" style="display: none;" alt="Submit" name="NW" border="0" onclick="doPan('NW'); return false;" un-form-pointer="i14452656566339959376101" un-title=""> <INPUT type="image" src="http://coverage.sprint.com/images/NE_corner.gif" style="display: none;" alt="Submit" name="NE" border="0" onclick="doPan('NE'); return false;" un-form-pointer="i14452656566339959376101" un-title=""> <INPUT type="image" src="http://coverage.sprint.com/images/SE_corner.gif" style="display: none;" alt="Submit" name="SE" border="0" onclick="doPan('SE'); return false;" un-form-pointer="i14452656566339959376101" un-title=""> <INPUT type="image" src="http://coverage.sprint.com/images/SW_corner.gif" style="display: none;" alt="Submit" name="SW" border="0" onclick="doPan('SW'); return false;" un-form-pointer="i14452656566339959376101" un-title=""> 
+                                                      <DIV style="position:absolute; left:186px; top:0px; " un-title=""><INPUT type="image" src="http://coverage.sprint.com/images/North.gif" style="display: none;" alt="Submit" name="North" border="0" onclick="doPan('N'); return false;" un-form-pointer="i14452656566339959376101" un-title=""> </DIV>
+                                                      <DIV style="position:absolute;top:134px;left:0px;" id="WestMap" un-title=""><INPUT type="image" src="http://coverage.sprint.com/images/West.gif" style="display: none;" alt="Submit" name="West" border="0" onclick="doPan('W'); return false;" un-form-pointer="i14452656566339959376101" un-title=""> </DIV>
+                                                      <DIV style="position:absolute;top:15px;left:15px;" id="mapcontainer" un-title="">
+                                                         <DIV style="position: relative;overflow: hidden;width: 420px; height: 315px;border:1px solid black;" id="mapviewport" un-title="">
+                                                            <IMG style="display:none;z-index:50;position:absolute; border: none;cursor: pointer" src="http://coverage.sprint.com/images/BO543STC.gif" alt="" id="mapimg" name="mapimg" width="420" height="315" onload="onMapLoad();" onmousedown="return clickmap(this,event);" onmousemove="showposmap(this,event);" ondblclick="doRecenterClick(this,event);" alternate="Loading image..." un-title="">
+                                                            <DIV style="width: 420px; height: 315px; position:absolute; top: 0px; left: 0px; border-width: 0px; border-style: solid; border-color: #000000;" id="mapDiv" un-title=""></DIV>
+                                                            <IMG style="display:none;position:absolute;top:214px;left:-1px;border:1px solid black;z-index:51;cursor: pointer; " src="http://coverage.sprint.com//images/mapvoicesprintAK.gif" alt="" id="mapAK" name="mapAK" onclick="showInsetMap('AK');" un-title=""><IMG style="display:none;position:absolute;top:253px;left:113px;border:1px solid black;z-index:51;cursor: pointer; " src="http://coverage.sprint.com//images/mapvoicesprintHI.gif" alt="" id="mapHI" name="mapHI" onclick="showInsetMap('HI');" un-title=""><IMG style="display:none;position:absolute;top:253px;left:202px;border:1px solid black;z-index:51;cursor: pointer; " src="http://coverage.sprint.com//images/mapvoicesprintPR.gif" alt="" id="mapPR" name="mapPR" onclick="showInsetMap('PR');" un-title="">
+                                                         </DIV>
+                                                      </DIV>
+                                                      <DIV style="position:absolute; top:134px; left:438px;" id="EastMap" un-title=""><INPUT type="image" src="http://coverage.sprint.com/images/East.gif" style="display: none;" alt="Submit" name="East" border="0" onclick="doPan('E'); return false;" un-form-pointer="i14452656566339959376101" un-title=""> </DIV>
+                                                      <DIV style="position:absolute; top:333px; left:186px;" id="SouthMap" un-title=""><INPUT type="image" src="http://coverage.sprint.com/images/South.gif" style="display: none;" alt="Submit" name="South" border="0" onclick="doPan('S'); return false;" un-form-pointer="i14452656566339959376101" un-title=""> </DIV>
+                                                   </DIV>
+                                                </DIV>
+                                                <DIV id="zoomTools">
+                                                   <DIV class="un_spaceT un_spaceB">
+                                                      <DIV class="unWidth50 un_fleft"><IMG alt="" width="1" height="1" src="http://us.usablenet.net/mt/images/spacer.gif"></DIV>
+                                                      <DIV class="un_fright unWidth25 un_right">
+                                                         <IMG style="
+                                                            border: 0 none !important;
+                                                            width: 30px;
+                                                            border-radius: 0 0 0 0 !important;
+                                                            padding-left:5px;" src="http://us.usablenet.net/img/c/gw_320/d_boostmobile.com/ttl_l1386863833000/0url_images/coverage/btn_zoom_out.png" alt="" onclick="zoomOut();return false;" onfocus="blur();" un-title=""><IMG style="
+                                                            border: 0 none !important;
+                                                            width: 30px;
+                                                            border-radius: 0 0 0 0 !important;
+                                                            " src="http://us.usablenet.net/img/c/gw_320/d_boostmobile.com/ttl_l1386863833000/0url_images/coverage/btn_zoom_in.png" alt="" onclick="zoomIn();return false;" onfocus="blur();" un-title="">
+                                                         <DIV style="cursor: pointer;position:absolute; top:0px; left:7px; border: 0px solid black; background-color: transparent; visibility:visible;padding:0px;margin:0px;" id="zoomTab" onmouseup="if (!zoomSlider) return;zoomSlider=false;setZoomSlider();" un-title="">
+                                                            <TABLE id="zoomTbl" cellpadding="0" cellspacing="0" border="0">
+                                                               <TBODY>
+                                                                  <TR>
+                                                                     <TD align="left"><IMG style="cursor: pointer;background-color: transparent; position:relative;left:0px;margin-bottom:4px;" src="http://coverage.sprint.com/images/Nation.gif" alt="" onclick="setZoom(0);return false;" onfocus="blur();" un-title=""></TD>
+                                                                  </TR>
+                                                                  <TR>
+                                                                     <TD align="left"><IMG style="
+                                                                        border: 0 none !important;
+                                                                        width: 30px;
+                                                                        border-radius: 0 0 0 0 !important;
+                                                                        padding-left:5px;" src="http://us.usablenet.net/img/c/gw_320/d_boostmobile.com/ttl_l1386863833000/0url_images/coverage/btn_zoom_out.png" alt="" onclick="zoomOut();return false;" onfocus="blur();" un-title=""></TD>
+                                                                  </TR>
+                                                                  <TR>
+                                                                     <TD style="cursor: pointer;height:4px;background-color: transparent; " onmouseup="showpos(this,event);if (!zoomSlider) return;zoomSlider=false;setZoomSlider();"></TD>
+                                                                  </TR>
+                                                                  <TR>
+                                                                     <TD align="left">
+                                                                        <DIV style="z-index:10;position:relative; background-color: transparent; padding:0px;margin:0px;" id="slicer" onmouseup="if (!zoomSlider) return;zoomSlider=false;setZoomSlider();" un-title=""><INPUT type="image" src="http://coverage.sprint.com/images/zoom_bar.gif" alt="Submit" id="slicer_pic" onmousemove="showpos(this,event);" onmouseup="if (!zoomSlider) return;zoomSlider=false;setZoomSlider();" onclick="zoomclick=true;zoomSlider=false;showpos(this,event);zoomSlider=false;zoomclick=false;setZoomSlider();zoomclick=false;" onfocus="blur();" un-form-pointer="i14452656566339959376101" un-title=""> <INPUT type="image" src="http://coverage.sprint.com/images/xzoom_slider.gif" style="position:absolute; left:-3px; top:-12px; visibility:hidden;" alt="Submit" id="slicer_slider" onmousedown="zoomSlider=true;" onmousemove="showpos(this,event);" onfocus="blur();" un-form-pointer="i14452656566339959376101" un-title=""> </DIV>
+                                                                     </TD>
+                                                                  </TR>
+                                                                  <TR>
+                                                                     <TD style="cursor: pointer;height:4px;background-color: transparent; " onmouseup="showpos(this,event);if (!zoomSlider) return;zoomSlider=false;setZoomSlider();"></TD>
+                                                                  </TR>
+                                                                  <TR>
+                                                                     <TD align="left" nowrap=""><IMG style="
+                                                                        border: 0 none !important;
+                                                                        width: 30px;
+                                                                        border-radius: 0 0 0 0 !important;
+                                                                        " src="http://us.usablenet.net/img/c/gw_320/d_boostmobile.com/ttl_l1386863833000/0url_images/coverage/btn_zoom_in.png" alt="" onclick="zoomIn();return false;" onfocus="blur();" un-title=""></TD>
+                                                                  </TR>
+                                                                  <TR>
+                                                                     <TD align="left" nowrap=""><IMG style="cursor: pointer;position:relative;left:0px;margin-top:4px;" src="http://coverage.sprint.com/images/house.gif" alt="" onclick="setZoom(11);return false;" onfocus="blur();" un-title=""></TD>
+                                                                  </TR>
+                                                               </TBODY>
+                                                            </TABLE>
+                                                         </DIV>
+                                                      </DIV>
+                                                      <DIV class="un_fright unWidth20 un_right"><INPUT onclick="document.getElementById('mapit').click();" id="un_jtt_map_control_recenter" name="un_jtt_map_control_recenter" value="" class="un_control_zoom" type="submit"></DIV>
+                                                      <DIV class="un_clear"></DIV>
+                                                   </DIV>
+                                                </DIV>
+                                             </DIV>
+                                             <TABLE class="un_dnone" style="margin-top:-4px;">
+                                                <TBODY>
+                                                   <TR style="vertical-align:middle;">
+                                                      <TD><IMG style="" src="http://coverage.sprint.com/images/thumbtack.png" alt="" class="png" width="24" height="44" un-title=""></TD>
+                                                      <TD nowrap="">
+                                                         <DIV style="border:none;" un-title="">
+                                                            <DIV><B>Coverage details for:</B></DIV>
+                                                         </DIV>
+                                                      </TD>
+                                                      <TD>
+                                                         <DIV style="border:none;" un-title=""><SPAN id="covaddr" style="line-height:1.05;font-size: 11pt;"></SPAN></DIV>
+                                                      </TD>
+                                                   </TR>
+                                                </TBODY>
+                                             </TABLE>
+                                          </DIV>
+                                       </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                              <TABLE class="un_dnone" style="" id="coveragelegend" cellspacing="0" cellpadding="2" un-title="Data table">
+                                 <TBODY id="tbody1">
+                                    <TR style="display:none;">
+                                       <TD style="padding-right: 17px;">
+                                          <DIV id="pinaddress" un-title=""></DIV>
+                                       </TD>
+                                    </TR>
+                                    <TR style="display:none;">
+                                       <TD colspan="2" nowrap="" id="spChoice"><B>Coverage:</B></TD>
+                                    </TR>
+                                 </TBODY>
+                                 <TBODY style="margin-top:4px; display:;" id="tbody2">
+                                    <TR id="CovgQualityText" align="left" style="display:none;">
+                                       <TD colspan="2" nowrap="" style="position: relative;left: 10px" id="spCovgQuality"><B>Best Coverage</B></TD>
+                                    </TR>
+                                    <TR align="left">
+                                       <TD>
+                                          <DIV style="display:none ;margin-top:2px;" id="sprintvoicequalitymeter" un-title="">
+                                             <TABLE>
+                                                <TBODY>
+                                                   <TR>
+                                                      <TD align="center" id="sprintvoicequality1"><IMG src="http://coverage.sprint.com/images/CDMABestBars.gif" alt="" width="40" height="22" un-title=""><SPAN>Best</SPAN> </TD>
+                                                      <TD>&nbsp;&nbsp;&nbsp;</TD>
+                                                      <TD align="center" id="sprintvoicequality2"> <IMG src="http://coverage.sprint.com/images/CDMAGoodBars.gif" alt="" width="40" height="22" un-title=""><BR><SPAN>Good</SPAN> </TD>
+                                                      <TD>&nbsp;&nbsp;&nbsp;</TD>
+                                                      <TD align="center" id="sprintvoicequality3"> <IMG src="http://coverage.sprint.com/images/CDMAFairBars.gif" alt="" width="40" height="22" un-title=""><BR><SPAN>Fair</SPAN> </TD>
+                                                   </TR>
+                                                </TBODY>
+                                             </TABLE>
+                                          </DIV>
+                                          <DIV style="display:none;margin-top:2px;" id="nextelvoicequalitymeter" un-title="">
+                                             <TABLE>
+                                                <TBODY>
+                                                   <TR>
+                                                      <TD align="center" id="nextelvoicequality1"><IMG src="http://coverage.sprint.com/images/idenBestBars.gif" alt="" width="40" height="22" un-title=""><SPAN>Best</SPAN> </TD>
+                                                      <TD>&nbsp;&nbsp;&nbsp;</TD>
+                                                      <TD align="center" id="nextelvoicequality2"> <IMG src="http://coverage.sprint.com/images/idenGoodBars.gif" alt="" width="40" height="22" un-title=""><BR><SPAN>Good</SPAN> </TD>
+                                                      <TD>&nbsp;&nbsp;&nbsp;</TD>
+                                                      <TD align="center" id="nextelvoicequality3"> <IMG src="http://coverage.sprint.com/images/idenFairBars.gif" alt="" width="40" height="22" un-title=""><BR><SPAN>Fair</SPAN> </TD>
+                                                   </TR>
+                                                </TBODY>
+                                             </TABLE>
+                                          </DIV>
+                                          <TABLE style="border:0px solid blue;" cellspacing="0">
+                                             <TBODY>
+                                                <TR id="spCovgQualityInd" align="left" style="position:relative;display:none;">
+                                                   <TD align="left" style="padding-left: 5px;border:0px solid blue;"><IMG style="position:relative;top:4px;" src="http://coverage.sprint.com/images/meter-cdma-pinpoint.gif" alt="" un-title=""></TD>
+                                                   <TD style="border:0px solid blue;"><SPAN id="affiliateCovPP" style="display:none;"><IMG src="http://coverage.sprint.com/images/swatchAffiliatePP.gif" alt="" class="cube" un-title=""></SPAN></TD>
+                                                </TR>
+                                                <TR id="spCovgQualityInd_text" align="left" style="vertical-align:top;display:none;">
+                                                   <TD align="left" style="padding-left: 5px;padding-top: 0px;"><SPAN style="margin-top:0px;">Best&nbsp;&nbsp;Good&nbsp;&nbsp;Fair</SPAN> </TD>
+                                                   <TD>
+                                                      <DIV style="font-size:10px; margin-top: 0px;overflow:auto; width:75px;height:50px;border:0px solid green;" id="affiliateCovPP1" un-title="">
+                                                         <CENTER>Signal strength information unavailable</CENTER>
+                                                      </DIV>
+                                                   </TD>
+                                                </TR>
+                                                <TR id="nxCovgQualityInd" align="left" style="display:none;">
+                                                   <TD colspan="2" nowrap=""><IMG src="http://coverage.sprint.com/images/meter-iden-pinpoint.gif" alt="" un-title=""></TD>
+                                                </TR>
+                                                <TR id="nxCovgQualityInd_text" style="display:none;">
+                                                   <TD colspan="2" align="left" style="padding-left: 5px;padding-top: 0px;"><SPAN style="margin-top:0px;">Best&nbsp;&nbsp;Good&nbsp;&nbsp;Fair</SPAN> </TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                    </TR>
+                                 </TBODY>
+                                 <DIV clas="un_legend" style="background: #fff;">
+                                    <SCRIPT>function un_showLegend(){
+                                       document.getElementById('un_legend_open').style.display="none";
+                                       document.getElementById('un_legend_content').style.display="block";
+                                       document.getElementById('un_legend_close').style.display="block";
+                                       }
+                                       
+                                       function un_hideLegend(){
+                                       document.getElementById('un_legend_open').style.display="block";
+                                       document.getElementById('un_legend_content').style.display="none";
+                                       document.getElementById('un_legend_close').style.display="none";
+                                       }
+                                    </SCRIPT>
+                                    <DIV onclick="un_showLegend()" id="un_legend_open" class="un_title_box_closed">
+                                       <DIV class="un_orange unWidth90">Coverage details for:<SPAN class="un_fs12 un_orange un_covaddr"></SPAN></DIV>
+                                    </DIV>
+                                    <DIV style="display:none;" onclick="un_hideLegend()" id="un_legend_close" class="un_title_box_opened">
+                                       <DIV class="un_orange unWidth90">Coverage details for:<SPAN class="un_fs12 un_orange un_covaddr"></SPAN></DIV>
+                                    </DIV>
+                                    <DIV style="display:none;" id="un_legend_content" class="un_legend_content">
+                                       <DIV class="un_data_coverage un_space10">
+                                          <DIV class="">
+                                             <DIV class="un_bold un_black un_fs12">Data Coverage</DIV>
+                                             <DIV class="un_spacebottom5 ">
+                                                <DIV class="un_fleft"><IMG style="background-color: #ffd801;width:20px; height:20px;border:1px solid #6C6C6C;" src="http://coverage.sprint.com/images/transparent.gif" alt="" un-title=""></DIV>
+                                                <DIV class="un_fleft"><SPAN class="un_spaceleft5 un_black un_fs11">Enhanced LTE</SPAN></DIV>
+                                                <DIV class="un_clear"></DIV>
+                                             </DIV>
+                                             <DIV class="un_spacebottom5 ">
+                                                <DIV class="un_fleft"><IMG style="background-color: #773399;width:20px; height:20px;border:1px solid #6C6C6C;" src="http://coverage.sprint.com/images/transparent.gif" alt="" un-title=""></DIV>
+                                                <DIV class="un_fleft"><SPAN class="un_spaceleft5 un_black un_fs11">4G LTE </SPAN></DIV>
+                                                <DIV class="un_clear"></DIV>
+                                             </DIV>
+                                             <DIV class="un_spacebottom5 ">
+                                                <DIV class="un_fleft"><IMG style="background-color: #003399;width:20px; height:20px;border:1px solid #6C6C6C;" src="http://coverage.sprint.com/images/transparent.gif" alt="" un-title=""></DIV>
+                                                <DIV class="un_fleft"><SPAN class="un_spaceleft5 un_black un_fs11">4G (WiMAX)</SPAN></DIV>
+                                                <DIV class="un_clear"></DIV>
+                                             </DIV>
+                                             <DIV class="un_spacebottom5 ">
+                                                <DIV class="un_fleft"><IMG style="background-color: #ff5a00;width:20px; height:20px;border:1px solid #6C6C6C;" src="http://coverage.sprint.com/images/transparent.gif" alt="" un-title=""></DIV>
+                                                <DIV class="un_fleft"><SPAN class="un_spaceleft5 un_black un_fs11">3G </SPAN></DIV>
+                                                <DIV class="un_clear"></DIV>
+                                             </DIV>
+                                          </DIV>
+                                       </DIV>
+                                       <DIV class="un_vioce_coverage un_wrapper10notTop">
+                                          <DIV class="un_spaceT un_spaceB unSolB">
+                                             <DIV class="un_bold un_black un_fs12">Voice Coverage</DIV>
+                                             <DIV class="un_fleft unWidth33">
+                                                <DIV class="un_fleft"><IMG style="background-color: #008c00;width:20px; height:20px;border:1px solid #6C6C6C;" src="http://coverage.sprint.com/images/transparent.gif" alt="" un-title=""></DIV>
+                                                <DIV class="un_fleft"><SPAN class="un_spaceleft5 un_black un_fs11">Best&nbsp;&nbsp;</SPAN></DIV>
+                                                <DIV class="un_clear"></DIV>
+                                             </DIV>
+                                             <DIV class="un_fleft unWidth33">
+                                                <DIV class="un_fleft"><IMG style="background-color: #66ba66;width:20px; height:20px;border:1px solid #6C6C6C;" src="http://coverage.sprint.com/images/transparent.gif" alt="" un-title=""></DIV>
+                                                <DIV class="un_fleft"><SPAN class="un_spaceleft5 un_black un_fs11">Good&nbsp;&nbsp;</SPAN></DIV>
+                                                <DIV class="un_clear"></DIV>
+                                             </DIV>
+                                             <DIV class="un_fleft unWidth33">
+                                                <DIV class="un_fleft"><IMG style="background-color: #99d199;width:20px; height:20px;border:1px solid #6C6C6C;" src="http://coverage.sprint.com/images/transparent.gif" alt="" un-title=""></DIV>
+                                                <DIV class="un_fleft"><SPAN class="un_spaceleft5 un_black un_fs11">Fair&nbsp;&nbsp;</SPAN></DIV>
+                                                <DIV class="un_clear"></DIV>
+                                             </DIV>
+                                             <DIV class="un_clear"></DIV>
+                                          </DIV>
+                                       </DIV>
+                                       <DIV class="un_no_coverage un_wrapper10notTop">
+                                          <DIV class="un_spaceT">
+                                             <DIV class="un_fleft"><IMG style="background-color: #FFFFFF;width:20px; height:20px;border:1px solid #6C6C6C;" src="http://coverage.sprint.com/images/transparent.gif" alt="" un-title=""></DIV>
+                                             <DIV class="un_fleft"><SPAN class="un_spaceleft5 un_black un_fs11 un_bold">No coverage</SPAN></DIV>
+                                             <DIV class="un_clear"></DIV>
+                                          </DIV>
+                                       </DIV>
+                                       <DIV class="un_clear"></DIV>
+                                    </DIV>
+                                 </DIV>
+                                 <TBODY>
+                                    <TR>
+                                       <TD colspan="2" style="height:3px;"></TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </DIV>
+                        </DIV>
+                     </DIV>
+                     <DIV style="position: absolute; top: 35px; left: 270px; border: 0px; z-index: 1000; visibility: hidden;" id="pinpointMin" un-title="">
+                        <TABLE id="tablePin" cellspacing="0" cellpadding="2" border="0" style="width: 50px; background-color: white; border:1px solid black;">
+                           <TBODY>
+                              <TR>
+                                 <TD id="tdminaddress" nowrap="">
+                                    <DIV id="minaddress" un-title=""></DIV>
+                                 </TD>
+                                 <TD width="1%"><IMG style="cursor: pointer;" src="http://coverage.sprint.com/images/pinpoint-open.gif" alt="" onclick="restorePinpoint();return false;" un-title=""></TD>
+                              </TR>
+                           </TBODY>
+                        </TABLE>
+                        <DIV style="position: relative;top: -1px;left: 8px;" id="pinBaseMin" un-title=""><IMG src="http://coverage.sprint.com//images/pinBase3.gif" alt="" un-title=""></DIV>
+                     </DIV>
+                     <DIV style="position: absolute; top: 58px; left: 270px; border: 0px; z-index: 1000; visibility: hidden;" id="pinpoint" un-title="">
+                        <DIV style="padding: 2px; padding-left:4px; padding-right:4px;background-color: white; border:1px solid black;" id="pinpoint2" un-title=""><IMG style="position:absolute; top:4px; right:3px; cursor: pointer; " src="http://coverage.sprint.com/images/pinpoint-close.gif" alt="" onclick="minimizePinpoint();return false;" un-title=""></DIV>
+                        <DIV style="position: relative;top: -1px;left: 8px;" id="pinBase" un-title=""><IMG src="http://coverage.sprint.com//images/pinBase3.gif" alt="" un-title=""></DIV>
+                     </DIV>
+                     <DIV style="position:absolute;top:16px;left:16px; border:0px; visibility:hidden; z-index:60;" id="busy" un-title=""><IMG style="z-index: 60;" src="http://coverage.sprint.com/images/overlay50g.gif" alt="" un-title=""><IMG style="position:absolute;left:225px;top:190px;" src="http://coverage.sprint.com/images/loading-anim.gif" alt="" un-title=""></DIV>
+                     <DIV style="display:none; visibility:hidden; border:1px solid black; background-color:#FFFFFF; z-index:2000;" id="hiddenstuff" un-title=""><INPUT type="text" style="display:none; width:1px;" value="Loading image...." id="txtStatus" un-form-pointer="i14452656566339959376101" un-title=""> <INPUT type="button" value=" X " onclick="document.getElementById('hiddenstuff').style.visibility='hidden';" un-form-pointer="i14452656566339959376101" un-title=""> <BR><TEXTAREA id="txtXml" style="display:none; height:1px; width:1px;" un-form-pointer="i14452656566339959376101"></TEXTAREA> <BR><INPUT type="text" style="display:none; width:1px;" id="mapsearchresults" un-form-pointer="i14452656566339959376101" un-title=""> </DIV>
+                  </DIV>
+                  <INPUT type="hidden" name="un_form_encoding" value="utf-8">
+               </FORM>
+               <DIV style="background: #fff; margin-left:4px; border-top:10px solid black;" id="lastPart" un-title="">
+                  <SCRIPT>function un_show_map(){
+                     document.getElementById('un_mapForm_open').style.display="none";
+                     document.getElementById('un_mapForm_content').style.display="block";
+                       document.getElementById('un_mapForm_close').style.display="block";
+                     }
+                     
+                     function un_hide_map(){
+                     document.getElementById('un_mapForm_open').style.display="block";
+                     document.getElementById('un_mapForm_content').style.display="none";
+                      document.getElementById('un_mapForm_close').style.display="none";
+                     }
+                     
+                     $(document).ready(function(){
+                     /* BOOSTMM-1661 Vlada K. */
+                     showRecentSearches();
+                     
+                     /* BOOSTMM-1797 Vlada K.*/
+                     $('#un_fake_mapzip').bind('keyup',function(){
+                      var un_id = $(this).attr('id').split('un_fake_')[1];
+                      var un_val = $(this).val();
+                      if(un_val.length > 9){ 
+                           $(this).val(un_val.substring(0, 9));
+                      }
+                      $('#'+un_id).val(un_val);
+                     });
+                     /* BOOSTMM-1797 Vlada K.*/
+                     
+                       $('#un_fake_mapstreet,#un_fake_mapcity').bind('keyup',function(){
+                        var un_id = $(this).attr('id').split('un_fake_')[1];
+                        var un_val = $(this).val();
+                        $('#'+un_id).val(un_val);
+                       });
+                       
+                       $('#un_fake_mapstate').bind('change',function(){
+                        var un_id = $(this).attr('id').split('un_fake_')[1];
+                        var un_val = $(this).val();
+                        $('#'+un_id).val(un_val);
+                       });
+                       
+                       /* BOOSTMM-1678 Valda K */
+                       $('.un_recentsearch_link').bind('click',function(){
+                         window.scrollTo(0, 130);
+                       });
+                       
+                       /* BOOSTMM-1662 Vlada K. */
+                       $('#un_fake_recentsearch').bind('click',function(){
+                        var un_id = $(this).attr('id').split('un_fake_')[1];
+                        $('#'+un_id).click();
+                       });
+                       
+                       /* BOOSTMM-1661 Vlada K. */
+                       $('.un_recentsearch_link').bind('click',function(){
+                              setTimeout(function(){
+                                 $('input[name*="un_fake_"][type!="submit"]').each(function(){
+                                     var un_id = $(this).attr('id').split('un_fake_')[1];
+                                     var un_val = $('#'+un_id).val();
+                                     $(this).val(un_val);
+                                 });
+                              },600);
+                       });
+                       
+                       /* BOOSTMM-1662 Vlada K. */
+                       $('#un_fake_clear').bind('click',function(){
+                          var un_id = $(this).attr('id').split('un_fake_')[1];
+                          $('#'+un_id).click();
+                          $('#un_mapForm_content input[type="text"]').val('');
+                          $('#un_mapForm_content input[type="number"]').val('');
+                          $('#un_mapForm_content select').val('');
+                       });
+                       
+                       $('#un_fake_mapit').bind('click',function(){
+                       /* BOOSTMM-1705 Vlada K. */
+                          $('#error_txt').html('');
+                           var un_id = $(this).attr('id').split('un_fake_')[1];
+                           $('#'+un_id).click();
+                           setTimeout(function(){
+                           var un_err_msg = $('#error_txt').text();
+                           $('#un_error_msg_container').html(un_err_msg);
+                          },500)
+                       });
+                       
+                       /* BOOSTMM-1660 Vlada K. */
+                       $('#mapit').bind('click',function(){
+                         setTimeout(function(){
+                          var un_covaddr_sting = $('#covaddr').html();
+                          $('.un_covaddr').html('  ' + un_covaddr_sting);
+                         },2000)
+                       });
+                       
+                       
+                     });
+                  </SCRIPT>
+                  <DIV style="display:none;" onclick="un_show_map()" id="un_mapForm_open" class="un_title_box_closed">
+                     <DIV class="un_orange">Map a location </DIV>
+                  </DIV>
+                  <DIV onclick="un_hide_map()" id="un_mapForm_close" class="un_title_box_opened">
+                     <DIV class="un_orange">Map a location </DIV>
+                  </DIV>
+                  <DIV id="un_mapForm_content" class="un_mapForm_content">
+                     <DIV class="un_space10">
+                        <DIV class="un_error un_fs12" id="un_error_msg_container"></DIV>
+                        <DIV class="un_black un_fs12 un_spacetop5 un_spaceB">Enter as much information as you can or want. </DIV>
+                        <DIV class="un_spaceB"><LABEL for="un_fake_mapstreet">ADDRESS OR INTERSECTION<BR></LABEL><INPUT class="un_input_text_cov" name="un_fake_mapstreet" id="un_fake_mapstreet" type="text"></DIV>
+                        <DIV class="un_spaceB">
+                           <DIV class="un_fleft unWidth40"><LABEL for="un_fake_mapcity">CITY<BR></LABEL><INPUT type="text" id="un_fake_mapcity" name="un_fake_mapcity" class="un_input_text_cov"></DIV>
+                           <DIV class="unWidth50 un_fright">
+                              <SELECT id="un_fake_mapstate" name="un_fake_mapstate" class="un_select_coverage">
+                                 <OPTION value="">Choose a state</OPTION>
+                                 <OPTION value="AL">Alabama</OPTION>
+                                 <OPTION value="AK">Alaska</OPTION>
+                                 <OPTION value="AZ">Arizona</OPTION>
+                                 <OPTION value="AR">Arkansas</OPTION>
+                                 <OPTION value="CA">California</OPTION>
+                                 <OPTION value="CO">Colorado</OPTION>
+                                 <OPTION value="CT">Connecticut</OPTION>
+                                 <OPTION value="DE">Delaware</OPTION>
+                                 <OPTION value="FL">Florida</OPTION>
+                                 <OPTION value="GA">Georgia</OPTION>
+                                 <OPTION value="HI">Hawaii</OPTION>
+                                 <OPTION value="ID">Idaho</OPTION>
+                                 <OPTION value="IL">Illinois</OPTION>
+                                 <OPTION value="IN">Indiana</OPTION>
+                                 <OPTION value="IA">Iowa</OPTION>
+                                 <OPTION value="KS">Kansas</OPTION>
+                                 <OPTION value="KY">Kentucky</OPTION>
+                                 <OPTION value="LA">Louisiana</OPTION>
+                                 <OPTION value="ME">Maine</OPTION>
+                                 <OPTION value="MD">Maryland</OPTION>
+                                 <OPTION value="MA">Massachusetts</OPTION>
+                                 <OPTION value="MI">Michigan</OPTION>
+                                 <OPTION value="MN">Minnesota</OPTION>
+                                 <OPTION value="MS">Mississippi</OPTION>
+                                 <OPTION value="MO">Missouri</OPTION>
+                                 <OPTION value="MT">Montana</OPTION>
+                                 <OPTION value="NE">Nebraska</OPTION>
+                                 <OPTION value="NV">Nevada</OPTION>
+                                 <OPTION value="NH">New Hampshire</OPTION>
+                                 <OPTION value="NJ">New Jersey</OPTION>
+                                 <OPTION value="NM">New Mexico</OPTION>
+                                 <OPTION value="NY">New York</OPTION>
+                                 <OPTION value="NC">North Carolina</OPTION>
+                                 <OPTION value="ND">North Dakota</OPTION>
+                                 <OPTION value="OH">Ohio</OPTION>
+                                 <OPTION value="OK">Oklahoma</OPTION>
+                                 <OPTION value="OR">Oregon</OPTION>
+                                 <OPTION value="PA">Pennsylvania</OPTION>
+                                 <OPTION value="PR">Puerto Rico</OPTION>
+                                 <OPTION value="RI">Rhode Island</OPTION>
+                                 <OPTION value="SC">South Carolina</OPTION>
+                                 <OPTION value="SD">South Dakota</OPTION>
+                                 <OPTION value="TN">Tennessee</OPTION>
+                                 <OPTION value="TX">Texas</OPTION>
+                                 <OPTION value="UT">Utah</OPTION>
+                                 <OPTION value="VT">Vermont</OPTION>
+                                 <OPTION value="VA">Virginia</OPTION>
+                                 <OPTION value="WA">Washington</OPTION>
+                                 <OPTION value="DC">Washington, DC</OPTION>
+                                 <OPTION value="WV">West Virginia</OPTION>
+                                 <OPTION value="WI">Wisconsin</OPTION>
+                                 <OPTION value="WY">Wyoming</OPTION>
+                              </SELECT>
+                           </DIV>
+                           <DIV class="un_clear"></DIV>
+                        </DIV>
+                        <DIV class="un_spaceB unWidth40">
+                          <LABEL for="un_fake_mapzip">ZIP CODE<BR></LABEL>
+                          <INPUT maxlength="9" size="9" id="un_fake_mapzip" name="un_fake_mapzip" class="un_input_text_cov" type="text" style=";-wap-input-format: '*N'">
+                        </DIV>
+                        <DIV class="un_clear"></DIV>
+                        <DIV>
+                          <DIV class="un_fleft unWidth49">
+                            <INPUT style="padding:7px;" type="submit" id="un_fake_clear" name="un_fake_map_control_clear" value="CLEAR" class="un_darkBtn unWidth100 un_fs12">
+                          </DIV>
+                          <DIV class="un_fright unWidth49">
+                            <INPUT style="padding:7px;" type="submit" id="un_fake_mapit" name="un_fake_map_control_mapit" value="MAP IT" class="un_orangeBtn unWidth100 un_fs12">
+                          </DIV>
+                          <DIV class="un_clear"></DIV>
+                        </DIV>
+                        <DIV class="un_spaceT">
+                          <INPUT style="padding:7px;" class="un_darkBtn un_center un_space5 un_fs13 unWidth100" value="RECENT SEARCHES" id="un_fake_recentsearch" type="submit">
+                        </DIV>
+                     </DIV>
+                     <DIV id="recentsearchdiv" class="un_black_all un_space10">
+                        <DIV class="">
+                           <DIV style="padding-top:10px;" id="norecentsearches" un-title="">
+                              <DIV class="un_fleft unWidth75"></DIV>
+                              <DIV class="un_fright"><A class="un_recentsearch_link" style="font-size:12px !important;" onclick=""></A></DIV>
+                              <DIV class="un_clear"></DIV>
+                           </DIV>
+                        </DIV>
+                        <DIV class="">
+                           <DIV style="padding-top:10px;" id="search4" un-title="">
+                              <DIV class="un_fleft unWidth75"><SPAN id="recentsearch4"></SPAN></DIV>
+                              <DIV class="un_fright"><A class="un_recentsearch_link" style="font-size:12px !important;" onclick="getRecentSearch(4);return false;">&gt;&nbsp;Map It</A></DIV>
+                              <DIV class="un_clear"></DIV>
+                           </DIV>
+                        </DIV>
+                        <DIV class="">
+                           <DIV style="padding-top:10px;" id="search3" un-title="">
+                              <DIV class="un_fleft unWidth75"><SPAN id="recentsearch3"></SPAN></DIV>
+                              <DIV class="un_fright"><A class="un_recentsearch_link" style="font-size:12px !important;" onclick="getRecentSearch(3);return false;">&gt;&nbsp;Map It</A></DIV>
+                              <DIV class="un_clear"></DIV>
+                           </DIV>
+                        </DIV>
+                        <DIV class="">
+                           <DIV style="padding-top:10px;" id="search2" un-title="">
+                              <DIV class="un_fleft unWidth75"><SPAN id="recentsearch2"></SPAN></DIV>
+                              <DIV class="un_fright"><A class="un_recentsearch_link" style="font-size:12px !important;" onclick="getRecentSearch(2);return false;">&gt;&nbsp;Map It</A></DIV>
+                              <DIV class="un_clear"></DIV>
+                           </DIV>
+                        </DIV>
+                        <DIV class="">
+                           <DIV style="padding-top:10px;" id="search1" un-title="">
+                              <DIV class="un_fleft unWidth75"><SPAN id="recentsearch1"></SPAN></DIV>
+                              <DIV class="un_fright"><A class="un_recentsearch_link" style="font-size:12px !important;" onclick="getRecentSearch(1);return false;">&gt;&nbsp;Map It</A></DIV>
+                              <DIV class="un_clear"></DIV>
+                           </DIV>
+                        </DIV>
+                        <DIV class="">
+                           <DIV style="padding-top:10px;" id="search0" un-title="">
+                              <DIV class="un_fleft unWidth75"><SPAN id="recentsearch0"></SPAN></DIV>
+                              <DIV class="un_fright"><A class="un_recentsearch_link" style="font-size:12px !important;" onclick="getRecentSearch(0);return false;">&gt;&nbsp;Map It</A></DIV>
+                              <DIV class="un_clear"></DIV>
+                           </DIV>
+                        </DIV>
+                     </DIV>
+                  </DIV>
+               </DIV>
+               <SCRIPT type="text/javascript">log("Setting language cookie to: EN");
+                  var exdate=new Date();
+                  exdate.setDate(exdate.getDate() + 30);
+                  setCookie("language","EN", exdate);
+                  
+                  try
+                  {
+                  	log("Calling profileInit()");
+                  	profileInit();
+                  }
+                  catch (ex) { log("Exception calling profileInit()"); }
+                  
+                  loadRecentAddrs();
+                  
+                  
+                  
+                   	showShopBtn = false;
+                  
+                  
+                  	var tempStr = navigator.userAgent.toLowerCase();
+                  	//useBusyTimer = (tempStr.indexOf("applewebkit/") != -1 ||
+                  	//					 tempStr.indexOf("konqueror/") != -1 );
+                  
+                  
+                  	setPageHeight();
+                  	//updatePageforZoom(); was done temporarily for testing disabling of checkboxes at US view on page load.
+                  
+                  
+                  	var addrDiv = document.getElementById('addrFloat');
+                  	addrVisible = true;
+                  
+                  	//if (highSpeedAlwaysOn)
+                  	//{
+                  	//	document.getElementById("impactServices").style.display='none';
+                  	//	document.getElementById("chkEVDO").checked=true;
+                  	//}
+                  
+                  	var busy = document.getElementById("busy");
+                  
+                  	if (document.all)
+                  		{
+                  			document.getElementById("slicer_slider").style.visibility='visible';
+                  		}
+                  	else
+                  		{
+                  			//The following line is only needed if slider images are not padded.
+                  			//document.getElementById("slicer_slider").style.left='5px';
+                  			document.getElementById("slicer_slider").style.visibility='visible';
+                  		}
+                  
+                  	addressForm = document.getElementById("frmImpact2");
+                  	if (addressForm != null)
+                  		{
+                  			if (document.getElementById("frmImpact2").mapstate.value == "")
+                  				{
+                  					document.getElementById("frmImpact2").mapstate.value="";
+                  			   }
+                  
+                  			if (checkFields() == true )
+                  				{
+                  					//alert("Current mapzip:" + document.getElementById("frmImpact2").mapzip.value);
+                  					zooming=false;
+                  					changinglayers=false;
+                  					geocodeAddress(addressForm);
+                  				}
+                  		 }
+                  	document.onkeypress = onKeyPress;
+                  
+                  	//init OpenLayers
+                  	init();
+                  	
+                  	pageInitialized = true;
+                    
+                    function setParentFrameSize(){
+                      parent.$("#coverageMapFrame").css({height:document.body.offsetHeight+10+"px"});
+                    }
+                    
+                  mapzip=location.search.split("mapzip=")[1].substring(0,5);
+                  if(mapzip){
+                    $("#un_fake_mapzip").val(mapzip);
+                    $("#un_fake_mapit").click();
+                  }
+               </SCRIPT> 
+            </DIV>
+         </DIV>
+
+      </DIV>
+
+   </BODY>
+</HTML>

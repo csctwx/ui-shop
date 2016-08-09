@@ -1,0 +1,30 @@
+[
+	{
+		"key": "showOnlyFailed",
+		"value": "false",
+		"type": "text",
+		"name": "showOnlyFailed",
+		"enabled": true
+	},
+	{
+		"key": "showValues",
+		"value": "true",
+		"type": "text",
+		"name": "showValues",
+		"enabled": true
+	},
+	{
+		"key": "grepMode",
+		"value": "true",
+		"type": "text",
+		"name": "grepMode",
+		"enabled": true
+	},
+	{
+		"key": "debugMode",
+		"value": "false",
+		"type": "text",
+		"name": "debugMode",
+		"enabled": true
+	}
+]

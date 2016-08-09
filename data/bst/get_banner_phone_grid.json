@@ -1,0 +1,60 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "5915ae11-67eb-4138-9d67-dcb1cb0c4352",
+			"@class": "",
+			"@name": "section_banner",
+			"@code": "0",
+			"getBannerResponse": {
+				"banner": {
+					"assetId": {
+						"$": "A-kgd6XVKM1TW"
+					},
+					"name": {
+						"$": "Free Hotspot With Selected Phones"
+					},
+					"url": {
+						"$": "http:\/\/www.boostmobile.com\/shop\/plans\/30-databoost-up\/?icamp=INTC_HP_Panel_Row1Col1_30dataBoostUp"
+					},
+					"imageUrl": {
+						"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/i\/c\/g\/banner4.jpg?action=access&assetId=A-kgd6XVKM1TW"
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		},
+		{
+			"@uuid": "7fc56f64-e2bc-4bfb-8877-dfc1918ede04",
+			"@class": "",
+			"@name": "section_phonenumber",
+			"@code": "0",
+			"getBannerResponse": {
+				"banner": {
+					"assetId": {
+						"$": "A-kgd6XVKM1TW"
+					},
+					"name": {
+						"$": "Free Hotspot With Selected Phones"
+					},
+					"url": {
+						"$": "http:\/\/www.boostmobile.com\/shop\/plans\/30-databoost-up\/?icamp=INTC_HP_Panel_Row1Col1_30dataBoostUp"
+					},
+					"imageUrl": {
+						"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/i\/c\/g\/banner4.jpg?action=access&assetId=A-kgd6XVKM1TW"
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

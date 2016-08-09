@@ -1,0 +1,23 @@
+<div class="tab-pane active" ng-show="phoneController.selectedTab=='accessories'" id="accessories">
+    <div class="col-md-12">
+        <section class="accessories">
+            <h3>{{phoneController.details.data.name}} <span>Accessories</span></h3>
+            <phone-accessories-type></phone-accessories-type>
+            <div ng-repeat="item in phoneController.details.data.accessories.accessory | filter:{type:phoneController.details.data.accessories.type}"
+                 class="col-xs-12 col-sm-6 col-md-3 acc {{phoneController.accList.accDiscountClass(item)}}" id="item.sku">
+                <span>
+                    <img ng-src="{{item.shopImage.uRI}}" alt="image: {{item.label}}">
+                    <h4>{{item.label}}</h4>
+                    <p style="margin: 0 10px;">{{item.description}}</p>
+                    <span class="retail_price">{{item.retail_price|currency}}</span>
+                    <div class="price">{{item.price|currency}}</div>
+                    <a class="btn btn-sm btn-primary acc-add-to-cart-btn" ng-href="{{pathMap._checkout._hash}}addToCart/sku={{item.sku}}/" ng-disabled="item.noMore">{{item.cartLabel}}</a>
+                </span>
+            </div>
+            <div id="no-accessories" class="text-center"
+                 ng-if="(phoneController.details.data.accessories.accessory | filter:{type:phoneController.details.data.accessories.type}).length==0">
+                <p>We're sorry.<br>We don't currently<br>sell accessories<br>for this phone.</p>
+            </div>
+        </section>
+    </div>
+</div>

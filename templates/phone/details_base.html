@@ -1,0 +1,224 @@
+<div class="col-sm-6 details {{phoneController.getDiscountClass(phoneController.details.data)}}">
+  <div class="col-xs-12">
+    <h1 class="title" ng-class="phoneController.planType=='PAYLO' ? 'paylo' : ''" style="background-color:transparent;">
+      <span class="phoneName" style="padding:0px">{{phoneController.details.data.name}}</span></br>
+      <span style="padding:0px" ng-if="appName!='vmu'">{{phoneController.selectedTab}}</span>
+      <!-- <span>{{phoneController.details.data.selectedColor}}</span>
+      <span>{{phoneController.details.data.selectedMemory}}</span> -->
+      <div ng-if="phoneController.planType=='PAYLO'" id="available_on_paylo">
+	  	Available On <img ng-src="{{appName}}/img/paylo_inline_logo.png" alt="payLo" />
+	  </div>
+    </h1>
+    <span ng-if="appName=='bst' || appName=='vmu'">
+    <p class="rating" ng-if="phoneController.details.data.rate!=null">
+      <h2 class="title" style="float:left;padding-top:0;padding-bottom:0;" ng-if="phoneController.details.data.phoneCondition=='preowned'">Pre-owned</h2>
+      <span class="{{phoneController.getRateStarClass(phoneController.details.data.rate)}}" style="white-space: nowrap;">&nbsp;</span>
+      <span>({{phoneController.details.data.rate.toFixed(1)}}/5)</span>
+      <a ng-href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/reviews/" class="reviews" style="padding-right:20px;margin-left:0px">({{phoneController.details.data.review}} Reviews)</a>
+      <span style="padding-left:0;padding-right:0;left:-20px;" class="reviewAsk" data-toggle="tooltip" data-placement="bottom" title="See all user submitted reviews for this phone." data-original-title=""></span>
+      <a ng-if="appName!='vmu'" ng-href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/write_reviews/" style="margin-left:-10px">Write a review</a>
+      <a ng-if="appName=='vmu'" ng-href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/reviews/" style="margin-left:-10px">Write a review</a>
+    </p>
+    </span>
+    <p class="longDescription" ng-if="appName=='spp'" ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.extendedDescription)"></p>
+    <p class="longDescription" ng-if="appName=='bst'" ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.description)"></p>
+    <p class="longDescription" ng-if="appName=='vmu'" ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.description)"></p>
+    <div class="col-xs-12 col-sm-10 prices" ng-if="appName!='vmu'">
+	  <p class="phoneBody" ng-if="phoneController.details.data.promoIndex!=-1">
+       <b>{{phoneController.details.data.promotions[phoneController.details.data.promoIndex].message.title}}</b>
+       {{phoneController.details.data.promotions[phoneController.details.data.promoIndex].message.body}}
+       <span style="padding-left:0;padding-right:0;left:0px;" class="glyphicon glyphicon-info-sign" 
+         ng-if="phoneController.details.data.promotions[phoneController.details.data.promoIndex].message.toolTip"
+         data-popover="true" 
+         data-html="true"
+         data-content="{{phoneController.details.data.promotions[phoneController.details.data.promoIndex].message.toolTip}}" 
+         data-original-title="">
+       </span>
+ 	  </p>
+      <p class="phoneRetailPrice" ng-show="phoneController.details.data.selectedVariant.msrp && phoneController.details.data.selectedVariant.inventory!='end-of-life'">
+        <span class="pull-left">Retail Price</span>{{phoneController.details.data.selectedVariant.msrp|currency:""}}</p>
+      <p class="phonePromoDiscount" ng-show="phoneController.details.data.selectedVariant.discount && phoneController.details.data.selectedVariant.inventory!='end-of-life'"><span class="pull-left">Promotional discount</span>{{phoneController.details.data.selectedVariant.discount|currency:""}}</p>
+      <div class="colorOptions" ng-show="phoneController.details.data.colorOptions.length>1">
+        <span ng-repeat="color in phoneController.details.data.colorOptions" style="border:2px solid transparent"><input type="radio" name="variantColor" value="{{color}}" id="{{color}}" ng-model="phoneController.details.data.selectedColor" ng-click="phoneController.details.data.setHash()"><label for="{{color}}" class="ieBackgroundColor background_{{phoneController.details.data.colorValues[color].substring(1)}}" data-toggle="tooltip" data-placement="bottom" title="{{color}}">{{color}}</label></input></span>
+      </div>
+      <div class="memOptions" ng-show="phoneController.details.data.memoryOptions.length>1">
+        <span ng-repeat="mem in phoneController.details.data.memoryOptions"><input type="radio" name="variantMem" value="{{mem}}" id="{{mem}}" ng-model="phoneController.details.data.selectedMemory" ng-click="phoneController.details.data.setHash()"><label for="{{mem}}">{{mem | uppercase | memoryFilter}}<sup ng-show="appName=='vmu'">GB</sup></label></input></span>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-10 prices" ng-if="appName=='vmu'">
+      <div class="colorOptions" ng-show="phoneController.details.data.colorOptions.length>1">
+        <span ng-repeat="color in phoneController.details.data.colorOptions" style="border:2px solid transparent"><input type="radio" name="variantColor" value="{{color}}" id="{{color}}" ng-model="phoneController.details.data.selectedColor" ng-click="phoneController.details.data.setHash()"><label for="{{color}}" class="ieBackgroundColor background_{{phoneController.details.data.colorValues[color].substring(1)}}" data-toggle="tooltip" data-placement="bottom" title="{{color}}">{{color}}</label></input></span>
+      </div>
+      <div class="memOptions" ng-show="phoneController.details.data.memoryOptions.length>1">
+        <span ng-repeat="mem in phoneController.details.data.memoryOptions"><input type="radio" name="variantMem" value="{{mem}}" id="{{mem}}" ng-model="phoneController.details.data.selectedMemory" ng-click="phoneController.details.data.setHash()"><label for="{{mem}}">{{mem | uppercase | memoryFilter}}<sup ng-show="appName=='vmu'">GB</sup></label></input></span>
+      </div>
+	  <p class="phoneBody" ng-if="phoneController.details.data.promoIndex!=-1">
+       <b>{{phoneController.details.data.promotions[phoneController.details.data.promoIndex].message.title}}</b>
+       {{phoneController.details.data.promotions[phoneController.details.data.promoIndex].message.body}}
+       <span style="padding-left:0;padding-right:0;left:0px;" class="glyphicon glyphicon-info-sign" 
+         ng-if="phoneController.details.data.promotions[phoneController.details.data.promoIndex].message.toolTip"
+         data-popover="true" 
+         data-html="true"
+         data-content="{{phoneController.details.data.promotions[phoneController.details.data.promoIndex].message.toolTip}}" 
+         data-original-title="">
+       </span>
+ 	  </p>
+     <!-- && !phoneController.details.data.selectedVariant.hiddenPrice -->
+      <p class="phoneRetailPrice" ng-show="phoneController.details.data.selectedVariant.msrp && phoneController.details.data.selectedVariant.inventory!='end-of-life'">
+        <span class="pull-left">Retail Price</span>{{phoneController.details.data.selectedVariant.msrp|currency:""}}</p>
+      <p class="phonePromoDiscount" ng-show="phoneController.details.data.selectedVariant.discount && phoneController.details.data.selectedVariant.inventory!='end-of-life'">
+      <span class="pull-left">Promotional discount</span>{{phoneController.details.data.selectedVariant.discount|currency:""}}</p>
+    </div>
+    <div class="col-xs-12" ng-if="phoneController.details.data.selectedVariant.inventory=='end-of-life'" style="display:block">
+      <p>
+        This phone is no longer available online.
+        <ul style="list-style:initial">
+          <li><a ng-href="{{pathMap._phones._hash}}">Shop available phones</a></li>
+          <li><a ng-href="{{pathMap._store._hash}}">Find a store</a></li>
+          <li ng-if="appName=='spp'"><a ng-href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support" target="_blank">Device support</a></li>
+          <li ng-if="appName=='bst'"><a ng-href="http://devicehelp.boostmobile.com/?INTNAV=BST:Support#!/?INTNAV=Nav:Support" target="_blank">Device support</a></li>
+        </ul>
+      </p>
+    </div>
+    <div class="col-xs-12 phoneBottom" style="height:initial !important" ng-if="phoneController.details.data.selectedVariant.inventory!='end-of-life'">
+      <div class="pull-left" ng-show="phoneController.details.data.isRedVentures" ng-if="appName=='spp'">
+        <banner-item ng-show="phoneController.details.data.isRedVentures" url="get_banner_phone_details" extraheaders="{RedVentures:true}" index="0" options="text" style="width:200px;height:30px"></banner-item>
+        <banner-item ng-show="!phoneController.details.data.isRedVentures" url="get_banner_phone_details" extraheaders="{RedVentures:false}" index="0" options="text" style="width:200px;height:30px"></banner-item>
+      </div>
+      <div class="pull-right" ng-if="appName=='spp'">
+        <h2 ng-if="!phoneController.details.data.selectedVariant.hiddenPrice" class="phoneFinalPrice">{{phoneController.details.data.selectedVariant.price|currency:""}}</h2>
+        <span class="installmentBilling pull-left" ng-if="!phoneController.details.data.selectedVariant.hiddenPrice && phoneController.IB && phoneController.details.data.selectedVariant.ibEligibilityInd">
+          <p> or ${{phoneController.details.data.selectedVariant.ibEmi}}/month</p>
+          <p>with Installments</p>
+        </span>              
+        <a class="btn btn-primary" 
+          ng-if="phoneController.details.data.selectedVariant.noMore || !phoneController.IB || !phoneController.details.data.selectedVariant.ibEligibilityInd"
+          ng-href="{{pathMap._checkout._hash}}addToCart/sku={{phoneController.details.data.selectedVariant.sku}}/" ng-disabled="phoneController.details.data.selectedVariant==null || phoneController.details.data.selectedVariant.noMore">{{phoneController.details.data.selectedVariant.cartLabel}}</a>
+        <a class="btn btn-primary"
+           ng-if="phoneController.IB && phoneController.details.data.selectedVariant.ibEligibilityInd && !phoneController.details.data.selectedVariant.noMore"
+           ng-disabled="phoneController.details.data.selectedVariant==null"
+           ng-click="phoneController.ib.setCurItem(phoneController.details.data,$event)">{{phoneController.details.data.selectedVariant.cartLabel}}</a>
+      </div>
+      <span class="phonedetailsPrice" ng-if="appName=='bst'">
+        <span class="installmentBilling" ng-if="!phoneController.details.data.selectedVariant.hiddenPrice && phoneController.IB && phoneController.details.data.selectedVariant.ibEligibilityInd">
+          <p>{{phoneController.details.data.selectedVariant.downPaymentAmount | currency}} today* / </p>
+          <p>{{phoneController.details.data.selectedVariant.ibEmi | currency}} a Month for {{phoneController.details.data.selectedVariant.loanTerm}} months</p>
+          <p>*Excludes Taxes and fees</p>
+        </span>
+        <h1 class="phoneFinalPrice" ng-if="!phoneController.details.data.selectedVariant.hiddenPrice">{{phoneController.details.data.selectedVariant.price|currency:""}}</h1>
+        <h1 ng-if="phoneController.details.data.selectedVariant.hiddenPrice">SEE PRICE IN CART</h1>
+        <a class="btn btn-primary" 
+          ng-if="phoneController.details.data.selectedVariant.noMore || !phoneController.IB || !phoneController.details.data.selectedVariant.ibEligibilityInd"
+          ng-href="{{pathMap._checkout._hash}}addToCart/sku={{phoneController.details.data.selectedVariant.sku}}/" ng-disabled="phoneController.details.data.selectedVariant==null || phoneController.details.data.selectedVariant.noMore">{{phoneController.details.data.selectedVariant.cartLabel}}</a>
+        <a class="btn btn-primary {{appName=='vmu'?'shop-grid-btn':''}}"
+           ng-if="phoneController.IB && phoneController.details.data.selectedVariant.ibEligibilityInd && !phoneController.details.data.selectedVariant.noMore"
+           ng-disabled="phoneController.details.data.selectedVariant==null"
+           ng-click="phoneController.ib.setCurItem(phoneController.details.data,$event)">{{phoneController.details.data.selectedVariant.cartLabel}}</a>
+
+
+<!--  THIS DROPDOWN WORKS ... leaving here until we get 100% from Sprint they want the popup
+        <div class="dropdown"  ng-if="!phoneController.details.data.selectedVariant.noMore && phoneController.IB && phoneController.details.data.selectedVariant.ibEligibilityInd">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" ng-disabled="phoneController.details.data.selectedVariant==null" data-toggle="dropdown">Add to Cart <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="myDropdown" >
+            <li role="presentation"><a href="">Purchase with Installments</a></li>
+            <li role="presentation"><a href="">Purchase and Pay Now</a></li>
+          </ul>
+        </div>
+
+-->
+      </span>
+      <span class="phonedetailsPrice" ng-if="appName=='vmu' ">
+        <h1 class="phoneFinalPrice" ng-if="!phoneController.details.data.selectedVariant.hiddenPrice">{{phoneController.details.data.selectedVariant.price|currency:""}}</h1>
+        <h1 ng-if="phoneController.details.data.selectedVariant.hiddenPrice">SEE PRICE IN CART</h1>
+        <span class="installmentBilling" ng-if="!phoneController.details.data.selectedVariant.hiddenPrice && phoneController.IB && phoneController.details.data.selectedVariant.ibEligibilityInd">          
+          <p>{{phoneController.details.data.selectedVariant.downPaymentAmount | currency}} today* / </p>
+          <p>{{phoneController.details.data.selectedVariant.ibEmi | currency}} a Month for {{phoneController.details.data.selectedVariant.loanTerm}} months</p>
+          <p>*Excludes Taxes and fees</p>
+        </span>        
+        <a class="btn btn-primary" 
+          ng-if="phoneController.details.data.selectedVariant.noMore || !phoneController.IB || !phoneController.details.data.selectedVariant.ibEligibilityInd"
+          ng-href="{{pathMap._checkout._hash}}addToCart/sku={{phoneController.details.data.selectedVariant.sku}}/" ng-disabled="phoneController.details.data.selectedVariant==null || phoneController.details.data.selectedVariant.noMore">{{phoneController.details.data.selectedVariant.cartLabel}}</a>
+        <a class="btn btn-primary {{appName=='vmu'?'shop-grid-btn':''}}"
+           ng-if="phoneController.IB && phoneController.details.data.selectedVariant.ibEligibilityInd && !phoneController.details.data.selectedVariant.noMore"
+           ng-disabled="phoneController.details.data.selectedVariant==null"
+           ng-click="phoneController.ib.setCurItem(phoneController.details.data,$event)">{{phoneController.details.data.selectedVariant.cartLabel}}</a>
+      </span>
+
+      <div ng-show="phoneController.details.data.isRedVentures" ng-if="appName=='bst'">
+        <banner-item  style="margin-top:10px" url="get_banner_phone_details" extraheaders="{RedVentures:true,brandId:sppName}" index="0" options="no_url,phone_details"></banner-item>      
+      </div>
+      <div ng-show="!phoneController.details.data.isRedVentures">
+        <banner-item  style="margin-top:10px" url="get_banner_phone_details" extraheaders="{RedVentures:false,brandId:sppName}" index="0" options="no_url,phone_details"></banner-item>
+      </div>
+      <span class="additionalLinks">
+        <div><a ng-if="phoneController.details.data.referenceDevice" ng-href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.referenceDevice.externalUrl}}/features">Also available {{phoneController.details.data.phoneCondition=='preowned'?'new':'certified pre-owned'}} - ${{phoneController.details.data.referenceDevice.price}}</a></div>
+        <div><a ng-if="phoneController.details.data.findInStoreFlag" ng-click="storeController.popPhoneStores()" href="javascript:">Find this phone in store</a></div>
+      </span>
+      <div ng-if="appName=='bst'" class="col-xs-12 detailsLegal" ng-show="phoneController.details.data.disclaimerMini.length > 0" ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.disclaimerMini)"></div>
+      <div ng-if="appName=='vmu'" class="col-xs-12 detailsLegal" ng-show="phoneController.details.data.disclaimerFull.length > 0" ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.disclaimerFull)"></div>
+    </div>
+    <div ng-if="appName=='spp'" class="detailsLegal">
+      <p class="col-xs-12 " ng-show="phoneController.details.data.disclaimerFull.length > 0" ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.disclaimerFull)"></p>
+    </div>
+
+
+    <div class="qtip-content IB" aria-atomic="true" id="ibModal">
+      <div class="genie3-modal" id="modal-LGLS665ABB"> 
+        <div class="genie3-modal-top">
+          <a ng-click="phoneController.ib.closeIbModal('#ibModal', $event)"  class="qtip-close qtip-icon" title="Close tooltip" aria-label="Close tooltip" role="button"><span class="ui-icon ui-icon-close">×</span></a> 
+          <div class="genie3-modal-content col-sm-6 ibContent"> 
+          <div class="col-xs-12">
+            <span ng-if="appName=='vmu'"><h3 class="title"><span class="phoneName">{{ phoneController.ib.curItem.name }} {{phoneController.ib.curItem.selectedColor}} {{phoneController.ib.curItem.selectedMemory}} </span></h3></span>
+            <span ng-if="appName!='vmu'"><h3 class="title"><span class="phoneName">{{ phoneController.ib.curItem.name }}</span><span class="phoneBrand"> {{phoneController.ib.curItem.selectedColor}} </span><span class="phoneBrand"> {{phoneController.ib.curItem.selectedMemory}} </span></h3></span>
+          </div>
+          <div class="col-xs-4">
+            <img class="img-responsive" style="display:none" onload="$(this).show()" alt="{{phoneController.ib.curItem.displayBrand}} {{phoneController.ib.curItem.name}} - {{appDisplayName}}" ng-src="{{phoneController.ib.curItem.selectedVariant.gridImage}}"></img>
+          </div>
+          <div class="col-xs-8">
+            <p class="phoneBody" ng-if="phoneController.ib.curItem.promoIndex!=-1">
+                <b>{{phoneController.ib.curItem.promotions[phoneController.ib.curItem.promoIndex].message.title}}</b>
+                {{phoneController.ib.curItem.promotions[phoneController.ib.curItem.promoIndex].message.body}}
+            </p>
+            <p class="phoneBody" ng-if="phoneController.ib.curItem.promoIndex==-1">
+                <b>{{phoneController.list.message.title}}</b>
+                {{phoneController.list.message.body}}
+            </p>
+            <div class="col-xs-12 prices {{appName}}">
+              <p class="phoneRetailPrice" ng-show="phoneController.ib.curItem.selectedVariant.msrp">
+                  <span class="pull-left">Retail Price</span><span ng-class="{'pull-right light':appName=='vmu' && phoneController.ib.curItem.selectedVariant.discount}">{{phoneController.ib.curItem.selectedVariant.msrp | currency}}</span></p>
+              <p class="phonePromoDiscount" ng-if="appName!='vmu' || phoneController.ib.curItem.selectedVariant.discount">
+                  <span ng-show="phoneController.ib.curItem.selectedVariant.discount" class="pull-left">Promotional discount</span>
+                  <span ng-show="phoneController.ib.curItem.selectedVariant.discount" class="pull-right {{appName=='vmu'&&phoneController.ib.curItem.selectedVariant.discount?'light':''}}">{{phoneController.ib.curItem.selectedVariant.discount|currency}}</span>
+              </p>
+              <ul class="features" ng-if="appName=='bst'">
+                  <li class="fourg" ng-show="phoneController.ib.curItem.filters.indexOf('4GLTE')>-1 || phoneController.details.data.is4g">4g</li>
+                  <li class="threeg" ng-show="phoneController.ib.curItem.filters.indexOf('3G')>-1 || phoneController.details.data.is3g">3g</li>
+                  <li style="visibility:hidden;position:absolute;"></li>
+              </ul>
+              <h2 class="phoneFinalPrice {{appName=='vmu' && phoneController.ib.curItem.selectedVariant.discount?'light':''}}">{{phoneController.ib.curItem.selectedVariant.price|currency:""}}</h2>
+              <span class="limitPerCustomer" ng-if="phoneController.ib.curItem.selectedVariant.purchaseLimit">Limit {{phoneController.ib.curItem.selectedVariant.purchaseLimit}} phones per customer.</span>
+              <div class="installmentBilling" ng-if="phoneController.IB && phoneController.ib.curItem.selectedVariant.ibEligibilityInd">            
+                <p>{{phoneController.ib.curItem.selectedVariant.downPaymentAmount | currency}} today* / </p>
+                <p>{{phoneController.ib.curItem.selectedVariant.ibEmi | currency}} a Month for {{phoneController.ib.curItem.selectedVariant.loanTerm}} months</p>
+                <p>*Excludes Taxes and fees</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 ibBottom">
+            <div class="pull-right">              
+              <a class="pull-left btn btn-primary {{appName=='vmu'?'shop-grid-btn':''}}"
+                 ng-href="{{pathMap._checkout._hash}}addToCart/sku={{phoneController.ib.curItem.selectedVariant.sku}}/"
+                 ng-disabled="phoneController.ib.curItem.selectedVariant==null">Purchase and Pay Now</a>
+              <a class="pull-right btn btn-primary {{appName=='vmu'?'shop-grid-btn':''}}"
+                 ng-href="{{pathMap._checkout._hash}}addToCart/sku={{phoneController.ib.curItem.selectedVariant.sku}}/ib=true"
+                 ng-disabled="phoneController.ib.curItem.selectedVariant==null">Purchase with Installments</a>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  </div>
+  {{handleUIIssue();"";}}
+</div>

@@ -1,0 +1,136 @@
+body{
+	background: url(../img/bg.gif) !important;
+	padding : 0px !important;
+}
+
+hr.blank{
+	border-color: #000 !important;
+}
+
+hr.bottom-line{
+	border-color: #999 !important;
+	margin: 0 !important;
+}
+
+#contents #search-bar{
+	padding: 2px 0px;
+}
+
+#contents #search-bar li{
+	background-color: #1f1f1f;
+	list-style: none;
+	display: inline;
+	color: #919497;
+	padding: 4px 10px 6px 10px;
+	border: 1px solid #000;
+}
+
+#contents #search-bar li.language{
+	padding: 4px 0px 6px 0px;
+}
+
+#contents #search-bar li > a{
+	color: #919497;
+	padding: 4px 10px 6px 10px;
+}
+
+#contents #search-bar li > a:hover{
+	background-color: #4b4b4b;
+	text-decoration: none;
+}
+
+#contents #search-bar li > button{
+	background-color: #1f1f1f;
+}
+
+#contents #search-bar li > input{
+	width: 100px;
+	height: 14px;
+	padding: 2px;
+	border: 0;
+	font-size: 9px;
+	background-color: #4b4b4b !important;
+}
+
+#contents > .contact-menu{
+	padding-top: 7px !important;
+}
+
+#contents > .contact-menu a{
+	font-weight: bold;
+	color: #fff;
+	/*display: table-cell;*/
+	padding: 7px 10px !important;
+}
+
+#contents > .contact-menu a:hover{
+	background-color: #4b4b4b;
+	text-decoration: none;
+}
+
+#contents .title{
+ margin-top: 0px;	
+ clear: both;
+ border-bottom: 0.1em solid #999;
+}
+
+#contents .title h1{
+	font-size: 26px;
+	padding-left: 10px;
+	color: #fff;
+}
+
+#contents .title h1 > span{
+	font-size: 18px;
+	color: #F99100;
+}
+
+.pulldownSinglePull a.collapsed {
+    /*display: block;*/
+	margin-top: 30px !important;
+    padding: 0px 23px 1px 4px;
+    border: 1px solid #3C3C3C;
+    text-decoration: none;
+    color: #7C7C7C;
+    width: 160px;
+}
+
+#instructionalVideos {
+    position: absolute;
+    border: 1px solid #4D4D4D;
+    width: 157px;
+    padding: 0px 0px;
+    margin-top: -16px;
+    background: #101010 url(../img08/support/drop_bg.gif) repeat-x;
+}
+
+.body h2, h3{
+	color: #F99100 !important;
+}
+
+.body h3{
+	font-size: 14px;
+}
+
+.body span{
+	color: #fff;
+}
+
+address{
+	color: #ccc !important;
+}
+
+.footer-menu li{
+	display: inline;
+}
+
+.footer-menu li a{
+	color: #999;
+	text-decoration: underline;
+	padding: 0px 5px;
+	font-size: 10px;
+}
+
+.sm-msg{
+	font-size: 10px;
+}

@@ -1,0 +1,164 @@
+{
+  "responses": {
+    "response": [
+      {
+        "@uuid": "d3073c37-10a5-4702-be79-ee9b745715f8",
+        "@class": "",
+        "@name": "Section 19029",
+        "@code": "0",
+        "deviceResponse": {
+          "mbbList": {
+            "mbb": [
+              {
+                "name": {
+                  "$": "Netgear Fuse Mobile Hotspot"
+                },
+                "externalUrl": {
+                  "$": "netgear-fuse-mobile-hotspot"
+                },
+                "manufacturerName": {
+                  "$": "NETGEAR®"
+                },
+                "filter": {
+                  "$": "NETGEAR®"
+                },
+                "generalAvailabilityDate": {
+                  "$": "20150505"
+                },
+                "disclaimerMini": {
+                  "$": "Promotional pricing available only for select wi-fi hotspots directly from boostmobile.com. Limited time only, while supplies last."
+                },
+                "deviceType": {
+                  "$": "mbb"
+                },
+                "sku": {
+                  "$": "NTGR779ABB"
+                },
+                "discount": {
+                  "$": "0"
+                },
+                "price": {
+                  "$": "49.99"
+                },
+                "inventory": {
+                  "$": "out-of-stock"
+                },
+                "heroImage": {
+                  "fileName": {
+                    "$": "hero"
+                  },
+                  "uRI": {
+                    "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/j/a/A-LjFleJYfxQ2_phoneDetails_2_hero.png?action=access&assetId=A-4pt3PtXBVEY"
+                  }
+                },
+                "purchaseLimit": {
+                  "$": "0"
+                },
+                "hiddenPrice": {
+                  "$": "false"
+                },
+                "ReviewStatistics": {
+                  "TotalReviewCount": {
+                    "$": "68"
+                  },
+                  "AverageOverallRating": {
+                    "$": "2.9118"
+                  },
+                  "OverallRatingRange": {
+                    "$": "5"
+                  }
+                }
+              },
+              {
+                "name": {
+                  "$": "R850 Mobile Hotspot"
+                },
+                "externalUrl": {
+                  "$": "r850-mobile-hotspot"
+                },
+                "manufacturerName": {},
+                "filter": {},
+                "generalAvailabilityDate": {
+                  "$": "20150127"
+                },
+                "disclaimerMini": {
+                  "$": "Promotional pricing available only for select wi-fi hotspots directly from virginmobile.com. Limited time only, while supplies last."
+                },
+                "deviceType": {
+                  "$": "mbb"
+                },
+                "compareImage": [
+                  {
+                    "fileName": {
+                      "$": "compare"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/f/a/A-GPPleJYfxQ2_compare_1_compare.png?action=access&assetId=A-lLz3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "compare_thumb"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/j/d/a/A-GPPleJYfxQ2_compare_2_compare_thumb.jpg?action=access&assetId=A-lLz3PtXBVEY"
+                    }
+                  }
+                ],
+                "sku": {
+                  "$": "FRKR850ABB"
+                },
+                "discount": {
+                  "$": "0"
+                },
+                "price": {
+                  "$": "49.99"
+                },
+                "inventory": {
+                  "$": "in-stock"
+                },
+                "heroImage": {
+                  "fileName": {
+                    "$": "hero"
+                  },
+                  "uRI": {
+                    "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/d/g/A-GPPleJYfxQ2_phoneDetails_3_hero.png?action=access&assetId=A-lLz3PtXBVEY"
+                  }
+                },
+                "shopGridPicture": {
+                  "fileName": {
+                    "$": "shop"
+                  },
+                  "uRI": {
+                    "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/a/f/A-GPPleJYfxQ2_shopGrid_1_shop.png?action=access&assetId=A-lLz3PtXBVEY"
+                  }
+                },
+                "purchaseLimit": {
+                  "$": "0"
+                },
+                "hiddenPrice": {
+                  "$": "false"
+                },
+                "ReviewStatistics": {
+                  "TotalReviewCount": {
+                    "$": "0"
+                  },
+                  "AverageOverallRating": {},
+                  "OverallRatingRange": {
+                    "$": "5"
+                  }
+                }
+              }
+            ],
+            "status": {
+              "$": "0"
+            },
+            "description": {
+              "$": "SUCCESS"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

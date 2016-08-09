@@ -1,0 +1,282 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "07229ad1-0008-4a8e-9672-8c4c4472a135",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"comparePhoneResponse": {
+				"comparePhoneList": {
+					"comparePhone": {
+						"id": {
+							"$": "lg-volt-2"
+						},
+						"generalFeatures": [{
+							"title": {
+								"$": "Android 5.1 (Lollipop)"
+							},
+							"description": {
+								"$": "Fast, customizable, smooth. Enjoy the speed and simplicity of the powerful Android operating system. "
+							},
+							"type": {
+								"$": "android"
+							}
+						},
+						{
+							"title": {
+								"$": "5.0\" HD Display"
+							},
+							"type": {
+								"$": "display"
+							}
+						},
+						{
+							"title": {
+								"$": "8MP rear-facing camera w\/ 5MP front-facing camera"
+							},
+							"type": {
+								"$": "camera"
+							}
+						},
+						{
+							"title": {
+								"$": "true"
+							},
+							"type": {
+								"$": "wifi"
+							}
+						},
+						{
+							"title": {
+								"$": "Tri-Mode 3G\/4G LTE\/Enhanced LTE"
+							},
+							"type": {
+								"$": "4g"
+							}
+						},
+						{
+							"title": {
+								"$": "false"
+							},
+							"type": {
+								"$": "hotspot"
+							}
+						},
+						{
+							"title": {
+								"$": "Virtual"
+							},
+							"type": {
+								"$": "qwerty-keyboard"
+							}
+						},
+						{
+							"title": {
+								"$": "HTML"
+							},
+							"description": {
+								"$": "Go anywhere on the web with this sleek browser optimized for mobile use."
+							},
+							"type": {
+								"$": "web-browser"
+							}
+						},
+						{
+							"title": {
+								"$": "Gmail<sup>®<\/sup>, MSN<sup>®<\/sup>, Yahoo<sup>®<\/sup>, Hotmail<sup>®<\/sup>, Microsoft<sup>®<\/sup> Exchange Active Sync<sup>®<\/sup>"
+							},
+							"type": {
+								"$": "email"
+							}
+						},
+						{
+							"title": {
+								"$": "true"
+							},
+							"type": {
+								"$": "video"
+							}
+						},
+						{
+							"title": {
+								"$": "Android Music Player"
+							},
+							"type": {
+								"$": "music-player"
+							}
+						},
+						{
+							"title": {
+								"$": "true"
+							},
+							"type": {
+								"$": "gps"
+							}
+						},
+						{
+							"title": {
+								"$": "true"
+							},
+							"type": {
+								"$": "speakerphone"
+							}
+						},
+						{
+							"title": {
+								"$": "1GB RAM\/8GB ROM<br>Supports microSD™ card up to 32GB (card not included)"
+							},
+							"type": {
+								"$": "memory"
+							}
+						},
+						{
+							"title": {
+								"$": "1.2GHz Quad-core processor"
+							},
+							"type": {
+								"$": "processor"
+							}
+						},
+						{
+							"title": {
+								"$": "true"
+							},
+							"type": {
+								"$": "calendar"
+							}
+						},
+						{
+							"title": {
+								"$": "true"
+							},
+							"type": {
+								"$": "visual-voicemail"
+							}
+						},
+						{
+							"title": {
+								"$": "true"
+							},
+							"type": {
+								"$": "3g"
+							}
+						},
+						{
+							"title": {
+								"$": "Stereo"
+							},
+							"description": {
+								"$": "No wires? No worries. Wirelessly connect your earpiece, share files and more."
+							},
+							"type": {
+								"$": "bluetooth"
+							}
+						}],
+						"technicalFeatures": {
+							"os": {
+								"$": "Android™ 5.1"
+							},
+							"processor": {
+								"$": "1.2GHz Quad-core processor"
+							},
+							"memory": {
+								"$": "1GB RAM \/ 8GB ROM<br\/>Supports microSD&trade; card up to 32GB (card not included)"
+							},
+							"group": [{
+								"@id": "dimensions",
+								"order": {
+									"$": "1"
+								},
+								"specs": {
+									"spec": [{
+										"@order": "1",
+										"@type": "height",
+										"$": "5.50\""},{"@order":"2","@type":"depth","$":"0.40\""
+									},
+									{
+										"@order": "3",
+										"@type": "width",
+										"$": "2.75\""},{"@order":"4","@type":"weight","$":"4.8oz"},{"@order":"5","@type":"screen_size","$":"5.0\" HD display"
+									}]
+								}
+							},
+							{
+								"@id": "battery",
+								"order": {
+									"$": "2"
+								},
+								"specs": {
+									"spec": [{
+										"@order": "1",
+										"@type": "talking_time",
+										"$": "21 hrs"
+									},
+									{
+										"@order": "2",
+										"@type": "battery_type",
+										"$": "2540 mAh Li-Ion Battery"
+									},
+									{
+										"@order": "3",
+										"@type": "removable",
+										"$": "Yes"
+									}]
+								}
+							},
+							{
+								"@id": "whats_included",
+								"order": {
+									"$": "3"
+								},
+								"specs": {
+									"spec": [{
+										"@order": "1",
+										"@type": "regular",
+										"$": "LG Volt 2 Handset"
+									},
+									{
+										"@order": "2",
+										"@type": "regular",
+										"$": "2540 mAh Li-Ion Battery"
+									},
+									{
+										"@order": "3",
+										"@type": "regular",
+										"$": "Charger"
+									},
+									{
+										"@order": "4",
+										"@type": "regular",
+										"$": "USB Cable"
+									},
+									{
+										"@order": "4",
+										"@type": "regular",
+										"$": "Printed Materials"
+									}]
+								}
+							}]
+						},
+						"ReviewStatistics": {
+							"TotalReviewCount": {
+								"$": "77"
+							},
+							"AverageOverallRating": {
+								"$": "4.5195"
+							},
+							"OverallRatingRange": {
+								"$": "5"
+							}
+						}
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

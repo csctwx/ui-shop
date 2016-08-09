@@ -1,0 +1,56 @@
+{  
+  "addressValid":true,
+  "paymentValid":true,
+  "orderCode":[
+    {
+    "promoCode":"PROMO_33",
+    "promoShippingFee":"0",
+    "promoName":"Free Shipping 4U!",
+    "promoLegalese":"Offer valid next door to store."
+    }
+  ],
+   "equipments":[
+      {
+        "modelId":"SPHG360ASB",
+        "modelPrice":"99.99",
+        "orderLineId":"1",
+        "isPreOrder":"false",
+        "accessoryInd":"false",
+        "quantity":"2",
+        "subTotal":"169.98",
+        "tax":"14.02",
+        "taxTransactionId":1000494542,
+        "invoiceDate":"2015-05-25",
+        "promoCodes": [
+          {
+            "promoCode":"PROMO_11",
+            "promotionName":"Friendly Neighbor Discount for 20% off",
+            "promoLegalese":"Offer only valid in neighborhoods that have a dog park",           
+            "eligibleQuantity":"1",
+            "promoAmount":"20"
+          },
+          {
+            "promoCode":"PROMO_22",
+            "promotionName":"Good Student Discount Discount for $10 off",
+            "promoLegalese":"Offer only good for students maintaing 1.0 GPA",
+            "eligibleQuantity":"1",
+            "promoAmount":"10"
+          }
+        ]
+      },
+      { 
+        "modelId":"LGLS660ASB",
+        "modelPrice":79.99,
+        "orderLineId":2,
+        "isPreOrder":false,
+        "accessoryInd":false,
+        "quantity":1,
+        "tax":6.60,
+        "subTotalAmt":86.59,
+        "taxTransactionId":1000494543,
+        "invoiceDate":"2015-05-25"
+      }
+  ],
+  "status":"0",
+  "description":"SUCCESS"
+}

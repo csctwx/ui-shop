@@ -1,0 +1,26 @@
+<div id="locatorFeatured">
+  <h2 class="font-boostneo title">Featured Boost Mobile Stores</h2>
+  <ul>
+    <li ng-repeat="item in storeController.featuredList" class="col-sm-4">
+      <h2>{{item.name}}</h2>
+      <div class="hidden-xs" style="padding-bottom: 7px;">
+        <store-options ng-model="item"></store-options>
+      </div>
+      <div>
+        <a class="address" target="_blank" href="http://maps.google.com/maps?q={{item.addressLine}} {{item.city}} {{item.state}}, {{item.zipCode}} " title="Maps &amp; directions to Boost Mobile Store by FSS INC">
+          <span>{{item.addressLine}}</span> <br/> 
+          <span>{{item.city}}</span>
+          <span>{{item.state}}</span>, 
+          <span>{{item.zipCode}}</span> 
+        </a>
+      </div>
+      <div class="phone-number">{{item.phoneNumber}}</div>
+      <div> Distance: <strong>{{item.distance}}</strong> </div>
+      <div class="hidden-xs">
+        <div class="icons icon-pin"></div>
+        <a class="map" target="_blank" href="http://maps.google.com/maps?q={{item.addressLine}} {{item.city}} {{item.state}}, {{item.zipCode}} " title="Maps &amp; directions to Boost Mobile Store by FSS INC"> Maps &amp; Directions </a> 
+      </div>
+    </li>
+  </ul>
+  <div style="clear:both;"></div>
+</div>

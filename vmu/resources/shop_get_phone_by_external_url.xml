@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<responses>
+   <response uuid="d51026f8-fe19-41d1-9726-2d35d7bf4665" class="" name="Section 19029" code="0">
+      <getPhoneDetailsResponse>
+   <phoneDetails>
+      <phoneDetail>
+         <phoneName>Samsung Galaxy J3 (2016)</phoneName>
+         <manufacturerName>Samsung</manufacturerName>
+         <extendedDescription>Packed with essentials, the Samsung Galaxy J3 (2016) has all you need to do everything you want. Connect with friends and surf the web on a vibrant, 5-inch HD display. Listen, watch and game - on the go - with expandable memory up to 128GB. And get to everything quickly with Easy Mode.</extendedDescription>
+         <description>Packed with essentials, the Samsung Galaxy J3 (2016) has all you need to do everything you want. Connect with friends and surf the web on a vibrant, 5-inch HD display. Listen, watch and game - on the go - with expandable memory up to 128GB. And get to everything quickly with Easy Mode.</description>
+         <isRedVentures>true</isRedVentures>
+         <phoneType>android</phoneType>
+         <findInStoreFlag>false</findInStoreFlag>
+         <phoneViewImages>
+            <phoneViewImage>
+               <fileName>hero</fileName>
+               <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/a/f/c/A-lAPleJYfxQ2_phoneDetails_3_hero.png?action=access&amp;assetId=A-f5ezDeRbZSZ</uRI>
+            </phoneViewImage>
+            <phoneViewImage>
+               <fileName>samsunggalaxyj32016-gallery-angle-1</fileName>
+               <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/j/f/h/A-lAPleJYfxQ2_phoneDetails_1_samsunggalaxyj32016-gallery-angle-1.jpg?action=access&amp;assetId=A-f5ezDeRbZSZ</uRI>
+            </phoneViewImage>
+            <phoneViewImage>
+               <fileName>samsunggalaxyj32016-gallery-angle-4</fileName>
+               <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/h/i/g/A-lAPleJYfxQ2_phoneDetails_2_samsunggalaxyj32016-gallery-angle-4.jpg?action=access&amp;assetId=A-f5ezDeRbZSZ</uRI>
+            </phoneViewImage>
+         </phoneViewImages>
+         <phoneVariants>
+            <phoneVariant>
+               <sku>SMJ320PAVB</sku>
+               <parent>true</parent>
+               <price>179.99</price>
+               <inventory>out-of-stock</inventory>
+               <isDefault>true</isDefault>
+               <shopGridPicture>
+                  <fileName>shop</fileName>
+                  <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/e/h/i/A-lAPleJYfxQ2_shopGrid_1_shop.png?action=access&amp;assetId=A-f5ezDeRbZSZ</uRI>
+               </shopGridPicture>
+               <heroImage>
+                  <fileName>hero</fileName>
+                  <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/a/f/c/A-lAPleJYfxQ2_phoneDetails_3_hero.png?action=access&amp;assetId=A-f5ezDeRbZSZ</uRI>
+               </heroImage>
+               <hiddenPrice>false</hiddenPrice>
+            </phoneVariant>
+         </phoneVariants>
+         <sku>SMJ320PAVB</sku>
+         <externalUrl>samsung-galaxy-j3-2016-phone</externalUrl>
+         <meta>
+            <title>Samsung Galaxy J3 (2016) Android 4G LTE Phone Specs | Virgin Mobile USA</title>
+            <description>The new Samsung Galaxy J3 (2016) includes a beautiful 5.0" HD display, 1.2GHz Quad-core processor, 5MP Rear Camera, HD Voice, and expandable memory - available with an unlimited, prepaid, no contract plan from Virgin Mobile.</description>
+            <keywords>Samsung Galaxy J3, Samsung Galaxy, J3 (2016) prepaid cell phone, no contract phone, 4G LTE Android, virgin mobile, Smartphone, Smartphones, Android, Android Phones, Android Phone, Android Smartphone, Cell Phone, Cell Phones, Mobile Phone, Mobile Phones, Phone, Phones,  Touchscreen, Android, 4G LTE Phone</keywords>
+         </meta>
+         <phoneCondition>new</phoneCondition>
+         <footerLegal>&lt;span>&amp;#169;2013 Samsung Telecommunications America, LLC. Samsung, Galaxy S and AMOLED are trademarks of Samsung Electronics Co., Ltd. All other marks are property of their respective owners.&lt;/span></footerLegal>
+         <planType>
+            <planTypeId>beyond-talk</planTypeId>
+            <brandId>VMU</brandId>
+            <title>Virgin Mobile Unlimited Plans</title>
+            <shortDescription>Virgin Mobile Unlimited Plans</shortDescription>
+            <longDescription>Virgin Mobile Unlimited Plans</longDescription>
+         </planType>
+      </phoneDetail>
+      <phoneDetail>
+         <phoneName>SAMSUNG GALAXY J3 (2016)</phoneName>
+         <manufacturerName>Samsung</manufacturerName>
+         <extendedDescription>Packed with essentials, the Samsung Galaxy J3 (2016) has all you need to do everything you want. Connect with friends and surf the web on a vibrant, 5-inch HD display. Listen, watch and game - on the go - with expandable memory up to 128GB. And get to everything quickly with Easy Mode.</extendedDescription>
+         <description>Packed with essentials, the Samsung Galaxy J3 (2016) has all you need to do everything you want. Connect with friends and surf the web on a vibrant, 5-inch HD display. Listen, watch and game - on the go - with expandable memory up to 128GB. And get to everything quickly with Easy Mode.</description>
+         <isRedVentures>true</isRedVentures>
+         <phoneType>android</phoneType>
+         <findInStoreFlag>false</findInStoreFlag>
+         <phoneViewImages>
+            <phoneViewImage>
+               <fileName>hero</fileName>
+               <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/b/f/f/A-lAPleJYfxQ2_phoneDetails_3_hero.png?action=access&amp;assetId=A-E6ezDeRbZSZ</uRI>
+            </phoneViewImage>
+            <phoneViewImage>
+               <fileName>samsunggalaxyj32016-gallery-angle-1</fileName>
+               <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/i/e/e/A-lAPleJYfxQ2_phoneDetails_1_samsunggalaxyj32016-gallery-angle-1.jpg?action=access&amp;assetId=A-E6ezDeRbZSZ</uRI>
+            </phoneViewImage>
+            <phoneViewImage>
+               <fileName>samsunggalaxyj32016-gallery-angle-4</fileName>
+               <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/f/b/e/A-lAPleJYfxQ2_phoneDetails_2_samsunggalaxyj32016-gallery-angle-4.jpg?action=access&amp;assetId=A-E6ezDeRbZSZ</uRI>
+            </phoneViewImage>
+         </phoneViewImages>
+         <phoneVariants>
+            <phoneVariant>
+               <sku>SMJ320PAVB</sku>
+               <parent>true</parent>
+               <price>179.99</price>
+               <inventory>out-of-stock</inventory>
+               <isDefault>true</isDefault>
+               <shopGridPicture>
+                  <fileName>shop</fileName>
+                  <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/h/c/g/A-lAPleJYfxQ2_shopGrid_1_shop.png?action=access&amp;assetId=A-E6ezDeRbZSZ</uRI>
+               </shopGridPicture>
+               <heroImage>
+                  <fileName>hero</fileName>
+                  <uRI>http://media-vip:8081/repository/store/P-d0avx1PuX34/b/f/f/A-lAPleJYfxQ2_phoneDetails_3_hero.png?action=access&amp;assetId=A-E6ezDeRbZSZ</uRI>
+               </heroImage>
+               <hiddenPrice>false</hiddenPrice>
+            </phoneVariant>
+         </phoneVariants>
+         <sku>SMJ320PAVB</sku>
+         <externalUrl>samsung-galaxy-j3-2016-phone</externalUrl>
+         <meta>
+            <title>Samsung Galaxy J3 (2016) Android 4G LTE Phone Specs | Virgin Mobile USA</title>
+            <description>The new Samsung Galaxy J3 (2016) includes a beautiful 5.0" HD display, 1.2GHz Quad-core processor, 5MP Rear Camera, HD Voice, and expandable memory - available with an unlimited, prepaid, no contract plan from Virgin Mobile.</description>
+            <keywords>Samsung Galaxy J3, Samsung Galaxy, J3 (2016) prepaid cell phone, no contract phone, 4G LTE Android, virgin mobile, Smartphone, Smartphones, Android, Android Phones, Android Phone, Android Smartphone, Cell Phone, Cell Phones, Mobile Phone, Mobile Phones, Phone, Phones,  Touchscreen, Android, 4G LTE Phone</keywords>
+         </meta>
+         <phoneCondition>new</phoneCondition>
+         <footerLegal>&lt;span>&amp;#169;2013 Samsung Telecommunications America, LLC. Samsung, Galaxy S and AMOLED are trademarks of Samsung Electronics Co., Ltd. All other marks are property of their respective owners.&lt;/span></footerLegal>
+         <planType>
+            <planTypeId>beyond-talk</planTypeId>
+            <brandId>VMU</brandId>
+            <title>Virgin Mobile Unlimited Plans</title>
+            <shortDescription>Virgin Mobile Unlimited Plans</shortDescription>
+            <longDescription>Virgin Mobile Unlimited Plans</longDescription>
+         </planType>
+      </phoneDetail>
+   </phoneDetails>
+   <status>0</status>
+   <description>SUCCESS</description>
+</getPhoneDetailsResponse>
+   </response>
+</responses>

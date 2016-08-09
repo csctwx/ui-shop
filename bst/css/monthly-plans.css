@@ -1,0 +1,84 @@
+/*
+
+div.tab-content div#monthlyplans.tab-pane section:first-of-type{
+    background: url(../img/monthly-unlimited.jpg) top left no-repeat;
+    background-size:cover;
+    padding: 130px 52% 0 30px;
+    color: #000000;
+    height: 272px;
+}
+*/
+
+div.tab-content div#monthlyplans.tab-pane section:first-of-type{
+    background: url(../img/plans/monthly-unlimited-bg.png) top left no-repeat;
+    background-size:cover;
+    padding: 130px 52% 0 30px;
+    color: #000000;
+    height: 272px;
+}
+
+span.plans-now-include{
+    font-family: BoostNeoBlack,Arial,Helvetica,sans-serif!important;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #777;
+    padding:9px 16px;
+}
+
+div.plans-box{
+	padding-top: 20px;
+	background: linear-gradient(0deg, #eee, #fff);
+}
+
+div.plans-box > div.plans-content{
+	padding: 0px 5px 0px 0px;
+	width: 29%;
+	float: left;
+}
+
+div.plans-box > div.plans-content strong{font-family: 'BoostNeoBlack';}
+
+div.plans-box > div.plans-content span{: float: left; font-size: 14px;}
+div.plans-box > div.plans-content p{
+	width: 90%;
+	float: right;
+	margin-top: 0px !important;
+	font-family:'Boost_bold', Helvetica, Arial, sans-serif !important;
+	font-size: 16px;
+}
+
+div.align_contentPrincipalText{
+    padding:0 30px!important;
+    color: #000000;
+    font: 400 13px / 16px Arial;
+}
+
+section > div.btn-box{
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+section > div.btn-box h3{
+	font-family: BoostNeoBlack,Arial,Helvetica,sans-serif !important;
+}
+section > div.btn-box h3, section > div.btn-box p{
+	margin: 0px !important;
+}
+
+section > div.btn-box a{
+	color: #F7901E;
+}
+
+div.tab-content div#monthlyplans.tab-pane.active section h1{ 
+        color: #f7901e; 
+        font-family: "Boost_bold",Helvetica,Arial,sans-serif !important; 
+        font-weight: 500; 
+        line-height: 1.1; 
+        font-size: 25px; 
+		background: none;
+		margin: 0;
+		padding: 0;
+}
+

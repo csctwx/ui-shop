@@ -1,0 +1,17 @@
+<html><head><title>Version Rdev-DEV_20160525153546</title></head><body><pre>
+      VERSION=Rdev-DEV_20160525153546
+      PRODUCT=Shop
+BUILD_VERSION=Rdev
+BUILD_RELEASE=DEV_20160525153546
+     JOB_NAME=
+ JAVA_VERSION=R1.1
+  WAP_VERSION=
+  MYA_VERSION=R5.2.0.9
+      PACKAGE=Deliverables-shop
+    BUILD_URL=
+ BUILD_NUMBER=
+   BUILD_DATE=Wed May 25 15:35:48 2016
+  STREAM_NAME=
+  STREAM_NAME=
+      SRC_TAG=
+</pre></body></html>

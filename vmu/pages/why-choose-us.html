@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="HandheldFriendly" content="True"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="description" content=""/>
+		<meta name="author" content=""/>
+		<meta name="page-title" content="">
+		<title>Virgin Mobile Extras | Virgin Mobile</title>
+		<link rel="shortcut icon" href="vmu/img/favicon.ico"/>
+		<link href="vmu/css/why-choose-us.css" rel="stylesheet" />
+		<script src="vmu/js/lib/jquery.min.js"></script>
+		<script src="vmu/js/lib/wcu-carousel.js"></script>
+		<style>
+			@media (min-width: 992px){
+				#panel2 h2.panel2-h2{
+					font: 30px/30px "ProximaNova-Regular-Italic";
+					color: #fff;
+					text-transform: uppercase;
+					text-align: left;
+					padding: 30px 0px 0px 45px !important;
+				}
+				#panel2 h4.panel2-h4{
+					font: 22px/22px "ProximaNova-Regular-Italic";
+					color: #fff;
+					text-transform: uppercase;
+					padding: 0px 35px;
+				}
+				#panel2 .data-pane {
+					position: absolute;
+					left: 30px;
+					top: 363px;
+				}
+				#panel2 .xtra-pane {
+					position: absolute;
+					left: 326px;
+					top: 363px;
+					width: 250px;
+				}
+				#panel2 p.note {
+					font: italic 10px/11px Arial, Helvetica, sans-serif !important;
+					text-transform: none !important;
+					color: #ddd;
+					padding: 0px;
+					margin: 0px;
+					position: absolute;
+					left: 35px;
+					top: 325px;
+				}
+				#panel2 .data-pane p.data-disclaimer {
+					font: 12px/12px 'ProximaNova-Regular', sans-serif;
+					color: #fff;
+					margin:8px 5px 10px;
+				}
+				#panel2 a.butt-more {
+					position: absolute;
+					left: 670px;
+					top: 255px;
+					width: 140px;
+					background: url("vmu/img/iphone/deals-bt-btn-bg.gif") repeat-x 0 0;
+					font: 13px/27px 'ProximaNova-Semibold', sans-serif;
+					color: #fff;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+				#panel2 .data-pane span.data-offer {
+					font: 16px/16px 'ProximaNova-Semibold', sans-serif;
+					color: #fff;
+					padding: 0 30px 0 10px;
+				}
+				#panel2 .xtra-pane div.xtra-left {
+					position: absolute;
+				}
+				#panel2 .xtra-pane div.xtra-right {
+					position: absolute;
+					left: 131px;
+				}
+				#panel2 .xtra-pane a.xtra-link {
+					font: 12px/12px 'ProximaNova-Regular', sans-serif;
+					color: #fff;
+					text-decoration: none;
+					margin: 0 0 7px 20px;
+					display: block;
+					text-align: left !important;
+				}
+				#panel2 .xtra-pane div.xtra-additional {
+					position: absolute;
+					top: 60px;
+				}
+				#panel2 .xtra-pane a.xtra-services-link {
+					font: 14px/14px 'ProximaNova-Semibold', sans-serif;
+					color: #fff;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+			@media(max-width: 991px){
+				#why-choose-us div.panel#panel2{
+					background: url('vmu/img/why-choose-us/panel2-bg-em.jpg') no-repeat 0 0 !important;
+					background-size: cover !important;
+				}
+				#panel2 h2.panel2-h2{
+					font: 30px/30px "ProximaNova-Regular-Italic";
+					color: #fff;
+					text-transform: uppercase;
+					text-align: center;
+					padding: 30px 0px 0px !important;
+				}
+				#panel2 h4.panel2-h4{
+					font: 22px/22px "ProximaNova-Regular-Italic";
+					text-align: center;
+					color: #fff;
+					text-transform: uppercase;
+					padding: 0px;
+				}
+				#panel2 img.visible-sm{margin: 0 auto;}
+				#panel2 a.butt-more {
+					padding: 5px 20px;
+					width: 140px;
+					background: url("vmu/img/iphone/deals-bt-btn-bg.gif") repeat-x 0 0;
+					font: 13px/27px 'ProximaNova-Semibold', sans-serif;
+					color: #fff;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+				#panel2 .data-header{text-align: center;}
+				#panel2 .data-pane p.data-disclaimer {
+					font: 12px/12px 'ProximaNova-Regular', sans-serif;
+					color: #fff;
+					margin:8px 5px 10px;
+					text-align: center;
+				}
+				#panel2 .xtra-header{text-align: center;padding-top: 10px;}
+				#panel2 p.note{
+					color: #fff;
+					font-size: 11px !important;
+					margin-top: 0px;
+				}
+				
+				
+				
+				#panel2 .data-pane span.data-offer {
+					font: 16px/16px 'ProximaNova-Semibold', sans-serif;
+					color: #fff;
+					padding: 0 30px 0 10px;
+				}
+				#panel2 .xtra-pane a.xtra-link {
+					font: 12px/12px 'ProximaNova-Regular', sans-serif;
+					color: #fff;
+					text-decoration: none;
+					margin: 0 0 7px 20px;
+					display: block;
+					text-align: center !important;
+				}
+				#panel2 .xtra-pane a.xtra-services-link {
+					font: 14px/14px 'ProximaNova-Semibold', sans-serif;
+					color: #fff;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+				
+				
+				
+			}
+			
+			@media(max-width:534px){
+				#panel2 img.visible-sm.data{
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+    
+	<ol id="page-path" class='breadcrumb hidden-xs'>
+		<li class='ng-scope'>
+			<a class='ng-binding' href='#!/'>Home</a>
+		</li>
+		<li class='active ng-binding'>Why Choose Us</li>
+		<div class="topControls ng-scope" ng-if="appName=='vmu'">
+			<a href="#" class="print">Print</a>
+			<div class="addthis_toolbox addthis_default_style social">
+				<a href="#" title="Google Bookmark" target="_blank" class="addthis_button_google at300b"><span style="background-color: rgb(66, 133, 244); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Google Bookmark" title="Google Bookmark" style="width: 16px; height: 16px;" class="at-icon at-icon-google" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path fill-rule="evenodd" d="M16.01 14.197h9.38c.14.63.25 1.222.25 2.054 0 5.723-3.838 9.79-9.62 9.79C10.49 26.04 6 21.553 6 16.02 6 10.49 10.49 6 16.02 6c2.706 0 4.97.992 6.704 2.615l-2.846 2.766c-.72-.68-1.984-1.482-3.858-1.482-3.316 0-6.022 2.756-6.022 6.132 0 3.377 2.706 6.133 6.022 6.133 3.838 0 5.25-2.655 5.512-4.23H16.01v-3.736z"></path></g></svg></span></a>
+				<a href="#" title="Facebook" class="addthis_button_facebook at300b"><span style="background-color: rgb(59, 89, 152); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Facebook" title="Facebook" style="width: 16px; height: 16px;" class="at-icon at-icon-facebook" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path fill-rule="evenodd" d="M21 6.144C20.656 6.096 19.472 6 18.097 6c-2.877 0-4.85 1.66-4.85 4.7v2.62H10v3.557h3.247V26h3.895v-9.123h3.234l.497-3.557h-3.73v-2.272c0-1.022.292-1.73 1.858-1.73h2V6.143z"></path></g></svg></span></a>
+				<a href="#" title="Tweet" class="addthis_button_twitter at300b"><span style="background-color: rgb(29, 161, 242); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Twitter" title="Twitter" style="width: 16px; height: 16px;" class="at-icon at-icon-twitter" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path d="M26.67 9.38c-.78.35-1.63.58-2.51.69.9-.54 1.6-1.4 1.92-2.42-.85.5-1.78.87-2.78 1.06a4.38 4.38 0 0 0-7.57 3c0 .34.04.68.11 1-3.64-.18-6.86-1.93-9.02-4.57-.38.65-.59 1.4-.59 2.2 0 1.52.77 2.86 1.95 3.64-.72-.02-1.39-.22-1.98-.55v.06c0 2.12 1.51 3.89 3.51 4.29a4.37 4.37 0 0 1-1.97.07c.56 1.74 2.17 3 4.09 3.04a8.82 8.82 0 0 1-5.44 1.87c-.35 0-.7-.02-1.04-.06a12.43 12.43 0 0 0 6.71 1.97c8.05 0 12.45-6.67 12.45-12.45 0-.19-.01-.38-.01-.57.84-.62 1.58-1.39 2.17-2.27z"></path></g></svg></span></a>
+				<a href="#" title="Pinterest" target="_blank" class="addthis_button_pinterest_share at300b"><span style="background-color: rgb(203, 32, 39); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Pinterest" title="Pinterest" style="width: 16px; height: 16px;" class="at-icon at-icon-pinterest" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path d="M15.06 24.81c2.22 1.69 6.29.67 8.04-.84 2.53-2.17 3.7-6.57 3.33-10.06-.42-3.9-4.04-7.34-8.32-7.82-6.58-.74-12.57 3.32-12.61 9.77-.02 3.04.95 4.95 3.6 6.01 1.81-1.81-.34-2.99-.56-5.03-.56-5.42 5.84-10.64 11.51-7.26 3.96 2.35 3.28 12.44-1.52 13.41-.96.19-2.16-.11-2.63-.56-2.28-2.16 1.89-5.95.55-9.08-1.16-2.72-4.49-.54-4.85 1.81-.19 1.28.41 2.51.42 3.63.01 2.66-1.65 6.29-2.08 8.94-.16 1.03-.31 3.15-.07 4.23l-.04.04h1.74c1.22-2.08 2.05-5.21 2.67-7.89.38-.29.52.46.82.7z"></path></g></svg></span></a>
+				<a href="#" title="Email" target="_blank" class="addthis_button_email at300b"><span style="background-color: rgb(132, 132, 132); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Email" title="Email" style="width: 16px; height: 16px;" class="at-icon at-icon-email" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><g fill-rule="evenodd"></g><path d="M26 22.006c0 1.1-.898 1.994-1.99 1.994H7.99C6.89 24 6 23.105 6 22.006V14.03c0-.55.388-.77.872-.486l7.887 4.6c.71.415 1.77.415 2.48 0l7.888-4.6c.482-.28.872-.052.872.485v7.976z"></path><path d="M26 9.994C26 8.894 25.11 8 24.01 8H7.99C6.9 8 6 8.893 6 9.994v.303c0 .553.385 1.226.86 1.504l8.655 5.05c.243.14.727.14.97 0l8.654-5.05c.474-.277.86-.943.86-1.503v-.303z"></path></g></svg></span></a>
+				<a href="#" title="LinkedIn" target="_blank" class="addthis_button_linkedin at300b"><span style="background-color: rgb(0, 119, 181); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="LinkedIn" title="LinkedIn" style="width: 16px; height: 16px;" class="at-icon at-icon-linkedin" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path fill-rule="evenodd" d="M25 24.967h-3.77v-5.902c0-1.407-.025-3.217-1.96-3.217-1.963 0-2.263 1.534-2.263 3.117v6.002H13.24V12.832h3.615v1.66h.053c.502-.955 1.733-1.96 3.567-1.96 3.82 0 4.525 2.512 4.525 5.78v6.655zM8.988 11.174a2.186 2.186 0 0 1 0-4.374 2.187 2.187 0 0 1 0 4.374zm-1.89 1.658h3.777v12.135H7.1V12.832z"></path></g></svg></span></a>
+				<a href="#" class="addthis_button_compact at300m"><span style="background-color: rgb(255, 101, 80); line-height: 16px; height: 16px; width: 16px;" class="at-icon-wrapper"><svg alt="Compact" title="Compact" style="width: 16px; height: 16px;" class="at-icon at-icon-addthis" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><path fill-rule="evenodd" d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z"></path></g></svg></span></a>
+				<a tabindex="1000" href="#" style="display: inline-block;" class="addthis_counter addthis_bubble_style"><a style="display: none;" href="#" title="View more services" target="_blank" class="addthis_button_expanded"></a></a>
+			<div class="atclear"></div></div>
+		</div>
+	<body>
+	</ol> 
+		<div id="why-choose-us">
+            <!-- Start Page Navigation -->
+            <div class="nav sticky" style="left: 150px;">
+                <ol id="sticky-menu" class="expanded">
+                    <li id="nav1" data-target-panel="1" class="active" style="width: 284px;"><span>1</span> More Data + Music</li>
+                    <!--<li id="nav2" data-target-panel="2"><span>2</span> All-Star Phones</li>-->
+                    <li id="nav2" data-target-panel="2" class="" style="width: 284px;"><span>2</span> No Contract Plans</li>
+					<li id="nav3" data-target-panel="3" class="" style="width: 284px;"><span>3</span> Virgin Extras</li>
+					<li id="nav4" data-target-panel="4" class="" style="width: 284px;"><span>4</span> LTE Speed</li>
+                    
+                    <!--<li id="nav5" data-target-panel="5"><span>5</span> Us Vs. Them</li>-->
+                    <!--<li id="nav6" data-target-panel="6"><span>6</span> At Your Service</li>-->
+                    
+                    <!--<li id="nav5" data-target-panel="5"><span>5</span> Customize Your Plan</li>-->
+                    <li id="nav5" data-target-panel="5" style="width: 284px;"><span>5</span> And More</li>
+                </ol>
+            </div>
+            <!-- Start Page Navigation -->
+        
+            <div class="panel" id="panel1">
+                <!--<div class="test" "clear-fix">-->
+                <header>	
+                    <!--div class="breadcrumbs"><a href="/home.html">Home</a> &nbsp;&gt;&nbsp; <span>Why Choose Us</span></div-->
+                    <h1>Why Choose Us</h1>
+                </header>
+        
+                <div class="bg content" style="width: 963px; left: 298px;">
+					<div class="panel-details">
+						<h2>Get Unlimited Music.<br>Now With More Data.</h2>
+						<p>
+						With Virgin Mobile's new Unlimited Plans stream all the music you want, without data charges.
+						<br>
+						Turn it up any time you'd like all without worrying about overages or fees.
+						</p>
+						<p class="partners-header">Stream data-free music from the apps you love.</p>
+						<img src="vmu/img/why-choose-us/why_choose_us_music-icons.png?121815" alt="Virgin Mobile Music Parners">
+						<p class="partners-legal">Unlimited without data charges<br>Additional music partners launching soon</p>
+						<div class="actions">
+							<a href="/shop/cell-phones/">// The Phones You Want</a>
+							<br>
+							<a href="/cell-phone-plans/data-messaging-plans/overview/">// Unlimited Plans</a>
+						</div>
+					</div>
+                </div>
+            </div>
+
+        
+            <div class="panel" id="panel2" style="border-top-width: 0px;margin-top: -1px;margin-right: 1px;background:url('vmu/img/4g/4g_chart_background.jpg?020316') no-repeat 0 0;">
+					<div id="plans-dat">
+						<h2 class="panel2-h2" style="margin-top: 0px !important;">New Unlimited Plans Packed With More Data.</h2>
+						<h4 class="panel2-h4">Unlimited Data, Talk &amp; Text Included</h4>
+					</div>
+					<h2 class="panel2-h4 visible-xs visible-sm">Unlimited Streaming Music <br /> without data charges</h2>
+					<img class="visible-xs visible-sm" src="vmu/img/why-choose-us/why_choose_us_music-icons-em.png">
+					<a class="butt-more" href="#!/datafreemusic/">Learn More</a>
+					<div class="data-pane">
+						<img style="border: 1px solid #fff;margin-top: 20px;" class="data visible-xs visible-sm" src="vmu/img/why-choose-us/4g_chart_background1.png">
+						<h4 class="data-header" style="padding-left: 5px !important;font-size: 14px;margin-top: 0px;">Need even more high-speed data?<br class="hidden-xs">We Got You Covered.</h4>
+						<p class="data-disclaimer">Add a Data Pack to your monthly plan</p>
+						<span class="data-offer">$5 for 1GB</span><span class="data-offer">$10 for 2GB</span>
+					</div>
+					<div class="xtra-pane">
+						<h4 class="xtra-header" style="padding-left: 0px;font-size: 14px;margin-left: 0px;margin-top: 0px;">Virgin Mobile gives you extra</h4>
+						<div class="xtra-left">
+							<a class="xtra-link" href="#!/cell-phone-plans/international-offers/">International Calling</a>
+							<a class="xtra-link" href="#!/extras#mobile-hotspot/">Mobile Hotspot</a>
+						</div>
+						<div class="xtra-right">
+							<a class="xtra-link" href="#!/help-support/phoneinsurance">Phone Insurance</a>
+							<a class="xtra-link" href="#!/extras#playphone">Games</a>
+						</div>
+						<div class="xtra-additional">
+							<a class="xtra-services-link" href="#!/extras/">// See All Additional Services</a>
+						</div>
+					</div>
+					<p class="note">
+						DATA DETAILS: Once plan's applicable high-speed data threshold reached, speeds reduced to 2G speeds for remainder of plan cycle.
+						<a style="font-size: 11px;" href="javascript: void();" class="tooltip-plan-rightalign" data-toggle="tooltip" data-placement="bottom" data-hasqtip="0" title="Virgin Mobile has no annual contracts; service subject to certain terms. Plans include unlimited data, domestic talk &amp; text. Add'l domestic minutes 10¢ each. Int'l services extra and subject to applicable rates. <b>Limitless Music:</b> Some streaming partners may require paid subscription or assess other fees. Cloud streaming, song downloads, video content, non-audio content and other data sent by streaming partners (e.g., pic advertisements, album art) excluded.  Hotspot data not included.  Available from select content providers. <b>Visit http://www.virginmobileusa.com/datafreemusic and check list as more services may be added. </b> <b>Data:</b> Once plan's high-speed data allotment reached, speeds reduced to 2G speeds until monthly plan cycle ends. Data packs available for select plans/devices only &amp; expire when depleted or 30 days from purchase date. <b>Other terms:</b> Price, offers and coverage subject to change &amp; not available everywhere or for all phones/networks. Prohibited network use rules, add'l terms &amp; restrictions apply. Visit virginmobileusa.com for full details, latest coverage and pricing. ©2015 Virgin Mobile USA, L.P. All rights reserved. VIRGIN and the Virgin signature logo are registered trademarks of Virgin Enterprises Limited and are used under license. LTE is a trademark of ETSI. The Pandora logo is a registered trademark of Pandora Media, Inc. and is used under license. iHeartRadio is a trademark of iHeartMedia + Entertainment, Inc. Slacker is a registered trademark of Slacker, Inc. Samsung Milk Music is a trademark of Samsung Electronics Co. Ltd. All other marks are property of their respective owners.">
+										MORE DETAILS
+										</a>.
+					</p>
+            </div>
+        
+            
+       
+           
+            <div class="panel" id="panel3">
+            	<a name="switching"></a>
+                <div class="content">
+                    <h1>Virgin Mobile Extras</h1>
+                    <p>Virgin Mobile gives you extra...from high-speed <br>Data Packs, to international calling options, <br>mobile hotspots, games, music and more.</p>
+                    <div class="images-div">
+                        <img src="vmu/img/why-choose-us/panel4-icon-international.png" alt="International">
+                        <img src="vmu/img/why-choose-us/panel4-icon-play.png" alt="Play">
+                        <img src="vmu/img/why-choose-us/panel4-icon-morefeatures.png" alt="More Features">
+                        <img src="vmu/img/why-choose-us/panel4-icon-everythingelse.png" alt="Everything Else">
+                    </div>
+                    <a href="/extras/" class="shopBtn">CHECK IT OUT HERE</a>
+					<br />
+                </div>
+                <div class="bg" style="width: 627px; left: 634px;"></div>
+            </div>
+			 <div class="panel" id="panel4">
+            	<a name="4g"></a>
+                <div class="bg">
+                    <div class="content">
+                        <h1 style="font-size: 35px !important;padding-left: 40px;">AVAILABLE 4G LTE SPEEDS*</h1>
+                        <h2>GET IT ALL. INSTANTLY ON</h2>
+                        <p style="font-size: 16px">Like with the blazing fast <a href="/shop/cell-phones/lg-tribute-4G-LTE-phone/features/">LG Tribute™ 4G LTE.</a></p>
+                        <div class="coverageCheck">
+                            <a class="coverageBtn" href="/check-cell-phone-coverage">Check Your Coverage</a>
+                        </div>
+                        <img class="sprintTag" src="vmu/img/why-choose-us/tag-coverage-poweredby-sprint.jpg" alt="Powered By Sprint">
+                        <p class="note">
+                            *Coverage not available everywhere. 4G LTE available on select devices.
+                        </p>
+                    </div>
+					<img class="visible-xs visible-sm" style="width: 100%" src="vmu/img/why-choose-us/panel4-bg.jpg" />
+                </div>
+            </div>
+
+
+        
+            <div class="panel last" id="panel5">
+            	<a name="more"></a>
+                <div class="content">
+                    <h1 style="font-size: 35px !important;padding-left: 40px;">And more</h1>                    
+                    <div id="wcu-slider-controls-pane" class="clearfix">
+                        <span>Everyone loves their phone. Why not love your phone company too?</span>
+                        <div id="wcu-slider-controls">
+                            <img class="left" src="vmu/img/why-choose-us/arrow_left.png">
+                            <img class="right" src="vmu/img/why-choose-us/arrow_right.png">
+                        </div>					
+                    </div>                    
+                    <div id="wcu-slider-pane">
+                        <div id="wcu-slider">
+                            
+							<!--
+							<div class="sitem" style="left: 0px; display: block;">
+                                <a href="#!/datashare">
+                                    <img src="vmu/img/why-choose-us/data-done-right.jpg" alt="Data Done Right">
+                                    <div>
+                                        <h3>No more data free-for-alls or surprise overages on your multi-line plan.<span>LEARN MORE</span></h3>
+                                    </div>
+                                </a>
+                            </div>-->
+							
+							<!--div class="extras-details">
+								<h3>Need More High-Speed Data?</h3>
+								<p>Add a Data Pack to your monthly plan</p>
+								<a href="/extras/data-packs/" class="data-pack">$5 for 1GB</a>
+								<a href="/extras/data-packs/" class="data-pack">$10 for 2GB</a>
+							</div-->							
+							<div class="sitem" style="left: 300px; display: block;">
+                                <a href="#!/extras#data-packs/">
+                                    <img src="vmu/img/highspeeddata.jpg" alt="Need more high speed data.">
+                                </a>
+                            </div>
+                            <div class="sitem" style="left: 300px; display: block;">
+                                <a href="#!/4g/">
+                                    <img src="vmu/img/why-choose-us/more-4glte.jpg" alt="Virgin Mobile nationwide 4G network.">
+                                </a>
+                            </div>
+                            <!--<div class="sitem">
+                                <a href="/includes/common/pop-overs/manifesto.html" class="colorbox-branson">
+                                    <img src="/_img/2012/why-choose-us/more-branson.jpg" alt="Richard Branson - Why we answer to a Higher Calling." />
+                                    <div>
+                                        <h3>Why we answer to a Higher Calling, in the words of the man behind the mission.<span>Learn more</span></h3>
+                                    </div>
+                                </a>
+                            </div>-->
+                            <div class="sitem" style="left: 600px; display: block;">
+                                <a href="https://buyback.virginmobileusa.com/vmb/">
+                                    <img src="vmu/img/why-choose-us/more-buyback.jpg" alt="Virgin Mobile will buy your old phone.">
+                                    <div>
+                                        <h3>Virgin Mobile Buyback.<span>View details</span></h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--<div class="sitem">
+                                <a href="http://virginmobilelive.com/?cmpid=p-hp-lt5-vml-050212" target="_blank">
+                                    <img src="/_img/2012/why-choose-us/more-music.jpg" alt="Virgin Mobile Live" />
+                                </a>
+                            </div>-->
+                            <div class="sitem" style="left: 900px; display: block;">
+                                <a href="https://www.securecheckout.billmelater.com/paycapture-content/fetch?hash=AU826TU8&amp;content=/bmlweb/ppwpsiw.html" onClick="window.open('https://www.securecheckout.billmelater.com/paycapture-content/fetch?hash=AU826TU8&amp;content=/bmlweb/ppwpsiw.html', '_blank', 'width=800,height=600,scrollbars=1'); return false;">
+                                    <img src="vmu/img/why-choose-us/more-financing.jpg" alt="Buy Now. Pay later with Virgin Mobile.">
+                                    <div>
+                                        <h3>Handset Financing available.<span>See terms</span></h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sitem" style="left: 1200px; display: block;">
+                                <a href="#!/shop/cell-phones/">
+                                    <img src="vmu/img/why-choose-us/hottest-phones.jpg" alt="Virgin Mobile has the phones you want.">
+                                    <div>
+                                        <h3>Unlimited data &amp; messaging included.<span>Shop now</span></h3>
+                                    </div>
+                                </a>
+                            </div>	
+                        </div>
+                    </div>
+					<a href="https://www.securecheckout.billmelater.com/paycapture-content/fetch?hash=AU826TU8&amp;content=/bmlweb/ppwpsiw.html"><img src="vmu/img/why-choose-us/more-financing.jpg" class="responsiveImg visible-xs visible-sm" /></a>
+					<a href="#!/shop/cell-phones/"><img src="vmu/img/why-choose-us/hottest-phones.jpg" class="responsiveImg visible-xs visible-sm" /> </a>
+					<a href="#!/datashare/"><img src="vmu/img/why-choose-us/data-done-right.jpg" class="responsiveImg visible-xs visible-sm" /> </a>
+					<a href="#!/4g/"><img src="vmu/img/why-choose-us/more-4glte.jpg" class="responsiveImg visible-xs visible-sm" /> </a>
+					<a href="https://buyback.virginmobileusa.com/vmb/"><img src="vmu/img/why-choose-us/more-buyback.jpg" class="responsiveImg visible-xs visible-sm" /></a>
+					<div style="clear: both"></div>
+                    <div class="scroll-top" style="padding-top: 20px;">
+                        <a id="return-top" href="javascript: void();">Return to top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<script>
+			$(document).ready(function(){
+				$("#wcu-slider .sitem").mouseover(function(){
+					$(this).find("a div").css("bottom", "0px");
+				});
+				$("#wcu-slider .sitem").mouseleave(function(){
+					$(this).find("a div").css("bottom", "-200px");
+				});
+			});
+		</script>
+	</body>
+</html>

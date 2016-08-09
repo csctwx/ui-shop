@@ -1,0 +1,34 @@
+<section class="billingInfo">
+  <h2 ng-if="appName=='bst'" class="orange">Review Shipping & Billing Information</h2>
+  <div ng-if="appName=='bst'" class="col-xs-12" style="margin-top:10px;margin-bottom:10px;border-bottom:1px solid #DDDDDD !important">
+    <dl>
+      <dt class="mainColor" style="font-size:12pt;">Shipping via</dt> 
+      <dd><b>{{checkoutController.data.shippingOption.label}}</b></dd>
+    </dl>
+  </div>
+  <div class="col-xs-12">
+    <h4>Billing Information <a href="" ng-click="checkoutController.restartCheckout('EDIT')" class="reduceFont">(Edit)</a></h4>
+    <dl>
+      <dt>First Name</dt>
+      <dd>{{checkoutController.data.billingInfo.firstName}}</dd>
+      <dt>Last Name</dt>
+      <dd>{{checkoutController.data.billingInfo.lastName}}</dd>
+      <dt>Address 1</dt>
+      <dd>{{checkoutController.data.billingInfo.address1}}</dd>
+      <dt ng-if="checkoutController.data.shippingInfo.address2!=null">Address 2</dt>
+      <dd ng-if="checkoutController.data.shippingInfo.address2!=null">{{checkoutController.data.billingInfo.address2}}</dd>
+      <dt>City</dt>
+      <dd>{{checkoutController.data.billingInfo.city}}</dd>
+      <dt>State</dt>
+      <dd>{{checkoutController.data.billingInfo.state}}</dd>
+      <dt>Zip Code</dt>
+      <dd>{{checkoutController.data.billingInfo.zipCode}}</dd>
+      <dt>Phone Number</dt>
+      <dd>{{checkoutController.data.billingInfo.phoneNumber}}</dd>
+      <dt>Email</dt>
+      <dd>{{checkoutController.data.billingInfo.email}}</dd>
+      <dt class="mainColor">{{checkoutController.data.paymentCardType == 'PAYPAL'? 'Payment type' : 'Card type'}}</dt>
+      <dd>{{checkoutController.data.paymentCardType == 'PAYPAL'? 'Paypal' : checkoutController.data.paymentInfo.paymentCardType}}</dd>
+    </dl>
+  </div>
+</section>

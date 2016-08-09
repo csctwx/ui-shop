@@ -1,0 +1,45 @@
+<section class="promo-form">
+  <div class="col-xs-12 col-sm-6">
+    <ul class="details">
+      <li>FREE Ground Shipping</li>
+      <li>Keep your current phone number</li>
+      <li>7 Day Money Back Guarantee</li>
+      <li ng-if="appName=='bst'">No contract plans</li>
+    </ul>
+  </div>
+  <div class="col-xs-12 col-sm-6" ng-hide="checkoutController.ibCart">
+    <p><b>Got a promo code?</b></p>
+    <form class="form-group" name="promoForm">
+      <label for="promoCode">Promo Code</label>
+      <input type="text" class="form-control input-sm" ng-maxlength="100" maxlength="100" ng-pattern="/^[0-9a-zA-Z_-]+$/" ng-model="checkoutController.data.promoCode.value" ng-change=""  placeholder="Enter code" required="required">
+      <a class="btn btn-primary btn-sm" ng-disabled="promoForm.$invalid" ng-click="checkoutController.applyPromoCode()">Apply Code</a>
+      <span class="errorMessage" style="color:{{checkoutController.data.promoCode.status==0?'green':'red'}}">{{checkoutController.data.promoCode.message}}</span>
+    </form>
+    <section class="promocodes" ng-if="checkoutController.getAllPromoCodeKeys().length>0">
+      <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Details <b class="caret"></b></a>
+      <div class="collapse" id="collapseExample">
+        <div>
+          <ul class="accPC">
+            <li ng-repeat="code in checkoutController.getAccPromoCodeKeys()">
+              <span>{{code}}:</span> 
+              {{checkoutController.data.accPromoCodes[code].name}}<br>
+              {{checkoutController.data.accPromoCodes[code].legal}}</li>
+          </ul>
+          <ul class="rejPC">
+            <li ng-repeat="code in checkoutController.getRejPromoCodeKeys()">
+              <span>{{code}}:</span>
+              {{checkoutController.data.rejPromoCodes[code].reason}}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <span class="top-subtotal finalamount">
+      <ul>
+        <li><span>Shipping {{checkoutController.data.orderCode.promoCode ? " discount applied":""}}</span><p>{{checkoutController.data.summary.shipping()|currency:""}}</p></li>
+        <li><span>Subtotal</span><p>{{checkoutController.data.summary.subtotal()|currency:""}}</p></li>
+        <li><span ng-show="checkoutController.data.promoCode.status==0">Discount</span><p ng-show="checkoutController.data.promoCode.status==0">-{{checkoutController.data.promoCode.totalDiscount|currency:""}}</p></li>
+        <li><span>Current Total Due (before tax)</span><p>{{checkoutController.data.summary.total()|currency:""}}</p></li>
+      </ul>
+    </span>
+  </div>
+</section>

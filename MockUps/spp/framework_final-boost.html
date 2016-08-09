@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Boost Mobile - CSS Framework</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/ealsche-framework-boost.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<div class="container">
+			<div class="col-xs-9 pull-right">
+				<div class="navbar pull-left visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#">Espanol</a></li>
+						<li class="navbar-item"><a href="#">Coverage Map</a></li>
+						<li class="navbar-item"><a href="#">Find a Store</a></li>
+					</ul>
+				</div>
+				<div class="navbar pull-right visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#">Refill</a></li>
+						<li class="navbar-item"><a href="#">Support</a></li>
+						<li class="navbar-item "><a href="#">Activate</a></li>
+						<li class="navbar-item"><a href="#">Sign in</a></li>
+					</ul>
+				</div>
+				<div class="visible-sm visible-xs greeting">
+					<button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+						<i class="glyphicon glyphicon-chevron-left"></i>
+					</button>
+					<p class="greeting-name"><span>Good morning, </span>Alex</p>
+					<p class="greeting-number">My Number: <span>123-456-7890</span></p>
+				</div>
+				<ul class="nav navmenu-nav nav-pills">
+					<li class="dropdown active">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">My Account <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="#">Payments</a></li>
+							<li><a href="#">Usage</a></li>
+							<li><a href="#">Settings</a></li>
+							<li><a href="#">Device &amp; Support</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">Shop <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="#">All Phones</a></li>
+							<li><a href="#">Android Phones</a></li>
+							<li><a href="#">iPhones</a></li>
+							<li><a href="#">Accessories</a></li>
+							<li><a href="#">Deals</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Plans</a></li>
+					<li><a href="#">Support</a></li>
+					<li class="cart dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href=""><i class="glyphicon glyphicon-shopping-cart"></i><span>Cart</span><span id="cart-count">1</span></a>
+						<ul class="dropdown-menu subnav">
+							<li>
+								<ul>
+									<li>
+										<img class="phoneImg" src="img/phone1-1.png"></img>
+										<div class="pull-left">
+											<span class="phoneBrand">Samsung</span>
+											<span class="phoneName">Galaxy S5</span>
+											<span class="phoneColor"></span>
+											<span class="phoneMemory"></span>
+										</div>
+										<div class="pull-right">
+											<span class="quantity">1</span>
+											<span class="totalPrice">199.99</span>
+											<a class="removePhone"><i class="glyphicon glyphicon-remove-circle"></i></a>
+										</div>
+									</li>
+								</ul>
+								<a class="cartAction">Empty cart</a>
+								<a class="cartAction pull-right" href="purchase-01.html">Checkout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<ul class="mobilelinks">
+			<li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+			<li><a href="#"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+			<li><a href="#"><i class="glyphicon glyphicon-log-in"></i></a></li>
+		</ul>
+    </div>
+	<div class="container main">
+		<ol class="breadcrumb">
+			<li><a>Hansel</a></li>
+			<li><a>Gretel</a></li>
+			<li><a>Wicked</a></li>
+			<li class="active">Witch</li>
+		</ol>
+		<section>
+			<div class="page-header">
+				<h1>Sprint <span>H1</span></h1>
+				<h2>Prepaid <span>H2</span></h2>
+				<h3>Shop <span>H3</span></h3>
+				<h4>Template <span>H4</span></h4>
+				<p class="lead">This is "lead" text. This template shows a responsive framework based on Bootstrap. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide-in effect.</p>
+				<p>Follow the rules set forth here.</p>
+				<p><span data-toggle="tooltip" data-placement="top" title="Gather">Hover</span> <span data-toggle="tooltip" data-placement="bottom" title="Ye">over</span> <span data-toggle="tooltip" data-placement="top" title="Rosebuds">us</span> <span data-toggle="tooltip" data-placement="bottom" title="While">to</span> <span data-toggle="tooltip" data-placement="top" title="Ye">reveal</span> <span data-toggle="tooltip" data-placement="right" title="May">tooltips</span>.</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-12">
+				<p>full width</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-6">
+				<p>left</p>
+			</div>
+			<div class="col-xs-6">
+				<p>right</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-sm-4">
+				<p>left</p>
+			</div>
+			<div class="col-sm-4">
+				<p>middle</p>
+			</div>
+			<div class="col-sm-4">
+				<p>right</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-6 col-md-4">
+				<p>left</p>
+			</div>
+			<div class="col-xs-6 col-md-8">
+				<p>right</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-6 col-md-8">
+				<p>left</p>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<p>right</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-4">
+				<p>left</p>
+			</div>
+			<div class="col-xs-4">
+				<p>middle</p>
+			</div>
+			<div class="col-xs-4">
+				<p>right</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-6 col-sm-10">
+				<p>left 10</p>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<p>right 2</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-4 col-sm-3">
+				<p>left 3</p>
+			</div>
+			<div class="col-xs-8 col-sm-9">
+				<p>right 9</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-12">
+				<p>Button Variants and Modals</p>
+				<p>
+					<a class="btn btn-xs btn-default">xs</a>
+					<a class="btn btn-xs btn-primary">xs</a>
+					<a class="btn btn-sm btn-default">sm</a>
+					<a class="btn btn-sm btn-primary">sm</a>
+					<a class="btn btn-default">Default</a>
+					<a class="btn btn-primary">Default</a>
+					<a class="btn btn-lg btn-default">lg</a>
+					<a class="btn btn-lg btn-primary">lg</a>
+					<a class="btn btn-default disabled">Disabled</a>
+					<a class="btn btn-default" data-toggle="modal" data-target="#modalTest">Launch Modal</a>
+				</p>
+				<div class="modal fade" id="modalTest" tabindex="-1" role="dialog" aria-labelledby="modalTest" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Hit ESC on your keyboard or click anywhere outside of this modal to dismiss it.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="loveSprint hidden-xs hidden-sm">
+			<ul>
+				<li><i class="glyphicon glyphicon-ok"></i>Keep your phone number</li>
+				<li><i class="glyphicon glyphicon-ok"></i>Free shipping</li>
+				<li><i class="glyphicon glyphicon-ok"></i>7-day guarantee</li>
+				<li><i class="glyphicon glyphicon-ok"></i>No contract plans</li>
+			</ul>
+		</section>
+		<section>
+			<div class="col-xs-12">
+				<p>Pulled Buttons</p>
+				<p class="pull-right">
+					<a class="btn btn-default">Default</a>
+					<a class="btn btn-primary">Default</a>
+				</p>				
+				<p class="pull-left">
+					<a class="btn btn-default">Default</a>
+					<a class="btn btn-primary">Default</a>
+				</p>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-12">
+				<p>Full Width Buttons</p>
+				<a class="btn btn-block btn-default">Default</a>
+				<a class="btn btn-block btn-warning">Warning</a>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-12">
+				<p>Button Group</p>
+				<div class="btn-group" role="group" aria-label="...">
+					<button type="button" class="btn btn-default">Left</button>
+					<button type="button" class="btn btn-default">Middle</button>
+					<button type="button" class="btn btn-default disabled">Disabled</button>
+					<button type="button" class="btn btn-default">Right</button>
+				</div>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Hey</a></li>
+						<li><a href="#">Girl</a></li>
+					</ul>
+				</div>
+				<p>Justified Button Group (three)</p>
+				<div class="btn-group btn-group-justified" role="group" aria-label="...">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">Left</button>
+					</div>
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">Middle</button>
+					</div>
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">Right</button>
+					</div>
+				</div>
+				<p>Justified Button Groups (two)</p>
+				<div class="btn-group btn-group-justified btn-group-onlytwo" role="group" aria-label="...">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default">Left</button>
+					</div>
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-primary">Right</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="col-xs-12">
+				<p>Alerts</p>
+				<div class="alert alert-success" role="alert"><i class="glyphicon glyphicon-ok-sign"></i>Success</div>
+				<div class="alert alert-info" role="alert"><i class="glyphicon glyphicon-info-sign"></i>Information</div>
+				<div class="alert alert-warning" role="alert"><i class="glyphicon glyphicon-exclamation-sign"></i>Warning</div>
+				<div class="alert alert-danger" role="alert"><i class="glyphicon glyphicon-exclamation-sign"></i>Danger Will Robinson</div>
+			</div>
+		</section>
+		<section class="tabs">
+			<p>Tabs</p>
+			<div role="tabpanel" class="maintabs">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#features" aria-controls="features" role="tab" data-toggle="tab">Features &amp; Specs</a></li>
+					<li role="presentation"><a href="#plans" aria-controls="plans" role="tab" data-toggle="tab">Plans</a></li>
+					<li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Reviews</a></li>
+				</ul>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="features">
+						<div class="col-md-8">
+							<section>
+								<h3>Galaxy S5 Features</h3>
+								<ul class="features">
+									<li>
+										<i class="glyphicon glyphicon-sunglasses"></i>
+										<div>
+											<p>Android 4.4.2 (KitKat)</p>
+											<span>Experience the most-loved features of Android - sleek simplicity and speed.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-grain"></i>
+										<div>
+											<p>16 Megapixel Camera</p>
+											<span>Capture high-resolution pictures with the rear-facing camera and take all the selfies you want, plus video chat to your heart's content with the 2 megapixel front-facing camera.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-scissors"></i>
+										<div>
+											<p>2.5 GHz Quad-Core Processor</p>
+											<span>Do more of the things you love. The Qualcomm Snapdragon processor gives you breathtaking speed, jaw-dropping graphics and long battery life.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-film"></i>
+										<div>
+											<p>IP67 Water and Dust Resistant</p>
+											<span>Don't sweat the small stuff. With an IP67 certification, the Galaxy S5 is resistant to sweat, rain, liquids, sand and dust.</span>
+										</div>
+									</li>
+								</ul>
+								<h3>Full Features</h3>
+								<ul class="details half">
+									<li><i class="glyphicon glyphicon-ok"></i>Voicemail</li>
+									<li><i class="glyphicon glyphicon-ok"></i>Wi-Fi enabled</li>
+									<li><i class="glyphicon glyphicon-ok"></i>3-way calling</li>
+									<li><i class="glyphicon glyphicon-ok"></i>3.5mm headset jack</li>
+									<li><i class="glyphicon glyphicon-ok"></i>Virtual QWERTY keyboard</li>
+									<li><i class="glyphicon glyphicon-ok"></i>Audio Recorder</li>
+								</ul>
+							</section>
+							<section>
+								<h3>Galaxy S5 Specifications</h3>
+								<table class="table table-condensed table-striped">
+									<tbody>
+										<tr>
+											<th scope="row">Size</th>
+											<td>Height 5.59", Width 2.85", Depth .31"</td>
+										</tr>
+										<tr>
+											<th scope="row">Weight</th>
+											<td>5.11 oz</td>
+										</tr>
+										<tr>
+											<th scope="row">Screen Size</th>
+											<td>5.1" Full HD Super AMOLED</td>
+										</tr>
+										<tr>
+											<th scope="row">Memory</th>
+											<td>2GB RAM / 16GB ROM</td>
+										</tr>
+										<tr>
+											<th scope="row">Battery</th>
+											<td>Talking Time 21 hrs</td>
+										</tr>
+										<tr>
+											<th scope="row">Battery Type</th>
+											<td>2800 mAh Li-Ion Battery</td>
+										</tr>
+										<tr>
+											<th scope="row">Removable</th>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<th scope="row">Processor</th>
+											<td>2.5 GHz Quad Core Processor</td>
+										</tr>
+										<tr>
+											<th scope="row">OS</th>
+											<td>Android 4.4 (KitKat)</td>
+										</tr>
+									</tbody>
+								</table>
+							</section>
+							<section>
+								<h3>What's in the Box</h3>
+								<ul class="details half">
+									<li><i class="glyphicon glyphicon-ok"></i>Phone</li>
+									<li><i class="glyphicon glyphicon-ok"></i>Micro-USB Charger</li>
+									<li><i class="glyphicon glyphicon-ok"></i>Battery</li>
+								</ul>
+							</section>
+							<section>
+								<h3>User Guides &amp; Support</h3>
+								<p>Want to know everything there is to know about this phone? Learn everything, from setting up your email to managing all of your games and applications.</p>
+								<a class="btn btn-lg btn-primary">Device Support</a>
+							</section>
+						</div>
+						<div class="col-md-4">
+							<section class="promo">
+								<h3>Promo Banner</h3>
+							</section>
+							<section>
+								<h3>Great Value. New Network. Total flexibility.</h3>
+								<p>Finally, something different from your wireless relationship.</p>
+								<ul class="features">
+									<li>
+										<i class="glyphicon glyphicon-apple"></i>
+										<div>
+											<p>Freedom from annual contracts</p>
+											<span>Enjoy more flexibility.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-hourglass"></i>
+										<div>
+											<p>Nationwide 4G LTE Network</p>
+											<span>Better call quality with high definition voice, faster speeds, and better coverage than before.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-knight"></i>
+										<div>
+											<p>Affordable Monthly Plans</p>
+											<span>Stay connected without breaking the bank.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-tent"></i>
+										<div>
+											<p>Mobile hotspot</p>
+											<span>Now available on select devices. Connect Wi-Fi enabled tablets, laptops, and more.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-piggy-bank"></i>
+										<div>
+											<p>No credit checks</p>
+											<span>Get service quickly.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-lamp"></i>
+										<div>
+											<p>No surprises or late fees</p>
+											<span>Prepay for your service each month, so you're in control.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-tree-conifer"></i>
+										<div>
+											<p>Switching is easy</p>
+											<span>Keep your current phone number or get a new one--it's up to you.</span>
+										</div>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-pawn"></i>
+										<div>
+											<p>Cutting-edge phones</p>
+											<span>Get the latest hardware and software technology.</span>
+										</div>
+									</li>
+								</ul>
+							</section>
+							<section>
+								<div class="orderbyphone">
+									<h3>Order by Phone</h3>
+									<i class="glyphicon glyphicon-earphone"></i>
+									<p>1-866-866-7509</p>
+								</div>
+							</section>
+							<section class="promo">
+								<h3>Promo Banner</h3>
+							</section>
+						</div>
+					</div><!-- // .tab-pane -->
+					<div role="tabpanel" class="tab-pane" id="plans">
+						<div class="col-md-8">
+							<section>
+								<h3>Tab 2</h3>
+								<p>Second is the best</p>
+							</section>
+							<section>
+								<p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+							</section>
+						</div>
+						<div class="col-md-4">
+							<section>
+								<p>More on Second</p>
+							</section>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="reviews">
+						<div class="col-md-8">
+							<section>
+								<h3>Tab 3</h3>
+								<p>Third is the one with the hairy chest</p>
+							</section>
+							<section>
+								<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+							</section>
+							<section>
+								<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+							</section>
+						</div>
+						<div class="col-md-4">
+							<section>
+								<h3>More on Third</h3>
+							</section>
+							<section>
+								<p>Lorem ipsum</p>
+							</section>
+							<section class="promo">
+								<h3>Promo Banner</h3>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<section class="progressArrows">
+			<div class="col-xs-12">
+				<p>Progress Arrows</p>
+			</div>
+			<ul>
+				<li><a class="current"><i class="glyphicon glyphicon-ok-sign"></i>Shipping/Billing</a></li>
+				<li><a><i class="glyphicon glyphicon-info-sign"></i>Review &amp; Purchase</a></li>
+				<li><a><i class="glyphicon glyphicon-info-sign"></i>Confirmation</a></li>
+			</ul>
+		</section>
+		<section>
+			<div class="col-xs-12">
+				<p>Dropdown</p>
+				<div class="dropdown">
+					<select class="btn btn-default sortby">
+						<option selected>Featured</option>
+						<option>Newest to Oldest</option>
+						<option>Price: Low to High</option>
+						<option>Price: High to Low</option>
+						<option>Rating: Highest to Lowest</option>
+						<option>Alphabetically</option>
+					</select>
+				</div>
+			</div>
+		</section>
+		<section class="legal">
+			<p>After applicable data allotment reached, data speeds (including video) reduced to 2G speeds for remainder of plan cycle. International services extra. Double the data compared to Sprint's former plans. Prices &amp; offers subject to change without notice &amp; may not be available in all markets/retail locations or for all devices. State &amp; local sales taxes/fees may apply when adding funds to accounts. Coverage not available everywhere. Sprint 4G LTE network reaches over 260 million people. Sprint reserves the right to modify, extend or cancel offer at any time. Offer, network use rules &amp; other restrictions apply.</p>
+		</section>
+	</div>	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12">
+				<p>&copy; 2015 Sprint. <span class="hidden-xs">All rights reserved.</span></p>
+				<ul class="footer-links">
+					<li><a href="http://www.sprint.com/legal/index.html?INTNAV=ATG:FT:Legal">Legal</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=ATG:FT:Privacy">Privacy</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=ATG:FT:Privacy">CTIA/Regulatory</a></li>
+					<li><a href="http://www.sprint.com/legal/ad_choices.html?INTNAV=ATG:FT:Ad_Choices">AdChoices</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/sprintprepaid-bootstrap.min.js "></script>
+    <script src="../js/lib/jasny-bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+		$('#modalTest').on('shown.bs.modal', function () {
+			$('#testModal').focus()
+		})
+	</script>
+</body>
+</html>

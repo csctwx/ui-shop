@@ -1,0 +1,92 @@
+<div>
+    <div class="panel-body filter">
+        <h4>Filter Phones</h4>
+        <span ng-if="appName!='vmu'">
+            <label class="enabled_label"><input type="checkbox" ng-click="phoneController.list.filter.removeAll()" ng-model="phoneController.list.filter.data.noFilter">{{phoneController.list.filter.data.noFilter?'Viewing all results':'Clear all filters'}}</label>
+            <label class="enabled_label" ng-repeat="option in phoneController.list.filter.data.map.special.options" class="{{option.disabled?'disabled_label':''}}">
+                <input type="checkbox" ng-disabled="option.disabled" ng-model="option.checked">{{option.label}}
+            </label>
+        </span>
+
+        <span ng-if="appName=='vmu'" class="filter-check">
+            <input id="phone-type-view-clear" type="checkbox" ng-click="phoneController.list.filter.removeAll()" ng-model="phoneController.list.filter.data.noFilter">
+            <label for="phone-type-view-clear" class="enabled_label">{{phoneController.list.filter.data.noFilter?'Viewing all results':'Clear all filters'}}</label>
+
+            <div ng-repeat="option in phoneController.list.filter.data.map.special.options">
+            <input id="phone-type-{{option.label}}" type="checkbox" ng-disabled="option.disabled" ng-model="option.checked">
+            <label for="phone-type-{{option.label}}" class="enabled_label" class="{{option.disabled?'disabled_label':''}}">
+                {{option.label}}
+            </label>
+                </div>
+        </span>
+
+        <!--<div ng-if="appName=='vmu'" class="filter-reset" ng-click="phoneController.list.filter.removeAll()">// Reset Selections</div>-->
+
+    </div>
+
+    <div class="panel-group filter">
+        <div class="panel panel-default" ng-repeat="filter in phoneController.list.filter.data.uiSort">
+            <div class="panel-heading" ng-click="filter.extend=!filter.extend">
+                <h4 class="panel-title {{filter.extend?'panel-title-extend':''}}" style="cursor:pointer"><a class="{{filter.extend?'':'collapsed'}}" href="javascript:">{{filter.title}}</a></h4>
+            </div>
+            <div class="panel-collapse collapse {{filter.extend?'in':''}}">
+                <div class="panel-body {{filter.styleClass}}">
+                    <div ng-if="appName!='vmu'">
+                        <form ng-if="phoneController.list.filter.data.uiSort.length-1>$index">
+                            <label ng-repeat="option in phoneController.list.filter.getFilterOptions(filter) | filter:{disabled:false}">
+                                <input type="checkbox" ng-disabled="option.disabled" ng-model="option.checked">
+                                <span  class="{{option.disabled?'disabled_label':'enabled_label'}}" ng-bind-html="appUtil.ui.trustAsHtml(option.label)"></span>
+                                <span style="padding-left:0;padding-right:0;left:0;" class="glyphicon glyphicon-question-sign"
+                                    ng-if="option.toolTip"
+                                    data-popover="true"
+                                    data-html="true"
+                                    data-content="{{option.toolTip}}"
+                                    data-original-title="">
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div ng-if="appName=='vmu'" class="filter-check">
+                        <form ng-if="phoneController.list.filter.data.uiSort.length-1>$index">
+                            <div ng-repeat="option in phoneController.list.filter.getFilterOptions(filter) | filter:{disabled:false}">
+                                <input id="filter-{{option.label}}" type="checkbox" ng-disabled="option.disabled" ng-model="option.checked">
+                                <label for="filter-{{option.label}}">
+
+                                    <span class="{{option.disabled?'disabled_label':'enabled_label'}}" ng-bind-html="appUtil.ui.trustAsHtml(option.label)"></span>
+                                    <span class="glyphicon glyphicon-question-sign"
+                                          ng-if="option.toolTip"
+                                          data-html="true"
+                                          data-toggle="tooltip"
+                                          data-placement="right"
+                                          title="{{option.toolTip}}"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <form ng-if="phoneController.list.filter.data.uiSort.length-1==$index">
+                        <div ng-repeat="option in phoneController.list.filter.getFilterOptions(filter)" style="float:left;width:33%;text-align:center">
+                            <label class="{{option.disabled?'disabled_label':'enabled_label'}}" style="width:40px;margin:auto;float:left;height:75px;">{{option.label}}
+                                <div ng-if="appName!='vmu'">
+                                    <label style="float:left" class="phoneStyle {{option.label.toLowerCase()}}">
+                                        <input type="checkbox" ng-disabled="option.disabled" ng-model="option.checked" style="margin:40px auto 0 auto;float:none;">
+                                    </label>
+                                </div>
+
+                                <div ng-if="appName=='vmu'" class="filter-check phn-type">
+                                    <input id="phone-type-{{option.label}}" type="checkbox" ng-disabled="option.disabled" ng-model="option.checked" style="width:100%;margin:auto;margin-top:40px;float:left">
+                                    <label for="phone-type-{{option.label}}" style="float:left" class="phoneStyle {{option.label.toLowerCase()}}"></label>
+                                </div>
+
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body filter clearFilters" ng-if="appName!='vmu'">
+            <label class="enabled_label"><input type="checkbox" ng-click="phoneController.list.filter.removeAll()" ng-model="phoneController.list.filter.data.noFilter">{{phoneController.list.filter.data.noFilter?'Viewing all results':'Clear all filters'}}</label>
+        </div>
+    </div>
+</div>

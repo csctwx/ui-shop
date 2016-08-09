@@ -1,0 +1,17 @@
+<section class="col">
+  <a id="commonDialogOpenner" href="#" data-toggle="modal" data-target="#commonDialog" style="display:none">Open</a>
+  <div class="modal fade" id="commonDialog" style="z-index:100000"  role="dialog" aria-labelledby="commonDialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <strong class="pull-left">{{app.commonDialog.title}}</strong>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <iframe ng-show="app.commonDialog.showIframe" id="commonDialogFrame" src="" scrolling="auto" style="height:430px;overflow:auto" class="{{appName}}_coverageFrame" frameborder="0"></iframe>
+        <div class="modal-body" ng-if="!app.commonDialog.showIframe && appName=='spp'" style="height:430px;overflow:auto;{{app.commonDialog.title=='ULE Environment Score'?'top:-50px;width:760px':''}}" ng-bind-html="appUtil.ui.trustAsHtml(app.commonDialog.content)"></div>
+
+        <div class="modal-body" ng-if="!app.commonDialog.showIframe && appName!='spp'" style="overflow:auto;" ng-class="{'ule-modal': app.commonDialog.title=='ULE Environment Score'}" ng-bind-html="appUtil.ui.trustAsHtml(app.commonDialog.content)"></div>
+      </div>
+    </div>
+  </div>
+</section>

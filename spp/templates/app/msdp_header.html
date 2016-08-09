@@ -1,0 +1,326 @@
+<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" id="cartController" ng-controller="cartController as cartController">
+	<div class="container">
+		<div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+			<a alt="Sprint Prepaid" ng-href="{{pathMap._home._hash}}|Nav:Logo">Home</a></div>
+		<div class="col-xs-9 col-md-10 pull-right">
+			<div class="navbar pull-left visible-md topnav" style="margin:0">
+				<ul class="navbar-wrapper">
+					<li class="navbar-item">
+						<a data-target="#coverageMap" data-toggle="modal" href="#" id="coverageMapLink" ng-click="app.showCoverageMap=true">Coverage Map</a></li>
+					<li class="navbar-item">
+						<a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+					<li class="navbar-item">
+						<a href="#" mporgnav="mporgnav" onclick="return chooser('es');function chooser(lang){MP.SrcUrl=unescape ('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();var script=document.createElement ('SCRIPT');script.src='//espanol.prepaid.sprint.com/mpel/chooser.js';
+  document.body.appendChild(script);return false;}" title="language"> Espa&ntilde;ol</a></li>
+				</ul>
+			</div>
+			<div class="navbar pull-right visible-md topnav" style="margin:0">
+				<ul class="navbar-wrapper">
+					<li class="navbar-item">
+						<a href="https://myaccount.prepaid.sprint.com/myaccount/topup.do?INTNAV=Nav:MyAcct:Refill">Refill</a></li>
+					<li class="navbar-item">
+						<a href="http://support.sprint.com/support?INTNAV=Nav:Support" target="_blank">Support</a></li>
+					<li class="navbar-item">
+						<a href="https://origin1.myaccount.prepaid.sprint.com/activate/overview.jsp?INTNAV=Nav:MyAcct:Activate" target="_blank">Activate</a></li>
+					<li class="navbar-item">
+						<a href="https://myaccount.prepaid.sprint.com/myaccount/home.do?INTNAV=Nav:MyAcct">My Account</a></li>
+					<li class="navbar-item" style="display:none">
+						<a href="https://myaccount.prepaid.sprint.com/myaccount/home.do?INTNAV=Nav:SignIn">Sign in</a></li>
+					<li class="navbar-item" style="display:block">
+						<a href="https://myaccount.prepaid.sprint.com/login/logout.do?INTNAV=Nav:SignOut">Sign out</a></li>
+				</ul>
+			</div>
+			<div class="visible-sm visible-xs greeting">
+				<button class="navbar-toggle opened" data-target=".navmenu" data-toggle="offcanvas" type="button"></button></div>
+			<ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+				<li>
+					<a ng-href="{{pathMap._shop._hash}}|Nav:Shop">Shop</a></li>
+				<li>
+					<a ng-href="{{pathMap._shop._hash}}|Nav:Shop:AllPhones">All Phones</a></li>
+				<li>
+					<a ng-href="{{pathMap._phones._hash}}@Android/|Nav:Shop:Android">Android Phones</a></li>
+				<li>
+					<a ng-href="{{pathMap._phones._hash}}@iPhone/|Nav:Shop:iPhone">iPhones</a></li>
+				<li>
+					<a ng-href="{{pathMap._phoneAccessories._hash}}">Accessories</a></li>
+				<li>
+					<a ng-href="{{pathMap._plan._hash}}|Nav:Plans:AllPlans">Shop Plans</a></li>
+				<li>
+					<a ng-href="{{pathMap._additionalServices._hash}}|Nav:Plans:AdditionalServices">Additional Services</a></li>
+			</ul>
+			<ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+				<li class="dropdown">
+					<a class="dropdown-toggle" ng-href="{{pathMap._shop._hash}}|Nav:Shop">Shop <b class="caret"> </b></a>
+					<ul class="dropdown-menu sub-menu">
+						<li>
+							<a ng-href="{{pathMap._phones._hash}}|Nav:Shop:AllPhones">All Phones</a></li>
+						<li>
+							<a ng-href="{{pathMap._phones._hash}}@Android/|Nav:Shop:Android">Android Phones</a></li>
+						<li>
+							<a ng-href="{{pathMap._phones._hash}}@iPhone/|Nav:Shop:iPhone">iPhones</a></li>
+						<li>
+							<a ng-href="{{pathMap._phoneAccessories._hash}}">Accessories</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" ng-href="{{pathMap._plan._hash}}|Nav:Plans:AllPlans">Plans </a>
+					<ul class="dropdown-menu sub-menu">
+						<li>
+							<a ng-href="{{pathMap._plan._hash}}|Nav:Plans:AllPlans">Shop Plans</a></li>
+						<li>
+							<a ng-href="{{pathMap._additionalServices._hash}}|Nav:Plans:AdditionalServices">Additional Services</a></li>
+					</ul>
+				</li>
+				<li class="cart dropdown" style="top:0">
+					<a class="dropdown-toggle" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:CartIcon"><img alt="" src="/producer/images.form?uuid=6a899e42-ce54-4f03-8c49-7365531970ed" /><span>Cart</span><span id="cart-count" ng-show="cartController.getTotalQuantity()&gt;0">{{cartController.getTotalQuantity()}}</span></a>
+					<ul class="dropdown-menu subnav">
+						<li>
+							<ul id="emptyCartInfo" ng-show="cartController.data.items.length==0">
+								<li>
+									<div class="pull-left">
+										<a style="color:#FFF"><span class="phoneBrand">Your cart is empty.</span></a></div>
+								</li>
+							</ul>
+							<ul ng-repeat="item in cartController.data.items">
+								<li>
+									<img alt="{{item.brand}} {{item.name}} - Sprint Prepaid" class="phoneImg" ng-src="{{item.image}}" />
+									<div class="pull-left">
+										<a ng-href="{{pathMap._phoneDetails._hash}}{{item.deviceId}}/features/" style="color:#FFF"> <span class="phoneBrand">{{item.brand}}</span> <span class="phoneName">{{item.name}}</span> <span class="phoneColor">{{item.color}}</span> <span class="phoneMemory">{{item.memory}}</span> </a></div>
+									<div class="pull-right">
+										<span class="quantity">{{item.quantity}}</span> <span class="totalPrice">{{item.modelPrice|currency:&quot;&quot;}}</span> <a class="removePhone" ng-click="cartController.removeItem($index,this)"><i class="glyphicon glyphicon-remove-circle"> </i></a></div>
+								</li>
+							</ul>
+							<a class="cartAction" ng-click="cartController.clean()" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:EmptyCart">Empty cart</a> <a class="cartAction pull-right" ng-href="{{pathMap._checkout._hash}}|Nav:Cart:Checkout">Checkout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg" id="mini-header">
+  <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+    <span class="icon-bar"> </span>
+    <span class="icon-bar"> </span>
+    <span class="icon-bar"> </span>
+  </button>
+  <a ng-href="{{pathMap._home._hash}}" class="linkHome">Home</a>
+  <ul class="mobilelinks">
+    <li><a ng-href="{{pathMap._checkout._hash}}"><i class="glyphicon glyphicon-shopping-cart"><span id="cart-count">{{cartController.getTotalQuantity()}}</span></i></a></li>
+    <li><a ng-href="http://stores.prepaid.sprint.com?INTNAV=LeftNav:More:LocateStore" target="_blank"><i class="glyphicon glyphicon-map-marker"> </i></a></li>
+    <li><a ng-href="https://myaccount.prepaid.sprint.com/myaccount/home.do?INTNAV=Nav:SignIn"><i class="glyphicon glyphicon-log-in"> </i></a></li>
+    <li><a style="diaplay:none" ng-href="https://myaccount.prepaid.sprint.com/login/logout.do?INTNAV=Nav:SignOut"><i class="glyphicon glyphicon-log-out"> </i></a></li>
+  </ul>
+</div>
+
+
+<script>
+var setAppMenu=function(){
+  $(function(){
+    $(".dropdown").hover(
+      function() {
+        $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+        $(this).toggleClass('open');
+      },
+      function() {
+        $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+        $(this).toggleClass('open');
+      }
+    );
+  });
+};
+var angularParser={
+  runExpress:function(v,item,$index){
+    v=v.trim();
+    var idx1=v.indexOf("{{");
+    var idx2=v.indexOf("}}");
+    if(idx1!=-1){
+      var pre="";
+      var suf=v.substring(idx2+2);
+      if(idx1!=0){
+        pre=v.substring(0,idx1);
+      }
+      var vv=v.substring(idx1+2,idx2);
+      v = pre+angularParser.runFilter(vv,item,$index)+suf;
+      return angularParser.runExpress(v,item,$index);
+    }else{
+      return v;
+    }
+  },
+  runFilter:function(v,item,$index){
+    var vs=v.split("|");
+    if(vs.length!=1){
+      v=eval(vs[0]+".toFixed(2)");
+      return v;
+    }
+    v= eval(v);
+    if(v){
+      return v;
+    }
+    return "";
+  },
+  methods:[
+    {
+      "name":"ng-click",
+      "fun":function(t,v,item,$index){
+        v=angularParser.runExpress(v,item,$index);
+        eval("$(t).click(function(){"+v+"})");
+      }
+    },
+    {
+      "name":"ng-href",
+      "fun":function(t,v,item,$index){
+        v=angularParser.runExpress(v,item,$index);
+        t.href=v;
+      }
+    },
+    {
+      "name":"href",
+      "fun":function(t,v,item,$index){
+        v=angularParser.runExpress(v,item,$index);
+        t.href=v;
+      }
+    },
+    {
+      "name":"ng-src",
+      "fun":function(t,v,item,$index){
+        v=angularParser.runExpress(v,item,$index);
+        t.src=v;
+      }
+    },
+    {
+      "name":"alt",
+      "fun":function(t,v,item,$index){
+        v=angularParser.runExpress(v,item,$index);
+        t.alt=v;
+      }
+    },
+    {
+      "name":"ng-show",
+      "fun":function(t,v,item,$index){
+        eval("v="+v);
+        return v;
+      }
+    },
+    {
+      "name":"ng-repeat",
+      "fun":function(t,v){
+        var p=$(t).parent()[0];
+        var pe=t.previousElementSibling;
+        var ne=t.nextElementSibling;
+        $(t).remove();
+        var ps=v.split(" ");
+        var para=ps[2]+"["+ps[0]+"]";
+        eval("var $index=0;for(var "+v+"){angularParser.runRepeat(p,pe,ne,t,"+para+",$index++)}");
+      }
+    }
+  ],
+  runRepeat:function(p,pe,ne,t,item,$index){
+    t=$(t.outerHTML)[0];
+    this.run(t,item,$index);
+    if(pe){
+      $(t).insertAfter(pe);
+    }else if(ne){
+      $(t).insertBefore(pe);
+    }else{
+      $(t).appendTo(p);    
+    }
+  },
+  run:function(t,item,$index){
+    var os=$(t).children();
+    if(os.length==0){
+      $(t).html(angularParser.runExpress(t.innerHTML,item,$index));
+      return;
+    }
+    for(var i=0;i!=os.length;i++){
+      var o=os[i];
+      var doDeep=true;
+      for(var n=0;n!=this.methods.length;n++){
+        var m=this.methods[n];
+        var v = $(o).attr(m.name);
+        if(v){
+          if(m.name=="ng-show"){
+            if(!m.fun(o,v,item,$index)){
+              doDeep=false;
+              $(o).hide();
+              break;
+            }
+          }else{
+            m.fun(o,v,item,$index);
+            if(m.name=="ng-repeat"){
+              doDeep=false;
+              break;
+            }
+          }
+        }
+      }
+      if(doDeep){
+        this.run(o,item,$index);
+      }
+    }
+  }
+};
+var testPath="";
+var pathMap={
+  _home:{
+    _hash:testPath+"/#!/"
+  },
+  _shop:{
+    _hash:testPath+"/#!/shop/"
+  },
+  _checkout:{
+    _hash:testPath+"/#!/shop/checkout/"
+  },
+  _phones:{
+    _hash:testPath+"/#!/shop/phones/"
+  },
+  _phoneDetails:{
+    _hash:testPath+"/#!/shop/phones/"
+  },
+  _plan:{
+    _hash:testPath+"/#!/plans/"
+  },
+  _additionalServices:{
+    _hash:testPath+"/#!/plans/additionalServices/"
+  },
+  _phoneAccessories:{
+    _hash:testPath+"/#!/shop/phones/accessories/"
+  }
+};
+var cartController={
+  data:{},
+  init:function(){
+    eval("var data="+appUtil.cusSto.getItem("sprintShop-data"));
+    this.data=data.cart;
+  },
+  getTotalQuantity:function(){
+    return this.data.items.length;
+  },
+  clean:function(){
+    while(this.data.items.length!=0){
+      this.data.items.splice(0,1);
+    }
+    this.save();
+  },
+  removeItem:function(idx,o){
+    this.data.items.splice(idx,1);
+    this.save();
+    $(o).parent().parent().hide();
+    if(this.data.items.length==0){
+      $("#emptyCartInfo").show();
+    }
+  },
+  save:function(){
+    var name = "cart";
+    var value = this.data;
+    var data=JSON.parse(appUtil.cusSto.getItem( "sprintShop-data" ));
+    data[name]=value;
+    data=JSON.stringify(data);
+    appUtil.cusSto.setItem( "sprintShop-data" , data);    
+  }
+};
+cartController.init();
+angularParser.run($("header")[0]);
+angularParser.run($("#mini-header")[0]);
+setAppMenu();
+</script>

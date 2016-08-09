@@ -1,0 +1,140 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "d51026f8-fe19-41d1-9726-2d35d7bf4665",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"getPhoneDetailsResponse": {
+				"phoneDetails": {
+					"phoneDetail": {
+						"phoneName": {
+							"$": "Tribute™"
+						},
+						"manufacturerName": {
+							"$": "LG"
+						},
+						"extendedDescription": {
+							"$": "Get the blazing-fast speed of 4G LTE at an affordable price. The LG Tribute™ captures everything savvy surfers and social bugs crave, like a 4.5-inch touchscreen, a 1.2 GHz Quad-Core Processor and Android 4.4.2 Kit Kat. And keep on smiling, because with its 5 MP camera as well as a selfie-friendly, front-facing camera, you can click a perfect pic from any angle."
+						},
+						"associatedAccessoryId": {
+							
+						},
+						"isRedVentures": {
+							"$": "false"
+						},
+						"disclaimerMini": {
+							"$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+						},
+						"disclaimerFull": {
+							
+						},
+						"phoneViewImages": {
+							"phoneViewImage": [{
+								"fileName": {
+									"$": "hero"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/f\/f\/hero.png?action=access&assetId=A-Sbg6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "leftback"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/b\/h\/b\/leftback.png?action=access&assetId=A-Sbg6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "right"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/f\/e\/right.png?action=access&assetId=A-Sbg6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "sidefront"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/g\/i\/sidefront.png?action=access&assetId=A-Sbg6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "back"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/j\/h\/back.png?action=access&assetId=A-Sbg6XVKM1TW"
+								}
+							}]
+						},
+						"phoneVariants": {
+							"phoneVariant": {
+								"sku": {
+									"$": "LGLS660ASB"
+								},
+								"memoryVariant": {
+									
+								},
+								"colorVariant": {
+									
+								},
+								"gradientColor": {
+									
+								},
+								"price": {
+									"$": "79.99"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "true"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "phonewall"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/j\/f\/phonewall.png?action=access&assetId=A-Sbg6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/f\/f\/hero.png?action=access&assetId=A-Sbg6XVKM1TW"
+									}
+								},
+								"hiddenPrice": {
+									"$": "false"
+								}
+							}
+						},
+						"meta": {
+							"title": {
+								"$": "LG Tribute Phone & Tribute 4G Specs from Sprint Prepaid"
+							},
+							"description": {
+								"$": "Find the perfect no contract plan for the LG Tribute from Sprint Prepaid. Shop online and learn more about this 4G Android phone from LG."
+							},
+							"keywords": {
+								"$": "lg tribute, lg tribute prepaid, 4G, lg tribute phone no contract"
+							}
+						}
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

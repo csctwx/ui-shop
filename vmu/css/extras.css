@@ -1,0 +1,430 @@
+
+@media (max-width: 767px){
+
+    div.extras-html-container .section-pane div#sid-international{
+        padding: 0 10px;
+    }
+    
+    div.extras-html-container div.container-fluid{
+        padding: 0 15px!important;
+    }
+    
+    div.extras-html-container div.container-fluid.section-pane div.row div#sid-play div.row div,
+    div.extras-html-container div.container-fluid.section-pane div.row div#sid-more div.row div,
+    div.extras-html-container div.container-fluid.section-pane div.row div#sid-else div.row div{
+        padding: 0;
+        text-align: center;
+    }
+
+    #infoModal #info-banner-pane p {
+        font-size: 14px!important;
+        line-height: 16px!important;
+        padding: 0;
+    }
+    
+    #infoModal #info-banner-pane {
+        max-width: 450px!important;
+        padding: 0!important;
+    }
+    
+}
+
+
+/*Left Menu*/
+ul#section-menu {
+    position: fixed;
+    top: 125px;
+    left: 15px;
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#section-menu li {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 48px;
+    text-transform: uppercase;
+    border-radius: 24px;
+    background-color: #000;
+    cursor: pointer;
+    transition: width .1s linear;
+    float: left;
+    clear: left;
+    width: 48px;
+    overflow: hidden;
+    padding: 0 30px 0 0;
+    height: 48px;
+    margin: 0 0 10px;
+}
+
+ul#section-menu li span {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin: 1px 10px 0 1px;
+    background: url('../img/extras/menu-icons.png') no-repeat 0 0 transparent;
+}
+
+ul#section-menu li#mitem1 span {background-position: 0 0;}
+ul#section-menu li#mitem2 span {background-position: -50px 0;}
+ul#section-menu li#mitem3 span {background-position: -100px 0;}
+ul#section-menu li#mitem4 span {background-position: -150px 0;}
+ul#section-menu li#mitem1.current span {background-position: 0px -50px;}
+ul#section-menu li#mitem2.current span {background-position: -50px -50px;}
+ul#section-menu li#mitem3.current span {background-position: -100px -50px;}
+ul#section-menu li#mitem4.current span {background-position: -150px -50px;}
+ul#section-menu li.current {background-color: #333;}
+
+ul#section-menu li#mitem1.exposed {width: 94%;}
+ul#section-menu li#mitem2.exposed {width: 55%;}
+ul#section-menu li#mitem3.exposed {width: 96%;}
+ul#section-menu li#mitem4.exposed {width: 100%;}
+ul#section-menu li#mitem1:hover{width: 100%;}
+ul#section-menu li#mitem2:hover{width: 100%;}
+ul#section-menu li#mitem3:hover {width: 100%;}
+ul#section-menu li#mitem4:hover {width: 100%;}
+/**********/
+
+/*Main banner at top*/
+div.extras-top-banner{
+	width: 100%;
+    background: #FFF;
+}
+#sid-main-m h1 {
+    margin: 0;
+    line-height: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #999;
+    font-size: 30px;
+    /*font-style: italic;*/
+    color: #d70022;
+    text-transform: uppercase;
+}
+#sid-main-m p {
+    margin: 0 0 25px 0;
+    line-height: 28px;
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+}
+div#sid-main {
+    position: relative;
+    height: 470px;
+    background: url('../img/extras/main-banner.jpg') no-repeat 50% 0;
+}
+
+div#sid-main .main-header {
+    position: absolute;
+    width: 50%;
+    left: 48%;
+    bottom: 295px;
+}
+
+div#sid-main h1 {
+    margin: 0;
+    line-height: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #999;
+    font-size: 30px;
+    /*font-style: italic;*/
+    color: #d70022;
+    text-transform: uppercase;
+}
+
+#sid-main p {
+    margin: 0;
+    line-height: 26px;
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+}
+/***************/
+
+/*Section panes*/
+.section-pane #sid-international h2 {
+    background: url('../img/extras/page-icons.png') no-repeat 0 0;
+}
+.section-pane #sid-play h2 {
+    background: url('../img/extras/page-icons.png') no-repeat 0 -82px;
+}
+.section-pane #sid-more h2 {
+    background: url('../img/extras/page-icons.png') no-repeat 0 -164px;
+}
+.section-pane #sid-else h2 {
+    background: url('../img/extras/page-icons.png') no-repeat 0 -246px;
+}
+.section-pane h2 {
+    margin: 35px 0 10px 0;
+    padding: 0 0 0 45px;
+    line-height: 41px;
+    display: inline-block;
+    font-size: 30px;
+    /*font-style: italic;*/
+    color: #d70022;
+    text-transform: uppercase;
+}
+
+.section-pane h2 + p {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    font-size: 17px !important;
+    font-style: italic;
+    color: #000;
+    margin: 0 0 35px 0 !important;
+    text-align: center !important;
+}
+
+.section-pane #sid-international a {
+    background: url('../img/extras/section-international-banner.png') no-repeat 50% 0;
+}
+
+.section-pane a {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 325px;
+    text-align: left;
+    border-bottom: 5px solid #d70022;
+}
+
+.section-pane a:hover {
+    opacity: 0.75;
+}
+
+.section-pane a.large, .section-pane a.large div {
+    max-width: 980px;
+}
+
+.section-pane a div {
+    position: absolute;
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+}
+
+
+div.extras-html-container{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+div.extras-html-container .section-pane h3 {
+    font-family: "ProximaNova-Semibold-Italic";
+    padding-left: 0px !important;
+    margin: 0 20px 0 20px;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: normal;
+}
+
+div.extras-html-container .section-pane h3 + p {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    font-size: 12px!important;
+    color: #fff;
+    margin: 0 10px 0 20px !important;
+    line-height: 14px!important;
+    text-transform: uppercase;
+}
+
+.text-rt-center-sm {text-align: right;margin: 0 0 20px 0;}
+.text-lt-center-sm {text-align: left;margin: 0 0 20px 0;}
+
+
+.section-pane a.small, .section-pane a.small div {
+    max-width: 480px;
+}
+
+.section-pane #sid-play-games a {background: url('../img/extras/section-play-games-banner.jpg') no-repeat 50% 0;}
+.section-pane #sid-play-music a {background: url('../img/extras/section-play-music-banner.jpg') no-repeat 50% 0;}
+.section-pane #sid-data-packs a {background: url('../img/extras/section-more-datapacks-banner.jpg') no-repeat 50% 0;}
+.section-pane #sid-more-hotspot a {background: url('../img/extras/section-more-hotspot-banner.jpg') no-repeat 50% 0;}
+.section-pane #sid-more-voicemail a {background: url('../img/extras/section-more-voicemail-banner.jpg') no-repeat 50% 0;}
+.section-pane #sid-more-callwatch a {background: url('../img/extras/section-more-callwatch-banner.jpg') no-repeat 50% 0;}
+.section-pane #sid-else-text a {background: url('../img/extras/section-else-text-banner.jpg') no-repeat 50% 0;}
+.section-pane #sid-else-refer a {background: url('../img/extras/section-else-refer-banner.jpg') no-repeat 50% 0;}
+/************/
+
+/*Separator*/
+.divisor {
+    border-top: 2px solid #f4f4f4;
+    margin: 55px 0 10px 0;
+}
+.divisor a {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: #535353;
+    line-height: 30px;
+    background: url('../img/extras/page-icons.png') no-repeat 0 -328px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0 0 20px;
+}
+
+/************/
+
+
+/*********Modals*****/
+.modal {padding: 0px 0 0 !important;}
+.modal-body {padding: 20px;}
+
+#infoModal .modal-dialog {
+    width: auto;
+    max-width: 900px;
+}
+#infoModal .modal-content {
+    border-radius: 0;
+}
+#infoModal .modal-header {
+    position: relative;
+    height: 342px;
+    border: 0;
+    padding: 0;
+    border-bottom: 5px solid #d70022;
+}
+#infoModal button.close {
+    margin: 15px 20px;
+    color: #eee;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 28px;
+    text-shadow: none;
+    opacity: 1;
+}
+#infoModal #info-banner-pane {
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+    max-width: 650px;
+}
+#infoModal h2 {
+    margin: 0 0 5px 20px;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 30px;
+    /*font-style: italic;*/
+    color: #fff;
+    font-weight: bold;
+}
+#infoModal h3 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+#infoModal #info-banner-pane p {
+    font-size: 15px;
+    color: #fff;
+    margin: 0 20px 0 20px !important;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+#infoModal #info-content-pane p {
+    font-size: 15px;
+    color: #000;
+    margin: 10px 0;
+    line-height: 20px;
+    font-style: italic;
+}
+#infoModal #info-content-pane p.legal {
+    font-size: 11px !important;
+    line-height: 13px;
+    font-style: normal;
+}
+#infoModal #info-content-pane p.legal a{font-size: 11px !important;}
+#infoModal #info-content-pane ul {
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+#infoModal #info-content-pane ul.info-list {
+    list-style-type: disc;
+    font-weight: normal;
+    /*font-style: italic;*/
+    padding-left: 30px;
+    font-size: 15px;
+    color: #000;
+}
+#section-info-data {
+    display: none;
+}
+#infoModal #info-content-pane p a {
+    color: #000;
+    text-decoration: underline;
+}
+.btn-shop {
+    color: #fff !important;
+    background-color: #d70020;
+    border-color: #d70020;
+}
+.btn-lg-extras {
+    padding: 10px 0;
+    border-radius: 0px;
+    line-height: 14px;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    width: 100%;
+}
+
+/*
+div.extras-html-container{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}*/
+
+div.visible-xs .row div#sid-main-m p,
+div.visible-xs .row div#sid-main-m h1{
+    text-align: center;
+}
+
+
+
+div.extras-html-container .section-pane #sid-international h3 {
+    font-family: "ProximaNova-Semibold-Italic";
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0px 10px 0px 20px;
+    font-weight: normal;
+}
+
+
+
+div.extras-html-container div.container-fluid.section-pane {
+    padding: 0;
+}
+
+div.extras-html-container div.container-fluid.section-pane div.row div#sid-play,
+div.extras-html-container div.container-fluid.section-pane div.row div#sid-more,
+div.extras-html-container div.container-fluid.section-pane div.row div#sid-else{
+    padding: 0;
+}
+
+/*
+div.extras-html-container .section-pane div#sid-international,
+div.extras-html-container .section-pane div#sid-play-games,
+div.extras-html-container .section-pane div#sid-play-music,
+div.extras-html-container .section-pane div#sid-more,
+div.extras-html-container .section-pane div#sid-play,
+div.extras-html-container .section-pane div#sid-data-packs,
+div.extras-html-container .section-pane div#sid-more-hotspot,
+div.extras-html-container .section-pane div#sid-more-voicemail,
+div.extras-html-container .section-pane div#sid-more-callwatch,
+div.extras-html-container .section-pane div#sid-more-callwatch{
+    padding: 0;
+}
+*/
+
+
+/********************/

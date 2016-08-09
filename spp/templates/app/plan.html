@@ -1,0 +1,42 @@
+<div ng-if="app.isCurrentContext(pathMap._plan._formatedHash)">
+  <section class="promo-full plans">
+    <div class="col-xs-12">
+      <banner-item  url="get_banner_shop_plans" index="0" class="promo08" options="image"></banner-item>
+    </div>
+  </section>
+  <section class="legal">
+    <p>All pricing per month on the Nationwide Sprint Network.  Unlimited domestic voice services while on-network (non-roaming) only.  Plans include 50 voice roaming minutes/month.  Monthly on-network data access ends after plan’s applicable allowance reached.Data pack add-on provides additional high-speed data to device and/or hotspot (select devices only) usage; expires 30 days from purchase date or when data depleted.  Prohibited network use rules apply – see <a target="_blank" href="http://www.sprint.com/legal/terms_conditions_spp.html">terms and conditions</a> for details.</p>
+  </section>
+  <phone-genie></phone-genie>
+  <section class="promo-half">
+    <div class="col-xs-6">
+      <banner-item url="get_banner_shop_plans" index="1" class="promo03" options="url,image,title,description,link_text"></banner-item>
+    </div>
+    <div class="col-xs-6">
+      <banner-item url="get_banner_shop_plans" index="2" class="promo07" options="url,image,title,description,link_text"></banner-item>
+    </div>
+  </section>
+  <section class="banner">
+    <banner-item url="get_banner_shop" class="promo11" index="3" options="hide_image_in_small,url,bg_image,title,description,link_text"></banner-item> 
+  </section>
+		<section class="askedquestions faqs">
+			<h3>FAQs</h3>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default" ng-repeat="item in app.faqs">
+          <div class="panel-heading" role="tab" id="faq{{$index+1}}">
+            <h4 class="panel-title">
+            <a class="{{pathMap._plan._faq=='faq'+(1+$index)?'':'collapsed'}}" href="#!/plans/faq{{$index+1}}">
+              {{item.title}}
+            </a>
+            </h4>
+          </div>
+          <div class="panel-collapse collapse {{pathMap._plan._faq=='faq'+(1+$index)?'in':''}}">
+            <div class="panel-body" ng-bind-html="item.desc"></div>
+          </div>
+			  </div>
+			</div>
+		</section>
+  <section class="legal">
+    <p>Sprint Prepaid plans do not require an annual contract.  No plan discounts apply.  Plans are for domestic use only within the U.S. unless stated otherwise and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network.  While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan.  If available, additional charges will apply with the latest rates found at <a href="{{pathMap._additionalServices._hash}}|Nav:Plans:AdditionalServices">sprint.com/prepaidinternational</a>.  Other terms: Price and offers subject to change.  All features not available on all phones.  Depending on your service plan, certain applications that are preinstalled on your device may not be available or operational.  Examples of these applications include, but are not limited to, Sprint TV, GPS and Mobile Hotspot applications.  If you purchase other subscription-based third-party content from application stores (e.g., the Google Play store), funds will be taken from your cash balance.  You may block third-party content purchases by contacting customer service.  Certain payment options may be restricted or not available. Visit <a href="{{pathMap._home._hash}}">sprint.com/prepaid</a> for details.</p> 
+  </section>
+</div>	

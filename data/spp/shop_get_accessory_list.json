@@ -1,0 +1,235 @@
+{
+  "responses": {
+    "response": [{
+      "@uuid": "shop_get_accessory_list_service",
+      "@class": "",
+      "@name": "Section 19029",
+      "@code": "0",
+      "accessoryResponse": {
+        "accessories": {
+          "accessory": [{
+            "generalAvailabilityDate": {
+              "$": "20140930"
+            },
+            "label": {
+              "$": "Case-Mate Naked Tough Case"
+            },
+            "sku": {
+              "$": "846127163453"
+            },
+            "type": {
+              "$": "protector"
+            },
+            "inventory": {
+              "$": "in-stock"
+            },
+            "description": {
+              "$": "This protective, two-piece case keeps it cool with its smooth transparent finish and slim design. It is lightweight and stylish, while the hard shell and bumper protects against impacts and falls."
+            },
+            "price": {
+              "$": "34.99"
+            },
+            "shopImage": {
+              "fileName": {
+                "$": "shop"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/b\/j\/b\/shop.png?action=access&assetId=A-R_HleJYfxQ2"
+              }
+            },
+            "checkoutIMage": {
+              "fileName": {
+                "$": "cart"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/j\/a\/cart.png?action=access&assetId=A-R_HleJYfxQ2"
+              }
+            },
+            "purchaseLimit": {
+              "$": "1"
+            },
+            "hiddenPrice": {
+              "$": "false"
+            }
+          }, {
+            "label": {
+              "$": "Lightning Dual Output Vehicle Charger"
+            },
+            "sku": {
+              "$": "PVA5140V"
+            },
+            "type": {
+              "$": "charger"
+            },
+            "inventory": {
+              "$": "in-stock"
+            },
+            "description": {
+              "$": "Charge two devices at once with this dual output vehicle power charger. Dual charging capability requires a charging data cable, available separately."
+            },
+            "price": {
+              "$": "29.99"
+            },
+            "shopImage": {
+              "fileName": {
+                "$": "shop"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/e\/h\/shop.png?action=access&assetId=A-G_HleJYfxQ2"
+              }
+            },
+            "checkoutIMage": {
+              "fileName": {
+                "$": "cart"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/e\/h\/cart.png?action=access&assetId=A-G_HleJYfxQ2"
+              }
+            },
+            "purchaseLimit": {
+              "$": "1"
+            },
+            "hiddenPrice": {
+              "$": "false"
+            }
+          }, {
+            "label": {
+              "$": "Lightning All in One Vehicle Wall Charger"
+            },
+            "sku": {
+              "$": "PRA0899V"
+            },
+            "type": {
+              "$": "charger"
+            },
+            "inventory": {
+              "$": "in-stock"
+            },
+            "description": {
+              "$": "Connects to Lightning compatible handset to vehicle charging port or standard wall outlet for simultaneous talk and charge. "
+            },
+            "price": {
+              "$": "49.99"
+            },
+            "shopImage": {
+              "fileName": {
+                "$": "shop"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/h\/g\/d\/shop.png?action=access&assetId=A-t0IleJYfxQ2"
+              }
+            },
+            "checkoutIMage": {
+              "fileName": {
+                "$": "cart"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/j\/h\/h\/cart.png?action=access&assetId=A-t0IleJYfxQ2"
+              }
+            },
+            "purchaseLimit": {
+              "$": "1"
+            },
+            "hiddenPrice": {
+              "$": "false"
+            }
+          }, {
+            "generalAvailabilityDate": {
+              "$": "20141022"
+            },
+            "label": {
+              "$": "Otterbox Commuter Series Case"
+            },
+            "sku": {
+              "$": "660543352785"
+            },
+            "type": {
+              "$": "protector"
+            },
+            "inventory": {
+              "$": "in-stock"
+            },
+            "description": {
+              "$": "This OtterBox Commuter Series Case provides protection while allowing  full access to your device's functions, without adding a lot of bulk."
+            },
+            "price": {
+              "$": "34.99"
+            },
+            "shopImage": {
+              "fileName": {
+                "$": "shop"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/i\/b\/f\/shop.png?action=access&assetId=A-k1IleJYfxQ2"
+              }
+            },
+            "checkoutIMage": {
+              "fileName": {
+                "$": "cart"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/c\/e\/g\/cart.png?action=access&assetId=A-k1IleJYfxQ2"
+              }
+            },
+            "purchaseLimit": {
+              "$": "1"
+            },
+            "hiddenPrice": {
+              "$": "false"
+            }
+          }, {
+            "generalAvailabilityDate": {
+              "$": "20140930"
+            },
+            "label": {
+              "$": "InvisibileSHIELD GLASS Screen"
+            },
+            "sku": {
+              "$": "848467026320"
+            },
+            "type": {
+              "$": "protector"
+            },
+            "inventory": {
+              "$": "in-stock"
+            },
+            "description": {
+              "$": "InvisibleSHIELD GLASS is the next evolution in premium screen protection. Made of high-quality tempered glass, it delivers maximum protection while preserving crystal clear image resolution."
+            },
+            "price": {
+              "$": "39.99"
+            },
+            "shopImage": {
+              "fileName": {
+                "$": "shop"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/f\/h\/shop.png?action=access&assetId=A-Z_HleJYfxQ2"
+              }
+            },
+            "checkoutIMage": {
+              "fileName": {
+                "$": "cart"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/g\/f\/cart.png?action=access&assetId=A-Z_HleJYfxQ2"
+              }
+            },
+            "purchaseLimit": {
+              "$": "1"
+            },
+            "hiddenPrice": {
+              "$": "false"
+            }
+          }]
+        },
+        "status": {
+          "$": "0"
+        },
+        "description": {
+          "$": "SUCCESS"
+        }
+      }
+    }]
+  }
+}

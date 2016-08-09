@@ -1,0 +1,59 @@
+{  
+  "__COMMENT__":" ***** Use this data with these exact phones in your cart: 2 X Samsung Galaxy Core Prime / 1 X LG Tribute ***** ",
+  "equipments":[
+    {
+      "modelId":"SPHG360ASB",
+      "quantity":"2",
+      "modelPrice":"99.99", 
+      "subTotal":"169.98",
+      "promoCodes":[
+        {
+          "promoCode":"PROMO_11",
+          "promotionName":"Friendly Neighbor Discount for 20% off",
+          "promoLegalese":"Offer only valid in neighborhoods that have a dog park",              
+          "eligibleQuantity":"1",
+          "discountAmount":"20"
+        },
+        {
+          "promoCode":"PROMO_22",
+          "promotionName":"Good Student Discount Discount for $10 off",
+          "promoLegalese":"Offer only good for students maintaing 1.0 GPA",
+          "eligibleQuantity":"1",
+          "discountAmount":"10"
+        }
+      ]
+    },
+    {
+      "modelId":"LGLS660ASB",
+      "quantity":"1",
+      "modelPrice":"79.99",
+      "subTotal":"79.99",
+      "promoCodes":[]
+    }
+  ],
+  "rejectedPromoCodes":[
+    {
+      "promoCode":"PROMO_FAIL",
+      "failureCode":"FAIL_1234",
+      "failureReason":"Because it's just fail"
+    },
+    {
+      "promoCode":"PROMO_NOT_FOUND",
+      "failureCode":"E001",
+      "failureReason":"The promo code was not found."
+    }
+  ],
+  "orderCodes":[
+    {
+    "promoCode":"PROMO_33",
+    "promoShippingFee":0,
+    "promoName":"Free Shipping 4U!",
+    "promoLegalese":"Offer valid next door to store."
+    }
+  ],
+  "totalOriginalPrice":"279.97",
+  "totalDiscountedPrice":"249.97",
+  "successMessage":"Thanks! Your discount has been applied.",
+  "status":"0",
+  "description":"SUCCESS"
+}

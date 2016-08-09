@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:util="http://www.springframework.org/schema/util"	
+		
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/jdbc     
+	http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	
+	<!-- beans Mail Boost -->
+	
+	<bean id="boostSendMail" class="com.boostmobile.runtime.mail.BoostSendMail">
+		<property name="encrypt" value="false" />
+		<!--property name="host" value="mailhost.corp.sprint.com" /-->
+		<!-- OLD VALUE ON LEGACY SITE -->
+		<!-- <property name="host" value="mailhost.corp.sprint.com" /> -->
+		<!-- NEW VALUE ON MSDP/ERICSSON SITE -->
+		<!-- property name="host" value="plsasid1.corp.sprint.com" / -->
+        <property name="host" value="idc-lsdc-mailhost.corp.sprint.com" />
+	</bean>
+	
+	<bean id="vmuSendMail" class="com.boostmobile.runtime.mail.BoostSendMail">
+		<property name="encrypt" value="false" />
+        <property name="host" value="idc-lsdc-mailhost.corp.sprint.com" />
+	</bean>
+	
+	<bean id="sendMailServlet" class="com.boostmobile.runtime.util.SendMailRequestHandler">
+        <property name="boostSendMail" ref="boostSendMail" />
+        <!--property name="redirect" ref="support/thank-you/" /-->
+        <!--property name="redirect" value="http://144.229.209.141/#!/framework_support_thank_you/" /-->
+        <property name="redirect" value="${boostSendMail.redirect}" />
+		<property name="redirectSpanish" value="https://espanol.boostmobile.com/sdwww3/#!/framework_support_thank_you" />
+    </bean>
+	
+	<bean id="dynamicSendMailServlet" class="com.boostmobile.runtime.util.DynamicSendMail">
+        <property name="boostSendMail" ref="vmuSendMail" />
+        <!--property name="redirect" ref="support/thank-you/" /-->
+        <!--property name="redirect" value="http://144.229.209.141/#!/framework_support_thank_you/" /-->
+        <!--property name="redirect" value="${boostSendMail.redirect}" /-->
+        <property name="mailTo" value="ourteam-en@virginmobileusa.com" />
+    </bean>
+	
+
+
+	<!--bean id="sendTextMessageServlet" class="com.boostmobile.runtime.util.SendTextMessageRequestHandler">
+        <property name="boostSendMail" ref="boostSendMail" />
+    </bean> 	
+	
+	<bean id="sendTextMessageIdenServlet" class="com.boostmobile.runtime.util.SendTextMessageIdenRequestHandler">
+        <property name="boostSendMail" ref="boostSendMail" />
+    </bean-->
+
+	<!-- internationalRates beans START -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+ 		<property name="location">
+			<value>/WEB-INF/classes/BMconfig.properties</value>
+		</property>
+	</bean>
+
+	<bean id="initialProperties" class="com.boostmobile.runtime.config.link.InitialProperties" />
+<!--
+	<bean id="configurator" class="com.boostmobile.runtime.config.DefaultConfigurator" init-method="loadConfig">
+		<property name="dataLoader" ref="dataLoader" />
+		<property name="initialProperties" ref="initialProperties" />
+		<property name="icLookupFilePath"  value="${icLookupFilePath}"/>
+	</bean>
+-->
+	<bean id="dataLoader" class="com.boostmobile.runtime.international.data.DataLoader">
+    	<property name="rateDao" ref="rateDao" />
+	</bean>	
+<!--
+	<bean id="configuratorItsOnRates" class="com.boostmobile.runtime.config.DefaultConfigurator" init-method="loadConfig">
+		<property name="dataLoader" ref="dataLoaderItsOnRates" />
+		<property name="initialProperties" ref="initialProperties" />
+		<property name="icLookupFilePath"  value="${icLookupFilePathItsOn}"/>
+	</bean>
+	
+	<bean id="dataLoaderItsOnRates" class="com.boostmobile.runtime.international.data.DataLoaderItsOnRates">
+    	<property name="rateDao" ref="rateDao" />
+	</bean>	
+-->
+	<bean id="boostDataProvider" class="com.boostmobile.runtime.international.data.DataProvider">
+    	<property name="rateDao" ref="rateDao" />
+	</bean>	
+	<bean id="vmuDataProvider" class="com.boostmobile.runtime.international.data.DataProvider">
+    	<property name="rateDao" ref="vmuRateDao" />
+	</bean>	
+	
+	<jdbc:embedded-database id="boostBD" type="DERBY">
+	   <jdbc:script location="classpath:internationalConnect/derby_schema.sql"/>
+	   <jdbc:script location="classpath:internationalConnect/derby_data_prefix.sql"/>
+	   <!--jdbc:script location="WEB-INF/resources/internationalConnect/derby_schema.sql"/>
+	   <jdbc:script location="WEB-INF/resources/internationalConnect/derby_data_prefix.sql"/-->
+	</jdbc:embedded-database>
+	
+	<jdbc:embedded-database id="vmuBD" type="DERBY">
+	   <jdbc:script location="classpath:internationalConnect/vmu_derby_schema.sql"/>
+	   <jdbc:script location="classpath:internationalConnect/vmu_derby_data_prefix.sql"/>
+	   <!--jdbc:script location="WEB-INF/resources/internationalConnect/derby_schema.sql"/>
+	   <jdbc:script location="WEB-INF/resources/internationalConnect/derby_data_prefix.sql"/-->
+	</jdbc:embedded-database>
+	
+	<bean id="rateDao" class="com.boostmobile.runtime.international.data.RateDao">
+    	<property name="boostBD" ref="boostBD" />
+		<property name="initialProperties" ref="initialProperties" />
+		<property name="selectRatesQueryProperty" value="ic.query.boostSelectRates" />
+		<property name="getAllRatesQueryProperty" value="ic.query.getAllRates" />
+		<property name="selectGroupedRatesQueryProperty" value="ic.query.boostSelectGroupedRates" />
+	</bean>
+	
+	<bean id="vmuRateDao" class="com.boostmobile.runtime.international.data.RateDao">
+    	<property name="boostBD" ref="vmuBD" />
+		<property name="initialProperties" ref="initialProperties" />
+		<property name="selectRatesQueryProperty" value="ic.query.boostSelectRates" />
+		<property name="getAllRatesQueryProperty" value="ic.query.vmuGetAllRates" />
+		<property name="selectGroupedRatesQueryProperty" value="ic.query.vmuSelectGroupedRates" />
+	</bean>
+
+</beans>

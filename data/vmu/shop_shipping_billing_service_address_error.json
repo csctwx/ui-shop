@@ -1,0 +1,7 @@
+{  
+  "addressValid":false,
+  "status":104,
+  "description":"Address Invalid",
+  "technicalError":"Address Invalid",
+  "errorCode":"MSDP0001"
+}

@@ -1,0 +1,8 @@
+{
+  "redirectUrl": "https://bf-origin2-www.test.virginmobileusa.com/#!/shop/checkout",
+  "cancelUrl": "https://bf-origin2-www.test.virginmobileusa.com/#!/shop/checkout",
+  "transactionId": "VMU_SALES_6216522027",
+  "status": 0,
+  "description": "SUCCESS",
+  "paypalToken": "EC-21W63009DP333880M"
+}

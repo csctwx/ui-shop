@@ -1,0 +1,28 @@
+<section class="acc-phones">
+    <div class="col-xs-12 acc-container">
+        <h2 ng-if="appName!='vmu'">Choose your phone</h2>
+        <h1 ng-if="appName=='vmu'">Choose your phone</h1>
+        
+        <div ng-if="appName=='bst'" ng-repeat="item in phoneController.list.getAccPhoneList()" class="col-xs-6 col-md-3 col-lg-2 acc"
+             id="{{pathMap._phoneDetails._hash}}{{item.id}}/accessories/">
+                <h4>{{item.name}}</h4>
+                <img alt="{{item.brand}} {{item.name}} - Sprint Prepaid" ng-src="{{item.selectedVariant.gridImage}}">
+
+                <div class="cta">
+                    <a class="acc-select btn-acc gradient-teal" href="{{pathMap._phoneAccessories._hash}}{{item.id}}/">Select</a>
+                </div>
+        </div>
+
+        <div ng-if="appName=='vmu'" ng-repeat="item in phoneController.list.getAccPhoneList()" class="col-xs-6 col-md-3 col-lg-3"
+             id="{{pathMap._phoneDetails._hash}}{{item.id}}/accessories/">
+            <div class="acc">
+                <h4>{{item.name}}</h4>
+                <img alt="{{item.brand}} {{item.name}} - Sprint Prepaid" ng-src="{{item.selectedVariant.gridImage}}">
+
+                <div class="cta">
+                    <a class="acc-select btn-acc gradient-teal" href="{{pathMap._phoneAccessories._hash}}{{item.id}}/">View Accessories</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

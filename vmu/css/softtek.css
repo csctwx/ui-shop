@@ -1,0 +1,29 @@
+	.plans .tab-content #databoost section.nuevaClaseSergio {
+		padding:0px 0px 0;
+		height:195px;
+		background:url(../img/about-us/about-bg.jpg) top right no-repeat;
+		background-position:left 0;
+		background-size:cover;
+	}
+	
+	.plans ul.submenu-aboutus{padding:330 0 20px !important; background:#efeff2 !important;}
+	.plans ul.submenu-aboutus:before { padding:30px; color:#F99100; font-size:15px; display:block; font-family:'Boost_med', Helvetica, Arial, sans-serif;}
+	.plans ul.submenu-aboutus li { margin:0 0 0 15px !important; border:2px solid #efeff2;}
+	.plans ul.submenu-aboutus li a {background:none !important; border-bottom:none !important; color:#333333 !important; padding:0px 10px 2px 0 !important; font-size:11px;}
+	.plans ul.submenu-aboutus li a:hover {color:#6fdbdb !important;}
+	.plans ul.submenu-aboutus li.active a {color:#F99100 !important;}
+	.plans ul.submenu-aboutus li.non-active a {color:#333333 !important;}
+
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.borderless{
+    font-size: 19px;
+}
+
+	
+	
+	
+	

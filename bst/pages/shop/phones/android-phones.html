@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prepaid Android Phones and No Contract Android Plans | Boost Mobile</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="HandheldFriendly" content="True"/>
+		<meta name="page-title" content="Android™ Phones &amp; Plans">
+		<meta name="keywords" content="Android Phones Plans">
+		<meta name="description" content="Android Phones Plans">
+		<link rel="shortcut icon" href="bst/img/favicon.ico"/>
+		<link href="bst/css/carousel.css" rel="stylesheet" />
+	   
+	</head>
+	<body>
+		<ol id="page-path" class="breadcrumb hidden-xs">
+			<li class="ng-scope">
+				<a class="ng-binding" href="#!/">Home</a>
+			</li>
+			<li class="ng-scope">
+				<a class="ng-binding" href="#!/shop/">Shop</a>
+			</li>
+			<li class="ng-scope">
+				<a class="ng-binding" href="#!/shop/phones/">Phones</a>
+			</li>
+			<li class="active ng-binding">Android Phones</li>
+		</ol>
+        
+		<div id="android-phones"> 
+			<h2 class="font-boostneo-gradient-bold">What's an Android™ Phone?</h2> 
+			<p class="bn-b description" style="padding-top:20px">
+				More "pocket-sized computer" than "phone," an Android™ smartphone has the brains to text, email, instant message, surf the Web, watch videos, play games and more. Check out Boost Mobile's lineup of no-contract Android™ phones and find one at a price that won't break the bank.
+			</p> 
+			<h2>Android™ phones offer:</h2> 
+			<ul> 
+				<li>Millions of apps, games, songs, and videos on Google Play™</li> 
+				<li>Seamless integration with Gmail™ and other Google apps</li> 
+				<li>Easy multitasking so you can quickly switch between apps </li> 
+				<li>Fast browsing and streaming with Chrome</li> 
+				<li>Customizable home screens for a unique mobile experience</li>
+			</ul> 
+		</div>
+		<div style="background-color:#fff;padding:30px;padding-top:10px;padding-bottom:1px;position:relative;"> </div>
+
+		<div id="android-phones-genie" style="background-color:#fff;position:relative;padding-right:15px;padding-left:15px;">
+			<div id="phone_slider-view_all" style="margin-bottom:20px">
+				<a href="#!/shop/phones/">View all</a> 
+				<h2 id="genie-title">Choose from these Android™ phones</h2>
+		   </div>
+		   <div id="genie-options" class="show-phones-5 show-carousel show-type-android">
+			  <!--?xml version="1.0" encoding="UTF-8"?-->
+			  <div id="widget-pricing">
+				 <div id="module-phone_slider">
+					<div id="phone_slider_container">
+					   <div id="phone_slider_box">
+						  <div id="phone_slider_box_left">
+							 <div id="phone_slider_box_right">
+								<div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
+								   <div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;">
+									  <ul id="phone_slider" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 6049px;">
+										<li class="type-android" style="float: left; list-style: none;display:none">
+										  <a href="#!/shop/phones/{{id}}/features/">
+											<span class="phone_slider_image">
+											  <img src="{{img}}" alt="{{title}}">
+											</span>
+											<span class="phone_slider-name">
+											  <span class="phone_brand">{{brand}}</span>
+											  <span class="phone_name">{{name}}</span>
+											</span>
+											<span class="phone_slider-price" style="visibility: visible;">
+											  <span class="phone_slider_currentprice">${{price}}</span>
+											</span>
+											<span class="phone_slider-lm" style="visibility: visible;">Learn More</span>
+											<div class="phone_promo {{promo}} promo_true" style="display: block;">On Sale</div>
+										  </a>
+										</li>
+									  </ul>
+								   </div>
+								   <div class="jcarousel-prev jcarousel-prev-horizontal" onclick="androidGenie.goPrePage(0)" style="display: block;"></div>
+								   <div class="jcarousel-next jcarousel-next-horizontal" onclick="androidGenie.goNextPage(0)" style="display: block;"></div>
+								</div>
+							 </div>
+						  </div>
+					   </div>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+
+		<script>
+		var androidGenie={
+		  template:$("#phone_slider").html(),
+		  showList:function(){
+			if(appUtil.$scope.phoneController.list.data.length>0){
+			  $("#phone_slider").html("");
+			  var list=appUtil.$scope.phoneController.list.data;
+			  for(var i=0;i<list.length;i++){
+				var html=this.template;
+				var d=list[i];
+				if(d.type.toLowerCase().indexOf("android")>=0){
+				  html=html.replace("{{id}}",d.id);
+				  html=html.replace("{{img}}",d.selectedVariant.gridImage);
+				  //html=html.replace("{{brand}}",d.displayBrand);
+                  html=html.replace("{{brand}}",d.name.substr(0,d.name.indexOf(' ')));
+				  html=html.replace("{{title}}",appUtil.$scope.phoneController.details.getDisplayTitle(d));
+				  html=html.replace("{{price}}",d.selectedVariant.price);
+				  html=html.replace("{{name}}",d.name.substr(d.name.indexOf(' ')));
+				  var c = appUtil.$scope.phoneController.getDiscountClass(d);
+				  
+				  if(!c){
+					c="hide";
+				  }else{
+					c=c.trim().split(" ")[1].toLowerCase();
+					if(c=="webonly"){
+					  c="promo_webonly";
+					}else{
+					  c="promo_"+c.split("_")[1]+"dol_off";
+					}
+				  }
+				  html=html.replace("{{promo}}",c);
+				  $(html).appendTo("#phone_slider");
+				}
+			  }
+			}else{
+			  appUtil.$scope.phoneController.loadList(null,"androidGenie.showList()");
+			}
+		  },
+		  goNextPage:function(idx){
+			if(idx<5){
+			  $("#phone_slider li:first-child").appendTo("#phone_slider");
+			  setTimeout("androidGenie.goNextPage("+(idx+1)+")",100);
+			}
+		  },
+		  goPrePage:function(idx){
+			if(idx<5){
+			  $("#phone_slider li:last-child").insertBefore("#phone_slider li:first-child");
+			  setTimeout("androidGenie.goPrePage("+(idx+1)+")",100);
+			}
+		  }
+		}
+
+		androidGenie.showList();
+
+		var analyticsData = {
+		  page:{
+			channel : 'Android-Phones',
+			subSection : 'Android-Phones', 
+			name : 'Android-Phones Page'
+		  }
+		}
+		pathMap._page._sendAnalysisData(analyticsData);
+		</script>
+	</body>
+</html>

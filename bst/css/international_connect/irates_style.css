@@ -1,0 +1,35 @@
+#lookup table{
+	font: 12px/1.3 BoostNeoBold, Arial, Helvetica, sans-serif !important;
+}
+.hdrPopup h1 {
+    font: 30px/1.3 BoostNeoBold, Arial, Helvetica, sans-serif;
+    color: #f48c1e;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,.6)));
+	margin: 0px !important;
+}
+
+.orange {
+    color: #f7901e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -3px;
+}
+#content a{
+	color: #f48c1e;
+}
+h2, .h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+    color: #f7901e;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

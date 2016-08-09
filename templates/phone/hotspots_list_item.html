@@ -1,0 +1,98 @@
+<div ng-repeat="item in phoneController.hotspots.list"
+     class="col-sm-6 phone {{phoneController.getDiscountClass(item)}} {{item.promotions[0].promotionCss.css}}">
+    <div class="col-xs-12">
+        <h3 class="title">
+            <a ng-click="phoneController.hotspots.deviceSelected($index)">
+                <span class="phoneName">
+                    {{ item.name }}
+                </span>
+            </a>
+        </h3>
+
+        <p class="rating">
+            <span ng-if="item.phoneCondition=='preowned'" style="color:black;font-size:14px">Pre-owned</span>
+            <span ng-if="appName=='bst'"
+                  class="{{phoneController.getRateStarClass(item.ReviewStatistics.AverageOverallRating)}}">
+                <a class="reviews" ng-if="item.ReviewStatistics.TotalReviewCount != null" ng-href="{{item.getHash('reviews')}}">{{item.ReviewStatistics.TotalReviewCount}}</a>
+                <a class="reviews" ng-if="item.ReviewStatistics.TotalReviewCount == null">0</a>
+            </span>
+        </p>
+    </div>
+    <div class="col-xs-4" style="cursor:pointer" ng-click="phoneController.hotspots.deviceSelected($index)" id="{{item.getHash('features')}}">
+        <a ng-if="appName=='bst'" data-view="front"
+           class="phoneZoom gradient-grey-lt cboxElement"
+           style="margin-left:-40px;margin-top:-15px;z-index:1"
+           ng-click="phoneController.hotspots.zoomImages(item.sku, item.getHash('features'));"
+           onclick="event.stopPropagation()"
+           onmouseover="$(this).css({width:'60px'})"
+           onmouseout="$(this).css({width:'24px'})">
+            <span>Zoom</span>
+        </a>
+        <a ng-href="{{item.getHash('features')}}" style="position:absolute;left:10px;width: 100%;">
+            <img class="img-responsive" style="display:none" onload="$(this).show()"
+                 alt="{{item.displayBrand}} {{item.name}} - {{appDisplayName}}" ng-src="{{item.heroImage.uRI}}">
+        </a>
+    </div>
+    <div class="col-xs-8 col8-phoneGrid">
+        <p class="phoneBody" ng-if="item.promotions">
+            <b>{{item.promotions.promotion.message.title}}</b>
+            {{item.promotions.promotion.message.body}}
+          <span style="padding-left:0;padding-right:0;left:0px;" class="glyphicon glyphicon-info-sign"
+                ng-if="item.promotions.promotion.message.toolTip"
+                data-popover="true"
+                data-html="true"
+                data-content="{{item.promotions.promotion.message.toolTip}}"
+                data-original-title="">
+          </span>
+        </p>
+
+        <p class="phoneBody" ng-if="item.promoIndex==-1">
+            <b>{{phoneController.list.message.title}}</b>
+            {{phoneController.list.message.body}}
+        </p>
+
+        <div class="col-xs-12 prices" ng-if="!item.selectedVariant.hiddenPrice">
+            <p class="phoneRetailPrice" ng-show="item.price">
+                <span class="pull-left">Retail Price</span>{{item.price | currency:""}}</p>
+            <p class="phonePromoDiscount">
+                <span ng-show="item.discount" class="pull-left">Promotional discount</span>
+                <span ng-show="item.discount" class="pull-right">{{item.discount|currency}}</span>
+            </p>
+            <ul class="features" ng-if="appName=='bst'">
+                <li class="fourg" ng-show="item.filters.indexOf('4GLTE')>-1">4g</li>
+                <li class="threeg" ng-show="item.filters.indexOf('3G')>-1">3g</li>
+                <li style="visibility:hidden;position:absolute;"></li>
+            </ul>
+            <h2 class="phoneFinalPrice">{{item.price|currency:""}}</h2>
+            <span class="limitPerCustomer">{{item.disclaimerMini}}</span>
+        </div>
+        <div class="col-xs-12 prices" ng-if="item.selectedVariant.hiddenPrice && appName=='bst'">
+            <p class="phoneRetailPrice" ng-show="item.price">
+                <span class="pull-left">Retail Price</span>{{item.price|currency:""}}</p>
+
+            <p class="phonePromoDiscount" ng-show="item.discount"><span class="pull-left">Promotional discount</span>{{item.discount|currency:""}}
+            </p>
+            <ul class="features" ng-if="appName=='bst'">
+                <li class="fourg">4g</li>
+                <li class="threeg">3g</li>
+                <li style="visibility:hidden;position:absolute;"></li>
+            </ul>
+            <h2 class="hiddenPrice">SEE PRICE IN CART</h2>
+            <span class="limitPerCustomer">{{item.disclaimerMini}}</span>
+        </div>
+    </div>
+    <div class="col-xs-12 phoneBottom">
+
+        <div class="pull-right">
+            <form class="actions">
+                <a class="btn {{appName=='bst'?'btn-default':''}}" ng-click="phoneController.hotspots.deviceSelected($index)">
+                    Learn More
+                </a>
+                <a class="btn btn-primary"
+                   ng-href="{{pathMap._checkout._hash}}addToCart/sku={{item.sku}}/"
+                   ng-disabled="!phoneController.hotspots.isAvailable($index)">{{item.cartLabel}}
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

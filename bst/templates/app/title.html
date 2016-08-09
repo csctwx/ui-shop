@@ -1,0 +1,12 @@
+<section ng-hide="appName=='bst' && app.isCurrentContext(pathMap._checkout._formatedHash)">
+  <h1 class="title" ng-if="!app.isCurrentContext(pathMap._home._formatedHash) && !pathMap._getCurPath()[pathMap._getCurPath().length-1]._titleAlt">
+    <span>{{pathMap._getCurPath()[pathMap._getCurPath().length-1]._title}}</span>    
+    <cart-room></cart-room>
+    <span class="welcome" ng-if="app.userFirstName">Welcome {{app.userFirstName}}</span>
+  </h1>
+  <h2  class="title" ng-if="!app.isCurrentContext(pathMap._home._formatedHash) && pathMap._getCurPath()[pathMap._getCurPath().length-1]._titleAlt">
+    <span ng-bind-html="pathMap._getCurPath()[pathMap._getCurPath().length-1]._titleAlt"></span>
+    <cart-room></cart-room>
+    <span class="welcome" ng-if="app.userFirstName">Welcome {{app.userFirstName}}</span>
+  </h2>
+</section>

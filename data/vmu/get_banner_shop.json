@@ -1,0 +1,158 @@
+{
+    "responses": {
+        "response": [
+            {
+                "@uuid": "2681bb1e-68b1-4906-a842-badacc720286",
+                "@class": "",
+                "@name": "section_top",
+                "@position": "layout_left",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-AFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "Shop Page Promo Phones"
+                        },
+                        "url": {
+                            "$": "#!/shop/phones/"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/a/d/promo-half-03.png?action=access&assetId=A-AFh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "No Contract phones"
+                        },
+                        "description": {
+                            "$": "Whether you're looking for an Android™ smartphone that runs the latest apps or an affordable feature phone, Sprint Prepaid has a device for you. All without annual contracts."
+                        },
+                        "linkText": {
+                            "$": "Shop phones"
+                        },
+                        "alt": {
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            },
+            {
+                "@uuid": "1d123e86-c6a7-411e-ab4f-a2bc48646b05",
+                "@class": "",
+                "@name": "section_top",
+                "@position": "layout_right",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-BFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "Shop Page Promo Plans"
+                        },
+                        "url": {
+                            "$": "#!/plans/"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/b/f/c/promo-half-01.jpg?action=access&assetId=A-BFh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "Plans as low as $35/month"
+                        },
+                        "description": {
+                            "$": "Great value. Total flexibility. Get unlimited talk & text with data options from just $35/month. Stay connected without breaking the bank."
+                        },
+                        "linkText": {
+                            "$": "Shop plans"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            },
+            {
+                "@uuid": "0fe6689e-ac36-47f1-9e66-15c97b70e741",
+                "@class": "",
+                "@name": "section_middle",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-bVh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "International Talks Banner Shop"
+                        },
+                        "url": {
+                            "$": "#!/plans/additionalservices/internationalrates"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/f/b/map-largest.png?action=access&assetId=A-bVh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "International talk & text for less"
+                        },
+                        "description": {
+                            "$": "Our affordable international rates let you stay in touch with friends and family around the world. No calling cards required."
+                        },
+                        "linkText": {
+                            "$": "See rates"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            },
+            {
+                "@uuid": "afb334c1-3bb5-4e82-9caa-de5cc58e393b",
+                "@class": "",
+                "@name": "section_bottom",
+                "@code": "0",
+                "getBannerResponse": {
+                    "banner": {
+                        "assetId": {
+                            "$": "A-IFh6XVKM1TW"
+                        },
+                        "name": {
+                            "$": "Free Mobile Hotspot Banner"
+                        },
+                        "url": {
+                            "$": "#!/plans/additionalservices/mobilehotspot"
+                        },
+                        "imageUrl": {
+                            "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/e/b/img-hotspot.png?action=access&assetId=A-IFh6XVKM1TW"
+                        },
+                        "title": {
+                            "$": "Free mobile hotspot included"
+                        },
+                        "description": {
+                            "$": "Now available on select devices. Use your phone to stay connected on the go with a tablet, a laptop or any other Wi-Fi connected device."
+                        },
+                        "linkText": {
+                            "$": "Learn more"
+                        }
+                    },
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            }
+        ]
+    }
+}

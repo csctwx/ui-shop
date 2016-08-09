@@ -1,0 +1,86 @@
+var commonData={
+  monthOptions:[
+    {value:1,label:"January"},
+    {value:2,label:"February"},
+    {value:3,label:"March"},
+    {value:4,label:"April"},
+    {value:5,label:"May"},
+    {value:6,label:"June"},
+    {value:7,label:"July"},
+    {value:8,label:"August"},
+    {value:9,label:"September"},
+    {value:10,label:"October"},
+    {value:11,label:"November"},
+    {value:12,label:"December"}
+  ],
+  stateOptions:[
+    {value:null,label:"Select a State"},
+    {value:"AL",label:"AL - Alabama"},
+    {value:"AK",label:"AK - Alaska"},
+    {value:"AP",label:"AP - Armed Forces Pacific"},
+    {value:"AE",label:"AE - Armed Forces Europe"},
+    {value:"AA",label:"AA - Armed Forces America"},
+    {value:"AZ",label:"AZ - Arizona"},
+    {value:"AR",label:"AR - Arkansas"},
+    {value:"CA",label:"CA - California"},
+    {value:"CO",label:"CO - Colorado"},
+    {value:"CT",label:"CT - Connecticut"},
+    {value:"DC",label:"DC - Washington D.C."},
+    {value:"DE",label:"DE - Delaware"},
+    {value:"FL",label:"FL - Florida"},
+    {value:"GA",label:"GA - Georgia"},
+    {value:"GU",label:"GU - Guam"},
+    {value:"HI",label:"HI - Hawaii"},
+    {value:"ID",label:"ID - Idaho"},
+    {value:"IL",label:"IL - Illinois"},
+    {value:"IN",label:"IN - Indiana"},
+    {value:"IA",label:"IA - Iowa"},
+    {value:"KS",label:"KS - Kansas"},
+    {value:"KY",label:"KY - Kentucky"},
+    {value:"LA",label:"LA - Louisiana"},
+    {value:"ME",label:"ME - Maine"},
+    {value:"MD",label:"MD - Maryland"},
+    {value:"MA",label:"MA - Massachusetts"},
+    {value:"MI",label:"MI - Michigan"},
+    {value:"MN",label:"MN - Minnesota"},
+    {value:"MS",label:"MS - Mississippi"},
+    {value:"MO",label:"MO - Missouri"},
+    {value:"MT",label:"MT - Montana"},
+    {value:"NE",label:"NE - Nebraska"},
+    {value:"NV",label:"NV - Nevada"},
+    {value:"NH",label:"NH - New Hampshire"},
+    {value:"NJ",label:"NJ - New Jersey"},
+    {value:"NM",label:"NM - New Mexico"},
+    {value:"NY",label:"NY - New York"},
+    {value:"NC",label:"NC - North Carolina"},
+    {value:"ND",label:"ND - North Dakota"},
+    {value:"OH",label:"OH - Ohio"},
+    {value:"OK",label:"OK - Oklahoma"},
+    {value:"OR",label:"OR - Oregon"},
+    {value:"PA",label:"PA - Pennsylvania"},
+    {value:"RI",label:"RI - Rhode Island"},
+    {value:"SC",label:"SC - South Carolina"},
+    {value:"SD",label:"SD - South Dakota"},
+    {value:"TN",label:"TN - Tennessee"},
+    {value:"TX",label:"TX - Texas"},
+    {value:"UT",label:"UT - Utah"},
+    {value:"VT",label:"VT - Vermont"},
+    {value:"VA",label:"VA - Virginia"},
+    {value:"VI",label:"VI - Virgin Islands"},
+    {value:"WA",label:"WA - Washington"},
+    {value:"WV",label:"WV - West Virginia"},
+    {value:"WI",label:"WI - Wisconsin"},
+    {value:"WY",label:"WY - Wyoming"}
+  ]
+};
+var appMsg={
+  bst:{
+    sysError:"There is a temporary issue while accessing the Portal. Please contact Boost Customer Support for further assistance."
+  },
+  spp:{
+    sysError:"There is a temporary issue while accessing the Portal. Please contact Sprint Customer Support for further assistance."
+  },
+  vmu:{
+    sysError:"There is a temporary issue while accessing the Portal. Please contact Sprint Customer Support for further assistance."
+  }
+}

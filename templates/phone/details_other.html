@@ -1,0 +1,35 @@
+<section class="tabs">
+  <div role="tabpanel" class="maintabs">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="{{phoneController.selectedTab=='features'?'active':''}}">
+        <a href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/features/">Features &amp; Specs
+        </a>
+      </li>
+      <li role="presentation" ng-if="phoneController.details.data.selectedVariant.inventory!='end-of-life'"
+          class="{{phoneController.selectedTab=='plans'?'active':''}}">
+        <a href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/plans/">Plans</a>
+      </li>
+      <li role="presentation" ng-if="(appName=='bst' || appName=='vmu') && phoneController.selectedTab!='write_reviews'"
+          class="{{phoneController.selectedTab=='reviews'?'active':''}}">
+        <a href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/reviews/">Reviews</a>
+      </li>
+      <li role="presentation" ng-if="(appName=='bst' || appName=='vmu') && phoneController.selectedTab=='write_reviews'"
+          class="active">
+        <a href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/write_reviews/">Reviews</a>
+      </li>
+      <li role="presentation" ng-if="(appName=='bst' || appName=='vmu')"
+          class="{{phoneController.selectedTab=='accessories'?'active ':''}}accessories">
+        <a href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/accessories/">Accessories</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <phone-details-features></phone-details-features>
+      <phone-details-plans></phone-details-plans>
+      {{review_sku=phoneController.details.data.defaultSku;"";}}
+      {{review_obj=phoneController.details.data;"";}}
+      <phone-review></phone-review>
+      <phone-write-review></phone-write-review>
+      <phone-details-accessories></phone-details-accessories>
+    </div>
+  </div>
+</section>

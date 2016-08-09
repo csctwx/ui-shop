@@ -1,0 +1,16 @@
+<section class="phonewall">
+
+    <div class="col-xs-12 col-md-12 hotspotsGridContainer" id="phoneListArea">
+        <section ng-if="appName=='bst'">
+            <banner-item url="get_banner_phone_grid_redventure" index="0" extraheaders="{brandId:appName}" options="no_url,phone_grid" ></banner-item>
+        </section>
+        <!--<div class="col-xs-12 sorting hidden-xs hidden-sm">-->
+            <!--<div class="dropdown pull-left">-->
+                <!--<phone-list-sort></phone-list-sort>-->
+            <!--</div>-->
+            <!--<p class="results pull-right" id="results"><span>{{ phoneController.list.getResultList().length }}</span> of <span>{{ phoneController.hotspots.list.length }}</span> available Wi-Fi Hotspots match your search</p>-->
+        <!--</div>-->
+        <phone-hotspots-list-item></phone-hotspots-list-item>
+        <a class="pull-right btn btn-block btn-default backtotop" href="javascript:appUtil.ui.refreshContent()">Back to Top</a>
+    </div>
+</section>

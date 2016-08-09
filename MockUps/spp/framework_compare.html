@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Sprint Prepaid - Compare Phones</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/app-framework.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<div class="container">
+			<div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+				<a href="framework_home.html">Home</a>
+			</div>
+			<div class="col-xs-9 col-md-10 pull-right">
+				<div class="navbar pull-left visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#" data-toggle="modal" data-target="#coverageMap">Coverage Map</a></li>
+						<li class="navbar-item"><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+					</ul>
+					<div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<h2>Coverage Map</h2>
+									<p>Text about coverage.</p>
+									<a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar pull-right visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill">Refill</a></li>
+						<li class="navbar-item"><a href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support">Support</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate">Activate</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct">My Account</a></li>
+						<li class="navbar-item"><a href="">Sign in</a></li>
+					</ul>
+				</div>
+				<div class="visible-sm visible-xs greeting">
+					<button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+						<i class="glyphicon glyphicon-remove"></i>
+					</button>
+					<p class="greeting-name"><span>Good morning, </span>UserName</p>
+					<p class="greeting-number">PhoneNumber</p>
+				</div>
+				<ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+					<li><a href="framework_shop.html">Shop</a></li>
+					<li><a href="framework_phones.html">All Phones</a></li>
+					<li><a href="">Android Phones</a></li>
+					<li><a href="framework_plans.html">Shop Plans</a></li>
+					<li><a href="framework_addservices.html">Additional Services</a></li>
+				</ul>
+				<ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_shop.html">Shop <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_phones.html">All Phones</a></li>
+							<li><a>Android Phones</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_plans.html">Plans <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_plans.html">Shop Plans</a></li>
+							<li><a href="framework_addservices.html">Additional Services</a></li>
+						</ul>
+					</li>
+					<li class="cart dropdown">
+						<a class="dropdown-toggle" href="framework_purchase-01.html"><img src="img/icons/cart-white.png"></img><span>Cart</span><span id="cart-count">1</span></a>
+						<ul class="dropdown-menu subnav">
+							<li>
+								<ul>
+									<li>
+										<img class="phoneImg" src="img/phone1-1.png"></img>
+										<div class="pull-left">
+											<span class="phoneBrand">Samsung</span>
+											<span class="phoneName">Galaxy S5</span>
+											<span class="phoneColor"></span>
+											<span class="phoneMemory"></span>
+										</div>
+										<div class="pull-right">
+											<span class="quantity">1</span>
+											<span class="totalPrice">199.99</span>
+											<a class="removePhone"><i class="glyphicon glyphicon-remove-circle"></i></a>
+										</div>
+									</li>
+								</ul>
+								<a class="cartAction">Empty cart</a>
+								<a class="cartAction pull-right" href="framework_purchase-01.html">Checkout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="#home" class="linkHome">Home</a>
+		<ul class="mobilelinks">
+			<li><a href="framework_purchase-01.html"><i class="glyphicon glyphicon-shopping-cart"><span id="cart-count">1</span></i></a></li>
+			<li><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+			<li><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct"><i class="glyphicon glyphicon-log-in"></i></a></li>
+		</ul>
+    </div>
+	<div class="container main">
+		<ol class="breadcrumb hidden-xs">
+			<li><a href="framework_home.html">Home</a></li>
+			<li><a href="framework_shop.html">Shop</a></li>
+			<li><a href="framework_phones.html">Phones</a></li>
+			<li class="active">Compare Phones</li>
+		</ol>
+		<section class="compareHeader">
+			<h2>Compare Phones</h2>
+			<div class="col-xs-12">
+				<a href="framework_phones.html">Return to Shop Phones</a>
+			</div>
+		</section>
+		<section class="compare hidden-xs hidden-sm">
+			<div class="col-xs-12 sticker" data-spy="affix">
+				<table class="table-bordered compare">
+					<tbody>
+						<tr>
+							<th scope="row">
+								<p>Phones</p>
+							</th>
+							<td>
+								<a href="framework_phonedetails.html"><img src="img/phone1-1.png"></img></a>
+								<div>
+									<p class="title"><span class="phoneBrand">Samsung</span><span class="phoneName">Galaxy Core Primee</span></p>
+									<h4 class="phoneFinalPrice">649.99</h4>
+									<a class="btn btn-primary" href="framework_phonedetails.html">Learn more</a>
+								</div>
+								<a class="remove"><i class="glyphicon glyphicon-remove-circle"></i></a>
+							</td>
+							<td>
+								<a href="framework_phonedetails.html"><img src="img/phone1-2.png"></img></a>
+								<div>
+									<p class="title"><span class="phoneBrand">Apple</span><span class="phoneName">iPhone 4s</span></p>
+									<h4 class="phoneFinalPrice">499.99</h4>
+									<a class="btn btn-primary" href="framework_phonedetails.html">Learn more</a>
+								</div>
+								<a class="remove"><i class="glyphicon glyphicon-remove-circle"></i></a>
+							</td>
+							<td>
+								<a href="framework_phonedetails.html"><img src="img/phone1-3.png"></img></a>
+								<div>								
+									<p class="title"><span class="phoneBrand">HTC</span><span class="phoneName">Desire</span></p>
+									<h4 class="phoneFinalPrice">99.99</h4>
+									<a class="btn btn-primary" href="framework_phonedetails.html">Learn more</a>
+								</div>
+								<a class="remove"><i class="glyphicon glyphicon-remove-circle"></i></a>
+							</td>
+							<td>
+								<a class="addphone" href="framework_phones.html"><h3>Add a phone</h3></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-xs-12">
+				<table class="table-bordered compare">
+					<tbody>
+						<tr>
+							<th scope="row">
+								<p>Promotions</p>
+							</th>
+							<td>
+								<p>FREE SHIPPING. All the time. Ship to anywhere in the United States free.</p>
+							</td>
+							<td>
+								<p>FREE SHIPPING. All the time. Ship to anywhere in the United States free.</p>
+							</td>
+							<td>
+								<p>FREE SHIPPING. All the time. Ship to anywhere in the United States free.</p>
+							</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-xs-12 sub-section">
+				<h2>Features</h2>
+			</div>
+			<div class="col-xs-12">
+				<table class="table-bordered compare">
+					<tbody>
+						<tr>
+							<th scope="row">
+								<p>Phone Type/OS <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Your phone's operating system is what makes it work. A more advanced OS lets your phone do more - so you can make it work for you."></span></p>
+							</th>
+							<td>Android™ 4.4 (KitKat)</td>
+							<td>Android™ 4.4 (KitKat)</td>
+							<td>iOS</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Display <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Backlit display phones use keys and buttons, while touchscreens let you swipe and tap your way around."></span></p>
+							</th>
+							<td>4.5" Touchscreen Display</td>
+							<td>4.8" Touchscreen Display</td>
+							<td>4.5" Touchscreen Display</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Camera <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Take pictures with your phone. Look for higher megapixels (MP) for better image quality."></span></p>
+							</th>
+							<td>5MP Rear-facing camera with zoom and video; 2MP front-facing camera</td>
+							<td>5MP Camera w/1080p Full HD Video</td>
+							<td>5MP Rear-facing camera with zoom and video; 2MP front-facing camera</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Wi-Fi <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="A Wi-Fi®-enabled phone lets you link to the same high-speed wireless networks used by laptops and tablets."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Sprint 4G Network <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Connect superfast on the Sprint 4G Network available in select cities."></span></p>
+							</th>
+							<td>Tri Mode 3G/4G LTE/Enhanced LTE</td>
+							<td>Tri Mode 3G/4G LTE/Enhanced LTE</td>
+							<td>Tri Mode 3G/4G LTE/Enhanced LTE</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Hotspot <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Turn your phone into a Wi-Fi® hotspot. Add-ons start at $3/day."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>QWERTY Keyboard <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="A QWERTY keyboard looks just like your computer keyboard, but in miniature. With a 'physical' keyboard, you're actually pushing real buttons. With the 'virtual' version, it's a touchscreen."></span></p>
+							</th>
+							<td>Virtual</td>
+							<td>Virtual</td>
+							<td>Virtual</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Web Browser <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="HTML browsers display websites the same way they'd appear on a computer screen. WAP browsers show those same web pages but in a more phone-friendly version."></span></p>
+							</th>
+							<td>HTML</td>
+							<td>HTML</td>
+							<td>HTML</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Flash Player <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Some of the coolest videos and online content only work on phones with a Flash Player."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-remove"></i></td>
+							<td><i class="glyphicon glyphicon-remove"></i></td>
+							<td><i class="glyphicon glyphicon-remove"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Email <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Most phones let you send and receive emails - but some make it super easy by linking directly to your email for one-click access."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Video <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Turn your phone into a mini video camera with the touch of a button."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Music Player <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Play your music right from your phone. Create playlists and listen through earbuds or even stereo Bluetooth®, depending on the phone."></span></p>
+							</th>
+							<td>Android™ Music Player</td>
+							<td>Android™ Music Player</td>
+							<td>iTunes</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Navigation Services <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="GPS navigation gives you interactive maps and turn-by-turn instructions to keep you on the right path."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Speakerphone <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Put your phone on speaker and free up your hands for other things. Some phones even have voice recognition, so you can make calls just by telling it who to dial."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Memory <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Portion of memory occupied by existing content."></span></p>
+							</th>
+							<td>1GB RAM/8GB ROM</td>
+							<td>1GB RAM/8GB ROM</td>
+							<td>1GB RAM/8GB ROM</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Processor <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="A good processor makes your phone work fast. A great one lets it work even faster and play cool games and videos."></span></p>
+							</th>
+							<td>1.2 GHz Quad Core Processor</td>
+							<td>1.2 GHz Quad Core Processor</td>
+							<td>1.2 GHz Quad Core Processor</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Calendar <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="A calendar right on your phone helps you track appointments, tasks and important dates."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Visual Voicemail <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Get a text version of your voice messages sent right to your phone's screen. This saves you from listening to calls you'd rather skip or replaying messages to hear key details."></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-remove"></i></td>
+							<td><i class="glyphicon glyphicon-remove"></i></td>
+							<td><i class="glyphicon glyphicon-remove"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Nationwide Sprint 3G Network <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="3G makes your phone work lightning-fast with high-speed wireless service. Because who has time to wait around?"></span></p>
+							</th>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-xs-12 sub-section">
+				<h2>Specifications</h2>
+			</div>
+			<div class="col-xs-12">
+				<table class="table-bordered compare">
+					<tbody>
+						<tr>
+							<th scope="row">
+								<p>Battery Life <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Varies by model and by how you use your phone. You'll need some for chatting with your friends; more for playing games and video."></span></p>
+							</th>
+							<td>
+								<p><span>Talk Time:</span>Up to 19.5 hours</p>
+							</td>
+							<td>
+								<p><span>Talk Time:</span>Up to 19.5 hours</p>
+							</td>
+							<td>
+								<p><span>Talk Time:</span>Up to 19.5 hours</p>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">
+								<p>Weight &amp; Dimensions <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title="Whether you want light and streamlined or solid and sturdy, we've got the phone for you."></span></p>
+							</th>
+							<td>
+								<p><span>Weight:</span>4.58 oz.,<span>Dimensions:</span>5.15"H x 2.67"W x 0.35"D,<span>Screen Size:</span>4.5" Touchscreen Display</p>
+							</td>
+							<td>
+								<p><span>Weight:</span>4.58 oz.,<span>Dimensions:</span>5.15"H x 2.67"W x 0.35"D,<span>Screen Size:</span>4.5" Touchscreen Display</p>
+							</td>
+							<td>
+								<p><span>Weight:</span>4.9 oz.,<span>Dimensions:</span>5.02"H x 2.67"W x 0.42"D,<span>Screen Size:</span>4.5" Touchscreen Display</p>
+							</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section class="compareFooter hidden-xs hidden-sm">
+			<div class="col-xs-12">
+				<a href="framework_phones.html">Return to Shop Phones</a>
+			</div>
+		</section>
+		<section class="legal hidden-xs hidden-sm">
+			<p>After applicable data allotment reached, data speeds (including video) reduced to 2G speeds for remainder of plan cycle. International services extra. Double the data compared to Sprint's former plans. Prices &amp; offers subject to change without notice &amp; may not be available in all markets/retail locations or for all devices. State &amp; local sales taxes/fees may apply when adding funds to accounts. Coverage not available everywhere. Sprint 4G LTE network reaches over 260 million people. Sprint reserves the right to modify, extend or cancel offer at any time. Offer, network use rules &amp; other restrictions apply.</p>
+		</section>
+	</div>	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12">
+				<p>&copy; 2015 Sprint. <span class="hidden-xs">All rights reserved.</span></p>
+				<ul class="footer-links">
+					<li><a href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+					<li><a href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/sprintprepaid-bootstrap.min.js"></script>
+    <script src="../js/lib/jasny-bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+		$('#coverageMap').on('shown.bs.modal', function () {
+			$('#coverageModal').focus()
+		})
+		$('.sticker').affix({
+			offset: { 
+				top:125 
+			}
+		});
+		$(function(){
+		$(".dropdown").hover(
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>

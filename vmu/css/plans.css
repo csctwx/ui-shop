@@ -1,0 +1,580 @@
+
+@font-face{
+    font-family:BoostNeoBlack;
+    src:url(../fonts/v2/BoostNeo-Black.eot);
+    src:url(../fonts/v2/BoostNeo-Black.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Black.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Black.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Black.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Black.svg#boost_neoblack) format("svg");
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "BoostNeoBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/v2/BoostNeo-Bold.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/v2/BoostNeo-Bold.woff") format("woff"), 
+        url("../fonts/v2/BoostNeo-Bold.woff") format("woff"), 
+        url("../fonts/v2/BoostNeo-Bold.ttf") format("truetype"), 
+        url("../fonts/v2/BoostNeo-Bold.svg#boost_neobold") format("svg");
+}
+
+@font-face{
+    font-family:BoostNeoRegular;
+    src:url(../fonts/v2/BoostNeo-Regular.eot);
+    src:url(../fonts/v2/BoostNeo-Regular.eot?#iefix) format("embedded-opentype"),
+        url(../fonts/v2/BoostNeo-Regular.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Regular.woff) format("woff"),
+        url(../fonts/v2/BoostNeo-Regular.ttf) format("truetype"),
+        url(../fonts/v2/BoostNeo-Regular.svg#boost_neoregular) format("svg");
+    font-weight:400;
+    font-style:normal;
+}
+
+
+
+div.tab-content div#intl.tab-pane.active section h2{
+    padding:0!important;
+}
+
+div.tab-content div#intl.tab-pane.active section.first{
+    background:url("../img/intservices_title.jpg") no-repeat scroll left top / cover;
+}
+
+div.tab-content div#intl.tab-pane.active section.intl-title{
+    padding:30px 20px 0 20px;
+}
+
+div.tab-content div#intl.tab-pane.active section span.bn-b{
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+}
+
+div.tab-content div#intl.tab-pane.active section.addons{
+    padding: 0 20px;
+}
+
+div.tab-content div#intl.tab-pane.active section.intl-title ul li{
+    background: rgba(0, 0, 0, 0) url("../img/bg-shop-bullet.png") no-repeat scroll 10px 12px;
+    font-size: 18px;
+    height: 30px;
+    line-height: 42px;
+    padding: 0 0 0 47px;
+}
+
+
+.plans #intl section h2#month{
+    /*background: rgba(0, 0, 0, 0) url("../img/new_bug.png") no-repeat 220px top;*/
+}
+
+
+.plans #intl section img#imgmonth{
+    padding: 10px;
+}
+
+.plans #intl section h2.big{
+    font-size:50px;color:#f7901e;
+    font-family: BoostNeoBlack,Arial,Helvetica,sans-serif !important;
+}
+
+
+
+div.newBT {
+    background: rgba(0, 0, 0, 0) url("../img/new_bug.png") no-repeat scroll 0 0;
+    color: #fff;
+    height: 85px;
+    position: absolute;
+    text-align: center;
+    width: 85px;
+    z-index: 5 !important;
+    margin-top:-70px; margin-left:210px;
+}
+
+
+div#wifihotspot.tab-pane.active section.hidden-xs.hidden-sm h1{
+    font-size: 18px;
+    color: #000;
+    font-family:BoostNeoBold,Arial,Helvetica,sans-serif!important;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: -0.5px;
+    padding: 0!important;
+}
+
+div#wifihotspot.tab-pane.active section.hidden-xs.hidden-sm a.writeReview:link,
+div#wifihotspot.tab-pane.active section.hidden-xs.hidden-sm a.writeReview:visited,
+div#wifihotspot.tab-pane.active section.visible-xs.visible-sm a.writeReview:link,
+div#wifihotspot.tab-pane.active section.visible-xs.visible-sm a.writeReview:visited{
+    text-decoration: underline;
+    padding-left: 10px;
+    color: #F7901E;
+    font-size: 12px;
+    line-height: 1.3em;
+    font-family: verdana;
+}
+
+div#wifihotspot.tab-pane.active section.hidden-xs.hidden-sm a.writeReview:hover,
+div#wifihotspot.tab-pane.active section.visible-xs.visible-sm a.writeReview:hover{
+    color: #67CFCD;
+}
+
+div#wifihotspot.tab-pane.active section.hidden-xs.hidden-sm p{
+    font-family: verdana;
+    color: #222;
+}
+
+div#wifihotspot.tab-pane.active section.hidden-xs.hidden-sm h1 span.bn-bk{
+    font-family: BoostNeoBlack,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+
+
+div.tab-content div#wifihotspot.tab-pane section:first-of-type{
+    padding-left: 30px;
+}
+
+div#wifihotspot.tab-pane.active section.tab-addservices div.plans-bottom-box h3{
+    margin: 0;
+    padding: 0;
+    
+}
+
+div.tab-content div#wifihotspot.tab-pane section div.plans-bottom-box ul.wifibullets{
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+    list-style-type: disc;
+    margin:0;
+    padding: 0 0 0 10px;
+}
+
+div.tab-content div#wifihotspot.tab-pane section div.plans-bottom-box ul.wifibullets li{
+    margin: 0 0 5px 0!important;
+}
+
+div.tab-content div#wifihotspot.tab-pane section div.plans-bottom-box h3{
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif!important;
+    font-weight: 400;
+    margin: 0 0 15px 0!important;
+    color:#F7901E;
+}
+
+div.tab-content div#wifihotspot.tab-pane section div.plans-bottom-box h3.sizeWifi{
+    margin:0!important;
+    font-size: 18px!important;
+    font-weight: 400!important;
+    color: #222;
+    line-height: 1.231;
+}
+
+div#wifihotspot.tab-pane.active section.tab-addservices div.wifi-bottom.plans-box.align_content h2.wifiPading{
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif!important;
+    font-weight: 400;
+    margin: 0 0 15px 0!important;
+    color: #F7901E;
+}
+
+div#wifihotspot.tab-pane.active section.tab-addservices div.wifi-bottom.plans-box.align_content h2.bn-bk{
+    font-family: BoostNeoBlack,Arial,Helvetica,sans-serif!important;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+}
+
+.bn, .font-boostneo, .font-boostneo-hover {
+    font-family: BoostNeoRegular,Arial,Helvetica,sans-serif!important;
+}
+
+#rates section:first-of-type {
+    background: rgba(0, 0, 0, 0) url("../img/hero_ic_v6.jpg") no-repeat scroll left bottom / cover !important;
+    color: #000000;
+    height: 272px;
+    padding: 100px 40% 0 30px!important;
+}
+
+#rates section:first-of-type h3{
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif!important;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: -0.5px;
+    font-size: 20px;
+    padding: 0 20px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    margin: 7px 0 10px 0!important;
+    display: inline-block;
+}
+
+#rates section:first-of-type p{
+    width: 280px;
+    margin-top: 0px;
+    font-size: 13px;
+    font-family: verdana;
+}
+
+#rates .ratetable h4.rateslink a{
+    font-size: 18px;
+}
+
+
+div#datapacks.tab-pane.active section h3 {
+    color: #222;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+div.tab-pane.active section div.plans-bottom-box {
+    background: transparent url("../img/shadow.png") no-repeat scroll left top;
+    padding: 30px 0px;
+}
+
+section.account-credit-header{
+    background: rgba(0, 0, 0, 0) url("../img/s-n-s.jpg") no-repeat scroll left bottom / cover;
+    /*min-height: 260px!important;*/
+    min-height: 410px!important;
+    padding-left: 465px!important;
+    padding-right: 75px!important;
+    padding-top: 150px!important;
+    position: relative;
+}
+
+section.account-credit-header h2,
+section.account-credit-header-m h2{
+    padding:0!important;
+    color: #000;
+    font-size: 25px;
+    margin: 0 0 12px!important;
+}
+
+section.account-credit-header-m h2{
+    font-size: 20px!important;
+}
+
+
+section.account-credit-header h3,
+section.account-credit-header-m h3{
+    padding:0!important;
+    font-size: 22px;
+    margin: 0 0 12px!important;
+     color:#222;
+}
+
+section.account-credit-header-m h3{
+    font-size: 18px!important;
+}
+
+section.account-credit-header p.account-credit-header,
+section.account-credit-header-m p.account-credit-header{
+    font-family: verdana;
+    padding:0!important;
+    font-size: 13px;
+    color:#222;
+}
+
+section.account-credit-header .btn,
+section.account-credit-header-m .btn{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif !important;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    min-width: 90px;
+    padding: 7px 17px;
+    text-align: center;
+}
+
+section.account-credit-header .btncontainer,
+section.account-credit-header-m .btncontainer{
+    text-align: right;
+}
+
+section.padding20{
+    padding: 10px 20px 0 20px!important;
+}
+
+section.account-credit-bottom{
+    padding: 50px 35px!important;
+}
+
+section.account-credit-bottom h3{
+    font-size: 22px;
+    padding: 0!important;
+}
+
+.orange {
+    color: #f7901e;
+}
+
+
+ol.numList {
+    font-family: verdana;
+    list-style: outside none none;
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+
+ol.numList li{
+    margin-bottom: 20px;
+}
+
+ol.numList li::before {
+    background: rgba(0, 0, 0, 0) url("../img/orange-circle.png") no-repeat scroll 0 0;
+    color: #fff;
+    content: "1";
+    font-size: 10px;
+    font-weight: 700;
+    margin: 0 0 0 -35px;
+    min-height: 30px;
+    padding-left: 6px;
+    padding-top: 3px;
+    position: absolute;
+    vertical-align: middle;
+    width: 25px;
+}
+
+ol.numList li:nth-child(2)::before {
+    content: "2";
+}
+
+ol.numList li:nth-child(3)::before {
+    content: "3";
+}
+
+.ic-col-left {
+    color: #000;
+    text-align: center;
+    font-size: 21px;
+}
+
+.ic-col-left span {
+    font-size: 20px;
+    text-align: center;
+}
+
+div.wifi-hotspot-promo{
+    background: url("../img/plans-hub-wifi.jpg") no-repeat scroll left bottom / cover;
+}
+
+div.international-calling-promo{
+    background: url("../img/plans-hub-ic.jpg") no-repeat scroll left bottom / cover;
+}
+
+section.promo-wifi-international{
+    padding: 0 25px!important;
+}
+
+section.container.plans-home div.col-xs-12.col-sm-12.col-md-12 section .plans-promo{
+    min-height: 520px;
+    padding:25px 15px;
+}
+
+.plans .tab-content #intl section:first-of-type {
+    padding:180px 60% 6px 20px !important;
+    height: 260px;
+    background: transparent url("../img/img-bg-international.jpg") no-repeat scroll left top / cover;
+}
+
+.plans .tab-content #intl section:first-of-type p{
+    font-family: verdana;
+    font-size: 13px;
+    line-height: 1.2;
+    color:#222;
+	margin: 0 !important;
+}
+
+section.addons div span ul.bn-b{
+    font-size: 16px;
+    list-style-image: url("../img/bg-shop-bullet.png");
+    padding: 20px 0 12px 50px;
+}
+section.addons div span ul.calls a{font-size: 16px !important; text-decoration: underline;}
+section.addons div span ul.calls a:hover{color: #6fdbdb;}
+section.addons div span ul.bn-b li{
+	padding: 5px 10px 0 0;
+}
+
+.bn-b, .font-boostneo-bold, .font-boostneo-bold-hover {
+    font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+}
+
+
+section.intl-legal{
+    font-family: verdana;
+    color: #666;
+   font-size: 11px;
+}
+
+
+section.intl-legal sup{
+    position: relative;
+    font-size: 8px;
+    padding-bottom:40px
+}
+
+
+section.addons {
+    width: 100%;
+    min-height: 255px;
+	height: auto !important;
+    display: block;
+    padding: 25px 0 0 20px;
+    background-position: 0 0;
+    background-repeat: no-repeat !important;
+    border-bottom: 0 solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+	font-family: verdana;
+	background-image: url('../img/middle3.jpg') !important;
+	background-color: #efefef !important;
+	background-size: 100% !important;
+}
+section.module-intservices-content2 + section.addons{border-bottom: 2px solid #e5e5e5 !important;}
+section.module-intservices-content2{background-image: url('../img/middle4.jpg') !important;}
+.bn-bk, .font-boostneo-black {
+    font-family: BoostNeoBlack,Arial,Helvetica,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.plans #intl section.addons div:nth-of-type(1) {
+    float: left;
+    width: 40%;
+    padding: 60px 20px;
+}
+
+.plans #intl section.addons div:nth-of-type(2) {
+    float: left;
+    width: 60%;
+    padding: 30px 30px 5px 30px;
+}
+
+@media (max-width: 991px){
+	.newBT{display: none;}
+	section.addons {background-image: none !important;background:-webkit-linear-gradient(top, #ffffff 0%,#efefef 100%) !important;}
+	.plans #intl section.addons > div {
+		float: left;
+		width: 100% !important;
+		padding: 10px !important;
+	}
+	section.addons div span ul.bn-b {
+		font-size: 16px;
+		list-style-image: url("../img/bg-shop-bullet.png");
+		padding: 20px 0 12px 20px;
+	}
+	#view-rateslist li {
+		display: block !important;
+	}
+	.boxed {
+		height: auto !important;
+		min-height: 60px;
+		width: 100% !important;
+		margin: 0 !important;
+		
+	}
+	.boxed h2{text-align: center !important;}
+}
+.learnmore1:hover {
+    background-color: #6fdbdb;
+	text-decoration: none !important;
+}
+
+.learnmore1 {
+    display: inline-block;
+    color: #fff!important;
+    background-color: #000;
+    border: 0;
+    padding: 1px 17px;
+    min-width: 90px;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: .5px;
+    font-family: BoostNeoGroteskRegular,Arial,Helvetica,sans-serif;
+	margin-bottom: 10px;
+}
+
+.boxed {
+    height: 60px;
+    width: 98%;
+	margin: 0 auto;
+    background-color: #000;
+    padding: 0 0 15px 0;
+}
+#module-intservices-content1 #module-intservices-content-rates .boxed h2{padding-top: 15px !important;}
+#module-intservices-content-rates .legal{
+	background-color: #fff;
+	padding: 20px 10px;
+	padding-bottom : 15px !important;
+	color: #666;
+	font-size: 11px !important;
+}
+
+#module-intservices-content-rates .legal a{
+	font-size: 11px !important;
+	text-decoration: underline;
+}
+#module-intservices-content-rates .legal a:hover{color: #6fdbdb;}
+
+#view-rates {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    padding-left: 0;
+    text-align: left;
+}
+
+#view-rateslist {
+    padding-left: 10px;
+}
+
+#view-rateslist li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 100px;
+}
+
+.arrows-black:link, .arrows-black:visited {
+    background-image: url(../img/links-arrows-black.png);
+	font-size: 18px !important;
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    color: #000;
+    text-decoration: none;
+	font-family: verdana;
+}
+
+.arrows-black:hover, .arrows-black:hover {background-position: left bottom;}
+
+section.intl-title{
+	font-size: 13px !important;
+	font-family: verdana;
+}
+
+.newBT{border: none !important;}
+
+.plans #intl section.addons div:first-of-type{border: none !important;}
+
+.modal .col {
+    float: left;
+    width: 25%;
+    font-size: 19px;
+}
+
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.borderless{
+    font-size: 19px;
+}
+

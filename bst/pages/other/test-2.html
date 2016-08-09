@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title>Test 2</title>
+  <meta name="page-title" content="Test 2 title">
+  <meta name="keywords" content="Test 2 keywords">
+  <meta name="description" content="Test 2 description.">
+</head>
+<style>
+.test a{
+  color:blue;
+  font-size:15pt;
+  display:block;
+}
+.test-content{
+  color:red;
+  font-size:30pt;
+}
+</style>
+<script>
+console.log("Run first");
+</script>
+
+
+<body>
+<ol id="page-path" class="breadcrumb hidden-xs">
+  <li class="ng-scope">
+    <a class="ng-binding" href="#!/">Home</a>
+  </li>
+  <li class="ng-scope">
+    <a class="ng-binding" href="#!/shop/">Shop</a>
+  </li>
+  <li class="ng-scope">
+    <a class="ng-binding" href="#!/shop/phones/">Phones</a>
+  </li>
+  <li class="active ng-binding">Test</li>
+</ol> 
+
+<script>
+console.log("middle");
+</script>
+<a href="#!/why-boost/test-1">go to page 1</a>
+<div class="test">
+  <a href="#!/why-boost/test-2#1">show 1</a>
+  <a href="#!/why-boost/test-2#2">show 2</a>
+  <a id="a3" href="">show 3</a>
+  <div id="show1" class="test-content" style="display:none">
+  1
+  </div>
+  <div id="show2" class="test-content" style="display:none">
+  2
+  </div>
+  <div id="show3" class="test-content" style="display:none">
+  3
+  </div>
+  <div>
+  <img id="phoneImg" src=""/>
+  </div>
+</div>
+<script>
+function returnLastSlash(v){
+  if(v && v.substring(v.length-1)=="/"){
+    return v.substring(0,v.length-1);
+  }
+  return v;
+}
+
+function buildLink(){
+  var vs=location.hash.split("#");
+  var hash="#"+vs[1]+"#"+3;
+  $("#a3")[0].href=hash;
+}
+
+function showImg(v){
+  v=parseInt(v);
+  if(appUtil.$scope.phoneController.list.data.length>0){
+    $("#phoneImg")[0].src=appUtil.$scope.phoneController.list.data[v].selectedVariant.gridImage;
+  }else{
+    appUtil.$scope.phoneController.loadList(null,"showImg("+v+")");
+  }
+}
+
+function buildContent(){
+  buildLink();
+  
+  var vs=location.hash.split("#");
+  if(vs.length<3){
+    vs=1;
+  }else{
+    vs=vs[2];
+  }
+  vs=returnLastSlash(vs);
+  pathMap._page._title+=" - "+vs;
+  $(appUtil.$scope.pageController.pagePath).find(".active").html("Because "+vs);
+  
+  $("#show"+vs).show();
+  showImg(vs);
+}
+buildContent();
+
+a.a();
+</script>
+</body>
+<script>
+console.log("end");
+</script>
+</html>

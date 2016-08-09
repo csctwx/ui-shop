@@ -1,0 +1,54 @@
+<div id="phoneContent" class="tab-pane {{phoneController.selectedTab=='plans'?'active':''}}">
+  <div class="phoneInfo phone-type-android" id="phonePlans" style="display: block;">
+    <div class="phoneLeftCol">
+      <h3 id="plan-title">{{phoneController.details.data.name}} <span>Plans</span></h3>
+      <ul id="plan-tabs" class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#plan-1">{{phoneController.details.plans.monthlyplan.name}}</a></li>
+        <li><a data-toggle="tab" href="#plan-2">{{phoneController.details.plans.dailyplan.name}}</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="plan-1" class="tab-pane fade in active" ng-bind-html="phoneController.details.plans.monthlyplan.html">
+        </div>
+        <div id="plan-2" class="tab-pane fade" ng-bind-html="phoneController.details.plans.dailyplan.html">
+        </div>
+      </div>
+    </div>
+    <div class="phoneRightCol">
+      <h3 class="bn-b">We've got you covered</h3><img class="sprint" alt="Logo" src="bst/img/sprint_logo.png" />
+      <p class="coverage">Boost Mobile® is powered by the Nationwide Sprint® Network.</p><a class="btn orange" id="checkCoverage" ng-href="#!/coveragemap/">Check Coverage</a>
+      <ul class="plan_help">
+        <li class="li_default_msdp">
+          <h4 class="h4_default_msdp"><a class="bn"  href="javascript:void(0)" data-toggle="collapse" data-target="#q1">How to maintain your account</a></h4>
+          <div id="q1" class="collapse">
+            <p><strong>Add money to your account any time to keep your account on and uninterrupted.</strong></p>
+            <p>Make sure to add sufficient funds in your account to cover your daily subscription amount. The daily charge will be deducted automatically from your Boost Mobile account after midnight (based on your time zone) each day, regardless of usage.</p>
+            <p> Recharge at least once every 90 days to keep your account active <em>(after 90 days any credit balance will expire)</em>. Once you hit a zero credit balance, you have 60 days to add money and keep your service and account active. </p>
+          </div>
+        </li>
+        <li class="li_default_msdp">
+          <h4 class="h4_default_msdp"><a class="bn" href="javascript:void(0)" data-toggle="collapse" data-target="#q2">How to add money to your account</a></h4>
+          <div id="q2" class="collapse">
+            <p><strong>Adding money to your account is easy. Choose the method that works best for you.</strong></p>
+            <p>Dial #ADD (#233) to add money from your handset or visit My Account online. You can also securely register your preferred way to pay online to make faster one-time payments anytime.</p>
+            <p>You can also pay in person with cash or credit at one of thousands of authorized retail locations.</p>
+          </div>
+        </li>
+        <li class="li_default_msdp">
+          <h4 class="h4_default_msdp"><a class="bn" href="javascript:void(0)" data-toggle="collapse" data-target="#q3">How to use Auto Re-Boost™</a></h4>
+          <div id="q3" class="collapse">
+            <p><strong>Once you've registered a credit/debit card or account, you can set up automatic payments. It's called Auto Re-Boost™ and it's the easiest way for you to keep your service active.</strong></p>
+            <p>Sign up for Auto Re-Boost™, and Boost® will automatically process your monthly payment every month on your monthly payment date</p>
+          </div>
+        </li>
+        <li class="li_default_msdp">
+          <h4 class="h4_default_msdp"><a class="bn" href="javascript:void(0)" data-toggle="collapse" data-target="#q4">How to check your balance</a></h4>
+          <div id="q4" class="collapse">
+            <p><strong>Checking your balance is quick and painless.</strong></p>
+            <p>Dial #BAL (#225) from your handset to check your balance for FREE.</p>
+            <p> You can also check your monthly payment date (for Monthly customers) and add funds to your account with your registered way to pay. </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

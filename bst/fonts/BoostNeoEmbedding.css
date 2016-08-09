@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'BoostNeoLight';
+    src: url('BoostNeo-Light.eot');
+    src: url('BoostNeo-Light.eot?#iefix') format('embedded-opentype'),
+         url('BoostNeo-Light.woff') format('woff'),
+         url('BoostNeo-Light.ttf') format('truetype'),
+         url('BoostNeo-Light.svg#BoostNeoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BoostNeoRegular';
+    src: url('BoostNeo-Regular.eot');
+    src: url('BoostNeo-Regular.eot?#iefix') format('embedded-opentype'),
+         url('BoostNeo-Regular.woff') format('woff'),
+         url('BoostNeo-Regular.ttf') format('truetype'),
+         url('BoostNeo-Regular.svg#BoostNeoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BoostNeoBold';
+    src: url('BoostNeo-Bold.eot');
+    src: url('BoostNeo-Bold.eot?#iefix') format('embedded-opentype'),
+         url('BoostNeo-Bold.woff') format('woff'),
+         url('BoostNeo-Bold.ttf') format('truetype'),
+         url('BoostNeo-Bold.svg#BoostNeoBold') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BoostNeoBlack';
+    src: url('BoostNeo-Black.eot');
+    src: url('BoostNeo-Black.eot?#iefix') format('embedded-opentype'),
+         url('BoostNeo-Black.woff') format('woff'),
+         url('BoostNeo-Black.ttf') format('truetype'),
+         url('BoostNeo-Black.svg#BoostNeoBlack') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

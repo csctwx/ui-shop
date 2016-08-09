@@ -1,0 +1,14 @@
+<div id="searchData" style="display:none;">
+{{phoneController.list.data.length==0?phoneController.loadList(""):"";}}
+<a ng-repeat="item in phoneController.list.data" class="frame" target="_top" ng-href="{{appUtil.ui.generateFullHref(pathMap._phoneDetails._hash+item.id+'/',true)}}" data-id="{{item.sku}}" data-brand="{{item.brand}}" data-name="{{item.name}}" data-shortname="{{item.name}}" data-type="phone">
+   <img ng-src="{{item.selectedVariant.gridImage}}" style="width:40px"/>
+   <span class="brandname font-boostneo">{{item.brand}}<!-- <sup class="rm">&#174;</sup> --></span>
+   <br/>
+   <span class="phonename font-boostneo">{{item.name}}</span>
+   <br/>
+   <span class="phoneSalePrice font-boostneo"><sup>&#36;</sup>{{item.variants[0].price}}</span>
+   <br/>
+   <span ng-if="item.review" class="{{phoneController.getRateStarClass(item.rate)}}"><span style="color:#000">({{item.review}})</span></span>
+   <div style="display:none">{{item.brand}}</div>
+</a>
+</div>

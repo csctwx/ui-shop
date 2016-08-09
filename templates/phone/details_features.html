@@ -1,0 +1,391 @@
+<div class="tab-pane {{phoneController.selectedTab=='features'?'active':''}}" id="features">
+  <div class="col-md-8" style="padding:0">
+    <h3 ng-if="appName!='vmu'" style="padding:20px"> {{phoneController.details.data.name}} <span>Features</span></h3>
+    <h3 ng-if="appName=='vmu'" style="padding:20px"><span>Top Features</span></h3>
+    <section ng-if="!phoneController.details.data.features.general" style="padding:0">
+      <!-- iPhone 6s Features -->
+     <span ng-if="appName=='vmu' && (phoneController.details.data.name=='Apple® iPhone® 6s Plus' || phoneController.details.data.name=='Apple® iPhone® 6s')">
+         <banner-directive banner-id="vmu-features-iphone-6s" init-map="true"></banner-directive>
+     </span>
+
+      <span ng-if="appName=='bst' && (phoneController.details.data.name=='Apple® iPhone® 6s Plus' || phoneController.details.data.name=='Apple® iPhone® 6s')">
+        <banner-directive banner-id="bst-features-iphone-6s" init-map="true"></banner-directive>
+     </span>
+
+          <!-- iPhone 6 Features -->
+      <div ng-if="appName=='vmu' && (phoneController.details.data.name=='Apple® iPhone® 6 Plus 16GB' || phoneController.details.data.name=='Apple® iPhone® 6 16GB Space Gray')" style="position: relative;">
+          <banner-directive banner-id="vmu-features-iphone-6" init-map="true"></banner-directive>
+      </div>
+
+          <!-- iPhone 5s Features -->
+      <div ng-if="appName=='vmu' && phoneController.details.data.name == 'Apple iPhone® 5s'" style="position:relative;">
+        <banner-directive banner-id="vmu-features-iphone-5s"></banner-directive>
+     </div>
+
+      <!-- iPhone SE Features -->
+      <div ng-if="appName=='vmu' && phoneController.details.data.name == 'Apple® iPhone® SE'" style="position:relative;">
+        <banner-directive banner-id="vmu-features-iphone-se"></banner-directive>
+      </div>
+
+      <div ng-if="appName=='bst' && phoneController.details.data.name == 'Apple® iPhone® SE'" style="position:relative;">
+        <banner-directive banner-id="bst-features-iphone-se"></banner-directive>
+      </div>
+
+      <!--<div ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.features.secondary_features)"></div>-->
+    </section>
+    <section ng-if="phoneController.details.data.features.general">
+      <ul class="features features-half">
+        <li ng-repeat="feature in phoneController.details.data.features.general">
+          <img ng-if="appName=='spp' && feature.type?true:false" ng-src="{{appName}}/img/icons/{{feature.type}}.png" onerror="this.src=appName+'/img/icons/smartphone.png'"/>
+          <img ng-show="appName=='spp' && !feature.type" ng-src='{{appName}}/img/icons/smartphone.png'/>
+          <span ng-show="appName=='bst' && phoneController.details.data.name.toLowerCase().indexOf('iphone')<0" class="features-icons {{feature.type}} icon-{{feature.type}}"></span>
+          <span ng-show="appName=='vmu' && phoneController.details.data.name.toLowerCase().indexOf('iphone')<0" class="features-icons" ng-class="{'pay-{{feature.type}}': phoneController.planType=='PAYLO', 'bt-{{feature.type}}': phoneController.planType=='UNLIMITED' }"></span>
+          <div>
+            <p ng-bind-html="appUtil.ui.trustAsHtml(feature.title)"></p>
+            <span ng-bind-html="appUtil.ui.trustAsHtml(feature.description)"></span>
+          </div>
+          <div id="uleContent" ng-if="feature.ule" style="display:none">
+            <div id="ulcertified-modal" class="col-">
+              <span class="fullscore leaf-{{feature.ule.average}}" style="margin-left:380px" ng-class="{'ule-title': appName!='spp'}"></span>
+              <p style="text-align:justify">{{appDisplayName}} devices are assessed and rated on their sustainability by UL Environment. The score is based on UL 110 - the sustainability standard for mobile phones. We are the only wireless carrier to take all its devices through the independent UL Environment certification process. To be certified, phones must meet a set of prerequisites and then earn points based on additional sustainability criteria. The table below reflects the additional criteria scoring above the prerequisites.</p>
+              <p><a href="http://www.sprint.com/responsibility/ouroperations/ule.html">More info about ULE certification</a>.</p>
+              <ul>
+                <li><p>Materials</p><span class="leaf-{{feature.ule.material}}"></span></li>
+                <li><p>Energy &amp; Performance</p><span class="leaf-{{feature.ule.energy}}"></span></li>
+                <li><p>Health &amp; Environment</p><span class="leaf-{{feature.ule.health}}"></span></li>
+                <li><p>End-of-Life Management/Life Extension</p><span class="leaf-{{feature.ule.eol}}"></span></li>
+                <li><p>Packaging</p><span class="leaf-{{feature.ule.packaging}}"></span></li>
+                <li><p>Manufacturing &amp; Operations</p><span class="leaf-{{feature.ule.manufacturing}}"></span></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        {{phoneController.selectedTab=='features'?appUtil.ui.setEqualHeightLists("ul.features.features-half"):''}}
+      </ul>
+      <a class="fullfeatures link-default" style="cursor:pointer" onclick="$('#fullfeaturesDetails').css('display')!='none'?$('#fullfeaturesDetails').fadeOut():$('#fullfeaturesDetails').fadeIn(10,function(){appUtil.ui.setEqualHeightLists('ul.details.half')});changeLinkText();">Show Full Features<b class="caret"></b></a>
+      <div style="display:none" id="fullfeaturesDetails">
+        <div class="well">
+          <ul class="details half">
+            <li ng-repeat="feature in phoneController.details.data.features.special" ng-bind-html="appUtil.ui.trustAsHtml(feature.title)"></li>               
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="specs" style="background: url('{{phoneController.details.data.features.specificationImage}}') no-repeat; background-position: right center;" ng-class="{'section-specs':appName=='vmu'}">
+      <div class="hidden-sm hidden-md hidden-lg">
+        <h3 ng-if="appName!='vmu'">{{phoneController.details.data.name}} <span>Specs</span></h3>
+        <h3 ng-if="appName=='vmu'"><span>Specifications</span></h3>
+        <table class="table table-condensed table-striped">
+          <tbody>
+            <tr>
+              <th scope="row">Size</th>
+              <td>
+                Height {{phoneController.details.data.features.technical.dimensions.height}},
+                Width {{phoneController.details.data.features.technical.dimensions.width}},
+                Depth {{phoneController.details.data.features.technical.dimensions.depth}}
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Weight</th>
+              <td>{{phoneController.details.data.features.technical.dimensions.weight}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Screen Size</th>
+              <td>{{phoneController.details.data.features.technical.dimensions.screen_size}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Memory</th>
+              <td ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.features.technical.memory)"></td>
+            </tr>
+            <tr ng-if="phoneController.details.data.features.technical.battery.talking_time">
+              <th scope="row">Battery</th>
+              <td ng-bind-html="appUtil.ui.trustAsHtml('Talking Time '+phoneController.details.data.features.technical.battery.talking_time)"></td>
+            </tr>
+            <tr ng-if="phoneController.details.data.features.technical.battery.battery_type">
+              <th scope="row">Battery Type</th>
+              <td ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.features.technical.battery.battery_type)"></td>
+            </tr>
+            <tr ng-if="phoneController.details.data.features.technical.battery.removable">
+              <th scope="row">Removable</th>
+              <td>{{phoneController.details.data.features.technical.battery.removable}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Processor</th>
+              <td ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.features.technical.processor)"></td>
+            </tr>
+            <tr>
+              <th scope="row">OS</th>
+              <td ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.features.technical.os)"></td>
+            </tr>
+            <tr ng-if="phoneController.details.data.features.technical.connectivity">
+              <th scope="row">Connectivity</th>
+              <td><li ng-repeat="item in phoneController.details.data.features.technical.connectivity">{{item}}</li></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center"><img ng-src="{{phoneController.details.data.features.specificationImage}}"/></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="hidden-xs">
+        <h3 ng-if="appName!='vmu'">{{phoneController.details.data.name}} <span>Specs</span></h3>
+        <h3 ng-if="appName=='vmu'"><span>Specifications</span></h3>
+        <div class="pull-left lists">
+          <ul>
+            <p><span>Size &amp; Weight</span></p>
+            <li><span>Height</span>{{phoneController.details.data.features.technical.dimensions.height}}</li>
+            <li><span>Width</span>{{phoneController.details.data.features.technical.dimensions.width}}</li>
+            <li><span>Weight</span>{{phoneController.details.data.features.technical.dimensions.weight}}</li>
+            <li><span>Depth</span>{{phoneController.details.data.features.technical.dimensions.depth}}</li>
+            <li ng-bind-html="appUtil.ui.trustAsHtml('<span>Screen Size</span>'+phoneController.details.data.features.technical.dimensions.screen_size)"></li>
+            <p ng-if="appName=='bst'"><span>Memory<span ng-if="appName=='bst'" class="glyphicon glyphicon-info-sign" style="display:inline;padding-left:5px;font-size:11px;" data-delay='{"show":"0", "hide":"3000"}' data-toggle="tooltip" data-placement="right" title="" data-html="true" data-original-title="Portion of memory occupied by existing content. <a href='javascript:window.scrollTo(0,document.body.scrollHeight);'  style='font-size:10px;'>Learn More</a>"></span></span>
+            <ul ng-if="appName=='bst'" ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.features.technical.memory)"></ul></p>
+            <p ng-if="appName=='vmu'"><span>Memory<span ng-if="appName=='vmu'" class="glyphicon glyphicon-info-sign" style="display:inline;padding-left:5px;font-size:11px;" data-delay='{"show":"0", "hide":"3000"}' data-toggle="tooltip" data-placement="right" title="" data-html="true" data-original-title="Portion of memory used by existing content. A portion of phone memory storage is dedicated to the operating system and required services. As a result this portion of memory is not usable by applications, pictures, videos or other personal data"></span></span>
+            <ul ng-if="appName=='vmu'" ng-bind-html="appUtil.ui.trustAsHtml(phoneController.details.data.features.technical.memory)"></ul></p>
+
+            <p ng-bind-html="appUtil.ui.trustAsHtml('<span>Operating System</span>'+phoneController.details.data.features.technical.os)"></p>
+          </ul>
+          <ul>
+            <p><span>Battery</span></p>
+            <li><span>Talk Time</span>{{phoneController.details.data.features.technical.battery.talking_time}}</li>
+            <li ng-if="phoneController.details.data.features.technical.battery.battery_type" ng-bind-html="appUtil.ui.trustAsHtml('<span>Battery Type</span>'+phoneController.details.data.features.technical.battery.battery_type)"></li>
+            <li ng-if="phoneController.details.data.features.technical.battery.removable"><span>Removable</span>{{phoneController.details.data.features.technical.battery.removable}}</li>
+            <p ng-bind-html="appUtil.ui.trustAsHtml('<span>Processor</span>'+phoneController.details.data.features.technical.processor)"></p>
+            <p ng-if="phoneController.details.data.features.technical.connectivity"><span>Connectivity</span>
+            	<li ng-repeat="item in phoneController.details.data.features.technical.connectivity">{{item}}</li>
+            </p>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="inthebox" style="background-image:url({{phoneController.details.data.features.iiboxImage}})">
+      <h3>What's in the Box</h3>
+      <ul class="details {{appName=='spp'?'half':''}}" style="list-style-type:disc!important;">
+        <li ng-repeat="feature in phoneController.details.data.features.technical.whats_included">
+          <span ng-bind-html="appUtil.ui.trustAsHtml(feature)"></span>
+        </li>
+      </ul>
+    </section>
+    <section class="userguides">
+      <h3>User Guides &amp; Support</h3>
+      <p>Want to know everything there is to know about this phone? Learn everything, from setting up your email to managing all of your games and applications.</p>
+      <a class="btn btn-lg btn-primary" ng-show="appName=='bst'" href="http://devicehelp.boostmobile.com/" name="place" target="_blank">Device Support</a>
+      <a class="btn btn-lg btn-primary" ng-show="appName=='spp'" href="http://support.sprint.com/support/devicepage?INTNAV=LeftNav:Support:Devices#!/" name="place" target="_blank">Device Support</a>
+      <a class="btn btn-lg btn-primary" ng-show="appName=='vmu'" href="http://devicehelp.virginmobileusa.com/" name="place" target="_blank">Device Support</a>
+	 </section>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-md-4" ng-if="appName=='spp'">
+    <section>
+      <div class="orderbyphone">
+        <h3>Order by phone</h3>
+        <p>Need help choosing a phone or a plan? Just give us a call.</p>
+        <h3 class="phonenumber">1-866-866-7509</h3>
+      </div>
+    </section>
+    <section>
+      <h3>How it works</h3>
+      <ul class="features howitworks">
+        <li>
+          <img ng-src="{{appName}}/img/icons/smartphone.png"></img>
+          <div>
+            <p>Order by phone, online or in a store.</p>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/activate.png"></img>
+          <div>
+            <p>When you get your phone, activate a no-contract plan online.</p>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/keepyournumber.png"></img>
+          <div>
+            <p>Keep your number or choose a new one. Enjoy!</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Great value. Total flexibility.</h3>
+      <p>Finally, something different from your wireless relationship.</p>
+      <ul class="features">
+        <li>
+          <img ng-src="{{appName}}/img/icons/sprintspark.png"></img>
+          <div>
+            <p>Freedom from annual contracts</p>
+            <span>Enjoy more flexibility.</span>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/4g.png"></img>
+          <div>
+            <p>Nationwide 4G LTE Network</p>
+            <span>Better call quality with high definition voice, faster speeds, and better coverage than before.</span>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/sprintzone.png"></img>
+          <div>
+            <p>Affordable monthly plans</p>
+            <span>Stay connected without breaking the bank.</span>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/wifi.png"></img>
+          <div>
+            <p>Mobile Hotspot included</p>
+            <span>Now available on select devices. Connect Wi-Fi enabled tablets, laptops, and more.</span>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/activate.png"></img>
+          <div>
+            <p>No credit checks</p>
+            <span>Get service quickly.</span>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/general.png"></img>
+          <div>
+            <p>No surprises or late fees</p>
+            <span>Prepay for your service each month, so you're in control.</span>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/dualdisplay.png"></img>
+          <div>
+            <p>Switching is easy</p>
+            <span>Keep your current phone number or get a new one &mdash; it's up to you.</span>
+          </div>
+        </li>
+        <li>
+          <img ng-src="{{appName}}/img/icons/smartphone.png"></img>
+          <div>
+            <p>Cutting-edge phones</p>
+            <span>Get the latest hardware and software technology.</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="col-md-4" ng-if="appName=='bst'">
+    <section class="coverage askedquestions">
+      <a href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/plans/"><img ng-src="{{appName}}/img/pl-banner2.jpg"></a>
+    </section>
+    <section>
+      <h3>How it works</h3>
+      <ul class="features howitworks">
+        <li>Order by phone, online or in a store.</li>
+        <li>When you get your phone, activate a no-contract plan online.</li>
+        <li>Keep your number or choose a new one. Enjoy!</li>
+      </ul>
+    </section>
+    <section>
+      <h3>All {{phoneController.details.data.phoneCondition == 'new'?'new':''}} phones include</h3>
+      <ul class="phonesinclude">
+        <li>No Annual Contract Plans</li>
+        <li>FREE Shipping
+        <span class="freeInfo" data-toggle="tooltip" data-placement="right" title="" data-original-title="Choose &quot;3 Day Saver&quot; from shipping drop-down at checkout and your order will ship free."></span></li>
+        <li ng-if="phoneController.details.data.phoneCondition != 'preowned'">FREE Activation</li>
+        <li>7-Day Return Policy</li>
+        <li><span>Your current phone number<br></br>(if you want it)</span></li>
+      </ul>
+    </section>
+    <!-- <section class="orderbyphone" >
+      <h3>Order by phone</h3>
+      <h4>Need help picking a phone or plan?</h4>
+      <h4>Call us now</h4>
+      <h2>1-855-348-7299</h2>
+    </section>-->
+   <section ng-show="phoneController.details.data.isRedVentures">
+		<banner-item  url="get_banner_phone_details" extraheaders="{RedVentures:true,brandId:appName}" index="0" options="orderbyphone,no_url" ></banner-item>
+	</section >
+    <section ng-show="!phoneController.details.data.isRedVentures">
+		<banner-item  url="get_banner_phone_details" extraheaders="{RedVentures:false,brandId:appName}" index="0" options="orderbyphone,no_url" ></banner-item>
+	</section>
+    <section class="coverage askedquestions">
+      <h3>We've got you covered</h3>
+      <a href=""><img ng-src="{{appName}}/img/pl-banner3.png"></a>
+      <p>Boost Mobile® is powered by the Nationwide Sprint® Network.</p>
+      <a class="btn btn-default" href="{{pathMap._coverageMap._hash}}">Check Coverage</a>
+    </section>
+    <section class="recapps" ng-if="phoneController.details.data.type.toLowerCase().indexOf('android')>=0">
+      <h3>Recommended Apps</h3>
+      <p>The right applications make your phone an even more valuable part of your busy life. Grab the top apps built for your device.</p>
+      <a class="btn btn-default" href="{{linkMap.setting.maps.shop.market}}">Learn More</a>
+    </section>
+    <section class="apple" ng-if="phoneController.details.data.phoneCondition=='new' && phoneController.details.data.brand.toLowerCase().indexOf('apple')==0">
+      <h3>AppleCare+</h3>
+      <p>You can buy AppleCare+ at an Apple Retail store within 30 days of activation.</p>
+      <a class="btn btn-default" onclick="$('#appleCareDialog').modal()">Learn More</a>
+    </section>
+  </div>
+  <div class="col-md-4" ng-if="appName=='vmu'">
+  
+	<div class="hoverable" id="aboxBeyondTalk" ng-if="phoneController.planType=='UNLIMITED'">
+      <a href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/plans/" class="link" style="padding:0!important;">
+      <banner-directive class="aside_box" banner-id="vmu-unlimited-sideBox"></banner-directive>
+      </a>
+    </div>
+	<div class="aside_box hoverable" id="aboxBeyondTalk" ng-if="phoneController.planType=='PAYLO'">
+		<div class="asideboxcontent">
+			<a href="{{pathMap._phoneDetails._hash}}{{phoneController.details.data.id}}/plans/" class="link" style="padding:0!important;" ng-show="phoneController.planType=='PAYLO'">
+              <banner-directive banner-id="vmu-paylo-sideBox"></banner-directive>
+            </a>
+		</div>
+	</div>
+
+    <banner-directive banner-id="vmu-hassleFree-sideBox"></banner-directive>
+
+    <banner-directive banner-id="vmu-phone-feature-sidebox"></banner-directive>
+	
+  </div>
+
+  <div class="modal fade" id="appleCareDialog" ng-if="phoneController.details.data.brand.toLowerCase().indexOf('apple')==0" tabindex="-1" role="dialog" aria-labelledby="ccOverlayLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title"  id="myModalLabel">AppleCare+</h2>
+        </div>
+        <div class="modal-body">
+          <h3>Protection for your iPhone</h3>
+          <img style="float:right;margin-left:10px;" src="bst/img/applecare.jpg"/>
+          <p>
+            AppleCare+ for iPhone extends your repair coverage and technical support to two years from the original purchase date of your iPhone. And it adds coverage for up to two incidents of accidental damage from handling, each subject to a service fee ($79 for iPhone 6 or earlier models, $99 for iPhone 6s and iPhone 6s Plus) plus applicable tax.<sup>1</sup>
+          </p>
+          <h3>Features</h3>
+          <ul>
+            <li>One stop for technical support </li>
+            <li>Direct access to Apple experts </li>
+            <li>Mail-in or carry-in repairs </li>
+            <li>Express Replacement Service </li>
+            <li>Hardware coverage for your iPhone, battery, and included earphones and accessories </li>
+            <li>
+              Coverage for up to two incidents of accidental damage from handling, each subject to a service fee ($79 for iPhone 6 or earlier models, $99 for iPhone 6s and iPhone 6s Plus) plus applicable tax. <sup>1</sup>
+            </li>
+            <li>Software support for iOS, iCloud, and Apple-branded iPhone apps </li>
+            <li>Connecting to wireless networks </li>
+          </ul>
+          <p class="legal">
+            AppleCare+ benefits are in addition to any legal rights provided by consumer protection laws in your jurisdiction. Purchase of the plan is not required to purchase the iPhone. AppleCare+ is subject to acceptance of the Terms and Conditions. For complete details, see terms at <a target="_blank" href="www.apple.com/legal/sales-support/applecare/applecareplus">www.apple.com/legal/sales-support/applecare/applecareplus</a>.
+          </p>
+          <p class="legal">
+            The company obligated under AppleCare+ in the United States is AppleCare Service Company, Inc., an Arizona corporation and wholly owned subsidiary of Apple Inc., doing business in Texas as Apple CSC Inc.
+          </p>
+          <p class="legal">
+            <sup>1</sup>
+            Service coverage is available only for the iPhone and its original included accessories that are defective in materials or workmanship or for batteries that retain less than 80 percent of their original capacity. The replacement equipment that Apple provides as part of the repair or replacement service may be new or equivalent to new in both performance and reliability.
+          </p>
+          <p class="legal">
+            Local telephone fees may apply. Telephone numbers and hours of operation may vary and are subject to change.
+          </p>
+          <p class="legal">Service coverage may be subject to certain restrictions. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

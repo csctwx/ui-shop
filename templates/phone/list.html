@@ -1,0 +1,147 @@
+<section>
+  <section class="banner-static" ng-if="appName!='vmu'" style="border-bottom: 2px solid black;">
+			<a ng-if="appName=='bst'" href="#!/shop/phones/apple-iphone5s/features/Gray,16GB/?icamp=INTC_iPhoneCredit_PhoneGrid_PhoneGrid"><img ng-src="{{phoneController.shopPhoneBanner.img}}"></a>
+        <a ng-if="appName=='spp'" href="#!/plans"><img ng-src="{{phoneController.shopPhoneBanner.img}}"></a>
+    </section>
+    
+    <h1 ng-if="appName=='vmu'" class="hidden">Shop Phones</h1>
+
+    <phone-list-reason></phone-list-reason>
+
+    <section class="banner-static" ng-if="appName=='vmu'">
+    	
+    	<banner-directive banner-id="vmu-more-time-to-pay" ng-click="phoneController.showModal()"></banner-directive>
+    	<banner-directive banner-id="vmu-live-without-borders-banner"></banner-directive>
+    
+
+    </section>
+    <section class="phonewall">
+        <div class="col-xs-12 filter visible-xs visible-sm">
+            <div>
+                <p class="results mobile" id="results"><span ng-show="!phoneController.list.filter.data.noFilter"><span>{{ phoneController.list.getResultList().length }}</span> of </span><span>{{ phoneController.list.data.length }} available phones</span>
+                </p>
+            </div>
+            <div class="col-xs-6">
+                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#modalTest">
+                    {{phoneController.list.filter.data.noFilter?'Filter':'Filter (active)'}}
+                </a>
+            </div>
+            <div class="modal fade" id="modalTest" tabindex="-1" role="dialog" aria-labelledby="modalTest"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <p class="pull-left">
+                                <a href="javascript:" data-dismiss="modal">View Filter Results</a>
+                            <ul ng-show="phoneController.list.filter.selectedItems.length>0">
+                                <li ng-repeat="item in phoneController.list.filter.selectedItems" ng-bind-html="appUtil.ui.trustAsHtml(item)"></li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="modal-body">
+                            <phone-list-filter></phone-list-filter>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="dropdown hidden-xs">
+                    <phone-list-sort></phone-list-sort>
+                </div>
+                <div class="dropdown hidden-md hidden-lg visible-xs">
+                    <phone-list-sort_mini></phone-list-sort_mini>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-2 filter hidden-xs hidden-sm">
+            <phone-list-compare-mini></phone-list-compare-mini>
+            <phone-list-filter></phone-list-filter>
+        </div>
+
+        <div class="col-xs-12 col-md-10" id="phoneListArea">
+            <section ng-if="appName=='bst'">
+                <banner-item url="get_banner_phone_grid_redventure" index="0" extraheaders="{brandId:appName}"
+                             options="no_url,phone_grid"></banner-item>
+            </section>
+            <!--  <section class="notice phones visible-md visible-lg" ng-if="appName!='spp'">
+               <h3>Call our live experts to pick your phone &amp; plan <span>1-855-332-0158</span></h3>
+             </section> -->
+            <div class="col-xs-12 sorting hidden-xs hidden-sm">
+                <div class="dropdown pull-left">
+                    <phone-list-sort></phone-list-sort>
+                </div>
+        <p class="results pull-right" id="results" ng-if="appName!='vmu'"><span>{{ phoneController.list.getResultList().length }}</span> of <span>{{ phoneController.list.data.length }}</span> available phones match your search</p>
+        <p class="results pull-right" id="results" ng-if="appName=='vmu'">{{ phoneController.list.getResultList().length }} of <span>{{ phoneController.list.data.length }} available phones</span> match your search</p>
+      </div>
+
+
+      <div class="qtip-content IB" aria-atomic="true" style="" id="ibModal">
+        <div class="genie3-modal" id="modal-LGLS665ABB" style=""> 
+          <div class="genie3-modal-top" style="">
+            <a ng-click="phoneController.ib.closeIbModal('#ibModal', $event)"  class="qtip-close qtip-icon" title="Close tooltip" aria-label="Close tooltip" role="button"><span class="ui-icon ui-icon-close">×</span></a> 
+            <div class="genie3-modal-content col-sm-6 ibContent" style=""> 
+              <div class="col-xs-12">
+                <span ng-if="appName=='vmu'"><h3 class="title"><span class="phoneName">{{ phoneController.ib.curItem.name }} {{phoneController.ib.curItem.selectedColor}} {{phoneController.ib.curItem.selectedMemory}} </span></h3></span>
+                <span ng-if="appName!='vmu'"><h3 class="title"><span class="phoneName">{{ phoneController.ib.curItem.name }}</span><span class="phoneBrand"> {{phoneController.ib.curItem.selectedColor}} </span><span class="phoneBrand"> {{phoneController.ib.curItem.selectedMemory}} </span></h3></span>
+              </div>
+              <div class="col-xs-4">
+                <img class="img-responsive" style="display:none" onload="$(this).show()" alt="{{phoneController.ib.curItem.displayBrand}} {{phoneController.ib.curItem.name}} - {{appDisplayName}}" ng-src="{{phoneController.ib.curItem.selectedVariant.gridImage}}"></img>
+              </div>
+              <div class="col-xs-8">
+                <p class="phoneBody" ng-if="phoneController.ib.curItem.promoIndex!=-1">
+                    <b>{{phoneController.ib.curItem.promotions[phoneController.ib.curItem.promoIndex].message.title}}</b>
+                    {{phoneController.ib.curItem.promotions[phoneController.ib.curItem.promoIndex].message.body}}
+                </p>
+                <p class="phoneBody" ng-if="phoneController.ib.curItem.promoIndex==-1">
+                    <b>{{phoneController.list.message.title}}</b>
+                    {{phoneController.list.message.body}}
+                </p>
+                <div class="col-xs-12 prices">
+                  <p class="phoneRetailPrice" ng-show="phoneController.ib.curItem.selectedVariant.msrp">
+                      <span class="pull-left">Retail Price</span><span ng-class="{'pull-right light':appName=='vmu' && phoneController.ib.curItem.selectedVariant.discount}">{{phoneController.ib.curItem.selectedVariant.msrp | currency}}</span></p>
+                  <p class="phonePromoDiscount" ng-if="appName!='vmu' || phoneController.ib.curItem.selectedVariant.discount">
+                      <span ng-show="phoneController.ib.curItem.selectedVariant.discount" class="pull-left">Promotional discount</span>
+                      <span ng-show="phoneController.ib.curItem.selectedVariant.discount" class="pull-right {{appName=='vmu'&&phoneController.ib.curItem.selectedVariant.discount?'light':''}}">{{phoneController.ib.curItem.selectedVariant.discount|currency}}</span>
+                  </p>
+                  <ul class="features" ng-if="appName=='bst'">
+                      <li class="fourg" ng-show="phoneController.ib.curItem.filters.indexOf('4GLTE')>-1">4g</li>
+                      <li class="threeg" ng-show="phoneController.ib.curItem.filters.indexOf('3G')>-1">3g</li>
+                      <li style="visibility:hidden;position:absolute;"></li>
+                  </ul>
+                  <h2 class="phoneFinalPrice {{appName=='vmu' && phoneController.ib.curItem.selectedVariant.discount?'light':''}}">{{phoneController.ib.curItem.selectedVariant.price|currency:""}}</h2>
+                  <span class="limitPerCustomer" ng-if="phoneController.ib.curItem.selectedVariant.purchaseLimit">Limit {{phoneController.ib.curItem.selectedVariant.purchaseLimit}} phones per customer.</span>
+                  <div class="installmentBilling" ng-if="phoneController.IB && phoneController.ib.curItem.selectedVariant.ibEligibilityInd">        
+                    <p>{{phoneController.ib.curItem.selectedVariant.downPaymentAmount | currency}} today* /</p>
+                    <p>{{phoneController.ib.curItem.selectedVariant.ibEmi | currency}} a Month for {{phoneController.ib.curItem.selectedVariant.loanTerm}} months</p>
+                    <p>*Excludes Taxes and fees</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 ibBottom">
+                <div>
+                  <a class="pull-left btn btn-primary {{appName=='vmu'?'shop-grid-btn':''}}"
+                     ng-href="{{pathMap._checkout._hash}}addToCart/sku={{phoneController.ib.curItem.selectedVariant.sku}}/"
+                     ng-disabled="phoneController.ib.curItem.selectedVariant==null">Purchase and Pay Now</a>
+                  <a class="pull-right btn btn-primary {{appName=='vmu'?'shop-grid-btn':''}}"
+                     ng-href="{{pathMap._checkout._hash}}addToCart/sku={{phoneController.ib.curItem.selectedVariant.sku}}/ib=true"
+                     ng-disabled="phoneController.ib.curItem.selectedVariant==null">Purchase with Installments</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <phone-list-item></phone-list-item>
+            <a class="pull-right btn btn-block btn-default backtotop" href="javascript:appUtil.ui.refreshContent()">Back
+                to Top</a>
+        </div>
+    </section>
+    <phone-list-legal></phone-list-legal>
+    {{handleUIIssue();"";}}
+</section>

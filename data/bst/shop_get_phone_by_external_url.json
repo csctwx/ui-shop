@@ -1,0 +1,270 @@
+{
+  "responses": {
+    "response": [
+      {
+        "@uuid": "d51026f8-fe19-41d1-9726-2d35d7bf4665",
+        "@class": "",
+        "@name": "Section 19029",
+        "@code": "0",
+        "getPhoneDetailsResponse": {
+          "phoneDetails": {
+            "phoneDetail": {
+              "phoneName": {
+                "$": "LG G3"
+              },
+              "manufacturerName": {
+                "$": "LG"
+              },
+              "extendedDescription": {
+                "$": "Part of LG's ground-breaking G series, the LG G3 combines premium features with extraordinary style. Its 13-megapixel camera with laser auto focus lets you record life in picture-perfect HD. Then, play it back on the beautiful 5.5-inch Quad HD screen. The LG G3 really is proof that seeing is believing."
+              },
+              "description": {
+                "$": "Part of LG's ground-breaking G series, the LG G3 combines premium features with extraordinary style. Its 13-megapixel camera with laser auto focus lets you record life in picture-perfect HD. Then, play it back on the beautiful 5.5-inch Quad HD screen. The LG G3 really is proof that seeing is believing."
+              },
+              "isRedVentures": {
+                "$": "true"
+              },
+              "disclaimerFull": {
+                "$": "Promotional pricing available only for select phones directly from boostmobile.com. Limited time only, while supplies last. Android&trade; is a trademark of Google, Inc."
+              },
+              "phoneType": {
+                "$": "Android™"
+              },
+              "findInStoreFlag": {
+                "$": "false"
+              },
+              "phoneViewImages": {
+                "phoneViewImage": [
+                  {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/i/b/A-_LHleJYfxQ2_phoneDetails_1_hero.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "left"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/f/j/A-_LHleJYfxQ2_phoneDetails_5_left.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "front"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/c/c/A-_LHleJYfxQ2_phoneDetails_3_front.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "right"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/f/f/A-_LHleJYfxQ2_phoneDetails_2_right.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "side"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/j/a/A-_LHleJYfxQ2_phoneDetails_6_side.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  {
+                    "fileName": {
+                      "$": "back"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/b/j/i/A-_LHleJYfxQ2_phoneDetails_4_back.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  }
+                ]
+              },
+              "phoneVariants": {
+                "phoneVariant": {
+                  "sku": {
+                    "$": "LGLS990ABB"
+                  },
+                  "parent": {
+                    "$": "true"
+                  },
+                  "price": {
+                    "$": "329.99"
+                  },
+                  "inventory": {
+                    "$": "in-stock"
+                  },
+                  "isDefault": {
+                    "$": "true"
+                  },                  
+                  "shopGridPicture": {
+                    "fileName": {
+                      "$": "shop"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/i/g/A-_LHleJYfxQ2_shopGrid_1_shop.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  "heroImage": {
+                    "fileName": {
+                      "$": "hero"
+                    },
+                    "uRI": {
+                      "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/i/b/A-_LHleJYfxQ2_phoneDetails_1_hero.png?action=access&assetId=A-49u3PtXBVEY"
+                    }
+                  },
+                  "hiddenPrice": {
+                    "$": "false"
+                  },
+                  "ibEligibilityInd": {
+                    "$": "true"
+                  },
+                  "ibEmi": {
+                    "$": "19.17"
+                  },
+                  "loanTerm": {
+                    "$": "12"
+                  },
+                  "loanAmount": {
+                    "$": "19.12"
+                  },
+                  "downPaymentAmount": {
+                    "$": "100.0"
+                  }
+                }
+              },
+              "ReviewStatistics": {
+                "TotalReviewCount": {
+                  "$": "32"
+                },
+                "AverageOverallRating": {
+                  "$": "4.75"
+                },
+                "OverallRatingRange": {
+                  "$": "5"
+                }
+              },
+              "sku": {
+                "$": "LGLS990ABB"
+              },
+              "externalUrl": {
+                "$": "lg-g3"
+              },
+              "meta": {},
+              "promotions": {
+                "promotion": [
+                  {
+                    "message": {
+                      "title": {
+                        "$": "Switch and Save."
+                      },
+                      "body": {
+                        "$": "Get a $50 account credit when you switch to Boost Mobile."
+                      },
+                      "toolTip": {
+                        "$": "<a href=\"#!/accountcredit/\">Learn more about the $50 credit</a>"
+                      },
+                      "offer": {
+                        "$": "$50 Account Credit"
+                      }
+                    },
+                    "isDefault": {
+                      "$": "false"
+                    },
+                    "webOnly": {
+                      "$": "false"
+                    },
+                    "legal": {
+                      "$": "Offer valid from 10/20/15 – 1/25/16 only <br> Limited to new monthly accounts switching from non-Sprint related carriers on boostmobile.com. Savings applied with new device purchase, while supplies last. Devices purchased from boostmobile.com must be activated by 2/14/2016 to receive account credit. Cannot be exchanged, redeemed for cash, merchandise or services. Excludes sales tax. Services subject to additional terms and other restrictions. See boostmobile.com/accountcredit for details. ©2016 Boost Worldwide, Inc. All rights reserved."
+                    },
+                    "dailyPlan": {
+                      "$": "dailyplan"
+                    },
+                    "monthlyPlan": {
+                      "$": "monthlyplan"
+                    },
+                    "dealLabel": {
+                      "$": "Switch and Save"
+                    },
+                    "banners": {
+                      "assetId": {
+                        "$": "A-RRv3PtXBVEY"
+                      },
+                      "name": {
+                        "$": "Promotion-Gift For Purchase"
+                      },
+                      "url": {
+                        "$": "http://www.boostmobile.com/accountcredit/?icamp=INTC_giftWithPurchase_DealsPage_Banner"
+                      },
+                      "imageUrl": {
+                        "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/c/f/A-9-IleJYfxQ2_banner_image_1_switchsavepic.jpg?action=access&assetId=A-RRv3PtXBVEY"
+                      }
+                    }
+                  },
+                  {
+                    "message": {
+                      "title": {
+                        "$": "Switch and Save."
+                      },
+                      "body": {
+                        "$": "Get a $50 account credit when you switch to Boost Mobile."
+                      },
+                      "toolTip": {
+                        "$": "<a href=\"#!/accountcredit/\">Learn more about the $50 credit</a>"
+                      }
+                    },
+                    "isDefault": {
+                      "$": "true"
+                    },
+                    "webOnly": {
+                      "$": "false"
+                    },
+                    "dailyPlan": {
+                      "$": "dailyplan"
+                    },
+                    "monthlyPlan": {
+                      "$": "monthlyplan"
+                    }
+                  }
+                ]
+              },
+              "phoneCondition": {
+                "$": "new"
+              },
+              "footerLegal": {
+                "$": "<sup>†</sup> Visit <a href=\"#!/enhanced-lte/\">www.boostmobile.com/enhancedLTE</a> for more details.<br> <sup>††</sup> Portion of memory used by existing content.<br> <sup>†††</sup> Based on internal testing; actual talk time and battery life varies by use, configuration, and many other factors, including signal strength, network configuration, frequency of calls and other usage patterns; actual results may vary.<br>"
+              },
+              "phoneDataFeature": [
+                "4G",
+                "3G"
+              ]
+            }
+          },
+          "status": {
+            "$": "0"
+          },
+          "description": {
+            "$": "SUCCESS"
+          },
+          "userIbEligibilityInd": {
+            "$": "true"
+          },
+          "lastInstallmentDueDate": {
+            "$": "2017-04-04T00:00:00-05:00"
+          },
+          "mdn": {
+            "$": "2695998576"
+          },
+          "ibTokenValid": {
+            "$": "true"
+          }
+        }
+      }
+    ]
+  }
+}

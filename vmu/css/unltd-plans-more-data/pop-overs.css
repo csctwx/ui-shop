@@ -1,0 +1,215 @@
+/*
+ * Pop Overs - Styles for All Color Boxed Modal Windows in the site
+ */
+
+/* Phone Gallery Popover */
+
+body.phoneGallery { width: 900px !important; height: 523px; min-width: 500px !important; overflow: hidden; }
+body.phoneGallery h1 {
+	font: 2.438em/1em 'ProximaNova-Bold-Italic';
+	color: #000; text-transform: uppercase;
+	padding: 25px 0 20px 50px; margin: 0;
+	position: relative; z-index: 5;
+	width: 340px;
+}
+body.phoneGallery h1.iphone {
+	text-transform: none !important;
+}
+body.phoneGallery h1 span {
+	color: #858585;
+}
+body.phoneGallery ul.galleryThumbs {
+	position: relative;
+	list-style-type: none;
+	margin: 0; padding: 0;
+	top: 0; left: 50px;
+	z-index: 5;
+	width: 300px;
+}
+body.phoneGallery ul.galleryThumbs li {
+	width: 52px; height: 52px;
+	display: block; float:left;
+	margin-right: 9px;
+	text-indent: -99999px;
+}
+body.phoneGallery ul.galleryThumbs li a {  width: 50px; height: 50px; display: block; border: 1px solid #fff; outline: 0; }
+body.phoneGallery ul.galleryThumbs li.active a { background-position: 0 -52px !important; border: 1px solid #ccc; }
+body.phoneGallery ul.galleryThumbs li a:hover { background-position: 0 -52px !important; } 
+body.phoneGallery ul.galleryDisplay {
+	position: absolute;
+	list-style-type: none;
+	margin: 0; padding: 0;
+	top: 0; left: 315px;
+	width: 530px; height: 515px;
+	z-index: 2;
+}
+
+/*
+body.phoneGallery ul.galleryDisplay li { width: 530px; height: 515px; display: none; float:left; text-align: center; }
+body.phoneGallery ul.galleryDisplay li.active { display: block; }
+
+fix for IE - using display:none/block while the 360 swf is loading makes it crap out while switching between the 360 and photo views
+*/
+/*body.phoneGallery ul.galleryDisplay li { position:absolute; left:0; top:0; background-color:#ffffff; width: 530px; height: 515px; display: block; text-align: center; }*/
+/* change width to 560px to see if it would cover up video layer underneath */
+body.phoneGallery ul.galleryDisplay li { position:absolute; left:0; top:0; background-color:#ffffff; width: 560px; height: 515px; display: block; text-align: center; }
+body.phoneGallery ul.galleryDisplay li.active { display: block; z-index: 1; }
+body.phoneGallery ul.galleryDisplay li#video { padding-top: 110px; }
+
+/* Comes with popover ( Purchase Features with Green Checks ) */
+body.comesWithPopOver { width: 900px !important; height: 548px; min-width: 500px !important; overflow: hidden;}
+body.comesWithPopOver h1{ 
+	font: 2.438em/1.795em 'ProximaNova-Bold-Italic'; 
+	color: #000; 
+	padding: 25px 0 20px 35px; 
+	margin: 0; 
+	text-transform: uppercase; 
+}
+
+#infoModal .modal-dialog {
+    width: auto;
+    max-width: 900px;
+}
+#infoModal .modal-content {
+    border-radius: 0;
+}
+#infoModal .modal-header {
+	position: relative;
+    height: 35px;
+    border: 0;
+    padding: 0px !important;
+}
+#infoModal button.close {
+margin: 0px 15px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 62px;
+    text-shadow: none;
+    opacity: 0.6;
+}
+#infoModal .modal-body {
+position: relative;
+    padding: 10px !important;
+    height: 500px;
+}
+.pop-over h1{
+	font: 2.438em/1.795em 'ProximaNova-Bold-Italic';
+    color: #000;
+    padding: 5px 0 20px 35px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+div.item { width: 365px; padding-bottom: 18px; }
+div.left { padding-left: 25px; width: 50%; float: left; }
+div.right { padding-right: 65px; width: 50%; float: right; }
+div.item h2 {
+	font: 0.938em/2.9em 'ProximaNova-Bold-Italic';
+	margin: 0; 
+	color: #000;
+	padding-left: 25px;
+	background: url('../../img/2012/list-check-icon.jpg') no-repeat 0 12px;
+}
+div.item p { font: 0.813em/1.231em 'ProximaNova-Regular-Italic'; margin: 0; color: #282828}
+
+/* AppleCare popover */
+body.appleCarePopOver {width: 900px !important; height: 660px; min-width: 500px !important; overflow: hidden;}
+body.appleCarePopOver h1 { font: 2.438em/1em 'ProximaNova-Bold-Italic'; color: #000; padding: 25px 0 6px 35px; margin: 0; }
+body.appleCarePopOver h2 { font: 1.500em/1em 'ProximaNova-Bold-Italic'; color: #000; padding: 0 0 10px 35px; margin: 0; }
+body.appleCarePopOver div.content { padding-left: 35px; }
+body.appleCarePopOver p.primary { font: normal 0.875em/1.4em Arial, Helvetica, sans-serif; font-style: italic; color: #282828;  width: 580px;}
+body.appleCarePopOver p.secondary { font: normal 0.750em/1.4em Arial, Helvetica, sans-serif; font-style: italic; color: #282828;  width: 580px;}
+body.appleCarePopOver p.secondary strong{ color: #d70020; }
+body.appleCarePopOver ol { font: normal 0.750em/1.6em Arial, Helvetica, sans-serif; font-style: italic; color: #282828;  width: 560px; padding-left: 20px}
+body.appleCarePopOver ol li { margin-bottom: 10px; }
+body.appleCarePopOver img.badge{ float: right; margin-right: 50px;}
+
+/* Hello Android Video Popovers */
+body.helloAndroidPopOver { width: 860px !important; min-width: 500px !important; overflow:hidden; margin: 0; padding: 0; border: 0; outline: 0;}
+body.helloAndroidPopOver h1 { float: left; font: 2.438em/1.795em 'ProximaNova-Bold-Italic'; color: #000; margin: 25px 0 0 20px; text-transform: uppercase; }
+body.helloAndroidPopOver div.social { float: right; margin: 45px 10px 0 0; }
+body.helloAndroidPopOver iframe { margin: 0; padding: 0; border: 0; outline: 0; }
+
+/* Manifesto Pop-Over */
+body.manifesto-popover { min-width: 700px!important; }
+body.manifesto-popover > h1 { float: left; font: 1.25em/1em 'ProximaNova-Bold-Italic'; color: #000; padding: 25px 0 20px 35px; margin: 0; text-transform: uppercase; }
+body.manifesto-popover > div.social { float: right; margin: 25px 60px 0 0; padding: 0; }
+body.manifesto-popover > div.video { width: 640px; height: 360px; margin: 0 auto 0; }
+
+/* Young Branson Pop-Over */
+body.yb-popover { min-width: 700px!important; }
+body.yb-popover > h1 { float: left; font: 1.8em/1em 'ProximaNova-Bold-Italic'; color: #000; padding: 25px 0 20px 35px; margin: 0; text-transform: uppercase; }
+body.yb-popover > div.social { float: right; margin: 25px 60px 0 0; padding: 0; }
+body.yb-popover > div.video { width: 640px; height: 360px; margin: 73px auto 0; }
+
+/**/
+body.comparePopOver {
+	min-width: 869px;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+body.comparePopOver table {
+	width: 869px;
+	height: 520px;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+}
+body.comparePopOver table table { border-bottom: none; }
+body.comparePopOver table tr td { height: 81px; display: "table-cell"; }
+body.comparePopOver table tr#compare-plan_price td { height: 115px; }
+body.comparePopOver table tr#compare-plan_price td table { height: 115px; width: auto; }
+body.comparePopOver tr#bt_subtable-top,
+body.comparePopOver tr#bt_subtable-top td,
+body.comparePopOver tr#pl_subtable-top,
+body.comparePopOver tr#pl_subtable-top td { height: 51px !important; }
+body.comparePopOver tr#bt_subtable-bottom,
+body.comparePopOver tr#bt_subtable-bottom td,
+body.comparePopOver tr#pl_subtable-bottom,
+body.comparePopOver tr#pl_subtable-bottom td { height: 64px !important; }
+body.comparePopOver table tr td.title { width: 99px; }
+body.comparePopOver table tr td.td_bt,
+body.comparePopOver table tr td.td_pl,
+#bt_subtable-bottom td,
+#pl_subtable-bottom td { width: 130px; }
+body.comparePopOver table tr td {
+	background-image: url("../../img/2012/overlay-compare-bg-cell.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+}
+body.comparePopOver table tr td.td_pl { background-image: url("../../img/2012/overlay-compare-bg-cell-white.jpg"); }
+body.comparePopOver table tr#bt_subtable-bottom td { background-image: url("../../img/2012/overlay-compare-bg-cell-header.jpg"); }
+body.comparePopOver table tr#pl_subtable-bottom td { background-image: url("../../img/2012/overlay-compare-bg-cell-header-white.jpg"); }
+tr#bt_subtable-top td, tr#pl_subtable-top td, 
+body.comparePopOver table tr td.title, body.comparePopOver table tr td.no_div { background-image: none !important; }
+body.comparePopOver table tr.even td.title { background-color: #3c3c3c; background-image: none; }
+body.comparePopOver table tr.even td.td_bt { background-color: #fff; }
+body.comparePopOver table tr.even td.td_pl { background-color: #ba0006; }
+body.comparePopOver table tr.odd td.title { background-color: #2e2e2e; }
+body.comparePopOver table tr.odd td.td_bt { background-color: #f2f2f2; }
+body.comparePopOver table tr.odd td.td_pl { background-color: #a10005; }
+body.comparePopOver td#bt_subtable, body.comparePopOver td#bt_subtable table {
+	background: url("../../img/2012/overlay-compare-bg-gradient-top.jpg") left top repeat-x; 
+}
+body.comparePopOver td#pl_subtable, body.comparePopOver td#pl_subtable table {
+	background: url("../../img/2012/overlay-compare-bg-paylo-top.jpg") left top repeat-x #e61b23; 
+}
+body.comparePopOver td.android_popout { background: url("../../img/2012/overlay-compare-bg-cell-android.jpg") left top repeat-x; } }
+body.comparePopOver table tr td p { margin: 0; padding: 0; }
+body.comparePopOver table tr td.title p { color: #fff; font: 13px 'ProximaNova-Bold-Italic'; text-transform: uppercase; width: 81px; padding: 0 9px; }
+body.comparePopOver table tr td.td_bt p { color: #000; font: 15px 'ProximaNova-Bold-Italic'; text-transform: uppercase; }
+body.comparePopOver table tr td.td_pl p { color: #fff; font: normal 13px 'Uni-Sans-Regular-Italic'; }
+body.comparePopOver table table tr#bt_subtable-top td p { color: #d70020; font: 22px 'ProximaNova-Bold-Italic'; text-transform: uppercase; margin: 0; padding: 0; }
+body.comparePopOver table table tr#pl_subtable-top td p { color: #fff; font: normal 22px 'Uni-Sans-Regular-Italic'; margin: 0; padding: 0; }
+body.comparePopOver table table tr#pl_subtable-top td p span { width: 75px; display: inline-block; text-indent: -9999px; }			
+body.comparePopOver table table tr#bt_subtable-bottom td p { color: #d70020; font: 15px 'ProximaNova-Bold-Italic'; text-transform: uppercase; margin: 0; padding: 0; }
+body.comparePopOver table table tr#pl_subtable-bottom td p { color: #fff; font: normal 15px 'Uni-Sans-Regular-Italic'; margin: 0; padding: 0; }
+body.comparePopOver table table tr#bt_subtable-bottom td p span,
+body.comparePopOver table table tr#pl_subtable-bottom td p span { display: block; font-size: 22px; }
+body.comparePopOver table table tr#pl_subtable-bottom td p span { height: 23px; }
+body.comparePopOver p.post-table { font: 15px 'ProximaNova-Bold-Italic'; color: #000; width: 827px; padding: 18px 0 0 42px }
+body.comparePopOver p.post-table a { font: 15px 'ProximaNova-Bold-Italic'; color: #000; text-decoration: underline; }
+body.comparePopOver p.disclaimer { color: #7e7e7e; font: normal 11px/15px "arial"; width: 827px; padding: 29px 0 0 42px }

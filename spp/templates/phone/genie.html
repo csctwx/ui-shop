@@ -1,0 +1,50 @@
+<section class="featuredPhones" ng-init="phoneController.genie.loadGenieList()">
+  <div class="col-sm-3 hidden-xs">
+    <div class="dropdown">
+      <select class="btn btn-default sortby" ng-model="phoneController.genie.sort">
+        <option value="featured" selected>Featured</option>
+        <option value="timeZA">Newest to Oldest</option>
+        <option value="priceAZ">Price: Low to High</option>
+        <option value="priceZA">Price: High to Low</option>
+        <option value="rateZA" ng-if="appName == 'bst'">Rating: Highest to Lowest</option>
+        <option value="nameAZ">Alphabetically</option>
+      </select>
+    </div>
+    <p><b><a href="{{pathMap._phones._hash}}">Shop our phones</a></b></p><p>Find the phone that's right for you.</p>
+  </div>
+  <div class="col-xs-12 col-sm-9" ng-if="phoneController.genie.pages.length">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div ng-repeat="page in phoneController.genie.getSortPages()" class="item {{$index==0?'active':''}}">
+          <div class="col-xs-4 phoneEntry" ng-repeat="item in page">
+            <a ng-href="{{pathMap._phoneDetails._hash}}{{item.id}}/features/">
+              <img alt="{{item.brand}} {{item.name}} - {{appDisplayName}}" ng-src="{{item.genieImage}}" style="padding-left:10px"></img>
+              <div class="phoneEntryInfo">
+                <p class="phoneBrand">{{item.displayBrand}}</p>
+                <p class="phoneName">{{item.name}}</p>
+                <p><span class="{{phoneController.getRateStarClass(item.rate)}}">&nbsp;</span></p>
+                <span class="price">
+                <p class="phonePromoDiscount" ng-if="item.selectedVariant.discount">{{item.selectedVariant.discount|currency}}</p>
+                <p class="phoneFinalPrice" ng-if="!item.selectedVariant.hiddenPrice">
+                  <span class="phonePriceOld" ng-show="item.selectedVariant.msrp">{{item.selectedVariant.msrp|currency:""}}</span>
+                  <span>{{item.selectedVariant.price|currency:""}}</span>
+                </p>
+                <p ng-if="item.selectedVariant.hiddenPrice">
+                  <span>See price in cart</span>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a ng-if="phoneController.genie.pages.length!=1" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a ng-if="phoneController.genie.pages.length!=1" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>

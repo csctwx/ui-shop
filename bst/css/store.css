@@ -1,0 +1,376 @@
+#store #fismtop {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px;
+  margin-top:0;
+}
+#store #fismtop img {
+  float: left;
+  margin-right: 15px;
+}
+#store #fismtop h2 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+#store #fismtop p {
+    font-size: 16px;
+    color: #6c6b6b;
+}
+.gradient-white {
+    position: relative;
+    background: #fff;
+    background: -webkit-gradient(linear,0 0,0 bottom,from(#fff),to(#f1f0f0));
+    background: -webkit-linear-gradient(#fff,#f1f0f0);
+    background: -moz-linear-gradient(#fff,#f1f0f0);
+    background: -ms-linear-gradient(#fff,#f1f0f0);
+    background: -o-linear-gradient(#fff,#f1f0f0);
+    background: linear-gradient(#fff,#f1f0f0);
+    -pie-background: linear-gradient(#fff,#f1f0f0);
+    behavior: url(/_themes/libs/PIE.htc);
+}
+
+.gradient-grey-dk, .gradient-grey-dk-hover {
+  position: relative;
+  background: #262626;
+  background: -webkit-gradient(linear,0 0,0 bottom,from(#626161),to(#262626));
+  background: -webkit-linear-gradient(#626161,#262626);
+  background: -moz-linear-gradient(#626161,#262626);
+  background: -ms-linear-gradient(#626161,#262626);
+  background: -o-linear-gradient(#626161,#262626);
+  background: linear-gradient(#626161,#262626);
+  -pie-background: linear-gradient(#626161,#262626);
+  behavior: url(/_themes/libs/PIE.htc);
+  color:#FFF;
+}
+
+.transparent{
+  background-color:transparent;
+}
+
+.banner{
+  padding:20px;
+}
+
+#storeOptions>li{
+  float:left;
+  padding-right:10px;
+}
+.banner label{
+  font-weight:initial;
+  font-size:11px;
+}
+
+#store .icons {
+  margin-left: 2px;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background-image: url(../img/store/icons.png);
+  background-repeat: no-repeat;
+  background-position: 2px 0px!important;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+#store .icons.icon-phone {
+  width: 12px !important;
+}
+#store .icons.icon-reboost {
+  width: 12px !important;
+  background-position: 0px -37px!important;
+}
+#store .icons.icon-wallet {
+  background-position: 0px -76px!important;
+  margin-right: 5px;
+}
+#store .icons.icon-boost {
+  background-position: 0px -155px!important;
+  margin-right: 4px;
+}
+#store .icon-pin {
+    background-position: 0px -118px!important;
+    margin-right: 5px;
+}
+
+.banner-img{
+  max-width:100%;
+}
+
+@media (min-width: 992px){
+  .lg-pull-right{
+    float:right;
+  }
+}
+
+@media (max-width: 991px){
+  .lg-pull-right{
+    float:left;
+  }
+}
+
+@media (max-width:768px){
+  .row{
+    margin-left:0;
+    margin-right:0;
+  }  
+}
+
+#locatorResults {
+  padding-bottom: 35px;
+  padding-top: 20px;
+}
+#locatorTop, .showing-results, #adBox {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+#locatorResults .legend {
+  float: right;
+  margin-top: 5px;
+  display: inline;
+}
+.font-boostneo-gradient, .font-boostneo-gradient-light, .font-boostneo-gradient-bold {
+  font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#locatorResults h1 {
+  font-size: 25px !important;
+  margin-bottom: 0px;
+}
+
+#locatorNormal h2, #locatorFeatured h2 {
+  display: inline-block;
+  font-size: 16px !important;
+}
+
+#locatorResults .title {
+  /*color: #807f80;*/
+  display: block;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  background-color:#FFF;
+}
+#locatorFeatured .title {
+  margin-bottom: 20px;
+}
+.font-boostneo, .font-boostneo-hover {
+  font-family: BoostNeoRegular,Arial,Helvetica,sans-serif;
+  -webkit-font-smoothing: initial;
+  -moz-osx-font-smoothing: initial;
+}
+#store h2,#locatorFeatured h2, #store.h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+  color: #f7901e;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#store h1, .h1 {
+  font-size: 36px;
+  margin-bottom: 0;
+  font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+  color: #f7901e;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#store h2,.h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-family: BoostNeoBold,Arial,Helvetica,sans-serif;
+  color: #f7901e;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#locatorFeatured {
+  padding: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+#locatorFeatured, #locatorNormal, #adBox {
+  color: #7f7f7f;
+  font-size: 12px;
+}
+#locatorFeatured {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  background: -webkit-gradient(linear,0 0,0 bottom,from(#fff),to(#eff0ef));
+  background: -webkit-linear-gradient(#fff,#eff0ef);
+  background: -moz-linear-gradient(#fff,#eff0ef);
+  background: -ms-linear-gradient(#fff,#eff0ef);
+  background: -o-linear-gradient(#fff,#eff0ef);
+  background: linear-gradient(#fff,#eff0ef);
+  -pie-background: linear-gradient(#fff,#eff0ef);
+  behavior: url(/_themes/libs/PIE.htc);
+}  
+#locatorFeatured ul {
+  margin: 0px;
+  padding: 0px;
+}  
+#locatorFeatured li {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+  text-align: center;
+}
+user agent stylesheetli {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}  
+
+#pagination {
+  text-align: center;
+  padding-top: 10px;
+}
+#pagination ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#pagination li {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+#store #pagination .active {
+  cursor: default;
+  background: #6fdbdb;
+  background: -webkit-gradient(linear,0 0,0 bottom,from(#6fdbdb),to(#57b5b0));
+  background: -webkit-linear-gradient(#6fdbdb,#57b5b0);
+  background: -moz-linear-gradient(#6fdbdb,#57b5b0);
+  background: -ms-linear-gradient(#6fdbdb,#57b5b0);
+  background: -o-linear-gradient(#6fdbdb,#57b5b0);
+  background: linear-gradient(#6fdbdb,#57b5b0);
+  -pie-background: linear-gradient(#6fdbdb,#57b5b0);
+}
+#store a, #store a:visited {
+  color: #f7901e;
+  letter-spacing: 0px;
+}
+#pagination a {
+  display: block;
+  width: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #fff!important;
+  margin-right: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  background: #434343;
+  background: -webkit-gradient(linear,0 0,0 bottom,from(#8b8989),to(#434343));
+  background: -webkit-linear-gradient(#8b8989,#434343);
+  background: -moz-linear-gradient(#8b8989,#434343);
+  background: -ms-linear-gradient(#8b8989,#434343);
+  background: -o-linear-gradient(#8b8989,#434343);
+  background: linear-gradient(#8b8989,#434343);
+  -pie-background: linear-gradient(#8b8989,#434343);
+  behavior: url(/_themes/libs/PIE.htc);
+}
+#store a, #store a:visited {
+  color: #f7901e;
+  letter-spacing: 0px;
+}
+
+#store a.address, #store a.address:visited {
+  color: #7f7f7f;  
+}
+@media (min-width:768px){
+  #locatorFeatured li {
+    border-right: 1px dotted #a5a4a5;
+    width:33.3333%;
+  }
+  #locatorFeatured li:last-child {
+    border: 0px;
+  }
+  .md-pull-left{
+    float:left;
+  }
+}
+
+@media (max-width:767px){
+  #locatorFeatured li {
+    border-bottom: 1px dotted #a5a4a5;
+    width:100%;
+  }
+  #locatorFeatured li:last-child {
+    border: 0px;
+  }
+  
+  .sm-text-center{
+    text-align:center;
+  }
+}
+
+@media (max-width:768px){ 
+  #store a.address, #store a.address:visited {
+    color: #fff;  
+  } 
+  .gradient-grey-dk, 
+  .gradient-grey-dk-hover,
+  #locatorResults,
+  #locatorFeatured {
+    background: none;
+    background-color: #000;
+    border: none;
+  }  
+
+  #locatorResults .phone-number,
+  #locatorFeatured .phone-number{
+    color:#F99100;
+  }
+
+  #store h1 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #store h2,
+  #locatorFeatured h2, 
+  #store.h2,
+  #locatorResults .title,
+  #locatorFeatured, 
+  #locatorNormal, 
+  #adBox {    
+    color: #fff;    
+    background-color: transparent;
+  }
+  [itemprop="name"] {color:#f7901e;}
+
+  #store .icons {
+    display: none;
+  }
+
+  #locatorFeatured li,
+  #locatorNormal > .row,
+  #locatorNormal > .showing-results {
+    border: none !important;
+  }
+
+  #locatorFeatured li:nth-child(odd),
+  #locatorNormal > .row:nth-child(odd){
+    background-color: #232323;
+  }
+} 

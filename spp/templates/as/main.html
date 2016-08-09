@@ -1,0 +1,49 @@
+<div ng-if="app.isCurrentContext(pathMap._additionalServices._formatedHash)">
+  <section style="border-bottom:none;">
+    <h2>Additional Services</h2>
+    
+    <div id="additionalServices" class="rowlws">
+      <div ng-repeat="item in asController.data.items" class="{{asController.getTailClassName($index)}} {{asController.getTileParentClass($index)}} {{item.key}}">
+				<a class="tile" ng-href="{{pathMap._additionalServices._hash}}{{item.key}}">
+					<div class="icon">
+					      <style>
+      					   @media (max-width:480px) {
+      						.rate {
+    						width: 100%;
+							}
+							}
+      						</style>
+					<img ng-src="{{item.image}}" class="{{item.key=='internationalrates'?'rate':''}}"/></div>
+          <div class="content">
+            <h2>{{item.title}}</h2>
+            <p class="subtitle">{{item.description}}</p>
+          </div>
+					<div class="link"><span class="glyphicon glyphicon-chevron-right"></span></div>
+				</a>
+        <div class="panel_tile" style="border-color:{{item.color}}" id="{{item.key}}">
+          <div class="row" style="margin-left:0px;margin-right:0px;">
+            <div>
+              <section class="header">
+                <h4 class="title_panel"><strong>{{item.title}}</strong><a ng-href="{{pathMap._additionalServices._hash}}" class="close" style="color:{{item.color}};opacity:1;">X</a></h4>
+              </section>
+              <div class="body">
+                <as-callwatch ng-if="item.key=='callwatch'"></as-callwatch>
+                <as-datapacks ng-if="item.key=='datapacks'"></as-datapacks>
+                <as-premiumcallerid ng-if="item.key=='premiumcallerid'"></as-premiumcallerid>
+                <as-internationalrates ng-if="item.key=='internationalrates'"></as-internationalrates>
+                <as-mobilehotspot ng-if="item.key=='mobilehotspot'"></as-mobilehotspot>
+                <as-phoneinsurance ng-if="item.key=='phoneinsurance'"></as-phoneinsurance>
+              </div>
+            </div>
+          </div>		
+        </div>	
+        <a class="{{pathMap._additionalServices._flag}} small_tile" ng-href="{{pathMap._additionalServices._hash}}{{item.key}}">
+            <img class="as-closed" ng-src="{{item.image}}"/>
+            <br/><br/><br/><br/>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="legal" ng-bind-html="asController.data.legal"></section>
+</div>

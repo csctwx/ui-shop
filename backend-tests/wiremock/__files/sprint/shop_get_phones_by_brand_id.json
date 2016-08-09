@@ -1,0 +1,1275 @@
+{
+    "responses": {
+        "response": [
+            {
+                "@class": "",
+                "@code": "0",
+                "@name": "Section 19029",
+                "@uuid": "shop_get_phones_by_brand_id_service",
+                "getListPhonesResponse": {
+                    "description": {
+                        "$": "SUCCESS"
+                    },
+                    "phones": {
+                        "phone": [
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare_thumb"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/h/g/compare_thumb.jpg?action=access&assetId=A-zCj6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/e/f/compare.png?action=access&assetId=A-zCj6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {
+                                    "$": "Limited time only, while supplies last. Android\u2122 is a trademark of Google, Inc."
+                                },
+                                "externalUrl": {
+                                    "$": "lg-g-stylo"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Bar"
+                                        },
+                                        {
+                                            "$": "TouchScreen"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "FrontFacingCamera"
+                                        },
+                                        {
+                                            "$": "GPS"
+                                        },
+                                        {
+                                            "$": "4GWiMax"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "SpeakerPhone"
+                                        },
+                                        {
+                                            "$": "3G"
+                                        },
+                                        {
+                                            "$": "4GLTE"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "HotSpot"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "4G"
+                                        },
+                                        {
+                                            "$": "LG"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20150501"
+                                },
+                                "genieOrder": {
+                                    "$": "1"
+                                },
+                                "manufacturerName": {
+                                    "$": "LG"
+                                },
+                                "phoneName": {
+                                    "$": "G Stylo\u2122"
+                                },
+                                "phoneType": {
+                                    "$": "Android"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {
+                                            "$": "gray"
+                                        },
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/a/i/hero.png?action=access&assetId=A-zCj6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "price": {
+                                            "$": "199.99"
+                                        },
+                                        "purchaseLimit": {
+                                            "$": "3"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phoneWall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/c/g/phoneWall.png?action=access&assetId=A-zCj6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "LGLS770ASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "Go from serious multitasking to snapping silly selfies \u2013 instantly \u2013 with this versatile Android\u2122 5.0 device. The LG G Stylo features an enormous 5.7\" high-definition IPS touchscreen with an embedded stylus for extra easy navigation. And its dual cameras deliver great-looking pictures, videos and selfies. Work or play, the LG G Stylo delivers serious performance at a price you can afford."
+                                }
+                            },
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare_th"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/a/b/i/compare_th.png?action=access&assetId=A-yrg6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/i/d/compare.png?action=access&assetId=A-yrg6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {
+                                    "$": "Limited time only, while supplies last. Android\u2122 is a trademark of Google, Inc."
+                                },
+                                "externalUrl": {
+                                    "$": "samsung-galaxy-core-prime"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Bar"
+                                        },
+                                        {
+                                            "$": "TouchScreen"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "FrontFacingCamera"
+                                        },
+                                        {
+                                            "$": "GPS"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "SpeakerPhone"
+                                        },
+                                        {
+                                            "$": "4GLTE"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "HotSpot"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "Samsung"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20140505"
+                                },
+                                "genieOrder": {
+                                    "$": "9"
+                                },
+                                "manufacturerName": {
+                                    "$": "Samsung"
+                                },
+                                "phoneName": {
+                                    "$": "Galaxy Core Prime\u2122"
+                                },
+                                "phoneType": {
+                                    "$": "Android"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {},
+                                        "discount": {
+                                            "$": "30.00"
+                                        },
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/i/a/hero.png?action=access&assetId=A-yrg6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "msrp": {
+                                            "$": "129.99"
+                                        },
+                                        "price": {
+                                            "$": "99.99"
+                                        },
+                                        "purchaseLimit": {
+                                            "$": "3"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phonewall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/a/a/e/phonewall.png?action=access&assetId=A-yrg6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "SPHG360ASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "Get a simple and elegant design built with a durable frame. With a thickness of just 8.8 mm, the Galaxy Core Prime fits comfortably in one hand or in your pocket, making it easy to carry with you anywhere."
+                                }
+                            },
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare_th"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/d/j/compare_th.png?action=access&assetId=A-Qbg6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/j/i/compare.png?action=access&assetId=A-Qbg6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {},
+                                "externalUrl": {
+                                    "$": "htc-desire-510"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Bar"
+                                        },
+                                        {
+                                            "$": "TouchScreen"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "FrontFacingCamera"
+                                        },
+                                        {
+                                            "$": "GPS"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "SpeakerPhone"
+                                        },
+                                        {
+                                            "$": "4GLTE"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "HotSpot"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "UleCertified"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "HTC"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20150401"
+                                },
+                                "genieOrder": {
+                                    "$": "8"
+                                },
+                                "manufacturerName": {
+                                    "$": "HTC"
+                                },
+                                "phoneName": {
+                                    "$": "Desire\u00ae 510"
+                                },
+                                "phoneType": {
+                                    "$": "Android"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {
+                                            "$": "blue"
+                                        },
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/d/e/hero.png?action=access&assetId=A-Qbg6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "price": {
+                                            "$": "99.99"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phonewall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/a/e/g/phonewall.png?action=access&assetId=A-Qbg6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "HTC0PCV1ASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "Hit the sweet spot between readability and pocketability with a 4.7-inch screen. Multitask the day away with Android 4.4 Kit Kat and the power of a 1.2 GHz Quad-Core processor. Stream your content over Sprint Spark, our fastest 4G LTE network. And, expand your storage by as much as 128 GB with the micro SD slot."
+                                }
+                            },
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/d/g/compare.png?action=access&assetId=A-Sbg6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare_th"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/e/c/compare_th.png?action=access&assetId=A-Sbg6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {
+                                    "$": "Limited time only, while supplies last. Android\u2122 is a trademark of Google, Inc."
+                                },
+                                "externalUrl": {
+                                    "$": "lg-tribute"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Bar"
+                                        },
+                                        {
+                                            "$": "TouchScreen"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "FrontFacingCamera"
+                                        },
+                                        {
+                                            "$": "GPS"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "SpeakerPhone"
+                                        },
+                                        {
+                                            "$": "4GLTE"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "HotSpot"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "LG"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20150401"
+                                },
+                                "genieOrder": {
+                                    "$": "7"
+                                },
+                                "manufacturerName": {
+                                    "$": "LG"
+                                },
+                                "phoneName": {
+                                    "$": "Tribute\u2122"
+                                },
+                                "phoneType": {
+                                    "$": "Android"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {},
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/f/f/hero.png?action=access&assetId=A-Sbg6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "price": {
+                                            "$": "79.99"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phonewall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/j/f/phonewall.png?action=access&assetId=A-Sbg6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "LGLS660ASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "Get the blazing-fast speed of 4G LTE at an affordable price. The LG Tribute\u2122 captures everything savvy surfers and social bugs crave, like a 4.5-inch touchscreen, a 1.2 GHz Quad-Core Processor and Android 4.4.2 Kit Kat. And keep on smiling, because with its 5 MP camera as well as a selfie-friendly, front-facing camera, you can click a perfect pic from any angle."
+                                }
+                            },
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare_th"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/g/g/b/compare_th.png?action=access&assetId=A-Tbg6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/a/i/compare.png?action=access&assetId=A-Tbg6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {
+                                    "$": "Limited time only, while supplies last. Android\u2122 is a trademark of Google, Inc."
+                                },
+                                "externalUrl": {
+                                    "$": "sharp-aquos-crystal"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Bar"
+                                        },
+                                        {
+                                            "$": "TouchScreen"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "FrontFacingCamera"
+                                        },
+                                        {
+                                            "$": "GPS"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "SpeakerPhone"
+                                        },
+                                        {
+                                            "$": "4GLTE"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "HotSpot"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "Sharp\u00ae"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20140401"
+                                },
+                                "genieOrder": {
+                                    "$": "3"
+                                },
+                                "manufacturerName": {
+                                    "$": "Sharp\u00ae"
+                                },
+                                "phoneName": {
+                                    "$": "AQUOS\u00ae Crystal"
+                                },
+                                "phoneType": {
+                                    "$": "Android"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {
+                                            "$": "black"
+                                        },
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/d/g/hero.png?action=access&assetId=A-Tbg6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "price": {
+                                            "$": "149.99"
+                                        },
+                                        "purchaseLimit": {
+                                            "$": "3"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phonewall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/e/g/phonewall.png?action=access&assetId=A-Tbg6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "SH306SHASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "Affordable refinement is yours with the Sharp AQUOS\u00ae Crystal. The edgeless design shimmers like an infinity pool in your hands. Underneath that chic exterior is the powerful Android\u2122 operating system that supports the ultra-fast 4G LTE Sprint Spark\u2122 network. You can rock your music right with Harman Kardon sound and patented Clari-Fi\u2122 technology for crisper, wider and more dynamic audio."
+                                }
+                            },
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare_th"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/i/a/compare_th.png?action=access&assetId=A-Ubg6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/b/b/f/compare.png?action=access&assetId=A-Ubg6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {
+                                    "$": "Limited time only, while supplies last. Android\u2122 is a trademark of Google, Inc."
+                                },
+                                "externalUrl": {
+                                    "$": "samsung-galaxy-s3"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Bar"
+                                        },
+                                        {
+                                            "$": "TouchScreen"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "FrontFacingCamera"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "SpeakerPhone"
+                                        },
+                                        {
+                                            "$": "4GLTE"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "Samsung"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20140401"
+                                },
+                                "genieOrder": {
+                                    "$": "5"
+                                },
+                                "manufacturerName": {
+                                    "$": "Samsung"
+                                },
+                                "phoneName": {
+                                    "$": "Galaxy S\u00ae 3"
+                                },
+                                "phoneType": {
+                                    "$": "Android"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {},
+                                        "discount": {
+                                            "$": "50.00"
+                                        },
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/j/e/hero.png?action=access&assetId=A-Ubg6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "msrp": {
+                                            "$": "249.99"
+                                        },
+                                        "price": {
+                                            "$": "199.99"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phonewall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/a/a/phonewall.png?action=access&assetId=A-Ubg6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "SPHL710TASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "Expand your Universe. Introducing the Samsung Galaxy S\u00ae III with Shrinking Payments. Loaded with access to 4G LTE speed (where coverage is available), Android\u00bf power, dual cameras and a beautiful touchscreen display, this phone does it big. To top it off, it's easy to use - the S Beam feature lets you share your favorite HD pictures, music and videos by just tapping your phone to a friend\u00bfs. Power. Simplicity. Sharing. The Samsung Galaxy S\u00ae III Android-powered phone lets you have it all."
+                                }
+                            },
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/g/d/compare.png?action=access&assetId=A-Vbg6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare_th"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/c/d/d/compare_th.png?action=access&assetId=A-Vbg6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {
+                                    "$": "Limited time only, while supplies last. Android\u2122 is a trademark of Google, Inc."
+                                },
+                                "externalUrl": {
+                                    "$": "alcatel-onetouch-retro"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Flip"
+                                        },
+                                        {
+                                            "$": "Qwerty"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "SpeakerPhone"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "Alcatel"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20140401"
+                                },
+                                "genieOrder": {
+                                    "$": "10"
+                                },
+                                "manufacturerName": {
+                                    "$": "Alcatel"
+                                },
+                                "phoneName": {
+                                    "$": "ONETOUCH Retro\u2122"
+                                },
+                                "phoneType": {
+                                    "$": "Basic"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {},
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/j/a/hero.png?action=access&assetId=A-Vbg6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "price": {
+                                            "$": "19.99"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phonewall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/i/j/phonewall.png?action=access&assetId=A-Vbg6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "AL2017BASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "The Alcatel Onetouch Retro\u2122 is the perfect fit if you like the simplicity of a feature phone. The sleek and stylish flip design with large keypad makes dialing, texting and picture messaging uncomplicated. Snap and share photos with the 2 MP camera, plus enjoy recording videos."
+                                }
+                            },
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/a/j/f/compare.png?action=access&assetId=A-Wbg6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare_th"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/f/b/a/compare_th.png?action=access&assetId=A-Wbg6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {
+                                    "$": "Limited time only, while supplies last. Android\u2122 is a trademark of Google, Inc."
+                                },
+                                "externalUrl": {
+                                    "$": "lg-volt"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Bar"
+                                        },
+                                        {
+                                            "$": "TouchScreen"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "FrontFacingCamera"
+                                        },
+                                        {
+                                            "$": "GPS"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "SpeakerPhone"
+                                        },
+                                        {
+                                            "$": "4GLTE"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "HotSpot"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "LG"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20150601"
+                                },
+                                "genieOrder": {
+                                    "$": "6"
+                                },
+                                "manufacturerName": {
+                                    "$": "LG"
+                                },
+                                "phoneName": {
+                                    "$": "Volt\u2122"
+                                },
+                                "phoneType": {
+                                    "$": "Android"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {},
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/i/e/d/hero.png?action=access&assetId=A-Wbg6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "price": {
+                                            "$": "179.99"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phonewall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/d/i/phonewall.png?action=access&assetId=A-Wbg6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "LGLS740ASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "Those who are on the go. Stream your favorite content, take pics on the 8 MP BSI camera and enjoy it all on the sharp 4.7-inch qHD display. With 4G LTE and fueled by the powerful Qualcomm\u00ae Snapdragon\u2122 1.2 GHz Quad-Core processor, the LG Volt\u2122 delivers seamlessly."
+                                }
+                            },
+                            {
+                                "associatedAccessoryId": {},
+                                "compareImages": {
+                                    "compareImage": [
+                                        {
+                                            "fileName": {
+                                                "$": "compare_th"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/e/h/f/compare_th.png?action=access&assetId=A-Ybg6XVKM1TW"
+                                            }
+                                        },
+                                        {
+                                            "fileName": {
+                                                "$": "compare"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/a/d/compare.png?action=access&assetId=A-Ybg6XVKM1TW"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "disclaimerMini": {
+                                    "$": "Limited time only, while supplies last. Android\u2122 is a trademark of Google, Inc."
+                                },
+                                "externalUrl": {
+                                    "$": "moto-e-lte"
+                                },
+                                "filters": {
+                                    "feature": [
+                                        {
+                                            "$": "Bar"
+                                        },
+                                        {
+                                            "$": "TouchScreen"
+                                        },
+                                        {
+                                            "$": "Camera"
+                                        },
+                                        {
+                                            "$": "FrontFacingCamera"
+                                        },
+                                        {
+                                            "$": "GPS"
+                                        },
+                                        {
+                                            "$": "Wifi"
+                                        },
+                                        {
+                                            "$": "Bluetooth"
+                                        },
+                                        {
+                                            "$": "4GLTE"
+                                        },
+                                        {
+                                            "$": "Text"
+                                        },
+                                        {
+                                            "$": "Video"
+                                        },
+                                        {
+                                            "$": "HotSpot"
+                                        },
+                                        {
+                                            "$": "Email"
+                                        },
+                                        {
+                                            "$": "HtmlBrowser"
+                                        },
+                                        {
+                                            "$": "Music"
+                                        },
+                                        {
+                                            "$": "Motorola\u00ae"
+                                        }
+                                    ]
+                                },
+                                "generalAvailabilityDate": {
+                                    "$": "20150511"
+                                },
+                                "genieOrder": {
+                                    "$": "2"
+                                },
+                                "manufacturerName": {
+                                    "$": "Motorola\u00ae"
+                                },
+                                "phoneName": {
+                                    "$": "Moto E"
+                                },
+                                "phoneType": {
+                                    "$": "Android"
+                                },
+                                "phoneVariants": {
+                                    "phoneVariant": {
+                                        "colorVariant": {
+                                            "$": "black"
+                                        },
+                                        "gradientColor": {},
+                                        "heroImage": {
+                                            "fileName": {
+                                                "$": "hero"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/h/j/f/hero.png?action=access&assetId=A-Ybg6XVKM1TW"
+                                            }
+                                        },
+                                        "hiddenPrice": {
+                                            "$": "false"
+                                        },
+                                        "inventory": {
+                                            "$": "in-stock"
+                                        },
+                                        "isDefault": {
+                                            "$": "true"
+                                        },
+                                        "memoryVariant": {},
+                                        "price": {
+                                            "$": "99.99"
+                                        },
+                                        "shopGridPicture": {
+                                            "fileName": {
+                                                "$": "phonewall"
+                                            },
+                                            "uRI": {
+                                                "$": "http://media-vip:8081/repository/store/P-d0avx1PuX34/d/h/g/phonewall.png?action=access&assetId=A-Ybg6XVKM1TW"
+                                            }
+                                        },
+                                        "sku": {
+                                            "$": "MOT1526ASB"
+                                        }
+                                    }
+                                },
+                                "shortDescription": {
+                                    "$": "Motorola Moto E delivers the functionality and durability you need at a price you can afford. The 4.5-inch touchscreen is the sharpest display in its class and protected with Corning\u00ae Gorilla\u00ae Glass and a water-resistant splash guard. The long-lasting 2390 mAh battery provides up to 21 hours hours of use. Interchangeable backs customize the look of your phone. The microSD slot expands your storage by as much as 32 GB. And, Android 5.0 Lollipop helps you multitask on the go."
+                                }
+                            }
+                        ]
+                    },
+                    "status": {
+                        "$": "0"
+                    }
+                }
+            }
+        ]
+    }
+}

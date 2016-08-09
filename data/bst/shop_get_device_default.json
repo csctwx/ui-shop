@@ -1,0 +1,101 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "fc3cfaa2-1f79-40a8-81ad-d981eaba9d83",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"deviceDetailsResponse": {
+				"deviceDetails": {
+					"deviceDetail": {
+						"manufacturerName": {
+							"$": "NETGEAR"
+						},
+						"extendedDescription": {
+							"$": "Share the gift of high-speed LTE connectedness with up to 10 of your wireless devices. The NETGEAR Fuse lets you set up your own wireless network at home, on the way to work, or anywhere else you go on our 4G LTE nationwide network. It's Wi-Fi where you want it."
+						},
+						"isRedVentures": {
+							"$": "false"
+						},
+						"disclaimerMini": {
+							"$": "Promotional pricing available only for select wi-fi hotspots directly from boostmobile.com. Limited time only, while supplies last."
+						},
+						"ReviewStatistics": {
+							"TotalReviewCount": {
+								"$": "31"
+							},
+							"AverageOverallRating": {
+								"$": "2.9032"
+							},
+							"OverallRatingRange": {
+								"$": "5"
+							}
+						},
+						"meta": {
+							
+						},
+						"findInStoreFlag": {
+							"$": "true"
+						},
+						"deviceViewImages": {
+							"deviceViewImage": [{  
+                "fileName":{  
+                  "$":"oversize"
+                },
+                "uRI":{  
+                  "$":"data/img/hotspot-1.png"
+                }
+              },
+              {  
+                "fileName":{  
+                  "$":"hero"
+                },
+                "uRI":{  
+                  "$":"data/img/hotspot-2.png"
+                }
+              },
+              {  
+                "fileName":{  
+                  "$":"front"
+                },
+                "uRI":{  
+                  "$":"data/img/hotspot-3.png"
+                }
+              },
+              {  
+                "fileName":{  
+                  "$":"btm"
+                },
+                "uRI":{  
+                  "$":"data/img/hotspot-4.png"
+                }
+              },
+              {  
+                "fileName":{  
+                  "$":"angled"
+                },
+                "uRI":{  
+                  "$":"data/img/hotspot-5.png"
+                }
+              }]
+						},
+            "checkoutImage": {
+              "fileName": {
+                "$": "cart"
+              },
+              "uRI": {
+                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/c\/b\/cart.png?action=access&assetId=A-LjFleJYfxQ2"
+              }
+            }
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

@@ -1,0 +1,90 @@
+<div class="internationalrates" ng-init="supportController.support.faqs.internationalrates.init()">
+  <h2>International Rates</h2>{{pageController.support.faqs.internationalrates.test}}
+  <div class="top row">
+    <div class="col-xs-12 col-sm-8">
+      <h3>Sprint Prepaid International Calling Rates</h3>
+      <p>
+        Sprint Prepaid offers easy and affordable international calling rates when calling from the U.S. on the Sprint Network. Say goodbye to calling cards forever and connect to friends and family around the world. See below for the full list of international calling rates.
+      </p>
+      <h3>Find Rates by Country</h3>
+      <p>
+        Use your Sprint Prepaid phone to dial internationally while in the U.S. International Long Distance calling capabilities may be enabled on your phone at activation. To activate, visit <a href="https://myaccount.prepaid.sprint.com/myaccount/home.do?INTNAV=Nav:MyAcct">My Account</a>. Cost for International calls is the International Rate plus standard airtime rates.
+      </p>
+    </div>
+    <div class="col-sm-4 hidden-xs">
+      <img class="img-responsive" src="spp/img/Spp-ILD-Image01.jpg" alt="Sprint Prepaid International">
+    </div>
+  </div>
+  <div class="content row">
+    <div class="col-xs-12 col-sm-6">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Type</th>
+            <th>Price/Min</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="rate in supportController.rates_left">
+            <td>{{rate.country}}</td>
+            <td>{{rate.mytype}}</td>
+            <td>{{rate.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <table class="table table-striped">
+        <thead class="hidden-xs">
+          <tr>
+            <th>Country</th>
+            <th>Type</th>
+            <th>Price/Min</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="rate in supportController.rates_right">
+            <td>{{rate.country}}</td>
+            <td>{{rate.mytype}}</td>
+            <td>{{rate.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <div class="disclaimer col-xs-12">
+      <p>
+        * Rates and available countries are subject to change without notice. Check here often for latest rates and included countries. For some destinations, not all landline and mobile phones are included.
+      </p>
+    </div>
+  </div>
+  <div class="bottom row">
+    <div class="col-xs-12">
+      <h3>Tips on international calling with Sprint Prepaid</h3>
+      <ul>
+        <li>
+          Make international calls the same way you would from any other phone. Dial 011 + the country code + the city code + the phone number. For countries like Canada, Dominican Republic, Jamaica, and other countries marked with a “*” in the table, you don’t have to dial 011 before the number
+        </li>
+        <li>
+          International calls are charged at the international per-minute rate for the country you’re calling when you’re using your monthly plan talk minutes. Standard airtime minute rates may apply for minutes over any monthly talk minute allotment.
+        </li>
+        <li>
+          Calls to Puerto Rico, Guam, Northern Mariana Islands, American Samoa and the U.S. Virgin Islands are included in Sprint Prepaid’s domestic monthly talk plans, so – there is no international charge.
+        </li>
+        <li>
+          International Text: $0.15 per international SMS message sent and received.
+        </li>
+      </ul>
+    </div>
+    <div class="col-xs-12">
+      <p>
+        NOTE: AVAILABLE COUNTRIES AND/OR CALLING RATES ARE SUBJECT TO CHANGE WITHOUT NOTICE. Please visit <a href="https://prepaid.sprint.com/#!/support/faqs/internationalrates/">https://prepaid.sprint.com/#!/support/faqs/internationalrates/</a> regularly for changes including, but not limited to, including countries, rates and fees.
+      </p>
+      <p>
+        No plan discounts apply. Plans are for domestic use only within the U.S. unless stated otherwise and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network (usage of minutes will apply). State, local sales taxes and fees may apply when adding funds to your cash balance. Coverage not available everywhere and varies by service. Usage limitations apply. Rates can be found at <a href="https://prepaid.sprint.com/#!/support/faqs/internationalrates/">https://prepaid.sprint.com/#!/support/faqs/internationalrates/</a>. All features not available on all phones. Depending on your service plan, certain applications that are preinstalled on your device may not be available or operational. Examples of these applications include, but are not limited to, Sprint TV, GPS and Mobile Hotspot applications. You also may not be able to purchase other subscription-based third-party content from application stores (e.g., the Google Play store), which will be taken from your cash balance. Certain payment options may be restricted or not available.
+      </p>
+    </div>
+  </div>
+  <br /><br />
+</div>

@@ -1,0 +1,133 @@
+{
+    "responses": {
+        "response": [{
+            "@uuid": "d3073c37-10a5-4702-be79-ee9b745715f8",
+            "@class": "",
+            "@name": "Section 19029",
+            "@code": "0",
+            "deviceResponse": {
+                "mbbList": {
+                    "mbb": [{
+                        "name": {
+                            "$": "Netgear Fuse Mobile Hotspot"
+                        },
+                        "externalUrl": {
+                            "$": "netgear-fuse-mobile-hotspot"
+                        },
+                        "manufacturerName": {
+                            "$": "NETGEAR®"
+                        },
+                        "filter": {
+                            "$": "NETGEAR®"
+                        },
+                        "generalAvailabilityDate": {
+                            "$": "20150505"
+                        },
+                        "disclaimerMini": {
+                            "$": "Promotional pricing available only for select wi-fi hotspots directly from boostmobile.com. Limited time only, while supplies last."
+                        },
+                        "deviceType": {
+                            "$": "mbb"
+                        },
+                        "sku": {
+                            "$": "NTGR779ABB"
+                        },
+                        "discount": {
+                            "$": "0"
+                        },
+                        "price": {
+                            "$": "49.99"
+                        },
+                        "inventory": {
+                            "$": "in-stock"
+                        },
+                        "heroImage": {
+                            "fileName": {
+                                "$": "hero"
+                            },
+                            "uRI": {
+                                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/e\/e\/h\/hero.png?action=access&assetId=A-LjFleJYfxQ2"
+                            }
+                        },
+                        "purchaseLimit": {
+                            "$": "0"
+                        },
+                        "hiddenPrice": {
+                            "$": "false"
+                        },
+                        "ReviewStatistics": {
+                            "TotalReviewCount": {
+                                "$": "64"
+                            },
+                            "AverageOverallRating": {
+                                "$": "2.8594"
+                            },
+                            "OverallRatingRange": {
+                                "$": "5"
+                            }
+                        }
+                    }, {
+                        "name": {
+                            "$": "R850 Mobile Hotspot"
+                        },
+                        "externalUrl": {
+                            "$": "r850-mobile-hotspot"
+                        },
+                        "manufacturerName": {
+                            "$": "Franklin"
+                        },
+                        "filter": {
+                            "$": "Franklin"
+                        },
+                        "generalAvailabilityDate": {
+                            "$": "20150127"
+                        },
+                        "disclaimerMini": {},
+                        "deviceType": {
+                            "$": "mbb"
+                        },
+                        "compareImage": [{
+                            "fileName": {
+                                "$": "compare"
+                            },
+                            "uRI": {
+                                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/h\/d\/compare.png?action=access&assetId=A-GPPleJYfxQ2"
+                            }
+                        }, {
+                            "fileName": {
+                                "$": "compare_thumb"
+                            },
+                            "uRI": {
+                                "$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/b\/c\/f\/compare_thumb.jpg?action=access&assetId=A-GPPleJYfxQ2"
+                            }
+                        }],
+                        "sku": {
+                            "$": "FRKR850ABB"
+                        },
+                        "discount": {
+                            "$": "0"
+                        },
+                        "price": {
+                            "$": "49.99"
+                        },
+                        "inventory": {
+                            "$": "in-stock"
+                        },
+                        "purchaseLimit": {
+                            "$": "0"
+                        },
+                        "hiddenPrice": {
+                            "$": "false"
+                        }
+                    }],
+                    "status": {
+                        "$": "0"
+                    },
+                    "description": {
+                        "$": "SUCCESS"
+                    }
+                }
+            }
+        }]
+    }
+}

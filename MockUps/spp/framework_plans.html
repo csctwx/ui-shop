@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Sprint Prepaid - Plans</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/app-framework.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+		<div class="container">
+			<div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+				<a href="framework_home.html">Home</a>
+			</div>
+			<div class="col-xs-9 col-md-10 pull-right">
+				<div class="navbar pull-left visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="#" data-toggle="modal" data-target="#coverageMap">Coverage Map</a></li>
+						<li class="navbar-item"><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+					</ul>
+					<div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<strong class="pull-left">Coverage Map</strong>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<iframe src="http://coverage.sprint.com/mycoverage.jsp?id=SPREPAID" scrolling="no" width="100%" height="467" frameborder="0"></iframe>
+									<p>Sprint Prepaid offers dependable, nationwide coverage for voice and data. To view the coverage in your area, select the combination of voice and data cover you want to see, then enter an address or just your zip code in the fields to the right.</p>
+									<p><strong>Green regions denote voice coverage. Orange, blue and purple regions denote data coverage.</strong></p>
+									<p>View <a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a> on a full page and visit the <a class="more" href="http://www.sprint.com/prepaid">Shop</a> for Sprint Prepaid phone options.</p>
+									<p class="legal">Nationwide Sprint Network. This tool provides high-level estimates of our wireless coverage. Coverage is not available everywhere and varies based on a number of factors. Our coverage maps provide high level estimates of our coverage areas when using your device outdoors under optimal conditions. Coverage isn't available everywhere. Estimating wireless coverage and signal strength is not an exact science. There are gaps in coverage within our estimated coverage areas that, along with other factors both within and beyond our control (network problems, software, signal strength, your wireless device, structures, buildings, weather, geography, topography, etc.), will result in dropped and blocked connections, slower data speeds, or otherwise impact the quality of services. Services that rely on location information, such as E911 depend on your device's ability to acquire satellite signals (typically not available indoors) and network coverage. E911 services also depend local emergency service provider systems/support. Estimated future coverage subject to change.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar pull-right visible-md topnav">
+					<ul class="navbar-wrapper">
+						<li class="navbar-item"><a href="https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill">Refill</a></li>
+						<li class="navbar-item"><a href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support">Support</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate">Activate</a></li>
+						<li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct">My Account</a></li>
+						<li class="navbar-item"><a href="">Sign in</a></li>
+					</ul>
+				</div>
+				<div class="visible-sm visible-xs greeting">
+					<button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+						<i class="glyphicon glyphicon-remove"></i>
+					</button>
+					<p class="greeting-name"><span>Good morning, </span>UserName</p>
+					<p class="greeting-number">PhoneNumber</p>
+				</div>
+				<ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+					<li><a href="framework_shop.html">Shop</a></li>
+					<li><a href="framework_phones.html">All Phones</a></li>
+					<li><a href="">Android Phones</a></li>
+					<li><a href="framework_plans.html">Shop Plans</a></li>
+					<li><a href="framework_addservices.html">Additional Services</a></li>
+				</ul>
+				<ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_shop.html">Shop <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_phones.html">All Phones</a></li>
+							<li><a>Android Phones</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="framework_plans.html">Plans <b class="caret"></b></a>
+						<ul class="dropdown-menu sub-menu">
+							<li><a href="framework_plans.html">Shop Plans</a></li>
+							<li><a href="framework_addservices.html">Additional Services</a></li>
+						</ul>
+					</li>
+					<li class="cart dropdown">
+						<a class="dropdown-toggle" href="framework_purchase-01.html"><img src="img/icons/cart-white.png"></img><span>Cart</span><span id="cart-count">1</span></a>
+						<ul class="dropdown-menu subnav">
+							<li>
+								<ul>
+									<li>
+										<img class="phoneImg" src="img/phone1-1.png"></img>
+										<div class="pull-left">
+											<span class="phoneBrand">Samsung</span>
+											<span class="phoneName">Galaxy S5</span>
+											<span class="phoneColor"></span>
+											<span class="phoneMemory"></span>
+										</div>
+										<div class="pull-right">
+											<span class="quantity">1</span>
+											<span class="totalPrice">199.99</span>
+											<a class="removePhone"><i class="glyphicon glyphicon-remove-circle"></i></a>
+										</div>
+									</li>
+								</ul>
+								<a class="cartAction">Empty cart</a>
+								<a class="cartAction pull-right" href="framework_purchase-01.html">Checkout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="#home" class="linkHome">Home</a>
+		<ul class="mobilelinks">
+			<li><a href="framework_purchase-01.html"><i class="glyphicon glyphicon-shopping-cart"><span id="cart-count">1</span></i></a></li>
+			<li><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+			<li><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct"><i class="glyphicon glyphicon-log-in"></i></a></li>
+		</ul>
+    </div>
+	<div class="container main">
+		<ol class="breadcrumb hidden-xs">
+			<li><a href="framework_home.html">Home</a></li>
+			<li class="active">Plans</li>
+		</ol>
+		<section class="promo-full plans">
+			<div class="col-xs-12">
+				<a class="promo08">
+					<img src="img/promo-full-02.jpg"></img>
+				</a>
+			</div>
+		</section>
+		<section class="featuredPhones">
+			<div class="col-sm-3 hidden-xs">
+				<div class="dropdown">
+					<select class="btn btn-default sortby">
+						<option selected>Featured</option>
+						<option>Newest to Oldest</option>
+						<option>Price: Low to High</option>
+						<option>Price: High to Low</option>
+						<option>Rating: Highest to Lowest</option>
+						<option>Alphabetically</option>
+					</select>
+				</div>
+				<p><b><a href="framework_phones.html">Shop our phones</a></b></p><p>Find the phone that's right for you.</p>
+			</div>
+			<div class="col-xs-12 col-sm-9">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-1.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">LG</p>
+										<p class="phoneName">Volt</p>
+										<span class="price">
+											<p class="phoneFinalPrice">
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-5.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Apple</p>
+										<p class="phoneName">iPhone 5S Yellow 16GB (CPO)</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$50.00</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">299.99</span>
+												<span>249.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-1.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Apple</p>
+										<p class="phoneName">iPhone 6</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-5.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Samsung</p>
+										<p class="phoneName">Galaxy Core Prime</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-1.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Samsung</p>
+										<p class="phoneName">Galaxy S5</p>
+										<p class="phoneRating">&#9733; &#9733; &#9733; &#9733;</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-5.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Apple</p>
+										<p class="phoneName">iPhone 6</p>
+										<p class="phoneRating">&#9733; &#9733; &#9733; &#9733;</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-1.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Samsung</p>
+										<p class="phoneName">Galaxy Core Prime</p>
+										<p class="phoneRating">&#9733; &#9733; &#9733; &#9733;</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-5.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Samsung</p>
+										<p class="phoneName">Galaxy S5</p>
+										<p class="phoneRating">&#9733; &#9733; &#9733; &#9733;</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-1.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Apple</p>
+										<p class="phoneName">iPhone 6</p>
+										<p class="phoneRating">&#9733; &#9733; &#9733; &#9733;</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-5.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Samsung</p>
+										<p class="phoneName">Galaxy Core Prime</p>
+										<p class="phoneRating">&#9733; &#9733; &#9733; &#9733;</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-1.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Samsung</p>
+										<p class="phoneName">Galaxy S5</p>
+										<p class="phoneRating">&#9733; &#9733; &#9733; &#9733;</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xs-4 phoneEntry">
+								<a href="framework_phonedetails.html">
+									<img src="img/phone1-5.png"></img>
+									<div class="phoneEntryInfo">
+										<p class="phoneBrand">Apple</p>
+										<p class="phoneName">iPhone 6</p>
+										<p class="phoneRating">&#9733; &#9733; &#9733; &#9733;</p>
+										<span class="price">
+											<p class="phonePromoDiscount">$25</p>
+											<p class="phoneFinalPrice">
+												<span class="phonePriceOld">129.99</span>
+												<span>99.99</span>
+											</p>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="promo-half">
+			<div class="col-xs-6">
+				<a class="promo03" href="#" data-toggle="modal" data-target="#coverageMap">
+					<img class="promoIcon" src="img/icons/signal.png"></img>
+					<h3 class="promoHeading">Nationwide 4G LTE network</h3>
+					<p class="promoText">High Definition Voice, fast data speeds and better coverage than ever before. All on the Nationwide Sprint® Network.</p>
+					<span class="promoLink">Check coverage</span>
+				</a>
+			</div>
+			<div class="col-xs-6">
+				<a class="promo07" href="framework_addservices.html">
+					<img class="promoIcon" src="img/icons/map-large.png"></img>
+					<h3 class="promoHeading">International talk &amp; text for less</h3>
+					<p class="promoText">Our affordable international rates let you stay in touch with friends and family around the world. No calling cards required.</p>
+					<span class="promoLink">See rates</span>
+				</a>
+			</div>
+		</section>
+		<section class="banner">
+			<a class="promo11" href="framework_addservices.html">
+				<h3 class="promoHeading">Free mobile hotspot included</h3>
+				<p class="promoText">Now available on select devices. Use your phone to stay connected on the go with a tablet, a laptop or any other Wi-Fi connected device.</p>
+				<span class="promoLink">See rates</span>
+			</a>
+		</section>
+		<section class="askedquestions faqs">
+			<h3>FAQs</h3>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  What is Sprint Prepaid? How does it work?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				  <div class="panel-body">
+					<p>With Sprint Prepaid there are no annual contracts, no credit checks, surprises or late fees.  There are also no compromises with unlimited talk and text plans with varied data options and some of the latest technology including 4G LTE and Sprint Spark capable devices. You simply 1) choose a compatible Sprint Prepaid phone, 2) select a plan based on your phone and how much data you want to use per month and 3) activate and prepay each month for your service.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					How can I activate or add more money to my account?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				  <div class="panel-body">
+					<p>The easiest way to manage your account is to visit <a href="http://rtb1-msdp.test.prepaid.sprint.com/primary/my-account-homemyaccount.prepaid.sprint.com/myaccount/home/" target="_blank">myaccount.prepaid.sprint.com</a> any time to activate your device, Reload your account, manage your plan, set up AutoPay options and more.  You can also Reload your account any time by going to a Sprint store near you or dialing *3 from your Sprint Prepaid phone. Your first monthly plan payment must be paid in advance of using the phone on the Nationwide Sprint Network.</p><p>If your new cash balance is equal to or greater than your next monthly payment amount after you Reload, we will automatically make an Advance Payment towards your next month's service.  Reload an amount greater than your monthly payment for additional services such as directory assistance, or calls to select international locations while on the Nationwide Sprint Network.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  How do I know which plan to pick?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				  <div class="panel-body">
+					<p>With Sprint Prepaid, you are able to use any Sprint Prepaid device on any of the three Sprint Prepaid offers, you just need to decide how much data you’ll need for the month. All three plans included unlimited domestic talk and text.</p>
+					<ul>
+						<li>$35 Unlimited Talk &amp; Text w/1GB of data* — For just $35/month you can get unlimited talk and text with 1GB of data to use.</li>
+						<li>$45 Unlimited Talk &amp; Text w/3GB of data* — At $45/month you get unlimited talk and text with 3GB of data to use.</li>
+						<li>$55 Unlimited Talk &amp; Text w/6GB of data* — Our best deal for data! For $55/month you get unlimited talk and text with 6GB of data to use.</li>
+					</ul>
+					<p>*Monthly on-network data allowance. Data access ends after plan's applicable allowance reached.Price, plans &amp; offers subject to change and vary by market/retailer.<br>*Plans include 50 minutes of roaming voice minutes.</p>
+				  </div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFour">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					Can I keep my existing phone number when I switch to Sprint Prepaid?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				  <div class="panel-body">
+					<p>In most instances, yes, "Porting-in" means bringing your phone number to a new phone company. Porting-out means taking your phone number from your existing phone company.  Wireless Local Number Portability (WLNP) allows you to take your phone number with you when switching phone companies but may not be available from all telecommunications companies. NOTE: Porting your wireless number from certain carriers may not be available or limited, depending on your carrier. See your Sprint Prepaid store associate for details.</p><p>Once you have your new Sprint Prepaid phone, go to <a href="https://origin1.myaccount.prepaid.sprint.com/activate/overview.jsp?INTNAV=Nav:MyAcct:Activate" target="_blank">sprint.com/prepaidactivate</a>, click Activate, and select "I want to switch my number from another company to Sprint Prepaid."  We'll be able to guide you from there. Please note that if you currently have a different Sprint device (other than Sprint Prepaid), you'll still need to go through this process to keep your phone number.</p><p>To expedite the transfer, we request that you have a current bill from your existing carrier to provide us with your customer information; inaccurate information will delay the process:</p>
+					<ul>
+						<li>Phone number</li>
+						<li>Account number from your old provider</li>
+						<li>Social Security Number (SSN) or Tax ID</li>
+						<li>Billing name and address</li>
+						<li>Account password from your old provider (if applicable)</li>
+					</ul>
+					<p>NOTE: We can't switch your area code without giving you a new local number as well. To learn more, visit the FCC's site at <a href="http://wireless.fcc.gov/wlnp" target="_blank">http://wireless.fcc.gov/wlnp</a>.</p>
+				  </div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFive">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					If I already have a Sprint device, can I use it with a Sprint Prepaid plan?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+				  <div class="panel-body">
+					<p>Sprint Prepaid devices are specially designed to work with Sprint Prepaid plans.  Sprint Prepaid plans are limited only to approved Sprint Prepaid devices.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingSix">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+					Will my account or phone number be cancelled if I don't make a monthly payment?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+				  <div class="panel-body">
+					<p>You will have 120 days after your monthly plan expires to add money to your account to prevent cancellation, loss of all funds comprising your cash balance and your telephone number.  Lost funds are nonrefundable.  If your monthly plan expires and you do not make a monthly payment, you cannot use your phone.</p>
+				  </div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingSeven">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+					When is my plan payment due?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+				  <div class="panel-body">
+					<p>Recurring monthly plan payments are due on your payment date, which is based on the day when you purchase, restart, switch to or activate your plan.  Keep in mind, this date might vary if any of the foregoing events occur near or at the end of the month.  Also, if your services are “interrupted” (due to missed payment), in most instances, your remaining Voice, data and message allotments will be restored when you make a payment and bring your account current.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingEight">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+					Where can I buy a Sprint Prepaid phone?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+				  <div class="panel-body">
+					<p>You can purchase a Sprint Prepaid phone from participating national retail stores, Sprint branded retail locations, Amazon or via the phone at <strong>1-866-866-7509</strong>.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingNine">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+					Can I combine my Sprint Prepaid account or payment with another Sprint account?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+				  <div class="panel-body">
+					<p>At this time, there is only one person or subscriber allowed with each Sprint Prepaid account. While we try to make it simple to manage your Sprint Prepaid account at any time through <a href="http://rtb1-msdp.test.prepaid.sprint.com/primary/my-account-home" target="_blank">myaccount.prepaid.sprint.com</a>, Sprint Prepaid accounts cannot be combined with Sprint postpaid accounts.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTen">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+					Is there Data roaming available with any of my plans?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+				  <div class="panel-body">
+					<p>Currently, Data roaming services are NOT available on any Sprint Prepaid plans. Plans include 50 minutes of roaming voice minutes.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingEleven">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+					If I run out of my data allocation, what are my options?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+				  <div class="panel-body">
+				  <p>Sprint Prepaid offers 3 data add ons, that are in place for 30 days or until depleted (which ever happens first). $10/1GB, $5/500 MB and $2/100MB.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwelve">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+					What is Mobile Hotspot?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+				  <div class="panel-body">
+					  <p><span>What is hotspot?</span>Hotspot allows you to share your data connection with your laptop, tablet or other devices by turning your phone into a wireless access point.  This feature allows you to work on the go and browse the internet anytime. With hotspot, you can connect up to five wireless devices via Wi-Fi.</p><p>Portable Wi-Fi hotspot feature allows you to share your mobile device’s data connection with other devices by turning your device into a wireless access point.  You can connect up to five wireless devices via Wi-Fi.</p>
+					  <p><span>How do I get Hotspot functionality?</span>Hotspot is automatically included as part of your monthly plan and available only for hotspot-enabled devices. Remember that using hotspot will count toward your plan’s monthly data allotment.</p>
+					  <p><span>Is there an added cost for Hotspot?</span>There is no additional cost for hotspot service. Remember that using hotspot will count toward your plan’s data allotment.</p>
+					  <p><span>What devices is Hotspot available on?</span>Currently, mobile hotspot is available on all SPP devices except for: Alcatel Retro, Kyocera Kona,  Samsung Galaxy S5 and G3 Spark. Check with your retailer or here for an updated list.</p>
+					  <p><span>Will I be notified once I get close to my monthly data allotment?</span>No notifications are sent based on data usage amounts for capped plans.</p>
+					  <p><span>What are my options if I run out of data during the current month?</span>When the user has depleted all the data allotment, and the data service is barred, the user will be redirected to: <a href="http://rtb1-msdp.test.prepaid.sprint.com/primary/my-account-home" target="_blank">myaccount.prepaid.sprint.com</a></p>
+					  <p>Data pack options will be available: $10/1GB, $5/500 MB &amp; $2/100 MB</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThirteen">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+					What is Smart Contacts?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+				  <div class="panel-body">
+					   <p><span>What is Smart Contacts?</span>Smart Contacts is a new and improved contact management app for your Android phone.  Smart Contacts will aggregate your contacts from multiple sources (for example: local address book, Google contacts, Yahoo contacts, and Facebook), merge duplicates, and surface the people you’re most likely to talk to at the time you want to talk to them.</p>
+					  <p><span>Does Smart Contacts replace my phone’s regular Contacts?</span>No, Smart Contacts will not replace your phone’s regular Contacts, and any updates to contact profiles via the Smart Contacts feature will not be reflected in your phone’s regular Contacts.</p>
+					  <p><span>Can I add Contacts from any source?</span>Smart Contacts supports contacts from Google, Facebook, and Yahoo. The app will link to more sources in the future.</p>
+					  <p><span>Is there a cost for Smart Contacts?</span>No, Smart Contacts is a free feature available on select phones.</p>
+					  <p><span>How do I get Smart Contacts?</span>Beginning 12/08/2014, Smart Contacts will be available on select phones via a software update.</p>
+					  <p><span>What devices is Smart Contacts available on?</span>Smart Contacts is currently only available for the following phones:</p>
+					  <ul>
+						<li>LG Tribute (as of 12/08/2014)</li>
+						<li>Sharp AQUOS Crystal (as of 12/11/2014)</li>
+					  </ul>
+					  <p><span>Where can I go for help with the Smart Contacts app?</span>For additional details on and help with Smart Contacts, visit <a href="http://help.yahoo.com/kb/smart-contacts" target="_blank">https://help.yahoo.com/kb/smart-contacts</a></p>
+				  </div>
+				</div>
+			   </div>
+			   <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFourteen">
+				  <h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+					What is Premium Caller ID?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+				  <div class="panel-body">
+					  <p><span>What is Premium Caller ID?</span>Premium Caller ID displays the name and number of the incoming calls NOT already listed in your phone’s Contact/Address Book.</p>
+					  <p><span>Is there a cost for Premium Caller ID?</span>Yes—the Premium Caller ID service is an additional $3.00/month. </p>
+					  <p><span>Will I need to remember to add the Premium Caller ID service to my plan at the end of each plan cycle?</span>No—Premium Caller ID is an auto-recurring feature. So long as you have sufficient funds in the account each month, it will automatically renew.</p>
+					  <p><span>How do I get Premium Caller ID?</span>You can add Premium Caller ID to your monthly plan by accessing My Account</p>
+					  <p><span>How do I cancel Premium Caller ID?</span>To cancel Premium Caller ID, go to My Account and remove the feature from your account or by calling Customer Care at 1-866-866-7509.</p>
+					  <p><span>Is Premium Caller ID available on all devices?</span>No—as of 5/1/2015, Premium Caller ID is only available on the following devices: </p>
+					  <ul>
+						<li>Apple iPhone 4s (CPO)</li>
+						<li>Apple iPhone 5s (CPO)</li>
+						<li>LG Tribute</li>
+						<li>Samsung Galaxy S III</li>
+						<li>Samsung Galaxy S 5</li>
+						<li>Sharp AQUOS Crystal</li>
+					  </ul>
+					  <p><span>If I subscribe to Premium Caller ID and receive a call from someone already in my Contacts/ Address Book, what happens?</span>If you subscribe to Premium Caller ID and receive an incoming call from someone already in your Contacts/Address book, the name will appear as it is in your Contacts/Address book.</p>
+					  <p><span>Can I block my number from Caller ID name display?</span>Yes—to block your number from displaying on the phone of the person you are calling, dial <strong>*67 + Phone Number</strong> (as you would normally dial it) and your name/number will not be displayed on that single call, regardless of whether the person you are calling has traditional Caller ID or subscribes to Premium Caller ID.</p>
+					  <p><span>What if I purchase Premium Caller ID and no name displays?</span>If you purchased Premium Caller ID name display but see an incoming caller’s name as “Private”, “Restricted”, or “Unknown”, then the caller’s name is not registered or has set their name as “Private” in the CNAM database.</p>
+					  <p>If the incoming caller’s name appears as “Blocked”, the incoming caller has dialed *67 before dialing your number to intentionally block the name/number from being displayed.  It could also mean the user has permanently had name/number blocking set in their profile.</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</section>
+		<section class="legal">
+			<p>Sprint Prepaid plans do not require an annual contract. No plan discounts apply. Plans and Data Packs:Data access ends when applicable data allowance reached; data pack adds additional data for 30 days from purchase date or when data depleted. Plans are for domestic use only within the U.S. unless stated otherwise and include Caller ID, Voicemail, Call Waiting, Three-way Calling and Call Forwarding while on the Nationwide Sprint Network. Usage limitations apply. While on the Nationwide Sprint Network, the availability of international calling and/or texting services may depend on your plan. If available, additional charges will apply with the latest rates found at sprint.com/prepaidinternational. Other terms: Price and offers subject to change. All features not available on all phones. Depending on your service plan, certain applications that are preinstalled on your device may not be available or operational. Examples of these applications include, but are not limited to, Sprint TV, GPS and Mobile Hotspot applications. If you purchase other subscription-based third-party content from application stores (e.g., the Google Play store), funds will be taken from your cash balance. You may block third-party content purchases by contacting customer service. Certain payment options may be restricted or not available.</p>
+		</section>
+	</div>	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12">
+				<p>&copy; 2015 Sprint. <span class="hidden-xs">All rights reserved.</span></p>
+				<ul class="footer-links">
+					<li><a href="http://www.sprint.com/legal/index.html?INTNAV=Footer:SPP:Legal">Legal</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Privacy">Privacy</a></li>
+					<li><a href="http://www.sprint.com/legal/privacy.html?INTNAV=Footer:SPP:Regulatory">CTIA/Regulatory</a></li>
+					<li><a href="http://www.sprint.com/legal/ad_choices.html?INTNAV=Footer:SPP:AdChoices">AdChoices</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/sprintprepaid-bootstrap.min.js"></script>
+    <script src="../js/lib/jasny-bootstrap.min.js"></script>
+	<script>
+		$('.carousel').carousel({
+			pause: true,
+			interval: false
+		})
+		$(function(){
+		$(".dropdown").hover(
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>

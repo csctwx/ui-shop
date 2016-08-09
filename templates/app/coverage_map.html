@@ -1,0 +1,111 @@
+<div class="coveragemap">
+  <style>
+  .spp_coverageFrame {
+    width: 960px;
+    padding: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .bst_coverageFrame {
+    width: 960px;
+    height: 535px;
+  }
+
+  @media (max-width:640px) {
+    .bst_coverageFrame {
+      /*width: 100%;*/
+      margin-top:-1px;
+    }
+    div.coverageMap_Banner_next {
+	    height: 50px;
+	    display: block;
+	    clear: both;
+	    background: #fff;
+	    margin: 0;
+	}
+	div.coverageMap_Banner_next div {
+		padding:20px;
+	}
+	.legendIcons {margin-top:-5px;}
+  }
+  </style>
+  <div ng-if="appName=='vmu'">
+  	<h1>Check Coverage</h1>
+  	<style>
+	  .vmu_coverageFrame {
+	  	width: 960px;
+	    display: block;
+	    margin-right: auto;
+	    margin-left: auto;
+	  }
+	  body {background:none;}
+	  </style>
+  </div>
+  <div class="coverageMap_Banner" ng-if="appName=='bst'">
+    <div>
+      <span style="font-size:16.5px; color:#fff;">Boost Mobile® offers service on the Nationwide Sprint® 4G LTE Network. </span>
+      <br>
+      <br>
+      <span ng-if="appName=='bst'" class="default">That means a dependable network with no roaming charges <br>and fewer dropped calls.</span>
+    </div>
+  </div>
+  <div ng-if="appName=='bst'" class="coverageMap_Banner_next">
+    <div>
+      <span>Use the coverage map to check service in your area and learn more about 3G, 4G LTE, Enhanced LTE and  voice coverage near you.
+      </span>
+    </div>
+  </div>
+  <iframe id="coverageMapFrame" src="" scrolling="no" height="520" class="{{appName}}_coverageFrame" frameborder="0"></iframe>
+  <div class="legendIcons" ng-if="appName=='bst'">
+    <div class="icons">
+      <div class="noPad">Voice Coverage:</div>
+      <ul>
+        <li>
+          <div class="bestGreen">
+            <!-- -->
+          </div> Best</li>
+        <li>
+          <div class="goodGreen">
+            <!-- -->
+          </div> Good</li>
+        <li>
+          <div class="fairGreen">
+            <!-- -->
+          </div> Fair</li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner" style="padding: 10px;" ng-if="appName=='spp'">
+    <p>
+      Sprint Prepaid offers dependable, nationwide coverage for voice and data. To view the coverage in your area, select the combination of voice and data cover you want to see, then enter an address or just your zip code in the fields to the right.
+    </p>
+    <p><strong>Green regions denote voice coverage. Orange, blue and purple regions denote data coverage.</strong></p>
+    <p>Visit the <a class="more" href="http://www.sprint.com/prepaid">Shop</a> for Sprint Prepaid phone options.</p>
+    <p class="legal">
+      Nationwide Sprint Network. This tool provides high-level estimates of our wireless coverage. Coverage is not available everywhere and varies based on a number of factors. Our coverage maps provide high level estimates of our coverage areas when using your device outdoors under optimal conditions. Coverage isn't available everywhere. Estimating wireless coverage and signal strength is not an exact science. There are gaps in coverage within our estimated coverage areas that, along with other factors both within and beyond our control (network problems, software, signal strength, your wireless device, structures, buildings, weather, geography, topography, etc.), will result in dropped and blocked connections, slower data speeds, or otherwise impact the quality of services. Services that rely on location information, such as E911 depend on your device's ability to acquire satellite signals (typically not available indoors) and network coverage. E911 services also depend local emergency service provider systems/support. Estimated future coverage subject to change.
+    </p>
+  </div>
+  <section class="legal" ng-if="appName=='bst'">
+    <div class="legalContent">
+      This tool provides high-level estimates of our wireless coverage.  Coverage is not available everywhere and varies based on a number of factors. <a href="javascript:appUtil.showDialog({title:'',content:'',externalLink:'https://coverage.sprint.com/coverageDescBoost.html'})">Learn More</a>
+      <br><br>
+      *Domestic roaming: Available on select monthly and select devices.  Usage limitations apply. <a href="#!/support/faq/plans-services/domestic-roaming/">Learn More</a>
+      <br><br>
+      Need more help? Contact us at 1-877-602-4907
+    </div>
+  </section>
+  <section class="legal" ng-if="appName=='vmu'">
+    <div class="legalContent">      
+		<p>This tool provides high-level estimates of our wireless coverage.
+		Coverage is not available everywhere and varies based on a number of factors.
+		Our coverage maps provide high level estimates of our coverage areas when using your device outdoors under optimal conditions.
+		Coverage isn't available everywhere.
+		Estimating wireless coverage and signal strength is not an exact science.
+		There are gaps in coverage within our estimated coverage areas that, along with other factors both within and beyond our control (network problems, software, signal strength, your wireless device, structures, buildings, weather, geography, topography, etc.), will result in dropped and blocked connections, slower data speeds, or otherwise impact the quality of services.
+		Services that rely on location information, such as E911 and GPS navigation, depend on your device's ability to acquire satellite signals (typically not available indoors) and network coverage. E911 services also depend local emergency service provider systems/support.
+		Estimated future coverage subject to change.</p>
+    </div>
+  </section>
+</div>

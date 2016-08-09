@@ -1,0 +1,65 @@
+
+#search{padding:40px;padding-top:30px;background-color:#fff;margin-top:10px;clear:both;} 
+.search_box{float:left;margin-right:20px;font-size:22px;overflow: hidden;}
+.col_left{float:left;width:75%;margin-right:5%;}
+.col_right{float:left;width:20%;text-align:right;}
+
+    #searchMerchContent {padding-top:10px;clear:both;font-size:13px;display:none;}
+        #searchMerchContent .recomended{font-size:18px;margin-bottom:8px;}
+    #searchMerchResults{height:100px;overflow:hidden;width:660px;}
+        .brandname, .phonename{font-size: 16px;}
+    #searchMerchContent .frame{float:left;width:200px;margin-right:20px;height:100px;display:none;overflow:hidden;}
+        #searchMerchContent .show{display:block!important;}
+        #searchMerchContent sup{top: -1em;}
+    #searchMerchContent img{float:left;margin-right:5px;}
+    #searchMerchContent a:link, #search #searchMerchContent a:visited{color:#e7781d!important;text-decoration: none!important;}
+    .phonePrevPrice{color:#000;text-decoration: line-through;}
+    .phonePriceInCart{color:#000;}
+    .phoneSalePrice{font-size: 20px;}
+        span.phoneRating { display: inline-block;color:#000;  font-size:13px; line-height:1.3em; background:url('/shop/_images/icons/sprite_shop_icons.png') no-repeat; }
+        span.star5point0 { padding-left: 78px; background-position: -150px top; }
+        span.star4point5 { padding-left: 74px; background-position: -150px -34px; }
+        span.star4point0 { padding-left: 64px; background-position: -150px -68px; }
+        span.star3point5 { padding-left: 60px; background-position: -150px -102px; }
+        span.star3point0 { padding-left: 50px; background-position: -150px -136px; }
+        span.star2point5 { padding-left: 44px; background-position: -150px -170px; }
+        span.star2point0 { padding-left: 38px; background-position: -150px -204px; }
+        span.star1point5 { padding-left: 32px; background-position: -150px -238px; }
+        span.star1point0 { padding-left: 24px; background-position: -150px -272px; }
+        span.star0point5 { padding-left: 18px; background-position: -150px -306px; }
+        span.star0point0 { padding-left: 6px; background-position: -150px -340px; }
+        span.phoneRating a { display:inline-block; height:18px; line-height:18px; }
+
+#search #___gcse_1, #search #___gcse_0{float:left!important;width: 530px!important;}
+#search{clear:both;margin-top:10px;font-family: Arial,Helvetica,sans-serif!important;}
+    #search a:link, #search a:link b{color:#f5941e!important;text-decoration: underline;}
+    #search a:visited, #search a:visited b{color:#f5941e!important;}
+    #search a:hover, #search a:hover b{color:#6fdbdb!important;}
+    
+    .gsc-control-cse{padding:0px!important;}
+    #search .gsc-search-box{padding:0px!important;padding-top:3px!important;}
+    .gsc-result-info{padding-left:0px!important;}
+    .gsc-clear-button{display:none;}
+
+    
+    #search input.gsc-search-button{position: relative!important;border:0;
+                                    background: #f7901e;background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F7901E), to(#D1581C));background: -webkit-linear-gradient(#F7901E, #D1581C);background: -moz-linear-gradient(#F7901E, #D1581C);background: -ms-linear-gradient(#F7901E, #D1581C);background: -o-linear-gradient(#F7901E, #D1581C);background: linear-gradient(#F7901E, #D1581C);-pie-background: linear-gradient(#F7901E, #D1581C);
+                                    -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;behavior: url(/_themes/libs/PIE.htc);}
+   
+#search .gsc-tabsArea{border-color: #262626;}
+    #search .gsc-tabHeader{font-size:14px;border:0px;padding-top:5px;padding-bottom:2px;padding-left:15px;padding-right:15px;text-transform: none;font-family: Arial,Helvetica,sans-serif!important;font-weight:normal!important;position:relative;
+                           background: #262626;background: -webkit-gradient(linear, 0 0, 0 bottom, from(#626161), to(#262626));background: -webkit-linear-gradient(#626161, #262626);background: -moz-linear-gradient(#626161, #262626);background: -ms-linear-gradient(#626161, #262626);background: -o-linear-gradient(#626161, #262626);background: linear-gradient(#626161, #262626);-pie-background: linear-gradient(#626161, #262626);
+                           -webkit-border-radius: 3px 3px 0 0;-moz-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0;behavior: url(/_themes/libs/PIE.htc);}
+        #search .gsc-tabhActive{background: #f7901e!important;background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F7901E), to(#D1581C))!important;background: -webkit-linear-gradient(#F7901E, #D1581C)!important;background: -moz-linear-gradient(#F7901E, #D1581C)!important;background: -ms-linear-gradient(#F7901E, #D1581C)!important;background: -o-linear-gradient(#F7901E, #D1581C)!important;background: linear-gradient(#F7901E, #D1581C)!important;-pie-background: linear-gradient(#F7901E, #D1581C);behavior: url(/_themes/libs/PIE.htc);}
+        #search .gsc-tabHeader:hover{ background: #6fdbdb;background: -webkit-gradient(linear, 0 0, 0 bottom, from(#6fdbdb), to(#57b5b0)); background: -webkit-linear-gradient(#6fdbdb, #57b5b0);background: -moz-linear-gradient(#6fdbdb, #57b5b0);background: -ms-linear-gradient(#6fdbdb, #57b5b0);background: -o-linear-gradient(#6fdbdb, #57b5b0); background: linear-gradient(#6fdbdb, #57b5b0);-pie-background: linear-gradient(#6fdbdb, #57b5b0);behavior: url(/_themes/libs/PIE.htc);}
+        #search .gs-image{border:0!important;}
+        #search .gs-per-result-labels{display:none;}
+        
+#search .gsc-cursor{width: 300px;display:block;margin-left: auto;margin-right: auto;}
+#search .gsc-cursor-page{width:20px;height:19px;display:block;float:left;padding-top:1px;margin:3px;background-color:#7a7c7e;display:block;font-size:16px;color:#fff!important;text-decoration:none;text-align:center;cursor:pointer;font-family:BoostNeoGroteskRegular,Arial,Helvetica,sans-serif;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;position:relative;behavior:url(/_themes/libs/PIE.htc);}
+#search .gsc-cursor-page:hover{background-color: #6fdbdb!important;}
+#search .gsc-cursor-current-page{background-color: #f5941e;padding:0px;text-shadow: none;}
+
+#search .gs-webResult div.gs-visibleUrl, #search .gs-imageResult div.gs-visibleUrl {color: #999;}
+
+.gs-spelling a, .gs-spelling a {color: #f5941e!important;}

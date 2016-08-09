@@ -1,0 +1,131 @@
+<section class="payment_form">
+  <div class="col-xs-12 cc">
+    <span class="requiredInfo pull-right">*Required Information</span>
+    <h4 class="mainColor">Payment Information</h4>
+    <h5>BILLING METHOD</h5>
+    <div ng-class="{'vmuCartSecurity': appName == 'vmu', 'cartSecurity': appName != 'vmu'}">
+      <div class="col-xs-1">
+        <span class="glyphicon glyphicon-lock"></span>
+      </div>
+      <div class="col-xs-11">
+        <h5>Secure Credit Card Payment</h5>
+        <p>This is a secure 128-bit SSL encrypted transaction.</p>
+      </div>
+    </div>
+    <div ng-show="checkoutController.data.paymentInfo.paymentCardType == 'PAYPAL'" style="margin-top: 10px;">
+      You will be redirected to a third party site (PayPal) to complete your transaction.
+    </div>
+    <form name="paymentForm">
+    <div class="form-group form-group-sm" style="margin: 10px !important;">    
+      <div class="row">
+        <label class="col-sm-1 control-label required hidden-xs">Card Type</label>        
+        <!-- Card Types -->
+
+        <div class="col-xs-12 col-sm-10 credit">
+          <label ng-repeat="paymentCardType in checkoutController.dataOptions.paymentCardType"
+                 class="radio-inline {{paymentCardType.id}}">
+            <input type="radio" ng-model="checkoutController.data.paymentInfo.paymentCardType" name="creditCard"
+                   value="{{paymentCardType.name}}" required="required"/>
+          </label>
+
+          <div style="width: 220px; height: 60px; display: inline-block;" class="visible-xs"></div>
+          <label ng-if="appName=='vmu'" class="radio-inline cc5">
+            <input type="radio" ng-model="checkoutController.data.paymentInfo.paymentCardType" name="creditCard"
+                   value="PAYPAL" required="required"/>
+          </label>
+          <!-- <a ng-if="appName=='vmu'" id="paypalHyperLink" ng-click="checkoutController.showWhatIsPaypal()">What is PayPal?</a> -->
+          <a ng-if="appName=='vmu'" id="paypalHyperLink" data-toggle="modal" data-target="#what_is_paypal">What is PayPal?</a>
+        </div>
+      </div>
+      <div class="row" ng-show="appName=='bst' || appName=='spp' || (checkoutController.data.paymentInfo.paymentCardType!='PAYPAL' && checkoutController.data.paymentInfo.paymentCardType)">
+        <label class="col-sm-2 control-label required hidden-xs" for="cardNumber">Card Number</label>
+        <div class="col-sm-4 col-xs-8">
+          <input ng-disabled="!checkoutController.data.paymentInfo.paymentCardType" class="form-control" ng-change="checkoutController.changeStatus.paymentInfo.cardNumber.changed=true" 
+            name="cardNumber" type="text" id="cardNumber" placeholder="Card Number" ng-minlength="{{checkoutController.data.paymentInfo.paymentCardType=='AMEX'?15:16}}" ng-maxlength="{{checkoutController.data.paymentInfo.paymentCardType=='AMEX'?15:16}}" maxlength="{{checkoutController.data.paymentInfo.paymentCardType=='AMEX'?15:16}}" 
+            ng-focus="checkoutController.changeStatus.paymentInfo.cardNumber.check=false"
+            ng-blur="checkoutController.changeStatus.paymentInfo.cardNumber.check=true"
+            ng-model="checkoutController.data.paymentInfo.cardNumber" ng-pattern="/^[0-9]{15,16}$/" required/>
+          <div ng-show="checkoutController.changeStatus.paymentInfo.cardNumber.changed &&
+                        checkoutController.changeStatus.paymentInfo.cardNumber.check &&
+                        paymentForm.cardNumber.$error.required" class="errorMessage">* Card Number is required</div>
+          <div ng-show="checkoutController.changeStatus.paymentInfo.cardNumber.changed &&
+                        checkoutController.changeStatus.paymentInfo.cardNumber.check &&
+                        (paymentForm.cardNumber.$error.pattern || paymentForm.cardNumber.$error.minlength || paymentForm.cardNumber.$error.maxlength)" class="errorMessage">* Not a valid Card Number
+          </div>
+        </div>
+      </div>
+      <div class="row" ng-show="appName=='bst' || appName=='spp' || (checkoutController.data.paymentInfo.paymentCardType!='PAYPAL' && checkoutController.data.paymentInfo.paymentCardType)">
+        <label class="col-sm-2 col-xs-12 control-label required credit-expiration" for="expirationMonth">Expiration</label>
+        <div class="col-sm-2 exp">
+          <select ng-disabled="!checkoutController.data.paymentInfo.paymentCardType" id="expirationMonth" ng-change="checkoutController.changeStatus.paymentInfo.expirationMonth.changed=true" name="expirationMonth" 
+            ng-model="checkoutController.data.paymentInfo.expirationMonth" ng-options="month.value as month.label for month in commonData.monthOptions" required="required"></select>
+        </div>          
+        <div class="col-sm-2 exp">
+          <select class="expireYearSelect" ng-disabled="!checkoutController.data.paymentInfo.paymentCardType" ng-change="checkoutController.changeStatus.paymentInfo.expirationYear.changed=true" name="expirationYear"
+              ng-focus="checkoutController.changeStatus.paymentInfo.expirationYear.check=false"
+              ng-blur="checkoutController.changeStatus.paymentInfo.expirationYear.check=true"
+              ng-model="checkoutController.data.paymentInfo.expirationYear" 
+              ng-options="year for year in checkoutController.dataOptions.creditCardYear" required="required"></select>
+        </div>
+        <div ng-show="checkoutController.changeStatus.paymentInfo.expirationMonth.changed &&
+                      checkoutController.changeStatus.paymentInfo.expirationMonth.check &&
+                      paymentForm.expirationMonth.$error.required" class="errorMessage">* Expiration Month is required</div>
+        <div ng-show="checkoutController.changeStatus.paymentInfo.expirationMonth.changed &&
+                    checkoutController.changeStatus.paymentInfo.expirationMonth.check &&
+                    paymentForm.expirationMonth.$error.required" class="errorMessage">* Expiration Year is required</div>      
+      
+      </div>
+      <div class="row" ng-show="appName=='bst' || appName=='spp' || (checkoutController.data.paymentInfo.paymentCardType!='PAYPAL' && checkoutController.data.paymentInfo.paymentCardType)">
+        <label class="col-sm-2 control-label required hidden-xs" for="securityCode">Security Code</label>
+        <div class="col-sm-4 exp">
+          <input ng-disabled="!checkoutController.data.paymentInfo.paymentCardType" class="form-control" ng-change="checkoutController.changeStatus.paymentInfo.securityCode.changed=true" 
+            type="text" name="securityCode" id="securityCode" ng-minlength="{{checkoutController.data.paymentInfo.paymentCardType=='AMEX'?4:3}}" 
+            ng-maxlength="{{checkoutController.data.paymentInfo.paymentCardType=='AMEX'?4:3}}" maxlength="{{checkoutController.data.paymentInfo.paymentCardType=='AMEX'?4:3}}" 
+            ng-model="checkoutController.data.paymentInfo.securityCode" placeholder="Security Code" ng-pattern="/^[0-9]{3,4}$/" required="required" style="width:50%"
+            ng-focus="checkoutController.changeStatus.paymentInfo.securityCode.check=false"
+            ng-blur="checkoutController.changeStatus.paymentInfo.securityCode.check=true"/>
+          <div ng-show="checkoutController.changeStatus.paymentInfo.securityCode.changed" class="errorMessage">
+            <div ng-show="checkoutController.changeStatus.paymentInfo.securityCode.changed &&
+                      checkoutController.changeStatus.paymentInfo.securityCode.check &&
+                      paymentForm.securityCode.$error.required" class="errorMessage">* Security Code is required</div>
+            <div ng-show="checkoutController.changeStatus.paymentInfo.securityCode.changed &&
+                      checkoutController.changeStatus.paymentInfo.securityCode.check &&
+                      (paymentForm.securityCode.$error.pattern || paymentForm.securityCode.$error.minlength || paymentForm.securityCode.$error.maxlength)" class="errorMessage">* Not a valid Security Code</div>
+          </div>
+        </div>
+        <div class="col-sm-2 exp">
+          <a href="#" id="ccOverlayOpenner" data-toggle="modal" data-target="#ccOverlay">What is this?</a>
+          <div class="modal fade" id="ccOverlay" tabindex="-1" role="dialog" aria-labelledby="ccOverlayLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+                  <h2 class="modal-title"  id="myModalLabel">Security Code</h2>
+                </div>
+                <div class="modal-body">
+                  <p>The security code is a 3 or 4 digit number listed immediately following your credit card number.</p>
+                  <p>
+                  This number prevents fraudulent charges to your credit card, such as someone stealing your credit card
+                  receipt and using that information to make a purchase.
+                  </p>
+                  <div class="row text-center">
+                    <div class="col-xs-12 col-sm-6">
+                      <h3>MC/Visa/Discover</h3>
+                      <img src="img/mc_visa_discover.png">
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <h3>American Express</h3>
+                      <img src="img/amex.png"></li> 
+                    </div>
+                  </div>  
+                  <br />      
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</section>

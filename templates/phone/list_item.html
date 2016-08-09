@@ -1,0 +1,107 @@
+<div ng-repeat="item in phoneController.list.getResultList()" class="col-sm-6 phone {{phoneController.getDiscountClass(item)}} {{item.promotions[0].promotionCss.css}}" ng-class="{'paylo':item.planType.planTypeId==='paylo'}" ng-class-odd="{'phone-container':appName=='vmu'}">
+    <div class="col-xs-12">
+        <!-- if Virgin Mobile USA -->
+        <span ng-if="appName=='vmu'"><h3 class="title"><span class="phoneName">{{ item.name }} {{item.selectedColor}} {{item.selectedMemory}} </span></h3>
+        </span>
+        <!-- if Boost/Sprint -->
+        <span ng-if="appName!='vmu'"><h3 class="title"><a ng-href="{{item.getHash(0,0,'features')}}"><span class="phoneName">{{ item.name }}</span></a>
+        </h3>
+        </span>
+        <p class="rating">
+            <span ng-if="item.phoneCondition=='preowned'" style="color:black;font-size:14px" class="condition">Pre-owned</span>
+            <span ng-if="appName!='spp'" class="{{phoneController.getRateStarClass(item.rate)}}"><a class="reviews" ng-if="item.review != null" ng-href="{{item.getHash(0,0,'reviews')}}">{{item.review}}</a><a class="reviews" ng-if="item.review == null">0</a></span>
+        </p>
+    </div>
+    <div class="col-xs-4" style="cursor:pointer" onclick="location.hash=this.id" id="{{item.getHash(0,0,'features')}}">
+        <a ng-if="appName!='spp'" data-view="front" class="phoneZoom gradient-grey-lt cboxElement" style="margin-left:-40px;margin-top:-15px;z-index:1" ng-click="phoneController.details.zoomImages(item.id, item.getHash(0,0,'features'));" onclick="event.stopPropagation()" onmouseover="$(this).css({width:'60px'})" onmouseout="$(this).css({width:'24px'})">
+            <span>Zoom</span>
+        </a>
+        <a ng-href="{{item.getHash(0,0,'features')}}" style="position:absolute;left:10px;"><img class="img-responsive" style="display:none" onload="$(this).show()" alt="{{item.displayBrand}} {{item.name}} - {{appDisplayName}}" ng-src="{{item.selectedVariant.gridImage}}"></a>
+    </div>
+    <div class="col-xs-8">
+        <p class="phoneBody" ng-if="item.promoIndex!=-1">
+            <b>{{item.promotions[item.promoIndex].message.title}}</b> {{item.promotions[item.promoIndex].message.body}}
+            <span style="padding-left:0;padding-right:0;left:0px;" class="glyphicon glyphicon-info-sign" ng-if="item.promotions[item.promoIndex].message.toolTip" data-popover="true" data-html="true" data-content="{{item.promotions[item.promoIndex].message.toolTip}}" data-original-title="">
+                  </span>
+        </p>
+        <p class="phoneBody" ng-if="item.promoIndex==-1">
+            <b>{{phoneController.list.message.title}}</b> {{phoneController.list.message.body}}
+        </p>
+        <div class="colorOptions" ng-show="item.colorOptions.length>1" style="padding:0">
+            <span ng-repeat="color in item.colorOptions" ng-init="color">
+                    <input type="radio" name="{{item.id}}_variantColor" value="{{color}}" id="{{item.id}}_{{color}}" ng-model="item.selectedColor" ng-click="item.updateSelectedVariant()">
+          <label for="{{item.id}}_{{color}}" class="ieBackgroundColor background_{{item.colorValues[color].substring(1)}}" data-toggle="tooltip" data-placement="bottom" title="{{color}}">{{color}}</label></input>
+                </span>
+        </div>
+        <div class="memOptions" ng-show="item.memoryOptions.length>1" style="padding:0">
+            <span ng-repeat="mem in item.memoryOptions" ng-init="mem">
+              <input type="radio" name="{{item.id}}_variantMemory" value="{{mem}}" id="{{item.id}}_{{mem}}" ng-model="item.selectedMemory" ng-click="item.updateSelectedVariant()"><label for="{{item.id}}_{{mem}}">{{mem | uppercase}}</label></input>
+            </span>
+        </div>
+        <div class="col-xs-12 prices" ng-if="!item.selectedVariant.hiddenPrice">
+            <p class="phoneRetailPrice" ng-show="item.selectedVariant.msrp">
+                <span class="pull-left">Retail Price</span><span ng-class="{'pull-right light':appName=='vmu'&&item.selectedVariant.discount}">{{item.selectedVariant.msrp | currency}}</span></p>
+            <p class="phonePromoDiscount" ng-if="appName!='vmu' || item.selectedVariant.discount">
+                <span ng-show="item.selectedVariant.discount" class="pull-left">Promotional discount</span>
+                <span ng-show="item.selectedVariant.discount" class="pull-right {{appName=='vmu'&&item.selectedVariant.discount?'light':''}}">{{item.selectedVariant.discount|currency}}</span>
+            </p>
+            <ul class="features" ng-if="appName=='bst'">
+                <li class="fourg" ng-show="item.filters.indexOf('4GLTE')>-1">4g</li>
+                <li class="threeg" ng-show="item.filters.indexOf('3G')>-1">3g</li>
+                <li style="visibility:hidden;position:absolute;"></li>
+            </ul>
+            <h2 class="phoneFinalPrice {{appName=='vmu'&&item.selectedVariant.discount?'light':''}}">{{item.selectedVariant.price|currency:""}}</h2>  
+            <div class="installmentBilling" ng-if="phoneController.IB && item.selectedVariant.ibEligibilityInd">
+                <p>{{item.selectedVariant.downPaymentAmount | currency}} today* / </p>
+                <p>{{item.selectedVariant.ibEmi | currency}} a Month for {{item.selectedVariant.loanTerm}} months</p>
+                <p>*Excludes Taxes and fees</p>
+            </div>
+            <span class="limitPerCustomer">{{item.disclaimerMini}}</span>
+        </div>
+        <div class="col-xs-12 prices" ng-if="item.selectedVariant.hiddenPrice">
+            <!-- <p class="phoneRetailPrice" ng-show="item.selectedVariant.msrp">
+                    <span class="pull-left">Retail Price</span>{{item.selectedVariant.msrp|currency:""}}</p>
+                <p class="phonePromoDiscount" ng-show="item.selectedVariant.discount"><span class="pull-left">Promotional discount</span>{{item.selectedVariant.discount|currency:""}}</p> -->
+            <p class="phoneRetailPrice" ng-show="item.selectedVariant.msrp">
+                <span class="pull-left">Retail Price</span><span ng-class="{'pull-right light':appName=='vmu'&&item.selectedVariant.discount}">{{item.selectedVariant.msrp | currency}}</span></p>
+            <p class="phonePromoDiscount" ng-if="appName!='vmu' || item.selectedVariant.discount">
+                <span ng-show="item.selectedVariant.discount" class="pull-left">Promotional discount</span>
+                <span ng-show="item.selectedVariant.discount" class="pull-right {{appName=='vmu'&&item.selectedVariant.discount?'light':''}}">{{item.selectedVariant.discount|currency}}</span>
+            </p>
+            <ul class="features" ng-if="appName=='bst'">
+                <li class="fourg">4g</li>
+                <li class="threeg">3g</li>
+                <li style="visibility:hidden;position:absolute;"></li>
+            </ul>
+            <h2 class="hiddenPrice">SEE PRICE IN CART</h2>
+            <span class="limitPerCustomer">{{item.disclaimerMini}}</span>
+        </div>
+    </div>
+    <div ng-if="appName=='vmu'" class="planType pull-left">{{item.planType.title}}</div>
+    <div class="col-xs-12 phoneBottom">
+        <label ng-if="appName!='vmu'" class="pull-left">
+            <input type="checkbox" ng-checked="phoneController.compareItems.isInclude(item)" ng-click="phoneController.compareItems.handleItem(item)">{{phoneController.compareItems.isInclude(item)?'Remove':'Add to compare'}}</input>
+        </label>
+        <!-- if VMU -->
+        <span class="add_remove_check" ng-if="appName=='vmu'">
+          <input id="phoneBottomCheck-{{item.name}}" type="checkbox" ng-checked="phoneController.compareItems.isInclude(item)" ng-click="phoneController.compareItems.handleItem(item)">
+          <label for="phoneBottomCheck-{{item.name}}" class="pull-left"><span>{{phoneController.compareItems.isInclude(item)?'Remove':'Add to compare'}}</span></label>
+        </span>
+        <div class="pull-right">
+            <form class="actions">
+                <a class="btn {{appName=='bst'?'btn-default':''}} {{appName=='vmu'?'btn-primary shop-btn-gray':''}}" ng-href="{{item.getHash(0,0,'features')}}">Learn More</a>
+                <a class="btn btn-primary {{appName=='vmu'?'shop-grid-btn':''}}" ng-if="item.selectedVariant.noMore || !phoneController.IB || !item.selectedVariant.ibEligibilityInd" ng-href="{{pathMap._checkout._hash}}addToCart/sku={{item.selectedVariant.sku}}/" ng-disabled="item.selectedVariant==null || item.selectedVariant.noMore">{{item.selectedVariant.cartLabel}}</a>
+                <a class="btn btn-primary {{appName=='vmu'?'shop-grid-btn':''}}" ng-if="phoneController.IB && item.selectedVariant.ibEligibilityInd && !item.selectedVariant.noMore" ng-disabled="item.selectedVariant==null" ng-click="phoneController.ib.setCurItem(item,$event)">{{item.selectedVariant.cartLabel}}</a>
+                <!--  THIS DROPDOWN WORKS ... leaving here until we get 100% from Sprint they want the popup
+      <div class="dropdown" style="float:right;margin:0px;padding:0px;" ng-if="phoneController.IB && item.selectedVariant.ibEligibilityInd && !item.selectedVariant.noMore">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" ng-disabled="item.selectedVariant==null" data-toggle="dropdown">Add to Cart <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="myDropdown" style="margin:0px; padding:0px; position:absolute; left:-108px; bottom:-54px;">
+          <li role="presentation"><a href="">Purchase with Installments</a></li>
+          <li role="presentation"><a ng-click="phoneController.ibPopup($event)">Purchase and Pay Now</a></li>
+        </ul>
+      </div>
+-->
+            </form>
+        </div>
+    </div>
+</div>

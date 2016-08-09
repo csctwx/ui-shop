@@ -1,0 +1,49 @@
+.faq-answer-sub.active {
+    background: #F1F1F1 url("../img/tiny_arrow.png") no-repeat scroll -6px 14px;
+}
+
+div#faqs-sub.tab-pane.active section div#faq-answers div.faq-answer-sub {
+    padding: 10px 20px!important;
+    margin: 0px 10px!important;
+}
+
+div#faqs-sub.tab-pane.active section div#faq-answers div.faq-answer-sub h2 {
+    margin: 0 0 10px 0!important;
+    padding:0;
+}
+
+
+div#faqs-sub.tab-pane.active section div#faq-answers div.faq-answer-sub p{
+    margin: 0 0 10px 0!important;
+}
+
+
+div.faq-answer-sub table tbody tr td{
+    padding:5px;
+}
+
+.faq-answer ul,
+.faq-answer-sub table tbody tr td ul{
+    list-style: disc;
+    padding:0 0 0 40px;
+    list-style-position: outside;
+}
+
+
+
+div#faq-answers div.faq-answer ul ul{
+    list-style: circle;
+}
+
+
+div.tab-content div#faqs.tab-pane section{
+    font-family: verdana;
+    font-size: 13px;
+    color:#222;
+
+}
+
+#faq-questions a:link {
+    text-decoration: underline;
+    font-size: 12px;
+}

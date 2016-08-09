@@ -1,0 +1,44 @@
+@media (max-width: 767px){
+	#BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRROverallRatingContainer .BVRRRatingOverall{height: 90px !important;}
+	div#BVRRRatingOverall_Rating_Summary_l{display: none !important;}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.BVDI_COHeader .BVDI_COLinkPost{
+		padding-top: 15px !important;
+		padding-right: 15px !important;
+	}
+	.BVRRReviewDateContainer, .BVRRReviewRatingsContainer{padding-left: 15px !important; padding-right: 15px !important;}
+	.BVRRReviewSocialLinksContainer, .BVRRReviewTitle{padding-left: 15px !important;}
+	.BVDI_QTAttributes, .BVRRHeader{margin-left: 15px !important;}
+}
+@media (max-width: 992px){
+	.BVRRRatingSummaryStyle2{text-align: center !important;}
+	.BVRRQuickTakeSummary .BVRRRatingsHistogramButton{
+		width: 100% !important;
+	}
+	.BVRRDisplayContentReview{padding: 10px 0px !important;}
+	#BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRROverallRatingContainer .BVRRRatingOverall{height: 150px !important;}
+	.BVRRHistAbsLabel{right: 35px !important;}
+	.BVRRReviewDisplayStyle5BodyUser{padding: 20px 10px !important;}
+	div.BVRRHistogramTitle{padding-right: 15px !important;}
+	.phoneFullCol > h1{font-size: 24px;color: #F7901E; text-align: center;}
+}
+
+@media (min-width: 993px){
+	#BVRRRatingOverall_{
+		height: 147px !important;
+		width: 276px !important;
+	}
+	#BVRRContainer .BVRRQuickTakeSummary .BVRRRatingSummary .BVRROverallRatingContainer .BVRRRatingOverall{/*height: 130px !important;*/}
+	.BVRRQuickTakeSummary .BVRRRatingsHistogramButton{width: 368px !important;}
+	.BVRRDisplayContentReview{padding: 10px 30px !important;}
+	.BVRRRatingNormalImage{padding-right: 8px !important;}
+	div.BVRRHistogramTitle{padding-left: 10px !important;padding-right: 10px !important;}
+}
+
+.phoneFullCol{padding:0 20px!important;}
+.phoneFullCol > h1{color: #F7901E;}
+.BVRRRatingsHistogramButton{padding-left: 8px !important;}
+.BVRRRecommendedContainerYes{padding-left: 20px !important;}
+.BVDI_FVReportLinkInappropriate{padding-bottom: 5px !important;}
+.BVRRPager, .BVRRPageBasedPager{padding-bottom: 15px !important; padding-right: 15px !important;}

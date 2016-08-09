@@ -1,0 +1,58 @@
+{
+    "responses": {
+        "response": [
+            {
+                "@class": "",
+                "@code": "0",
+                "@name": "Section 19029",
+                "@uuid": "a8720d65-2e20-4e79-ab5e-b5a4ff7e112d",
+                "shippingListResponse": {
+                    "description": {
+                        "$": "SUCCESS"
+                    },
+                    "shippingList": {
+                        "shipping": [
+                            {
+                                "default": {
+                                    "$": "true"
+                                },
+                                "label": {
+                                    "$": "Free 3-5 Business Days"
+                                },
+                                "shippingFee": {
+                                    "$": "0"
+                                },
+                                "shippingMethod": {
+                                    "$": "ground"
+                                },
+                                "shippingTypeCode": {
+                                    "$": "25"
+                                }
+                            },
+                            {
+                                "default": {
+                                    "$": "false"
+                                },
+                                "label": {
+                                    "$": "Expedited Next Business Day $12.00"
+                                },
+                                "shippingFee": {
+                                    "$": "12"
+                                },
+                                "shippingMethod": {
+                                    "$": "nextDay"
+                                },
+                                "shippingTypeCode": {
+                                    "$": "26"
+                                }
+                            }
+                        ]
+                    },
+                    "status": {
+                        "$": "0"
+                    }
+                }
+            }
+        ]
+    }
+}

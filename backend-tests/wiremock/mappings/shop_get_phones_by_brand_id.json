@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/primary-rest/shop_get_phones_by_brand_id?brandId=spp"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "sprint/shop_get_phones_by_brand_id.json"
+    }
+}

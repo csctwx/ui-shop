@@ -1,0 +1,10 @@
+{
+  "war_filename" : "shop.war",
+  "release_foldername" : "19089-CXP902_7485-SPP-shop-frontend",
+  "local_tomcat_dir" : "/var/lib/tomcat7/webapps",
+  "remote_tomcat_host" : "142.133.9.150",
+  "remote_tomcat_port" : 8888,
+  "remote_tomcat_user" : "tomcat-script", 
+  "remote_tomcat_pass" : "tomcat",
+  "remote_tomcat_path" : "/shop"
+}

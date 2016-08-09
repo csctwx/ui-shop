@@ -1,0 +1,54 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "a8720d65-2e20-4e79-ab5e-b5a4ff7e112d",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"shippingListResponse": {
+				"shippingList": {
+					"shipping": [{
+						"shippingMethod": {
+							"$": "ground"
+						},
+						"shippingTypeCode": {
+							"$": "25"
+						},
+						"shippingFee": {
+							"$": "0"
+						},
+						"default": {
+							"$": "false"
+						},
+						"label": {
+							"$": "Free 3-5 Business Days"
+						}
+					},
+					{
+						"shippingMethod": {
+							"$": "nextDay"
+						},
+						"shippingTypeCode": {
+							"$": "26"
+						},
+						"shippingFee": {
+							"$": "12"
+						},
+						"default": {
+							"$": "true"
+						},
+						"label": {
+							"$": "Expedited Next Business Day $12.00"
+						}
+					}]
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

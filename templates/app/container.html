@@ -1,0 +1,9 @@
+<div>
+  <app-home ng-if="app.isCurrentContext(pathMap._home._formatedHash)"></app-home>
+  <app-shop ng-if="app.isCurrentContext(pathMap._shop._formatedHash)"></app-shop>
+  <app-search ng-if="app.isCurrentContext(pathMap._search._formatedHash)"></app-search>  
+  <app-bestbuy ng-if="app.isCurrentContext(pathMap._bestbuy._formatedHash)"></app-bestbuy>
+  <app-market ng-if="app.isCurrentContext(pathMap._market._formatedHash)"></app-market>
+  <app-coverage-map ng-if="app.isCurrentContext(pathMap._coverageMap._formatedHash)"></app-coverage-map>
+  <app-zipcode></app-zipcode>
+</div>

@@ -1,0 +1,71 @@
+<section class="checkout">
+  <iframe height="1" width="1" frameborder="0" scrolling="no" ng-src="{{checkoutController.emjcdString}}" name="cj_conversion" ></iframe>
+  <div class="col-xs-12 col-md-8">
+    <div class="alert alert-success" role="alert">
+      <h2>Your Order Has Been Completed Successfully!</h2>
+    </div>
+    <section class="billingInfo">
+      <div class="col-xs-12">
+        <h3>What's Coming Your Way:</h3>
+        <dl ng-repeat="item in checkoutController.finalData.equipments">
+          <dt>Item</dt>
+          <dd>{{item.name}} {{item.phoneCondition}} {{item.color}} {{item.memory}}</dd>
+          <dt>Quantity</dt>
+          <dd>{{item.quantity}}</dd>
+          <dt>Price</dt>
+          <dd>{{item.modelPrice|currency}}</dd>
+        </dl>
+        <h3>Delivered to:</h3>
+        <dl>
+          <dt>First Name</dt>
+          <dd>{{checkoutController.finalData.shippingInfo.firstName}}</dd>
+          <dt>Last Name</dt>
+          <dd>{{checkoutController.finalData.shippingInfo.lastName}}</dd>
+          <dt>Address 1</dt>
+          <dd>{{checkoutController.finalData.shippingInfo.address1}}</dd>
+          <dt ng-if="checkoutController.finalData.shippingInfo.address2!=null">Address 2</dt>
+          <dd ng-if="checkoutController.finalData.shippingInfo.address2!=null">{{checkoutController.finalData.shippingInfo.address2}}</dd>
+          <dt>City</dt>
+          <dd>{{checkoutController.finalData.shippingInfo.city}}</dd>
+          <dt>State</dt>
+          <dd>{{checkoutController.finalData.shippingInfo.state}}</dd>
+          <dt>Zip Code</dt>
+          <dd>{{checkoutController.finalData.shippingInfo.zipCode}}</dd>
+          <dt>Phone Number</dt><dd>{{checkoutController.finalData.shippingInfo.phoneNumber}}</dd>
+          <dt>Email</dt><dd>{{checkoutController.finalData.shippingInfo.email}}</dd>
+          <dt>Shipping via</dt><dd>{{checkoutController.finalData.shippingOption.label}}</dd>
+          <dt>Payment type</dt><dd>{{checkoutController.finalData.paymentInfo.paymentCardType}}</dd>
+        </dl>
+        <h3 class="confirmation">{{checkoutController.finalData.confirmationNumber}}</h3>
+        <section>
+          <div class="col-xs-12 col-sm-8 finalamount pull-right">
+            <ul>
+              <li><span>Subtotal</span><p>{{checkoutController.finalData.subtotal | currency:""}}</p></li>
+              <li><span>Shipping</span><p>{{checkoutController.finalData.shipping | currency:""}}</p></li>
+              <li><span ng-show="checkoutController.data.promoCode.status==0">Discount</span><p ng-show="checkoutController.data.promoCode.status==0">-{{checkoutController.data.promoCode.totalDiscount|currency:""}}</p></li>
+              <li><span>Tax</span><p>{{checkoutController.finalData.tax | currency:""}}</p></li>
+              <li><span>Total</span><p>{{checkoutController.finalData.total | currency:""}}</p></li>
+            </ul>
+          </div>
+        </section>
+        <a class="" href="javascript:window.print()">Print Receipt</a>
+        <br />
+      </div>
+    </section>
+  </div>
+  <div class="hidden-xs hidden-sm col-md-4">
+    <section class="entrust">
+      <h3>Secure Credit Card Payment</h3>
+      <div>
+        <img ng-src="{{appName}}/img/entrust.png"></img>
+      </div>
+    </section>
+    <section>
+      <h3>Phone Insurance</h3>
+      <p>Can't live without your Sprint Mobile phone? Get phone insurance and you'll never have to.</p>
+      <div class="col-xs-12">
+        <a class="btn btn-default btn-block" target="_blank" href="http://www.sprint.com/legal/privacy.html?INTNAV=ATG:FT:Privacy">Privacy Policy</a>
+        <a class="btn btn-default btn-block" target="_blank" href="http://www.sprint.com/landings/returns/?question_box=return%20policy&id16=return%20policy">Return Policy</a>
+      </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+{  
+   "responses":{  
+      "response":[  
+         {  
+            "@uuid":"2d79696b-4df7-425d-ab07-83fa1f2a5cfb",
+            "@class":"",
+            "@name":"section_banner",
+            "@position":"phone-number",
+            "@code":"0",
+            "$":"1-855-280-9032"
+         }
+      ]
+   }
+}
